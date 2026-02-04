@@ -1,0 +1,1570 @@
+{
+  "doc_id": "doc_Method Precast For Repairing Tunnet Segment (อุโมงค์ระบายน้ำบึงหนองบอ",
+  "pages": [
+    {
+      "page_num": 1,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_1_1",
+          "type": "image",
+          "description": "img-0.jpeg",
+          "doc_path": "images/p1_img-0.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_1_2",
+          "type": "text",
+          "text_content": "บริษัท ซีโน-ไทย เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)\nSINO-THAI ENGINEERING AND CONSTRUCTION\nPUBLIC COMPANY LIMITED\nMETHOD FOR REPAIRING TUNNEL SEGMENT\nเอกสารควบคุม สำเนาที่ OAS/01\nใช้ได้เมื่อตราฯนี้เป็นสีแดงเท่านั้น\nRECEIVED\n09 OCT 2017\n2/17\nSEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER PROJECT\nSTECON PRECAST CONCRETE COMPLEX",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-0.jpeg",
+          "file_path": "images/p1_img-0.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 2,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_2_1",
+          "type": "text",
+          "text_content": "งานควบคุมการก่อสร้างโครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา\nบริษัท ทีม คอนซัลติ้ง เอนจิเนียริ่ง แอนด์ แมเนจเมนท์ จำกัด\nบริษัท ทีดับเบิ้ลยูไอ คอนซัลแตนส์ จำกัด\n☎️ GPE บริษัท วิศวกรรมธรณีและฐานราก จำกัด\n๑๒๐๓. ๑๒๗/๒๕๕\n๑๓ กันยายน ๒๕๖๐\nที่สนน.๓๐/๒๕๕๔/Р๐๑๗๘๐/ВМА/๖๐๓๗๕\n๑๓ กันยายน ๒๕๖๐\nเรื่อง ผลการพิจารณาเอกสารขอนำส่งขั้นตอนการซ่อมแซมความเสียหายที่เกิดขึ้นกับชิ้นงาน (Method Statement for Repairing Tunnel Segment) (Rev. A)\nเรียน ผู้อำนวยการโครงการ\nโครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา\nอ้างถึง ๑. สัญญาเลขที่ สนน. ๑๘๔/๒๕๕๘ ลงวันที่ ๓๐ กันยายน ๑๕๕๘\n๒. สัญญาเลขที่ สนน. ๓๐/๒๕๕๙ ลงวันที่ ๑๑ มกราคม ๒๕๕๙\n๓. หนังสือของผู้รับจ้างเลขที่ NB.๒๕๖๐/๓๑๐ ลงวันที่ ๒๔ สิงหาคม ๒๕๖๐\nตามที่ สำนักการระบายน้ำ กรุงเทพมหานคร ได้ว่าจ้างกิจการร่วมค้า เอสที- เอสจี เป็นผู้รับจ้างโครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา รายละเอียดตามสัญญาที่อ้างถึง ๑. และว่าจ้างบริษัท ทีม คอนซัลติ้ง เอนจิเนียริ่ง แอนด์ แมเนจเมนท์ จำกัด บริษัท ทีดับเบิ้ลยูไอ คอนซัลแตนส์ จำกัด และบริษัท วิศวกรรมธรณีและฐานราก จำกัด เป็นที่ปรึกษาควบคุมการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา รายละเอียดตามสัญญาที่อ้างถึง ๒. และ ตามที่อ้างถึง ๓. ผู้รับจ้างได้ส่งเอกสารขอนำส่งขั้นตอนการซ่อมแซมความเสียหายที่เกิดขึ้นกับชิ้นงาน (Method Statement for Repairing Tunnel Segment) (Rev. A) ให้สำนักงานโครงการพิจารณาและสำเนาให้กลุ่มบริษัทที่ปรึกษาตรวจสอบนั้น\nกลุ่มบริษัทที่ปรึกษาได้พิจารณาเอกสารขอนำส่งขั้นตอนการซ่อมแซมความเสียหายที่เกิดขึ้นกับชิ้นงาน (Method Statement for Repairing Tunnel Segment) (Rev. A) แล้วมีความเห็นว่าสามารถอนุมัติขั้นตอนวิธีการ และคุณสมบัติของวัสดุตามที่ผู้รับจ้างเสนอได้ ทั้งนี้การวินิจฉัยว่าจะซ่อมขึ้นส่วนที่เสียหายด้วยวิธีใดจะต้องได้รับความเห็นชอบจากผู้ควบคุมงานก่อนจึงจะสามารถดำเนินการซ่อมแซมส่วนที่เสียหายได้\nจึงเรียนมาเพื่อโปรดพิจารณา\nขอแสดงความนับถือ\n_________________________\n(นายรัชตสรรค์ วัฒนโกร)\nวิศวกรโครงการ\nกลุ่มบริษัทที่ปรึกษาควบคุมงาน\nรว/ณพ\nNWP/WE/LT๖๐๐๔/Р๐๑๗๘๐/LT๓๗๕",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 3,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_3_1",
+          "type": "text",
+          "text_content": "ที่ อนบ. 6/๒๕๖๐\nสำนักงานโครงการฯ\n๑๒๓ ถนนมิตรไมตรี เขตดินแดง กทม. ๑๐๔๐๐\n๒๕  กันยายน ๒๕๖๐\nเรื่อง ผลการพิจารณาเอกสารขอนำส่งขั้นตอนการซ่อมแซมความเสียหายที่เกิดขึ้นกับชิ้นงาน (Method Statement for Repairing Tunnel Segment) (Rev.A)\nเรียน ผู้แทนกิจการร่วมค้า เอสที – เอสจี\nอ้างถึง ๑. สัญญาเลขที่ สนน. ๑๘๔/๒๕๕๘ ลงวันที่ ๓๐ กันยายน ๒๕๕๘\n๒. สัญญาแก้ไขเพิ่มเติม (ครั้งที่ ๑) ลงวันที่ ๑ มีนาคม ๒๕๖๐\n๓. หนังสือกิจการร่วมค้า เอสที – เอสจี ที่ N8. ๒๕๖๐/๓๑๐ ลงวันที่ ๒๕ สิงหาคม ๒๕๖๐\nสิ่งที่ส่งมาด้วย สำเนาหนังสือกลุ่มบริษัทที่ปรึกษาฯ ที่ สนน.๓๐/๒๕๕๙/POA0140/BMA/500012\nลงวันที่ ๑๓ กันยายน ๒๕๖๐\nตามหนังสือที่อ้างถึง ๑ - ๒ กรุงเทพมหานคร โดยสำนักการระบายน้ำได้จ้างเหมากิจการร่วมค้า เอสที – เอสจี ดำเนินการโครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา และหนังสือ ที่อ้างถึง ๓ กิจการร่วมค้า เอสที-เอสจี ขอนำส่งขั้นตอนการซ่อมแซมความเสียหายที่เกิดขึ้นกับชิ้นงาน (Method Statement for Repairing Tunnel Segment) (Rev.A) และกลุ่มบริษัทที่ปรึกษาฯ ได้พิจารณาเอกสารดังกล่าวแล้ว ความละเอียดแจ้งแล้ว นั้น\nสำนักงานโครงการฯ พิจารณาขั้นตอนการซ่อมแซมความเสียหายที่เกิดขึ้นกับชิ้นงาน (Method Statement for Repairing Tunnel Segment) (Rev.A) แล้ว ไม่ขัดข้องอนุมัติให้กิจการร่วมค้า เอสที – เอสจี ดำเนินการขั้นตอน วิธีการ และคุณสมบัติของวัสดุตามที่เสนอ ทั้งนี้ การวินิจฉัยว่าจะซ่อมชิ้นส่วนที่เสียหาย ด้วยวิธีใดจะต้องได้รับความเห็นชอบจากผู้ควบคุมงานก่อนจึงจะสามารถดำเนินการซ่อมแซมส่วนที่เสียหายได้ ตามความเห็นของกลุ่มบริษัทที่ปรึกษาฯ รายละเอียดตามสิ่งที่ส่งมาด้วย ดังนี้\nจึงเรียนมาเพื่อทราบและดำเนินการต่อไป\nขอแสดงความนับถือ\n(นายสัญญภักษณ์ ก้องกิจการ)\nผู้ช่วยผู้จัดการโครงการ\nรักษาการในตำแหน่งผู้จัดการโครงการ",
+          "bbox": null
+        },
+        {
+          "id": "e_3_2",
+          "type": "image",
+          "description": "img-1.jpeg",
+          "doc_path": "images/p3_img-1.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_3_3",
+          "type": "text",
+          "text_content": "สำนักงานโครงการ\nโทร. ๐ ๒๒๔๖ ๐๓๑๔\nโทรสาร ๐ ๒๒๔๖ ๐๓๑๔",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-1.jpeg",
+          "file_path": "images/p3_img-1.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 4,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_4_1",
+          "type": "text",
+          "text_content": "1\nบริษัท พิษะ-โภส เล่นดิทันรุ่ง กระดก สะพอกไฟฟ้า จำกัด (สหกรณ์)\n5100-71144 51100111111111111111111111111111111111111111111111111111",
+          "bbox": null
+        },
+        {
+          "id": "e_4_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "CONTENT",
+          "bbox": null
+        },
+        {
+          "id": "e_4_3",
+          "type": "text",
+          "text_content": "[tbl-0.html](tables/tbl-0.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 5,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_5_1",
+          "type": "text",
+          "text_content": "บริษัท ฟิน-โคว-เนีย-จีเนีย-โค-เนีย-สยามหาโนล่า จำกัด (ยกเวลา)\nฉบับ: THAI ENGINEERING &amp; CONSTRUCTION POWER COMPANY LIMITED\nTB-RP-01",
+          "bbox": null
+        },
+        {
+          "id": "e_5_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "GUIDELINE FOR REPAIR",
+          "bbox": null
+        },
+        {
+          "id": "e_5_3",
+          "type": "text",
+          "text_content": "PROJECT : SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 6,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_6_1",
+          "type": "text",
+          "text_content": "หน้าที่ 356\nหน้าที่ 356 ให้มี สิ่งที่มีอยู่ 356\nProject : SÈWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_6_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "การซ่อมแซมความเสียหายที่เกิดขึ้นกับชิ้นงาน",
+          "bbox": null
+        },
+        {
+          "id": "e_6_3",
+          "type": "heading",
+          "level": 2,
+          "text_content": "ขอบเขตของงาน (Scope of Work)",
+          "bbox": null
+        },
+        {
+          "id": "e_6_4",
+          "type": "text",
+          "text_content": "วิธีการซ่อมแซมชิ้นส่วนอุโมงค์จัดทำขึ้น เพื่อใช้สำหรับการซ่อมผิวคอนกรีตของชิ้นส่วนผนังอุโมงค์ สำหรับโครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยาซึ่งลักษณะความเสียหายหรือข้อบกพร่องอาจเกิดขึ้นจากกระบวนการผลิต การขนส่งและเคลื่อนย้าย หรือการเก็บรักษา ที่โรงงานผลิตชิ้นส่วนอุโมงค์ โดยที่ความเสียหายนี้ไม่มีผลกระทบต่อโครงสร้างหลักของชิ้นส่วนผนังอุโมงค์ตามที่ออกแบบไว้ ทั้งนี้ทางฝ่ายผลิตและควบคุมคุณภาพจะทำการบันทึกข้อมูลไว้ หากมีความเสียหายมากเกินข้อกำหนด จะต้องทำการตรวจสอบและทบทวนเพื่อหาข้อบกพร่อง ดังนี้\n1.) ความเสียหายจากการผลิต ไม่เกิน 5% ของจำนวน Rings ที่ผลิตได้\n2.) ความเสียหายจากการขนส่งและการขนย้าย ไม่เกิน 2% ของจำนวน Rings ของการขนส่ง\nความเสียหายที่เกิดขึ้นกับชิ้นงานแบ่งได้เป็น 4 ลักษณะได้แก่\n1.) รอยร้าว (Crack)\n2.) แตกปั้นที่ขอบ (Spalling Edge)\n3.) แตกปั้นบริเวณ Gasket (Spalling Recesses)\n4.) รูฟองอากาศ (Voids or Blowholes)\nDocument No. TB-RP-01\nRelease/Amendment Issue 2 Date : 20/6/2017\nPage No. 1 of 7",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 7,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_7_1",
+          "type": "text",
+          "text_content": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\nProject: SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER\n$\\odot$  รอยรั่ว (Crack)",
+          "bbox": null
+        },
+        {
+          "id": "e_7_2",
+          "type": "image",
+          "description": "img-2.jpeg",
+          "doc_path": "images/p7_img-2.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_7_3",
+          "type": "text",
+          "text_content": "a.Hard Crack",
+          "bbox": null
+        },
+        {
+          "id": "e_7_4",
+          "type": "image",
+          "description": "img-3.jpeg",
+          "doc_path": "images/p7_img-3.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_7_5",
+          "type": "text",
+          "text_content": "b.Shrinkage Crack\nTable1 – Guideline for Crack Repair\n[tbl-1.html](tables/tbl-1.html.html)\nDocument No.\nTB-RP-01\nRelease/Amendment\nIssue 2 Date: 20/6/2017\nPage No.\n2 of 7",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-2.jpeg",
+          "file_path": "images/p7_img-2.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-3.jpeg",
+          "file_path": "images/p7_img-3.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 8,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_8_1",
+          "type": "text",
+          "text_content": "2110084\nบริษัท จิโม-ไลท เล็กซิเมอร์ แมทท์ คอมพิวเตอร์ จำกัด (มหาชน)\nWHO-THAI ENGINEERING &amp; CONSTRUCTION PUBLIC COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER\n- แตกข้อเท็จจริง (Spalling Edge)",
+          "bbox": null
+        },
+        {
+          "id": "e_8_2",
+          "type": "image",
+          "description": "img-4.jpeg",
+          "doc_path": "images/p8_img-4.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_8_3",
+          "type": "text",
+          "text_content": "a. Sharp Edge",
+          "bbox": null
+        },
+        {
+          "id": "e_8_4",
+          "type": "image",
+          "description": "img-5.jpeg",
+          "doc_path": "images/p8_img-5.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_8_5",
+          "type": "text",
+          "text_content": "b. Chamfered Edge",
+          "bbox": null
+        },
+        {
+          "id": "e_8_6",
+          "type": "image",
+          "description": "img-6.jpeg",
+          "doc_path": "images/p8_img-6.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_8_7",
+          "type": "text",
+          "text_content": "c. As Corners\nTable2 – Guideline for Spalling Edge Repair\n[tbl-2.html](tables/tbl-2.html.html)\n[tbl-3.html](tables/tbl-3.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-4.jpeg",
+          "file_path": "images/p8_img-4.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-5.jpeg",
+          "file_path": "images/p8_img-5.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-6.jpeg",
+          "file_path": "images/p8_img-6.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 9,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_9_1",
+          "type": "text",
+          "text_content": "STF000\nบริษัท วัฒน ไทย เล่นที่เห็นว่า แผนที่ พลุมเลส ให้พ้น จำกัด (พนานนท์)\n5\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER\n- แตกบั้นบริเวณ Gasket (Spalling Recesses)",
+          "bbox": null
+        },
+        {
+          "id": "e_9_2",
+          "type": "image",
+          "description": "img-7.jpeg",
+          "doc_path": "images/p9_img-7.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_9_3",
+          "type": "text",
+          "text_content": "Table3 -- Guideline for Recesses Repair\n[tbl-4.html](tables/tbl-4.html.html)\nDocument No.\nTB-RP-01\nRelease/Amendment\nIssue 2 Date: 20/6/2017\nPage No.\n4 of 7",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-7.jpeg",
+          "file_path": "images/p9_img-7.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 10,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_10_1",
+          "type": "text",
+          "text_content": "STIHUN\nบริษัท จับ-โรง เงินพิพิธภัณฑ์ และโรงแรมจัดห้าซื้อ จ.ย.ย. (สหกรณ์)\nSIHU-THAI ENGINEERING &amp; CONSTRUCTION PUBLIC COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHIRAYA RIVER\n- รูฟองอากาศ (Voids or Blowholes)",
+          "bbox": null
+        },
+        {
+          "id": "e_10_2",
+          "type": "image",
+          "description": "img-8.jpeg",
+          "doc_path": "images/p10_img-8.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_10_3",
+          "type": "text",
+          "text_content": "A.Outside Surface",
+          "bbox": null
+        },
+        {
+          "id": "e_10_4",
+          "type": "image",
+          "description": "img-9.jpeg",
+          "doc_path": "images/p10_img-9.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_10_5",
+          "type": "text",
+          "text_content": "B.Inside Surface",
+          "bbox": null
+        },
+        {
+          "id": "e_10_6",
+          "type": "image",
+          "description": "img-10.jpeg",
+          "doc_path": "images/p10_img-10.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_10_7",
+          "type": "text",
+          "text_content": "C.Gasket Surface\nTable4 – Guideline for Voids or Blowholes Repair\n[tbl-5.html](tables/tbl-5.html.html)\n[tbl-6.html](tables/tbl-6.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-8.jpeg",
+          "file_path": "images/p10_img-8.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-9.jpeg",
+          "file_path": "images/p10_img-9.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-10.jpeg",
+          "file_path": "images/p10_img-10.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 11,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_11_1",
+          "type": "text",
+          "text_content": "2\n1\n5\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_11_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "ตารางแสดงวัสดุที่ใช้ซ่อมแซมความเสียหายประเภทต่างๆ",
+          "bbox": null
+        },
+        {
+          "id": "e_11_3",
+          "type": "text",
+          "text_content": "[tbl-7.html](tables/tbl-7.html.html)\nDocument No. TB-RP-01\nRelease/Amendment Issue 2 Date : 20/6/2017\nPage No. 6 of 7",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 12,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_12_1",
+          "type": "text",
+          "text_content": "STEOO\nแจ้งให้ ให้ ใคร เล่นที่เกี่ยวข้อง และที่ สอบรองให้เห็น จำกัด (สหกรณ์)\nSTEOO THE PROMOTION &amp; CONSTRUCTION FORM COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_12_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "รายการวัสดุซ่อม",
+          "bbox": null
+        },
+        {
+          "id": "e_12_3",
+          "type": "text",
+          "text_content": "[tbl-8.html](tables/tbl-8.html.html)\n[tbl-9.html](tables/tbl-9.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 13,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_13_1",
+          "type": "text",
+          "text_content": "RPP-TN-01",
+          "bbox": null
+        },
+        {
+          "id": "e_13_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "REPAIR WITH CEMENTITIOUS MORTAR",
+          "bbox": null
+        },
+        {
+          "id": "e_13_3",
+          "type": "text",
+          "text_content": "PROJECT : SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER\n9",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 14,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_14_1",
+          "type": "text",
+          "text_content": "LYDRO\nบริษัท ซีโน-ไลน์ เล็กซิเนียริ่ง แบบส่ง คอนเทนเนียริ่ง จำกัด (สหกรณ์)\nWorld Trust Concentration &amp; Co. (WCC) and Public Co. (PC) Limited\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_14_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "RP-TN-01 (Crack Repair With Cementitious Mortar)",
+          "bbox": null
+        },
+        {
+          "id": "e_14_3",
+          "type": "text",
+          "text_content": "วิธีการ Repair With Cementitious Mortar ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างมากกว่า 0.1mm. แต่ไม่ถึง 0.3mm. และความลึกของรอยร้าวมากกว่า 15mm. รวมทั้งใช้ในการซ่อมแซมรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5mm. โดยการวัดความกว้างของรอยร้าวต้องใช้แผ่น Crack Width Indicator ในการวัด\nคงซีเมนต์ที่ใช้ในการซ่อมแซมมีคุณสมบัติในการต้านทานการสึกหรอ สามารถยึดเกาะกับผิวคอนกรีตเดิมได้ดี และมีสีที่ใกล้เคียงกับสีคอนกรีต",
+          "bbox": null
+        },
+        {
+          "id": "e_14_4",
+          "type": "image",
+          "description": "img-11.jpeg",
+          "doc_path": "images/p14_img-11.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_14_5",
+          "type": "text",
+          "text_content": "รูปที่ 1 แสดงการวัดความกว้างของรอยร้าวโดยใช้ Crack Width Indicator\nDocument No.\nRP-TN-01\nRelease/Amendment\nIssue 2\nDate : 20/6/2017\nPage No.\n1 of 5",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-11.jpeg",
+          "file_path": "images/p14_img-11.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 15,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_15_1",
+          "type": "text",
+          "text_content": "671000\nบริษัท ซีโน-ไทย เล็กพิมพ์ทุก แผนที่ คอมพิวเตอร์ คำบัตร (จัดการ)\nSINO-THAI ENGINEERING &amp; CONSTRUCTION PUBLIC COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER\n1. อุปกรณ์ที่ใช้ในการซ่อมแซม\n1.1 เครื่องเป่าลม\n1.2 เกรียง\n1.3 ฟองน้ำหรือลูกกลิ้ง\n1.4 กระดาษทราย\n1.5 ภาชนะใส่วัสดุซ่อม\n2. วัสดุที่ใช้ในการซ่อมแซม\n2.1 ปูนฉาบซ่อมที่ใช้ในโครงการดังนี้\n[tbl-10.html](tables/tbl-10.html.html)",
+          "bbox": null
+        },
+        {
+          "id": "e_15_2",
+          "type": "image",
+          "description": "img-12.jpeg",
+          "doc_path": "images/p15_img-12.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_15_3",
+          "type": "image",
+          "description": "img-13.jpeg",
+          "doc_path": "images/p15_img-13.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_15_4",
+          "type": "text",
+          "text_content": "Document No.\nRP-TN-01\nRelease/Amendment\nIssue 2 Date: 20/6/2017\nPage No.\n2 of 5",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-12.jpeg",
+          "file_path": "images/p15_img-12.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-13.jpeg",
+          "file_path": "images/p15_img-13.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 16,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_16_1",
+          "type": "text",
+          "text_content": "หน้าที่ 96\nหน้าที่ 96 หน้าที่ 100\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_16_2",
+          "type": "image",
+          "description": "img-14.jpeg",
+          "doc_path": "images/p16_img-14.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_16_3",
+          "type": "image",
+          "description": "img-15.jpeg",
+          "doc_path": "images/p16_img-15.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_16_4",
+          "type": "image",
+          "description": "img-16.jpeg",
+          "doc_path": "images/p16_img-16.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_16_5",
+          "type": "text",
+          "text_content": "รูปที่ 2 แสดงวัสดุฉาบที่ใช้ในการซ่อมแซมผิว\n3. ขั้นตอนในการซ่อมแซม\n3.1 ใช้เครื่องเป่าลมเป่าทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรอยร้าว ตรวจสอบความสะอาดก่อนการซ่อมแซม\n3.2 ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น แล้วฉาบลงบนผิวคอนกรีตบริเวณที่เกิดรอยร้าว โดยเริ่มจากปลายด้านใดด้านหนึ่งของรอยร้าว",
+          "bbox": null
+        },
+        {
+          "id": "e_16_6",
+          "type": "image",
+          "description": "img-17.jpeg",
+          "doc_path": "images/p16_img-17.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_16_7",
+          "type": "text",
+          "text_content": "รูปที่ 3 แสดงการฉาบแต่งรอยร้าว\n[tbl-11.html](tables/tbl-11.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-14.jpeg",
+          "file_path": "images/p16_img-14.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-15.jpeg",
+          "file_path": "images/p16_img-15.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-16.jpeg",
+          "file_path": "images/p16_img-16.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-17.jpeg",
+          "file_path": "images/p16_img-17.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 17,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_17_1",
+          "type": "text",
+          "text_content": "บริษัท วิธีการโดย เมื่อจับภูมิใจ และแต่งตลาดวิธีการจ้าง (สหกรณ์)\nVINH-THAI UNIVERSITY &amp; COUNTRIES GOVERNMENTAL UNIVERSITY\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_17_2",
+          "type": "heading",
+          "level": 2,
+          "text_content": "3.3 หลังจากปูนฉาบแห้งแล้ว ใช้กระดาษทรายขัดบริเวณที่ฉาบให้มีผิวเรียบเสมอกับผิวคอนกรีตบริเวณอื่น",
+          "bbox": null
+        },
+        {
+          "id": "e_17_3",
+          "type": "image",
+          "description": "img-18.jpeg",
+          "doc_path": "images/p17_img-18.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_17_4",
+          "type": "text",
+          "text_content": "รูปที่ 4 แสดงการขัดผิวปูนฉาบ",
+          "bbox": null
+        },
+        {
+          "id": "e_17_5",
+          "type": "heading",
+          "level": 2,
+          "text_content": "3.4 ผสมปูนฉาบให้เหลว ใช้ฟองน้ำหรือลูกกลิ้งชุบแล้วลูบที่ผิวคอนกรีต เพื่อให้ผิวคอนกรีตมีสีสม่ำเสมอ",
+          "bbox": null
+        },
+        {
+          "id": "e_17_6",
+          "type": "image",
+          "description": "img-19.jpeg",
+          "doc_path": "images/p17_img-19.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_17_7",
+          "type": "text",
+          "text_content": "รูปที่ 5 แสดงการลูบผิวคอนกรีตด้วยปูนฉาบเหลว\n[tbl-12.html](tables/tbl-12.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-18.jpeg",
+          "file_path": "images/p17_img-18.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-19.jpeg",
+          "file_path": "images/p17_img-19.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 18,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_18_1",
+          "type": "text",
+          "text_content": "LITESDA\nบริษัท ซีริบ-ไฮซ เล็ปท์:มือวี๋ง แผนด์ คอนสตว์ทชั่น จำกัด (ทศวรรษ)\nSHIG-THAI ENGINEERING &amp; CONSTRUCTION PUBLIC COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_18_2",
+          "type": "heading",
+          "level": 2,
+          "text_content": "3.5 หลังจากน้ำปูนแห้งแล้วตรวจสอบรอยร้าวอีกครั้งโดยละเอียด",
+          "bbox": null
+        },
+        {
+          "id": "e_18_3",
+          "type": "image",
+          "description": "img-20.jpeg",
+          "doc_path": "images/p18_img-20.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_18_4",
+          "type": "text",
+          "text_content": "รูปที่ 6 แสดงขึ้นงานที่ซ่อมแซมเสร็จแล้ว\nDocument No.\nRP-TN-01\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n5 of 5\n14",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-20.jpeg",
+          "file_path": "images/p18_img-20.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 19,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_19_1",
+          "type": "text",
+          "text_content": "RPP-TN-02",
+          "bbox": null
+        },
+        {
+          "id": "e_19_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "REPAIR WITH EPOXY RESIN",
+          "bbox": null
+        },
+        {
+          "id": "e_19_3",
+          "type": "text",
+          "text_content": "PROJECT : SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER\n15",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 20,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_20_1",
+          "type": "text",
+          "text_content": "511000\nบริษัท พิม.-ไทย เอ็นจิเนียร์จ แอปตี้ สะบาดสวีทชั่น จำกัด (มหาชน)\n5000 THAI UNGURTING &amp; CONSTRUCTION PUBLIC COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_20_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "RP-TN-02 (Crack Repair With Epoxy Resin)",
+          "bbox": null
+        },
+        {
+          "id": "e_20_3",
+          "type": "text",
+          "text_content": "วิธีการ Repair With Epoxy Resin ใช้ในการซ่อมแซมรอยรั่วทั่วไปที่มีความกว้างตั้งแต่ 0.3mm. ถึง 0.5mm. และมีความลึกมากกว่า 15mm. แต่ไม่ถึงเหล็กเสริม โดยวิธีการนี้จะใช้วัสดุอีฟอกซิไรซีน ซึ่งมีลักษณะเป็นของเหลวที่มีความหนืดดำ สามารถซึมผ่านช่องรอยรั่วที่มีขนาดเล็กได้ดี มีกำลังอัด และแรงยึดเกาะที่สูงกว่าคอนกรีต รวมถึงมีคุณสมบัติด้านทานการซึมผ่านของน้ำและไม่มีการหดตัว",
+          "bbox": null
+        },
+        {
+          "id": "e_20_4",
+          "type": "image",
+          "description": "img-21.jpeg",
+          "doc_path": "images/p20_img-21.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_20_5",
+          "type": "image",
+          "description": "img-22.jpeg",
+          "doc_path": "images/p20_img-22.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_20_6",
+          "type": "text",
+          "text_content": "รูปที่ 1 แสดงการวัดความกว้างของรอยรั่วโดยใช้ Crack Width Indicator\nDocument No.\nRP-TN-02\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n1 of 8\n16",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-21.jpeg",
+          "file_path": "images/p20_img-21.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-22.jpeg",
+          "file_path": "images/p20_img-22.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 21,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_21_1",
+          "type": "text",
+          "text_content": "1704\nบริษัท จิโน-ไลน์ เล็บที่มีนวั่ง และเล็งทะเลอิเล็ก จำกัด (สหกรณ์)\n5000 THAI FOURTH AVE. COMUNICATED POWER COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_21_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "1. อุปกรณ์ที่ใช้ในการซ่อมแซม",
+          "bbox": null
+        },
+        {
+          "id": "e_21_3",
+          "type": "text",
+          "text_content": "1.1 เครื่องเป่าลม\n1.2 เกรียง\n1.3 ฟองน้ำหรือลูกกลิ้ง\n1.4 เครื่องตัดและใบตัดคอนกรีต\n1.5 กระดาษทราย\n1.6 ภาชนะใส่วัสดุซ่อม",
+          "bbox": null
+        },
+        {
+          "id": "e_21_4",
+          "type": "heading",
+          "level": 1,
+          "text_content": "2. วัสดุที่ใช้ในการซ่อมแซม",
+          "bbox": null
+        },
+        {
+          "id": "e_21_5",
+          "type": "text",
+          "text_content": "2.1 อิพิอกซี่สำหรับซ่อมแซมรอยร้าวที่เสนอขออนุมัติใช้ดังนี้\n[tbl-13.html](tables/tbl-13.html.html)",
+          "bbox": null
+        },
+        {
+          "id": "e_21_6",
+          "type": "image",
+          "description": "img-23.jpeg",
+          "doc_path": "images/p21_img-23.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_21_7",
+          "type": "image",
+          "description": "img-24.jpeg",
+          "doc_path": "images/p21_img-24.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_21_8",
+          "type": "text",
+          "text_content": "รูปที่ 2 แสดงวัสดุอิทธิอกรีตที่ใช้ในการซ่อมแซมรอยร้าว\nDocument No.\nRP-TN-02\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n2 of 8",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-23.jpeg",
+          "file_path": "images/p21_img-23.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-24.jpeg",
+          "file_path": "images/p21_img-24.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 22,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_22_1",
+          "type": "text",
+          "text_content": "T100D\nบริษัท ซีด-ไทย เล่มที่เกี่ยวข้องกับอุตสาหกรรมต่างๆ\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_22_2",
+          "type": "heading",
+          "level": 2,
+          "text_content": "2.2 ปูนฉาบซ่อมที่ใช้ในโครงการดังนี้",
+          "bbox": null
+        },
+        {
+          "id": "e_22_3",
+          "type": "text",
+          "text_content": "[tbl-14.html](tables/tbl-14.html.html)",
+          "bbox": null
+        },
+        {
+          "id": "e_22_4",
+          "type": "image",
+          "description": "img-25.jpeg",
+          "doc_path": "images/p22_img-25.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_22_5",
+          "type": "image",
+          "description": "img-26.jpeg",
+          "doc_path": "images/p22_img-26.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_22_6",
+          "type": "image",
+          "description": "img-27.jpeg",
+          "doc_path": "images/p22_img-27.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_22_7",
+          "type": "image",
+          "description": "img-28.jpeg",
+          "doc_path": "images/p22_img-28.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_22_8",
+          "type": "image",
+          "description": "img-29.jpeg",
+          "doc_path": "images/p22_img-29.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_22_9",
+          "type": "text",
+          "text_content": "รูปที่ 3 แสดงวัสดุฉาบที่ใช้ในการซ่อมแซมตัว\nDocument No.\nRP-TN-02\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n3 of 8",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-25.jpeg",
+          "file_path": "images/p22_img-25.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-26.jpeg",
+          "file_path": "images/p22_img-26.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-27.jpeg",
+          "file_path": "images/p22_img-27.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-28.jpeg",
+          "file_path": "images/p22_img-28.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-29.jpeg",
+          "file_path": "images/p22_img-29.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 23,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_23_1",
+          "type": "text",
+          "text_content": "บริษัท จีโน ไดร้ ปรับใช้ในการจัดทำและการจัดทำ จำกัด (สหกรณ์)\nWHO THE FINGINTHING &amp; COUNTING FROM PUBLIC COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_23_2",
+          "type": "heading",
+          "level": 2,
+          "text_content": "3. ขั้นตอนในการซ่อมแซม",
+          "bbox": null
+        },
+        {
+          "id": "e_23_3",
+          "type": "heading",
+          "level": 3,
+          "text_content": "3.1 ใช้เครื่องตัดคอนกรีตเซาะร่องตามแนวรอยรั่ว โดยให้ร่องมีลักษณะคล้ายตัว V ให้บริเวณปากร่องมีความกว้าง 3-5 mm. โดยประมาณ",
+          "bbox": null
+        },
+        {
+          "id": "e_23_4",
+          "type": "image",
+          "description": "img-30.jpeg",
+          "doc_path": "images/p23_img-30.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_23_5",
+          "type": "text",
+          "text_content": "รูปที่ 4 แสดงการเซาะร่องตามแนวรอยรั่ว",
+          "bbox": null
+        },
+        {
+          "id": "e_23_6",
+          "type": "heading",
+          "level": 3,
+          "text_content": "3.2 ทำความสะอาดผิวคอนกรีตแล้วใช้เครื่องเป่าลมเป่าผิวคอนกรีต บริเวณที่จะทำการซ่อมแซมจะต้องปราศจากฝุ่น เศษวัสดุ หรือคราบน้ำมัน",
+          "bbox": null
+        },
+        {
+          "id": "e_23_7",
+          "type": "image",
+          "description": "img-31.jpeg",
+          "doc_path": "images/p23_img-31.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_23_8",
+          "type": "text",
+          "text_content": "รูปที่ 5 แสดงการทำความสะอาดรอยรั่วเพื่อเตรียมซ่อมแซม\nDocument No.\nRP-TN-02\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n4 of 8\n19",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-30.jpeg",
+          "file_path": "images/p23_img-30.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-31.jpeg",
+          "file_path": "images/p23_img-31.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 24,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_24_1",
+          "type": "text",
+          "text_content": "VITRO\nบริษัท อัตราโดย เล็บที่เพิ่มขึ้น ตอนนี้ ตอนนี้จะใช้ชั้น จำกัด (สหกรณ์)\nVOID THEY PROBABLY ARE A CONFIRMATION FOR IT COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER\n3.3 ทำแนวตั้งแนวทางกับแนวรอยข้าวทั้ง 2 ทั้ง ห่างจากรอยข้าวทั้งละ 5mm. โดยประมาณ เพื่อไม่ให้วัสดุซ่อมโคนผิวคอนกรีตส่วนอื่น",
+          "bbox": null
+        },
+        {
+          "id": "e_24_2",
+          "type": "image",
+          "description": "img-32.jpeg",
+          "doc_path": "images/p24_img-32.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_24_3",
+          "type": "text",
+          "text_content": "รูปที่ 6 แสดงการทำแนวตั้งรอยข้าว\n3.4 หยอดวัสดุซ่อมอิพ็อกซี่เรซิ่นที่ผสมตามอัตราส่วนข้างต้นลงในร่องตามแนวรอยข้าว โดยเริ่มจากริมทั้งใดทั้งหนึ่งของรอยข้าว หลังจากหยอดวัสดุซ่อมลงไปแล้วให้สังเกตุว่า วัสดุซ่อมมีระดับลดลงหรือไม่ หากพบว่ามีระดับลดลงจะต้องหยอดเพิ่มจนกว่าจะแน่ใจว่า วัสดุซ่อมเต็มรอยข้าวแล้ว",
+          "bbox": null
+        },
+        {
+          "id": "e_24_4",
+          "type": "image",
+          "description": "img-33.jpeg",
+          "doc_path": "images/p24_img-33.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_24_5",
+          "type": "text",
+          "text_content": "รูปที่ 7 แสดงการหยอดอิพ็อกซี่เรซิ่นลงในร่อง\nDocument No.\nRP-TN-02\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n5 of 8",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-32.jpeg",
+          "file_path": "images/p24_img-32.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-33.jpeg",
+          "file_path": "images/p24_img-33.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 25,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_25_1",
+          "type": "text",
+          "text_content": "STVOCH\nบริษัท ซีน-ไทย เข้มข้นข้าว แกงเล็ก แกงสัตว์ รากี (เกรด)\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER\n3.5 หลังจากวัสดุซ่อมเซลตั๋วแล้วให้เอาแนวกั้นออก แล้วทำความสะอาดผิวคอนกรีตบริเวณ นั้นเพื่อเตรียมการตกแต่งผิว",
+          "bbox": null
+        },
+        {
+          "id": "e_25_2",
+          "type": "image",
+          "description": "img-34.jpeg",
+          "doc_path": "images/p25_img-34.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_25_3",
+          "type": "text",
+          "text_content": "รูปที่ 8 แสดงรอยร้าวที่หยอดวัสดุซ่อมแล้ว\n3.6 ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น ฉาบทับรอยร้าวที่ได้รับการซ่อมแซมแล้ว",
+          "bbox": null
+        },
+        {
+          "id": "e_25_4",
+          "type": "image",
+          "description": "img-35.jpeg",
+          "doc_path": "images/p25_img-35.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_25_5",
+          "type": "text",
+          "text_content": "รูปที่ 9 แสดงการฉาบทับรอยร้าว\n[tbl-15.html](tables/tbl-15.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-34.jpeg",
+          "file_path": "images/p25_img-34.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-35.jpeg",
+          "file_path": "images/p25_img-35.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 26,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_26_1",
+          "type": "text",
+          "text_content": "บริษัท จีน-ไทย เข้มจีนั่นจำ ตอนที่ ตอนฉะเหิน ม. จ.จ. (มหาชน)\nSINO-THAI ENGLISHING &amp; CONSTRUCTION POWER COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER\n3.7 หลังจากปูนฉาบแห้ง ใช้กระดาษทรายขัดบริเวณที่ได้ทำการฉาบให้มีผิวเรียบเสมอกับผิวคอนกรีตบริเวณอื่น",
+          "bbox": null
+        },
+        {
+          "id": "e_26_2",
+          "type": "image",
+          "description": "img-36.jpeg",
+          "doc_path": "images/p26_img-36.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_26_3",
+          "type": "text",
+          "text_content": "รูปที่ 10 แสดงการขัดผิวคอนกรีตหลังจากปูนฉาบแห้งแล้ว\n3.8 ผสมปูนฉาบซ่อมให้เหลว ใช้ฟองน้ำหรือลูกกลิ้งชุบแล้วลูบที่ผิวคอนกรีต เพื่อให้ผิวคอนกรีตมีสีสม่ำเสมอ",
+          "bbox": null
+        },
+        {
+          "id": "e_26_4",
+          "type": "image",
+          "description": "img-37.jpeg",
+          "doc_path": "images/p26_img-37.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_26_5",
+          "type": "text",
+          "text_content": "รูปที่ 11 แสดงการดูดผิวคอนกรีตด้วยน้ำปูนเพื่อให้มีสีผิวสม่ำเสมอ\nDocument No.\nRP-TN-02\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n7 of 8\n22",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-36.jpeg",
+          "file_path": "images/p26_img-36.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-37.jpeg",
+          "file_path": "images/p26_img-37.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 27,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_27_1",
+          "type": "text",
+          "text_content": "บริษัท วิธีการดิจิทัล เรื่องรู้เรื่องนี้ และเทคโนโลยีที่ดีที่สุด\n5910-THAI ENGINEERING &amp; CONSTRUCTION POWER COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_27_2",
+          "type": "heading",
+          "level": 2,
+          "text_content": "3.9 หลังจากน้ำปูนแห้งแล้วตรวจสอบรอยร้าวอีกครั้งโดยละเอียด",
+          "bbox": null
+        },
+        {
+          "id": "e_27_3",
+          "type": "image",
+          "description": "img-38.jpeg",
+          "doc_path": "images/p27_img-38.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_27_4",
+          "type": "text",
+          "text_content": "รูปที่ 12 แสดงผิวคอนกรีตหลังการซ่อมแซม\nDocument No.\nRP-TN-02\nRelease/Amendment\nIssue 2\nDate : 20/6/2017\nPage No.\n8 of 8\n23",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-38.jpeg",
+          "file_path": "images/p27_img-38.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 28,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_28_1",
+          "type": "text",
+          "text_content": "VITAMIN\nบริษัท วิธีแวดล้อม เลือกอิเล็กทรอนิกส์ คอมพิวเตอร์\nSony-TiSa Pneuvermics &amp; Coordination Team, CompuHertford\nRP-TN-03",
+          "bbox": null
+        },
+        {
+          "id": "e_28_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "SPALLING EDGE REPAIR",
+          "bbox": null
+        },
+        {
+          "id": "e_28_3",
+          "type": "text",
+          "text_content": "PROJECT : SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER\n24",
+          "bbox": null
+        }
+      ],
+      "images": []
+    },
+    {
+      "page_num": 29,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_29_1",
+          "type": "text",
+          "text_content": "LYDRO\nบริษัท พิธา-โภว เอ็นจิเนียริ่ง แอปตี้ ทอทอ.จ.รักสั่น จำกัด (จบการ)\n5000-1144 ENGINEERING &amp; CONSTRUCTION PUBLIC COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_29_2",
+          "type": "heading",
+          "level": 1,
+          "text_content": "RP-TN-03 (Spalling Repair With Cementitious Mortar)",
+          "bbox": null
+        },
+        {
+          "id": "e_29_3",
+          "type": "text",
+          "text_content": "ขึ้นงานที่แตกปั่นที่สามารถซ่อมแซมได้ขนาดของความเสียหายจะต้องไม่เกินที่กำหนดไว้ใน TB-RP-01 (Guideline For Repair)\nในส่วนของวัสดุที่ใช้ซ่อมแซมนั้นจะต้องใช้มอร์ดาร์ที่มีกำลังอัดสูงกว่า 400 ksc และมีการหดตัวน้อย รวมทั้งต้องใช้น้ำยาประสานคอนกรีตในการซ่อมแซม",
+          "bbox": null
+        },
+        {
+          "id": "e_29_4",
+          "type": "image",
+          "description": "img-39.jpeg",
+          "doc_path": "images/p29_img-39.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_29_5",
+          "type": "text",
+          "text_content": "รูปที่ 1 แสดงขนาดรอยปั่นแตก",
+          "bbox": null
+        },
+        {
+          "id": "e_29_6",
+          "type": "heading",
+          "level": 2,
+          "text_content": "1. อุปกรณ์ที่ใช้ในการซ่อมแซม",
+          "bbox": null
+        },
+        {
+          "id": "e_29_7",
+          "type": "text",
+          "text_content": "1.1 เครื่องเป่าลม\n1.2 เกรียง\n1.3 ฟองน้ำหรือลูกกลิ้ง\n1.4 กระดาษทรายหรือเครื่องขัดผิวคอนกรีต\n1.5 ภาชนะใส่วัสดุซ่อม\n1.6 เครื่องตัดและใบตัดคอนกรีต\n[tbl-16.html](tables/tbl-16.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-39.jpeg",
+          "file_path": "images/p29_img-39.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 30,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_30_1",
+          "type": "text",
+          "text_content": "26\nหน้าที่ 96 หน้า 100 เสียเงินสร้าง และค่าตอบแทนที่จะ จำกัด (สหกรณ์)\n2017-2018 2018-2019 2018-2019 2018-2019\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_30_2",
+          "type": "heading",
+          "level": 2,
+          "text_content": "2. วัสดุที่ใช้ในการซ่อมแซม",
+          "bbox": null
+        },
+        {
+          "id": "e_30_3",
+          "type": "heading",
+          "level": 3,
+          "text_content": "2.1 วัสดุเชื่อมประสานคอนกรีตที่เสนอขออนุมัติใช้ดังนี้",
+          "bbox": null
+        },
+        {
+          "id": "e_30_4",
+          "type": "text",
+          "text_content": "-Sikadur 32 TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก",
+          "bbox": null
+        },
+        {
+          "id": "e_30_5",
+          "type": "image",
+          "description": "img-40.jpeg",
+          "doc_path": "images/p30_img-40.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_30_6",
+          "type": "text",
+          "text_content": "รูปที่ 2 แสดงวัสดุเชื่อมประสานคอนกรีตที่ใช้ในการซ่อมแซม",
+          "bbox": null
+        },
+        {
+          "id": "e_30_7",
+          "type": "heading",
+          "level": 3,
+          "text_content": "2.2 อิพอกซึมอรัดไฟฟ้าสนอขออนุมัติใช้ดังนี้",
+          "bbox": null
+        },
+        {
+          "id": "e_30_8",
+          "type": "text",
+          "text_content": "[tbl-17.html](tables/tbl-17.html.html)\n[tbl-18.html](tables/tbl-18.html.html)",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-40.jpeg",
+          "file_path": "images/p30_img-40.jpg",
+          "format": "jpg"
+        }
+      ]
+    },
+    {
+      "page_num": 31,
+      "size": {
+        "width": null,
+        "height": null
+      },
+      "elements": [
+        {
+          "id": "e_31_1",
+          "type": "text",
+          "text_content": "TUNNEL\nบริษัท ซีบา โดย เล็บจีบีนวั่ง แผนที่ พนมมะวัตถุใด จำกัด (ทบ.ทด)\nSOFT THEATRE INSTRUMENTS CONSERVATIVE TO THE POWER COMPANY LIMITED\nProject : SEWERAGE TUNNEL BUNG NONG BON\nTO CHAOPHRAYA RIVER",
+          "bbox": null
+        },
+        {
+          "id": "e_31_2",
+          "type": "image",
+          "description": "img-41.jpeg",
+          "doc_path": "images/p31_img-41.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_31_3",
+          "type": "image",
+          "description": "img-42.jpeg",
+          "doc_path": "images/p31_img-42.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_31_4",
+          "type": "text",
+          "text_content": "รูปที่ 3 แสดงวัสดุที่ใช้ในการซ่อมรอยแตกบิ่น",
+          "bbox": null
+        },
+        {
+          "id": "e_31_5",
+          "type": "heading",
+          "level": 2,
+          "text_content": "2.3 ปูนฉาบซ่อมที่ใช้ในโครงการ",
+          "bbox": null
+        },
+        {
+          "id": "e_31_6",
+          "type": "text",
+          "text_content": "[tbl-19.html](tables/tbl-19.html.html)",
+          "bbox": null
+        },
+        {
+          "id": "e_31_7",
+          "type": "image",
+          "description": "img-43.jpeg",
+          "doc_path": "images/p31_img-43.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_31_8",
+          "type": "image",
+          "description": "img-44.jpeg",
+          "doc_path": "images/p31_img-44.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_31_9",
+          "type": "image",
+          "description": "img-45.jpeg",
+          "doc_path": "images/p31_img-45.jpg",
+          "bbox": null
+        },
+        {
+          "id": "e_31_10",
+          "type": "text",
+          "text_content": "Document No.\nRP-TN-03\nRelease/Amendment\nIssue 2 Date : 20/6/2017\nPage No.\n3 of 7\n27",
+          "bbox": null
+        }
+      ],
+      "images": [
+        {
+          "id": "img-41.jpeg",
+          "file_path": "images/p31_img-41.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-42.jpeg",
+          "file_path": "images/p31_img-42.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-43.jpeg",
+          "file_path": "images/p31_img-43.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-44.jpeg",
+          "file_path": "images/p31_img-44.jpg",
+          "format": "jpg"
+        },
+        {
+          "id": "img-45.jpeg",
+          "file_path": "images/p31_img-45.jpg",
+          "format": "jpg"
+        }
+      ]
+    }
+  ]
+}
