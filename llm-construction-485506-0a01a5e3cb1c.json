@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "llm-construction-485506",
+  "private_key_id": "0a01a5e3cb1cd234e707b991b78195b489ce2942",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDAMJlEp9gYIA2k\n+Bu6Lp0HHeMrQ27F4rulCcUoahYCxPWrZlJW+gbzwMRU0y388Dij/7oJym/0Khjs\nftMkl819NNaCgAW+VRWPUzlm6WA7wSdyRYTrNJQwmIuXUVNp8vdiTp7YF2vSoAqp\ntzcuSVuBmEFY2fYohhsLkpkEg2s1m9c6dH5GIfrSKkxMw1aZEeDzzK802WSh4TQp\nAsKGKVT81VJm6CbSF4SRNUxu7HswXzmGHOFuuPA4QXBUjZwOiKciqYU75NUZUKoP\nsaeSfl9YLvKnPJiJQawW29GhGYgkxXF1szw4eQ+nSMGK0L+kpB939VTbbDyPWDMQ\nHDnrtimhAgMBAAECggEAGGtUXhPRcidIdIiNxVc83nWespWL0prfarXWFi98gneS\nG2gR2DlGftwkVf7LHhNLrxLECZBuLyDWL95hZ4neMyVuiABKOofHCIHzji7i6lS9\ndVh97gCtP4tyWRSdO54Cbrw8lIpNSeLJ2AyOd1Qcy1eUHfz7uORpNUw4IwmrqpDd\nJvQo9VLmBCG4yQfVW0YK0FBahk/Uz4b7ryQLzB25OIoAPj3gTi6Vjw8xTQHeVLDy\nNcKuIMk6Zsrkh3G8qx0dkGAubMmytGeClYXTS4J81cTRN042O/7z4q006azpQLy7\nfgoeBZIJx5v8v+nRWH1iAaF8PnVZIHvqeC2BxinEjQKBgQDehNwJvNxFczfKCzcU\nv5QYMs1LwxvDZ+VDDksj7ujI+B390x1jqW0R0FQH4xxZCjPb0hHvWgjySoZGDmUi\nx+sHX283G/4ye+1F3mgTEdpTUAWZk77GTC4sz8sOHT06jdldCBft/GOQ7VTPR+5b\nBtw8vWUGE/KLKR8tM4d0R2FXKwKBgQDdG4AMNYgiaqsn8I0Dj2sW7F8RF9YRJu36\nUtUK9MnGZFoXqtCt0jgHiBLoP5hS5BAJyG3R2PExXJUoDNgjSo65M/i0eGBlAH+N\netf9LGFDBhzGPfc1z1jrWhfBTiBm3xPLDP4FSlD5AOpvg0Y1clFqjXK0qhjlFYUl\nGBH9wjpcYwKBgE+RvMkyoqWnBL0X85NUylU43VaJJ0VhwoaO9umbhdxPdRINywWX\nUSw8jb/gQ4PHdTHW1Zj8XhSd95PXk+yzBmU1iCRxux08WWVRmW+wQ5zlEYuQXHi2\nRxC5IUgjxoBItwBgY4YzaTsq0tfoReCA/IIvy4831NRUWRSlx3saB0HPAoGASC92\nOoYvj6zre/qYzxS/jZhV4Sq7BJaFEzh/vTf1uAODNj7aKiV7jVnrck9w138FjWwW\nDnCZLdhgCddHqR3qQqSpCaJTNiZXfkUgxtL6Xftc4YvRbYvoJ84d+0oaYftqZtwz\nAl8k2GZoI0fkYAaWdgb/7+OohQHlmhqlpQcILqkCgYBRWzF9Vrh3n5NVM9W9cHjj\nsUNpwibgschMrmPSapm15oH8hK8S/91y17gD4jEjbIfY4BjhuMP28d9Vre6f/5IB\nV6jrAY+6DxUiyXtHQ8hBIKX5ZBWIwjVe9Lj54AYoe8U3qYVtWt0jAkqEU13uIXtf\nWCQHzQOCsUNdDOMaQSL1FA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ocrservice@llm-construction-485506.iam.gserviceaccount.com",
+  "client_id": "100837225632969108985",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ocrservice%40llm-construction-485506.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
