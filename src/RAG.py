@@ -16,6 +16,8 @@ Required environment variable:
     GOOGLE_API_KEY or GEMINI_API_KEY (for Gemini answer generation)
 """
 
+# python src/RAG.py --docs dataset_json --query "วิธีซ่อมโพรกาศคืออะไร"
+# python src/RAG.py --docs dataset_json --qa-csv tablev2/QA_test.csv --output-csv tablev2/QA_test_predicted.csv
 from __future__ import annotations
 
 import argparse
@@ -28,6 +30,7 @@ import time
 from pathlib import Path
 from typing import Any, Iterable
 
+import pandas as pd
 from langchain_core.documents import Document
 from langchain_core.embeddings import Embeddings
 from langchain_community.vectorstores import FAISS
@@ -89,7 +92,7 @@ class RAGFlow:
         chunk_size: int = 1000,
         chunk_overlap: int = 150,
         gemini_model: str = "gemini-3-pro-preview",
-        gemini_api_key: str | None = "AIzaSyAmM8ChHo9VR-th73uwdgyORRpGj-JzFZ0",
+        gemini_api_key: str | None = None,
         top_k_each: int = 8,
         top_k_fused: int = 8,
         rrf_k: int = 60,
@@ -376,6 +379,160 @@ class RAGFlow:
 
         raise RuntimeError(last_error or "Gemini generation failed")
 
+    @staticmethod
+    def _extract_json_object(text: str) -> dict[str, Any] | None:
+        fenced = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip(), flags=re.IGNORECASE)
+        match = re.search(r"\{.*?\}", fenced, flags=re.DOTALL)
+        if not match:
+            return None
+        try:
+            return json.loads(match.group(0))
+        except json.JSONDecodeError:
+            return None
+
+    @staticmethod
+    def _extract_labeled_fields(text: str) -> dict[str, str]:
+        cleaned = re.sub(r"^```(?:json|text)?\s*|\s*```$", "", text.strip(), flags=re.IGNORECASE)
+
+        def capture(pattern: str) -> str:
+            match = re.search(pattern, cleaned, flags=re.IGNORECASE | re.DOTALL)
+            return match.group(1).strip() if match else ""
+
+        answer_value = capture(r"Answer\s*:\s*(.*?)(?:\n\s*Page\s*:|\Z)")
+        return {
+            "Rainbow Group": capture(r"Rainbow Group\s*:\s*(.+)") or capture(r"Rainbow_Group\s*:\s*(.+)"),
+            "Category": capture(r"Category\s*:\s*(.+)"),
+            "Answer": answer_value,
+            "Page": capture(r"Page\s*:\s*(.+)") or capture(r"Reference Page\s*:\s*(.+)"),
+        }
+
+    @staticmethod
+    def _extract_page_from_source(source: str) -> str:
+        match = re.search(r"page[_-]?(\d+)", source, flags=re.IGNORECASE)
+        return match.group(1) if match else ""
+
+    @staticmethod
+    def _infer_category(question: str, answer: str) -> str:
+        text = f"{question} {answer}".lower()
+        if any(token in text for token in ["risk", "safety", "อันตราย", "ปฐมพยาบาล", "chemical", "สารเคมี"]):
+            return "Human Risk"
+        if any(token in text for token in ["environment", "preventive", "สิ่งแวดล้อม", "คุณภาพน้ำ", "คุณภาพดิน", "ดับเพลิง"]):
+            return "Environmental / Preventive Measures"
+        if any(token in text for token in ["material", "mixing ratio", "potlife", "compressive strength", "วัสดุ", "อัตราส่วนผสม", "กำลังอัด"]):
+            return "Material"
+        if any(token in text for token in ["repair", "crack", "spalling", "blowholes", "voids", "ซ่อม", "รอยร้าว", "แตกบิ่น", "โพรง", "ฟองอากาศ"]):
+            return "Repair Method"
+        return "General / Admin"
+
+    @staticmethod
+    def _infer_rainbow_group(category: str) -> str:
+        if category in {
+            "Repair Method",
+            "Material",
+            "Human Risk",
+            "Environmental / Preventive Measures",
+        }:
+            return "Construction-Related"
+        return "Non-Construction Questions"
+
+    @staticmethod
+    def _normalize_prediction_payload(
+        payload: dict[str, Any],
+        raw_answer: str,
+        question: str,
+        fallback_page: str,
+    ) -> dict[str, str]:
+        def get_value(*keys: str) -> str:
+            for key in keys:
+                if key in payload and payload[key] is not None:
+                    return str(payload[key]).strip()
+            return ""
+
+        category = get_value("Category", "category")
+        if not category:
+            category = RAGFlow._infer_category(question, raw_answer)
+
+        rainbow_group = get_value("Rainbow Group", "rainbow_group")
+        if not rainbow_group:
+            rainbow_group = RAGFlow._infer_rainbow_group(category)
+
+        answer = get_value("Answer", "answer") or raw_answer.strip() or "unknown"
+        page = get_value("Page", "page", "Reference Page", "reference_page") or fallback_page or "unknown"
+
+        return {
+            "predicted_Rainbow Group": rainbow_group,
+            "predicted_Category": category,
+            "predicted_Answer": answer,
+            "predicted_Page": page,
+        }
+
+    def predict_expected_columns(self, question: str) -> dict[str, Any]:
+        keyword_rank = self._keyword_retrieval(question, top_k=self.top_k_each)
+        fulltext_rank = self._full_text_retrieval(question, top_k=self.top_k_each)
+        vector_rank = self._vector_retrieval(question, top_k=self.top_k_each)
+
+        fused_ids = self._rrf_fusion(
+            [keyword_rank, fulltext_rank, vector_rank],
+            top_k=self.top_k_fused,
+        )
+        context, images, tables = self._build_context(fused_ids)
+
+        prompt = (
+            "You are an expert civil engineering QA assistant specialized in the document 'Method for Repairing Tunnel Segment'.\n"
+            "Use only the retrieved context.\n"
+            "Classify and answer the question using this schema exactly.\n"
+            "Return either valid JSON or these exact labeled lines:\n"
+            "Rainbow Group: ...\n"
+            "Category: ...\n"
+            "Answer: ...\n"
+            "Page: ...\n"
+            "Rainbow Group must be either 'Construction-Related' or 'Non-Construction Questions'.\n"
+            "Category should match the document taxonomy when possible.\n"
+            "Page should be the exact reference page number if available, else empty string.\n\n"
+            f"Question: {question}\n\n"
+            f"Retrieved context:\n{context}\n"
+        )
+
+        answer_model = ""
+        raw_answer = ""
+        parsed: dict[str, Any] | None = None
+        try:
+            raw_answer, answer_model = self._generate_with_gemini(prompt)
+            parsed = self._extract_json_object(raw_answer)
+            if parsed is None:
+                parsed = self._extract_labeled_fields(raw_answer)
+        except Exception as exc:
+            err_text = str(exc)
+            if "RESOURCE_EXHAUSTED" in err_text or "RATE_LIMIT_EXCEEDED" in err_text or "429" in err_text:
+                raw_answer = self._extractive_fallback_answer(question, context)
+                answer_model = "extractive-fallback"
+            else:
+                raise
+
+        fallback_page = ""
+        for doc_idx in fused_ids:
+            fallback_page = self._extract_page_from_source(str(self.documents[doc_idx].metadata.get("source", "")))
+            if fallback_page:
+                break
+
+        predictions = self._normalize_prediction_payload(
+            parsed or {},
+            raw_answer,
+            question,
+            fallback_page,
+        )
+        return {
+            "question": question,
+            "answer_model": answer_model,
+            "raw_answer": raw_answer,
+            "predictions": predictions,
+            "query_results": {
+                "text_context": context,
+                "images": images,
+                "tables": tables,
+            },
+        }
+
     def ask(self, query: str) -> dict[str, Any]:
         keyword_rank = self._keyword_retrieval(query, top_k=self.top_k_each)
         fulltext_rank = self._full_text_retrieval(query, top_k=self.top_k_each)
@@ -431,6 +588,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run RAG flow with RRF fusion.")
     parser.add_argument("--docs", required=True, help="Directory containing source docs.")
     parser.add_argument("--query", default=None, help="User question.")
+    parser.add_argument("--qa-csv", default=None, help="CSV file containing Question and expected columns.")
+    parser.add_argument("--output-csv", default=None, help="Output CSV path for batch predictions.")
+    parser.add_argument("--question-col", default="Question", help="Question column name in --qa-csv.")
     parser.add_argument(
         "--extensions",
         nargs="+",
@@ -455,10 +615,6 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    query = args.query or DEFAULT_QUERY
-    if not query:
-        raise ValueError("Provide --query or set DEFAULT_QUERY in src/RAG.py")
-
     rag = RAGFlow(
         documents_dir=args.docs,
         extensions=args.extensions,
@@ -470,6 +626,63 @@ def main() -> None:
         top_k_fused=args.top_k_fused,
         rrf_k=args.rrf_k,
     )
+
+    if args.qa_csv:
+        qa_csv_path = Path(args.qa_csv)
+        if not qa_csv_path.exists():
+            raise FileNotFoundError(f"QA CSV not found: {qa_csv_path}")
+
+        frame = pd.read_csv(qa_csv_path)
+        if args.question_col not in frame.columns:
+            raise ValueError(
+                f"Question column '{args.question_col}' not found in {qa_csv_path}. Columns: {list(frame.columns)}"
+            )
+
+        predicted_rainbow_group: list[str] = []
+        predicted_category: list[str] = []
+        predicted_answer: list[str] = []
+        predicted_page: list[str] = []
+        predicted_model: list[str] = []
+        predicted_raw_answer: list[str] = []
+
+        for idx, row in frame.iterrows():
+            question = str(row[args.question_col]).strip()
+            if not question:
+                predicted_rainbow_group.append("")
+                predicted_category.append("")
+                predicted_answer.append("")
+                predicted_page.append("")
+                predicted_model.append("")
+                predicted_raw_answer.append("")
+                continue
+
+            prediction = rag.predict_expected_columns(question)
+            predicted_rainbow_group.append(prediction["predictions"]["predicted_Rainbow Group"])
+            predicted_category.append(prediction["predictions"]["predicted_Category"])
+            predicted_answer.append(prediction["predictions"]["predicted_Answer"])
+            predicted_page.append(prediction["predictions"]["predicted_Page"])
+            predicted_model.append(prediction["answer_model"])
+            predicted_raw_answer.append(prediction["raw_answer"])
+            print(f"Processed row {idx + 1}/{len(frame)}")
+
+        frame["predicted_Rainbow Group"] = predicted_rainbow_group
+        frame["predicted_Category"] = predicted_category
+        frame["predicted_Answer"] = predicted_answer
+        frame["predicted_Page"] = predicted_page
+        frame["predicted_answer_model"] = predicted_model
+        frame["predicted_raw_answer"] = predicted_raw_answer
+
+        output_csv = Path(args.output_csv) if args.output_csv else qa_csv_path.with_name(
+            f"{qa_csv_path.stem}_predicted{qa_csv_path.suffix}"
+        )
+        frame.to_csv(output_csv, index=False, encoding="utf-8-sig")
+        print(f"Saved predictions to: {output_csv}")
+        return
+
+    query = args.query or DEFAULT_QUERY
+    if not query:
+        raise ValueError("Provide --query or set DEFAULT_QUERY in src/RAG.py, or use --qa-csv")
+
     result = rag.ask(query)
 
     print("\n=== Retrieval (RRF) ===")

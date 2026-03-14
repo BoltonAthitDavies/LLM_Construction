@@ -1,0 +1,3569 @@
+﻿Rainbow Group,Category,Question,Answer,Page,predicted_Rainbow Group,predicted_Category,predicted_Answer,predicted_Page,predicted_answer_model,predicted_raw_answer
+ Construction-Related, Repair Method,เกณฑ์การซ่อมแซมรอยร้าว (Crack Repair) สำหรับรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar คืออะไร,ต้องมีความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3) และมีความลึกมากกว่า 15 มม.,3,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+a.Hard Crack
+Table1 Guideline for Crack Repair
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+B.
+TYPICAL INJECTION
+Crack
+depth
+1.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_7.json
+STECON
+บวิชา โน-ไทย เ คีเนียชิ่ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+Project: SEWERAGE TUNNEL BUNG NONG BON
+SING THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED
+TO CHAOPHRAYA RIVER
+ตารางแสดงวัสดุที่ใช้ซ่อมแซมความเสียหายประเภทต่างๆ
+ประเภทของวัสดุซ่อมแซม
+ประเภท
+วิธีการ
+ความ
+Method
+Reference | ปูนฉาบ | ปูนฉาบ
+ซ่อม
+อพอก
+อีพ็อกซี่
+วัสดุ
+ซ่อม
+ซเรซน มอรตาร เชอม
+เชื่อม
+เสียหาย
+ซ่อมแซม
+กำลังอัด
+ประสาน
+สูง
+คอนกรีต
+Repair with
+Cementitious
+RP-TN-01
+Crack
+Mortar
+Repair with
+RE-TN-02
+Epoxy Resin
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Edge
+Mortar
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Recesses
+Mortar
+Repair with
+Voids or
+Cementitious
+RP-TN-04
+Blowholes
+Mortar
+Repair with High
+RP-TN-05
+Strength Mortar
+Document No.
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\2_Repair_With_Cementitious_Mortar\page_10.json
+[
+STECON
+บริษัท ชิน ไทย จีเนียริ่ง แอนด์ คอนสตรัค น จํากัด (มหาชน)
+SING THAI ENGINEERING CONSTRUC FIOS PUBLII COMPANY LISTED
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+© RP-TN-01 (Crack Repair With Cementitious Mortar)
+[
+วิธีการ Repair With Cementitious Mortar ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้าง
+มากกว่า 0.1mm.
+As repair and bonding mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar:
+Filling of cavities and voids
+Vertical and overhead use
+As an abrasion and impact resistant wearing course.",7,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+a.Hard Crack
+Table1 Guideline for Crack Repair
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+B.
+TYPICAL INJECTION
+Crack
+depth
+1.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_7.json
+STECON
+บวิชา โน-ไทย เ คีเนียชิ่ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+Project: SEWERAGE TUNNEL BUNG NONG BON
+SING THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED
+TO CHAOPHRAYA RIVER
+ตารางแสดงวัสดุที่ใช้ซ่อมแซมความเสียหายประเภทต่างๆ
+ประเภทของวัสดุซ่อมแซม
+ประเภท
+วิธีการ
+ความ
+Method
+Reference | ปูนฉาบ | ปูนฉาบ
+ซ่อม
+อพอก
+อีพ็อกซี่
+วัสดุ
+ซ่อม
+ซเรซน มอรตาร เชอม
+เชื่อม
+เสียหาย
+ซ่อมแซม
+กำลังอัด
+ประสาน
+สูง
+คอนกรีต
+Repair with
+Cementitious
+RP-TN-01
+Crack
+Mortar
+Repair with
+RE-TN-02
+Epoxy Resin
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Edge
+Mortar
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Recesses
+Mortar
+Repair with
+Voids or
+Cementitious
+RP-TN-04
+Blowholes
+Mortar
+Repair with High
+RP-TN-05
+Strength Mortar
+Document No.
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\2_Repair_With_Cementitious_Mortar\page_10.json
+[
+STECON
+บริษัท ชิน ไทย จีเนียริ่ง แอนด์ คอนสตรัค น จํากัด (มหาชน)
+SING THAI ENGINEERING CONSTRUC FIOS PUBLII COMPANY LISTED
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+© RP-TN-01 (Crack Repair With Cementitious Mortar)
+[
+วิธีการ Repair With Cementitious Mortar ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้าง
+มากกว่า 0.1mm.
+As repair and bonding mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar:
+Filling of cavities and voids
+Vertical and overhead use
+As an abrasion and impact resistant wearing course."
+ Non-Construction Questions, General / Admin,ชื่อโครงการ (Project Name) ที่ระบุไว้ในเอกสารคืออะไร,SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER,1,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+IDENTIFICATION OF THE SUBSTANCE/PREPARATION AND COMPANY
+CORMIX
+Product Name
+Product Use
+Company Name
+Address
+Contact no.
+9 NONTHABURI FOUNDRY FACTORY
+2015
+10 PASSORN PROJECT
+=
+71
+12
+12
+SRIRACHA PLANT PROJECT
+TUNNEL IMAHAI SAWAN PROJECT
+SINO-THAI ENGINEERING &
+CONSTRUCTION PUBLIC CO.,LTD.
+36 MMOC ARU PROJECT-MAPKA RAYONG
+2009
+BANLANGSUP CONSTRUCTION
+LTD.,PART.
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_93.json
+2015
+10 PASSORN PROJECT
+=
+71
+12
+12
+SRIRACHA PLANT PROJECT
+TUNNEL IMAHAI SAWAN PROJECT
+SINO-THAI ENGINEERING &
+CONSTRUCTION PUBLIC CO.,LTD.
+୮
+୮
+5 TAIWAN HI-SPEED RAIL PROJECT
+2002-2003
+20,100.00 KGS
+BILFINGER BERGER/BIAXIS CORP.",93,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+IDENTIFICATION OF THE SUBSTANCE/PREPARATION AND COMPANY
+CORMIX
+Product Name
+Product Use
+Company Name
+Address
+Contact no.
+9 NONTHABURI FOUNDRY FACTORY
+2015
+10 PASSORN PROJECT
+=
+71
+12
+12
+SRIRACHA PLANT PROJECT
+TUNNEL IMAHAI SAWAN PROJECT
+SINO-THAI ENGINEERING &
+CONSTRUCTION PUBLIC CO.,LTD.
+36 MMOC ARU PROJECT-MAPKA RAYONG
+2009
+BANLANGSUP CONSTRUCTION
+LTD.,PART.
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_93.json
+2015
+10 PASSORN PROJECT
+=
+71
+12
+12
+SRIRACHA PLANT PROJECT
+TUNNEL IMAHAI SAWAN PROJECT
+SINO-THAI ENGINEERING &
+CONSTRUCTION PUBLIC CO.,LTD.
+୮
+୮
+5 TAIWAN HI-SPEED RAIL PROJECT
+2002-2003
+20,100.00 KGS
+BILFINGER BERGER/BIAXIS CORP."
+ Construction-Related, Material,อัตราส่วนผสม (Mixing Ratio) ของวัสดุ Sikadur 52TH คือเท่าใด,อัตราส่วนผสมคือ วัสดุ A : วัสดุ B = 2 : 1,17,Construction-Related,Environmental / Preventive Measures,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Sikadur 52TH
+SIKA
+2
+1
+2.
+Avoid aeration while
+mixing.
+มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว ได้แก่
+-Sikadur 32TH
+-Sikadur 52 TH
+-Sikadur 31 CF Normal
+-Sikadur 41 CF Normal
+-Condur SC
+2.1 ด้านคุณภาพน้ำ
+หัวข้อ ผลกระทบด้าน
+วิธีการแก้ไข
+ที่
+คุณภาพน้ำ
+1.
+ชื่อวัสดุ
+Brand
+อัตราส่วนผสม
+วัสดุ A
+วัสดุ B
+1.
+Note: To obtain the performance characteristics stated in data sheet,
+the mixing ratio must be maintained.",60,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Sikadur 52TH
+SIKA
+2
+1
+2.
+Avoid aeration while
+mixing.
+มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว ได้แก่
+-Sikadur 32TH
+-Sikadur 52 TH
+-Sikadur 31 CF Normal
+-Sikadur 41 CF Normal
+-Condur SC
+2.1 ด้านคุณภาพน้ำ
+หัวข้อ ผลกระทบด้าน
+วิธีการแก้ไข
+ที่
+คุณภาพน้ำ
+1.
+ชื่อวัสดุ
+Brand
+อัตราส่วนผสม
+วัสดุ A
+วัสดุ B
+1.
+Note: To obtain the performance characteristics stated in data sheet,
+the mixing ratio must be maintained."
+ Construction-Related, Environmental / Preventive Measures,มาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมากคืออะไร,ให้ทำการเปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด แล้วขนย้ายออกจากจุดที่รั่วไหล จากนั้นให้กวาดวัสดุที่รั่วไหลกองรวมกัน แล้วใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย แล้วจึงทำการตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี,136,Construction-Related,Environmental / Preventive Measures,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_72.json
+773
+1249
+773
+1287
+735
+1287
+Condur
+781
+1249
+905
+1249
+905
+1287
+781
+1287
+SC
+917
+1249
+967
+1249
+967
+1287
+917
+1287
+(
+983
+1249
+996
+1249
+996
+1287
+983
+1287
+24
+996
+1249
+1036
+1249
+1036
+1287
+996
+1287
+hours
+1050
+1249
+1140
+1249
+1140
+1287
+1050
+1287
+)
+1143
+1249
+1156
+1249
+1156
+1287
+1143
+1287
+remove
+1169
+1249
+1297
+1249
+1297
+1287
+1169
+1287
+the
+1306
+1249
+1361
+1249
+1361
+1287
+1306
+1287
+entry
+1376
+1249
+1462
+1249
+1462
+1287
+1376
+1287
+ports
+1474
+1249
+1556
+1249
+1556
+1287
+1474
+1287
+,
+1557
+1249
+1567
+1249
+1567
+1287
+1557
+1287
+the
+1580
+1249
+1634
+1249
+1634
+1287
+1580
+1287
+holes
+1649
+1249
+1738
+1249
+1738
+1287
+1649
+1287
+should
+1752
+1249
+1861
+1249
+1861
+1287
+1752
+1287
+be
+1876
+1249
+1919
+1249
+1919
+1287
+1876
+1287
+over
+1929
+1249
+2006
+1249
+2006
+1287
+1929
+1287
+-
+2002
+1249
+2018
+1249
+2018
+1287
+2002
+1287
+coated
+2016
+1249
+2131",72,extractive-fallback,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_72.json
+773
+1249
+773
+1287
+735
+1287
+Condur
+781
+1249
+905
+1249
+905
+1287
+781
+1287
+SC
+917
+1249
+967
+1249
+967
+1287
+917
+1287
+(
+983
+1249
+996
+1249
+996
+1287
+983
+1287
+24
+996
+1249
+1036
+1249
+1036
+1287
+996
+1287
+hours
+1050
+1249
+1140
+1249
+1140
+1287
+1050
+1287
+)
+1143
+1249
+1156
+1249
+1156
+1287
+1143
+1287
+remove
+1169
+1249
+1297
+1249
+1297
+1287
+1169
+1287
+the
+1306
+1249
+1361
+1249
+1361
+1287
+1306
+1287
+entry
+1376
+1249
+1462
+1249
+1462
+1287
+1376
+1287
+ports
+1474
+1249
+1556
+1249
+1556
+1287
+1474
+1287
+,
+1557
+1249
+1567
+1249
+1567
+1287
+1557
+1287
+the
+1580
+1249
+1634
+1249
+1634
+1287
+1580
+1287
+holes
+1649
+1249
+1738
+1249
+1738
+1287
+1649
+1287
+should
+1752
+1249
+1861
+1249
+1861
+1287
+1752
+1287
+be
+1876
+1249
+1919
+1249
+1919
+1287
+1876
+1287
+over
+1929
+1249
+2006
+1249
+2006
+1287
+1929
+1287
+-
+2002
+1249
+2018
+1249
+2018
+1287
+2002
+1287
+coated
+2016
+1249
+2131"
+ Construction-Related, Human Risk,อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีตมีอะไรบ้าง,ไฟฟ้าดูด และ โดนใบเจียรบาด,121,Construction-Related,Human Risk,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_4.json
+1186
+1779
+1187
+Action
+465
+2103
+580
+2103
+580
+2133
+465
+2133
+Reference
+709
+2097
+875
+2093
+876
+2127
+710
+2131
+Method
+886
+2093
+1019
+2090
+1020
+2124
+887
+2127
+1.No
+406
+2187
+477
+2187
+477
+2222
+406
+2222
+Repair
+485
+2187
+583
+2187
+583
+2221
+485
+2221
+A
+1169
+2086
+1201
+2086
+1201
+2122
+1169
+2122
+(
+1201
+2086
+1215
+2086
+1215
+2122
+1201
+2122
+mm
+1214
+2086
+1277
+2086
+1277
+2122
+1214
+2122
+.
+1279
+2086
+1287
+2086
+1287
+2122
+1279
+2122
+)
+1287
+2086
+1301
+2086
+1301
+2122
+1287
+2122
+B
+1513
+2080
+1537
+2079
+1538
+2116
+1514
+2117
+(
+1539
+2079
+1555
+2079
+1556
+2116
+1540
+2116
+mm
+1552
+2079
+1614
+2078
+1615
+2115
+1553
+2116
+.
+1614
+2077
+1625
+2077
+1626
+2114
+1615
+2114
+)
+1628
+2077
+1641
+2077
+1642
+2114
+1629
+2114
+C
+1856
+2071
+1882
+2071
+1882
+2105
+1856
+2105
+(
+1884
+2071
+1898
+2071
+1898
+2105
+1884
+2105
+mm
+1897
+2071
+1960
+2071
+1960
+2105
+1897
+2105
+.
+1962
+2",4,extractive-fallback,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_4.json
+1186
+1779
+1187
+Action
+465
+2103
+580
+2103
+580
+2133
+465
+2133
+Reference
+709
+2097
+875
+2093
+876
+2127
+710
+2131
+Method
+886
+2093
+1019
+2090
+1020
+2124
+887
+2127
+1.No
+406
+2187
+477
+2187
+477
+2222
+406
+2222
+Repair
+485
+2187
+583
+2187
+583
+2221
+485
+2221
+A
+1169
+2086
+1201
+2086
+1201
+2122
+1169
+2122
+(
+1201
+2086
+1215
+2086
+1215
+2122
+1201
+2122
+mm
+1214
+2086
+1277
+2086
+1277
+2122
+1214
+2122
+.
+1279
+2086
+1287
+2086
+1287
+2122
+1279
+2122
+)
+1287
+2086
+1301
+2086
+1301
+2122
+1287
+2122
+B
+1513
+2080
+1537
+2079
+1538
+2116
+1514
+2117
+(
+1539
+2079
+1555
+2079
+1556
+2116
+1540
+2116
+mm
+1552
+2079
+1614
+2078
+1615
+2115
+1553
+2116
+.
+1614
+2077
+1625
+2077
+1626
+2114
+1615
+2114
+)
+1628
+2077
+1641
+2077
+1642
+2114
+1629
+2114
+C
+1856
+2071
+1882
+2071
+1882
+2105
+1856
+2105
+(
+1884
+2071
+1898
+2071
+1898
+2105
+1884
+2105
+mm
+1897
+2071
+1960
+2071
+1960
+2105
+1897
+2105
+.
+1962
+2"
+ Construction-Related, Repair Method,เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar คืออะไร,ขนาดความเสียหายต้องอยู่ในเกณฑ์ดังนี้:- A (mm.): 5-50- B (mm.): 5-50- C (mm.): 5-70,4,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Sharp Edge
+A
+c.At Corners
+Table2 Guideline for Spalling Edge Repair
+C
+B
+B
+b.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_7.json
+STECON
+บวิชา โน-ไทย เ คีเนียชิ่ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+Project: SEWERAGE TUNNEL BUNG NONG BON
+SING THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED
+TO CHAOPHRAYA RIVER
+ตารางแสดงวัสดุที่ใช้ซ่อมแซมความเสียหายประเภทต่างๆ
+ประเภทของวัสดุซ่อมแซม
+ประเภท
+วิธีการ
+ความ
+Method
+Reference | ปูนฉาบ | ปูนฉาบ
+ซ่อม
+อพอก
+อีพ็อกซี่
+วัสดุ
+ซ่อม
+ซเรซน มอรตาร เชอม
+เชื่อม
+เสียหาย
+ซ่อมแซม
+กำลังอัด
+ประสาน
+สูง
+คอนกรีต
+Repair with
+Cementitious
+RP-TN-01
+Crack
+Mortar
+Repair with
+RE-TN-02
+Epoxy Resin
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Edge
+Mortar
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Recesses
+Mortar
+Repair with
+Voids or
+Cementitious
+RP-TN-04
+Blowholes
+Mortar
+Repair with High
+RP-TN-05
+Strength Mortar
+Document No.
+As repair and bonding mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar:
+Filling of cavities and voids
+Vertical and overhead use
+As an abrasion and impact resistant wearing course.
+Chamfered Edge
+Action
+Reference Method
+1.No Repair
+A(mm.)
+B(mm.)
+C(mm.)
+<5
+<5
+<5
+2.Repair with
+Cementious
+RP-TN-03
+5-50
+5-50
+5-70
+Mortar
+3.Reject
+>50
+>50
+>70
+Or rebar exposed
+Or rebar exposed
+Or rebar exposed
+Document No.
+As a structural adhesive and mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar and adhesive:
+Corners and edges
+Holes and void filling
+Vertical and overhead use
+Joint filling and crack sealing:
+Joint and crack arris / edge repair
+Sikadur-31 CF Normal has the following advantages:
+Easy to mix and apply
+Suitable for dry and damp concrete surfaces
+Very good adhesion to most construction materials
+High strength adhesive",7,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Sharp Edge
+A
+c.At Corners
+Table2 Guideline for Spalling Edge Repair
+C
+B
+B
+b.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_7.json
+STECON
+บวิชา โน-ไทย เ คีเนียชิ่ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+Project: SEWERAGE TUNNEL BUNG NONG BON
+SING THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED
+TO CHAOPHRAYA RIVER
+ตารางแสดงวัสดุที่ใช้ซ่อมแซมความเสียหายประเภทต่างๆ
+ประเภทของวัสดุซ่อมแซม
+ประเภท
+วิธีการ
+ความ
+Method
+Reference | ปูนฉาบ | ปูนฉาบ
+ซ่อม
+อพอก
+อีพ็อกซี่
+วัสดุ
+ซ่อม
+ซเรซน มอรตาร เชอม
+เชื่อม
+เสียหาย
+ซ่อมแซม
+กำลังอัด
+ประสาน
+สูง
+คอนกรีต
+Repair with
+Cementitious
+RP-TN-01
+Crack
+Mortar
+Repair with
+RE-TN-02
+Epoxy Resin
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Edge
+Mortar
+Repair with
+Spalling
+Cementitious
+RP-TN-03
+Recesses
+Mortar
+Repair with
+Voids or
+Cementitious
+RP-TN-04
+Blowholes
+Mortar
+Repair with High
+RP-TN-05
+Strength Mortar
+Document No.
+As repair and bonding mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar:
+Filling of cavities and voids
+Vertical and overhead use
+As an abrasion and impact resistant wearing course.
+Chamfered Edge
+Action
+Reference Method
+1.No Repair
+A(mm.)
+B(mm.)
+C(mm.)
+<5
+<5
+<5
+2.Repair with
+Cementious
+RP-TN-03
+5-50
+5-50
+5-70
+Mortar
+3.Reject
+>50
+>50
+>70
+Or rebar exposed
+Or rebar exposed
+Or rebar exposed
+Document No.
+As a structural adhesive and mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar and adhesive:
+Corners and edges
+Holes and void filling
+Vertical and overhead use
+Joint filling and crack sealing:
+Joint and crack arris / edge repair
+Sikadur-31 CF Normal has the following advantages:
+Easy to mix and apply
+Suitable for dry and damp concrete surfaces
+Very good adhesion to most construction materials
+High strength adhesive"
+ Non-Construction Questions, General / Admin,บริษัทที่ปรึกษา (Consultant) ของโครงการนี้คือบริษัทอะไร,TEAM TWI GFE,140,Construction-Related,Repair Method,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Voids or Blowholes
+Repair by:
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+Production Engineer
+QC Engineer
+Consultant
+Date.../........
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method:
+Repair by:
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+0
+Production Engineer
+QC Engineer
+Consultant
+Date................
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method :
+Repair by:
+D
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+Production Engineer
+QC Engineer
+Consultant
+Date............/........
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_140.json
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Standard
+LOCALIZATION
+Repair Date: ...................................
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_142.json
+[
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Key
+LOCALIZATION
+Repair Date :............",140,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Voids or Blowholes
+Repair by:
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+Production Engineer
+QC Engineer
+Consultant
+Date.../........
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method:
+Repair by:
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+0
+Production Engineer
+QC Engineer
+Consultant
+Date................
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method :
+Repair by:
+D
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+Production Engineer
+QC Engineer
+Consultant
+Date............/........
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_140.json
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Standard
+LOCALIZATION
+Repair Date: ...................................
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_142.json
+[
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Key
+LOCALIZATION
+Repair Date :............"
+ Construction-Related, Material,ระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C คือเท่าใด,ประมาณ 35 นาที (สำหรับปริมาณ 200 กรัม),51,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
++10°C min./+30°C max.
++10°C min./+30°C max.
++10°C min./ +30°C max.
+Sikadur-41 CF Normal must be applied at a temperatures between +10°C and
++30°C.
+Other surfaces (polyester, epoxy, glass, ceramic):
+On these substrates pre-apply Sikadur-31 CF Normal and then, ""wet on wet"" apply
+Sikadur-41 CF Normal.",55,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
++10°C min./+30°C max.
++10°C min./+30°C max.
++10°C min./ +30°C max.
+Sikadur-41 CF Normal must be applied at a temperatures between +10°C and
++30°C.
+Other surfaces (polyester, epoxy, glass, ceramic):
+On these substrates pre-apply Sikadur-31 CF Normal and then, ""wet on wet"" apply
+Sikadur-41 CF Normal."
+ Construction-Related, Environmental / Preventive Measures,อุปกรณ์ที่ใช้ดับเพลิงในกรณีเกิดเพลิงไหม้วัสดุซ่อมแบบผงมีอะไรบ้าง,1. โฟมดับเพลิงชนิดทนแอลกอฮอล์2. ถังดับเพลิงชนิด CO23. ถังดับเพลิงแบบผง,136,Construction-Related,Environmental / Preventive Measures,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_45.json
+2296
+752
+2348
+595
+2348
+Sika
+974
+954
+1060
+954
+1060
+1028
+974
+1028
+Skim
+1066
+954
+1146
+954
+1146
+1028
+1066
+1028
+Coat
+1155
+954
+1238
+954
+1238
+1028
+1155
+1028
+เป็น
+1246
+954
+1291
+954
+1291
+1028
+1246
+1028
+ผง
+1296
+954
+1333
+954
+1333
+1028
+1296
+1028
+ซีเมนต์
+1333
+954
+1423
+954
+1423
+1028
+1333
+1028
+สำเร็จรูป
+1425
+954
+1540
+954
+1540
+1028
+1425
+1028
+สำหรับ
+1541
+954
+1643
+954
+1643
+1028
+1541
+1028
+ใช้
+1650
+954
+1678
+954
+1678
+1028
+1650
+1028
+ผสม
+1679
+954
+1740
+954
+1740
+1028
+1679
+1028
+กับ
+1745
+954
+1784
+954
+1784
+1028
+1745
+1028
+น้ำ
+1786
+954
+1809
+954
+1809
+1028
+1786
+1028
+เพื่อ
+1826
+954
+1879
+954
+1879
+1028
+1826
+1028
+นำ
+1874
+954
+1897
+954
+1897
+1028
+1874
+1028
+ไป
+1920
+954
+1945
+954
+1945
+1028
+1920
+1028
+ใช้
+1959
+954
+1980
+954
+1980
+1028
+1959
+1028
+ใน
+1989
+954
+2017
+954
+2017
+1028
+1989
+1028
+งาน
+2025
+954
+2070
+954
+2070
+1028
+2025
+10",45,extractive-fallback,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_45.json
+2296
+752
+2348
+595
+2348
+Sika
+974
+954
+1060
+954
+1060
+1028
+974
+1028
+Skim
+1066
+954
+1146
+954
+1146
+1028
+1066
+1028
+Coat
+1155
+954
+1238
+954
+1238
+1028
+1155
+1028
+เป็น
+1246
+954
+1291
+954
+1291
+1028
+1246
+1028
+ผง
+1296
+954
+1333
+954
+1333
+1028
+1296
+1028
+ซีเมนต์
+1333
+954
+1423
+954
+1423
+1028
+1333
+1028
+สำเร็จรูป
+1425
+954
+1540
+954
+1540
+1028
+1425
+1028
+สำหรับ
+1541
+954
+1643
+954
+1643
+1028
+1541
+1028
+ใช้
+1650
+954
+1678
+954
+1678
+1028
+1650
+1028
+ผสม
+1679
+954
+1740
+954
+1740
+1028
+1679
+1028
+กับ
+1745
+954
+1784
+954
+1784
+1028
+1745
+1028
+น้ำ
+1786
+954
+1809
+954
+1809
+1028
+1786
+1028
+เพื่อ
+1826
+954
+1879
+954
+1879
+1028
+1826
+1028
+นำ
+1874
+954
+1897
+954
+1897
+1028
+1874
+1028
+ไป
+1920
+954
+1945
+954
+1945
+1028
+1920
+1028
+ใช้
+1959
+954
+1980
+954
+1980
+1028
+1959
+1028
+ใน
+1989
+954
+2017
+954
+2017
+1028
+1989
+1028
+งาน
+2025
+954
+2070
+954
+2070
+1028
+2025
+10"
+ Construction-Related, Human Risk,การปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตาคืออะไร,ถอดคอนแทคเลนส์ ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที พาไปพบแพทย์ทันที,125,Construction-Related,Human Risk,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Sika Skim Coat
+SIKA
+ปูน:น้ำ = 1:0.35 โดยน้ำหนัก
+2.
+เมื่อผิวฉาบ Sika® Skim Coat แห้งดีแล้วสามารถขัดถูได้ด้วยกระดาษทราย
+ประมาณ 45 นาทีที่อุณหภูมิ 30°C
+Jika
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_45.json
+Construction
+Product Data Sheet
+Version 17/03/2017
+SikaⓇ Skim Coat
+ผงซีเมนต์สำเร็จรูปเพื่องานตกแต่งพื้นผิว
+คุณลักษณะ
+การใช้งาน
+คุณประโยชน์
+ข้อมูลผลิตภัณฑ์
+ลักษณะ
+สี
+บรรจุภัณฑ์
+การเก็บรักษาผลิตภัณฑ์
+วิธีการจัดเก็บ/
+อายุผลิตภัณฑ์
+Sika Skim Coat เป็นผงซีเมนต์สำเร็จรูปสำหรับใช้ผสมกับน้ำเพื่อนำไปใช้ในงานซ่อมแซม
+ร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีต หรือผนังปูนฉาบใช้ขจัดรอยตำหนิต่างๆ เช่น ร่อง
+รอยต่อตะเข็บ รอยแตกลายงา และรอยเม็ดทราย เมื่อฉาบพื้นผิวด้วย Sika® Skim Coat
+แล้วจะทำให้พื้นผิวนั้นเนียนเรียบ
+ผสม Sika Skim Coat กับน้ำเพื่อใช้ตกแต่งพื้นผิว เหมาะสำหรับใช้งานกับพื้นผิว
+คอนกรีตเสริมเหล็ก ผนังคอนกรีตหล่อสำเร็จ ผนังก่ออิฐ ฯลฯ
+ใช้ Sika® Skim Coat ได้กับทั้งพื้นผิวภายใน และภายนอก Sika Skim Coat มี
+คุณสมบัติหลายประการ ดังต่อไปนี้
+- ช่วยให้พื้นผิวทนทานต่อการสึกหรอ
+- ใช้งานง่าย
+- ยึดเกาะได้ดีกับพื้นผิวซีเมนต์
+- แห้งเร็ว
+ผง
+สีเทา, สีขาว
+20 กก./ถุง
+จัดเก็บในพื้นที่แห้งปราศจากความชื้น และหลีกเลี่ยงการจัดเก็บในพื้นที่ที่มีแสงแดดส่องถึง
+12 เดือน
+Jika
+Sikka Skim Coat 1/2
+D00111050345
+325
+327
+2239
+327
+พื้นผิวจะต้องสะอาด แน่น และไม่มีส่วนที่หลุดร่อน ต้องขจัดฝุ่น และคราบมันออกให้หมด
+ก่อนฉาบผลิตภัณฑ์
+ผสม Sika Skim Coat กับน้ำจนกระทั่งเป็นเนื้อเดียวกัน ตั้งทิ้งไว้สักสองสามนาทีเพื่อรอ
+ให้ส่วนผสมอยู่ตัวก่อน
+- สำหรับสีเทาใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อ Sika Slim Coat (20 กก.) 1 ถุง
+- สำหรับสีขาวใช้น้ำ 7.4-7.8 ลิตร (37%-39%) ต่อ Sika Skim Coat (20 กก.) 1 ถุง
+ฉาบส่วนผสมลงไปบนพื้นผิวที่เตรียมไว้ โดยใช้เกรียง หรือเกรียงโป๊ว อาจฉาบได้มากกว่าหนึ่ง
+ชั้น ทั้งนี้ขึ้นอยู่กับลักษณะพื้นผิวสำเร็จที่ต้องการ
+ความหนาในการฉาบประมาณ 0.5 - 2.0 มม.
+เมื่อผิวฉาบ Sika® Skim Coat แห้งดีแล้วสามารถขัดถูได้ด้วยกระดาษทราย
+ประมาณ 45 นาทีที่อุณหภูมิ 30°C
+Jika
+ข้อมูลที่ระบุในที่นี่และข้อเสนอแนะใดๆ เป็นข้อมูลที่ใช้โดยอ้างอิงจากความรู้และประสบการณ์ปัจจุบันของผลิตภัณฑ์ต่างๆ ของ Sika โดยจะต้องมีการจัดเก็บ ขนย้ายอย่างเหมาะสม และ
+ใช้งานภายใต้สภาวะปกติตามคำแนะนำของ Sika ซึ่งในการใช้งานจริงอาจมีความแตกต่างของวัสดุ พื้นผิว และสภาพแวดล้อมจริงที่หน้างาน ทาง Sika จึงไม่สามารถรับรองประสิทธิภาพ
+หรือความเหมาะสมในการใช้งานให้ตรงตามวัตถุประสงค์บางประการได้ และจะไม่มีการรับผิดชอบในทางกฎหมายใดๆ ต่อข้อมูลที่ได้ให้ไว้นี้ หรือจากคำแนะนำที่ให้ไว้เป็นลายลักษณ์อักษร
+หรือจากการให้คำปรึกษาใดๆ ผู้ใช้งานผลิตภัณฑ์นี้จะต้องทำการทดสอบความเหมาะสมในการนำไปใช้งานตามวัตถุประสงค์ อีกทั้ง Sika ขอสงวนสิทธิ์ในการเปลี่ยนแปลงคุณสมบัติของ
+ผลิตภัณฑ์ของบริษัทฯ ทั้งนี้ การใช้งานผลิตภัณฑ์ของ Silke จะต้องไม่เป็นการละเมิดลิขสิทธิ์ของบุคคลที่สาม คำสั่งซื้อทั้งหมดอยู่ภายใต้เงื่อนไขการขาย และการจัดส่งของ Sika ฉบับ",45,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Sika Skim Coat
+SIKA
+ปูน:น้ำ = 1:0.35 โดยน้ำหนัก
+2.
+เมื่อผิวฉาบ Sika® Skim Coat แห้งดีแล้วสามารถขัดถูได้ด้วยกระดาษทราย
+ประมาณ 45 นาทีที่อุณหภูมิ 30°C
+Jika
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_45.json
+Construction
+Product Data Sheet
+Version 17/03/2017
+SikaⓇ Skim Coat
+ผงซีเมนต์สำเร็จรูปเพื่องานตกแต่งพื้นผิว
+คุณลักษณะ
+การใช้งาน
+คุณประโยชน์
+ข้อมูลผลิตภัณฑ์
+ลักษณะ
+สี
+บรรจุภัณฑ์
+การเก็บรักษาผลิตภัณฑ์
+วิธีการจัดเก็บ/
+อายุผลิตภัณฑ์
+Sika Skim Coat เป็นผงซีเมนต์สำเร็จรูปสำหรับใช้ผสมกับน้ำเพื่อนำไปใช้ในงานซ่อมแซม
+ร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีต หรือผนังปูนฉาบใช้ขจัดรอยตำหนิต่างๆ เช่น ร่อง
+รอยต่อตะเข็บ รอยแตกลายงา และรอยเม็ดทราย เมื่อฉาบพื้นผิวด้วย Sika® Skim Coat
+แล้วจะทำให้พื้นผิวนั้นเนียนเรียบ
+ผสม Sika Skim Coat กับน้ำเพื่อใช้ตกแต่งพื้นผิว เหมาะสำหรับใช้งานกับพื้นผิว
+คอนกรีตเสริมเหล็ก ผนังคอนกรีตหล่อสำเร็จ ผนังก่ออิฐ ฯลฯ
+ใช้ Sika® Skim Coat ได้กับทั้งพื้นผิวภายใน และภายนอก Sika Skim Coat มี
+คุณสมบัติหลายประการ ดังต่อไปนี้
+- ช่วยให้พื้นผิวทนทานต่อการสึกหรอ
+- ใช้งานง่าย
+- ยึดเกาะได้ดีกับพื้นผิวซีเมนต์
+- แห้งเร็ว
+ผง
+สีเทา, สีขาว
+20 กก./ถุง
+จัดเก็บในพื้นที่แห้งปราศจากความชื้น และหลีกเลี่ยงการจัดเก็บในพื้นที่ที่มีแสงแดดส่องถึง
+12 เดือน
+Jika
+Sikka Skim Coat 1/2
+D00111050345
+325
+327
+2239
+327
+พื้นผิวจะต้องสะอาด แน่น และไม่มีส่วนที่หลุดร่อน ต้องขจัดฝุ่น และคราบมันออกให้หมด
+ก่อนฉาบผลิตภัณฑ์
+ผสม Sika Skim Coat กับน้ำจนกระทั่งเป็นเนื้อเดียวกัน ตั้งทิ้งไว้สักสองสามนาทีเพื่อรอ
+ให้ส่วนผสมอยู่ตัวก่อน
+- สำหรับสีเทาใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อ Sika Slim Coat (20 กก.) 1 ถุง
+- สำหรับสีขาวใช้น้ำ 7.4-7.8 ลิตร (37%-39%) ต่อ Sika Skim Coat (20 กก.) 1 ถุง
+ฉาบส่วนผสมลงไปบนพื้นผิวที่เตรียมไว้ โดยใช้เกรียง หรือเกรียงโป๊ว อาจฉาบได้มากกว่าหนึ่ง
+ชั้น ทั้งนี้ขึ้นอยู่กับลักษณะพื้นผิวสำเร็จที่ต้องการ
+ความหนาในการฉาบประมาณ 0.5 - 2.0 มม.
+เมื่อผิวฉาบ Sika® Skim Coat แห้งดีแล้วสามารถขัดถูได้ด้วยกระดาษทราย
+ประมาณ 45 นาทีที่อุณหภูมิ 30°C
+Jika
+ข้อมูลที่ระบุในที่นี่และข้อเสนอแนะใดๆ เป็นข้อมูลที่ใช้โดยอ้างอิงจากความรู้และประสบการณ์ปัจจุบันของผลิตภัณฑ์ต่างๆ ของ Sika โดยจะต้องมีการจัดเก็บ ขนย้ายอย่างเหมาะสม และ
+ใช้งานภายใต้สภาวะปกติตามคำแนะนำของ Sika ซึ่งในการใช้งานจริงอาจมีความแตกต่างของวัสดุ พื้นผิว และสภาพแวดล้อมจริงที่หน้างาน ทาง Sika จึงไม่สามารถรับรองประสิทธิภาพ
+หรือความเหมาะสมในการใช้งานให้ตรงตามวัตถุประสงค์บางประการได้ และจะไม่มีการรับผิดชอบในทางกฎหมายใดๆ ต่อข้อมูลที่ได้ให้ไว้นี้ หรือจากคำแนะนำที่ให้ไว้เป็นลายลักษณ์อักษร
+หรือจากการให้คำปรึกษาใดๆ ผู้ใช้งานผลิตภัณฑ์นี้จะต้องทำการทดสอบความเหมาะสมในการนำไปใช้งานตามวัตถุประสงค์ อีกทั้ง Sika ขอสงวนสิทธิ์ในการเปลี่ยนแปลงคุณสมบัติของ
+ผลิตภัณฑ์ของบริษัทฯ ทั้งนี้ การใช้งานผลิตภัณฑ์ของ Silke จะต้องไม่เป็นการละเมิดลิขสิทธิ์ของบุคคลที่สาม คำสั่งซื้อทั้งหมดอยู่ภายใต้เงื่อนไขการขาย และการจัดส่งของ Sika ฉบับ"
+ Construction-Related, Repair Method,ขั้นตอนการเตรียมพื้นผิวสำหรับการซ่อมรูฟองอากาศ (Voids and Blowholes) ด้วย High Strength Mortar ในข้อ 3.1 คืออะไร,ใช้กระดาษทรายขัดขอบรูฟองอากาศเพื่อให้การซ่อมแซมทำได้เต็มพื้นที่,40,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+bag of High Strength.
+Dimension (cm)
+Date of Age Weight Density Ultimate 'Ultimate
+Remarks
+Side A Side B Side C Casting
+Load
+Stress
+3
+(Days) (kg)
+(kg/m ) (kg)
+(kg/cm³)
+1
+1
+10.00 10.05 10.00 13/11/2555 28
+2.264
+2,253 56,600
+563
+HIGH STRENGTH REPAIR
+MORTAR # 135F
+1
+2
+10.10 10.28 10.02 13/11/2555 28 2.279
+2,191 53,000
+510
+HIGH STRENGTH REPAIR
+MORTAR # 135F
+3
+10.02 10.20 10.00 13/11/2555 28 2.258
+2,209
+60,400
+591
+HIGH STRENGTH REPAIR
+MORTAR # 135F
+4
+4
+1
+NOTE: 1.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_115.json
+[
+[
+[
+HIGH STRENGTH REPAIR MORTAR
+NO.135/135 F
+PRODUCT
+High Strength Repair Mortar No.135/135 F consists of accurately
+weighed Portland cement, fine aggregate, silica fume, admixtures
+and cellulose fiber only in No.135 F, The mortar will be fast selling
+and have high strength and little or no plastic shrinkage.
+High Strength Repair Mortar No.135/135F is
+non-toxic and contains no chloride that is harmful to reinforced steel.
+As repair and bonding mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar:
+Filling of cavities and voids
+Vertical and overhead use
+As an abrasion and impact resistant wearing course.",115,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+bag of High Strength.
+Dimension (cm)
+Date of Age Weight Density Ultimate 'Ultimate
+Remarks
+Side A Side B Side C Casting
+Load
+Stress
+3
+(Days) (kg)
+(kg/m ) (kg)
+(kg/cm³)
+1
+1
+10.00 10.05 10.00 13/11/2555 28
+2.264
+2,253 56,600
+563
+HIGH STRENGTH REPAIR
+MORTAR # 135F
+1
+2
+10.10 10.28 10.02 13/11/2555 28 2.279
+2,191 53,000
+510
+HIGH STRENGTH REPAIR
+MORTAR # 135F
+3
+10.02 10.20 10.00 13/11/2555 28 2.258
+2,209
+60,400
+591
+HIGH STRENGTH REPAIR
+MORTAR # 135F
+4
+4
+1
+NOTE: 1.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_115.json
+[
+[
+[
+HIGH STRENGTH REPAIR MORTAR
+NO.135/135 F
+PRODUCT
+High Strength Repair Mortar No.135/135 F consists of accurately
+weighed Portland cement, fine aggregate, silica fume, admixtures
+and cellulose fiber only in No.135 F, The mortar will be fast selling
+and have high strength and little or no plastic shrinkage.
+High Strength Repair Mortar No.135/135F is
+non-toxic and contains no chloride that is harmful to reinforced steel.
+As repair and bonding mortar for:
+Concrete elements
+Hard natural stone
+Ceramics, fiber cement
+Mortar, Bricks, Masonry
+Steel, Iron, Aluminium
+Wood
+Polyester, Epoxy
+Glass
+As a repair mortar:
+Filling of cavities and voids
+Vertical and overhead use
+As an abrasion and impact resistant wearing course."
+ Non-Construction Questions, General / Admin,หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คืออะไร,TB-RP-01,1,Construction-Related,Repair Method,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Release/Amendment
+Page No.
+Ring No
+SKETCH DEFECT
+•Marking
+Note: The above picture is for guideline of Tunnel segment.
+Segment Type:
+Ring No
+SKETCH DEFECT
+Note: The above picture is for guideline of Tunnel segment.
+Segment Type:
+Ring No:
+SKETCH DEFECT
+Marking
+شا
+Note: The above picture is for guideline of Tunnel segment.
+High Strength Repair Mortar No.135/135F is
+non-toxic and contains no chloride that is harmful to reinforced steel.",141,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Release/Amendment
+Page No.
+Ring No
+SKETCH DEFECT
+•Marking
+Note: The above picture is for guideline of Tunnel segment.
+Segment Type:
+Ring No
+SKETCH DEFECT
+Note: The above picture is for guideline of Tunnel segment.
+Segment Type:
+Ring No:
+SKETCH DEFECT
+Marking
+شا
+Note: The above picture is for guideline of Tunnel segment.
+High Strength Repair Mortar No.135/135F is
+non-toxic and contains no chloride that is harmful to reinforced steel."
+ Construction-Related, Material,กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือเท่าใด,"60 MPa (7,300 psi)",115,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Fail Load
+Test
+(KN)
+Compressive
+Strength (N/mm2)
+Average Compressive
+Strength (N/mm²)
+1.
+2.หลีกเลี่ยงการทำงานที่มีอุณหภูมิเย็นหรือร้อนเกินไป
+รับกำลังอัด 1 วัน 25 MPa, 7 วัน 40 MPa, 28 วัน 60 MPa (อุณหภูมิที่เหมาะสม 5-35°C)
+รับแรงตัด 7 วัน 7.6MPa, 28 วัน 9.7 MPa
+การเก็บรักษา
+แรงยึดเกาะ 28 วัน 5.5 MPa
+เก็บในที่ร่ม ไม่ขึ้น อากาศถ่ายเทสะดวก
+การไหลแผ่ % 90 - 115
+ความหมาในการทำงาน ตั้งแต่ 4 - 60 มม.
+High Strength Repair Mortar No.135/135F is
+non-toxic and contains no chloride that is harmful to reinforced steel.
+Fail Flexural Strength Average Flexural
+(mm)
+Load (N)
+(N/mm²)
+Strength (N/mm²)
+1.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_115.json
+[
+[
+[
+HIGH STRENGTH REPAIR MORTAR
+NO.135/135 F
+PRODUCT
+High Strength Repair Mortar No.135/135 F consists of accurately
+weighed Portland cement, fine aggregate, silica fume, admixtures
+and cellulose fiber only in No.135 F, The mortar will be fast selling
+and have high strength and little or no plastic shrinkage.",115,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+Fail Load
+Test
+(KN)
+Compressive
+Strength (N/mm2)
+Average Compressive
+Strength (N/mm²)
+1.
+2.หลีกเลี่ยงการทำงานที่มีอุณหภูมิเย็นหรือร้อนเกินไป
+รับกำลังอัด 1 วัน 25 MPa, 7 วัน 40 MPa, 28 วัน 60 MPa (อุณหภูมิที่เหมาะสม 5-35°C)
+รับแรงตัด 7 วัน 7.6MPa, 28 วัน 9.7 MPa
+การเก็บรักษา
+แรงยึดเกาะ 28 วัน 5.5 MPa
+เก็บในที่ร่ม ไม่ขึ้น อากาศถ่ายเทสะดวก
+การไหลแผ่ % 90 - 115
+ความหมาในการทำงาน ตั้งแต่ 4 - 60 มม.
+High Strength Repair Mortar No.135/135F is
+non-toxic and contains no chloride that is harmful to reinforced steel.
+Fail Flexural Strength Average Flexural
+(mm)
+Load (N)
+(N/mm²)
+Strength (N/mm²)
+1.
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_115.json
+[
+[
+[
+HIGH STRENGTH REPAIR MORTAR
+NO.135/135 F
+PRODUCT
+High Strength Repair Mortar No.135/135 F consists of accurately
+weighed Portland cement, fine aggregate, silica fume, admixtures
+and cellulose fiber only in No.135 F, The mortar will be fast selling
+and have high strength and little or no plastic shrinkage."
+ Construction-Related, Environmental / Preventive Measures,มาตรการป้องกันผลกระทบด้านคุณภาพน้ำ สำหรับวัสดุซ่อมแบบของเหลว ในกรณีปนเปื้อนในท่อระบายน้ำเสีย คืออะไร,แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้ ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด และให้กำหนดตัวผู้ที่สามารถใช้วัสดุซ่อมแบบเหลวได้,137,Construction-Related,Human Risk,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\10_Preventative_Measures_And_Revise_Environment_Impact\page_137.json
+บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+STECON
+SINO-THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+2. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว ได้แก่
+-Sikadur 32TH
+-Sikadur 52 TH
+-Sikadur 31 CF Normal
+-Sikadur 41 CF Normal
+-Condur SC
+2.1 ด้านคุณภาพน้ำ
+หัวข้อ ผลกระทบด้าน
+วิธีการแก้ไข
+ที่
+คุณภาพน้ำ
+1.
+2.
+น้ำเสีย
+มาตรการการป้องกันผลกระทบ
+วัสดุซ่อมแบบของเหลว สำหรับวัสดุซ่อมแบบของเหลวจะต้อง แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุ
+ปนเปื้อนในท่อระบาย ระมัดระวังไม่ให้มีการปนเปื้อนในท่อ ซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด หาก
+ระบายน้ำเสียโดยเด็ดขาดเนื่องจากเป็น บรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่
+สารเคมีอันตราย หากพบว่ามีการปนเปื้อน ห",137,extractive-fallback,"Gemini quota is currently exhausted. Returning retrieved context summary instead:
+
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\10_Preventative_Measures_And_Revise_Environment_Impact\page_137.json
+บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+STECON
+SINO-THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+2. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว ได้แก่
+-Sikadur 32TH
+-Sikadur 52 TH
+-Sikadur 31 CF Normal
+-Sikadur 41 CF Normal
+-Condur SC
+2.1 ด้านคุณภาพน้ำ
+หัวข้อ ผลกระทบด้าน
+วิธีการแก้ไข
+ที่
+คุณภาพน้ำ
+1.
+2.
+น้ำเสีย
+มาตรการการป้องกันผลกระทบ
+วัสดุซ่อมแบบของเหลว สำหรับวัสดุซ่อมแบบของเหลวจะต้อง แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุ
+ปนเปื้อนในท่อระบาย ระมัดระวังไม่ให้มีการปนเปื้อนในท่อ ซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด หาก
+ระบายน้ำเสียโดยเด็ดขาดเนื่องจากเป็น บรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่
+สารเคมีอันตราย หากพบว่ามีการปนเปื้อน ห"
+ Construction-Related, Repair Method,ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของร่องที่ต้องเซาะ (V-shape) คือเท่าใด,ความกว้างบริเวณปากร่องประมาณ 3-5 mm.,19,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+The essential feature of the resin
+injection is to inject a suitably formulated resin Into the cracks.
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\3_Repair_With_Epoxy_Resin\page_16.json
+บริษัท ชิโน-ไทย เอนจีเนีย ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+STECON
+SING THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITEDE
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+O RP-TN-02 (Crack Repair With Epoxy Resin)
+วิธีการ Repair With Epoxy Resin ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างตั้งแต่ 0.3 mm.
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_71.json
+CORMIX
+DESCRIPTION
+METHOD STATEMENT
+CONDUR SC
+Low Viscosity Two Component Injection Resin
+A two component, low viscosity, injectable high strength epoxy resin to be injected into cracks &
+cavities in concrete where it cures to a rigid high strength material.
+[Chunk 4] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_58.json
+Construction
+Product Data Sheet
+Version 21/11/2008
+Sikadur® -32TH (former Sikadur® -732RT)
+2 -Component Epoxy Resin Bonding Agent
+Description
+Standard
+Uses
+Advantages
+Coverage
+Instruction for Use
+Surface Preparation
+Mixing
+Application
+Cleaning
+A solvent-free, 2-component bonding agent, based on selected epoxy resins.
+[Chunk 8] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\3_Repair_With_Epoxy_Resin\page_16.json
+531
+864
+531
+TN
+890
+477
+933
+477
+934
+531
+891
+531
+-
+945
+476
+966
+476
+967
+530
+946
+530
+02
+969
+476
+1019
+475
+1020
+529
+970
+530
+(
+1035
+475
+1052
+475
+1053
+529
+1036
+529
+Crack
+1058
+475
+1181
+474
+1182
+528
+1059
+529
+Repair
+1191
+473
+1341
+471
+1342
+526
+1192
+528
+With
+1357
+472
+1453
+471
+1454
+525
+1358
+526
+Epoxy
+1465
+471
+1605
+470
+1606
+524
+1466
+525
+Resin
+1615
+469
+1726
+468
+1727
+523
+1616
+524
+)
+1736
+468
+1751
+468
+1752
+522
+1737
+522
+วิธี
+404
+747
+448
+746
+450
+831
+406
+832
+การ
+452
+745
+527
+743
+529
+829
+454
+831
+Repair
+543
+743
+667
+740
+669
+826
+545
+829
+With
+680
+741
+772
+739
+774
+824
+682
+826
+Epoxy
+784
+738
+906
+735
+908
+821
+786
+824
+Resin
+917
+735
+1021
+733
+1023
+819
+919
+821
+ใช้
+1035
+733
+1078
+732
+1080
+817
+1037
+818
+ใน
+1091
+732
+1128
+731
+1130
+816
+1093
+817
+การ
+1139
+731
+1212
+729
+1214
+814
+1141
+816
+ซ่อมแซม
+1216
+729
+1389
+725
+1391
+811
+1218
+815
+รอยร้าว
+1393
+726
+1538
+723
+1540
+808
+1395
+811
+ทั่วไป
+1542
+722
+1649
+720
+1651
+806
+1544
+808
+ที่
+1660
+720
+1682
+720
+1684
+805
+1662
+805
+มี
+1685
+720
+1707
+720
+1709
+805
+1687
+805
+ความ
+1719
+719
+1815
+717
+1817
+802
+1721",47,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+The essential feature of the resin
+injection is to inject a suitably formulated resin Into the cracks.
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\3_Repair_With_Epoxy_Resin\page_16.json
+บริษัท ชิโน-ไทย เอนจีเนีย ง แอนด์ คอนสตรัคชั่น จํากัด (มหาชน)
+STECON
+SING THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITEDE
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+O RP-TN-02 (Crack Repair With Epoxy Resin)
+วิธีการ Repair With Epoxy Resin ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างตั้งแต่ 0.3 mm.
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_71.json
+CORMIX
+DESCRIPTION
+METHOD STATEMENT
+CONDUR SC
+Low Viscosity Two Component Injection Resin
+A two component, low viscosity, injectable high strength epoxy resin to be injected into cracks &
+cavities in concrete where it cures to a rigid high strength material.
+[Chunk 4] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\7_Materials_Data_Sheet\page_58.json
+Construction
+Product Data Sheet
+Version 21/11/2008
+Sikadur® -32TH (former Sikadur® -732RT)
+2 -Component Epoxy Resin Bonding Agent
+Description
+Standard
+Uses
+Advantages
+Coverage
+Instruction for Use
+Surface Preparation
+Mixing
+Application
+Cleaning
+A solvent-free, 2-component bonding agent, based on selected epoxy resins.
+[Chunk 8] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\3_Repair_With_Epoxy_Resin\page_16.json
+531
+864
+531
+TN
+890
+477
+933
+477
+934
+531
+891
+531
+-
+945
+476
+966
+476
+967
+530
+946
+530
+02
+969
+476
+1019
+475
+1020
+529
+970
+530
+(
+1035
+475
+1052
+475
+1053
+529
+1036
+529
+Crack
+1058
+475
+1181
+474
+1182
+528
+1059
+529
+Repair
+1191
+473
+1341
+471
+1342
+526
+1192
+528
+With
+1357
+472
+1453
+471
+1454
+525
+1358
+526
+Epoxy
+1465
+471
+1605
+470
+1606
+524
+1466
+525
+Resin
+1615
+469
+1726
+468
+1727
+523
+1616
+524
+)
+1736
+468
+1751
+468
+1752
+522
+1737
+522
+วิธี
+404
+747
+448
+746
+450
+831
+406
+832
+การ
+452
+745
+527
+743
+529
+829
+454
+831
+Repair
+543
+743
+667
+740
+669
+826
+545
+829
+With
+680
+741
+772
+739
+774
+824
+682
+826
+Epoxy
+784
+738
+906
+735
+908
+821
+786
+824
+Resin
+917
+735
+1021
+733
+1023
+819
+919
+821
+ใช้
+1035
+733
+1078
+732
+1080
+817
+1037
+818
+ใน
+1091
+732
+1128
+731
+1130
+816
+1093
+817
+การ
+1139
+731
+1212
+729
+1214
+814
+1141
+816
+ซ่อมแซม
+1216
+729
+1389
+725
+1391
+811
+1218
+815
+รอยร้าว
+1393
+726
+1538
+723
+1540
+808
+1395
+811
+ทั่วไป
+1542
+722
+1649
+720
+1651
+806
+1544
+808
+ที่
+1660
+720
+1682
+720
+1684
+805
+1662
+805
+มี
+1685
+720
+1707
+720
+1709
+805
+1687
+805
+ความ
+1719
+719
+1815
+717
+1817
+802
+1721"
+ Non-Construction Questions, General / Admin,บริษัทผู้รับเหมา (Contractor) ที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือบริษัทใด,บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน) (SINO-THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED),1,Construction-Related,Repair Method,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+DISPOSAL CONSIDERATIONS
+Contact your local licensed Contractor for detailed
+recommendations.
+1200
+1352
+1241
+1352
+1241
+1381
+1200
+1381
+DISPOSAL
+1250
+1352
+1393
+1352
+1393
+1381
+1250
+1381
+CONSIDERATIONS
+1401
+1352
+1664
+1352
+1664
+1381
+1401
+1381
+Contact
+1199
+1392
+1303
+1392
+1303
+1431
+1199
+1431
+your
+1323
+1392
+1382
+1392
+1382
+1430
+1323
+1430
+local
+1406
+1391
+1464
+1391
+1464
+1430
+1406
+1430
+licensed
+1491
+1391
+1597
+1391
+1597
+1429
+1491
+1429
+Contractor
+1624
+1390
+1764
+1389
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_140.json
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Standard
+LOCALIZATION
+Repair Date: ...................................
+[Chunk 5] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_142.json
+[
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Key
+LOCALIZATION
+Repair Date :............
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_141.json
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO - THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Counter Key
+LOCALIZATION
+Repair Date:............",140,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+DISPOSAL CONSIDERATIONS
+Contact your local licensed Contractor for detailed
+recommendations.
+1200
+1352
+1241
+1352
+1241
+1381
+1200
+1381
+DISPOSAL
+1250
+1352
+1393
+1352
+1393
+1381
+1250
+1381
+CONSIDERATIONS
+1401
+1352
+1664
+1352
+1664
+1381
+1401
+1381
+Contact
+1199
+1392
+1303
+1392
+1303
+1431
+1199
+1431
+your
+1323
+1392
+1382
+1392
+1382
+1430
+1323
+1430
+local
+1406
+1391
+1464
+1391
+1464
+1430
+1406
+1430
+licensed
+1491
+1391
+1597
+1391
+1597
+1429
+1491
+1429
+Contractor
+1624
+1390
+1764
+1389
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_140.json
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Standard
+LOCALIZATION
+Repair Date: ...................................
+[Chunk 5] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_142.json
+[
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Key
+LOCALIZATION
+Repair Date :............
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\11_Tunnel_SegmentA_Repair_Note\page_141.json
+STECON
+PROJECT: SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER
+CONSULTANT: TEAM TWI GFE
+CONTRACTOR: SINO - THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED
+TUNNEL SEGMENT REPAIR NOTE
+Repair of Damaged Tunnel Segment Type Counter Key
+LOCALIZATION
+Repair Date:............"
+ Construction-Related, Material,ค่า Bond Strength to Concrete ของ Sikadur-32TH คือเท่าใด,2.5-3 N/mm² (Concrete failure),59,Non-Construction Questions,General / Admin,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+After application to old concrete surfaces, it provides a perfect bond for new
+concrete.
+To point joint in masonry, concrete pipe or precast concrete
+units.
+Bond Strength to Concrete, ASTM C 882-91
+28 days
+Flow, % ASTM C109.8.3
+5.
+High mechanical & adhesive strength.
+High mechanical & adhesive strength.",58,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+After application to old concrete surfaces, it provides a perfect bond for new
+concrete.
+To point joint in masonry, concrete pipe or precast concrete
+units.
+Bond Strength to Concrete, ASTM C 882-91
+28 days
+Flow, % ASTM C109.8.3
+5.
+High mechanical & adhesive strength.
+High mechanical & adhesive strength."
+ Construction-Related, Human Risk,ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับใด,"HCR = 3, PR = 3, RF = 9 (High Risk)",121,Construction-Related,Human Risk,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+- เ ง แ ก น (m)
+MAN-TIENINIZING & CONTIFIC COM
+RISK FACTOR MATRIX
+โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา
+2864
+12
+2
+m
+4
+HCR
+(ระดับความรุนแรงของความเสี่ยง) มีความรุนแรงมากขึ้นขั้นเสียชีวิต
+-มีความรุนแรงที่อาจทำให้บาดเจ็บสาหัสหรือเสียชีวิต
+-มีความรุนแรงในระดับที่ก่อให้เกิดการบาดเจ็บได้
+-มีความรุนแรงเล็กน้อย
+PR
+=4
+4
+3
+=3
+H
+4
+16
+=2
+C
+D
+=1
+3
+12
+62
+12
+9
+R
+2
+19
+co
+8
+6
+PR
+-มีความเสี่ยงที่จะเกิดขึ้นได้ตลอดเวลา
+=4
+i
+4
+3
+(ระดับความเป็นไปได้
+ของความเสี่ยง)
+-มีความเสี่ยงที่จะเกิดขืนหากภาวะแวดล้อมเอื้ออ้านวย =3
+-มีโอกาสเกิดขึ้นได้
+=2
+-มีโอกาสน้อยที่จะเกิดขึ้น
+=1
+METHODOLOGY
+RF
+(ปัจจัยเสี่ยง)
+|= HCR *PR
+Note: HCR = Hazard Class Rating PR = Probability Rating RF = Risk Factor
+1-4 = Low Riskc
+=3
+5-7 = Medium Risk 8-16 - High Risk
+1-4 = มีความเสี่ยงต่ำ 5-7-เสี่ยงปานกลาง 8-16 = มีความเสี่ยงสูง
+123
+RISK PRIORITY (ระดับความเสี่ยง)
+8-16 High Risk (ความเสี่ยงสูง)
+5-7
+Medium Risk (ความเสียงปานกลาง)
+Low Risk (ความเสียงต่ำ)
+3
+2
+1
+1-4
+1.ระบุพื้นที่เสี่ยงอันตราย
+2.รายการเกิดเหตุอันตราย
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\8_Risk_Assessment_In_Repair_Working\page_121.json
+-ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+-ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+-จัดพื้นที่การทำงานให้เหมาะสม
+3 | 3 | 9 -อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+3
+2
+-จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+-สวมใส่เครื่องป้องกันทุกครั้งเพื่อหลีกเลี่ยงการสัมผัสสารเคมีโดยตรง
+-จัดอุปกรณ์สําหรับใช้กับสารเคมีให้เหมาะสม
+-ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว
+6 -อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+-จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+-กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย
+- หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี
+-ทําหนดพื้นที่การทํางาน
+-ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว
+-อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย
+Residual Risk Fator Risk Priority Accept table
+(ลำดับความเสี่ยง) (โอกาสที่จะเกิด
+(ควาวสามารถ
+HCR PR RF
+ความเสี่ยง)
+ในการยอมรับ)
+3 | 2 | 6 | Medium
+ป
+2
+1
+2
+2
+1
+2
+(ปานกลาง)
+Low
+(ต๋า)
+Low
+(ต๋า)
+Note: HCR = Hazard Class Rating PR = Probability Rating RF = Risk Factor
+1-4 = Low Risk
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\8_Risk_Assessment_In_Repair_Working\page_122.json
+Mund-Titxt Dades&COSTRICH HELIC LI
+Hazard
+Item
+(อันตราย)
+(อันดับ)
+อันตรายจากการกลืน
+4
+สารเคมี
+Hazard Event/
+Potential
+โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา
+ตารางแสดงการประเมินความเสี่ยงที่อาจเกิดขึ้นในการซ่อมแซมชิ้นส่วนอุโมงค์ แสดงไว้ในตารางที่ (1)
+ตารางที่ (1) Risk Assessment in Repair Working (การประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์)
+(เหตุการณ์อันตรายที่อาจเกิดขึ้น)
+-เนื้อเยื่อในช่องปากถูกทำลาย
+-ระบบทางเดินอาหารไหม้อย่างรุนแรง
+Initial Risk Rating
+(ระดับความเสียง)
+HCR PR RF
+4
+-
+Method of Minimization
+(วิธีการลดความเสียง)
+4.
+อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+-จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+-ห้ามนําอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด
+-ทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน
+-ปฏิบัติตามวิธีปฐมพยาบาลเบื้องต้นอย่างเคร่งครัด
+Residual Risk Fator Risk Priority Accept table
+(ลำดับความเสี่ยง) (โอกาสที่จะเกิด
+HCR PR RF ความเสียง)
+(กวาวสามารถ
+ในการยอมรับ)
+3 1
+3
+Low
+(ต๋า)
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\8_Risk_Assessment_In_Repair_Working\page_121.json
+Item
+(อ้นคับ)
+1
+21
+Brigh That (o Glass Cr
+Hazard
+(อันตราย)
+อันตรายจากการใช้
+เครื่องเจียรคอนกรีต
+Hazard Event/
+Potential
+โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา
+ตารางแสดงการประเมินความเสี่ยงที่อาจเกิดขึ้นในการซ่อมแซมชิ้นส่วนอุโมงค์ แสดงไว้ในตารางที่ (1)
+(เหตุการณ์อันตรายที่อาจเกิดขึ้น)
+-ไฟฟ้าดูด
+-โคนใบเจียรมาค
+อันตรายจากการสัมผัส ผิวหนังไหม้
+สารเคมี
+-ระคายเคืองผิวหนัง
+-ผิวหนังอักเสบ
+-เนื้อเยือตาไหม้
+ระคายเคืองดวงตา
+อันตรายจากการสูดดม ระคายเคืองระบบทางเดินหายใจ
+-วิงเวียนศีรษะ
+-หมดสติ
+3
+สารเคมี
+ตารางที่ (1) Risk Assessment in Repair Working (การประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์
+Initial Risk Rating
+(ระดับความเสี่ยง)
+HCR PR RF
+4 3
+Method of Minimization
+(วิธีการลดความเสี่ยง)
+12 -อบรมวิธีการป้องกันความเสี่ยงในการใช้เครื่องเจียรคอนกรีต
+-ใช้เครื่องมือที่ผ่านการตรวจสภาพแล้วเท่านั้น
+-ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+-ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+-จัดพื้นที่การทำงานให้เหมาะสม",121,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+- เ ง แ ก น (m)
+MAN-TIENINIZING & CONTIFIC COM
+RISK FACTOR MATRIX
+โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา
+2864
+12
+2
+m
+4
+HCR
+(ระดับความรุนแรงของความเสี่ยง) มีความรุนแรงมากขึ้นขั้นเสียชีวิต
+-มีความรุนแรงที่อาจทำให้บาดเจ็บสาหัสหรือเสียชีวิต
+-มีความรุนแรงในระดับที่ก่อให้เกิดการบาดเจ็บได้
+-มีความรุนแรงเล็กน้อย
+PR
+=4
+4
+3
+=3
+H
+4
+16
+=2
+C
+D
+=1
+3
+12
+62
+12
+9
+R
+2
+19
+co
+8
+6
+PR
+-มีความเสี่ยงที่จะเกิดขึ้นได้ตลอดเวลา
+=4
+i
+4
+3
+(ระดับความเป็นไปได้
+ของความเสี่ยง)
+-มีความเสี่ยงที่จะเกิดขืนหากภาวะแวดล้อมเอื้ออ้านวย =3
+-มีโอกาสเกิดขึ้นได้
+=2
+-มีโอกาสน้อยที่จะเกิดขึ้น
+=1
+METHODOLOGY
+RF
+(ปัจจัยเสี่ยง)
+|= HCR *PR
+Note: HCR = Hazard Class Rating PR = Probability Rating RF = Risk Factor
+1-4 = Low Riskc
+=3
+5-7 = Medium Risk 8-16 - High Risk
+1-4 = มีความเสี่ยงต่ำ 5-7-เสี่ยงปานกลาง 8-16 = มีความเสี่ยงสูง
+123
+RISK PRIORITY (ระดับความเสี่ยง)
+8-16 High Risk (ความเสี่ยงสูง)
+5-7
+Medium Risk (ความเสียงปานกลาง)
+Low Risk (ความเสียงต่ำ)
+3
+2
+1
+1-4
+1.ระบุพื้นที่เสี่ยงอันตราย
+2.รายการเกิดเหตุอันตราย
+[Chunk 1] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\8_Risk_Assessment_In_Repair_Working\page_121.json
+-ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+-ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+-จัดพื้นที่การทำงานให้เหมาะสม
+3 | 3 | 9 -อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+3
+2
+-จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+-สวมใส่เครื่องป้องกันทุกครั้งเพื่อหลีกเลี่ยงการสัมผัสสารเคมีโดยตรง
+-จัดอุปกรณ์สําหรับใช้กับสารเคมีให้เหมาะสม
+-ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว
+6 -อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+-จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+-กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย
+- หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี
+-ทําหนดพื้นที่การทํางาน
+-ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว
+-อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย
+Residual Risk Fator Risk Priority Accept table
+(ลำดับความเสี่ยง) (โอกาสที่จะเกิด
+(ควาวสามารถ
+HCR PR RF
+ความเสี่ยง)
+ในการยอมรับ)
+3 | 2 | 6 | Medium
+ป
+2
+1
+2
+2
+1
+2
+(ปานกลาง)
+Low
+(ต๋า)
+Low
+(ต๋า)
+Note: HCR = Hazard Class Rating PR = Probability Rating RF = Risk Factor
+1-4 = Low Risk
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\8_Risk_Assessment_In_Repair_Working\page_122.json
+Mund-Titxt Dades&COSTRICH HELIC LI
+Hazard
+Item
+(อันตราย)
+(อันดับ)
+อันตรายจากการกลืน
+4
+สารเคมี
+Hazard Event/
+Potential
+โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา
+ตารางแสดงการประเมินความเสี่ยงที่อาจเกิดขึ้นในการซ่อมแซมชิ้นส่วนอุโมงค์ แสดงไว้ในตารางที่ (1)
+ตารางที่ (1) Risk Assessment in Repair Working (การประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์)
+(เหตุการณ์อันตรายที่อาจเกิดขึ้น)
+-เนื้อเยื่อในช่องปากถูกทำลาย
+-ระบบทางเดินอาหารไหม้อย่างรุนแรง
+Initial Risk Rating
+(ระดับความเสียง)
+HCR PR RF
+4
+-
+Method of Minimization
+(วิธีการลดความเสียง)
+4.
+อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+-จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+-ห้ามนําอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด
+-ทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน
+-ปฏิบัติตามวิธีปฐมพยาบาลเบื้องต้นอย่างเคร่งครัด
+Residual Risk Fator Risk Priority Accept table
+(ลำดับความเสี่ยง) (โอกาสที่จะเกิด
+HCR PR RF ความเสียง)
+(กวาวสามารถ
+ในการยอมรับ)
+3 1
+3
+Low
+(ต๋า)
+[Chunk 3] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\8_Risk_Assessment_In_Repair_Working\page_121.json
+Item
+(อ้นคับ)
+1
+21
+Brigh That (o Glass Cr
+Hazard
+(อันตราย)
+อันตรายจากการใช้
+เครื่องเจียรคอนกรีต
+Hazard Event/
+Potential
+โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา
+ตารางแสดงการประเมินความเสี่ยงที่อาจเกิดขึ้นในการซ่อมแซมชิ้นส่วนอุโมงค์ แสดงไว้ในตารางที่ (1)
+(เหตุการณ์อันตรายที่อาจเกิดขึ้น)
+-ไฟฟ้าดูด
+-โคนใบเจียรมาค
+อันตรายจากการสัมผัส ผิวหนังไหม้
+สารเคมี
+-ระคายเคืองผิวหนัง
+-ผิวหนังอักเสบ
+-เนื้อเยือตาไหม้
+ระคายเคืองดวงตา
+อันตรายจากการสูดดม ระคายเคืองระบบทางเดินหายใจ
+-วิงเวียนศีรษะ
+-หมดสติ
+3
+สารเคมี
+ตารางที่ (1) Risk Assessment in Repair Working (การประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์
+Initial Risk Rating
+(ระดับความเสี่ยง)
+HCR PR RF
+4 3
+Method of Minimization
+(วิธีการลดความเสี่ยง)
+12 -อบรมวิธีการป้องกันความเสี่ยงในการใช้เครื่องเจียรคอนกรีต
+-ใช้เครื่องมือที่ผ่านการตรวจสภาพแล้วเท่านั้น
+-ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+-ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+-จัดพื้นที่การทำงานให้เหมาะสม"
+ Construction-Related, Repair Method,เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับความเสียหายแบบ Spalling Recesses คืออะไร,เมื่อขนาดความเสียหาย:A > 10 mm.B > 30 mm.C > 10 mm.,5,Construction-Related,Repair Method,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method:
+Spalling Recesses
+Other.
+Sharp Edge
+A
+c.At Corners
+Table2 Guideline for Spalling Edge Repair
+C
+B
+B
+b.
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method:
+Repair by:
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+0
+Production Engineer
+QC Engineer
+Consultant
+Date................
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method :
+Repair by:
+D
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+Production Engineer
+QC Engineer
+Consultant
+Date............/........
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_5.json
+STECON
+นที ท ชิน-ไทย เ คีเนีย แลนด์ ทอน หรือ น จํากัด (มหาชน)
+SINCE THEM ENGINEERING SECTANTRUCTION POBLE COMPARTY (IMETER
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+• แตกบินบริเวณ Gasket (Spalling Recesses)
+A
+I
+C
+B
+-
+Table3 Guideline for Recesses Repair
+Action
+Reference Method
+A(mm.)
+B(mm.)
+C(mm.)
+1.No Repair
+<2
+<2
+2.Repair with
+Cementious
+RP-TN-03
+2-10
+5-30
+0-10
+Mortar
+3.Reject
+>10
+>30
+>10
+Document No.",142,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method:
+Spalling Recesses
+Other.
+Sharp Edge
+A
+c.At Corners
+Table2 Guideline for Spalling Edge Repair
+C
+B
+B
+b.
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method:
+Repair by:
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+0
+Production Engineer
+QC Engineer
+Consultant
+Date................
+TYPE OF DAEMAGE
+Crack
+Spalling Edge
+REPAIR PROCEDURE
+Reference Method :
+Repair by:
+D
+Spalling Recesses
+Other
+Voids or Blowholes
+To be Executed at:
+Precast Yard
+After Erection
+ACCEPTANCE
+The repair is inspected and accepted:
+Yes
+No
+Action:
+Production Engineer
+QC Engineer
+Consultant
+Date............/........
+[Chunk 2] Source: dataset_json\Method_Precast_For_Repairing_Tunnet_Segment\1_Guildline_For_Repair\page_5.json
+STECON
+นที ท ชิน-ไทย เ คีเนีย แลนด์ ทอน หรือ น จํากัด (มหาชน)
+SINCE THEM ENGINEERING SECTANTRUCTION POBLE COMPARTY (IMETER
+Project: SEWERAGE TUNNEL BUNG NONG BON
+TO CHAOPHRAYA RIVER
+• แตกบินบริเวณ Gasket (Spalling Recesses)
+A
+I
+C
+B
+-
+Table3 Guideline for Recesses Repair
+Action
+Reference Method
+A(mm.)
+B(mm.)
+C(mm.)
+1.No Repair
+<2
+<2
+2.Repair with
+Cementious
+RP-TN-03
+2-10
+5-30
+0-10
+Mortar
+3.Reject
+>10
+>30
+>10
+Document No."
+ Non-Construction Questions, General / Admin,วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือวันที่เท่าใด,14/2/2017,135,Construction-Related,Material,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+1.2 เกรียง
+1.3 ฟองน้ำหรือลูกกลิ้ง
+1.4 กระดาษทราย
+1.5 ภาชนะใส่วัสดุซ่อม
+2.
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+1.2 เกรียง
+1.3 ฟองนํ้าหรือลูกกลิ้ง
+1.4 เครื่องตัดและใบตัดคอนกรีต
+1.5 กระดาษทราย
+1.6 ภาชนะใส่วัสดุซ่อม
+2.
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+[
+[
+1.2 เกรียง
+1.3 ฟองน้ำหรือลูกกลิ้ง
+1.4 กระดาษทรายหรือเครื่องขัดผิวคอนกรีต
+1.5 ภาชนะใส่วัสดุซ่อม
+1.6 เครื่องตัดและใบตัดคอนกรีต
+[
+Document No.
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+1.2 เกรียง
+1.3 ฟองนํ้าหรือลูกกลิ้ง
+1.4 กระดาษทราย
+1.5 ภาชนะสำหรับใส่วัสดุซ่อม
+Document No.
+รูปที่ 1 แสดงรูฟองอากาศที่มีขนาดมากกว่า 10 mm.",25,extractive-fallback,"Gemini quota is currently exhausted. Returning best extractive answer from retrieved context:
+
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+1.2 เกรียง
+1.3 ฟองน้ำหรือลูกกลิ้ง
+1.4 กระดาษทราย
+1.5 ภาชนะใส่วัสดุซ่อม
+2.
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+1.2 เกรียง
+1.3 ฟองนํ้าหรือลูกกลิ้ง
+1.4 เครื่องตัดและใบตัดคอนกรีต
+1.5 กระดาษทราย
+1.6 ภาชนะใส่วัสดุซ่อม
+2.
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+[
+[
+1.2 เกรียง
+1.3 ฟองน้ำหรือลูกกลิ้ง
+1.4 กระดาษทรายหรือเครื่องขัดผิวคอนกรีต
+1.5 ภาชนะใส่วัสดุซ่อม
+1.6 เครื่องตัดและใบตัดคอนกรีต
+[
+Document No.
+อุปกรณ์ที่ใช้ในการซ่อมแซม
+1.1 เครื่องเป่าลม
+1.2 เกรียง
+1.3 ฟองนํ้าหรือลูกกลิ้ง
+1.4 กระดาษทราย
+1.5 ภาชนะสำหรับใส่วัสดุซ่อม
+Document No.
+รูปที่ 1 แสดงรูฟองอากาศที่มีขนาดมากกว่า 10 mm."
