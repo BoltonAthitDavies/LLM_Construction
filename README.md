@@ -154,6 +154,128 @@ predicted_fused_answer_model
 
 ---
 
+## `src/RAG.py` — Module Reference
+
+### Classes
+
+#### `LocalHashEmbeddings`
+
+A dependency-free fallback embedder used when no `OPENAI_API_KEY` is set. Converts text into a deterministic 512-dimensional vector by hashing each token with SHA-256 and accumulating sign-weighted counts, then L2-normalising the result. Supports both Thai Unicode and ASCII/numeric tokens.
+
+| Method | Description |
+|---|---|
+| `embed_documents(texts)` | Embed a list of strings → `list[list[float]]` |
+| `embed_query(text)` | Embed a single query string → `list[float]` |
+
+---
+
+#### `RAGFlow`
+
+The main pipeline class. Instantiating it builds the full knowledge base (loads JSONs, chunks, indexes FAISS + BM25). All subsequent calls are stateless except for `conversation_history`.
+
+**Constructor parameters:**
+
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `documents_dir` | `str` | *(required)* | Path to the OCR JSON folder |
+| `chunk_size` | `int` | `1500` | Characters per chunk (~300 words) |
+| `chunk_overlap` | `int` | `200` | Overlap between adjacent chunks |
+| `gemini_model` | `str` | `"gemini-2.5-flash"` | Primary Gemini model ID |
+| `gemini_api_key` | `str \| None` | `None` | Override key (else reads `geminikey.txt`) |
+| `top_k_each` | `int` | `8` | Candidates returned by each retriever |
+| `top_k_fused` | `int` | `5` | Chunks kept after RRF fusion |
+| `rrf_k` | `int` | `60` | RRF smoothing constant |
+| `enable_query_rewrite` | `bool` | `True` | Run LLM query-rewriting step |
+
+---
+
+### Key Methods
+
+#### `ask(query: str) → dict`
+
+Single-turn or multi-turn question answering. Appends the exchange to `conversation_history` so subsequent calls have context.
+
+**Input:** a natural-language question string (Thai or English).
+
+**Output dict:**
+
+| Key | Type | Description |
+|---|---|---|
+| `query` | `str` | Original question |
+| `rewritten_query` | `str` | LLM-rewritten retrieval expression |
+| `retrieval.bm25_rank` | `list[int]` | Document indices ranked by BM25 |
+| `retrieval.vector_rank` | `list[int]` | Document indices ranked by FAISS |
+| `retrieval.fused_rank` | `list[int]` | Final fused document indices |
+| `context` | `str` | Formatted retrieved passages with chapter/page citations |
+| `answer_model` | `str` | Gemini model ID that produced the answer |
+| `page` | `str` | Comma-separated page numbers from chunk metadata |
+| `answer` | `str` | Clean, reformatted answer |
+
+---
+
+#### `predict_expected_columns(question: str) → dict`
+
+Batch evaluation mode. Runs all four retrieval strategies in one call and returns predictions for each.
+
+**Input:** a question string.
+
+**Output dict:**
+
+| Key | Type | Description |
+|---|---|---|
+| `question` | `str` | Original question |
+| `rewritten_query` | `str` | LLM-rewritten retrieval expression |
+| `retrieval` | `dict` | Same BM25/vector/fused rank lists as `ask()` |
+| `by_mode` | `dict` | Per-mode results keyed by `"keyword"`, `"fulltext"`, `"vector"`, `"fused"` |
+
+Each `by_mode[mode]` entry contains:
+
+| Key | Type | Description |
+|---|---|---|
+| `answer_model` | `str` | Gemini model used |
+| `raw_answer` | `str` | Unprocessed LLM output |
+| `predictions` | `dict` | Normalised fields: `predicted_Rainbow Group`, `predicted_Category`, `predicted_Answer`, `predicted_Page` |
+
+---
+
+#### `reset_conversation() → None`
+
+Clears the multi-turn `conversation_history` list.
+
+---
+
+### Internal Pipeline Steps
+
+```
+ask(query)
+  │
+  ├─ 1. _rewrite_query()          LLM rewrites query → structured search expression
+  │
+  ├─ 2. _bm25_retrieval()         Score all chunks with BM25 (k1=1.5, b=0.75)
+  ├─ 2. _vector_retrieval()       FAISS cosine similarity search
+  │
+  ├─ 3. _rrf_fusion()             Combine BM25 + vector rankings via RRF
+  │
+  ├─ 4. _build_context()          Format top-K chunks with chapter + page citations
+  ├─ 4. _build_polrag_prompt()    Assemble: system role + context + history + guidelines
+  │
+  ├─ 5. _generate_with_gemini()   Call Gemini; auto-rotate API key on rate-limit
+  │
+  ├─ 6. _parse_response()         Extract Page / Answer fields from LLM output
+  └─ 7. _reformat_answer()        Second LLM pass to strip OCR noise and reformat
+```
+
+**Retrieval modes used in batch evaluation:**
+
+| Mode | Retrieval source |
+|---|---|
+| `keyword` | BM25 top-K |
+| `fulltext` | BM25 top-K (term-based full-text alias) |
+| `vector` | FAISS top-K |
+| `fused` | RRF fusion of BM25 + FAISS |
+
+---
+
 ## Reference
 
 This implementation is based on the POLRAG framework described in:
