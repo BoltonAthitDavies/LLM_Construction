@@ -154,6 +154,136 @@ predicted_fused_answer_model
 
 ---
 
+## Retrieval Methods
+
+### 1. BM25 (Best Match 25) — Keyword Retrieval
+
+BM25 is a classic term-frequency ranking function. It scores every document chunk against the query by counting shared keywords, while penalising very common words (low IDF) and very long documents (length normalisation).
+
+**Score formula for a query Q against document D:**
+
+```
+         |Q|
+BM25 =   Σ   IDF(qi) × TF_norm(qi, D)
+         i=1
+
+         tf(qi, D) × (k1 + 1)
+TF_norm = ─────────────────────────────────────
+          tf(qi, D) + k1 × (1 - b + b × |D|/avgdl)
+
+IDF(qi) = log( (N - df(qi) + 0.5) / (df(qi) + 0.5) + 1 )
+```
+
+| Symbol | Meaning | Value used |
+|---|---|---|
+| `tf(qi, D)` | How many times query term `qi` appears in document `D` | counted at runtime |
+| `\|D\|` | Length of document `D` in tokens | counted at runtime |
+| `avgdl` | Average document length across all chunks | computed at index time |
+| `N` | Total number of chunks | computed at index time |
+| `df(qi)` | Number of chunks containing term `qi` | computed at index time |
+| `k1` | Term-frequency saturation — higher = more weight to repeated terms | **1.5** |
+| `b` | Length normalisation strength — 1.0 = full, 0.0 = none | **0.75** |
+
+**Worked example:**
+
+Suppose the query is `"crack repair"` and one chunk contains the word `"crack"` 3 times out of 200 tokens, with `avgdl = 150` and `IDF("crack") = 2.1`:
+
+```
+TF_norm = 3 × (1.5 + 1) / (3 + 1.5 × (1 - 0.75 + 0.75 × 200/150))
+        = 7.5 / (3 + 1.5 × 1.25)
+        = 7.5 / 4.875
+        ≈ 1.538
+
+BM25 contribution of "crack" = 2.1 × 1.538 ≈ 3.23
+```
+
+All query terms are summed. Chunks are ranked by total BM25 score descending.
+
+---
+
+### 2. Vector Similarity — Semantic Retrieval
+
+Each chunk and the query are converted to dense embedding vectors. Retrieval finds the chunks whose vectors are closest to the query vector in the embedding space, capturing semantic meaning rather than exact word matches.
+
+**Similarity measure:** cosine similarity (via FAISS `IndexFlatL2` internally — equivalent to cosine on normalised vectors).
+
+```
+             A · B
+cos(A, B) = ───────
+            ‖A‖ ‖B‖
+```
+
+A value of `1.0` means identical direction (most similar); `0.0` means orthogonal.
+
+**Embedding options (auto-selected at startup):**
+
+| Condition | Embedder used | Dimension |
+|---|---|---|
+| `OPENAI_API_KEY` is set | `text-embedding-ada-002` (OpenAI) | 1536 |
+| No API key | `LocalHashEmbeddings` (SHA-256 hash) | 512 |
+
+**Example:** The query `"วิธีซ่อมรอยร้าว"` (how to repair cracks) will score highly against a chunk discussing `"crack repair procedures"` even if no exact Thai words appear in the chunk, because the embedding model maps them to nearby vectors.
+
+---
+
+### 3. Reciprocal Rank Fusion (RRF) — Score Fusion
+
+RRF combines the BM25 ranking and the vector ranking into a single ranked list without needing to normalise or compare their raw scores. Each chunk receives a score based on its position in each ranking.
+
+**Formula:**
+
+```
+           Σ         1
+RRF(d) =  ────────────────
+         rankings  k + rank(d)
+```
+
+| Symbol | Meaning | Value used |
+|---|---|---|
+| `rank(d)` | Position of chunk `d` in a given ranking (1 = top) | from BM25 or vector |
+| `k` | Smoothing constant — reduces the dominance of rank-1 | **60** |
+
+RRF scores from all rankings are summed per chunk. Chunks are then re-ranked by total RRF score descending, and the top `top_k_fused` (default **5**) are kept.
+
+**Worked example with k = 60:**
+
+| Chunk | BM25 rank | Vector rank | RRF score |
+|---|---|---|---|
+| A | 1 | 3 | 1/(60+1) + 1/(60+3) = 0.01639 + 0.01587 = **0.03226** |
+| B | 3 | 1 | 1/(60+3) + 1/(60+1) = 0.01587 + 0.01639 = **0.03226** |
+| C | 2 | 5 | 1/(60+2) + 1/(60+5) = 0.01613 + 0.01538 = **0.03151** |
+
+Chunks A and B tie because they both appear in top-3 of both methods. Chunk C ranks third.
+
+**Why RRF?** It is robust to score scale differences between BM25 (unbounded floats) and cosine similarity (0–1). A chunk that ranks well in both methods reliably floats to the top.
+
+---
+
+### 4. Query Rewriting
+
+Before retrieval, the raw user question is rewritten by Gemini into a structured search expression. This bridges the gap between conversational phrasing and document vocabulary.
+
+**Prompt template:**
+```
+Convert the following user question into a structured search expression
+for technical document retrieval about tunnel segment repair.
+Output format: subject: <subject>; elements: <element1>, <element2>, ...
+
+Q: {user_query}
+A:
+```
+
+**Example:**
+
+| Input | Rewritten |
+|---|---|
+| `"วิธีซ่อมโพรงอากาศคืออะไร"` | `subject: void and blowhole repair; elements: repair method, materials, steps` |
+| `"How do I fix cracks using epoxy?"` | `subject: crack repair; elements: epoxy resin, procedure, application steps` |
+
+If the LLM call fails for any reason, the original query is used as a fallback (`enable_query_rewrite=False` skips this step entirely via `--no-query-rewrite`).
+
+---
+
 ## `src/RAG.py` — Module Reference
 
 ### Classes
