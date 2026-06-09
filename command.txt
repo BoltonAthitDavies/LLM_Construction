@@ -1,0 +1,10 @@
+python src/RAG.py --docs dataset_json --query "วิธีซ่อมโพรงอากาศคืออะไร" --separate-modes --gemini-api-key "AIzaSyChfisTQNbM0vJALqBmHhRU_BoKvb9MVPk"
+
+# api key
+AIzaSyChfisTQNbM0vJALqBmHhRU_BoKvb9MVPk
+AIzaSyDMv3dlxTjCmZuZvvUdAr-MKz28chirRW4
+AIzaSyDOczzH1bXv9b1txaZOOcfouX8LVsAW7uQ
+AIzaSyDTU7hz6zFhMCSoYTAmbGJRSPmSJbtzjQc
+AIzaSyC9EwZUtSGCMzaOWf-7io-0X8pFlJcWYi4
+AIzaSyCpPRIVRZc31paNuyvfqdmdf2k1wkFl8_E
+AIzaSyCpPRIVRZc31paNuyvfqdmdf2k1wkFl8_E

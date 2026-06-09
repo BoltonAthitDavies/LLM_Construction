@@ -1,0 +1,501 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{LLM with Construction Engineering Prior Knowledge\\
+via a Knowledge Graph
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Peter Parker}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Mary Jane Watson}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Harry Osborn}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
+
+\maketitle
+
+\begin{abstract}
+On large construction projects, engineering instructions and method
+statements must travel through a long chain of members---from the client to
+the site engineer, the foreman, and finally the workers on site. In practice
+this chain is lossy: information is fragmented across chat applications and
+paper records, critical numeric tolerances in repair procedures are misread,
+and Thai--English language barriers with a multinational workforce introduce
+further ambiguity, all of which translates into rework and non-conformance
+reports. We present SmartCivil, a question-answering framework that couples a
+large language model (LLM) with a knowledge graph to give site members
+reliable, source-grounded access to engineering knowledge. Scanned bilingual
+method statements are ingested by a vision-language OCR model; the extracted
+text, headings, tables, and figures populate a knowledge graph whose entities
+and relations make the engineering knowledge explicit and queryable. For each
+user question the system performs hybrid retrieval---keyword, full-text, and
+dense semantic search---whose rankings are merged by reciprocal rank fusion,
+and an LLM synthesises an answer that is constrained to the retrieved context
+and annotated with page-level citations. We evaluate the framework on a
+tunnel-segment repair corpus using both single-category and multi-category
+questions, scoring engineering-answer correctness, document grounding,
+bilingual fidelity, and response latency. The results characterise where
+retrieval-augmented generation succeeds and where document grounding remains
+the limiting factor for safety-critical construction question answering.
+\end{abstract}
+
+\begin{IEEEkeywords}
+large language models, retrieval-augmented generation, knowledge graph,
+optical character recognition, hybrid retrieval, reciprocal rank fusion,
+bilingual question answering, construction informatics
+\end{IEEEkeywords}
+
+\section{Introduction}
+Large language models (LLMs) have become strong general-purpose reasoners over
+natural language, yet when deployed as domain question-answering systems they
+exhibit a well-known failure mode: they hallucinate, producing fluent answers
+that are not supported by any authoritative source. In safety-critical
+engineering domains, where a single misquoted tolerance can invalidate a repair
+procedure, ungrounded generation is unacceptable. Retrieval-augmented
+generation (RAG) mitigates this by conditioning the model on passages retrieved
+from a trusted corpus, so that generation is anchored to verifiable evidence
+rather than parametric memory.
+
+The effectiveness of RAG is bounded by the quality of its retrieval stage.
+Sparse lexical retrieval such as BM25 rewards exact term overlap and is robust
+for rare technical identifiers (for example, repair-method codes), whereas
+dense retrieval over learned embeddings captures semantic similarity and
+paraphrase. Because the two signals are complementary, we adopt a hybrid
+retriever and combine its component rankings with reciprocal rank fusion (RRF),
+a rank-based aggregation that requires no score calibration across retrievers.
+Beyond flat passage retrieval, a knowledge graph imposes explicit structure on
+the corpus---entities such as defects, materials, and procedures, together with
+the relations among them---providing a grounding substrate that supports
+multi-hop and constraint-bearing queries that plain chunk retrieval handles
+poorly.
+
+Two further technical challenges arise from the source material. First, the
+engineering knowledge exists only as scanned, image-based method statements, so
+the corpus must be reconstructed with optical character recognition (OCR) using
+a vision-language model that can recover text, headings, and tabular structure.
+Second, the documents and the user population are bilingual (Thai and English)
+and frequently code-switched, which requires retrieval and generation to
+preserve technical terminology across languages. We further employ query
+decomposition for compound questions and constrain the generator to emit
+structured, citation-bearing answers so that every claim is traceable to a
+source page.
+
+This paper makes the following technical contributions:
+\begin{itemize}
+\item a bilingual document-ingestion pipeline that converts scanned
+method statements into a structured, retrievable knowledge base via
+vision-language OCR;
+\item a hybrid keyword, full-text, and dense retriever whose rankings are fused
+by RRF and consumed by an LLM under a grounding constraint with page-level
+citation; and
+\item a multi-dimensional evaluation protocol---covering engineering-answer
+correctness, document grounding, bilingual fidelity, and latency---applied to a
+tunnel-segment repair corpus.
+\end{itemize}
+
+\section{Methodology}
+Building on the RAG-LLM design of POLRAG~\cite{polrag}, SmartCivil is organised
+as a six-phase pipeline that transforms scanned, image-based method statements
+into grounded, citation-bearing answers. The
+phases are document ingestion, knowledge-graph construction, query
+understanding, retrieval, answer generation, and structured formatting.
+
+\subsection{Document Ingestion}
+The source corpus consists of scanned bilingual (Thai--English) method
+statements for tunnel-segment repair. Each page is processed by a
+vision-language OCR model that recovers running text, headings, tables, and
+figures while preserving the page index. The output is serialised into a
+manifest together with extracted image and table assets, so that every text
+segment retains a back-pointer to its originating page; these page references
+are later surfaced as citations and are the basis of the document-grounding
+evaluation.
+
+\subsection{Knowledge-Graph Construction}
+The ingested content is intended to populate a knowledge graph whose nodes are
+domain entities (defects, materials, procedures, and quantitative conditions)
+and whose edges encode the relations among them, providing explicit structure
+for multi-hop and constraint-bearing queries. \emph{The detailed construction
+of this graph is deferred to future work; the experiments reported here operate
+over the segmented document store produced in the ingestion phase.}
+
+\subsection{Query Understanding}
+An incoming question is first analysed for scope. Compound questions that span
+multiple categories are decomposed into atomic sub-questions, each of which is
+routed through retrieval independently before the partial results are
+recombined. This decomposition is what allows the system to answer
+multi-category questions that pair, for example, a repair-method query with an
+environmental-measure query.
+
+\subsection{Retrieval}
+For each (sub-)question the system runs three retrievers in parallel. A keyword
+retriever rewards exact matches on rare technical identifiers; a full-text
+retriever operates over both Thai and English surface forms; and a dense
+retriever ranks segments by the cosine similarity between the question
+embedding $\mathbf{q}$ and each segment embedding $\mathbf{d}$,
+\begin{equation}
+\operatorname{sim}(\mathbf{q},\mathbf{d}) =
+\frac{\mathbf{q}\cdot\mathbf{d}}{\lVert\mathbf{q}\rVert\,\lVert\mathbf{d}\rVert}.
+\label{eq:cos}
+\end{equation}
+The three rankings are merged by reciprocal rank fusion (RRF), which aggregates
+on rank position and therefore needs no score normalisation across retrievers,
+\begin{equation}
+\operatorname{RRF}(d) = \sum_{r \in R} \frac{1}{k + \operatorname{rank}_r(d)},
+\label{eq:rrf}
+\end{equation}
+where $R$ is the set of retrievers, $\operatorname{rank}_r(d)$ is the rank of
+segment $d$ under retriever $r$, and $k$ is a smoothing constant. The
+top-ranked fused segments form the context passed to the generator.
+
+\subsection{Answer Generation and Structured Formatting}
+A system prompt constrains the LLM to answer strictly from the retrieved
+context, to decline when the context is insufficient, and to respond in the
+language of the question. The raw answer is then passed through a formatting
+step that filters OCR noise and emits a structured response: the textual
+answer, any supporting image or table evidence, and the page-level document
+citation.
+
+\section{Experiment Design}
+We evaluate two complementary aspects of the system: the quality of the
+retrieval stage in isolation, and the end-to-end quality of the generated
+answers.
+
+\subsection{Semantic Similarity Retrieval}
+Retrieval is assessed with context precision and context recall over the
+retrieved segment set. With true positives ($TP$) being retrieved segments that
+contain correct and relevant information with respect to the expected answer,
+false positives ($FP$) being retrieved segments that contribute no relevant
+information, and false negatives ($FN$) being relevant segments that were not
+retrieved, the metrics are
+\begin{equation}
+\text{Context Precision} = \frac{TP}{TP+FP}, \qquad
+\text{Context Recall} = \frac{TP}{TP+FN}.
+\label{eq:pr}
+\end{equation}
+Precision measures how much of the retrieved content is actually relevant,
+while recall measures how completely the retriever covers the evidence needed
+to answer the query.
+
+\subsection{LLM Performance}
+End-to-end answer quality is scored on a 100-point rubric spanning five
+dimensions, summarised in Table~\ref{tab:rubric}. Engineering-answer
+correctness and document-grounding accuracy carry the largest weights because
+they capture, respectively, whether the prescribed repair method matches the
+method statement and whether the answer is faithful to the source documents
+without hallucination.
+
+\begin{table}[htbp]
+\caption{LLM Performance Evaluation Rubric}
+\begin{center}
+\begin{tabular}{|p{0.46\columnwidth}|c|p{0.28\columnwidth}|}
+\hline
+\textbf{Evaluation Dimension} & \textbf{Max} & \textbf{Metric / Method} \\
+\hline
+Engineering Answer Correctness & 40 & Expert validation, rule matching \\
+\hline
+Document Grounding Accuracy & 30 & Citation correctness, hallucination rate \\
+\hline
+Bilingual Capability (TH--EN) & 10 & Translation accuracy, semantic consistency \\
+\hline
+Response Latency & 10 & Average response time (s) \\
+\hline
+System Prompt Compliance & 10 & Prompt adherence score \\
+\hline
+\textbf{Total} & \textbf{100} & \\
+\hline
+\end{tabular}
+\label{tab:rubric}
+\end{center}
+\end{table}
+
+Each scored dimension is graded into qualitative bands. For
+engineering-answer correctness, an answer is \emph{Excellent} (36--40) when it
+identifies the correct repair method in line with the method statement
+(e.g.\ RP-TN-01, RP-TN-02, or Reject) together with the complete numeric
+conditions such as crack width, depth, and void size; \emph{Good} (26--35) when
+the method is correct but some numeric detail is missing; \emph{Fair} (16--25)
+when the intent is partially correct but the chosen method departs from the
+guideline; and \emph{Poor} (0--15) when the method is wrong or contradicts the
+documents. For document-grounding accuracy, an answer is \emph{Excellent}
+(26--30) when it is entirely supported by the corpus with no hallucination,
+\emph{Good} (18--25) when citations are largely correct with minor
+over-summarisation, and \emph{Poor} (0--17) when it contains clear
+hallucination or unsupported claims. Response latency is mapped from the mean
+per-question time: $\le 5$\,s scores 10, 6--10\,s scores 8, 11--20\,s scores 5,
+and $>20$\,s scores 0.
+
+\section{Results and Discussion}
+We evaluate the fused-retrieval configuration on two question sets: a
+single-category set (Level~1, $n=20$) and a multi-category set that pairs two
+or three topics per question (Level~2, $n=20$). Each answer was scored against
+an expert ground truth on the rubric of Table~\ref{tab:rubric}; latency was
+derived from the measured per-question time, while bilingual capability and
+system-prompt compliance were assessed at the system level. The aggregate
+scores are reported in Table~\ref{tab:results}.
+
+\begin{table}[htbp]
+\caption{Evaluation Results (Fused Retrieval)}
+\begin{center}
+\begin{tabular}{|p{0.42\columnwidth}|c|c|c|}
+\hline
+\textbf{Dimension} & \textbf{Max} & \textbf{L1} & \textbf{L2} \\
+\hline
+Engineering Answer Correctness & 40 & 19.6 & 22.4 \\
+\hline
+Document Grounding Accuracy & 30 & 19.4 & 20.6 \\
+\hline
+Response Latency & 10 & 0.0 & 0.0 \\
+\hline
+Bilingual Capability (TH--EN) & 10 & 9.0 & 9.0 \\
+\hline
+System Prompt Compliance & 10 & 9.0 & 9.0 \\
+\hline
+\textbf{Total} & \textbf{100} & \textbf{57.0} & \textbf{61.0} \\
+\hline
+\end{tabular}
+\label{tab:results}
+\end{center}
+\end{table}
+
+\subsection{Latency}
+Every question in both sets exceeded the 20\,s threshold (Level~1 mean
+$35.7$\,s, Level~2 mean $43.7$\,s, worst cases above $80$\,s), so response
+latency scores zero throughout. This is the single largest and most actionable
+deficit, driven by the sequential per-mode generation and the second
+answer-reformatting pass.
+
+\subsection{Retrieval Recall vs.\ Hallucination}
+Recall, rather than hallucination, is the dominant failure mode. In $9$ of $20$
+Level~1 questions and $7$ of $20$ Level~2 questions the system returned
+``information not found'' even though the answer was present in the corpus---a
+retrieval miss rather than a generation error. When relevant context \emph{was}
+retrieved, answers were typically accurate and faithful, yielding eight
+Excellent (Level~1) and seven Excellent (Level~2) correctness grades. Only one
+genuine hallucination was observed, where a project-name query returned a long
+list of unrelated projects.
+
+\subsection{Citation Quality}
+Page-level grounding is capped by noisy citations: correct answers frequently
+returned five candidate pages where only one was relevant, and several
+otherwise-correct answers cited the wrong page entirely. Multi-category
+(Level~2) questions scored slightly higher overall because their compound
+phrasing supplied richer retrieval cues, but they commonly answered the
+repair-method sub-question correctly while missing a second numeric sub-part
+such as a mixing ratio or pot life.
+
+\subsection{Bilingual Fidelity and Compliance}
+Bilingual capability and prompt compliance are strong: answers consistently
+matched the language of the question and preserved English material and
+technical terms, and the frequent honest abstentions indicate good adherence to
+the instruction to answer only from retrieved context. Overall, the framework
+is reliable when retrieval succeeds; improving retrieval recall and citation
+precision, and reducing latency, are the priorities for future work.
+
+\iffalse
+\section{Ease of Use}
+
+\subsection{Maintaining the Integrity of the Specifications}
+
+The IEEEtran class file is used to format your paper and style the text. All margins, 
+column widths, line spaces, and text fonts are prescribed; please do not 
+alter them. You may note peculiarities. For example, the head margin
+measures proportionately more than is customary. This measurement 
+and others are deliberate, using specifications that anticipate your paper 
+as one part of the entire proceedings, and not as an independent document. 
+Please do not revise any of the current designations.
+
+\section{Prepare Your Paper Before Styling}
+Before you begin to format your paper, first write and save the content as a 
+separate text file. Complete all content and organizational editing before 
+formatting. Please note sections \ref{AA}--\ref{SCM} below for more information on 
+proofreading, spelling and grammar.
+
+Keep your text and graphic files separate until after the text has been 
+formatted and styled. Do not number text heads---{\LaTeX} will do that 
+for you.
+
+\subsection{Abbreviations and Acronyms}\label{AA}
+Define abbreviations and acronyms the first time they are used in the text, 
+even after they have been defined in the abstract. Abbreviations such as 
+IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use 
+abbreviations in the title or heads unless they are unavoidable.
+
+\subsection{Units}
+\begin{itemize}
+\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
+\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
+\item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
+\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.)
+\end{itemize}
+
+\subsection{Equations}
+Number equations consecutively. To make your 
+equations more compact, you may use the solidus (~/~), the exp function, or 
+appropriate exponents. Italicize Roman symbols for quantities and variables, 
+but not Greek symbols. Use a long dash rather than a hyphen for a minus 
+sign. Punctuate equations with commas or periods when they are part of a 
+sentence, as in:
+\begin{equation}
+a+b=\gamma\label{eq}
+\end{equation}
+
+Be sure that the 
+symbols in your equation have been defined before or immediately following 
+the equation. Use ``\eqref{eq}'', not ``Eq.~\eqref{eq}'' or ``equation \eqref{eq}'', except at 
+the beginning of a sentence: ``Equation \eqref{eq} is . . .''
+
+\subsection{\LaTeX-Specific Advice}
+
+Please use ``soft'' (e.g., \verb|\eqref{Eq}|) cross references instead
+of ``hard'' references (e.g., \verb|(1)|). That will make it possible
+to combine sections, add equations, or change the order of figures or
+citations without having to go through the file line by line.
+
+Please don't use the \verb|{eqnarray}| equation environment. Use
+\verb|{align}| or \verb|{IEEEeqnarray}| instead. The \verb|{eqnarray}|
+environment leaves unsightly spaces around relation symbols.
+
+Please note that the \verb|{subequations}| environment in {\LaTeX}
+will increment the main equation counter even when there are no
+equation numbers displayed. If you forget that, you might write an
+article in which the equation numbers skip from (17) to (20), causing
+the copy editors to wonder if you've discovered a new method of
+counting.
+
+{\BibTeX} does not work by magic. It doesn't get the bibliographic
+data from thin air but from .bib files. If you use {\BibTeX} to produce a
+bibliography you must send the .bib files. 
+
+{\LaTeX} can't read your mind. If you assign the same label to a
+subsubsection and a table, you might find that Table I has been cross
+referenced as Table IV-B3. 
+
+{\LaTeX} does not have precognitive abilities. If you put a
+\verb|\label| command before the command that updates the counter it's
+supposed to be using, the label will pick up the last counter to be
+cross referenced instead. In particular, a \verb|\label| command
+should not go before the caption of a figure or a table.
+
+Do not use \verb|\nonumber| inside the \verb|{array}| environment. It
+will not stop equation numbers inside \verb|{array}| (there won't be
+any anyway) and it might stop a wanted equation number in the
+surrounding equation.
+
+\subsection{Some Common Mistakes}\label{SCM}
+\begin{itemize}
+\item The word ``data'' is plural, not singular.
+\item The subscript for the permeability of vacuum $\mu_{0}$, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ``o''.
+\item In American English, commas, semicolons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
+\item A graph within a graph is an ``inset'', not an ``insert''. The word alternatively is preferred to the word ``alternately'' (unless you really mean something that alternates).
+\item Do not use the word ``essentially'' to mean ``approximately'' or ``effectively''.
+\item In your paper title, if the words ``that uses'' can accurately replace the word ``using'', capitalize the ``u''; if not, keep using lower-cased.
+\item Be aware of the different meanings of the homophones ``affect'' and ``effect'', ``complement'' and ``compliment'', ``discreet'' and ``discrete'', ``principal'' and ``principle''.
+\item Do not confuse ``imply'' and ``infer''.
+\item The prefix ``non'' is not a word; it should be joined to the word it modifies, usually without a hyphen.
+\item There is no period after the ``et'' in the Latin abbreviation ``et al.''.
+\item The abbreviation ``i.e.'' means ``that is'', and the abbreviation ``e.g.'' means ``for example''.
+\end{itemize}
+An excellent style manual for science writers is \cite{b7}.
+
+\subsection{Authors and Affiliations}
+\textbf{The class file is designed for, but not limited to, six authors.} A 
+minimum of one author is required for all conference articles. Author names 
+should be listed starting from left to right and then moving down to the 
+next line. This is the author sequence that will be used in future citations 
+and by indexing services. Names should not be listed in columns nor group by 
+affiliation. Please keep your affiliations as succinct as possible (for 
+example, do not differentiate among departments of the same organization).
+
+\subsection{Identify the Headings}
+Headings, or heads, are organizational devices that guide the reader through 
+your paper. There are two types: component heads and text heads.
+
+Component heads identify the different components of your paper and are not 
+topically subordinate to each other. Examples include Acknowledgments and 
+References and, for these, the correct style to use is ``Heading 5''. Use 
+``figure caption'' for your Figure captions, and ``table head'' for your 
+table title. Run-in heads, such as ``Abstract'', will require you to apply a 
+style (in this case, italic) in addition to the style provided by the drop 
+down menu to differentiate the head from the text.
+
+Text heads organize the topics on a relational, hierarchical basis. For 
+example, the paper title is the primary text head because all subsequent 
+material relates and elaborates on this one topic. If there are two or more 
+sub-topics, the next level head (uppercase Roman numerals) should be used 
+and, conversely, if there are not at least two sub-topics, then no subheads 
+should be introduced.
+
+\subsection{Figures and Tables}
+\paragraph{Positioning Figures and Tables} Place figures and tables at the top and 
+bottom of columns. Avoid placing them in the middle of columns. Large 
+figures and tables may span across both columns. Figure captions should be 
+below the figures; table heads should appear above the tables. Insert 
+figures and tables after they are cited in the text. Use the abbreviation 
+``Fig.~\ref{fig}'', even at the beginning of a sentence.
+
+\begin{table}[htbp]
+\caption{Table Type Styles}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
+\cline{2-4} 
+\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+\hline
+copy& More table copy$^{\mathrm{a}}$& &  \\
+\hline
+\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics{fig1.png}}
+\caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
+
+Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
+rather than symbols or abbreviations when writing Figure axis labels to 
+avoid confusing the reader. As an example, write the quantity 
+``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
+units in the label, present them within parentheses. Do not label axes only 
+with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
+\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
+quantities and units. For example, write ``Temperature (K)'', not
+``Temperature/K''.
+\fi
+
+\section*{Acknowledgment}
+
+The authors thank the project advisors and the participating contractor for
+access to the method-statement documents used in this study.
+
+\begin{thebibliography}{00}
+\bibitem{polrag} H. Lin, P. Deng, Q. Zhong, and X. Zhu, ``POLRAG: A RAG-LLM framework for policy question answering,'' in \emph{Proc. 2025 IEEE Int. Conf. High Performance Computing and Communications (HPCC)}, 2025, pp. 1259--1264, doi: 10.1109/HPCC67675.2025.00179.
+\end{thebibliography}
+
+\end{document}

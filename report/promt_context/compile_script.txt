@@ -1,0 +1,32 @@
+# Compile script for the IEEE conference paper
+# File: report/conference_101719.tex
+# Engine: pdflatex (standard IEEEtran template, embeds fig1.png)
+# Output: report/conference_101719.pdf
+
+# ---------------------------------------------------------------------------
+# RECOMMENDED — latexmk handles all passes (and bibtex, if a .bib is added)
+# Run from the report/ directory:
+# ---------------------------------------------------------------------------
+latexmk -pdf -interaction=nonstopmode -halt-on-error conference_101719.tex
+
+# Clean up auxiliary files afterwards (.aux .log .out .fls .fdb_latexmk ...):
+latexmk -c conference_101719.tex
+
+
+# ---------------------------------------------------------------------------
+# ALTERNATIVE — manual pdflatex (run twice so cross-references resolve)
+# ---------------------------------------------------------------------------
+pdflatex -interaction=nonstopmode -halt-on-error conference_101719.tex
+pdflatex -interaction=nonstopmode -halt-on-error conference_101719.tex
+
+
+# ---------------------------------------------------------------------------
+# PowerShell one-liner (run from anywhere) — cd into report/ then compile
+# ---------------------------------------------------------------------------
+# Set-Location "c:\Users\User\LLM_Construction\report"; latexmk -pdf -interaction=nonstopmode -halt-on-error conference_101719.tex
+
+
+# ---------------------------------------------------------------------------
+# Continuous preview — rebuild automatically on every save
+# ---------------------------------------------------------------------------
+# latexmk -pdf -pvc -interaction=nonstopmode conference_101719.tex
