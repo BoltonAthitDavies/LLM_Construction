@@ -8,7 +8,8 @@ Three stages:
 Usage:
     python src/RAG.py --docs dataset_json --query "เกณฑ์การซ่อมแซมรอยร้าว (Crack Repair) สำหรับรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar คืออะไร"
     python src/RAG.py --docs dataset_json --interactive
-    python src/RAG.py --docs dataset_json --qa-csv tablev2/QA_test_lvl2.csv --output-csv QA_test_lvl2.csv
+    python src/RAG.py --docs dataset_json --qa-csv tablev2/QA_test_lvl2.csv --output-csv result_test_lvl2.csv
+    python src/RAG.py --docs dataset_json --qa-csv tablev2/QA_test.csv --output-csv result_test.csv
 """
 from __future__ import annotations
 
@@ -18,6 +19,7 @@ import json
 import math
 import os
 import re
+import sys
 import time
 from pathlib import Path
 from typing import Any
@@ -47,6 +49,35 @@ SYSTEM_ROLE = (
     "Always cite the chapter and page number when referencing specific information. "
     "If the context does not contain enough information, state that clearly rather than guessing."
 )
+
+
+def load_api_keys(gemini_api_key: str | None = None, verbose: bool = False) -> list[str]:
+    """Resolve Gemini API keys: geminikey.txt (next to RAG.py, then project root) → env var → CLI arg."""
+    here = Path(__file__).parent
+    file_keys: list[str] = []
+    for keys_file in (here / "geminikey.txt", here.parent / "geminikey.txt"):
+        if keys_file.exists():
+            file_keys = [k.strip() for k in keys_file.read_text(encoding="utf-8").splitlines() if k.strip()]
+            if verbose:
+                print(f"  Loaded {len(file_keys)} API keys from {keys_file}")
+            break
+    env_key = gemini_api_key or os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    return file_keys or ([env_key] if env_key else [])
+
+
+def ping_gemini(keys: list[str], model: str = "gemini-2.5-flash") -> tuple[bool, str]:
+    """Send one minimal request to verify the API is reachable. No KB build required."""
+    if genai is None:
+        return False, "package 'google-genai' is not installed"
+    if not keys:
+        return False, "no Gemini API key found (geminikey.txt or GOOGLE_API_KEY)"
+    try:
+        client = genai.Client(api_key=keys[0])
+        resp = client.models.generate_content(model=model, contents="ping")
+        text = getattr(resp, "text", None)
+        return True, f"reachable ({model}); sample reply: {(text or '').strip()[:40]!r}"
+    except Exception as exc:  # noqa: BLE001 — surface any auth/quota/network error verbatim
+        return False, f"{type(exc).__name__}: {exc}"
 
 
 class LocalHashEmbeddings(Embeddings):
@@ -81,10 +112,97 @@ class LocalHashEmbeddings(Embeddings):
         return self._embed_text(text)
 
 
+class GeminiEmbeddings(Embeddings):
+    """Real semantic embeddings via the Gemini embedding API, with an on-disk cache.
+
+    Reuses the project's Gemini API keys (rotating on rate limits) and caches each
+    text's vector by SHA-256 so repeated runs do not re-embed the same chunks.
+    """
+
+    BATCH = 100
+
+    def __init__(self, api_keys: list[str], model: str = "gemini-embedding-001",
+                 cache_path: str | Path | None = None) -> None:
+        if genai is None:
+            raise ImportError("Missing package 'google-genai'. Install: pip install google-genai")
+        if not api_keys:
+            raise ValueError("GeminiEmbeddings requires at least one API key.")
+        self.api_keys = api_keys
+        self.model = model
+        self._ki = 0
+        self.client = genai.Client(api_key=api_keys[0])
+        self.cache_path = Path(cache_path) if cache_path else None
+        self.cache: dict[str, list[float]] = {}
+        if self.cache_path and self.cache_path.exists():
+            try:
+                self.cache = json.loads(self.cache_path.read_text(encoding="utf-8"))
+                print(f"  Embedding cache: {len(self.cache)} vectors from {self.cache_path.name}")
+            except Exception:
+                self.cache = {}
+
+    def _key(self, text: str) -> str:
+        return hashlib.sha256(f"{self.model}\x00{text}".encode("utf-8")).hexdigest()
+
+    def _rotate(self) -> None:
+        self._ki = (self._ki + 1) % len(self.api_keys)
+        self.client = genai.Client(api_key=self.api_keys[self._ki])
+
+    def _embed_batch(self, texts: list[str]) -> list[list[float]]:
+        last = ""
+        for _ in range(len(self.api_keys) + 1):
+            try:
+                resp = self.client.models.embed_content(model=self.model, contents=texts)
+                return [list(e.values) for e in resp.embeddings]
+            except Exception as exc:
+                last = str(exc)
+                if any(s in last for s in ("RESOURCE_EXHAUSTED", "RATE_LIMIT", "429", "quota")):
+                    self._rotate()
+                    time.sleep(1.0)
+                else:
+                    raise
+        raise RuntimeError(f"Gemini embedding failed: {last}")
+
+    def _save(self) -> None:
+        if self.cache_path:
+            self.cache_path.parent.mkdir(parents=True, exist_ok=True)
+            self.cache_path.write_text(json.dumps(self.cache), encoding="utf-8")
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        out: list[list[float] | None] = [None] * len(texts)
+        todo: list[str] = []
+        todo_idx: list[int] = []
+        for i, t in enumerate(texts):
+            cached = self.cache.get(self._key(t))
+            if cached is not None:
+                out[i] = cached
+            else:
+                todo.append(t)
+                todo_idx.append(i)
+        for b in range(0, len(todo), self.BATCH):
+            batch = todo[b:b + self.BATCH]
+            for j, vec in zip(todo_idx[b:b + self.BATCH], self._embed_batch(batch)):
+                out[j] = vec
+                self.cache[self._key(texts[j])] = vec
+        if todo:
+            self._save()
+        return [v for v in out]  # type: ignore[misc]
+
+    def embed_query(self, text: str) -> list[float]:
+        cached = self.cache.get(self._key(text))
+        if cached is not None:
+            return cached
+        vec = self._embed_batch([text])[0]
+        self.cache[self._key(text)] = vec
+        self._save()
+        return vec
+
+
 class RAGFlow:
     # BM25 hyperparameters (standard values per Robertson et al. 2009)
     BM25_K1 = 1.5
     BM25_B = 0.75
+
+    DEFAULT_MODES = ("keyword", "vector", "fused")
 
     def __init__(
         self,
@@ -97,6 +215,14 @@ class RAGFlow:
         top_k_fused: int = 5,
         rrf_k: int = 60,
         enable_query_rewrite: bool = True,
+        bm25_k1: float = 1.5,
+        bm25_b: float = 0.75,
+        enable_reformat: bool = True,
+        embedding_dim: int = 512,
+        modes: list[str] | None = None,
+        require_gemini: bool = True,
+        embeddings_backend: str = "auto",
+        gemini_embed_model: str = "gemini-embedding-001",
     ) -> None:
         self.documents_dir = Path(documents_dir)
         self.chunk_size = chunk_size
@@ -106,31 +232,40 @@ class RAGFlow:
         self.top_k_fused = top_k_fused
         self.rrf_k = rrf_k
         self.enable_query_rewrite = enable_query_rewrite
+        self.bm25_k1 = bm25_k1
+        self.bm25_b = bm25_b
+        self.enable_reformat = enable_reformat
+        self.embedding_dim = embedding_dim
+        self.modes = list(modes) if modes else list(self.DEFAULT_MODES)
         self.conversation_history: list[dict[str, str]] = []
 
-        if genai is None:
+        # Generation needs google-genai + a key; retrieval-only mode does not.
+        if genai is None and require_gemini:
             raise ImportError("Missing package 'google-genai'. Install: pip install google-genai")
 
         # Load API keys: geminikey.txt (project root) → env var → CLI arg
-        keys_file = Path(__file__).parent.parent / "geminikey.txt"
-        file_keys: list[str] = []
-        if keys_file.exists():
-            file_keys = [k.strip() for k in keys_file.read_text(encoding="utf-8").splitlines() if k.strip()]
-            print(f"  Loaded {len(file_keys)} API keys from {keys_file.name}")
-
-        env_key = gemini_api_key or os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
-        all_keys = file_keys or ([env_key] if env_key else [])
-        if not all_keys:
+        all_keys = load_api_keys(gemini_api_key, verbose=True)
+        if not all_keys and require_gemini:
             raise ValueError("No Gemini API key found. Add keys to geminikey.txt or set GOOGLE_API_KEY.")
 
         self._api_keys: list[str] = all_keys
         self._key_index: int = 0
-        self.client = genai.Client(api_key=self._api_keys[0])
+        self.client = genai.Client(api_key=all_keys[0]) if (genai is not None and all_keys) else None
 
         openai_key = os.getenv("OPENAI_API_KEY")
-        self.embeddings: Embeddings = (
-            OpenAIEmbeddings(api_key=openai_key) if openai_key else LocalHashEmbeddings(dim=512)
-        )
+        backend = embeddings_backend
+        if backend == "auto":
+            backend = "openai" if openai_key else "hash"
+        if backend == "openai":
+            if not openai_key:
+                raise ValueError("--embeddings openai requires OPENAI_API_KEY.")
+            self.embeddings: Embeddings = OpenAIEmbeddings(api_key=openai_key)
+        elif backend == "gemini":
+            cache = Path(__file__).parent.parent / ".emb_cache" / f"{gemini_embed_model}.json"
+            self.embeddings = GeminiEmbeddings(self._api_keys, model=gemini_embed_model, cache_path=cache)
+        else:  # "hash" — deterministic placeholder, no semantics
+            self.embeddings = LocalHashEmbeddings(dim=self.embedding_dim)
+        print(f"  Embeddings backend: {backend}")
 
         print("Building knowledge base...")
         self.documents = self._load_and_chunk_documents()
@@ -234,7 +369,7 @@ class RAGFlow:
         idf = self._bm25["idf"]
         avgdl = self._bm25["avgdl"]
         doc_lengths = self._bm25["doc_lengths"]
-        k1, b = self.BM25_K1, self.BM25_B
+        k1, b = self.bm25_k1, self.bm25_b
 
         scores: list[tuple[int, float]] = []
         for idx, tokens in enumerate(self.doc_tokens):
@@ -391,7 +526,7 @@ class RAGFlow:
             if not result:
                 print("[reformat] WARNING: LLM returned empty response, keeping original.")
                 return answer
-            print(f"[reformat] OK — reformatted {len(answer)} chars → {len(result)} chars")
+            print(f"[reformat] OK - reformatted {len(answer)} chars -> {len(result)} chars")
             return result
         except Exception as exc:
             print(f"[reformat] ERROR: {exc}. Keeping original answer.")
@@ -507,20 +642,32 @@ class RAGFlow:
 
     # ── CSV Batch Mode ───────────────────────────────────────────────────────
 
-    def predict_expected_columns(self, question: str) -> dict[str, Any]:
-        """Batch prediction mode compatible with the existing CSV evaluation format."""
-        retrieval_query = self._rewrite_query(question) if self.enable_query_rewrite else question
+    def _retrieve_ranks(self, retrieval_query: str) -> dict[str, list[int]]:
+        """Run the base retrievers once and return the doc-id list for each requested mode."""
         bm25_rank = self._bm25_retrieval(retrieval_query, top_k=self.top_k_each)
         vector_rank = self._vector_retrieval(retrieval_query, top_k=self.top_k_each)
         fused_ids = self._rrf_fusion([bm25_rank, vector_rank], top_k=self.top_k_fused)
 
-        # Each mode uses its own retrieved document set for context and generation
-        mode_doc_ids = {
+        # Each mode uses its own retrieved document set for context and generation.
+        # NOTE: "keyword" and "fulltext" are both BM25 (term-based) and therefore identical today.
+        all_modes = {
             "keyword":  bm25_rank[:self.top_k_fused],
-            "fulltext": bm25_rank[:self.top_k_fused],   # fulltext uses BM25 (term-based)
+            "fulltext": bm25_rank[:self.top_k_fused],
             "vector":   vector_rank[:self.top_k_fused],
             "fused":    fused_ids,
         }
+        ranks = {m: all_modes[m] for m in self.modes if m in all_modes}
+        ranks["_bm25_rank"] = bm25_rank
+        ranks["_vector_rank"] = vector_rank
+        ranks["_fused_rank"] = fused_ids
+        return ranks
+
+    def predict_expected_columns(self, question: str) -> dict[str, Any]:
+        """Batch prediction mode compatible with the existing CSV evaluation format."""
+        retrieval_query = self._rewrite_query(question) if self.enable_query_rewrite else question
+        ranks = self._retrieve_ranks(retrieval_query)
+        bm25_rank, vector_rank, fused_ids = ranks["_bm25_rank"], ranks["_vector_rank"], ranks["_fused_rank"]
+        mode_doc_ids = {m: ranks[m] for m in self.modes if m in ranks}
 
         by_mode: dict[str, Any] = {}
         for mode, doc_ids in mode_doc_ids.items():
@@ -543,7 +690,8 @@ class RAGFlow:
             parsed = self._extract_json_object(raw_answer) or self._extract_labeled_fields(raw_answer)
             predictions = self._normalize_prediction_payload(parsed, raw_answer, question, page)
             predictions["predicted_Page"] = page   # override with metadata-derived pages
-            predictions["predicted_Answer"] = self._reformat_answer(question, predictions["predicted_Answer"])
+            if self.enable_reformat:
+                predictions["predicted_Answer"] = self._reformat_answer(question, predictions["predicted_Answer"])
             by_mode[mode] = {"answer_model": model_used, "raw_answer": raw_answer, "predictions": predictions}
 
         return {
@@ -575,6 +723,47 @@ class RAGFlow:
     def _page_num_from_path(source: str) -> str:
         match = re.search(r"page[_-]?(\d+)", source, flags=re.IGNORECASE)
         return match.group(1) if match else ""
+
+    # ── Per-method Evaluation Scoring ────────────────────────────────────────
+
+    @staticmethod
+    def _parse_pages(value: Any) -> set[str]:
+        """Normalise a page field ('6, 8, 0135' or '3.0' or 'unknown') into a set of ints-as-str."""
+        pages: set[str] = set()
+        for tok in re.split(r"[,\s]+", str(value).strip()):
+            tok = tok.strip()
+            if not tok or tok.lower() in ("unknown", "nan", "none"):
+                continue
+            m = re.match(r"0*(\d+)", tok)  # strip leading zeros / trailing '.0'
+            if m:
+                pages.add(str(int(m.group(1))))
+        return pages
+
+    @classmethod
+    def _page_scores(cls, pred_page: Any, gt_page: Any) -> tuple[float, float, int]:
+        """Return (recall, precision, hit) of retrieved pages against the GT page set."""
+        pred, gt = cls._parse_pages(pred_page), cls._parse_pages(gt_page)
+        if not gt:
+            return (0.0, 0.0, 0)
+        inter = pred & gt
+        recall = len(inter) / len(gt)
+        precision = len(inter) / len(pred) if pred else 0.0
+        return (recall, precision, 1 if inter else 0)
+
+    def _answer_similarity(self, pred: str, gt: str) -> float:
+        """Cosine similarity between predicted and gold answer embeddings (relative measure)."""
+        pred, gt = (pred or "").strip(), (gt or "").strip()
+        if not pred or not gt:
+            return 0.0
+        try:
+            a = self.embeddings.embed_query(pred)
+            b = self.embeddings.embed_query(gt)
+        except Exception:
+            return 0.0
+        dot = sum(x * y for x, y in zip(a, b))
+        na = math.sqrt(sum(x * x for x in a))
+        nb = math.sqrt(sum(y * y for y in b))
+        return dot / (na * nb) if na > 0 and nb > 0 else 0.0
 
     @staticmethod
     def _extract_json_object(text: str) -> dict[str, Any] | None:
@@ -644,6 +833,38 @@ class RAGFlow:
         }
 
 
+def summarize_modes(frame: "pd.DataFrame", modes: list[str]) -> dict[str, dict[str, float]]:
+    """Mean page-hit / answer-similarity per mode, read back from a scored results frame."""
+    def col_mean(col: str) -> float:
+        if col not in frame.columns:
+            return float("nan")
+        vals = pd.to_numeric(frame[col], errors="coerce").dropna()
+        return float(vals.mean()) if len(vals) else float("nan")
+
+    summary: dict[str, dict[str, float]] = {}
+    for mode in modes:
+        summary[mode] = {
+            "recall": col_mean(f"predicted_{mode}_PageRecall"),
+            "prec":   col_mean(f"predicted_{mode}_PagePrec"),
+            "hit":    col_mean(f"predicted_{mode}_Hit"),
+            "sim":    col_mean(f"predicted_{mode}_AnsSim"),
+        }
+    return summary
+
+
+def format_mode_table(summary: dict[str, dict[str, float]], include_sim: bool = True) -> str:
+    """Render the per-method comparison as a markdown table (single methods vs fused)."""
+    cols = ["Mode", "PageRecall", "PagePrec", "Hit@k"] + (["AnsSim"] if include_sim else [])
+    lines = ["| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)]
+    for mode, s in summary.items():
+        tag = mode + (" (combined)" if mode == "fused" else " (single)")
+        row = [tag, f"{s['recall']:.3f}", f"{s['prec']:.3f}", f"{s['hit']:.3f}"]
+        if include_sim:
+            row.append(f"{s['sim']:.3f}")
+        lines.append("| " + " | ".join(row) + " |")
+    return "\n".join(lines)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="POLRAG: RAG-LLM framework for document QA.")
     parser.add_argument("--docs", required=True, help="Directory containing source JSON docs.")
@@ -659,13 +880,44 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-k-each", type=int, default=8)
     parser.add_argument("--top-k-fused", type=int, default=5)
     parser.add_argument("--rrf-k", type=int, default=60)
+    parser.add_argument("--bm25-k1", type=float, default=1.5, help="BM25 term-frequency saturation (k1).")
+    parser.add_argument("--bm25-b", type=float, default=0.75, help="BM25 length-normalisation (b).")
+    parser.add_argument("--embedding-dim", type=int, default=512,
+                        help="Local hash-embedding dimension (only used by --embeddings hash).")
+    parser.add_argument("--embeddings", choices=["auto", "gemini", "openai", "hash"], default="auto",
+                        help="Embedding backend: gemini (real semantics, reuses keys), openai "
+                             "(needs OPENAI_API_KEY), hash (placeholder), auto = openai-if-keyed-else-hash.")
+    parser.add_argument("--modes", default="keyword,vector,fused",
+                        help="Comma list of retrieval modes to run: keyword,fulltext,vector,fused. "
+                             "(keyword and fulltext are identical BM25 today.)")
     parser.add_argument("--no-query-rewrite", action="store_true", help="Skip LLM query rewriting.")
+    parser.add_argument("--no-reformat", action="store_true", help="Skip the second LLM answer-reformatting pass.")
+    parser.add_argument("--limit", type=int, default=None, help="Run only the first N questions of --qa-csv.")
+    parser.add_argument("--retrieval-only", action="store_true",
+                        help="Score retrieval (page-hit) per mode without any Gemini generation.")
+    parser.add_argument("--check-gemini", action="store_true",
+                        help="Ping the Gemini API and exit (no knowledge base built).")
     parser.add_argument("--show-context", action="store_true", help="Print retrieved context before answer.")
     return parser.parse_args()
 
 
 def main() -> None:
+    # Avoid Windows console (cp1252/charmap) crashes on Thai text and symbols like → —.
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
+
     args = parse_args()
+
+    # ── Gemini availability check (no knowledge base built) ───────────────────
+    if args.check_gemini:
+        ok, msg = ping_gemini(load_api_keys(args.gemini_api_key, verbose=True), args.gemini_model)
+        print(f"Gemini API: {'OK — ' if ok else 'UNAVAILABLE — '}{msg}")
+        raise SystemExit(0 if ok else 1)
+
+    modes = [m.strip() for m in args.modes.split(",") if m.strip()]
 
     rag = RAGFlow(
         documents_dir=args.docs,
@@ -677,6 +929,14 @@ def main() -> None:
         top_k_fused=args.top_k_fused,
         rrf_k=args.rrf_k,
         enable_query_rewrite=not args.no_query_rewrite,
+        bm25_k1=args.bm25_k1,
+        bm25_b=args.bm25_b,
+        enable_reformat=not args.no_reformat,
+        embedding_dim=args.embedding_dim,
+        modes=modes,
+        embeddings_backend=args.embeddings,
+        # Gemini is needed for generation, for query rewriting, or for Gemini embeddings.
+        require_gemini=(not args.retrieval_only) or (not args.no_query_rewrite) or (args.embeddings == "gemini"),
     )
 
     # ── Batch CSV mode ───────────────────────────────────────────────────────
@@ -690,12 +950,46 @@ def main() -> None:
             raise ValueError(
                 f"Column '{args.question_col}' not found. Available: {list(frame.columns)}"
             )
+        if args.limit is not None:
+            frame = frame.head(args.limit).copy()
+            print(f"  --limit {args.limit}: running first {len(frame)} questions only.")
 
-        modes = ["keyword", "fulltext", "vector", "fused"]
-        predicted_columns: dict[str, list[str]] = {
-            f"predicted_{mode}_{col}": []
-            for mode in modes
-            for col in ["Rainbow Group", "Category", "Answer", "Page", "answer_model", "raw_answer"]
+        has_gt_page = "Page" in frame.columns
+        has_gt_answer = "Answer" in frame.columns
+
+        # ── Retrieval-only: page-hit metrics per mode, no Gemini generation ───
+        if args.retrieval_only:
+            score_cols = {f"predicted_{m}_{c}": [] for m in modes for c in ("Page", "PageRecall", "PagePrec", "Hit")}
+            for idx, row in frame.iterrows():
+                question = str(row[args.question_col]).strip()
+                gt_page = row["Page"] if has_gt_page else ""
+                if question and question.lower() != "nan":
+                    rq = rag._rewrite_query(question) if rag.enable_query_rewrite else question
+                    ranks = rag._retrieve_ranks(rq)
+                else:
+                    ranks = {}
+                for mode in modes:
+                    pages = rag._pages_from_doc_ids(ranks[mode]) if mode in ranks else ""
+                    recall, prec, hit = RAGFlow._page_scores(pages, gt_page)
+                    score_cols[f"predicted_{mode}_Page"].append(pages)
+                    score_cols[f"predicted_{mode}_PageRecall"].append(round(recall, 4))
+                    score_cols[f"predicted_{mode}_PagePrec"].append(round(prec, 4))
+                    score_cols[f"predicted_{mode}_Hit"].append(hit)
+                print(f"Retrieved {idx + 1}/{len(frame)}")
+            for col, vals in score_cols.items():
+                frame[col] = vals
+            summary = summarize_modes(frame, modes)
+            print("\n=== Retrieval-only comparison (page-hit) ===")
+            print(format_mode_table(summary, include_sim=False))
+            if args.output_csv:
+                frame.to_csv(args.output_csv, index=False, encoding="utf-8-sig")
+                print(f"\nSaved retrieval scores to: {args.output_csv}")
+            return
+
+        cols = ["Rainbow Group", "Category", "Answer", "Page", "answer_model", "raw_answer",
+                "PageRecall", "PagePrec", "Hit", "AnsSim"]
+        predicted_columns: dict[str, list[Any]] = {
+            f"predicted_{mode}_{col}": [] for mode in modes for col in cols
         }
 
         batch_start = time.time()
@@ -703,7 +997,9 @@ def main() -> None:
 
         for idx, row in frame.iterrows():
             question = str(row[args.question_col]).strip()
-            if not question:
+            gt_answer = str(row["Answer"]) if has_gt_answer else ""
+            gt_page = row["Page"] if has_gt_page else ""
+            if not question or question.lower() == "nan":
                 for col in predicted_columns:
                     predicted_columns[col].append("")
                 row_times.append(0.0)
@@ -715,21 +1011,19 @@ def main() -> None:
             row_times.append(q_elapsed)
 
             for mode in modes:
-                mode_result = result["by_mode"][mode]
-                predicted_columns[f"predicted_{mode}_Rainbow Group"].append(
-                    mode_result["predictions"]["predicted_Rainbow Group"]
-                )
-                predicted_columns[f"predicted_{mode}_Category"].append(
-                    mode_result["predictions"]["predicted_Category"]
-                )
-                predicted_columns[f"predicted_{mode}_Answer"].append(
-                    mode_result["predictions"]["predicted_Answer"]
-                )
-                predicted_columns[f"predicted_{mode}_Page"].append(
-                    mode_result["predictions"]["predicted_Page"]
-                )
-                predicted_columns[f"predicted_{mode}_answer_model"].append(mode_result["answer_model"])
-                predicted_columns[f"predicted_{mode}_raw_answer"].append(mode_result["raw_answer"])
+                preds = result["by_mode"][mode]["predictions"]
+                recall, prec, hit = RAGFlow._page_scores(preds["predicted_Page"], gt_page)
+                sim = rag._answer_similarity(preds["predicted_Answer"], gt_answer)
+                predicted_columns[f"predicted_{mode}_Rainbow Group"].append(preds["predicted_Rainbow Group"])
+                predicted_columns[f"predicted_{mode}_Category"].append(preds["predicted_Category"])
+                predicted_columns[f"predicted_{mode}_Answer"].append(preds["predicted_Answer"])
+                predicted_columns[f"predicted_{mode}_Page"].append(preds["predicted_Page"])
+                predicted_columns[f"predicted_{mode}_answer_model"].append(result["by_mode"][mode]["answer_model"])
+                predicted_columns[f"predicted_{mode}_raw_answer"].append(result["by_mode"][mode]["raw_answer"])
+                predicted_columns[f"predicted_{mode}_PageRecall"].append(round(recall, 4))
+                predicted_columns[f"predicted_{mode}_PagePrec"].append(round(prec, 4))
+                predicted_columns[f"predicted_{mode}_Hit"].append(hit)
+                predicted_columns[f"predicted_{mode}_AnsSim"].append(round(sim, 4))
             print(f"Processed {idx + 1}/{len(frame)} — {q_elapsed:.1f}s (total so far: {time.time() - batch_start:.1f}s)")
 
         batch_elapsed = time.time() - batch_start
@@ -748,6 +1042,10 @@ def main() -> None:
         )
         frame.to_csv(out_path, index=False, encoding="utf-8-sig")
         print(f"Saved predictions to: {out_path}")
+
+        summary = summarize_modes(frame, modes)
+        print(f"\n=== Per-method comparison (n={len(frame)}, mean answer time {avg_time:.1f}s) ===")
+        print(format_mode_table(summary, include_sim=True))
         return
 
     # ── Interactive multi-turn mode ──────────────────────────────────────────

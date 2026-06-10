@@ -10,9 +10,13 @@ The system answers technical questions about tunnel segment repair methods by re
 
 **Three-stage pipeline:**
 
-1. **Knowledge Base Construction** — OCR JSON files are loaded, chapter-tagged, and chunked into ~300-word passages, then indexed into a FAISS vector store alongside a BM25 index.
-2. **Retrieval** — The user query is rewritten by the LLM into a structured search expression, then recalled via both BM25 keyword search and semantic vector similarity. Results are fused with Reciprocal Rank Fusion (RRF).
-3. **Generation** — Retrieved context is injected into a structured POLRAG prompt (system role + context + answer guidelines) and sent to Gemini. A second LLM pass cleans noisy OCR content before returning the final answer.
+1. **Knowledge Base Construction** — OCR JSON files are loaded, chapter-tagged, and chunked into ~300-word passages, then indexed into a FAISS vector store (Gemini, OpenAI, or local-hash embeddings — selectable via `--embeddings`) alongside a BM25 index.
+2. **Retrieval** — The user query is optionally rewritten by the LLM into a structured search expression, then recalled via both BM25 keyword search and semantic vector similarity. Results are fused with Reciprocal Rank Fusion (RRF).
+3. **Generation** — Retrieved context is injected into a structured POLRAG prompt (system role + context + answer guidelines) and sent to Gemini. An optional second LLM pass cleans noisy OCR content before returning the final answer.
+
+In batch mode the pipeline also **scores each retrieval method automatically** against the ground-truth `Page`/`Answer` columns (page-hit recall/precision, Hit@k, and answer-similarity) and prints a single-vs-fused comparison table.
+
+> **Recommended configuration** (from the evaluation in `report/pilot_findings.md`): `--embeddings gemini --no-query-rewrite`. Real semantic embeddings make the `vector`/`fused` retrievers strong, and query rewriting was found to *hurt* retrieval on this corpus.
 
 ---
 
@@ -31,8 +35,13 @@ LLM_Construction/
 │   └── Preprocess_data.ipynb   # Data preprocessing notebook
 ├── table/                      # Ground-truth QA CSVs for evaluation
 ├── tablev2/                    # Extended QA CSVs (level-2 difficulty)
+├── result/                     # Batch prediction + scored output CSVs
+├── report/                     # IEEE paper (conference_101719.tex) + pilot_findings.md
+├── .emb_cache/                 # Cached embedding vectors (keyed by text hash)
 └── geminikey.txt               # Gemini API keys (one per line, gitignored)
 ```
+
+> **Key file location:** keys are loaded from `geminikey.txt` **next to `RAG.py` (`src/geminikey.txt`) first**, then the project-root `geminikey.txt`, then the `GOOGLE_API_KEY`/`GEMINI_API_KEY` environment variable.
 
 ---
 
@@ -55,16 +64,23 @@ pip install langchain langchain-community langchain-openai langchain-text-splitt
 
 ## API Keys
 
-**Gemini (required):** Create `geminikey.txt` in the project root with one API key per line. Multiple keys are supported — the system rotates through them automatically on rate-limit errors.
+**Gemini (required):** Create `geminikey.txt` with one API key per line — in `src/` (checked first) or the project root. Multiple keys are supported; the system rotates through them automatically on rate-limit errors. Used for generation, query rewriting, and (optionally) embeddings.
 
 ```
 GEMINI_API_KEY_1
 GEMINI_API_KEY_2
 ```
 
-Alternatively, set the `GOOGLE_API_KEY` or `GEMINI_API_KEY` environment variable.
+Alternatively, set the `GOOGLE_API_KEY` or `GEMINI_API_KEY` environment variable. Verify connectivity at any time with `python src/RAG.py --docs dataset_json --check-gemini` (pings the API and exits without building the knowledge base).
 
-**OpenAI (optional):** Set `OPENAI_API_KEY` to use `text-embedding-ada-002` for semantic retrieval. Without it, a deterministic local hash embedding is used as a fallback.
+**Embeddings backend** is chosen with `--embeddings`:
+
+| `--embeddings` | Embedder | Notes |
+|---|---|---|
+| `gemini` | `gemini-embedding-001` (3072-dim) | **Recommended.** Real multilingual semantics; reuses the Gemini keys; vectors cached in `.emb_cache/`. |
+| `openai` | OpenAI embeddings | Requires `OPENAI_API_KEY`. |
+| `hash` | `LocalHashEmbeddings` (512-dim) | Deterministic placeholder, **no semantics** — for offline smoke tests only. |
+| `auto` *(default)* | OpenAI if `OPENAI_API_KEY` is set, else `hash` | Backward-compatible default. |
 
 ---
 
@@ -82,13 +98,21 @@ python src/RAG.py --docs dataset_json --interactive
 ```
 Type `reset` to clear conversation history, `quit` to exit.
 
-### Batch CSV evaluation
+### Batch CSV evaluation (recommended config)
 ```bash
 python src/RAG.py --docs dataset_json \
-  --qa-csv tablev2/QA_test_lvl2.csv \
-  --output-csv QA_test_lvl2_out.csv
+  --qa-csv tablev2/QA_test.csv \
+  --output-csv result/QA_test_out.csv \
+  --embeddings gemini --no-query-rewrite --modes keyword,vector,fused
 ```
-Reads questions from the CSV, runs all four retrieval modes (`keyword`, `fulltext`, `vector`, `fused`), and writes predictions back to the output CSV.
+Reads questions from the CSV, runs the selected retrieval modes, writes predictions **and per-method scores** (`PageRecall`, `PagePrec`, `Hit`, `AnsSim`) back to the output CSV, and prints a single-vs-fused comparison table. Use `--limit N` to run only the first N questions (handy for a quick pilot).
+
+### Retrieval-only sweep (no LLM, free)
+```bash
+python src/RAG.py --docs dataset_json --qa-csv tablev2/QA_test.csv \
+  --retrieval-only --no-query-rewrite --embeddings gemini
+```
+Scores page-hit per retrieval method **without any Gemini generation** — fast and quota-free for tuning `--rrf-k`, `--top-k-each/-fused`, and `--bm25-k1/-b`.
 
 ### Show retrieved context
 Add `--show-context` to any mode to print the retrieved passages before the answer.
@@ -106,12 +130,21 @@ Add `--show-context` to any mode to print the retrieved passages before the answ
 | `--output-csv` | — | Output CSV path (defaults to `<input>_predicted.csv`) |
 | `--question-col` | `Question` | Column name for questions in `--qa-csv` |
 | `--gemini-model` | `gemini-2.5-flash` | Gemini model ID |
+| `--embeddings` | `auto` | Embedding backend: `gemini`, `openai`, `hash`, or `auto` |
 | `--chunk-size` | `1500` | Chunk size in characters (~300 words) |
 | `--chunk-overlap` | `200` | Overlap between chunks |
 | `--top-k-each` | `8` | Top-K candidates per retriever before fusion |
 | `--top-k-fused` | `5` | Final top-K chunks passed to the LLM |
 | `--rrf-k` | `60` | RRF constant (Robertson et al. 2009) |
+| `--bm25-k1` | `1.5` | BM25 term-frequency saturation |
+| `--bm25-b` | `0.75` | BM25 length-normalisation strength |
+| `--embedding-dim` | `512` | Dimension for `--embeddings hash` only |
+| `--modes` | `keyword,vector,fused` | Comma list of retrieval modes to run (`keyword`,`fulltext`,`vector`,`fused`) |
+| `--limit` | — | Run only the first N questions of `--qa-csv` |
 | `--no-query-rewrite` | `false` | Skip LLM query rewriting step |
+| `--no-reformat` | `false` | Skip the second LLM answer-reformatting pass |
+| `--retrieval-only` | `false` | Score page-hit per mode with no LLM generation |
+| `--check-gemini` | `false` | Ping the Gemini API and exit (no KB build) |
 | `--show-context` | `false` | Print retrieved context before the answer |
 
 ---
@@ -141,7 +174,7 @@ Page:   3, 5
 Answer: 1. Clean the crack surface...
 ```
 
-In batch CSV mode, four sets of columns are written — one per retrieval mode:
+In batch CSV mode, one set of columns is written **per selected retrieval mode** (`--modes`), including automatic per-method scores:
 
 ```
 predicted_fused_Answer
@@ -149,8 +182,15 @@ predicted_fused_Page
 predicted_fused_Category
 predicted_fused_Rainbow Group
 predicted_fused_answer_model
+predicted_fused_PageRecall      # GT pages retrieved / GT pages
+predicted_fused_PagePrec        # correct pages / retrieved pages
+predicted_fused_Hit             # 1 if any GT page was retrieved
+predicted_fused_AnsSim          # cosine similarity of answer vs ground truth
 ...
+compute_time_s                  # per-question wall time
 ```
+
+A per-method comparison table (single methods vs. fused, on Recall/Prec/Hit@k/AnsSim) is also printed to the console at the end of the run.
 
 ---
 
@@ -215,12 +255,16 @@ cos(A, B) = ───────
 
 A value of `1.0` means identical direction (most similar); `0.0` means orthogonal.
 
-**Embedding options (auto-selected at startup):**
+**Embedding options (selected via `--embeddings`):**
 
-| Condition | Embedder used | Dimension |
+| `--embeddings` | Embedder used | Dimension |
 |---|---|---|
-| `OPENAI_API_KEY` is set | `text-embedding-ada-002` (OpenAI) | 1536 |
-| No API key | `LocalHashEmbeddings` (SHA-256 hash) | 512 |
+| `gemini` | `gemini-embedding-001` (Gemini) | 3072 |
+| `openai` | OpenAI embeddings (requires `OPENAI_API_KEY`) | 1536 |
+| `hash` | `LocalHashEmbeddings` (SHA-256 hash) | 512 |
+| `auto` | OpenAI if keyed, else hash | — |
+
+> With the non-semantic `hash` embedder the `vector` retriever is effectively random; use `gemini` (or `openai`) for meaningful semantic retrieval. Gemini vectors are cached on disk in `.emb_cache/` so chunks are embedded only once.
 
 **Example:** The query `"วิธีซ่อมรอยร้าว"` (how to repair cracks) will score highly against a chunk discussing `"crack repair procedures"` even if no exact Thai words appear in the chunk, because the embedding model maps them to nearby vectors.
 
@@ -299,6 +343,12 @@ A dependency-free fallback embedder used when no `OPENAI_API_KEY` is set. Conver
 
 ---
 
+#### `GeminiEmbeddings`
+
+Real semantic embeddings via the Gemini embedding API (`gemini-embedding-001`, 3072-dim). Reuses the project's Gemini keys (rotating on rate limits), batches requests, and **caches each text's vector by SHA-256** to `.emb_cache/<model>.json` so repeated runs do not re-embed unchanged chunks. Same `embed_documents` / `embed_query` interface as above. Selected with `--embeddings gemini`.
+
+---
+
 #### `RAGFlow`
 
 The main pipeline class. Instantiating it builds the full knowledge base (loads JSONs, chunks, indexes FAISS + BM25). All subsequent calls are stateless except for `conversation_history`.
@@ -316,6 +366,14 @@ The main pipeline class. Instantiating it builds the full knowledge base (loads 
 | `top_k_fused` | `int` | `5` | Chunks kept after RRF fusion |
 | `rrf_k` | `int` | `60` | RRF smoothing constant |
 | `enable_query_rewrite` | `bool` | `True` | Run LLM query-rewriting step |
+| `bm25_k1` | `float` | `1.5` | BM25 term-frequency saturation |
+| `bm25_b` | `float` | `0.75` | BM25 length-normalisation strength |
+| `enable_reformat` | `bool` | `True` | Run the second answer-reformatting LLM pass |
+| `embedding_dim` | `int` | `512` | Dimension for the hash embedder |
+| `modes` | `list[str]` | `["keyword","vector","fused"]` | Retrieval modes to run in batch mode |
+| `embeddings_backend` | `str` | `"auto"` | `gemini` / `openai` / `hash` / `auto` |
+| `gemini_embed_model` | `str` | `"gemini-embedding-001"` | Gemini embedding model ID |
+| `require_gemini` | `bool` | `True` | If `False`, allow construction without genai/keys (retrieval-only) |
 
 ---
 
@@ -345,7 +403,7 @@ Single-turn or multi-turn question answering. Appends the exchange to `conversat
 
 #### `predict_expected_columns(question: str) → dict`
 
-Batch evaluation mode. Runs all four retrieval strategies in one call and returns predictions for each.
+Batch evaluation mode. Runs the selected retrieval strategies (`self.modes`) in one call and returns predictions for each.
 
 **Input:** a question string.
 
@@ -356,7 +414,7 @@ Batch evaluation mode. Runs all four retrieval strategies in one call and return
 | `question` | `str` | Original question |
 | `rewritten_query` | `str` | LLM-rewritten retrieval expression |
 | `retrieval` | `dict` | Same BM25/vector/fused rank lists as `ask()` |
-| `by_mode` | `dict` | Per-mode results keyed by `"keyword"`, `"fulltext"`, `"vector"`, `"fused"` |
+| `by_mode` | `dict` | Per-mode results, one key per entry in `self.modes` (subset of `"keyword"`, `"fulltext"`, `"vector"`, `"fused"`) |
 
 Each `by_mode[mode]` entry contains:
 
@@ -392,17 +450,26 @@ ask(query)
   ├─ 5. _generate_with_gemini()   Call Gemini; auto-rotate API key on rate-limit
   │
   ├─ 6. _parse_response()         Extract Page / Answer fields from LLM output
-  └─ 7. _reformat_answer()        Second LLM pass to strip OCR noise and reformat
+  └─ 7. _reformat_answer()        Optional second LLM pass to strip OCR noise (disable with --no-reformat)
 ```
 
-**Retrieval modes used in batch evaluation:**
+**Retrieval modes used in batch evaluation** (default: `keyword,vector,fused`):
 
 | Mode | Retrieval source |
 |---|---|
 | `keyword` | BM25 top-K |
-| `fulltext` | BM25 top-K (term-based full-text alias) |
+| `fulltext` | BM25 top-K (term-based full-text alias — identical to `keyword`; omitted by default) |
 | `vector` | FAISS top-K |
 | `fused` | RRF fusion of BM25 + FAISS |
+
+### Module-level helpers
+
+| Function | Description |
+|---|---|
+| `load_api_keys(key, verbose)` | Resolve Gemini keys (`src/geminikey.txt` → root → env var) |
+| `ping_gemini(keys, model)` | One-shot API reachability check; returns `(ok, message)` |
+| `summarize_modes(frame, modes)` | Mean page-hit / answer-similarity per mode from a scored results frame |
+| `format_mode_table(summary, include_sim)` | Render the per-method comparison as a Markdown table |
 
 ---
 
@@ -410,4 +477,6 @@ ask(query)
 
 This implementation is based on the POLRAG framework described in:
 
-> *POLRAG: A RAG-LLM Framework for Policy Question Answering*
+> H. Lin, P. Deng, Q. Zhong, and X. Zhu, "POLRAG: A RAG-LLM Framework for Policy Question Answering," in *Proc. 2025 IEEE Int. Conf. High Performance Computing and Communications (HPCC)*, 2025, pp. 1259–1264, doi: 10.1109/HPCC67675.2025.00179.
+
+An evaluation of this implementation on the tunnel-segment-repair corpus — including the per-method retrieval comparison and the rubric scores — is written up in `report/` (`conference_101719.tex` and `pilot_findings.md`).

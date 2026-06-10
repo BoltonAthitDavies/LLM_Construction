@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  8 JUN 2026 22:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  10 JUN 2026 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,7 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
--- Using 8.5in x 11in (letter) paper.
+-- Using 210mm x 297mm (a4) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen151
 -- This is a 10 point document.
@@ -309,76 +309,116 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 37.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2573) in paragraph at lines 71--80
+Underfull \hbox (badness 2573) in paragraph at lines 70--79
 []\OT1/ptm/m/n/10 Large lan-guage mod-els (LLMs) have be-come strong
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
 []\OT1/ptm/m/n/10 a multi-dimensional eval-u-a-tion protocol---covering
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 113--116
+Underfull \hbox (badness 1895) in paragraph at lines 114--117
 \OT1/ptm/m/n/10 engineering-answer cor-rect-ness, doc-u-ment ground-ing,
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 113--116
+Underfull \hbox (badness 1454) in paragraph at lines 114--117
 \OT1/ptm/m/n/10 bilin-gual fi-delity, and latency---applied to a tunnel-
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 119--124
+Underfull \hbox (badness 1681) in paragraph at lines 120--125
 []\OT1/ptm/m/n/10 Building on the RAG-LLM de-sign of POL-RAG [1],
  []
 
-
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Us
-er/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+[1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Use
+r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Overfull \hbox (26.5978pt too wide) detected at line 196
-[][] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 ;  [] \OT1/cmr/m/n/10 = []\OML/cmm/m/
-it/10 :
+Underfull \hbox (badness 2221) in paragraph at lines 227--228
+[]\OT1/ptm/m/n/8 Guideline for Re-pair; Ce-men-ti-tious Mor-tar;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+[]\OT1/ptm/m/n/8 Environmental /
+ []
+
+[2]
+Underfull \hbox (badness 2401) in paragraph at lines 274--280
+[]\OT1/ptm/m/n/10 End-to-end an-swer qual-ity is scored on a 100-point
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 []\OT1/ptm/m/n/8 Expert val-i-da-tion,
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 218--219
+Underfull \hbox (badness 3679) in paragraph at lines 290--291
 []\OT1/ptm/m/n/8 Citation cor-rect-ness,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 []\OT1/ptm/m/n/8 Average re-sponse
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 []\OT1/ptm/m/n/8 Prompt ad-her-ence
  []
 
-[2]
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
+[]\OT1/ptm/m/n/8 Ground
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+[]\OT1/ptm/m/n/8 Ground
+ []
+
+
+Overfull \hbox (1.32092pt too wide) in paragraph at lines 410--434
+ [] 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 456--456
+[]\OT1/ptm/m/n/8 Ground
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+[]\OT1/ptm/m/n/8 Ground
+ []
+
+
+Overfull \hbox (1.32092pt too wide) in paragraph at lines 450--474
+ [] 
+ []
+
+
+Overfull \hbox (1.32092pt too wide) in paragraph at lines 498--518
+ [] 
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -390,35 +430,48 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (conference_101719.aux)
+[4] (conference_101719.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4228 strings out of 467871
- 66484 string characters out of 5418860
- 491529 words of memory out of 5000000
- 33067 multiletter control sequences out of 15000+600000
- 671822 words of font info for 131 fonts, out of 8000000 for 9000
+ 4251 strings out of 467871
+ 66765 string characters out of 5418860
+ 502713 words of memory out of 5000000
+ 33082 multiletter control sequences out of 15000+600000
+ 676938 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,575b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,12n,65p,575b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/User/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/User/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (3 pages, 149342 bytes).
+nts/cm/cmbx9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cmextra/cmex9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/User/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/User/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/User
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
+rs/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7
+.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/User/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/User/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/User/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Use
+r/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/User
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/
+AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (4 pages, 273509 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 131 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

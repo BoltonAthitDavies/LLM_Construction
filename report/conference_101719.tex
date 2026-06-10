@@ -1,4 +1,4 @@
-\documentclass[conference]{IEEEtran}
+\documentclass[10pt,a4paper,conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
@@ -11,8 +11,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{LLM with Construction Engineering Prior Knowledge\\
-via a Knowledge Graph
+\title{LLM with Construction Engineering Prior Knowledge using agentic graphRAG\\
 }
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Peter Parker}
@@ -70,22 +69,23 @@ bilingual question answering, construction informatics
 \section{Introduction}
 Large language models (LLMs) have become strong general-purpose reasoners over
 natural language, yet when deployed as domain question-answering systems they
-exhibit a well-known failure mode: they hallucinate, producing fluent answers
-that are not supported by any authoritative source. In safety-critical
+exhibit a well-known failure mode: they hallucinate~\cite{halluc}, producing
+fluent answers that are not supported by any authoritative source. In safety-critical
 engineering domains, where a single misquoted tolerance can invalidate a repair
 procedure, ungrounded generation is unacceptable. Retrieval-augmented
-generation (RAG) mitigates this by conditioning the model on passages retrieved
-from a trusted corpus, so that generation is anchored to verifiable evidence
-rather than parametric memory.
+generation (RAG)~\cite{rag} mitigates this by conditioning the model on passages
+retrieved from a trusted corpus, so that generation is anchored to verifiable
+evidence rather than parametric memory.
 
 The effectiveness of RAG is bounded by the quality of its retrieval stage.
-Sparse lexical retrieval such as BM25 rewards exact term overlap and is robust
-for rare technical identifiers (for example, repair-method codes), whereas
-dense retrieval over learned embeddings captures semantic similarity and
-paraphrase. Because the two signals are complementary, we adopt a hybrid
-retriever and combine its component rankings with reciprocal rank fusion (RRF),
-a rank-based aggregation that requires no score calibration across retrievers.
-Beyond flat passage retrieval, a knowledge graph imposes explicit structure on
+Sparse lexical retrieval such as BM25~\cite{bm25} rewards exact term overlap and
+is robust for rare technical identifiers (for example, repair-method codes),
+whereas dense retrieval over learned embeddings~\cite{dpr} captures semantic
+similarity and paraphrase. Because the two signals are complementary, we adopt a
+hybrid retriever and combine its component rankings with reciprocal rank fusion
+(RRF)~\cite{rrf}, a rank-based aggregation that requires no score calibration
+across retrievers. Beyond flat passage retrieval, a knowledge
+graph~\cite{graphrag} imposes explicit structure on
 the corpus---entities such as defects, materials, and procedures, together with
 the relations among them---providing a grounding substrate that supports
 multi-hop and constraint-bearing queries that plain chunk retrieval handles
@@ -94,7 +94,8 @@ poorly.
 Two further technical challenges arise from the source material. First, the
 engineering knowledge exists only as scanned, image-based method statements, so
 the corpus must be reconstructed with optical character recognition (OCR) using
-a vision-language model that can recover text, headings, and tabular structure.
+a vision-language model~\cite{nougat} that can recover text, headings, and
+tabular structure.
 Second, the documents and the user population are bilingual (Thai and English)
 and frequently code-switched, which requires retrieval and generation to
 preserve technical terminology across languages. We further employ query
@@ -132,39 +133,57 @@ segment retains a back-pointer to its originating page; these page references
 are later surfaced as citations and are the basis of the document-grounding
 evaluation.
 
-\subsection{Knowledge-Graph Construction}
-The ingested content is intended to populate a knowledge graph whose nodes are
-domain entities (defects, materials, procedures, and quantitative conditions)
-and whose edges encode the relations among them, providing explicit structure
-for multi-hop and constraint-bearing queries. \emph{The detailed construction
-of this graph is deferred to future work; the experiments reported here operate
-over the segmented document store produced in the ingestion phase.}
+\subsection{\textcolor{red}{Knowledge-Graph Construction}}
+\textcolor{red}{[Incomplete --- to be written.]}
+% The ingested content is intended to populate a knowledge graph whose nodes are
+% domain entities (defects, materials, procedures, and quantitative conditions)
+% and whose edges encode the relations among them, providing explicit structure
+% for multi-hop and constraint-bearing queries. \emph{The detailed construction
+% of this graph is deferred to future work; the experiments reported here operate
+% over the segmented document store produced in the ingestion phase.}
 
-\subsection{Query Understanding}
-An incoming question is first analysed for scope. Compound questions that span
-multiple categories are decomposed into atomic sub-questions, each of which is
-routed through retrieval independently before the partial results are
-recombined. This decomposition is what allows the system to answer
-multi-category questions that pair, for example, a repair-method query with an
-environmental-measure query.
+\subsection{\textcolor{red}{Query Understanding}}
+\textcolor{red}{[Incomplete --- to be written.]}
+% An incoming question is first analysed for scope. Compound questions that span
+% multiple categories are decomposed into atomic sub-questions, each of which is
+% routed through retrieval independently before the partial results are
+% recombined. This decomposition is what allows the system to answer
+% multi-category questions that pair, for example, a repair-method query with an
+% environmental-measure query.
 
 \subsection{Retrieval}
 For each (sub-)question the system runs three retrievers in parallel. A keyword
-retriever rewards exact matches on rare technical identifiers; a full-text
-retriever operates over both Thai and English surface forms; and a dense
-retriever ranks segments by the cosine similarity between the question
-embedding $\mathbf{q}$ and each segment embedding $\mathbf{d}$,
+retriever scores each segment $D$ against the query $Q$ with Okapi BM25, which
+rewards shared terms while damping common words and long segments,
+{\small
+\begin{equation}
+\operatorname{BM25}(Q,D) = \sum_{q \in Q} \operatorname{IDF}(q)\,
+\frac{tf(q,D)\,(k_1+1)}{tf(q,D) + k_1\!\left(1 - b + b\,\dfrac{|D|}{\mathrm{avgdl}}\right)},
+\label{eq:bm25}
+\end{equation}
+}
+where $tf(q,D)$ is the term frequency, $|D|$ the segment length, $\mathrm{avgdl}$
+the mean segment length, $\operatorname{IDF}(q)$ the inverse document frequency,
+and $k_1=1.5$ and $b=0.75$ control term-frequency saturation and length
+normalisation. A full-text retriever applies the same term-based scoring over
+both Thai and English surface forms. A dense retriever ranks segments by the
+cosine similarity between the question embedding $\mathbf{q}$ and each segment
+embedding $\mathbf{d}$,
+{\small
 \begin{equation}
 \operatorname{sim}(\mathbf{q},\mathbf{d}) =
 \frac{\mathbf{q}\cdot\mathbf{d}}{\lVert\mathbf{q}\rVert\,\lVert\mathbf{d}\rVert}.
 \label{eq:cos}
 \end{equation}
+}
 The three rankings are merged by reciprocal rank fusion (RRF), which aggregates
 on rank position and therefore needs no score normalisation across retrievers,
+{\small
 \begin{equation}
 \operatorname{RRF}(d) = \sum_{r \in R} \frac{1}{k + \operatorname{rank}_r(d)},
 \label{eq:rrf}
 \end{equation}
+}
 where $R$ is the set of retrievers, $\operatorname{rank}_r(d)$ is the rank of
 segment $d$ under retriever $r$, and $k$ is a smoothing constant. The
 top-ranked fused segments form the context passed to the generator.
@@ -180,23 +199,76 @@ citation.
 \section{Experiment Design}
 We evaluate two complementary aspects of the system: the quality of the
 retrieval stage in isolation, and the end-to-end quality of the generated
-answers.
+answers, both measured on a synthetic question--answer set.
 
-\subsection{Semantic Similarity Retrieval}
-Retrieval is assessed with context precision and context recall over the
-retrieved segment set. With true positives ($TP$) being retrieved segments that
-contain correct and relevant information with respect to the expected answer,
-false positives ($FP$) being retrieved segments that contribute no relevant
-information, and false negatives ($FN$) being relevant segments that were not
-retrieved, the metrics are
+\subsection{Synthetic QA Dataset}
+The evaluation set is generated synthetically from the source repair manual by
+prompting an LLM to act as a domain QA-pair generator. The generator is
+constrained to use \emph{only} information explicitly stated in the
+document---no external knowledge or general engineering practice---to include
+exact numeric values, to attach the originating page number to every answer,
+and to abstain when the evidence is unclear. Questions and answers are produced
+in the language of the source (Thai or English, frequently code-switched).
+
+Each item carries a two-tier label. A \emph{Rainbow Group} marks whether the
+question is Construction-Related (Group~A) or Non-Construction (Group~B, e.g.\
+document or project metadata). Construction-Related items are further assigned a
+category---Repair Method, Material, Human Risk, or Environmental/Preventive
+Measures---each mapped to specific manual sections (Table~\ref{tab:taxonomy}).
+
+\begin{table}[htbp]
+\caption{Rainbow-Group Category Taxonomy}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.26\columnwidth}|p{0.62\columnwidth}|}
+\hline
+\textbf{Category} & \textbf{Source manual sections} \\
+\hline
+Repair Method & Guideline for Repair; Cementitious Mortar; Epoxy Resin; Spalling Edge; Voids and Blowholes \\
+\hline
+Material & Material Data Sheet \\
+\hline
+Human Risk & Risk Assessment; Material Safety Data \\
+\hline
+Environmental / Preventive & Preventative Measures and Environmental Impact \\
+\hline
+Non-Construction & Document/project metadata (Group~B) \\
+\hline
+\end{tabular}
+\label{tab:taxonomy}
+\end{center}
+\end{table}
+
+Two difficulty levels are evaluated, with 20 questions each:
+\begin{itemize}
+\item \textbf{Level~1 (single-category):} each question targets exactly one
+category and is answerable from a single section.
+\item \textbf{Level~2 (multi-category):} each question deliberately combines two
+or three categories and is multi-part, requiring evidence assembled from several
+sections---for example, selecting the correct repair method, then its material
+mixing ratio, then the associated environmental measure.
+\end{itemize}
+
+\subsection{Retrieval Evaluation}
+Because segment-level relevance labels are unavailable, retrieval is assessed at
+the page level against the ground-truth page(s) attached to each question. Let
+$\mathcal{R}$ be the set of distinct pages among the top-$k$ retrieved segments
+and $\mathcal{G}$ the ground-truth page set; the metrics are
+{\small
 \begin{equation}
-\text{Context Precision} = \frac{TP}{TP+FP}, \qquad
-\text{Context Recall} = \frac{TP}{TP+FN}.
+\begin{aligned}
+\mathrm{Recall} &= \frac{|\mathcal{R}\cap\mathcal{G}|}{|\mathcal{G}|}, \quad
+\mathrm{Precision} = \frac{|\mathcal{R}\cap\mathcal{G}|}{|\mathcal{R}|}, \\[2pt]
+\mathrm{Hit@}k &= \mathbb{1}\!\left[\mathcal{R}\cap\mathcal{G}\neq\varnothing\right].
+\end{aligned}
 \label{eq:pr}
 \end{equation}
-Precision measures how much of the retrieved content is actually relevant,
-while recall measures how completely the retriever covers the evidence needed
-to answer the query.
+}
+Recall measures how completely the retriever surfaces the evidence pages,
+$\mathrm{Hit@}k$ whether at least one correct page appears in the top-$k$, and
+precision is bounded below because the system returns $k$ pages where typically
+only one is relevant. These page-level scores serve as a practical proxy for
+context recall and precision.
 
 \subsection{LLM Performance}
 End-to-end answer quality is scored on a 100-point rubric spanning five
@@ -247,13 +319,51 @@ per-question time: $\le 5$\,s scores 10, 6--10\,s scores 8, 11--20\,s scores 5,
 and $>20$\,s scores 0.
 
 \section{Results and Discussion}
-We evaluate the fused-retrieval configuration on two question sets: a
-single-category set (Level~1, $n=20$) and a multi-category set that pairs two
-or three topics per question (Level~2, $n=20$). Each answer was scored against
-an expert ground truth on the rubric of Table~\ref{tab:rubric}; latency was
-derived from the measured per-question time, while bilingual capability and
-system-prompt compliance were assessed at the system level. The aggregate
-scores are reported in Table~\ref{tab:results}.
+We evaluate on two question sets: a single-category set (Level~1, $n=20$) and a
+multi-category set that pairs two or three topics per question (Level~2,
+$n=20$). The reported configuration uses multilingual dense embeddings for the
+semantic retriever and disables LLM query rewriting, a setting selected because
+an ablation showed rewriting degraded retrieval (it lowered keyword Hit@k on
+Level~2 from $0.75$ to $0.55$).
+
+\subsection{Retrieval}
+Table~\ref{tab:retr} reports the page-level recall, precision, and Hit@k
+defined in~(\ref{eq:pr}) for each retriever. The dense (\emph{vector}) retriever is the
+strongest single method, and RRF fusion gives the best result on Level~1; on
+Level~2 the vector retriever alone is best, as the weaker keyword ranking
+slightly drags the fusion down. Precision is uniformly low because the system
+returns $k=5$ pages per query while most answers reside on a single page, so
+recall and Hit@k are the informative signals. Crucially, dense retrieval is
+decisive only with genuine semantic embeddings: with a non-semantic baseline
+embedding the vector retriever collapsed (Level~2 Hit@k $0.40$) and fusion added
+nothing, whereas with real embeddings it reaches $0.95$.
+
+\begin{table}[htbp]
+\caption{Retrieval Quality by Method (Page-Level)}
+\begin{center}
+\footnotesize
+\begin{tabular}{|l|ccc|ccc|}
+\hline
+ & \multicolumn{3}{c|}{\textbf{Level~1}} & \multicolumn{3}{c|}{\textbf{Level~2}} \\
+\cline{2-7}
+\textbf{Retriever} & Rec. & Prec. & Hit & Rec. & Prec. & Hit \\
+\hline
+Keyword (BM25) & 0.45 & 0.10 & 0.45 & 0.57 & 0.17 & 0.75 \\
+\hline
+Vector (dense) & 0.65 & 0.15 & 0.65 & 0.77 & 0.23 & \textbf{0.95} \\
+\hline
+Fused (RRF) & \textbf{0.75} & \textbf{0.17} & \textbf{0.75} & 0.67 & 0.20 & 0.85 \\
+\hline
+\end{tabular}
+\label{tab:retr}
+\end{center}
+\end{table}
+
+\subsection{End-to-End Answer Quality}
+Each fused-retrieval answer was scored against an expert ground truth on the
+rubric of Table~\ref{tab:rubric}; latency was derived from the measured
+per-question time, and bilingual capability and system-prompt compliance were
+assessed at the system level. Table~\ref{tab:results} reports the aggregate.
 
 \begin{table}[htbp]
 \caption{Evaluation Results (Fused Retrieval)}
@@ -262,56 +372,155 @@ scores are reported in Table~\ref{tab:results}.
 \hline
 \textbf{Dimension} & \textbf{Max} & \textbf{L1} & \textbf{L2} \\
 \hline
-Engineering Answer Correctness & 40 & 19.6 & 22.4 \\
+Engineering Answer Correctness & 40 & 33.0 & 32.9 \\
 \hline
-Document Grounding Accuracy & 30 & 19.4 & 20.6 \\
+Document Grounding Accuracy & 30 & 23.1 & 23.4 \\
 \hline
-Response Latency & 10 & 0.0 & 0.0 \\
+Response Latency & 10 & 3.2 & 0.8 \\
 \hline
 Bilingual Capability (TH--EN) & 10 & 9.0 & 9.0 \\
 \hline
 System Prompt Compliance & 10 & 9.0 & 9.0 \\
 \hline
-\textbf{Total} & \textbf{100} & \textbf{57.0} & \textbf{61.0} \\
+\textbf{Total} & \textbf{100} & \textbf{77.3} & \textbf{75.0} \\
 \hline
 \end{tabular}
 \label{tab:results}
 \end{center}
 \end{table}
 
+Engineering-answer correctness is high on both sets (33.0 and 32.9 of 40):
+when the right page is retrieved, the model identifies the correct repair
+method and quantitative conditions, and multi-category questions are usually
+answered across all their sub-parts. The residual gap comes from a few honest
+abstentions on questions whose evidence was not retrieved, and from occasional
+omission of a second numeric sub-part (e.g.\ a mixing ratio or pot life).
+
+Table~\ref{tab:examples} contrasts a high- and a low-scoring answer (both
+translated from Thai). The Excellent answer reproduces the correct method-
+statement criteria with complete numeric bounds and a correct page citation;
+the Poor answer is fluent and well-formed but reports a numeric value that
+contradicts the data sheet, which is precisely the failure mode the correctness
+dimension is designed to penalise.
+
+\begin{table}[htbp]
+\caption{Example Answers at High and Low Correctness}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.13\columnwidth}|p{0.78\columnwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Excellent --- 38/40}} \\
+\hline
+Question & Repair criteria for a ``Hard Crack'' repaired with Cementitious Mortar? \\
+\hline
+Ground truth & width $0.1 < A < 0.3$\,mm and depth $> 15$\,mm. \\
+\hline
+System & ``width (A) $> 0.1$\,mm but $< 0.3$\,mm; depth $> 15$\,mm'' --- cites \emph{Guideline for Repair}, p.~3. \\
+\hline
+Why & correct criteria, complete numeric bounds, correct citation. \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Poor --- 10/40}} \\
+\hline
+Question & Bond strength to concrete of Sikadur-32TH? \\
+\hline
+Ground truth & $2.5$--$3$\,N/mm$^2$ (concrete failure). \\
+\hline
+System & ``$> 4$\,N/mm$^2$ for dry and moist concrete.'' \\
+\hline
+Why & wrong numeric value; contradicts the data sheet despite fluent form. \\
+\hline
+\end{tabular}
+\label{tab:examples}
+\end{center}
+\end{table}
+
+\subsection{Document Grounding and Citation}
+Grounding scores in the upper \emph{Good} band (23.1 and 23.4 of 30): answers
+are overwhelmingly faithful to the corpus and carry chapter/page citations, but
+the score is capped by noisy citations---the system returns several candidate
+pages where typically one is correct, and a handful of otherwise-correct
+answers cite an adjacent page. Hallucination is rare. Table~\ref{tab:exgrnd}
+illustrates the distinction from correctness: a \emph{factually correct} answer
+can still score low on grounding when it cites the wrong source page.
+
+\begin{table}[htbp]
+\caption{Example Answers at High and Low Grounding}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.13\columnwidth}|p{0.78\columnwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Excellent --- 27/30}} \\
+\hline
+Question & First aid if Sika Skim Coat enters the eye? \\
+\hline
+Ground truth & remove contact lenses, rinse with water $\ge 10$\,min, see a doctor (p.~125). \\
+\hline
+System & states the same three steps and cites \emph{Materials Safety Data}, p.~125. \\
+\hline
+Why & fully supported by the corpus, correct page citation, no hallucination. \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Poor --- 15/30}} \\
+\hline
+Question & Project name stated in the document? \\
+\hline
+Ground truth & Sewerage Tunnel Bung Nong Bon to Chaophraya River (p.~1). \\
+\hline
+System & names the correct project but cites p.~147 (a material-approval page). \\
+\hline
+Why & fact is right, but the cited page is unsupported (page-hit miss); grounding penalises the citation error. \\
+\hline
+\end{tabular}
+\label{tab:exgrnd}
+\end{center}
+\end{table}
+
 \subsection{Latency}
-Every question in both sets exceeded the 20\,s threshold (Level~1 mean
-$35.7$\,s, Level~2 mean $43.7$\,s, worst cases above $80$\,s), so response
-latency scores zero throughout. This is the single largest and most actionable
-deficit, driven by the sequential per-mode generation and the second
-answer-reformatting pass.
+Latency remains the weakest dimension (mean $19.7$\,s on Level~1, $28.7$\,s on
+Level~2), because each query is answered independently for every retrieval mode
+and passes through a second answer-formatting stage. This is the most
+actionable deficit; restricting to the fused mode and dropping the second pass
+would reduce it substantially.
 
-\subsection{Retrieval Recall vs.\ Hallucination}
-Recall, rather than hallucination, is the dominant failure mode. In $9$ of $20$
-Level~1 questions and $7$ of $20$ Level~2 questions the system returned
-``information not found'' even though the answer was present in the corpus---a
-retrieval miss rather than a generation error. When relevant context \emph{was}
-retrieved, answers were typically accurate and faithful, yielding eight
-Excellent (Level~1) and seven Excellent (Level~2) correctness grades. Only one
-genuine hallucination was observed, where a project-name query returned a long
-list of unrelated projects.
-
-\subsection{Citation Quality}
-Page-level grounding is capped by noisy citations: correct answers frequently
-returned five candidate pages where only one was relevant, and several
-otherwise-correct answers cited the wrong page entirely. Multi-category
-(Level~2) questions scored slightly higher overall because their compound
-phrasing supplied richer retrieval cues, but they commonly answered the
-repair-method sub-question correctly while missing a second numeric sub-part
-such as a mixing ratio or pot life.
-
-\subsection{Bilingual Fidelity and Compliance}
+\subsection{\textcolor{red}{Bilingual Fidelity and Compliance}}
+\textcolor{red}{[Pending: bilingual evaluation needs Thai-language examples, which
+cannot be typeset in this pdf\LaTeX{} build for now.]}
 Bilingual capability and prompt compliance are strong: answers consistently
-matched the language of the question and preserved English material and
-technical terms, and the frequent honest abstentions indicate good adherence to
-the instruction to answer only from retrieved context. Overall, the framework
-is reliable when retrieval succeeds; improving retrieval recall and citation
-precision, and reducing latency, are the priorities for future work.
+match the language of the question, preserve English material and technical
+terms, cite their sources, and abstain when the context is insufficient. The
+defining compliance behaviour is correctly \emph{declining} an unanswerable
+question rather than guessing; Table~\ref{tab:excomp} contrasts this with the
+opposite failure, where the system over-generates beyond the retrieved context.
+
+\begin{table}[htbp]
+\caption{Example Answers at High and Low Prompt Compliance}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.13\columnwidth}|p{0.78\columnwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Excellent --- 10/10}} \\
+\hline
+Question & Pot life of Sikadur-31 CF Normal at $+30^{\circ}$C? (not in the corpus) \\
+\hline
+System & ``the provided document does not contain this information.'' \\
+\hline
+Why & obeys ``answer only from context, decline when insufficient''; stays in scope, correct language and format. \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Poor --- 3/10}} \\
+\hline
+Question & Project name stated in the document? (earlier configuration) \\
+\hline
+System & returns a list of ${\sim}25$ unrelated project names instead of the single relevant answer or a decline. \\
+\hline
+Why & out-of-scope over-generation; violates ``answer strictly from the retrieved context.'' \\
+\hline
+\end{tabular}
+\label{tab:excomp}
+\end{center}
+\end{table}
+
+Overall the framework is reliable when retrieval succeeds; with semantic
+embeddings in place, latency and citation precision are the remaining
+priorities for future work.
 
 \iffalse
 \section{Ease of Use}
@@ -496,6 +705,13 @@ access to the method-statement documents used in this study.
 
 \begin{thebibliography}{00}
 \bibitem{polrag} H. Lin, P. Deng, Q. Zhong, and X. Zhu, ``POLRAG: A RAG-LLM framework for policy question answering,'' in \emph{Proc. 2025 IEEE Int. Conf. High Performance Computing and Communications (HPCC)}, 2025, pp. 1259--1264, doi: 10.1109/HPCC67675.2025.00179.
+\bibitem{rag} P. Lewis, E. Perez, A. Piktus, et al., ``Retrieval-augmented generation for knowledge-intensive NLP tasks,'' in \emph{Advances in Neural Information Processing Systems (NeurIPS)}, vol. 33, 2020, pp. 9459--9474.
+\bibitem{halluc} Z. Ji, N. Lee, R. Frieske, et al., ``Survey of hallucination in natural language generation,'' \emph{ACM Comput. Surv.}, vol. 55, no. 12, pp. 1--38, 2023.
+\bibitem{bm25} S. Robertson and H. Zaragoza, ``The probabilistic relevance framework: BM25 and beyond,'' \emph{Found. Trends Inf. Retr.}, vol. 3, no. 4, pp. 333--389, 2009.
+\bibitem{dpr} V. Karpukhin, B. O\u{g}uz, S. Min, et al., ``Dense passage retrieval for open-domain question answering,'' in \emph{Proc. Conf. Empirical Methods in Natural Language Processing (EMNLP)}, 2020, pp. 6769--6781.
+\bibitem{rrf} G. V. Cormack, C. L. A. Clarke, and S. Buettcher, ``Reciprocal rank fusion outperforms Condorcet and individual rank learning methods,'' in \emph{Proc. 32nd Int. ACM SIGIR Conf. Research and Development in Information Retrieval}, 2009, pp. 758--759.
+\bibitem{graphrag} D. Edge, H. Trinh, N. Cheng, et al., ``From local to global: A graph RAG approach to query-focused summarization,'' \emph{arXiv preprint arXiv:2404.16130}, 2024.
+\bibitem{nougat} L. Blecher, G. Cucurull, T. Scialom, and R. Stojnic, ``Nougat: Neural optical understanding for academic documents,'' \emph{arXiv preprint arXiv:2308.13418}, 2023.
 \end{thebibliography}
 
 \end{document}

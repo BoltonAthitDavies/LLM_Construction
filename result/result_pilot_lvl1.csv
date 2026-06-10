@@ -1,0 +1,88 @@
+﻿Rainbow Group,Category,Question,Answer,Page,predicted_keyword_Rainbow Group,predicted_keyword_Category,predicted_keyword_Answer,predicted_keyword_Page,predicted_keyword_answer_model,predicted_keyword_raw_answer,predicted_keyword_PageRecall,predicted_keyword_PagePrec,predicted_keyword_Hit,predicted_keyword_AnsSim,predicted_vector_Rainbow Group,predicted_vector_Category,predicted_vector_Answer,predicted_vector_Page,predicted_vector_answer_model,predicted_vector_raw_answer,predicted_vector_PageRecall,predicted_vector_PagePrec,predicted_vector_Hit,predicted_vector_AnsSim,predicted_fused_Rainbow Group,predicted_fused_Category,predicted_fused_Answer,predicted_fused_Page,predicted_fused_answer_model,predicted_fused_raw_answer,predicted_fused_PageRecall,predicted_fused_PagePrec,predicted_fused_Hit,predicted_fused_AnsSim,compute_time_s
+ Construction-Related, Repair Method,เกณฑ์การซ่อมแซมรอยร้าว (Crack Repair) สำหรับรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar คืออะไร,ต้องมีความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3) และมีความลึกมากกว่า 15 มม.,3,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ด้วย Cementitious Mortar คือ:
+*   ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3)
+*   ความลึกของรอยร้าวมากกว่า 15 มม. (Depth > 15)","10, 7, 3, 52, 47",gemini-2.5-flash,"Page: 3, 10
+Answer: เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ด้วย Cementitious Mortar คือ:
+*   ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3)
+*   ความลึกของรอยร้าวมากกว่า 15 มม. (Depth > 15)",1.0,0.2,1,0.869,Construction-Related,Repair Method,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับเกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack โดยเฉพาะ อย่างไรก็ตาม เอกสารได้ระบุเกณฑ์การซ่อมแซมรอยร้าวด้วย Cementitious Mortar (ตามวิธี RP-TN-01) สำหรับรอยร้าวประเภทอื่นไว้ดังนี้:
+
+*   **สำหรับรอยร้าวทั่วไป (General Crack):**
+    *   มีความกว้างมากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม.
+    *   มีความลึกมากกว่า 15 มม.
+*   **สำหรับรอยร้าวแบบ Shrinkage Crack:**
+    *   มีความกว้าง 0.3 - 0.5 มม.
+
+(อ้างอิงจาก Chapter: Repair With Cementitious Mortar, Page: 10)","7, 115, 10, 142, 141",gemini-2.5-flash,"Page: 10
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับเกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack โดยเฉพาะ อย่างไรก็ตาม เอกสารได้ระบุเกณฑ์การซ่อมแซมรอยร้าวด้วย Cementitious Mortar (ตามวิธี RP-TN-01) สำหรับรอยร้าวประเภทอื่นไว้ดังนี้:
+
+*   **สำหรับรอยร้าวทั่วไป (General Crack):**
+    *   มีความกว้างมากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม.
+    *   มีความลึกมากกว่า 15 มม.
+*   **สำหรับรอยร้าวแบบ Shrinkage Crack:**
+    *   มีความกว้าง 0.3 - 0.5 มม.
+
+(อ้างอิงจาก Chapter: Repair With Cementitious Mortar, Page: 10)",0.0,0.0,0,0.6195,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) มีดังนี้:
+1.  ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม. (0.1 < A < 0.3 mm.)
+2.  ความลึกของรอยร้าวมากกว่า 15 มม. (Depth > 15 mm.)","7, 10, 3, 52, 142",gemini-2.5-flash,"Page: 3, 10
+Answer: เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) มีดังนี้:
+1.  ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม. (0.1 < A < 0.3 mm.)
+2.  ความลึกของรอยร้าวมากกว่า 15 มม. (Depth > 15 mm.)",1.0,0.2,1,0.7977,20.25
+ Non-Construction Questions, General / Admin,ชื่อโครงการ (Project Name) ที่ระบุไว้ในเอกสารคืออะไร,SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER,1,Non-Construction Questions,General / Admin,"The provided document context does not contain enough information to answer the question about the ""Project Name"".","88, 83, 117, 107, 47",gemini-2.5-flash,"Page: N/A
+Answer: The provided document context does not contain enough information to answer the question about the ""Project Name"".",0.0,0.0,0,0.0737,Construction-Related,Repair Method,"ชื่อโครงการที่ระบุไว้ในเอกสารคือ SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER (Chapter: Repair With Epoxy Resin, Page: 21, 22).","97, 107, 22, 21, 129",gemini-2.5-flash,"Page: 21, 22
+Answer: ชื่อโครงการที่ระบุไว้ในเอกสารคือ SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER (Chapter: Repair With Epoxy Resin, Page: 21, 22).",0.0,0.0,0,0.686,Non-Construction Questions,General / Admin,"เอกสารระบุชื่อโครงการไว้หลายโครงการ เช่น:
+*   AIRPORT RAIL LINK - BAANBUNG | CHONBURI
+*   NATION HOUSING-NAVANAKORN PATHUMTHANI
+*   DHAMMAKAYA TEMPLE-PATHUMTANI
+*   SUVARNABHUMI INTERNATIONAL AIRPORT-CATERING SERVICE
+*   PRECAST CONCRETE FACTORY - WIHARNDAENG SARABURI
+*   BAAN POO TERMINAL - LAEMCHABANG
+*   HICRETE YARD BANG-PA-IN AYUTHAYA
+*   SCB TOWER - BANGKOK
+*   TESCO LOTUS - FORTUNE TOWER
+*   2ND STAGE EXPRESSWAY-CHAN ROAD RAMP 310 OFF RAMP FOR NORTHBOUND
+*   EXPRESSWAY BANGNA-BANGPLEE-BANGPAKONG","107, 117, 88, 97, 83",gemini-2.5-flash,"Page: 97
+Answer: เอกสารระบุชื่อโครงการไว้หลายโครงการ เช่น:
+*   AIRPORT RAIL LINK - BAANBUNG | CHONBURI
+*   NATION HOUSING-NAVANAKORN PATHUMTHANI
+*   DHAMMAKAYA TEMPLE-PATHUMTANI
+*   SUVARNABHUMI INTERNATIONAL AIRPORT-CATERING SERVICE
+*   PRECAST CONCRETE FACTORY - WIHARNDAENG SARABURI
+*   BAAN POO TERMINAL - LAEMCHABANG
+*   HICRETE YARD BANG-PA-IN AYUTHAYA
+*   SCB TOWER - BANGKOK
+*   TESCO LOTUS - FORTUNE TOWER
+*   2ND STAGE EXPRESSWAY-CHAN ROAD RAMP 310 OFF RAMP FOR NORTHBOUND
+*   EXPRESSWAY BANGNA-BANGPLEE-BANGPAKONG",0.0,0.0,0,0.0,20.87
+ Construction-Related, Material,อัตราส่วนผสม (Mixing Ratio) ของวัสดุ Sikadur 52TH คือเท่าใด,อัตราส่วนผสมคือ วัสดุ A : วัสดุ B = 2 : 1,17,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่ระบุอัตราส่วนผสม (Mixing Ratio) ของวัสดุ Sikadur 52TH อย่างชัดเจน มีเพียงระบุว่าเป็นอีพ็อกซี่ชนิด 2 ส่วนผสม (Chapter: Materials Data Sheet, Page: 60)","60, 58, 61, 56, 47",gemini-2.5-flash,"Page: 60
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่ระบุอัตราส่วนผสม (Mixing Ratio) ของวัสดุ Sikadur 52TH อย่างชัดเจน มีเพียงระบุว่าเป็นอีพ็อกซี่ชนิด 2 ส่วนผสม (Chapter: Materials Data Sheet, Page: 60)",0.0,0.0,0,0.0833,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมของวัสดุ Sikadur 52TH ได้อย่างชัดเจน หน้าที่ 60 อธิบายคุณลักษณะและการใช้งานของ Sikadur -52TH แต่ไม่ได้ระบุอัตราส่วนผสม ส่วนหน้าที่ 71 ระบุอัตราส่วนผสม A: B 4:1 โดยน้ำหนัก / 3: 1 โดยปริมาตร แต่ข้อมูลนี้ดูเหมือนจะเกี่ยวข้องกับ Condur EA1 หรือการฉีดอีพ็อกซี่โดยทั่วไป ไม่ได้ระบุว่าเป็นของ Sikadur 52TH โดยเฉพาะ,"60, 71, 47, 58, 123",gemini-2.5-flash,"Page: 60, 71
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมของวัสดุ Sikadur 52TH ได้อย่างชัดเจน หน้าที่ 60 อธิบายคุณลักษณะและการใช้งานของ Sikadur -52TH แต่ไม่ได้ระบุอัตราส่วนผสม ส่วนหน้าที่ 71 ระบุอัตราส่วนผสม A: B 4:1 โดยน้ำหนัก / 3: 1 โดยปริมาตร แต่ข้อมูลนี้ดูเหมือนจะเกี่ยวข้องกับ Condur EA1 หรือการฉีดอีพ็อกซี่โดยทั่วไป ไม่ได้ระบุว่าเป็นของ Sikadur 52TH โดยเฉพาะ",0.0,0.0,0,0.1905,Construction-Related,Material,"เอกสารที่ให้มาไม่ได้ระบุอัตราส่วนผสม (Mixing Ratio) ของวัสดุ Sikadur 52TH โดยตรง แม้จะระบุว่าเป็นอีพ็อกซี่ชนิด 2 ส่วนผสม (ประกอบด้วยส่วนผสม 2 ส่วน) (Chapter: Materials Data Sheet, Page: 60)","60, 58, 47, 71, 61",gemini-2.5-flash,"Page: 60
+Answer: เอกสารที่ให้มาไม่ได้ระบุอัตราส่วนผสม (Mixing Ratio) ของวัสดุ Sikadur 52TH โดยตรง แม้จะระบุว่าเป็นอีพ็อกซี่ชนิด 2 ส่วนผสม (ประกอบด้วยส่วนผสม 2 ส่วน) (Chapter: Materials Data Sheet, Page: 60)",0.0,0.0,0,0.1529,16.8
+ Construction-Related, Environmental / Preventive Measures,มาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมากคืออะไร,ให้ทำการเปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด แล้วขนย้ายออกจากจุดที่รั่วไหล จากนั้นให้กวาดวัสดุที่รั่วไหลกองรวมกัน แล้วใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย แล้วจึงทำการตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี,136,Construction-Related,Human Risk,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมาก อย่างชัดเจน.
+
+อย่างไรก็ตาม ในหัวข้อ ""ACCIDENTAL RELEASE MEASURES"" ของข้อมูลความปลอดภัยวัสดุ ระบุให้ ""Clean up spilled material"" (ทำความสะอาดวัสดุที่หกรั่วไหล) สำหรับการรั่วไหลบนพื้นดิน (Land spill) (Chapter: Materials Data Sheet, Page: 107, 117).
+
+นอกจากนี้ ในมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผงในด้านคุณภาพน้ำ มีข้อความกำชับว่า ""ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด"" หากมีน้ำที่ปนเปื้อนจำนวนมากจนไม่สามารถกำจัดเองได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). ข้อความนี้เน้นการป้องกันการปนเปื้อนทางดินจากน้ำที่ปนเปื้อน ไม่ใช่มาตรการสำหรับกรณีวัสดุผงรั่วไหลลงดินโดยตรง.","134, 107, 135, 117",gemini-2.5-flash,"Page: 107, 117, 135
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมาก อย่างชัดเจน.
+
+อย่างไรก็ตาม ในหัวข้อ ""ACCIDENTAL RELEASE MEASURES"" ของข้อมูลความปลอดภัยวัสดุ ระบุให้ ""Clean up spilled material"" (ทำความสะอาดวัสดุที่หกรั่วไหล) สำหรับการรั่วไหลบนพื้นดิน (Land spill) (Chapter: Materials Data Sheet, Page: 107, 117).
+
+นอกจากนี้ ในมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผงในด้านคุณภาพน้ำ มีข้อความกำชับว่า ""ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด"" หากมีน้ำที่ปนเปื้อนจำนวนมากจนไม่สามารถกำจัดเองได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). ข้อความนี้เน้นการป้องกันการปนเปื้อนทางดินจากน้ำที่ปนเปื้อน ไม่ใช่มาตรการสำหรับกรณีวัสดุผงรั่วไหลลงดินโดยตรง.",0.0,0.0,0,0.0,Construction-Related,Human Risk,"มาตรการป้องกันที่ระบุในเอกสารสำหรับกรณีที่มีวัสดุซ่อมแบบผงรั่วไหลบนพื้นดินคือ ""กำจัดวัสดุที่หกเพื่อจำกัดอันตรายที่อาจเกิดขึ้น"" และ ""ทำความสะอาดวัสดุที่หก"" ซึ่งเป็นการระบุถึงการจัดการภายหลังการรั่วไหล แต่ไม่ได้ให้ข้อมูลเฉพาะเจาะจงเกี่ยวกับมาตรการป้องกันผลกระทบด้านคุณภาพดินโดยละเอียด หรือสำหรับกรณีที่มีการรั่วไหลในปริมาณมากโดยเฉพาะ","107, 6, 118, 134, 117",gemini-2.5-flash,"Page: 107, 117
+Answer: มาตรการป้องกันที่ระบุในเอกสารสำหรับกรณีที่มีวัสดุซ่อมแบบผงรั่วไหลบนพื้นดินคือ ""กำจัดวัสดุที่หกเพื่อจำกัดอันตรายที่อาจเกิดขึ้น"" และ ""ทำความสะอาดวัสดุที่หก"" ซึ่งเป็นการระบุถึงการจัดการภายหลังการรั่วไหล แต่ไม่ได้ให้ข้อมูลเฉพาะเจาะจงเกี่ยวกับมาตรการป้องกันผลกระทบด้านคุณภาพดินโดยละเอียด หรือสำหรับกรณีที่มีการรั่วไหลในปริมาณมากโดยเฉพาะ",0.0,0.0,0,0.0,Construction-Related,Human Risk,"มาตรการป้องกันในกรณีที่มีการรั่วไหลบนบกสำหรับวัสดุซ่อมแบบผง (ซึ่งก่อให้เกิดฝุ่นที่ปลิวตามลม) คือการทำความสะอาดวัสดุที่หกออกไป เพื่อจำกัดอันตรายที่อาจเกิดขึ้น (Chapter: Materials Data Sheet, Page: 107, 117)","107, 134, 117, 84, 6",gemini-2.5-flash,"Page: 107, 117
+Answer: มาตรการป้องกันในกรณีที่มีการรั่วไหลบนบกสำหรับวัสดุซ่อมแบบผง (ซึ่งก่อให้เกิดฝุ่นที่ปลิวตามลม) คือการทำความสะอาดวัสดุที่หกออกไป เพื่อจำกัดอันตรายที่อาจเกิดขึ้น (Chapter: Materials Data Sheet, Page: 107, 117)",0.0,0.0,0,0.0,30.26
+ Construction-Related, Human Risk,อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีตมีอะไรบ้าง,ไฟฟ้าดูด และ โดนใบเจียรบาด,121,Construction-Related,Human Risk,"Page: 107, 117
+เอกสารที่ให้มาไม่ได้ระบุอันตรายที่เกิดจากการใช้ ""เครื่องเจียรคอนกรีต"" โดยตรง แต่ระบุอันตรายต่อสุขภาพที่อาจเกิดขึ้นจากการสัมผัสฝุ่นของวัสดุที่เป็นส่วนประกอบของปูนซีเมนต์ปอร์ตแลนด์และทรายซิลิกา ซึ่งเป็นส่วนประกอบทั่วไปในคอนกรีตและอาจเกิดจากการเจียรคอนกรีต อันตรายที่อาจเกิดขึ้น ได้แก่:
+
+*   **การหายใจ (เฉียบพลัน):** การหายใจเอาฝุ่นเข้าไปอาจทำให้เกิดการระคายเคืองจมูก ลำคอ หรือปอด และสำลักได้ (Chapter: Materials Data Sheet, Page: 117, 107)
+*   **การหายใจ (เรื้อรัง):** การสัมผัสเป็นเวลานานหรือซ้ำๆ อาจทำให้เกิดการบาดเจ็บที่ปอด รวมถึงโรคปอดฝุ่นหิน (silicosis) ความเสี่ยงของการบาดเจ็บขึ้นอยู่กับระยะเวลาและระดับการสัมผัส (Chapter: Materials Data Sheet, Page: 117, 107)
+*   **การสัมผัสดวงตา (เฉียบพลัน/เรื้อรัง):** อาจทำให้เกิดการระคายเคืองตา แผลไหม้รุนแรง และความเสียหายต่อกระจกตา (Chapter: Materials Data Sheet, Page: 107)
+*   **การสัมผัสผิวหนัง (เฉียบพลัน/เรื้อรัง):** อาจทำให้ผิวแห้ง แดง ไม่สบาย ระคายเคือง หรือเกิดแผลไหม้รุนแรง ผิวหนังหนาตัวขึ้น (sclerodermia) อาจเกี่ยวข้องกับการสัมผัสซิลิกาผลึกในระดับสูง (Chapter: Materials Data Sheet, Page: 107)
+*   **การกลืนกิน (เฉียบพลัน/เรื้อรัง):** การกลืนกินในปริมาณมากอาจทำให้เกิดความผิดปกติในลำไส้ (Chapter: Materials Data Sheet, Page: 117, 107)","88, 117, 107, 83",gemini-2.5-flash,"Page: 107, 117
+เอกสารที่ให้มาไม่ได้ระบุอันตรายที่เกิดจากการใช้ ""เครื่องเจียรคอนกรีต"" โดยตรง แต่ระบุอันตรายต่อสุขภาพที่อาจเกิดขึ้นจากการสัมผัสฝุ่นของวัสดุที่เป็นส่วนประกอบของปูนซีเมนต์ปอร์ตแลนด์และทรายซิลิกา ซึ่งเป็นส่วนประกอบทั่วไปในคอนกรีตและอาจเกิดจากการเจียรคอนกรีต อันตรายที่อาจเกิดขึ้น ได้แก่:
+
+*   **การหายใจ (เฉียบพลัน):** การหายใจเอาฝุ่นเข้าไปอาจทำให้เกิดการระคายเคืองจมูก ลำคอ หรือปอด และสำลักได้ (Chapter: Materials Data Sheet, Page: 117, 107)
+*   **การหายใจ (เรื้อรัง):** การสัมผัสเป็นเวลานานหรือซ้ำๆ อาจทำให้เกิดการบาดเจ็บที่ปอด รวมถึงโรคปอดฝุ่นหิน (silicosis) ความเสี่ยงของการบาดเจ็บขึ้นอยู่กับระยะเวลาและระดับการสัมผัส (Chapter: Materials Data Sheet, Page: 117, 107)
+*   **การสัมผัสดวงตา (เฉียบพลัน/เรื้อรัง):** อาจทำให้เกิดการระคายเคืองตา แผลไหม้รุนแรง และความเสียหายต่อกระจกตา (Chapter: Materials Data Sheet, Page: 107)
+*   **การสัมผัสผิวหนัง (เฉียบพลัน/เรื้อรัง):** อาจทำให้ผิวแห้ง แดง ไม่สบาย ระคายเคือง หรือเกิดแผลไหม้รุนแรง ผิวหนังหนาตัวขึ้น (sclerodermia) อาจเกี่ยวข้องกับการสัมผัสซิลิกาผลึกในระดับสูง (Chapter: Materials Data Sheet, Page: 107)
+*   **การกลืนกิน (เฉียบพลัน/เรื้อรัง):** การกลืนกินในปริมาณมากอาจทำให้เกิดความผิดปกติในลำไส้ (Chapter: Materials Data Sheet, Page: 117, 107)",0.0,0.0,0,0.0,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต,"107, 83, 98, 58, 117",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต",0.0,0.0,0,0.0,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต,"107, 117, 83, 88",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต",0.0,0.0,0,0.0,28.12

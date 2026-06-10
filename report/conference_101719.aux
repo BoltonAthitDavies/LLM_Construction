@@ -1,27 +1,54 @@
 \relax 
+\citation{halluc}
+\citation{rag}
+\citation{bm25}
+\citation{dpr}
+\citation{rrf}
+\citation{graphrag}
+\citation{nougat}
 \citation{polrag}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {II}Methodology}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Methodology}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Document Ingestion}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Knowledge-Graph Construction}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Query Understanding}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}\textcolor {red}{Knowledge-Graph Construction}}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}\textcolor {red}{Query Understanding}}{2}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-D}}Retrieval}{2}{}\protected@file@percent }
-\newlabel{eq:cos}{{1}{2}{}{equation.1}{}}
-\newlabel{eq:rrf}{{2}{2}{}{equation.2}{}}
+\newlabel{eq:bm25}{{1}{2}{}{equation.1}{}}
+\newlabel{eq:cos}{{2}{2}{}{equation.2}{}}
+\newlabel{eq:rrf}{{3}{2}{}{equation.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-E}}Answer Generation and Structured Formatting}{2}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {III}Experiment Design}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Semantic Similarity Retrieval}{2}{}\protected@file@percent }
-\newlabel{eq:pr}{{3}{2}{}{equation.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}LLM Performance}{2}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces LLM Performance Evaluation Rubric}}{2}{}\protected@file@percent }
-\newlabel{tab:rubric}{{I}{2}{}{table.1}{}}
-\bibcite{polrag}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Synthetic QA Dataset}{2}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Rainbow-Group Category Taxonomy}}{2}{}\protected@file@percent }
+\newlabel{tab:taxonomy}{{I}{2}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Retrieval Evaluation}{2}{}\protected@file@percent }
+\newlabel{eq:pr}{{4}{2}{}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}LLM Performance}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces LLM Performance Evaluation Rubric}}{3}{}\protected@file@percent }
+\newlabel{tab:rubric}{{II}{3}{}{table.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Results and Discussion}{3}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Evaluation Results (Fused Retrieval)}}{3}{}\protected@file@percent }
-\newlabel{tab:results}{{II}{3}{}{table.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Latency}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Retrieval Recall vs.\ Hallucination}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Citation Quality}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Bilingual Fidelity and Compliance}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{3}{}\protected@file@percent }
-\gdef \@abspage@last{3}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Retrieval}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Retrieval Quality by Method (Page-Level)}}{3}{}\protected@file@percent }
+\newlabel{tab:retr}{{III}{3}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}End-to-End Answer Quality}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Evaluation Results (Fused Retrieval)}}{3}{}\protected@file@percent }
+\newlabel{tab:results}{{IV}{3}{}{table.4}{}}
+\bibcite{polrag}{1}
+\bibcite{rag}{2}
+\bibcite{halluc}{3}
+\bibcite{bm25}{4}
+\bibcite{dpr}{5}
+\bibcite{rrf}{6}
+\bibcite{graphrag}{7}
+\bibcite{nougat}{8}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Example Answers at High and Low Correctness}}{4}{}\protected@file@percent }
+\newlabel{tab:examples}{{V}{4}{}{table.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Document Grounding and Citation}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Example Answers at High and Low Grounding}}{4}{}\protected@file@percent }
+\newlabel{tab:exgrnd}{{VI}{4}{}{table.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Latency}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}\textcolor {red}{Bilingual Fidelity and Compliance}}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Example Answers at High and Low Prompt Compliance}}{4}{}\protected@file@percent }
+\newlabel{tab:excomp}{{VII}{4}{}{table.7}{}}
+\@writefile{toc}{\contentsline {section}{References}{4}{}\protected@file@percent }
+\gdef \@abspage@last{4}
