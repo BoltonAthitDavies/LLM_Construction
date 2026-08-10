@@ -1,0 +1,1005 @@
+﻿Category,sub Category,Question,Answer,Page,predicted_keyword_Rainbow Group,predicted_keyword_Category,predicted_keyword_Answer,predicted_keyword_Page,predicted_keyword_answer_model,predicted_keyword_raw_answer,predicted_keyword_PageRecall,predicted_keyword_PagePrec,predicted_keyword_Hit,predicted_keyword_AnsSim,predicted_vector_Rainbow Group,predicted_vector_Category,predicted_vector_Answer,predicted_vector_Page,predicted_vector_answer_model,predicted_vector_raw_answer,predicted_vector_PageRecall,predicted_vector_PagePrec,predicted_vector_Hit,predicted_vector_AnsSim,predicted_fused_Rainbow Group,predicted_fused_Category,predicted_fused_Answer,predicted_fused_Page,predicted_fused_answer_model,predicted_fused_raw_answer,predicted_fused_PageRecall,predicted_fused_PagePrec,predicted_fused_Hit,predicted_fused_AnsSim,compute_time_s,claude_fused_eng,claude_fused_grounding,judge_fused_eng,judge_fused_grounding,judge_fused_note
+Repair Method / Material,Guideline for Repair / Repair with Epoxy Resin,จากการตรวจสอบพบรอยร้าว (Hard Crack) ขนาดกว้าง 0.4 มม. ลึก 20 มม. จะต้องใช้วิธีซ่อมแซมรหัสใด และหากเลือกใช้ Sikadur 52TH จะต้องผสมอัตราส่วนเท่าใด,1) วิธีซ่อม (Guideline): RP-TN-02 (Repair with Epoxy Resin) เนื่องจากรอยร้าวอยู่ในช่วง 0.3-0.5 มม. และลึกมากกว่า 15 มม. 2) อัตราส่วนผสม Sikadur 52TH (Data Sheet): A : B = 2 : 1,"3, 17",Construction-Related,Material,"จากการตรวจสอบพบรอยร้าว (Hard Crack) ขนาดกว้าง 0.4 มม. ลึก 20 มม. จะต้องใช้วิธีซ่อมแซมรหัส RP-TN-02 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, Table 1 Guideline for Crack Repair, สำหรับ A(mm.) 0.3≤A≤0.5 และ Depth>15) ซึ่งเป็นวิธีการซ่อมแซมด้วย Epoxy Resin
+
+สำหรับอัตราส่วนผสมของ Sikadur 52TH นั้น เอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 60) ระบุว่าเป็นอีพ็อกซี่ 2 ส่วนผสม แต่ไม่ได้ระบุอัตราส่วนผสมของทั้งสองส่วนเข้าด้วยกันอย่างชัดเจน","60, 46, 102, 3, 114",gemini-2.5-flash,"Page: 3, 60
+Answer: จากการตรวจสอบพบรอยร้าว (Hard Crack) ขนาดกว้าง 0.4 มม. ลึก 20 มม. จะต้องใช้วิธีซ่อมแซมรหัส RP-TN-02 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, Table 1 Guideline for Crack Repair, สำหรับ A(mm.) 0.3≤A≤0.5 และ Depth>15) ซึ่งเป็นวิธีการซ่อมแซมด้วย Epoxy Resin
+
+สำหรับอัตราส่วนผสมของ Sikadur 52TH นั้น เอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 60) ระบุว่าเป็นอีพ็อกซี่ 2 ส่วนผสม แต่ไม่ได้ระบุอัตราส่วนผสมของทั้งสองส่วนเข้าด้วยกันอย่างชัดเจน",0.5,0.2,1,0.9319,Construction-Related,Material,"1.  สำหรับรอยร้าว (Hard Crack) ขนาดกว้าง 0.4 มม. ลึก 20 มม. จะต้องใช้วิธีซ่อมแซมรหัส **RP-TN-02** (Chapter: Guildline For Repair, Page: 3).
+2.  หากเลือกใช้ Sikadur 52TH ข้อมูลเกี่ยวกับอัตราส่วนผสมไม่ได้ระบุไว้ในเอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 60 และ Chapter: Repair With Epoxy Resin, Page: 20).","60, 3, 20, 29",gemini-2.5-flash,"Page: 3, 60
+Answer:
+1.  สำหรับรอยร้าว (Hard Crack) ขนาดกว้าง 0.4 มม. ลึก 20 มม. จะต้องใช้วิธีซ่อมแซมรหัส **RP-TN-02** (Chapter: Guildline For Repair, Page: 3).
+2.  หากเลือกใช้ Sikadur 52TH ข้อมูลเกี่ยวกับอัตราส่วนผสมไม่ได้ระบุไว้ในเอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 60 และ Chapter: Repair With Epoxy Resin, Page: 20).",0.5,0.25,1,0.8973,Construction-Related,Material,"1.  **รหัสวิธีการซ่อมแซม:**
+    จากการตรวจสอบรอยร้าว (Hard Crack) ขนาดกว้าง 0.4 มม. และลึก 20 มม. ตามตาราง Guideline for Crack Repair (Chapter: Guildline For Repair, Page: 3) รอยร้าวที่มีความกว้าง A อยู่ในช่วง 0.3 มม. ถึง 0.5 มม. (0.3≤A≤0.5) และมีความลึกมากกว่า 15 มม. (Depth>15) จะต้องใช้วิธีการซ่อมแซมด้วย Epoxy Resin ซึ่งมีรหัสอ้างอิงคือ **RP-TN-02**
+
+2.  **อัตราส่วนผสมของ Sikadur 52TH:**
+    เอกสารระบุว่า Sikadur-52TH เป็นอีพ็อกซี่ชนิด 2 ส่วนผสม และต้องผสมส่วนผสมทั้ง 2 ส่วนตามอัตราส่วนที่กำหนดไว้โดยเคร่งครัด เพื่อให้ได้คุณสมบัติของผลิตภัณฑ์ (Chapter: Materials Data Sheet, Page: 60) อย่างไรก็ตาม ข้อมูลที่ให้มาในเอกสาร **ไม่เพียงพอ** ที่จะระบุอัตราส่วนผสมเฉพาะของ Sikadur-52TH","60, 3, 46, 102",gemini-2.5-flash,"Page: 3, 60
+Answer:
+1.  **รหัสวิธีการซ่อมแซม:**
+    จากการตรวจสอบรอยร้าว (Hard Crack) ขนาดกว้าง 0.4 มม. และลึก 20 มม. ตามตาราง Guideline for Crack Repair (Chapter: Guildline For Repair, Page: 3) รอยร้าวที่มีความกว้าง A อยู่ในช่วง 0.3 มม. ถึง 0.5 มม. (0.3≤A≤0.5) และมีความลึกมากกว่า 15 มม. (Depth>15) จะต้องใช้วิธีการซ่อมแซมด้วย Epoxy Resin ซึ่งมีรหัสอ้างอิงคือ **RP-TN-02**
+
+2.  **อัตราส่วนผสมของ Sikadur 52TH:**
+    เอกสารระบุว่า Sikadur-52TH เป็นอีพ็อกซี่ชนิด 2 ส่วนผสม และต้องผสมส่วนผสมทั้ง 2 ส่วนตามอัตราส่วนที่กำหนดไว้โดยเคร่งครัด เพื่อให้ได้คุณสมบัติของผลิตภัณฑ์ (Chapter: Materials Data Sheet, Page: 60) อย่างไรก็ตาม ข้อมูลที่ให้มาในเอกสาร **ไม่เพียงพอ** ที่จะระบุอัตราส่วนผสมเฉพาะของ Sikadur-52TH",0.5,0.25,1,0.9216,22.29,28,20,20,15,"Part 1 correct with full details and correct citation. Part 2 fails to provide ratio, claiming insufficient data, which is incorrect."
+Repair Method / Material,Guideline for Repair / Voids and Blowholes Repair (High Strength Mortar),หากพบรูฟองอากาศ (Blowholes) ที่มีความลึก 12 มม. ต้องใช้วิธีซ่อมรหัสใด และหากใช้ปูนฉาบตราผึ้ง 135F ต้องผสมน้ำในอัตราส่วนเท่าใด,1) วิธีซ่อม: RP-TN-05 (Repair with High Strength Mortar) เนื่องจากความลึกมากกว่า 10 มม. 2) อัตราส่วนผสม: ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก,"6, 40",Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับรหัสวิธีซ่อมที่ต้องใช้สำหรับรูฟองอากาศที่มีความลึก 12 มม.
+
+สำหรับปูนฉาบตราผึ้ง 135F อัตราส่วนการผสมน้ำคือ 17-19% โดยน้ำหนัก (Chapter: Materials Data Sheet, Page: 114).","114, 61, 102, 60, 46",gemini-2.5-flash,"Page: 114
+Answer:
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับรหัสวิธีซ่อมที่ต้องใช้สำหรับรูฟองอากาศที่มีความลึก 12 มม.
+
+สำหรับปูนฉาบตราผึ้ง 135F อัตราส่วนการผสมน้ำคือ 17-19% โดยน้ำหนัก (Chapter: Materials Data Sheet, Page: 114).",0.0,0.0,0,0.7501,Construction-Related,Repair Method,"เอกสารที่ให้มามีข้อมูลสำหรับการซ่อมแซมรูฟองอากาศที่มีความกว้างและความลึกไม่เกิน 10 มม. ซึ่งระบุวิธีซ่อมแซม RP-TN-04 (Chapter: Voids And Blowholes Repair, Page: 33)
+
+**ดังนั้น เอกสารไม่ได้ระบุวิธีซ่อมรหัสใดสำหรับรูฟองอากาศที่มีความลึก 12 มม. โดยเฉพาะ**
+
+หากใช้ปูนฉาบตราผึ้ง 135F ต้องผสมน้ำในอัตราส่วน ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40)","114, 115, 41, 33, 40",gemini-2.5-flash,"Page: 33, 40
+Answer:
+เอกสารที่ให้มามีข้อมูลสำหรับการซ่อมแซมรูฟองอากาศที่มีความกว้างและความลึกไม่เกิน 10 มม. ซึ่งระบุวิธีซ่อมแซม RP-TN-04 (Chapter: Voids And Blowholes Repair, Page: 33)
+
+**ดังนั้น เอกสารไม่ได้ระบุวิธีซ่อมรหัสใดสำหรับรูฟองอากาศที่มีความลึก 12 มม. โดยเฉพาะ**
+
+หากใช้ปูนฉาบตราผึ้ง 135F ต้องผสมน้ำในอัตราส่วน ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40)",0.5,0.2,1,0.8226,Construction-Related,Repair Method,"หากพบรูฟองอากาศ (Blowholes) ที่มีความลึก 12 มม. ต้องใช้วิธีซ่อมตามเอกสารหมายเลข RP-TN-05 ซึ่งเป็นวิธีซ่อมรูฟองอากาศด้วยปูนฉาบกำลังอัดสูง (ตาม Chapter: Voids And Blowholes Repair With High Strength Mortar)
+
+หากใช้ปูนฉาบตราผึ้ง 135F ต้องผสมน้ำในอัตราส่วน 17 - 19 % โดยน้ำหนัก (อ้างอิงจากอัตราส่วนสำหรับปูนฉาบ #135 ซึ่งเป็นรุ่นพื้นฐานของ #135F)","114, 61, 115, 102, 41",gemini-2.5-flash,"Page: 41, 114
+Answer: หากพบรูฟองอากาศ (Blowholes) ที่มีความลึก 12 มม. ต้องใช้วิธีซ่อมตามเอกสารหมายเลข RP-TN-05 ซึ่งเป็นวิธีซ่อมรูฟองอากาศด้วยปูนฉาบกำลังอัดสูง (ตาม Chapter: Voids And Blowholes Repair With High Strength Mortar)
+
+หากใช้ปูนฉาบตราผึ้ง 135F ต้องผสมน้ำในอัตราส่วน 17 - 19 % โดยน้ำหนัก (อ้างอิงจากอัตราส่วนสำหรับปูนฉาบ #135 ซึ่งเป็นรุ่นพื้นฐานของ #135F)",0.0,0.0,0,0.8375,21.1,30,17,30,10,"Method correct. Ratio is a range, not precise value, and adds unreferenced detail. Cited pages largely mismatch reference."
+Repair Method / Material,Spalling Edge Repair / Material Data Sheet,ในขั้นตอนซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องใช้วัสดุเชื่อมประสาน Sikadur 32TH อัตราส่วนเท่าใด และตาม Data Sheet มี Pot Life ที่ 20°C นานเท่าใด,1) อัตราส่วนผสม (RP-TN-03): A : B = 2 : 1 โดยน้ำหนัก 2) Pot Life ที่ 20°C (Data Sheet): ประมาณ 90 นาที,"26, 59",Construction-Related,Material,"ในขั้นตอนซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องใช้วัสดุเชื่อมประสาน Sikadur 32TH ในอัตราส่วน A:B = 2:1 โดยน้ำหนัก
+
+สำหรับข้อมูล Pot Life ที่ 20°C ของ Sikadur 32TH ตาม Data Sheet นั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุได้","26, 45, 58, 137",gemini-2.5-flash,"Page: 26
+Answer: ในขั้นตอนซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องใช้วัสดุเชื่อมประสาน Sikadur 32TH ในอัตราส่วน A:B = 2:1 โดยน้ำหนัก
+
+สำหรับข้อมูล Pot Life ที่ 20°C ของ Sikadur 32TH ตาม Data Sheet นั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุได้",0.5,0.25,1,0.8408,Construction-Related,Material,"ในขั้นตอนซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องใช้วัสดุเชื่อมประสาน Sikadur 32TH ในอัตราส่วนดังนี้:
+1.  **อัตราส่วนผสม:** Sikadur 32 TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (อ้างอิง: Chapter: Spalling Edge Repair, Page: 26)
+2.  **Pot Life ที่ 20°C:** ตาม Data Sheet, Sikadur 32 TH มีระยะเวลาทำงาน (Potlife) ที่อุณหภูมิ 20°C เป็นเวลา 60 นาที (อ้างอิง: Chapter: Materials Data Sheet, Page: 61)","29, 61, 26, 60, 58",gemini-2.5-flash,"Page: 26, 61
+Answer:
+ในขั้นตอนซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องใช้วัสดุเชื่อมประสาน Sikadur 32TH ในอัตราส่วนดังนี้:
+1.  **อัตราส่วนผสม:** Sikadur 32 TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (อ้างอิง: Chapter: Spalling Edge Repair, Page: 26)
+2.  **Pot Life ที่ 20°C:** ตาม Data Sheet, Sikadur 32 TH มีระยะเวลาทำงาน (Potlife) ที่อุณหภูมิ 20°C เป็นเวลา 60 นาที (อ้างอิง: Chapter: Materials Data Sheet, Page: 61)",0.5,0.2,1,0.8202,Construction-Related,Material,"ในขั้นตอนซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องใช้วัสดุเชื่อมประสาน Sikadur 32TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)
+
+ตาม Data Sheet วัสดุ Sikadur 32TH มี Pot Life ที่ 20°C นาน 60 นาที (Chapter: Materials Data Sheet, Page: 61)","26, 29, 58, 45, 61",gemini-2.5-flash,"Page: 26, 61
+Answer: ในขั้นตอนซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องใช้วัสดุเชื่อมประสาน Sikadur 32TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)
+
+ตาม Data Sheet วัสดุ Sikadur 32TH มี Pot Life ที่ 20°C นาน 60 นาที (Chapter: Materials Data Sheet, Page: 61)",0.5,0.2,1,0.8314,13.38,27,19,20,10,Mixing ratio correct. Pot life value incorrect (60 vs 90 min) and cited page for it is wrong (61 vs 59).
+Repair Method / Material,Repair with Cementitious Mortar,หากพบรอยร้าวกว้าง 0.2 มม. ลึก 16 มม. ต้องซ่อมด้วยวิธีใด และถ้าใช้ Sika Skim Coat ต้องผสมในอัตราส่วนเท่าใด,1) วิธีซ่อม: RP-TN-01 (Repair with Cementitious Mortar) เนื่องจากกว้าง 0.1-0.3 มม. และลึกมากกว่า 15 มม. 2) อัตราส่วน Sika Skim Coat: ปูน : น้ำ = 1 : 0.35 โดยน้ำหนัก,"10, 11",Construction-Related,Material,"เอกสารไม่ระบุวิธีการซ่อมแซมสำหรับรอยร้าวที่มีความกว้าง 0.2 มม. และลึก 16 มม. โดยเฉพาะ แม้ว่า Sika Skim Coat จะระบุว่าใช้กับรอยตำหนิต่างๆ เช่น รอยแตกลายงา (Chapter: Materials Data Sheet, Page: 45) แต่ความหนาในการฉาบแนะนำของ Sika Skim Coat อยู่ที่ประมาณ 0.5 - 2.0 มม. เท่านั้น (Chapter: Materials Data Sheet, Page: 46) ซึ่งไม่เพียงพอต่อความลึก 16 มม.
+
+หากใช้ Sika Skim Coat อัตราส่วนผสมคือ:
+*   ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34)
+*   ในรายละเอียดของผลิตภัณฑ์ (Chapter: Materials Data Sheet, Page: 46) ระบุช่วงปริมาณการใช้น้ำต่อ Sika Skim Coat 1 ถุง (20 กก.) ดังนี้:
+    *   สำหรับสีเทา ใช้น้ำ 7.0-7.4 ลิตร (35%-37%)
+    *   สำหรับสีขาว ใช้น้ำ 7.4-7.8 ลิตร (37%-39%)","46, 102, 27, 34, 45",gemini-2.5-flash,"Page: 27, 34, 46
+Answer:
+เอกสารไม่ระบุวิธีการซ่อมแซมสำหรับรอยร้าวที่มีความกว้าง 0.2 มม. และลึก 16 มม. โดยเฉพาะ แม้ว่า Sika Skim Coat จะระบุว่าใช้กับรอยตำหนิต่างๆ เช่น รอยแตกลายงา (Chapter: Materials Data Sheet, Page: 45) แต่ความหนาในการฉาบแนะนำของ Sika Skim Coat อยู่ที่ประมาณ 0.5 - 2.0 มม. เท่านั้น (Chapter: Materials Data Sheet, Page: 46) ซึ่งไม่เพียงพอต่อความลึก 16 มม.
+
+หากใช้ Sika Skim Coat อัตราส่วนผสมคือ:
+*   ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34)
+*   ในรายละเอียดของผลิตภัณฑ์ (Chapter: Materials Data Sheet, Page: 46) ระบุช่วงปริมาณการใช้น้ำต่อ Sika Skim Coat 1 ถุง (20 กก.) ดังนี้:
+    *   สำหรับสีเทา ใช้น้ำ 7.0-7.4 ลิตร (35%-37%)
+    *   สำหรับสีขาว ใช้น้ำ 7.4-7.8 ลิตร (37%-39%)",0.0,0.0,0,0.8463,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุวิธีซ่อมแซมรอยร้าวกว้าง 0.2 มม. ลึก 16 มม. ได้อย่างชัดเจน อย่างไรก็ตาม Sika Skim Coat เป็นผงซีเมนต์สำเร็จรูปที่ใช้สำหรับซ่อมแซมร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีต เช่น รอยแตกลายงา และสามารถฉาบได้มากกว่าหนึ่งชั้น (Chapter: Materials Data Sheet, Page: 2, 1) แต่ความหนาในการฉาบต่อชั้นประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 1) ซึ่งเอกสารไม่ได้ระบุว่าการฉาบหลายชั้นสามารถทำได้ที่ความลึกรวม 16 มม. หรือไม่
+
+หากใช้ Sika Skim Coat จะมีอัตราส่วนการผสมดังนี้ (Chapter: Materials Data Sheet, Page: 1):
+*   สำหรับสีเทา: ใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อ Sika Skim Coat (20 กก.) 1 ถุง
+*   สำหรับสีขาว: ใช้น้ำ 7.4-7.8 ลิตร (37%-39%) ต่อ Sika Skim Coat (20 กก.) 1 ถุง","46, 45, 12, 103, 99",gemini-2.5-flash,"Page: 1, 2
+Answer:
+เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุวิธีซ่อมแซมรอยร้าวกว้าง 0.2 มม. ลึก 16 มม. ได้อย่างชัดเจน อย่างไรก็ตาม Sika Skim Coat เป็นผงซีเมนต์สำเร็จรูปที่ใช้สำหรับซ่อมแซมร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีต เช่น รอยแตกลายงา และสามารถฉาบได้มากกว่าหนึ่งชั้น (Chapter: Materials Data Sheet, Page: 2, 1) แต่ความหนาในการฉาบต่อชั้นประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 1) ซึ่งเอกสารไม่ได้ระบุว่าการฉาบหลายชั้นสามารถทำได้ที่ความลึกรวม 16 มม. หรือไม่
+
+หากใช้ Sika Skim Coat จะมีอัตราส่วนการผสมดังนี้ (Chapter: Materials Data Sheet, Page: 1):
+*   สำหรับสีเทา: ใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อ Sika Skim Coat (20 กก.) 1 ถุง
+*   สำหรับสีขาว: ใช้น้ำ 7.4-7.8 ลิตร (37%-39%) ต่อ Sika Skim Coat (20 กก.) 1 ถุง",0.0,0.0,0,0.8283,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุวิธีการซ่อมแซมรอยร้าวที่มีความกว้าง 0.2 มม. และลึก 16 มม. โดยเฉพาะ อย่างไรก็ตาม จากข้อมูลของ Sika Skim Coat ที่ระบุว่าใช้สำหรับซ่อมแซมร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีตและผนังปูนฉาบ เพื่อขจัดรอยตำหนิต่างๆ เช่น รอยแตกลายงา และมีความหนาในการฉาบประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 45, 46) ซึ่งความลึก 16 มม. นั้นเกินกว่าความหนาที่แนะนำสำหรับการฉาบ Sika Skim Coat อย่างมาก
+
+หากใช้ Sika Skim Coat ในการซ่อมแซม (ซึ่งอาจไม่เหมาะสมกับความลึก 16 มม. ตามที่กล่าวมาข้างต้น) อัตราส่วนผสมของปูนต่อน้ำคือ 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27)","46, 45, 102, 27, 12",gemini-2.5-flash,"Page: 27, 45, 46
+Answer:
+เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุวิธีการซ่อมแซมรอยร้าวที่มีความกว้าง 0.2 มม. และลึก 16 มม. โดยเฉพาะ อย่างไรก็ตาม จากข้อมูลของ Sika Skim Coat ที่ระบุว่าใช้สำหรับซ่อมแซมร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีตและผนังปูนฉาบ เพื่อขจัดรอยตำหนิต่างๆ เช่น รอยแตกลายงา และมีความหนาในการฉาบประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 45, 46) ซึ่งความลึก 16 มม. นั้นเกินกว่าความหนาที่แนะนำสำหรับการฉาบ Sika Skim Coat อย่างมาก
+
+หากใช้ Sika Skim Coat ในการซ่อมแซม (ซึ่งอาจไม่เหมาะสมกับความลึก 16 มม. ตามที่กล่าวมาข้างต้น) อัตราส่วนผสมของปูนต่อน้ำคือ 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27)",0.0,0.0,0,0.8386,31.34,20,16,10,5,"Failed to identify correct repair method (RP-TN-01) and criteria, claiming no info. Cited pages mostly incorrect."
+Repair Method / Material,Guideline for Repair / Repair with Cementitious Mortar,หากพบรูฟองอากาศกว้าง 8 มม. ลึก 8 มม. ต้องซ่อมด้วยวิธีใด และถ้าเลือกใช้ Conpatch 300 ต้องผสมในอัตราส่วนเท่าใด,1) วิธีซ่อม: RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) เนื่องจากกว้างและลึกอยู่ในช่วง 2-10 มม. 2) อัตราส่วน Conpatch 300: ปูน : น้ำ = 1 : 0.2 โดยน้ำหนัก,"6, 11",Construction-Related,Material,"ตามข้อมูลที่ให้มา Conpatch 300 มีวัตถุประสงค์เพื่อซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. และควรทำงานในชั้นบางๆ น้อยกว่า 2 มม. ดังนั้น ผลิตภัณฑ์นี้จึงไม่เหมาะสำหรับการซ่อมแซมรูฟองอากาศที่มีความลึก 8 มม.
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับวิธีการซ่อมแซมสำหรับรูฟองอากาศที่มีขนาด 8 มม. ลึก 8 มม. อย่างชัดเจน
+สำหรับอัตราส่วนผสมของ Conpatch 300 เอกสารระบุให้ ""Mix Conpatch 300 following the instructions on the data sheet"" (ผสม Conpatch 300 ตามคำแนะนำในเอกสารข้อมูล) แต่ไม่ได้ระบุอัตราส่วนผสมไว้ในเอกสารที่ให้มานี้ (Chapter: Materials Data Sheet, Page: 62).","102, 46, 62, 60, 67",gemini-2.5-flash,"Page: 62
+Answer: ตามข้อมูลที่ให้มา Conpatch 300 มีวัตถุประสงค์เพื่อซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. และควรทำงานในชั้นบางๆ น้อยกว่า 2 มม. ดังนั้น ผลิตภัณฑ์นี้จึงไม่เหมาะสำหรับการซ่อมแซมรูฟองอากาศที่มีความลึก 8 มม.
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับวิธีการซ่อมแซมสำหรับรูฟองอากาศที่มีขนาด 8 มม. ลึก 8 มม. อย่างชัดเจน
+สำหรับอัตราส่วนผสมของ Conpatch 300 เอกสารระบุให้ ""Mix Conpatch 300 following the instructions on the data sheet"" (ผสม Conpatch 300 ตามคำแนะนำในเอกสารข้อมูล) แต่ไม่ได้ระบุอัตราส่วนผสมไว้ในเอกสารที่ให้มานี้ (Chapter: Materials Data Sheet, Page: 62).",0.0,0.0,0,0.8125,Construction-Related,Material,"1. สำหรับรูฟองอากาศที่มีขนาดความกว้างและความลึก 8 มม. ซึ่งมีขนาดมากกว่า 2 มม. แต่ไม่เกิน 10 มม. สามารถซ่อมแซมได้โดยใช้ปูนฉาบซ่อมที่มีคุณสมบัติการยึดเกาะที่ดีและมีสีใกล้เคียงกับผิวคอนกรีต (Chapter: Voids And Blowholes Repair, Page: 33)
+2. หากเลือกใช้ Conpatch 300 เอกสารระบุให้ผสมตามคำแนะนำบนแผ่นข้อมูล (Mix Conpatch 300 following the instructions on the data sheet) แต่ไม่ได้ระบุอัตราส่วนการผสมเฉพาะไว้ในบริบทที่ให้มา (Chapter: Materials Data Sheet, Page: 62)","62, 33, 12, 41, 35",gemini-2.5-flash,"Page: 33, 62
+Answer: 1. สำหรับรูฟองอากาศที่มีขนาดความกว้างและความลึก 8 มม. ซึ่งมีขนาดมากกว่า 2 มม. แต่ไม่เกิน 10 มม. สามารถซ่อมแซมได้โดยใช้ปูนฉาบซ่อมที่มีคุณสมบัติการยึดเกาะที่ดีและมีสีใกล้เคียงกับผิวคอนกรีต (Chapter: Voids And Blowholes Repair, Page: 33)
+2. หากเลือกใช้ Conpatch 300 เอกสารระบุให้ผสมตามคำแนะนำบนแผ่นข้อมูล (Mix Conpatch 300 following the instructions on the data sheet) แต่ไม่ได้ระบุอัตราส่วนการผสมเฉพาะไว้ในบริบทที่ให้มา (Chapter: Materials Data Sheet, Page: 62)",0.0,0.0,0,0.864,Construction-Related,Material,"หากพบรูฟองอากาศกว้าง 8 มม. ลึก 8 มม. สามารถซ่อมแซมได้โดยใช้ปูนฉาบซ่อมที่มีคุณสมบัติการยึดเกาะที่ดี รวมถึงมีสีที่ใกล้เคียงกับผิวคอนกรีต เนื่องจากขนาดของรูฟองอากาศ (8 มม.) อยู่ในช่วงมากกว่า 2 มม. แต่ไม่เกิน 10 มม. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+สำหรับการเลือกใช้ Conpatch 300 เอกสารระบุให้ผสมตามคำแนะนำในเอกสารข้อมูล (Chapter: Materials Data Sheet, Page: 62) แต่เอกสารที่ให้มาไม่มีข้อมูลอัตราส่วนการผสมเฉพาะสำหรับ Conpatch 300 ดังนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับอัตราส่วนการผสมของ Conpatch 300","62, 102, 46, 33, 12",gemini-2.5-flash,"Page: 33, 62
+Answer: หากพบรูฟองอากาศกว้าง 8 มม. ลึก 8 มม. สามารถซ่อมแซมได้โดยใช้ปูนฉาบซ่อมที่มีคุณสมบัติการยึดเกาะที่ดี รวมถึงมีสีที่ใกล้เคียงกับผิวคอนกรีต เนื่องจากขนาดของรูฟองอากาศ (8 มม.) อยู่ในช่วงมากกว่า 2 มม. แต่ไม่เกิน 10 มม. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+สำหรับการเลือกใช้ Conpatch 300 เอกสารระบุให้ผสมตามคำแนะนำในเอกสารข้อมูล (Chapter: Materials Data Sheet, Page: 62) แต่เอกสารที่ให้มาไม่มีข้อมูลอัตราส่วนการผสมเฉพาะสำหรับ Conpatch 300 ดังนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับอัตราส่วนการผสมของ Conpatch 300",0.0,0.0,0,0.8494,19.38,16,15,20,5,Method code missing; mixing ratio hallucinated as unavailable. Cited pages mostly incorrect.
+Repair Method / Human Risk,Repair with Cementitious Mortar / Risk Assessment in Repair Working,ในการซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) หากใช้เครื่องเจียรคอนกรีตในการเตรียมผิว ตามการประเมินความเสี่ยงมีอันตรายใดบ้าง และมีค่าความเสี่ยงเริ่มต้นเท่าใด,1) อันตราย: ไฟฟ้าดูด และโดนใบเจียรบาด 2) ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating): RF = 12 (HCR 4 × PR 3) ซึ่งเป็น High Risk,"11, 121",Construction-Related,Human Risk,"ตามบริบทของเอกสารที่ให้มา การซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) อธิบายถึงประเภทของรอยร้าวที่สามารถซ่อมแซมได้ (Chapter: Repair With Cementitious Mortar, Page: 10) และวัสดุที่ใช้ แต่ไม่มีข้อมูลเกี่ยวกับการใช้เครื่องเจียรคอนกรีตในการเตรียมผิว หรือการประเมินความเสี่ยงและค่าความเสี่ยงเริ่มต้นที่เกี่ยวข้องกับเครื่องมือดังกล่าว ในเอกสารมีกล่าวถึง ""เครื่องขัดผิวคอนกรีต"" ในส่วนของการซ่อมแซม Spalling Edge (RP-TN-03) (Chapter: Spalling Edge Repair, Page: 25) แต่ก็ไม่ได้ระบุถึงอันตรายหรือค่าความเสี่ยงเริ่มต้นแต่อย่างใด ดังนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามนี้","7, 10, 9, 25, 6",gemini-2.5-flash,"Page: 10, 25
+Answer: ตามบริบทของเอกสารที่ให้มา การซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) อธิบายถึงประเภทของรอยร้าวที่สามารถซ่อมแซมได้ (Chapter: Repair With Cementitious Mortar, Page: 10) และวัสดุที่ใช้ แต่ไม่มีข้อมูลเกี่ยวกับการใช้เครื่องเจียรคอนกรีตในการเตรียมผิว หรือการประเมินความเสี่ยงและค่าความเสี่ยงเริ่มต้นที่เกี่ยวข้องกับเครื่องมือดังกล่าว ในเอกสารมีกล่าวถึง ""เครื่องขัดผิวคอนกรีต"" ในส่วนของการซ่อมแซม Spalling Edge (RP-TN-03) (Chapter: Spalling Edge Repair, Page: 25) แต่ก็ไม่ได้ระบุถึงอันตรายหรือค่าความเสี่ยงเริ่มต้นแต่อย่างใด ดังนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามนี้",0.0,0.0,0,0.6513,Construction-Related,Human Risk,"ตามการประเมินความเสี่ยงที่ระบุไว้ในตารางที่ (1) Risk Assessment in Repair Working (การประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์) (Chapter: Risk Assessment In Repair Working, Page: 121) หากใช้เครื่องเจียรคอนกรีตในการเตรียมผิว จะมีอันตรายดังนี้:
+
+1.  **อันตรายจากการใช้เครื่องเจียรคอนกรีต:**
+    *   **เหตุการณ์อันตรายที่อาจเกิดขึ้น:**
+        *   ไฟฟ้าดูด
+        *   โคนใบเจียรมาค
+    *   **ค่าความเสี่ยงเริ่มต้น (Initial Risk Rating):**
+        *   HCR: 4
+        *   PR: 3
+        *   RF: 12","121, 25, 10, 120, 133",gemini-2.5-flash,"Page: 121
+Answer: ตามการประเมินความเสี่ยงที่ระบุไว้ในตารางที่ (1) Risk Assessment in Repair Working (การประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์) (Chapter: Risk Assessment In Repair Working, Page: 121) หากใช้เครื่องเจียรคอนกรีตในการเตรียมผิว จะมีอันตรายดังนี้:
+
+1.  **อันตรายจากการใช้เครื่องเจียรคอนกรีต:**
+    *   **เหตุการณ์อันตรายที่อาจเกิดขึ้น:**
+        *   ไฟฟ้าดูด
+        *   โคนใบเจียรมาค
+    *   **ค่าความเสี่ยงเริ่มต้น (Initial Risk Rating):**
+        *   HCR: 4
+        *   PR: 3
+        *   RF: 12",0.5,0.2,1,0.8219,Construction-Related,Human Risk,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับการใช้อุปกรณ์เครื่องเจียรคอนกรีตในการเตรียมผิวสำหรับการซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) โดยสำหรับวิธีการ RP-TN-01 นี้ เอกสารระบุเพียงการใช้เครื่องเป่าลมทำความสะอาดผิวคอนกรีต (Chapter: Repair With Cementitious Mortar, Page: 12)
+
+นอกจากนี้ เอกสารไม่ระบุถึงอันตรายหรือค่าความเสี่ยงเริ่มต้นที่เกี่ยวข้องกับการใช้งานเครื่องมือใดๆ ในการซ่อมแซมแต่อย่างใด","10, 25, 33, 12, 7",gemini-2.5-flash,"Page: 10, 12
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับการใช้อุปกรณ์เครื่องเจียรคอนกรีตในการเตรียมผิวสำหรับการซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) โดยสำหรับวิธีการ RP-TN-01 นี้ เอกสารระบุเพียงการใช้เครื่องเป่าลมทำความสะอาดผิวคอนกรีต (Chapter: Repair With Cementitious Mortar, Page: 12)
+
+นอกจากนี้ เอกสารไม่ระบุถึงอันตรายหรือค่าความเสี่ยงเริ่มต้นที่เกี่ยวข้องกับการใช้งานเครื่องมือใดๆ ในการซ่อมแซมแต่อย่างใด",0.0,0.0,0,0.6142,20.19,5,16,0,0,"Assistant incorrectly states the document lacks information on grinder risks, contradicting the reference's specific dangers and risk values."
+Repair Method / Material / Human Risk,Repair with Epoxy Resin / Material Safety Data,หากช่างเผลอกลืน Sikadur 52TH (Part B) ระหว่างซ่อมรอยร้าวด้วย Epoxy Resin จะเกิดอันตรายอย่างไรและปฐมพยาบาลอย่างไร,1) วัสดุที่ใช้ในงานซ่อม Epoxy Resin (RP-TN-02): Sikadur 52TH (A:B = 2:1) 2) อันตรายจากการกลืน Part B: อาจเป็นอันตรายถึงตายได้ 3) การปฐมพยาบาล: บ้วนปากแล้วดื่มน้ำสะอาดปริมาณมาก ห้ามทำให้อาเจียนโดยเด็ดขาด แล้วพาไปพบแพทย์ทันที,"17, 130",Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายหรือขั้นตอนการปฐมพยาบาลในกรณีที่กลืน Sikadur 52TH (Part B) เข้าไป,"60, 53, 48, 47, 52",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายหรือขั้นตอนการปฐมพยาบาลในกรณีที่กลืน Sikadur 52TH (Part B) เข้าไป",0.0,0.0,0,0.8483,Construction-Related,Human Risk,"หากช่างเผลอกลืน Sikadur 52 TH (Part B) จะเกิดอันตรายและปฐมพยาบาลดังนี้:
+*   **อันตราย:** อาจเป็นอันตรายถึงตายได้ (Chapter: Materials Safety Data, Page: 130)
+*   **การปฐมพยาบาลเบื้องต้น:**
+    1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก (Chapter: Materials Safety Data, Page: 130)
+    2.  ห้ามทำให้อาเจียนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 130)
+    3.  แล้วพาไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 130)","127, 129, 130, 125, 128",gemini-2.5-flash,"Page: 130
+Answer: หากช่างเผลอกลืน Sikadur 52 TH (Part B) จะเกิดอันตรายและปฐมพยาบาลดังนี้:
+*   **อันตราย:** อาจเป็นอันตรายถึงตายได้ (Chapter: Materials Safety Data, Page: 130)
+*   **การปฐมพยาบาลเบื้องต้น:**
+    1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก (Chapter: Materials Safety Data, Page: 130)
+    2.  ห้ามทำให้อาเจียนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 130)
+    3.  แล้วพาไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 130)",0.5,0.2,1,0.8775,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายและการปฐมพยาบาลหากเผลอกลืน Sikadur 52TH (Part B) มีเพียงข้อมูลสำหรับ Sikadur 52 TH (PART A) เท่านั้น,"60, 127, 53, 129, 48",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายและการปฐมพยาบาลหากเผลอกลืน Sikadur 52TH (Part B) มีเพียงข้อมูลสำหรับ Sikadur 52 TH (PART A) เท่านั้น",0.0,0.0,0,0.8422,12.71,5,16,0,0,"Assistant incorrectly claims information is unavailable, directly contradicting the reference which provides the answer."
+Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact,ในการซ่อมรูฟองอากาศด้วย Sika Skim Coat ซึ่งเป็นวัสดุแบบผง ต้องปฏิบัติตามมาตรการสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภทนี้อย่างไร,1) ประเภทวัสดุ: Sika Skim Coat จัดเป็นวัสดุซ่อมแบบผง 2) มาตรการด้านคุณภาพน้ำ: ปิดทางระบายท่อน้ำทิ้งแล้วกำจัดน้ำที่ปนเปื้อนออก ห้ามทิ้งน้ำปนเปื้อนลงดิน แบ่งพื้นที่งานซ่อมและห้ามใช้วัสดุนอกพื้นที่ที่จัดเตรียมไว้ หากบรรจุภัณฑ์ฉีกขาดให้เปลี่ยนบรรจุภัณฑ์ใหม่ที่ปิดมิดชิดได้,135,Construction-Related,Environmental / Preventive Measures,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภท Sika Skim Coat ในการซ่อมรูฟองอากาศ,"45, 46, 27, 34, 18",gemini-2.5-flash,"Page: 45, 46, 34
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภท Sika Skim Coat ในการซ่อมรูฟองอากาศ",0.0,0.0,0,0.8324,Construction-Related,Human Risk,"ในการซ่อมรูฟองอากาศด้วย Sika Skim Coat ซึ่งเป็นวัสดุแบบผง ต้องปฏิบัติตามมาตรการสิ่งแวดล้อมด้านคุณภาพน้ำดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+
+1.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   **วิธีการแก้ไข:** ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+    *   **มาตรการการป้องกันผลกระทบ:** แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้ ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+2.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   **วิธีการแก้ไข:** แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซังดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง
+    *   **มาตรการการป้องกันผลกระทบ:** จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน และจัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อย","46, 135, 45, 125, 137",gemini-2.5-flash,"Page: 135
+Answer: ในการซ่อมรูฟองอากาศด้วย Sika Skim Coat ซึ่งเป็นวัสดุแบบผง ต้องปฏิบัติตามมาตรการสิ่งแวดล้อมด้านคุณภาพน้ำดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+
+1.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   **วิธีการแก้ไข:** ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+    *   **มาตรการการป้องกันผลกระทบ:** แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้ ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+2.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   **วิธีการแก้ไข:** แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซังดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง
+    *   **มาตรการการป้องกันผลกระทบ:** จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน และจัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อย",1.0,0.2,1,0.8938,Construction-Related,Human Risk,"ในการซ่อมรูฟองอากาศด้วย Sika Skim Coat ซึ่งเป็นวัสดุแบบผง ต้องปฏิบัติตามมาตรการสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภทนี้ ดังนี้ (อ้างอิงจาก Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+
+1.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+    *   ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+    *   หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+    *   แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+    *   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+    *   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+2.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง
+    *   จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน
+    *   จัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อย","46, 45, 34, 135",gemini-2.5-flash,"Page: 135
+Answer: ในการซ่อมรูฟองอากาศด้วย Sika Skim Coat ซึ่งเป็นวัสดุแบบผง ต้องปฏิบัติตามมาตรการสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภทนี้ ดังนี้ (อ้างอิงจาก Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+
+1.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+    *   ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+    *   หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+    *   แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+    *   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+    *   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+2.  **กรณีวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง
+    *   จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน
+    *   จัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อย",1.0,0.25,1,0.9069,15.72,36,24,20,10,Includes all reference points but adds significant unreferenced content and hallucinates an entire scenario. Grounding is poor due to hallucination and noisy citations.
+Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact,หากเกิดเพลิงไหม้ในพื้นที่จัดเก็บ Sikadur 41 CF Normal ซึ่งเป็นวัสดุแบบของเหลว ควรใช้อุปกรณ์ดับเพลิงชนิดใด และมีข้อห้ามใด,"1) ประเภทวัสดุ: Sikadur 41 CF Normal เป็นวัสดุซ่อมแบบของเหลว 2) อุปกรณ์ดับเพลิงที่ใช้ได้: โฟมดับเพลิงชนิดทนแอลกอฮอล์, ถังดับเพลิง CO2, ถังดับเพลิงแบบผง 3) ข้อห้าม: ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด (และผู้ผจญเพลิงต้องสวมหน้ากาก N95)","137, 138",Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอุปกรณ์ดับเพลิงที่ควรใช้ หรือข้อห้ามในกรณีที่เกิดเพลิงไหม้ในพื้นที่จัดเก็บ Sikadur 41 CF Normal,"52, 55, 137, 26",gemini-2.5-flash,"Page: 52, 55, 137
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอุปกรณ์ดับเพลิงที่ควรใช้ หรือข้อห้ามในกรณีที่เกิดเพลิงไหม้ในพื้นที่จัดเก็บ Sikadur 41 CF Normal",0.5,0.25,1,0.8522,Construction-Related,Material,ข้อมูลที่ให้มาไม่มีรายละเอียดเกี่ยวกับประเภทของอุปกรณ์ดับเพลิงที่ควรใช้ หรือข้อห้ามเมื่อเกิดเพลิงไหม้ในพื้นที่จัดเก็บ Sikadur 41 CF Normal,"127, 128, 55, 53, 126",gemini-2.5-flash,"Page: 126, 127, 128, 53, 55
+Answer: ข้อมูลที่ให้มาไม่มีรายละเอียดเกี่ยวกับประเภทของอุปกรณ์ดับเพลิงที่ควรใช้ หรือข้อห้ามเมื่อเกิดเพลิงไหม้ในพื้นที่จัดเก็บ Sikadur 41 CF Normal",0.0,0.0,0,0.8806,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอุปกรณ์ดับเพลิงที่ควรใช้และข้อห้ามหากเกิดเพลิงไหม้ในพื้นที่จัดเก็บ Sikadur 41 CF Normal,"55, 56, 52, 127",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอุปกรณ์ดับเพลิงที่ควรใช้และข้อห้ามหากเกิดเพลิงไหม้ในพื้นที่จัดเก็บ Sikadur 41 CF Normal",0.0,0.0,0,0.8554,11.54,5,16,0,0,"Assistant incorrectly states no information is available, contradicting the reference which provides a full answer with specific details."
+Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact / Material Approval Document,หาก Conpatch 300 (วัสดุแบบผง) รั่วไหลลงดินจำนวนมาก ต้องดำเนินการอย่างไร และวัสดุนี้ได้รับอนุมัติให้ใช้งานลักษณะใด,1) มาตรการสิ่งแวดล้อม (วัสดุผง): เปลี่ยนบรรจุภัณฑ์ที่ปิดมิดชิดแล้วขนย้ายออก กวาดวัสดุกองรวมกัน คลุมด้วยผ้า/กระสอบกันฟุ้งกระจาย แล้วตักใส่ถุงดำทิ้งในพื้นที่ทิ้งสารเคมี 2) สถานะอนุมัติ: อนุมัติให้ใช้ซ่อมพื้นผิวคอนกรีตแบบบางที่มีตำหนิจากรอยขูดขีดหรือฟองอากาศจากงานหล่อ,"136, 148",Construction-Related,Human Risk,"หาก Conpatch 300 (วัสดุแบบผง) รั่วไหลลงดินจำนวนมาก:
+1.  ห้ามทิ้งวัสดุที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+2.  หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+
+สำหรับลักษณะการใช้งานของ Conpatch 300:
+*   Conpatch 300 เป็นปูนฉาบแต่งผิวคอนกรีตที่ใช้สำหรับงานซ่อมแซมผิวคอนกรีต (Thin Fairing Coat for Concrete Surface Repairs) (Chapter: Materials Data Sheet, Page: 62)
+*   เป็นปูนฉาบซ่อมที่ใช้ซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. (Use to repair surface damage from 1-2 mm deep) (Chapter: Materials Data Sheet, Page: 62)
+*   จัดอยู่ในกลุ่มปูนฉาบซ่อมที่ใช้ในโครงการ (Chapter: Repair With Epoxy Resin, Page: 18)","130, 135, 62, 18",gemini-2.5-flash,"Page: 62, 135
+Answer: หาก Conpatch 300 (วัสดุแบบผง) รั่วไหลลงดินจำนวนมาก:
+1.  ห้ามทิ้งวัสดุที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+2.  หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+
+สำหรับลักษณะการใช้งานของ Conpatch 300:
+*   Conpatch 300 เป็นปูนฉาบแต่งผิวคอนกรีตที่ใช้สำหรับงานซ่อมแซมผิวคอนกรีต (Thin Fairing Coat for Concrete Surface Repairs) (Chapter: Materials Data Sheet, Page: 62)
+*   เป็นปูนฉาบซ่อมที่ใช้ซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. (Use to repair surface damage from 1-2 mm deep) (Chapter: Materials Data Sheet, Page: 62)
+*   จัดอยู่ในกลุ่มปูนฉาบซ่อมที่ใช้ในโครงการ (Chapter: Repair With Epoxy Resin, Page: 18)",0.0,0.0,0,0.7962,Construction-Related,Material,"หาก Conpatch 300 (วัสดุแบบผง) รั่วไหลลงดินจำนวนมาก เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุว่าต้องดำเนินการอย่างไร
+
+วัสดุ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ ซึ่งเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148) โดยใช้เพื่อซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62)","62, 130, 67, 148",gemini-2.5-flash,"Page: 62, 148
+Answer:
+หาก Conpatch 300 (วัสดุแบบผง) รั่วไหลลงดินจำนวนมาก เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุว่าต้องดำเนินการอย่างไร
+
+วัสดุ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ ซึ่งเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148) โดยใช้เพื่อซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62)",0.5,0.25,1,0.7912,Construction-Related,Human Risk,"หาก Conpatch 300 (วัสดุแบบผง) รั่วไหลลงดินจำนวนมาก:
+1.  หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+2.  หากมีการปนเปื้อนที่อาจส่งผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง หรือปนเปื้อนในแหล่งน้ำธรรมชาติ ต้องแจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). นอกจากนี้ ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+
+วัสดุ Conpatch 300 ได้รับอนุมัติให้ใช้งานดังนี้:
+*   เป็นสารเคลือบผิวบาง (Thin Fairing Coat) สำหรับงานซ่อมแซมพื้นผิวคอนกรีต (Chapter: Materials Data Sheet, Page: 62).
+*   ใช้สำหรับซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62).","130, 62, 135, 67",gemini-2.5-flash,"Page: 62, 135
+Answer: หาก Conpatch 300 (วัสดุแบบผง) รั่วไหลลงดินจำนวนมาก:
+1.  หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+2.  หากมีการปนเปื้อนที่อาจส่งผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง หรือปนเปื้อนในแหล่งน้ำธรรมชาติ ต้องแจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). นอกจากนี้ ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+
+วัสดุ Conpatch 300 ได้รับอนุมัติให้ใช้งานดังนี้:
+*   เป็นสารเคลือบผิวบาง (Thin Fairing Coat) สำหรับงานซ่อมแซมพื้นผิวคอนกรีต (Chapter: Materials Data Sheet, Page: 62).
+*   ใช้สำหรับซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62).",0.0,0.0,0,0.8168,35.94,20,15,20,0,Part 1's actions differ from reference; Part 2 is good. Cited pages do not match reference pages for either part.
+Repair Method / Guideline for Repair,Guideline for Repair,"หากพบแตกบิ่นที่ขอบ (Spalling Edge) ขนาด A = 60 มม., B = 60 มม. ตาม Guideline ต้องดำเนินการอย่างไร","Action: Reject (ปฏิเสธชิ้นงาน ไม่ซ่อมแซม) เนื่องจากขนาดเกินเกณฑ์การซ่อม (เกณฑ์ซ่อมด้วย Cementitious Mortar คือ A,B 5-50 มม.)",4,Construction-Related,Repair Method,"ตาม Guideline For Repair (Table 2) หากพบแตกบิ่นที่ขอบ (Spalling Edge) ขนาด A = 60 มม. และ B = 60 มม. ซึ่งมีค่า A > 50 มม. และ B > 50 มม. จะต้องดำเนินการ ""Reject""","4, 102, 61, 114",gemini-2.5-flash,"Page: 4
+Answer: ตาม Guideline For Repair (Table 2) หากพบแตกบิ่นที่ขอบ (Spalling Edge) ขนาด A = 60 มม. และ B = 60 มม. ซึ่งมีค่า A > 50 มม. และ B > 50 มม. จะต้องดำเนินการ ""Reject""",1.0,0.25,1,0.848,Construction-Related,Repair Method,"หากพบแตกบิ่นที่ขอบ (Spalling Edge) ที่มีขนาด A = 60 มม. และ B = 60 มม. ตาม Guideline for Spalling Edge Repair (Table2) ต้องดำเนินการดังนี้:
+
+1.  **Reject** เนื่องจากขนาด A (60 มม.) มีค่ามากกว่า 50 มม. และขนาด B (60 มม.) มีค่ามากกว่า 50 มม. ซึ่งตรงกับเงื่อนไขสำหรับการ Reject (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4)","4, 3, 5, 25, 6",gemini-2.5-flash,"Page: 4
+Answer: หากพบแตกบิ่นที่ขอบ (Spalling Edge) ที่มีขนาด A = 60 มม. และ B = 60 มม. ตาม Guideline for Spalling Edge Repair (Table2) ต้องดำเนินการดังนี้:
+
+1.  **Reject** เนื่องจากขนาด A (60 มม.) มีค่ามากกว่า 50 มม. และขนาด B (60 มม.) มีค่ามากกว่า 50 มม. ซึ่งตรงกับเงื่อนไขสำหรับการ Reject (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4)",1.0,0.2,1,0.8498,Construction-Related,Repair Method,"หากพบแตกบิ่นที่ขอบ (Spalling Edge) ขนาด A = 60 มม. และ B = 60 มม. ตาม Table2 Guideline for Spalling Edge Repair ใน Chapter: Guideline For Repair, Page: 4 จะต้องดำเนินการ ""Reject"" เนื่องจากขนาด A และ B มีค่ามากกว่า 50 มม.","4, 3, 140, 102, 61",gemini-2.5-flash,"Page: 4
+Answer: หากพบแตกบิ่นที่ขอบ (Spalling Edge) ขนาด A = 60 มม. และ B = 60 มม. ตาม Table2 Guideline for Spalling Edge Repair ใน Chapter: Guideline For Repair, Page: 4 จะต้องดำเนินการ ""Reject"" เนื่องจากขนาด A และ B มีค่ามากกว่า 50 มม.",1.0,0.2,1,0.8508,11.54,38,26,38,22,"Correctly identified action and numeric threshold. Grounding is good, but includes noisy citations."
+Repair Method / Guideline for Repair,Guideline for Repair,"หากพบแตกบิ่นที่ขอบขนาด A = 30 มม., B = 30 มม. ซึ่งอยู่ในเกณฑ์ซ่อมได้ แต่ตรวจพบเหล็กเสริมโผล่ (rebar exposed) ต้องดำเนินการอย่างไร",Action: Reject (ปฏิเสธชิ้นงาน) เนื่องจากมีเหล็กเสริมโผล่ ซึ่งเป็นเงื่อนไขให้ปฏิเสธแม้ขนาดจะอยู่ในเกณฑ์ซ่อมได้,4,Construction-Related,Repair Method,"หากพบแตกบิ่นที่ขอบขนาด A = 30 มม., B = 30 มม. และตรวจพบเหล็กเสริมโผล่ (rebar exposed) จะต้องดำเนินการ ""Reject"" (ปฏิเสธ) ตาม Table2 Guideline for Spalling Edge Repair (Chapter: Guildline For Repair, Page: 4).","4, 6, 61, 46, 102",gemini-2.5-flash,"Page: 4
+Answer: หากพบแตกบิ่นที่ขอบขนาด A = 30 มม., B = 30 มม. และตรวจพบเหล็กเสริมโผล่ (rebar exposed) จะต้องดำเนินการ ""Reject"" (ปฏิเสธ) ตาม Table2 Guideline for Spalling Edge Repair (Chapter: Guildline For Repair, Page: 4).",1.0,0.2,1,0.8259,Construction-Related,Repair Method,"หากพบแตกบิ่นที่ขอบ (Spalling Edge) ขนาด A = 30 มม. และ B = 30 มม. และตรวจพบเหล็กเสริมโผล่ (rebar exposed) จะต้องดำเนินการ ""Reject"" (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4, Table 2 Guideline for Spalling Edge Repair).","4, 3, 31, 28, 19",gemini-2.5-flash,"Page: 4
+Answer: หากพบแตกบิ่นที่ขอบ (Spalling Edge) ขนาด A = 30 มม. และ B = 30 มม. และตรวจพบเหล็กเสริมโผล่ (rebar exposed) จะต้องดำเนินการ ""Reject"" (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4, Table 2 Guideline for Spalling Edge Repair).",1.0,0.2,1,0.8236,Construction-Related,Repair Method,"หากพบแตกบิ่นที่ขอบขนาด A = 30 มม., B = 30 มม. ซึ่งมีเหล็กเสริมโผล่ (rebar exposed) จะต้องดำเนินการ ""Reject"" (ปฏิเสธ) ตามตาราง Guideline for Spalling Edge Repair (Table 2) (Chapter: Guildline For Repair, Page: 4).","4, 6, 3, 61, 31",gemini-2.5-flash,"Page: 4
+Answer: หากพบแตกบิ่นที่ขอบขนาด A = 30 มม., B = 30 มม. ซึ่งมีเหล็กเสริมโผล่ (rebar exposed) จะต้องดำเนินการ ""Reject"" (ปฏิเสธ) ตามตาราง Guideline for Spalling Edge Repair (Table 2) (Chapter: Guildline For Repair, Page: 4).",1.0,0.2,1,0.8242,11.99,38,26,40,20,"Correctly identified ""Reject"" due to rebar exposure. Extra citations are noisy."
+Repair Method / Material,Spalling Edge Repair / Material Data Sheet,ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากเลือกใช้ Sikadur 31 CF Normal เป็นอีพ็อกซีมอร์ต้าร์ ต้องผสมอัตราส่วนเท่าใด และมี Potlife ที่ +30°C นานเท่าใด,1) อัตราส่วน (RP-TN-03): Sikadur 31 CF Normal ผสม A : B = 2 : 1 2) Potlife ที่ +30°C (Data Sheet): ประมาณ 35 นาที (200 กรัม),"26, 51",Construction-Related,Material,"ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากเลือกใช้ Sikadur 31 CF Normal เป็นอีพ็อกซีมอร์ต้าร์ ต้องผสมอัตราส่วน วัสดุ A: วัสดุ B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26). Sikadur-31 CF Normal เป็นอีพ็อกซีเรซินสองส่วนประกอบ (Chapter: Materials Data Sheet, Page: 47).
+
+เอกสารนี้ไม่มีข้อมูลเกี่ยวกับ Potlife ของ Sikadur 31 CF Normal ที่ +30°C","47, 26, 55, 137",gemini-2.5-flash,"Page: 26, 47
+Answer: ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากเลือกใช้ Sikadur 31 CF Normal เป็นอีพ็อกซีมอร์ต้าร์ ต้องผสมอัตราส่วน วัสดุ A: วัสดุ B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26). Sikadur-31 CF Normal เป็นอีพ็อกซีเรซินสองส่วนประกอบ (Chapter: Materials Data Sheet, Page: 47).
+
+เอกสารนี้ไม่มีข้อมูลเกี่ยวกับ Potlife ของ Sikadur 31 CF Normal ที่ +30°C",0.5,0.25,1,0.8979,Construction-Related,Material,"ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากเลือกใช้ Sikadur 31 CF Normal เป็นอีพ็อกซีมอร์ต้าร์:
+
+1.  **อัตราส่วนผสม:** ต้องผสม Part A: Part B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50)
+2.  **Potlife ที่ +30°C:** เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลา Potlife ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C (Chapter: Materials Data Sheet, Page: 50)","50, 47, 55, 30",gemini-2.5-flash,"Page: 1, 50
+Answer: ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากเลือกใช้ Sikadur 31 CF Normal เป็นอีพ็อกซีมอร์ต้าร์:
+
+1.  **อัตราส่วนผสม:** ต้องผสม Part A: Part B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50)
+2.  **Potlife ที่ +30°C:** เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลา Potlife ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C (Chapter: Materials Data Sheet, Page: 50)",0.0,0.0,0,0.9114,Construction-Related,Material,"ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากเลือกใช้ Sikadur 31 CF Normal เป็นอีพ็อกซีมอร์ต้าร์:
+
+1.  **อัตราส่วนผสม:** ต้องผสม Part A: part B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50)
+2.  **Potlife ที่ +30°C:** ข้อมูลเกี่ยวกับ Potlife ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C ไม่ได้ระบุไว้ในเอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 50)","47, 55, 50",gemini-2.5-flash,"Page: 50
+Answer: ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากเลือกใช้ Sikadur 31 CF Normal เป็นอีพ็อกซีมอร์ต้าร์:
+
+1.  **อัตราส่วนผสม:** ต้องผสม Part A: part B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50)
+2.  **Potlife ที่ +30°C:** ข้อมูลเกี่ยวกับ Potlife ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C ไม่ได้ระบุไว้ในเอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 50)",0.0,0.0,0,0.9082,14.31,27,18,20,5,"Ratio correct, but Potlife denied and pages cited incorrectly, contradicting the reference."
+Material / Repair Method,Material Data Sheet / Repair with Epoxy Resin,Sikadur 52TH สามารถอัดฉีดรอยร้าวที่กว้างที่สุดได้เท่าใด และเหมาะกับงานซ่อมรอยร้าวด้วยวิธีรหัสใด,1) ความกว้างสูงสุดของรอยร้าวที่อัดฉีดได้: 5 มม. และเนื้อคอนกรีตใหม่ต้องมีอายุ 3-6 สัปดาห์ 2) วิธีซ่อม: RP-TN-02 (Repair with Epoxy Resin) สำหรับรอยร้าวกว้าง 0.3-0.5 มม. ลึกมากกว่า 15 มม.,"60, 16",Construction-Related,Material,"Sikadur 52TH สามารถอัดฉีดรอยร้าวที่กว้างที่สุดได้ 5 มม. (Chapter: Materials Data Sheet, Page: 60)
+
+สำหรับงานซ่อมรอยร้าวด้วยวิธีรหัสใดนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุรหัสวิธีซ่อมแซมได้ (Chapter: Materials Data Sheet, Page: 60; Chapter: Repair With Epoxy Resin, Page: 17)","60, 17, 61, 137, 47",gemini-2.5-flash,"Page: 60
+Answer: Sikadur 52TH สามารถอัดฉีดรอยร้าวที่กว้างที่สุดได้ 5 มม. (Chapter: Materials Data Sheet, Page: 60)
+
+สำหรับงานซ่อมรอยร้าวด้วยวิธีรหัสใดนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุรหัสวิธีซ่อมแซมได้ (Chapter: Materials Data Sheet, Page: 60; Chapter: Repair With Epoxy Resin, Page: 17)",0.5,0.2,1,0.7841,Construction-Related,Material,"Sikadur 52TH สามารถอัดฉีดรอยร้าวที่มีความกว้างสูงสุดได้ 5 มม. (Chapter: Materials Data Sheet, Page: 60)
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับรหัสวิธีซ่อมรอยร้าวที่เหมาะสมกับ Sikadur 52TH","60, 58, 29, 17",gemini-2.5-flash,"Page: 60
+Answer: Sikadur 52TH สามารถอัดฉีดรอยร้าวที่มีความกว้างสูงสุดได้ 5 มม. (Chapter: Materials Data Sheet, Page: 60)
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับรหัสวิธีซ่อมรอยร้าวที่เหมาะสมกับ Sikadur 52TH",0.5,0.25,1,0.7574,Construction-Related,Repair Method,"Sikadur 52TH สามารถอัดฉีดรอยร้าวที่มีความกว้างสูงสุด 5 มม.
+
+เอกสารนี้ไม่มีข้อมูลเพียงพอที่ระบุรหัสวิธีซ่อมแซมที่เหมาะกับ Sikadur 52TH","60, 17, 58, 61",gemini-2.5-flash,"Page: 60
+Answer: Sikadur 52TH สามารถอัดฉีดรอยร้าวที่มีความกว้างสูงสุด 5 มม.
+
+เอกสารนี้ไม่มีข้อมูลเพียงพอที่ระบุรหัสวิธีซ่อมแซมที่เหมาะกับ Sikadur 52TH",0.5,0.25,1,0.7525,16.97,28,21,20,10,"Correct max width, but missed method code and conditions, claiming info unavailable (hallucination). Cited pages partially incorrect."
+Human Risk / Material,Risk Assessment in Repair Working / Material Safety Data,ตามการประเมินความเสี่ยง การกลืนสารเคมีมีข้อควบคุมเรื่องอาหารอย่างไร และหากเผลอกลืน Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลอย่างไร,1) การควบคุมความเสี่ยง (Risk Assessment): ห้ามนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด 2) การปฐมพยาบาลกรณีกลืน (MSDS): บ้วนปากแล้วดื่มน้ำสะอาดปริมาณมาก ห้ามทำให้อาเจียนโดยเด็ดขาด แล้วพาไปพบแพทย์ทันที,"122, 127",Construction-Related,Human Risk,"ตามการประเมินความเสี่ยงเกี่ยวกับอันตรายจากการกลืนสารเคมี การควบคุมเรื่องอาหารคือ ""ห้ามกลืนโดยเด็ดขาด หลังจากปฏิบัติงานเสร็จแล้วให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร"" (Chapter: Materials Safety Data, Page: 126).
+
+สำหรับกรณีที่เผลอกลืน Sikadur 41 CF Normal (Part B) เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับการปฐมพยาบาลเบื้องต้นสำหรับสารเคมีส่วนนี้","55, 52, 26, 47, 126",gemini-2.5-flash,"Page: 126
+Answer: ตามการประเมินความเสี่ยงเกี่ยวกับอันตรายจากการกลืนสารเคมี การควบคุมเรื่องอาหารคือ ""ห้ามกลืนโดยเด็ดขาด หลังจากปฏิบัติงานเสร็จแล้วให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร"" (Chapter: Materials Safety Data, Page: 126).
+
+สำหรับกรณีที่เผลอกลืน Sikadur 41 CF Normal (Part B) เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับการปฐมพยาบาลเบื้องต้นสำหรับสารเคมีส่วนนี้",0.0,0.0,0,0.8435,Construction-Related,Human Risk,"ตามการประเมินความเสี่ยง ข้อควบคุมเรื่องอาหารสำหรับการกลืนสารเคมีคือ:
+1.  ห้ามกลืนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 127, 128, 129, 126)
+2.  หลังจากปฏิบัติงานเสร็จแล้ว ให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 127, 128, 129, 126)
+
+หากเผลอกลืน Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลดังนี้:
+1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก (Chapter: Materials Safety Data, Page: 127)
+2.  ห้ามทำให้อาเจียนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 127)
+3.  พาไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 127)","127, 128, 129, 126",gemini-2.5-flash,"Page: 127, 128, 129, 126
+Answer:
+ตามการประเมินความเสี่ยง ข้อควบคุมเรื่องอาหารสำหรับการกลืนสารเคมีคือ:
+1.  ห้ามกลืนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 127, 128, 129, 126)
+2.  หลังจากปฏิบัติงานเสร็จแล้ว ให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 127, 128, 129, 126)
+
+หากเผลอกลืน Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลดังนี้:
+1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก (Chapter: Materials Safety Data, Page: 127)
+2.  ห้ามทำให้อาเจียนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 127)
+3.  พาไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 127)",0.5,0.25,1,0.861,Construction-Related,Human Risk,"ตามการประเมินความเสี่ยง การกลืนสารเคมีมีข้อควบคุมเรื่องอาหารดังนี้:
+*   ห้ามกลืนสารเคมีโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 126, 127, 128)
+*   หลังจากปฏิบัติงานเสร็จแล้ว ให้ล้างมือให้สะอาดเพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 126, 127, 128)
+
+หากเผลอกลืน Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลเบื้องต้นดังนี้:
+1.  บ้วนปากแล้วดื่มน้ำสะอาด (Chapter: Materials Safety Data, Page: 127)
+2.  พยายามทำให้ผู้ป่วยอาเจียนออกมา (Chapter: Materials Safety Data, Page: 127)
+3.  พาผู้ป่วยไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 127)","127, 126, 55, 52, 128",gemini-2.5-flash,"Page: 126, 127, 128
+Answer:
+
+ตามการประเมินความเสี่ยง การกลืนสารเคมีมีข้อควบคุมเรื่องอาหารดังนี้:
+*   ห้ามกลืนสารเคมีโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 126, 127, 128)
+*   หลังจากปฏิบัติงานเสร็จแล้ว ให้ล้างมือให้สะอาดเพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 126, 127, 128)
+
+หากเผลอกลืน Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลเบื้องต้นดังนี้:
+1.  บ้วนปากแล้วดื่มน้ำสะอาด (Chapter: Materials Safety Data, Page: 127)
+2.  พยายามทำให้ผู้ป่วยอาเจียนออกมา (Chapter: Materials Safety Data, Page: 127)
+3.  พาผู้ป่วยไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 127)",0.5,0.2,1,0.8583,22.97,12,16,10,5,Contradicts critical first aid (inducing vomiting) and misinterprets food control. Grounding is poor due to hallucination.
+Human Risk / Repair Method,Material Safety Data,ขณะซ่อม Spalling Edge (RP-TN-03) ช่างถูก Sika Skim Coat กระเด็นเข้าตา ต้องปฐมพยาบาลอย่างไร และต้องสวมอุปกรณ์ป้องกันใด,1) การปฐมพยาบาล (MSDS): ถอดคอนแทคเลนส์ ล้างตาด้วยน้ำสะอาดต่อเนื่องไม่น้อยกว่า 10 นาที แล้วพบแพทย์ทันที 2) มาตรการป้องกัน: สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน,"125, 125",Construction-Related,Repair Method,ตามข้อมูลที่ให้มาในเอกสาร ไม่ได้ระบุถึงวิธีการปฐมพยาบาลในกรณีที่ Sika Skim Coat กระเด็นเข้าตา หรืออุปกรณ์ป้องกันใดที่ต้องสวมใส่ขณะซ่อม Spalling Edge (RP-TN-03) หรือขณะทำงานกับ Sika Skim Coat,"24, 7, 4, 27, 45",gemini-2.5-flash,"Page: 27, 45
+Answer: ตามข้อมูลที่ให้มาในเอกสาร ไม่ได้ระบุถึงวิธีการปฐมพยาบาลในกรณีที่ Sika Skim Coat กระเด็นเข้าตา หรืออุปกรณ์ป้องกันใดที่ต้องสวมใส่ขณะซ่อม Spalling Edge (RP-TN-03) หรือขณะทำงานกับ Sika Skim Coat",0.0,0.0,0,0.7148,Construction-Related,Human Risk,"หากช่างถูก Sika Skim Coat กระเด็นเข้าตา การปฐมพยาบาลเบื้องต้นมีดังนี้:
+1.  ถอดคอนแทคเลนส์ออก (ถ้ามี)
+2.  ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3.  พาผู้ป่วยไปพบแพทย์ทันที
+
+มาตรการป้องกันที่ต้องสวมใส่คือ สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 125)","125, 127, 132, 126, 129",gemini-2.5-flash,"Page: 125
+Answer: หากช่างถูก Sika Skim Coat กระเด็นเข้าตา การปฐมพยาบาลเบื้องต้นมีดังนี้:
+1.  ถอดคอนแทคเลนส์ออก (ถ้ามี)
+2.  ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3.  พาผู้ป่วยไปพบแพทย์ทันที
+
+มาตรการป้องกันที่ต้องสวมใส่คือ สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 125)",1.0,0.2,1,0.85,Construction-Related,Human Risk,"หากช่างถูก Sika Skim Coat กระเด็นเข้าตา ขณะซ่อม Spalling Edge (RP-TN-03) ต้องปฐมพยาบาลและสวมอุปกรณ์ป้องกันดังนี้ (อ้างอิงจาก Materials Safety Data, Page: 125):
+
+**การปฐมพยาบาลเบื้องต้น:**
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3.  พาผู้ป่วยไปพบแพทย์ทันที
+
+**อุปกรณ์ป้องกันที่ต้องสวม:**
+*   สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน","24, 125, 7, 127, 4",gemini-2.5-flash,"Page: 125
+Answer: หากช่างถูก Sika Skim Coat กระเด็นเข้าตา ขณะซ่อม Spalling Edge (RP-TN-03) ต้องปฐมพยาบาลและสวมอุปกรณ์ป้องกันดังนี้ (อ้างอิงจาก Materials Safety Data, Page: 125):
+
+**การปฐมพยาบาลเบื้องต้น:**
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3.  พาผู้ป่วยไปพบแพทย์ทันที
+
+**อุปกรณ์ป้องกันที่ต้องสวม:**
+*   สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน",1.0,0.2,1,0.828,16.72,39,26,40,20,"Answer perfectly matches reference. Grounding is good, but includes noisy/extra citations beyond the reference."
+Material / Non-Construction Questions,Material Data Sheet / Material Approval Document,ปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F มีกำลังอัดที่ 28 วันเท่าใด และได้รับอนุมัติจากสำนักงานโครงการหรือไม่,"1) กำลังอัดที่ 28 วัน (Data Sheet): 60 MPa (7,300 psi) 2) สถานะอนุมัติ: ไม่อนุมัติให้ใช้ เนื่องจากยังไม่ทราบรายละเอียดการซ่อมแซมที่แน่ชัด ต้องเสนอวิธีและวัสดุให้พิจารณาเป็นกรณีไป","115, 147",Construction-Related,Material,"1.  ปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F มีกำลังอัดที่ 28 วันเท่ากับ 60 MPa. (Chapter: Materials Data Sheet, Page: 114)
+2.  ปูนฉาบตราผึ้ง 135F มีสถานะการใช้งานคือ ""เสนอขออนุมัติใช้งาน"" สำหรับโครงการ SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER ซึ่งหมายความว่ายังไม่ได้อนุมัติใช้งานอย่างเป็นทางการจากสำนักงานโครงการ. (Chapter: Guildline For Repair, Page: 8; Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40)","114, 113, 8, 101, 40",gemini-2.5-flash,"Page: 8, 114
+Answer:
+1.  ปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F มีกำลังอัดที่ 28 วันเท่ากับ 60 MPa. (Chapter: Materials Data Sheet, Page: 114)
+2.  ปูนฉาบตราผึ้ง 135F มีสถานะการใช้งานคือ ""เสนอขออนุมัติใช้งาน"" สำหรับโครงการ SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER ซึ่งหมายความว่ายังไม่ได้อนุมัติใช้งานอย่างเป็นทางการจากสำนักงานโครงการ. (Chapter: Guildline For Repair, Page: 8; Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40)",0.0,0.0,0,0.7854,Construction-Related,Material,"ปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F มีกำลังอัดที่ 28 วัน เท่ากับ 60 MPa (Chapter: Materials Data Sheet, Page: 114) และระบุในข้อกำหนดว่าต้องมีกำลังอัดไม่น้อยกว่า 50 MPa ที่ 28 วัน (Chapter: Materials Data Sheet, Page: 115)
+
+สำหรับคำถามว่าได้รับการอนุมัติจากสำนักงานโครงการหรือไม่:
+เอกสารระบุว่าปูนฉาบซ่อมควรเป็นระบบปูนซีเมนต์ปอร์ตแลนด์ เช่น High Strength Repair Mortar No.135/135 F หรือเทียบเท่าที่ได้รับการอนุมัติ (approved equal) ซึ่งหมายความว่า No.135/135 F เป็นผลิตภัณฑ์ที่ตรงตามข้อกำหนดและได้รับการยอมรับเป็นมาตรฐาน (Chapter: Materials Data Sheet, Page: 115) นอกจากนี้ ยังมีรายชื่อโครงการอ้างอิงหลายแห่งที่ได้มีการใช้ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135/135 F ซึ่งแสดงว่าผลิตภัณฑ์นี้ได้รับการอนุมัติและนำไปใช้งานจริงในโครงการเหล่านั้น (Chapter: Materials Data Sheet, Page: 116)","114, 113, 115, 116",gemini-2.5-flash,"Page: 114, 115, 116
+Answer:
+ปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F มีกำลังอัดที่ 28 วัน เท่ากับ 60 MPa (Chapter: Materials Data Sheet, Page: 114) และระบุในข้อกำหนดว่าต้องมีกำลังอัดไม่น้อยกว่า 50 MPa ที่ 28 วัน (Chapter: Materials Data Sheet, Page: 115)
+
+สำหรับคำถามว่าได้รับการอนุมัติจากสำนักงานโครงการหรือไม่:
+เอกสารระบุว่าปูนฉาบซ่อมควรเป็นระบบปูนซีเมนต์ปอร์ตแลนด์ เช่น High Strength Repair Mortar No.135/135 F หรือเทียบเท่าที่ได้รับการอนุมัติ (approved equal) ซึ่งหมายความว่า No.135/135 F เป็นผลิตภัณฑ์ที่ตรงตามข้อกำหนดและได้รับการยอมรับเป็นมาตรฐาน (Chapter: Materials Data Sheet, Page: 115) นอกจากนี้ ยังมีรายชื่อโครงการอ้างอิงหลายแห่งที่ได้มีการใช้ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135/135 F ซึ่งแสดงว่าผลิตภัณฑ์นี้ได้รับการอนุมัติและนำไปใช้งานจริงในโครงการเหล่านั้น (Chapter: Materials Data Sheet, Page: 116)",0.5,0.25,1,0.7714,Construction-Related,Repair Method,"ปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F มีกำลังอัดที่ 28 วันเท่ากับ 60 MPa (หน้า 114, 115).
+สำหรับสถานะการอนุมัติใช้งานของปูนฉาบตราผึ้ง 135F (Bee Brand 135F) นั้น ""เสนอขออนุมัติใช้งาน"" โดยยังไม่ได้รับการอนุมัติจากสำนักงานโครงการ (หน้า 8, 40).","114, 113, 40, 115, 8",gemini-2.5-flash,"Page: 8, 40, 114, 115
+Answer:
+ปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F มีกำลังอัดที่ 28 วันเท่ากับ 60 MPa (หน้า 114, 115).
+สำหรับสถานะการอนุมัติใช้งานของปูนฉาบตราผึ้ง 135F (Bee Brand 135F) นั้น ""เสนอขออนุมัติใช้งาน"" โดยยังไม่ได้รับการอนุมัติจากสำนักงานโครงการ (หน้า 8, 40).",0.5,0.2,1,0.7848,21.1,35,24,38,10,"Correct strength and approval status, but cited pages for approval status do not match reference."
+Environmental / Preventive Measures / Material,Preventative Measures and Environmental Impact,การจำแนกวัสดุซ่อมเพื่อกำหนดมาตรการสิ่งแวดล้อม Sikadur 32TH และ Sika Skim Coat จัดอยู่ในหมวดใด ต่างกันอย่างไร,Sikadur 32TH จัดเป็นวัสดุซ่อมแบบของเหลว ส่วน Sika Skim Coat จัดเป็นวัสดุซ่อมแบบผง จึงใช้มาตรการป้องกันผลกระทบสิ่งแวดล้อมคนละหมวดกัน (ของเหลวใช้ทราย/ขี้เลื่อยดูดซับเมื่อหกลงดิน ส่วนผงให้กวาดใส่ถุงดำ),"137, 135",Construction-Related,Environmental / Preventive Measures,"ตามข้อมูลที่ให้มา:
+*   **Sikadur 32TH** จัดอยู่ในหมวด **วัสดุเชื่อมประสานคอนกรีต** (อ้างอิง: Chapter: Guildline For Repair, Page: 8)
+*   **Sika Skim Coat** จัดอยู่ในหมวด **ปูนฉาบซ่อม** ซึ่งเป็นผงซีเมนต์สำเร็จรูปเพื่องานตกแต่งพื้นผิว (อ้างอิง: Chapter: Guildline For Repair, Page: 8; Chapter: Materials Data Sheet, Page: 45)
+
+ทั้งสองวัสดุต่างกันที่ประเภทการใช้งานและคุณสมบัติ:
+*   **Sikadur 32TH** เป็นอีพ็อกซี่เรซิ่นที่ใช้เป็นวัสดุเชื่อมประสานคอนกรีต (อ้างอิง: Chapter: Guildline For Repair, Page: 8)
+*   **Sika Skim Coat** เป็นผงซีเมนต์สำเร็จรูปสำหรับใช้ผสมกับน้ำเพื่อนำไปใช้ในงานซ่อมแซมร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีต หรือผนังปูนฉาบ เพื่อให้พื้นผิวเนียนเรียบ (อ้างอิง: Chapter: Materials Data Sheet, Page: 45)
+
+เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับการจำแนกวัสดุซ่อมเพื่อกำหนดมาตรการสิ่งแวดล้อมเฉพาะสำหรับ Sikadur 32TH และ Sika Skim Coat","46, 45, 8, 27, 34",gemini-2.5-flash,"Page: 8, 45
+Answer:
+ตามข้อมูลที่ให้มา:
+*   **Sikadur 32TH** จัดอยู่ในหมวด **วัสดุเชื่อมประสานคอนกรีต** (อ้างอิง: Chapter: Guildline For Repair, Page: 8)
+*   **Sika Skim Coat** จัดอยู่ในหมวด **ปูนฉาบซ่อม** ซึ่งเป็นผงซีเมนต์สำเร็จรูปเพื่องานตกแต่งพื้นผิว (อ้างอิง: Chapter: Guildline For Repair, Page: 8; Chapter: Materials Data Sheet, Page: 45)
+
+ทั้งสองวัสดุต่างกันที่ประเภทการใช้งานและคุณสมบัติ:
+*   **Sikadur 32TH** เป็นอีพ็อกซี่เรซิ่นที่ใช้เป็นวัสดุเชื่อมประสานคอนกรีต (อ้างอิง: Chapter: Guildline For Repair, Page: 8)
+*   **Sika Skim Coat** เป็นผงซีเมนต์สำเร็จรูปสำหรับใช้ผสมกับน้ำเพื่อนำไปใช้ในงานซ่อมแซมร่องรอยบกพร่องบริเวณผิวหน้าของคอนกรีต หรือผนังปูนฉาบ เพื่อให้พื้นผิวเนียนเรียบ (อ้างอิง: Chapter: Materials Data Sheet, Page: 45)
+
+เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับการจำแนกวัสดุซ่อมเพื่อกำหนดมาตรการสิ่งแวดล้อมเฉพาะสำหรับ Sikadur 32TH และ Sika Skim Coat",0.0,0.0,0,0.897,Construction-Related,Human Risk,"วัสดุซ่อม Sikadur 32TH และ Sika Skim Coat จัดอยู่ในหมวดวัสดุอันตรายที่ก่อให้เกิดการระคายเคืองและอันตรายต่อร่างกาย หากไม่มีการป้องกันที่เหมาะสม
+
+**การจำแนกและมาตรการสิ่งแวดล้อม (มาตรการป้องกัน) สำหรับวัสดุซ่อม:**
+
+1.  **Sika Skim Coat:**
+    *   **การจำแนก:** จัดเป็นสารที่ก่อให้เกิดอันตรายต่อดวงตาอย่างรุนแรง ทำให้ผิวหนังเกิดการระคายเคืองอย่างมาก อาจทำให้ปาก คอ และกระเพาะเกิดการไหม้หากกลืนกิน และอาจก่อให้เกิดการระคายเคืองต่อระบบทางเดินหายใจจากการสูดดม (Chapter: Materials Safety Data, Page: 125).
+    *   **มาตรการสิ่งแวดล้อม (มาตรการป้องกัน):** สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน สวมเสื้อแขนยาวและถุงมือที่ป้องกันสารเคมีได้ ห้ามกลืนโดยเด็ดขาด และใช้หน้ากากป้องกันที่เหมาะสมเพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อม หลังจากปฏิบัติงานเสร็จแล้วให้ล้างมือให้สะอาดเพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 125).
+
+2.  **Sikkadur 32 TH (PART A):**
+    *   **การจำแนก:** จัดเป็นสารที่ก่อให้เกิดการระคายเคืองต่อดวงตา ผิวหนัง อาจทำให้กระเพาะระคายเคืองหากกลืนกิน และอาจก่อให้เกิดการระคายเคืองจากการสูดดม (Chapter: Materials Safety Data, Page: 125).
+    *   **มาตรการสิ่งแวดล้อม (มาตรการป้องกัน):** เอกสารบริบทที่ให้มาไม่ได้ระบุมาตรการป้องกันเฉพาะสำหรับ Sikkadur 32 TH (PART A) อย่างชัดเจนเหมือนกับ Sika Skim Coat โดยระบุเพียงระดับความรุนแรงของอันตราย (Chapter: Materials Safety Data, Page: 125).
+
+**ความแตกต่าง:**
+
+*   **ความรุนแรงของอันตราย:** Sika Skim Coat มีความรุนแรงของอันตรายสูงกว่า Sikkadur 32 TH (PART A) โดยเฉพาะต่อดวงตา (อาจทำลายอย่างรุนแรง) ผิวหนัง (ระคายเคืองอย่างมาก) และการกลืนกิน (อาจทำให้เกิดการไหม้) ในขณะที่ Sikkadur 32 TH (PART A) ก่อให้เกิดเพียงการระคายเคืองในระดับทั่วไป (Chapter: Materials Safety Data, Page: 125).
+*   **มาตรการป้องกันที่ระบุ:** เอกสารระบุมาตรการป้องกันโดยละเอียดสำหรับ Sika Skim Coat เช่น การสวมแว่นตา ถุงมือ เสื้อแขนยาว หน้ากาก และการล้างมือ ในขณะที่ไม่ได้ระบุมาตรการป้องกันที่เฉพาะเจาะจงสำหรับ Sikkadur 32 TH (PART A) ในส่วนที่ให้มา (Chapter: Materials Safety Data, Page: 125).","125, 60, 34, 45, 46",gemini-2.5-flash,"Page: 125
+Answer:
+วัสดุซ่อม Sikadur 32TH และ Sika Skim Coat จัดอยู่ในหมวดวัสดุอันตรายที่ก่อให้เกิดการระคายเคืองและอันตรายต่อร่างกาย หากไม่มีการป้องกันที่เหมาะสม
+
+**การจำแนกและมาตรการสิ่งแวดล้อม (มาตรการป้องกัน) สำหรับวัสดุซ่อม:**
+
+1.  **Sika Skim Coat:**
+    *   **การจำแนก:** จัดเป็นสารที่ก่อให้เกิดอันตรายต่อดวงตาอย่างรุนแรง ทำให้ผิวหนังเกิดการระคายเคืองอย่างมาก อาจทำให้ปาก คอ และกระเพาะเกิดการไหม้หากกลืนกิน และอาจก่อให้เกิดการระคายเคืองต่อระบบทางเดินหายใจจากการสูดดม (Chapter: Materials Safety Data, Page: 125).
+    *   **มาตรการสิ่งแวดล้อม (มาตรการป้องกัน):** สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน สวมเสื้อแขนยาวและถุงมือที่ป้องกันสารเคมีได้ ห้ามกลืนโดยเด็ดขาด และใช้หน้ากากป้องกันที่เหมาะสมเพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อม หลังจากปฏิบัติงานเสร็จแล้วให้ล้างมือให้สะอาดเพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 125).
+
+2.  **Sikkadur 32 TH (PART A):**
+    *   **การจำแนก:** จัดเป็นสารที่ก่อให้เกิดการระคายเคืองต่อดวงตา ผิวหนัง อาจทำให้กระเพาะระคายเคืองหากกลืนกิน และอาจก่อให้เกิดการระคายเคืองจากการสูดดม (Chapter: Materials Safety Data, Page: 125).
+    *   **มาตรการสิ่งแวดล้อม (มาตรการป้องกัน):** เอกสารบริบทที่ให้มาไม่ได้ระบุมาตรการป้องกันเฉพาะสำหรับ Sikkadur 32 TH (PART A) อย่างชัดเจนเหมือนกับ Sika Skim Coat โดยระบุเพียงระดับความรุนแรงของอันตราย (Chapter: Materials Safety Data, Page: 125).
+
+**ความแตกต่าง:**
+
+*   **ความรุนแรงของอันตราย:** Sika Skim Coat มีความรุนแรงของอันตรายสูงกว่า Sikkadur 32 TH (PART A) โดยเฉพาะต่อดวงตา (อาจทำลายอย่างรุนแรง) ผิวหนัง (ระคายเคืองอย่างมาก) และการกลืนกิน (อาจทำให้เกิดการไหม้) ในขณะที่ Sikkadur 32 TH (PART A) ก่อให้เกิดเพียงการระคายเคืองในระดับทั่วไป (Chapter: Materials Safety Data, Page: 125).
+*   **มาตรการป้องกันที่ระบุ:** เอกสารระบุมาตรการป้องกันโดยละเอียดสำหรับ Sika Skim Coat เช่น การสวมแว่นตา ถุงมือ เสื้อแขนยาว หน้ากาก และการล้างมือ ในขณะที่ไม่ได้ระบุมาตรการป้องกันที่เฉพาะเจาะจงสำหรับ Sikkadur 32 TH (PART A) ในส่วนที่ให้มา (Chapter: Materials Safety Data, Page: 125).",0.0,0.0,0,0.8909,Construction-Related,Human Risk,"เอกสารที่ให้มาไม่ได้จำแนก Sikadur 32TH และ Sika Skim Coat ออกเป็นหมวดหมู่เฉพาะสำหรับมาตรการสิ่งแวดล้อมโดยตรง อย่างไรก็ตาม เอกสารได้ให้ ""ข้อมูลความปลอดภัยของวัสดุ (Material Safety Data)"" ซึ่งระบุความรุนแรงของอันตรายที่อาจเกิดขึ้นกับมนุษย์ ซึ่งเป็นพื้นฐานในการกำหนดมาตรการป้องกัน รวมถึงมาตรการที่เกี่ยวข้องกับการจัดการเพื่อรักษาสิ่งแวดล้อม
+
+จากข้อมูลความปลอดภัยของวัสดุ (Material Safety Data) ทั้งสองผลิตภัณฑ์มีอันตรายที่ต้องดำเนินการป้องกัน แต่มีความรุนแรงที่แตกต่างกันดังนี้:
+
+**Sika Skim Coat:**
+จัดอยู่ในกลุ่มวัสดุที่มีความรุนแรงของอันตรายสูงกว่า โดยมีรายละเอียดดังนี้ (อ้างอิงจาก Chapter: Materials Safety Data, Page: 125)
+*   **อันตรายต่อดวงตา:** ทำให้เกิดการระคายเคือง อาจทำลายดวงตาอย่างรุนแรง
+*   **อันตรายต่อผิวหนัง:** ทำให้ผิวหนังเกิดการระคายเคืองอย่างมาก
+*   **อันตรายจากการกลืน:** อาจทำให้ปาก คอ กระเพาะเกิดการไหม้
+*   **อันตรายจากการสูดดม:** อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ
+*   **มาตรการป้องกันเบื้องต้น:** สวมแว่นตาป้องกันอันตราย, สวมเสื้อแขนยาว ถุงมือ, ห้ามกลืน, ใช้หน้ากากป้องกันที่เหมาะสม
+
+**Sikkadur 32 TH (PART A):**
+จัดอยู่ในกลุ่มวัสดุที่มีอันตรายในระดับระคายเคือง โดยมีรายละเอียดดังนี้ (อ้างอิงจาก Chapter: Materials Safety Data, Page: 125)
+*   **อันตรายต่อดวงตา:** ทำให้เกิดการระคายเคือง
+*   **อันตรายต่อผิวหนัง:** ทำให้ผิวหนังเกิดการระคายเคือง
+*   **อันตรายจากการกลืน:** อาจทำให้กระเพาะระคาย
+*   **อันตรายจากการสูดดม:** อาจทำให้เกิดการระคาย
+
+**ความแตกต่าง:**
+Sika Skim Coat มีความรุนแรงของอันตรายที่สูงกว่า Sikkadur 32 TH (PART A) โดยเฉพาะอย่างยิ่งในด้านผลกระทบต่อดวงตา (อาจทำลายอย่างรุนแรง), ผิวหนัง (ระคายเคืองอย่างมาก), และการกลืน (อาจทำให้เกิดการไหม้ในระบบทางเดินอาหาร) ในขณะที่ Sikkadur 32 TH (PART A) ระบุเพียงแค่ ""ทำให้เกิดการระคายเคือง"" ในทุกด้าน ซึ่งบ่งชี้ว่า Sika Skim Coat ต้องการมาตรการป้องกันที่เข้มงวดกว่าในการจัดการและการใช้งานเพื่อลดความเสี่ยงต่อผู้ปฏิบัติงานและผลกระทบต่อสิ่งแวดล้อมจากการปนเปื้อน.","46, 45, 34, 26, 125",gemini-2.5-flash,"Page: 125
+Answer: เอกสารที่ให้มาไม่ได้จำแนก Sikadur 32TH และ Sika Skim Coat ออกเป็นหมวดหมู่เฉพาะสำหรับมาตรการสิ่งแวดล้อมโดยตรง อย่างไรก็ตาม เอกสารได้ให้ ""ข้อมูลความปลอดภัยของวัสดุ (Material Safety Data)"" ซึ่งระบุความรุนแรงของอันตรายที่อาจเกิดขึ้นกับมนุษย์ ซึ่งเป็นพื้นฐานในการกำหนดมาตรการป้องกัน รวมถึงมาตรการที่เกี่ยวข้องกับการจัดการเพื่อรักษาสิ่งแวดล้อม
+
+จากข้อมูลความปลอดภัยของวัสดุ (Material Safety Data) ทั้งสองผลิตภัณฑ์มีอันตรายที่ต้องดำเนินการป้องกัน แต่มีความรุนแรงที่แตกต่างกันดังนี้:
+
+**Sika Skim Coat:**
+จัดอยู่ในกลุ่มวัสดุที่มีความรุนแรงของอันตรายสูงกว่า โดยมีรายละเอียดดังนี้ (อ้างอิงจาก Chapter: Materials Safety Data, Page: 125)
+*   **อันตรายต่อดวงตา:** ทำให้เกิดการระคายเคือง อาจทำลายดวงตาอย่างรุนแรง
+*   **อันตรายต่อผิวหนัง:** ทำให้ผิวหนังเกิดการระคายเคืองอย่างมาก
+*   **อันตรายจากการกลืน:** อาจทำให้ปาก คอ กระเพาะเกิดการไหม้
+*   **อันตรายจากการสูดดม:** อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ
+*   **มาตรการป้องกันเบื้องต้น:** สวมแว่นตาป้องกันอันตราย, สวมเสื้อแขนยาว ถุงมือ, ห้ามกลืน, ใช้หน้ากากป้องกันที่เหมาะสม
+
+**Sikkadur 32 TH (PART A):**
+จัดอยู่ในกลุ่มวัสดุที่มีอันตรายในระดับระคายเคือง โดยมีรายละเอียดดังนี้ (อ้างอิงจาก Chapter: Materials Safety Data, Page: 125)
+*   **อันตรายต่อดวงตา:** ทำให้เกิดการระคายเคือง
+*   **อันตรายต่อผิวหนัง:** ทำให้ผิวหนังเกิดการระคายเคือง
+*   **อันตรายจากการกลืน:** อาจทำให้กระเพาะระคาย
+*   **อันตรายจากการสูดดม:** อาจทำให้เกิดการระคาย
+
+**ความแตกต่าง:**
+Sika Skim Coat มีความรุนแรงของอันตรายที่สูงกว่า Sikkadur 32 TH (PART A) โดยเฉพาะอย่างยิ่งในด้านผลกระทบต่อดวงตา (อาจทำลายอย่างรุนแรง), ผิวหนัง (ระคายเคืองอย่างมาก), และการกลืน (อาจทำให้เกิดการไหม้ในระบบทางเดินอาหาร) ในขณะที่ Sikkadur 32 TH (PART A) ระบุเพียงแค่ ""ทำให้เกิดการระคายเคือง"" ในทุกด้าน ซึ่งบ่งชี้ว่า Sika Skim Coat ต้องการมาตรการป้องกันที่เข้มงวดกว่าในการจัดการและการใช้งานเพื่อลดความเสี่ยงต่อผู้ปฏิบัติงานและผลกระทบต่อสิ่งแวดล้อมจากการปนเปื้อน.",0.0,0.0,0,0.8656,37.59,10,14,10,5,Misses core classification (liquid/powder) and environmental measures. Hallucinates document doesn't classify; cited pages don't match.
+Non-Construction Questions / Repair Method,Tunnel Segment Repair Note,การบันทึกการซ่อมชิ้นส่วนอุโมงค์ประเภท Standard ใช้แบบฟอร์มหมายเลขใด และในแบบฟอร์มระบุประเภทความเสียหายใดให้เลือกบ้าง,"1) แบบฟอร์ม: TUNNEL-QCY-RN-40 (Type Standard) 2) ประเภทความเสียหายในแบบฟอร์ม: Crack, Spalling Edge, Spalling Recesses, Voids or Blowholes (และ Other)",140,Construction-Related,Repair Method,"แบบฟอร์มหมายเลขที่ใช้บันทึกการซ่อมชิ้นส่วนอุโมงค์ประเภท Standard คือ TUNNEL-QCY-RN-40 (Chapter: Tunnel SegmentA Repair Note, Page: 140)
+
+ประเภทความเสียหายที่ระบุให้เลือกในแบบฟอร์มได้แก่ (Chapter: Tunnel SegmentA Repair Note, Page: 140):
+*   Crack
+*   Spalling Edge
+*   Spalling Recesses
+*   Voids or Blowholes
+*   Other","81, 80, 140, 74, 73",gemini-2.5-flash,"Page: 140
+Answer: แบบฟอร์มหมายเลขที่ใช้บันทึกการซ่อมชิ้นส่วนอุโมงค์ประเภท Standard คือ TUNNEL-QCY-RN-40 (Chapter: Tunnel SegmentA Repair Note, Page: 140)
+
+ประเภทความเสียหายที่ระบุให้เลือกในแบบฟอร์มได้แก่ (Chapter: Tunnel SegmentA Repair Note, Page: 140):
+*   Crack
+*   Spalling Edge
+*   Spalling Recesses
+*   Voids or Blowholes
+*   Other",1.0,0.2,1,0.9284,Construction-Related,Repair Method,"การบันทึกการซ่อมชิ้นส่วนอุโมงค์ประเภท Standard ใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-40 ตามที่ระบุใน [1] Chapter: Tunnel SegmentA Repair Note, Page: 140
+
+ประเภทความเสียหายที่ระบุให้เลือกในแบบฟอร์มได้แก่:
+*   Crack (รอยร้าว)
+*   Spalling Edge (แตกบิ่นที่ขอบ)
+*   Spalling Recesses (แตกบิ่นบริเวณ Gasket)
+*   Voids or Blowholes (รูฟองอากาศ)
+*   Other (อื่นๆ)
+อ้างอิงจาก [1] Chapter: Tunnel SegmentA Repair Note, Page: 140","140, 142, 2, 141, 7",gemini-2.5-flash,"Page: 140
+Answer: การบันทึกการซ่อมชิ้นส่วนอุโมงค์ประเภท Standard ใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-40 ตามที่ระบุใน [1] Chapter: Tunnel SegmentA Repair Note, Page: 140
+
+ประเภทความเสียหายที่ระบุให้เลือกในแบบฟอร์มได้แก่:
+*   Crack (รอยร้าว)
+*   Spalling Edge (แตกบิ่นที่ขอบ)
+*   Spalling Recesses (แตกบิ่นบริเวณ Gasket)
+*   Voids or Blowholes (รูฟองอากาศ)
+*   Other (อื่นๆ)
+อ้างอิงจาก [1] Chapter: Tunnel SegmentA Repair Note, Page: 140",1.0,0.2,1,0.9154,Construction-Related,Repair Method,"การบันทึกการซ่อมชิ้นส่วนอุโมงค์ประเภท Standard ใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-40 (อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140)
+
+ในแบบฟอร์มระบุประเภทความเสียหายให้เลือกดังนี้ (อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140):
+*   Crack (รอยร้าว)
+*   Spalling Edge (แตกบิ่นที่ขอบ)
+*   Spalling Recesses (แตกบิ่นบริเวณ Gasket)
+*   Other (อื่น ๆ)
+*   Voids or Blowholes (รูฟองอากาศ)","140, 81, 80, 142, 2",gemini-2.5-flash,"Page: 140
+Answer: การบันทึกการซ่อมชิ้นส่วนอุโมงค์ประเภท Standard ใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-40 (อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140)
+
+ในแบบฟอร์มระบุประเภทความเสียหายให้เลือกดังนี้ (อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140):
+*   Crack (รอยร้าว)
+*   Spalling Edge (แตกบิ่นที่ขอบ)
+*   Spalling Recesses (แตกบิ่นบริเวณ Gasket)
+*   Other (อื่น ๆ)
+*   Voids or Blowholes (รูฟองอากาศ)",1.0,0.2,1,0.9173,12.97,39,26,40,22,"Correctly identified form and all damage types. Grounded to correct page, but included irrelevant citations."
+Repair Method / Material,Spalling Edge Repair / Material Data Sheet,ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากใช้ Sikadur 41 CF Normal ต้องผสมอัตราส่วนเท่าใด และวัสดุนี้มีปริมาณการใช้งานเท่าใดต่อความหนา 1 มม.,1) อัตราส่วน (RP-TN-03): Sikadur 41 CF Normal A : B : C = 2 : 1 : 2.5 โดยน้ำหนัก 2) ปริมาณการใช้งาน (Data Sheet): ประมาณ 2.0 กก./ตร.ม. ต่อความหนา 1 มม.,"26, 55",Construction-Related,Material,"หากใช้ Sikadur 41 CF Normal สำหรับงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องผสมในอัตราส่วน วัสดุ A:B:C = 2:1:2.5 โดยน้ำหนัก
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับปริมาณการใช้งานของวัสดุนี้ต่อความหนา 1 มม.","26, 52, 137, 55, 47",gemini-2.5-flash,"Page: 26, 55
+Answer: หากใช้ Sikadur 41 CF Normal สำหรับงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องผสมในอัตราส่วน วัสดุ A:B:C = 2:1:2.5 โดยน้ำหนัก
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับปริมาณการใช้งานของวัสดุนี้ต่อความหนา 1 มม.",1.0,0.4,1,0.9413,Construction-Related,Material,"สำหรับการใช้งาน Sikadur-41 CF Normal:
+1.  อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+    *   2:1:2.5 โดยน้ำหนัก (Part A:B:C) (Chapter: Materials Data Sheet, Page: 55)
+    *   2:1:3.4 โดยปริมาตร (Part A:B:C) (Chapter: Materials Data Sheet, Page: 55)
+2.  ปริมาณการใช้งานของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55)","55, 53, 52, 50",gemini-2.5-flash,"Page: 55
+Answer: สำหรับการใช้งาน Sikadur-41 CF Normal:
+1.  อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+    *   2:1:2.5 โดยน้ำหนัก (Part A:B:C) (Chapter: Materials Data Sheet, Page: 55)
+    *   2:1:3.4 โดยปริมาตร (Part A:B:C) (Chapter: Materials Data Sheet, Page: 55)
+2.  ปริมาณการใช้งานของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55)",0.5,0.25,1,0.9371,Construction-Related,Material,"ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากใช้ Sikadur 41 CF Normal:
+
+1.  **อัตราส่วนผสม:** ต้องผสมในอัตราส่วน A:B:C = 2:1:2.5 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26 และ Chapter: Materials Data Sheet, Page: 55).
+2.  **ปริมาณการใช้งาน:** ปริมาณการใช้งานของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55).","52, 55, 47, 26",gemini-2.5-flash,"Page: 26, 55
+Answer: ในงานซ่อมแตกบิ่นที่ขอบ (RP-TN-03) หากใช้ Sikadur 41 CF Normal:
+
+1.  **อัตราส่วนผสม:** ต้องผสมในอัตราส่วน A:B:C = 2:1:2.5 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26 และ Chapter: Materials Data Sheet, Page: 55).
+2.  **ปริมาณการใช้งาน:** ปริมาณการใช้งานของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55).",1.0,0.5,1,0.9315,12.91,39,26,40,22,"Answer is fully correct with all details. Grounding is largely faithful, but includes extra, unneeded page citations."
+Repair Method / Material,Repair with Cementitious Mortar,หากพบรอยร้าวแบบ Shrinkage Crack กว้าง 0.4 มม. ต้องซ่อมด้วยวิธีรหัสใด และหากใช้ Renderoc Skim Coat ต้องผสมในอัตราส่วนเท่าใด,1) วิธีซ่อม: RP-TN-01 (Repair with Cementitious Mortar) เนื่องจาก Shrinkage Crack ที่กว้าง 0.3-0.5 มม. ใช้วิธีนี้ได้ 2) อัตราส่วน Renderoc Skim Coat: ปูน : น้ำ = 1 : 0.11 โดยน้ำหนัก,"10, 11",Construction-Related,Repair Method,"เอกสารไม่ได้ให้ข้อมูลเพียงพอเกี่ยวกับรหัสวิธีซ่อมแซมสำหรับรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.4 มม.
+
+หากใช้ Renderoc Skim Coat ต้องผสมในอัตราส่วน ปูน:น้ำ = 1:0.11 โดยน้ำหนัก (Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34; Chapter: Repair With Cementitious Mortar, Page: 11).","46, 18, 27, 34, 11",gemini-2.5-flash,"Page: 11, 18, 27, 34
+Answer: เอกสารไม่ได้ให้ข้อมูลเพียงพอเกี่ยวกับรหัสวิธีซ่อมแซมสำหรับรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.4 มม.
+
+หากใช้ Renderoc Skim Coat ต้องผสมในอัตราส่วน ปูน:น้ำ = 1:0.11 โดยน้ำหนัก (Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34; Chapter: Repair With Cementitious Mortar, Page: 11).",0.5,0.2,1,0.8487,Construction-Related,Material,"หากพบรอยร้าวแบบ Shrinkage Crack กว้าง 0.4 มม. จะต้องซ่อมด้วยวิธีรหัส RP-TN-01 ซึ่งเป็นการซ่อมแซมด้วย Cementious Mortar (Chapter: Guildline For Repair, Page: 3)
+
+สำหรับอัตราส่วนการผสม Renderoc Skimcoat เอกสารไม่ได้ระบุโดยตรงว่า Renderoc Skimcoat เป็นวัสดุที่ใช้สำหรับวิธีซ่อมแซม RP-TN-01 อย่างไรก็ตาม หากใช้ Renderoc Skimcoat อัตราส่วนน้ำผสมต่อถุงมีดังนี้:
+*   Renderoc Skimcoat (Base Coat): 7-7.5 ลิตร/ถุง
+*   Renderoc Skimcoat (Finish Coat): 7.5-8 ลิตร/ถุง
+(Chapter: Materials Data Sheet, Page: 100)","99, 100, 98, 46, 3",gemini-2.5-flash,"Page: 3, 100
+Answer: หากพบรอยร้าวแบบ Shrinkage Crack กว้าง 0.4 มม. จะต้องซ่อมด้วยวิธีรหัส RP-TN-01 ซึ่งเป็นการซ่อมแซมด้วย Cementious Mortar (Chapter: Guildline For Repair, Page: 3)
+
+สำหรับอัตราส่วนการผสม Renderoc Skimcoat เอกสารไม่ได้ระบุโดยตรงว่า Renderoc Skimcoat เป็นวัสดุที่ใช้สำหรับวิธีซ่อมแซม RP-TN-01 อย่างไรก็ตาม หากใช้ Renderoc Skimcoat อัตราส่วนน้ำผสมต่อถุงมีดังนี้:
+*   Renderoc Skimcoat (Base Coat): 7-7.5 ลิตร/ถุง
+*   Renderoc Skimcoat (Finish Coat): 7.5-8 ลิตร/ถุง
+(Chapter: Materials Data Sheet, Page: 100)",0.0,0.0,0,0.9478,Construction-Related,Repair Method,"สำหรับรอยร้าวแบบ Shrinkage Crack กว้าง 0.4 มม. ต้องซ่อมด้วยวิธีรหัส RP-TN-01 (Repair With Cementitious Mortar) (Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Cementitious Mortar, Page: 10).
+
+หากใช้ Renderoc Skim Coat ต้องผสมในอัตราส่วน ปูน:น้ำ = 1:0.11 โดยน้ำหนัก (Chapter: Repair With Epoxy Resin, Page: 18).","46, 3, 10, 99, 18",gemini-2.5-flash,"Page: 3, 10, 18
+Answer: สำหรับรอยร้าวแบบ Shrinkage Crack กว้าง 0.4 มม. ต้องซ่อมด้วยวิธีรหัส RP-TN-01 (Repair With Cementitious Mortar) (Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Cementitious Mortar, Page: 10).
+
+หากใช้ Renderoc Skim Coat ต้องผสมในอัตราส่วน ปูน:น้ำ = 1:0.11 โดยน้ำหนัก (Chapter: Repair With Epoxy Resin, Page: 18).",0.5,0.2,1,0.9443,23.47,38,25,40,10,"Correct method and ratio, but ratio's source citation is a clear hallucination (wrong chapter/page)."
+Repair Method / Material,Repair with Epoxy Resin / Material Data Sheet,ในงานซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) หากเลือกใช้ Condur SC ต้องผสมอัตราส่วนเท่าใด และวัสดุนี้มี Potlife นานเท่าใด,1) อัตราส่วน (RP-TN-02): Condur SC = A : B = 4 : 1 โดยน้ำหนัก 2) Potlife (Data Sheet): ประมาณ 50-70 นาที,"17, 70",Construction-Related,Material,"หากเลือกใช้ Condur SC ในงานซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) วัสดุ Condur SC จะถูกจัดส่งมาในหน่วยที่แบ่งสัดส่วนจากโรงงาน ซึ่งประกอบด้วยปริมาณที่ถูกต้องของส่วนประกอบ A (เรซิน) และส่วนประกอบ B (สารเร่งแข็ง) ผู้ใช้ควรถ่ายส่วนประกอบ B ทั้งหมดลงในส่วนประกอบ A แล้วผสมให้เข้ากันประมาณ 3 นาที จนกว่าจะได้วัสดุที่เป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 70)
+
+Condur SC มี Potlife อยู่ที่ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70)","16, 70, 15, 7",gemini-2.5-flash,"Page: 70
+Answer: หากเลือกใช้ Condur SC ในงานซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) วัสดุ Condur SC จะถูกจัดส่งมาในหน่วยที่แบ่งสัดส่วนจากโรงงาน ซึ่งประกอบด้วยปริมาณที่ถูกต้องของส่วนประกอบ A (เรซิน) และส่วนประกอบ B (สารเร่งแข็ง) ผู้ใช้ควรถ่ายส่วนประกอบ B ทั้งหมดลงในส่วนประกอบ A แล้วผสมให้เข้ากันประมาณ 3 นาที จนกว่าจะได้วัสดุที่เป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 70)
+
+Condur SC มี Potlife อยู่ที่ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70)",0.5,0.25,1,0.8917,Construction-Related,Material,"หากเลือกใช้ Condur SC ต้องผสมในอัตราส่วน A: B 4:1 โดยน้ำหนัก หรือ A: B 3:1 โดยปริมาตร (Chapter: Materials Data Sheet, Page: 69) และวัสดุนี้มี Potlife นาน 50-70 นาที (Chapter: Materials Data Sheet, Page: 70)","70, 69, 72, 71",gemini-2.5-flash,"Page: 69, 70
+Answer: หากเลือกใช้ Condur SC ต้องผสมในอัตราส่วน A: B 4:1 โดยน้ำหนัก หรือ A: B 3:1 โดยปริมาตร (Chapter: Materials Data Sheet, Page: 69) และวัสดุนี้มี Potlife นาน 50-70 นาที (Chapter: Materials Data Sheet, Page: 70)",0.5,0.25,1,0.9123,Construction-Related,Material,"ในงานซ่อมรอยร้าวด้วย Epoxy Resin หากเลือกใช้ Condur SC วัสดุนี้ถูกจัดมาเป็นหน่วยที่กำหนดสัดส่วนมาจากโรงงาน โดยประกอบด้วยส่วนประกอบ A (เรซิน) และส่วนประกอบ B (สารเร่งแข็ง) ในปริมาณที่ถูกต้อง ผู้ใช้ควรเทส่วนประกอบ B ทั้งหมดลงในส่วนประกอบ A และผสมให้เข้ากันอย่างทั่วถึงประมาณ 3 นาทีจนได้วัสดุที่เป็นเนื้อเดียวกัน
+
+สำหรับ Potlife ของ Condur SC คือ 50-70 นาที","70, 72, 71, 16",gemini-2.5-flash,"Page: 70
+Answer: ในงานซ่อมรอยร้าวด้วย Epoxy Resin หากเลือกใช้ Condur SC วัสดุนี้ถูกจัดมาเป็นหน่วยที่กำหนดสัดส่วนมาจากโรงงาน โดยประกอบด้วยส่วนประกอบ A (เรซิน) และส่วนประกอบ B (สารเร่งแข็ง) ในปริมาณที่ถูกต้อง ผู้ใช้ควรเทส่วนประกอบ B ทั้งหมดลงในส่วนประกอบ A และผสมให้เข้ากันอย่างทั่วถึงประมาณ 3 นาทีจนได้วัสดุที่เป็นเนื้อเดียวกัน
+
+สำหรับ Potlife ของ Condur SC คือ 50-70 นาที",0.5,0.25,1,0.8661,11.67,22,20,20,20,Missed the numeric mixing ratio (4:1). Potlife correct. Grounding has noisy citations and minor ungrounded claim.
+Repair Method / Material,Guideline for Repair / Material Data Sheet,"แตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=5 มม., B=20 มม., C=8 มม. ต้องซ่อมด้วยวิธีใด และวัสดุเชื่อมประสาน Sikadur 32TH มีค่าแรงยึดเกาะกับคอนกรีตเท่าใด","1) วิธีซ่อม: RP-TN-03 (Repair with Cementitious Mortar) เนื่องจากอยู่ในเกณฑ์ A 2-10, B 5-30, C 0-10 มม. 2) Bond Strength to Concrete ของ Sikadur 32TH: 2.5-3 N/mm² (Concrete failure)","5, 59",Construction-Related,Material,"1.  แตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=5 มม., B=20 มม., C=8 มม. ต้องซ่อมด้วย ""Cementious Mortar"" ตาม Reference Method ""RP-TN-03"" (Chapter: Guildline For Repair, Page: 5, Table 3).
+2.  วัสดุเชื่อมประสาน Sikadur®-52TH (ซึ่งคาดว่าคือ Sikadur 32TH ที่ระบุในคำถาม) มีค่าแรงยึดเกาะกับคอนกรีต 3-4 นิวตัน/ตารางมิลลิเมตร (คอนกรีตแตกก่อน) (Chapter: Materials Data Sheet, Page: 61).","102, 5, 60, 61, 2",gemini-2.5-flash,"Page: 5, 61
+Answer:
+1.  แตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=5 มม., B=20 มม., C=8 มม. ต้องซ่อมด้วย ""Cementious Mortar"" ตาม Reference Method ""RP-TN-03"" (Chapter: Guildline For Repair, Page: 5, Table 3).
+2.  วัสดุเชื่อมประสาน Sikadur®-52TH (ซึ่งคาดว่าคือ Sikadur 32TH ที่ระบุในคำถาม) มีค่าแรงยึดเกาะกับคอนกรีต 3-4 นิวตัน/ตารางมิลลิเมตร (คอนกรีตแตกก่อน) (Chapter: Materials Data Sheet, Page: 61).",0.5,0.2,1,0.9009,Construction-Related,Material,"สำหรับรอยแตกบิ่นบริเวณ Gasket (Spalling Recesses) ที่มีขนาด A=5 มม., B=20 มม., C=8 มม. จะต้องซ่อมด้วยวิธี ""Repair with Cementious Mortar"" (Chapter: Guildline For Repair, Page: 5).
+
+ส่วนค่าแรงยึดเกาะของวัสดุเชื่อมประสาน Sikadur 32TH กับคอนกรีตนั้น เอกสารระบุว่า Sikadur-32TH ให้ค่าแรงยึดเกาะที่สูงกว่ากำลังรับแรงดึงของคอนกรีตเองมาก (Sikadur-32TH provide a bond of far greater strength than the tensile strength of the concrete itself.) และมีคุณสมบัติให้ค่ากำลังทางกลและแรงยึดเกาะสูง (High tensile strength) แต่ไม่ได้ระบุเป็นค่าตัวเลขที่เฉพาะเจาะจง (Chapter: Materials Data Sheet, Page: 58). ดังนั้น ข้อมูลในเอกสารไม่เพียงพอที่จะให้ค่าแรงยึดเกาะที่เป็นตัวเลขได้","60, 29, 5, 58, 25",gemini-2.5-flash,"Page: 5, 58
+Answer:
+สำหรับรอยแตกบิ่นบริเวณ Gasket (Spalling Recesses) ที่มีขนาด A=5 มม., B=20 มม., C=8 มม. จะต้องซ่อมด้วยวิธี ""Repair with Cementious Mortar"" (Chapter: Guildline For Repair, Page: 5).
+
+ส่วนค่าแรงยึดเกาะของวัสดุเชื่อมประสาน Sikadur 32TH กับคอนกรีตนั้น เอกสารระบุว่า Sikadur-32TH ให้ค่าแรงยึดเกาะที่สูงกว่ากำลังรับแรงดึงของคอนกรีตเองมาก (Sikadur-32TH provide a bond of far greater strength than the tensile strength of the concrete itself.) และมีคุณสมบัติให้ค่ากำลังทางกลและแรงยึดเกาะสูง (High tensile strength) แต่ไม่ได้ระบุเป็นค่าตัวเลขที่เฉพาะเจาะจง (Chapter: Materials Data Sheet, Page: 58). ดังนั้น ข้อมูลในเอกสารไม่เพียงพอที่จะให้ค่าแรงยึดเกาะที่เป็นตัวเลขได้",0.5,0.2,1,0.8618,Construction-Related,Material,"1.  **สำหรับแตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=5 มม., B=20 มม., C=8 มม.:**
+    อ้างอิงจากตาราง Guideline for Recesses Repair (Table 3) ใน Chapter: Guildline For Repair, Page: 5
+    *   A (5 มม.) อยู่ในช่วง 2-10 มม.
+    *   B (20 มม.) อยู่ในช่วง 5-30 มม.
+    *   C (8 มม.) อยู่ในช่วง 0-10 มม.
+    เงื่อนไขดังกล่าวตรงกับ ""2.Repair with Cementious Mortar""
+
+2.  **ค่าแรงยึดเกาะของวัสดุเชื่อมประสาน Sikadur 32TH:**
+    เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับค่าแรงยึดเกาะที่เป็นตัวเลขของวัสดุเชื่อมประสาน Sikadur 32TH มีเพียงการกล่าวถึงคุณประโยชน์ของ Sikadur 52TH ว่า ""ให้ค่ากำลังทางกลและแรงยึดเกาะสูง"" (Chapter: Materials Data Sheet, Page: 60) แต่ไม่ได้ระบุค่าที่ชัดเจนสำหรับ Sikadur 32TH.","60, 5, 114, 102, 29",gemini-2.5-flash,"Page: 5
+Answer:
+1.  **สำหรับแตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=5 มม., B=20 มม., C=8 มม.:**
+    อ้างอิงจากตาราง Guideline for Recesses Repair (Table 3) ใน Chapter: Guildline For Repair, Page: 5
+    *   A (5 มม.) อยู่ในช่วง 2-10 มม.
+    *   B (20 มม.) อยู่ในช่วง 5-30 มม.
+    *   C (8 มม.) อยู่ในช่วง 0-10 มม.
+    เงื่อนไขดังกล่าวตรงกับ ""2.Repair with Cementious Mortar""
+
+2.  **ค่าแรงยึดเกาะของวัสดุเชื่อมประสาน Sikadur 32TH:**
+    เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับค่าแรงยึดเกาะที่เป็นตัวเลขของวัสดุเชื่อมประสาน Sikadur 32TH มีเพียงการกล่าวถึงคุณประโยชน์ของ Sikadur 52TH ว่า ""ให้ค่ากำลังทางกลและแรงยึดเกาะสูง"" (Chapter: Materials Data Sheet, Page: 60) แต่ไม่ได้ระบุค่าที่ชัดเจนสำหรับ Sikadur 32TH.",0.5,0.2,1,0.8346,22.58,27,20,20,15,Correctly identified repair method and criteria. Hallucinated that bond strength data was unavailable when it was present.
+Repair Method / Material,Voids and Blowholes Repair / Material Data Sheet,ในการซ่อมรูฟองอากาศด้วย Cementitious Mortar (RP-TN-04) หากใช้ Sika Skim Coat สามารถฉาบที่ความหนาเท่าใด,1) วิธีซ่อม: RP-TN-04 สำหรับรูฟองอากาศกว้าง/ลึก 2-10 มม. 2) ความหนาในการฉาบ Sika Skim Coat (Data Sheet): ประมาณ 0.5-2.0 มม.,"33, 46",Construction-Related,Repair Method,"The provided document context states that the RP-TN-04 method for voids and blowholes repair is for defects with a width and depth greater than 2 mm but not exceeding 10 mm (Chapter: Voids And Blowholes Repair, Page: 33). However, it does not specify the application thickness for Sika Skim Coat when used in this repair method.","7, 34, 33, 27, 18",gemini-2.5-flash,"Page: 33
+Answer: The provided document context states that the RP-TN-04 method for voids and blowholes repair is for defects with a width and depth greater than 2 mm but not exceeding 10 mm (Chapter: Voids And Blowholes Repair, Page: 33). However, it does not specify the application thickness for Sika Skim Coat when used in this repair method.",0.5,0.2,1,0.8636,Construction-Related,Repair Method,หากใช้ Sika Skim Coat สามารถฉาบที่ความหนาประมาณ 0.5 - 2.0 มม.,"46, 45, 33, 11, 99",gemini-2.5-flash,"Page: 46
+Answer: หากใช้ Sika Skim Coat สามารถฉาบที่ความหนาประมาณ 0.5 - 2.0 มม.",1.0,0.4,1,0.8218,Construction-Related,Repair Method,ในการซ่อมรูฟองอากาศด้วย Cementitious Mortar (RP-TN-04) หากใช้ Sika Skim Coat สามารถฉาบที่ความหนาประมาณ 0.5 - 2.0 มม.,"33, 45, 11, 7, 46",gemini-2.5-flash,"Page: 46
+Answer: ในการซ่อมรูฟองอากาศด้วย Cementitious Mortar (RP-TN-04) หากใช้ Sika Skim Coat สามารถฉาบที่ความหนาประมาณ 0.5 - 2.0 มม.",1.0,0.4,1,0.9288,14.43,33,25,30,22,Missed RP-TN-04 application criteria (2-10mm). Correct thickness provided. Extra citations.
+Repair Method / Material,Spalling Edge Repair / Material Data Sheet,งานซ่อม Spalling Edge (RP-TN-03) กำหนดให้มอร์ต้าร์มีกำลังอัดสูงกว่า 400 ksc วัสดุ Sikadur 41 CF Normal มีกำลังอัดที่ 7 วันเท่าใด เพียงพอหรือไม่,1) ข้อกำหนด (RP-TN-03): มอร์ต้าร์ต้องมีกำลังอัดสูงกว่า 400 ksc (~39 N/mm²) 2) กำลังอัดที่ 7 วันของ Sikadur 41 CF Normal (บ่มที่ +30°C): 77-87 N/mm² ซึ่งสูงกว่าข้อกำหนดมาก จึงเพียงพอ,"25, 54",Construction-Related,Material,"งานซ่อม Spalling Edge (RP-TN-03) กำหนดให้ใช้วัสดุมอร์ต้าร์ที่มีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).
+
+จากเอกสารที่ให้มา วัสดุ Sikadur 41 CF Normal ถูกระบุว่าเป็น 3-part thixotropic epoxy patching mortar (Chapter: Materials Data Sheet, Page: 52). อย่างไรก็ตาม ในบริบทของเอกสารที่ให้มานั้นไม่มีข้อมูลระบุกำลังอัดของ Sikadur 41 CF Normal ที่ 7 วันไว้ ดังนั้นจึงไม่สามารถระบุได้ว่าวัสดุดังกล่าวมีกำลังอัดที่ 7 วันเท่าใดและเพียงพอต่อข้อกำหนดหรือไม่","26, 25, 7, 52, 4",gemini-2.5-flash,"Page: 25, 52
+Answer: งานซ่อม Spalling Edge (RP-TN-03) กำหนดให้ใช้วัสดุมอร์ต้าร์ที่มีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).
+
+จากเอกสารที่ให้มา วัสดุ Sikadur 41 CF Normal ถูกระบุว่าเป็น 3-part thixotropic epoxy patching mortar (Chapter: Materials Data Sheet, Page: 52). อย่างไรก็ตาม ในบริบทของเอกสารที่ให้มานั้นไม่มีข้อมูลระบุกำลังอัดของ Sikadur 41 CF Normal ที่ 7 วันไว้ ดังนั้นจึงไม่สามารถระบุได้ว่าวัสดุดังกล่าวมีกำลังอัดที่ 7 วันเท่าใดและเพียงพอต่อข้อกำหนดหรือไม่",0.5,0.2,1,0.8803,Construction-Related,Material,"วัสดุ Sikadur-41 CF Normal มีกำลังอัดที่ 7 วันดังนี้ (Chapter: Materials Data Sheet, Page: 54):
+*   ที่อุณหภูมิการบ่ม +10°C: 59 - 69 N/mm²
+*   ที่อุณหภูมิการบ่ม +23°C: 77 - 87 N/mm²
+*   ที่อุณหภูมิการบ่ม +30°C: 77 - 87 N/mm²
+
+กำลังอัดที่กำหนดคือ 400 ksc (กิโลกรัมแรงต่อตารางเซนติเมตร) ซึ่งเทียบเท่ากับประมาณ 39.23 N/mm² (โดยประมาณ 1 ksc = 0.0980665 N/mm²).
+
+ดังนั้น กำลังอัดของวัสดุ Sikadur-41 CF Normal ที่ 7 วัน (ซึ่งมีค่าต่ำสุดที่ 59 N/mm² ที่อุณหภูมิ +10°C) สูงกว่าค่าที่กำหนด 39.23 N/mm² จึงถือว่าเพียงพอ","54, 52, 49, 55, 57",gemini-2.5-flash,"Page: 54
+Answer: วัสดุ Sikadur-41 CF Normal มีกำลังอัดที่ 7 วันดังนี้ (Chapter: Materials Data Sheet, Page: 54):
+*   ที่อุณหภูมิการบ่ม +10°C: 59 - 69 N/mm²
+*   ที่อุณหภูมิการบ่ม +23°C: 77 - 87 N/mm²
+*   ที่อุณหภูมิการบ่ม +30°C: 77 - 87 N/mm²
+
+กำลังอัดที่กำหนดคือ 400 ksc (กิโลกรัมแรงต่อตารางเซนติเมตร) ซึ่งเทียบเท่ากับประมาณ 39.23 N/mm² (โดยประมาณ 1 ksc = 0.0980665 N/mm²).
+
+ดังนั้น กำลังอัดของวัสดุ Sikadur-41 CF Normal ที่ 7 วัน (ซึ่งมีค่าต่ำสุดที่ 59 N/mm² ที่อุณหภูมิ +10°C) สูงกว่าค่าที่กำหนด 39.23 N/mm² จึงถือว่าเพียงพอ",0.5,0.2,1,0.8879,Construction-Related,Material,"วัสดุ Sikadur 41 CF Normal มีกำลังอัดที่ 7 วันดังนี้:
+*   ที่อุณหภูมิ +10°C: 59 - 69 N/mm² (Chapter: Materials Data Sheet, Page: 54)
+*   ที่อุณหภูมิ +23°C: 77 - 87 N/mm² (Chapter: Materials Data Sheet, Page: 54)
+*   ที่อุณหภูมิ +30°C: 77 - 87 N/mm² (Chapter: Materials Data Sheet, Page: 54)
+
+สำหรับงานซ่อม Spalling Edge (RP-TN-03) กำหนดให้มอร์ต้าร์มีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25)
+
+ในการเปรียบเทียบ ต้องแปลงหน่วย:
+1 ksc ≈ 0.0980665 N/mm²
+ดังนั้น 400 ksc ≈ 400 * 0.0980665 N/mm² ≈ 39.23 N/mm²
+
+กำลังอัดของ Sikadur 41 CF Normal ที่ 7 วัน (59 - 87 N/mm²) สูงกว่าค่าที่กำหนด 400 ksc (หรือ 39.23 N/mm²) อย่างชัดเจน ดังนั้นวัสดุนี้จึงเพียงพอต่อข้อกำหนด.","52, 25, 26, 54, 7",gemini-2.5-flash,"Page: 25, 54
+Answer:
+วัสดุ Sikadur 41 CF Normal มีกำลังอัดที่ 7 วันดังนี้:
+*   ที่อุณหภูมิ +10°C: 59 - 69 N/mm² (Chapter: Materials Data Sheet, Page: 54)
+*   ที่อุณหภูมิ +23°C: 77 - 87 N/mm² (Chapter: Materials Data Sheet, Page: 54)
+*   ที่อุณหภูมิ +30°C: 77 - 87 N/mm² (Chapter: Materials Data Sheet, Page: 54)
+
+สำหรับงานซ่อม Spalling Edge (RP-TN-03) กำหนดให้มอร์ต้าร์มีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25)
+
+ในการเปรียบเทียบ ต้องแปลงหน่วย:
+1 ksc ≈ 0.0980665 N/mm²
+ดังนั้น 400 ksc ≈ 400 * 0.0980665 N/mm² ≈ 39.23 N/mm²
+
+กำลังอัดของ Sikadur 41 CF Normal ที่ 7 วัน (59 - 87 N/mm²) สูงกว่าค่าที่กำหนด 400 ksc (หรือ 39.23 N/mm²) อย่างชัดเจน ดังนั้นวัสดุนี้จึงเพียงพอต่อข้อกำหนด.",1.0,0.4,1,0.9137,18.56,38,26,40,26,"Assistant correctly identified requirement and material strength, performed conversion, and concluded sufficiency. Key info is correctly cited."
+Repair Method / Material,Voids and Blowholes Repair (High Strength Mortar) / Material Data Sheet,ในการซ่อมรูฟองอากาศด้วย High Strength Mortar (RP-TN-05) ด้วย Bee Brand 135F ต้องฉาบที่ความหนาช่วงใด และควรใช้วัสดุที่ผสมแล้วให้หมดภายในเวลาเท่าใด,1) ความหนาในการทำงาน (Data Sheet): ตั้งแต่ 4-60 มม. 2) ควรใช้ให้หมดภายใน 45 นาทีหลังจากผสมน้ำแล้ว,"40, 115",Construction-Related,Material,"ข้อมูลในเอกสารที่ให้มาไม่เพียงพอที่จะระบุช่วงความหนาในการฉาบของ Bee Brand 135F สำหรับการซ่อมแซมรูฟองอากาศด้วยวิธี RP-TN-05 หรือระยะเวลาที่ควรใช้วัสดุที่ผสมแล้วให้หมดภายในได้
+
+เอกสารระบุว่าวิธี RP-TN-05 ใช้สำหรับการซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 มม. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39) และ Bee Brand 135F เป็นปูนฉาบซ่อมกำลังอัดสูงที่ใช้ในการซ่อมแซมประเภทนี้ (Chapter: Materials Data Sheet, Page: 113; Chapter: Guildline For Repair, Page: 8) อย่างไรก็ตาม ไม่ได้ระบุช่วงความหนาของการฉาบวัสดุ หรือระยะเวลาที่ต้องใช้วัสดุที่ผสมแล้วให้หมดภายใน.","113, 7, 38, 8, 39",gemini-2.5-flash,"Page: 39, 113
+Answer: ข้อมูลในเอกสารที่ให้มาไม่เพียงพอที่จะระบุช่วงความหนาในการฉาบของ Bee Brand 135F สำหรับการซ่อมแซมรูฟองอากาศด้วยวิธี RP-TN-05 หรือระยะเวลาที่ควรใช้วัสดุที่ผสมแล้วให้หมดภายในได้
+
+เอกสารระบุว่าวิธี RP-TN-05 ใช้สำหรับการซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 มม. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39) และ Bee Brand 135F เป็นปูนฉาบซ่อมกำลังอัดสูงที่ใช้ในการซ่อมแซมประเภทนี้ (Chapter: Materials Data Sheet, Page: 113; Chapter: Guildline For Repair, Page: 8) อย่างไรก็ตาม ไม่ได้ระบุช่วงความหนาของการฉาบวัสดุ หรือระยะเวลาที่ต้องใช้วัสดุที่ผสมแล้วให้หมดภายใน.",0.0,0.0,0,0.6814,Construction-Related,Material,"ในการซ่อมรูฟองอากาศด้วย High Strength Mortar No.135/135 F ควรฉาบที่ความหนาตั้งแต่ 4 มม. ถึง 60 มม. (อ้างอิง Chapter: Materials Data Sheet, Page: 4) และควรใช้วัสดุที่ผสมแล้วให้หมดภายใน 45 นาที หลังจากผสมน้ำแล้ว (อ้างอิง Chapter: Materials Data Sheet, Page: 2, 5)","115, 114",gemini-2.5-flash,"Page: 2, 4, 5
+Answer: ในการซ่อมรูฟองอากาศด้วย High Strength Mortar No.135/135 F ควรฉาบที่ความหนาตั้งแต่ 4 มม. ถึง 60 มม. (อ้างอิง Chapter: Materials Data Sheet, Page: 4) และควรใช้วัสดุที่ผสมแล้วให้หมดภายใน 45 นาที หลังจากผสมน้ำแล้ว (อ้างอิง Chapter: Materials Data Sheet, Page: 2, 5)",0.5,0.5,1,0.8082,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลระบุช่วงความหนาที่ต้องฉาบด้วย Bee Brand 135F หรือระยะเวลาที่ควรใช้วัสดุที่ผสมแล้วให้หมด,"113, 39, 40, 115, 7",gemini-2.5-flash,"Page: 39, 40, 115
+Answer: เอกสารที่ให้มาไม่มีข้อมูลระบุช่วงความหนาที่ต้องฉาบด้วย Bee Brand 135F หรือระยะเวลาที่ควรใช้วัสดุที่ผสมแล้วให้หมด",1.0,0.4,1,0.7498,20.67,5,16,0,0,"Assistant incorrectly states information is unavailable, contradicting the reference which provides specific values."
+Material / Repair Method,Material Data Sheet / Repair with Epoxy Resin,เหตุใด Sikadur 52TH จึงเหมาะกับการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02),1) คุณสมบัติวัสดุ: Sikadur 52TH เป็นของเหลวที่มีความหนืดต่ำ (290 cps ที่ 20°C) แทรกซึมรอยร้าวเล็กได้ดี อัดฉีดรอยร้าวกว้างสูงสุด 5 มม. 2) เหมาะกับ RP-TN-02 ที่ซ่อมรอยร้าวกว้าง 0.3-0.5 มม. ลึกมากกว่า 15 มม.,"61, 16",Construction-Related,Material,"Sikadur 52TH เหมาะกับการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) เนื่องจากมีคุณสมบัติตรงตามข้อกำหนดของวิธีการซ่อมแซมและคุณสมบัติของวัสดุอีพ็อกซี่เรซิ่นที่ระบุไว้ในเอกสาร:
+
+1.  **คุณสมบัติเป็นของเหลวที่มีความหนืดต่ำและแทรกซึมสูง:** Sikadur 52TH เป็นอีพ็อกซี่เรซิ่นที่มีความหนืดต่ำและมีคุณสมบัติในการแทรกซึมสูง ซึ่งช่วยให้สามารถซึมผ่านช่องรอยร้าวขนาดเล็กได้ดี (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+2.  **กำลังอัดและแรงยึดเกาะสูง:** Sikadur 52TH ให้ค่ากำลังอัดสูง รวมถึงกำลังทางกลและแรงยึดเกาะที่สูงกว่าคอนกรีต (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+3.  **ต้านทานการซึมผ่านของน้ำ:** วัสดุมีคุณสมบัติช่วยกันไม่ให้น้ำซึมผ่านรอยร้าวได้ ซึ่งเป็นคุณสมบัติสำคัญของอีพ็อกซี่เรซิ่นที่ใช้ในวิธีนี้ (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+4.  **ไม่มีการหดตัว:** Sikadur 52TH ไม่เกิดการหดตัวเมื่อแห้งและแข็งตัว (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+5.  **เหมาะสมกับขนาดรอยร้าว:** วิธีการ Repair With Epoxy Resin ใช้กับรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และ Sikadur 52TH สามารถใช้กับรอยแตกร้าวที่มีความกว้างสูงสุด 5 มม. ได้ (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+6.  **ระบุให้ใช้งาน:** Sikadur 52TH ถูกเสนอขออนุมัติและระบุเป็นวัสดุอีพ็อกซี่ที่ใช้ในการซ่อมแซมรอยร้าวตามวิธีนี้ (Chapter: Repair With Epoxy Resin, Page: 17)","16, 15, 17, 7, 60",gemini-2.5-flash,"Page: 16, 17, 60
+Answer: Sikadur 52TH เหมาะกับการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) เนื่องจากมีคุณสมบัติตรงตามข้อกำหนดของวิธีการซ่อมแซมและคุณสมบัติของวัสดุอีพ็อกซี่เรซิ่นที่ระบุไว้ในเอกสาร:
+
+1.  **คุณสมบัติเป็นของเหลวที่มีความหนืดต่ำและแทรกซึมสูง:** Sikadur 52TH เป็นอีพ็อกซี่เรซิ่นที่มีความหนืดต่ำและมีคุณสมบัติในการแทรกซึมสูง ซึ่งช่วยให้สามารถซึมผ่านช่องรอยร้าวขนาดเล็กได้ดี (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+2.  **กำลังอัดและแรงยึดเกาะสูง:** Sikadur 52TH ให้ค่ากำลังอัดสูง รวมถึงกำลังทางกลและแรงยึดเกาะที่สูงกว่าคอนกรีต (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+3.  **ต้านทานการซึมผ่านของน้ำ:** วัสดุมีคุณสมบัติช่วยกันไม่ให้น้ำซึมผ่านรอยร้าวได้ ซึ่งเป็นคุณสมบัติสำคัญของอีพ็อกซี่เรซิ่นที่ใช้ในวิธีนี้ (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+4.  **ไม่มีการหดตัว:** Sikadur 52TH ไม่เกิดการหดตัวเมื่อแห้งและแข็งตัว (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+5.  **เหมาะสมกับขนาดรอยร้าว:** วิธีการ Repair With Epoxy Resin ใช้กับรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และ Sikadur 52TH สามารถใช้กับรอยแตกร้าวที่มีความกว้างสูงสุด 5 มม. ได้ (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+6.  **ระบุให้ใช้งาน:** Sikadur 52TH ถูกเสนอขออนุมัติและระบุเป็นวัสดุอีพ็อกซี่ที่ใช้ในการซ่อมแซมรอยร้าวตามวิธีนี้ (Chapter: Repair With Epoxy Resin, Page: 17)",0.5,0.2,1,0.8896,Construction-Related,Material,"Sikadur 52TH เหมาะกับการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) เนื่องจากมีคุณสมบัติดังนี้:
+*   เป็นอีพ็อกซี่เรซิ่นที่มีความหนืดต่ำ สามารถแทรกซึมเข้าตามรอยแตกในเนื้อคอนกรีตได้ดี (Chapter: Materials Data Sheet, Page: 60) ซึ่งตรงกับลักษณะของวัสดุที่ใช้ในวิธีการซ่อมแซม RP-TN-02 ที่เป็นของเหลวหนืดต่ำ สามารถซึมผ่านช่องรอยร้าวขนาดเล็กได้ดี (Chapter: Repair With Epoxy Resin, Page: 16)
+*   ให้ค่ากำลังอัดสูงและแรงยึดเกาะสูง (Chapter: Materials Data Sheet, Page: 60) ซึ่งสูงกว่ากำลังอัดและแรงยึดเกาะของคอนกรีตเอง (Chapter: Repair With Epoxy Resin, Page: 16)
+*   ไม่เกิดการหดตัวเมื่อแห้งและแข็งตัว (Chapter: Materials Data Sheet, Page: 60) ซึ่งเป็นคุณสมบัติที่ระบุไว้สำหรับวัสดุที่ใช้ในวิธีการซ่อมแซม RP-TN-02 (Chapter: Repair With Epoxy Resin, Page: 16)
+*   ช่วยกันไม่ให้น้ำซึมผ่านรอยร้าว (Chapter: Materials Data Sheet, Page: 60) และมีคุณสมบัติต้านทานการซึมผ่านของน้ำ (Chapter: Repair With Epoxy Resin, Page: 16)
+*   เหมาะกับการซ่อมแซมรอยแตกร้าวในชิ้นงานโครงสร้างและช่วยผสานคอนกรีตให้เป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 60)
+*   สามารถใช้กับรอยแตกร้าวที่มีความกว้างสูงสุด 5 มม. (Chapter: Materials Data Sheet, Page: 60) ซึ่งครอบคลุมความกว้างของรอยร้าวที่ระบุในวิธี RP-TN-02 ที่ 0.3 มม. ถึง 0.5 มม. (Chapter: Repair With Epoxy Resin, Page: 16)","60, 16, 17, 58, 20",gemini-2.5-flash,"Page: 16, 60
+Answer: Sikadur 52TH เหมาะกับการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) เนื่องจากมีคุณสมบัติดังนี้:
+*   เป็นอีพ็อกซี่เรซิ่นที่มีความหนืดต่ำ สามารถแทรกซึมเข้าตามรอยแตกในเนื้อคอนกรีตได้ดี (Chapter: Materials Data Sheet, Page: 60) ซึ่งตรงกับลักษณะของวัสดุที่ใช้ในวิธีการซ่อมแซม RP-TN-02 ที่เป็นของเหลวหนืดต่ำ สามารถซึมผ่านช่องรอยร้าวขนาดเล็กได้ดี (Chapter: Repair With Epoxy Resin, Page: 16)
+*   ให้ค่ากำลังอัดสูงและแรงยึดเกาะสูง (Chapter: Materials Data Sheet, Page: 60) ซึ่งสูงกว่ากำลังอัดและแรงยึดเกาะของคอนกรีตเอง (Chapter: Repair With Epoxy Resin, Page: 16)
+*   ไม่เกิดการหดตัวเมื่อแห้งและแข็งตัว (Chapter: Materials Data Sheet, Page: 60) ซึ่งเป็นคุณสมบัติที่ระบุไว้สำหรับวัสดุที่ใช้ในวิธีการซ่อมแซม RP-TN-02 (Chapter: Repair With Epoxy Resin, Page: 16)
+*   ช่วยกันไม่ให้น้ำซึมผ่านรอยร้าว (Chapter: Materials Data Sheet, Page: 60) และมีคุณสมบัติต้านทานการซึมผ่านของน้ำ (Chapter: Repair With Epoxy Resin, Page: 16)
+*   เหมาะกับการซ่อมแซมรอยแตกร้าวในชิ้นงานโครงสร้างและช่วยผสานคอนกรีตให้เป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 60)
+*   สามารถใช้กับรอยแตกร้าวที่มีความกว้างสูงสุด 5 มม. (Chapter: Materials Data Sheet, Page: 60) ซึ่งครอบคลุมความกว้างของรอยร้าวที่ระบุในวิธี RP-TN-02 ที่ 0.3 มม. ถึง 0.5 มม. (Chapter: Repair With Epoxy Resin, Page: 16)",0.5,0.2,1,0.9021,Construction-Related,Material,"Sikadur 52TH เหมาะกับการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) เนื่องจากมีคุณสมบัติตรงตามข้อกำหนดของวิธีการซ่อมแซมนี้ ดังนี้:
+*   เป็นอีพ็อกซี่เรซิ่นที่มีความหนืดต่ำ (Chapter: Materials Data Sheet, Page: 60) ซึ่งช่วยให้สามารถซึมผ่านช่องรอยร้าวขนาดเล็กได้ดี (Chapter: Repair With Epoxy Resin, Page: 16)
+*   มีกำลังอัดและแรงยึดเกาะที่สูงกว่าคอนกรีต (Chapter: Repair With Epoxy Resin, Page: 16) โดย Sikadur 52TH ให้ค่ากำลังอัดสูง และให้ค่ากำลังทางกลและแรงยึดเกาะสูง (Chapter: Materials Data Sheet, Page: 60)
+*   มีคุณสมบัติต้านทานการซึมผ่านของน้ำ (Chapter: Repair With Epoxy Resin, Page: 16) ซึ่ง Sikadur 52TH ช่วยกันไม่ให้น้ำซึมผ่านรอยร้าว (Chapter: Materials Data Sheet, Page: 60)
+*   ไม่มีการหดตัวเมื่อแห้งและแข็งตัว (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+*   Sikadur 52TH เป็นของเหลวที่มีคุณสมบัติในการแทรกซึมสูง และเหมาะกับการอัดฉีดเข้าไปตามรอยแตกในเนื้อคอนกรีต (Chapter: Materials Data Sheet, Page: 60)","16, 60, 17, 15, 7",gemini-2.5-flash,"Page: 16, 60
+Answer: Sikadur 52TH เหมาะกับการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) เนื่องจากมีคุณสมบัติตรงตามข้อกำหนดของวิธีการซ่อมแซมนี้ ดังนี้:
+*   เป็นอีพ็อกซี่เรซิ่นที่มีความหนืดต่ำ (Chapter: Materials Data Sheet, Page: 60) ซึ่งช่วยให้สามารถซึมผ่านช่องรอยร้าวขนาดเล็กได้ดี (Chapter: Repair With Epoxy Resin, Page: 16)
+*   มีกำลังอัดและแรงยึดเกาะที่สูงกว่าคอนกรีต (Chapter: Repair With Epoxy Resin, Page: 16) โดย Sikadur 52TH ให้ค่ากำลังอัดสูง และให้ค่ากำลังทางกลและแรงยึดเกาะสูง (Chapter: Materials Data Sheet, Page: 60)
+*   มีคุณสมบัติต้านทานการซึมผ่านของน้ำ (Chapter: Repair With Epoxy Resin, Page: 16) ซึ่ง Sikadur 52TH ช่วยกันไม่ให้น้ำซึมผ่านรอยร้าว (Chapter: Materials Data Sheet, Page: 60)
+*   ไม่มีการหดตัวเมื่อแห้งและแข็งตัว (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 60)
+*   Sikadur 52TH เป็นของเหลวที่มีคุณสมบัติในการแทรกซึมสูง และเหมาะกับการอัดฉีดเข้าไปตามรอยแตกในเนื้อคอนกรีต (Chapter: Materials Data Sheet, Page: 60)",0.5,0.2,1,0.8986,28.31,34,25,20,10,Misses all numeric conditions. Adds unreferenced details. Many cited pages are incorrect/hallucinated.
+Repair Method / Guideline for Repair,Guideline for Repair,หากพบรอยร้าว (Crack) กว้าง 0.1 มม. ลึก 10 มม. ตาม Guideline ต้องดำเนินการอย่างไร,"Action: No Repair (ไม่ต้องซ่อมแซม) เนื่องจาก A ≤ 0.1 มม., B ≤ 0.3 มม. และความลึกน้อยกว่า 15 มม.",3,Construction-Related,Repair Method,"จาก Table 1 Guideline for Crack Repair, หากพบรอยร้าว (Crack) กว้าง 0.1 มม. (A≤0.1) และลึก 10 มม. (Depth<15) ตาม Guideline จะต้องดำเนินการ ""No Repair"" (Chapter: Guideline For Repair, Page: 3).","102, 46, 114, 3, 60",gemini-2.5-flash,"Page: 3
+Answer: จาก Table 1 Guideline for Crack Repair, หากพบรอยร้าว (Crack) กว้าง 0.1 มม. (A≤0.1) และลึก 10 มม. (Depth<15) ตาม Guideline จะต้องดำเนินการ ""No Repair"" (Chapter: Guideline For Repair, Page: 3).",1.0,0.2,1,0.8512,Construction-Related,Repair Method,"ตาม Guideline for Crack Repair (Table 1) หากพบรอยร้าว (Crack) กว้าง 0.1 มม. (A = 0.1 มม.) และลึก 10 มม. จะเข้าข่ายเงื่อนไข ""No Repair"" เนื่องจากความกว้างของรอยร้าวไม่เกิน 0.1 มม. (A ≤ 0.1) และความลึกน้อยกว่า 15 มม. (Depth < 15) (อ้างอิง Chapter: Guildline For Repair, Page: 3)","3, 10, 20, 16, 5",gemini-2.5-flash,"Page: 3
+Answer: ตาม Guideline for Crack Repair (Table 1) หากพบรอยร้าว (Crack) กว้าง 0.1 มม. (A = 0.1 มม.) และลึก 10 มม. จะเข้าข่ายเงื่อนไข ""No Repair"" เนื่องจากความกว้างของรอยร้าวไม่เกิน 0.1 มม. (A ≤ 0.1) และความลึกน้อยกว่า 15 มม. (Depth < 15) (อ้างอิง Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.8513,Construction-Related,Repair Method,"ตาม Guideline For Repair (Table 1), รอยร้าวที่มีความกว้าง A (Hard Crack) ≤ 0.1 มม. และความลึกน้อยกว่า 15 มม. (Depth < 15) ไม่ต้องดำเนินการซ่อมแซม (No Repair)","3, 10, 102, 46, 114",gemini-2.5-flash,"Page: 3
+Answer: ตาม Guideline For Repair (Table 1), รอยร้าวที่มีความกว้าง A (Hard Crack) ≤ 0.1 มม. และความลึกน้อยกว่า 15 มม. (Depth < 15) ไม่ต้องดำเนินการซ่อมแซม (No Repair)",1.0,0.2,1,0.8601,15.14,38,26,30,22,Missed one numeric condition (B ≤ 0.3mm). Correctly cited page 3 but included noisy extra citations.
+Repair Method / Guideline for Repair,Guideline for Repair,หากพบแตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=12 มม. ตาม Guideline ต้องดำเนินการอย่างไร,Action: Reject (ปฏิเสธชิ้นงาน) เนื่องจาก A > 10 มม. เกินเกณฑ์การซ่อมแซม (เกณฑ์ซ่อมคือ A 2-10 มม.),5,Construction-Related,Repair Method,"หากพบแตกบิ่นบริเวณ Gasket (Spalling Recesses) ที่มีขนาด A=12 มม. ตาม Guideline ต้องดำเนินการ ""Reject"" (ปฎิเสธชิ้นงาน) เนื่องจากขนาด A มากกว่า 10 มม. (Chapter: Guildline For Repair, Page: 5)","5, 2, 142, 140, 141",gemini-2.5-flash,"Page: 5
+Answer: หากพบแตกบิ่นบริเวณ Gasket (Spalling Recesses) ที่มีขนาด A=12 มม. ตาม Guideline ต้องดำเนินการ ""Reject"" (ปฎิเสธชิ้นงาน) เนื่องจากขนาด A มากกว่า 10 มม. (Chapter: Guildline For Repair, Page: 5)",1.0,0.2,1,0.8491,Construction-Related,Repair Method,"ตาม Guideline For Repair หากพบแตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=12 มม. จะต้องดำเนินการ ""Reject"" (อ้างอิงจาก Chapter: Guildline For Repair, Page: 5, Table3 Guideline for Recesses Repair).","5, 4, 3, 6, 25",gemini-2.5-flash,"Page: 5
+Answer: ตาม Guideline For Repair หากพบแตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=12 มม. จะต้องดำเนินการ ""Reject"" (อ้างอิงจาก Chapter: Guildline For Repair, Page: 5, Table3 Guideline for Recesses Repair).",1.0,0.2,1,0.8077,Construction-Related,Repair Method,"หากพบแตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=12 มม. ตาม Guideline ต้องดำเนินการ ""Reject"" (ปฏิเสธ) ตามตารางที่ 3 Guideline for Recesses Repair (Chapter: Guildline For Repair, Page: 5).","5, 2, 4, 6, 142",gemini-2.5-flash,"Page: 5
+Answer: หากพบแตกบิ่นบริเวณ Gasket (Spalling Recesses) ขนาด A=12 มม. ตาม Guideline ต้องดำเนินการ ""Reject"" (ปฏิเสธ) ตามตารางที่ 3 Guideline for Recesses Repair (Chapter: Guildline For Repair, Page: 5).",1.0,0.2,1,0.8026,10.39,38,26,30,22,"Correct action, but lacks explicit numeric criteria. Extra citations are noisy."
+Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact,หากเกิดเพลิงไหม้กองวัสดุปูนฉาบตราผึ้ง 135F ซึ่งเป็นวัสดุแบบผง ต้องใช้อุปกรณ์ดับเพลิงชนิดใด และผู้ผจญเพลิงต้องป้องกันตนเองอย่างไร,"1) ประเภทวัสดุ: ปูนฉาบตราผึ้ง 135F เป็นวัสดุซ่อมแบบผง 2) อุปกรณ์ดับเพลิง: โฟมทนแอลกอฮอล์, CO2, ถังดับเพลิงแบบผง 3) การป้องกัน: ห้ามใช้เครื่องฉีดน้ำแรงดันสูง และหากไฟไหม้จำนวนมากต้องสวมหน้ากาก N95 กันการสูดดมสารเคมี",136,Construction-Related,Environmental / Preventive Measures,"ข้อมูลที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับชนิดของอุปกรณ์ดับเพลิงที่ควรใช้หรือการป้องกันตนเองสำหรับผู้ผจญเพลิงในกรณีที่เกิดเพลิงไหม้กับกองวัสดุปูนฉาบตราผึ้ง 135F เอกสารกล่าวถึงรายละเอียดผลิตภัณฑ์, การทดสอบกำลังอัด, ขั้นตอนการซ่อมแซม, และมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อม (ด้านคุณภาพน้ำ) ของวัสดุประเภทผง ซึ่งรวมถึงปูนฉาบตราผึ้ง 135F แต่ไม่มีข้อมูลด้านความปลอดภัยจากอัคคีภัยหรือการตอบสนองต่อเหตุเพลิงไหม้","119, 113, 41, 40, 135",gemini-2.5-flash,"Page: 113, 119, 41, 40, 135
+Answer: ข้อมูลที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับชนิดของอุปกรณ์ดับเพลิงที่ควรใช้หรือการป้องกันตนเองสำหรับผู้ผจญเพลิงในกรณีที่เกิดเพลิงไหม้กับกองวัสดุปูนฉาบตราผึ้ง 135F เอกสารกล่าวถึงรายละเอียดผลิตภัณฑ์, การทดสอบกำลังอัด, ขั้นตอนการซ่อมแซม, และมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อม (ด้านคุณภาพน้ำ) ของวัสดุประเภทผง ซึ่งรวมถึงปูนฉาบตราผึ้ง 135F แต่ไม่มีข้อมูลด้านความปลอดภัยจากอัคคีภัยหรือการตอบสนองต่อเหตุเพลิงไหม้",0.0,0.0,0,0.8745,Construction-Related,Human Risk,"เอกสารไม่ได้ระบุชนิดของอุปกรณ์ดับเพลิงที่แน่นอนสำหรับปูนฉาบตราผึ้ง 135F โดยระบุเพียงว่ามีอุปกรณ์ในการฉีดดับเพลิงหากเกิดเพลิงไหม้วัสดุซ่อมจำนวนมาก (Chapter: Materials Data Sheet, Page: 117, Chapter: Preventative Measures And Revise Environment Impact, Page: 136)
+
+อย่างไรก็ตาม ผู้ผจญเพลิงต้องสวมใส่หน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี หากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก (Chapter: Preventative Measures And Revise Environment Impact, Page: 136)","114, 117, 136, 108, 115",gemini-2.5-flash,"Page: 117, 136
+Answer: เอกสารไม่ได้ระบุชนิดของอุปกรณ์ดับเพลิงที่แน่นอนสำหรับปูนฉาบตราผึ้ง 135F โดยระบุเพียงว่ามีอุปกรณ์ในการฉีดดับเพลิงหากเกิดเพลิงไหม้วัสดุซ่อมจำนวนมาก (Chapter: Materials Data Sheet, Page: 117, Chapter: Preventative Measures And Revise Environment Impact, Page: 136)
+
+อย่างไรก็ตาม ผู้ผจญเพลิงต้องสวมใส่หน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี หากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก (Chapter: Preventative Measures And Revise Environment Impact, Page: 136)",1.0,0.2,1,0.9005,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับชนิดของอุปกรณ์ดับเพลิงที่ต้องใช้ หรือวิธีที่ผู้ผจญเพลิงต้องป้องกันตนเอง หากเกิดเพลิงไหม้กองวัสดุปูนฉาบตราผึ้ง 135F แม้ว่าจะมีหัวข้อ ""5. FIREFIGHTING MEASURES"" อยู่ในเอกสารบนหน้า 117 แต่ข้อมูลในส่วนนี้ว่างเปล่าและไม่ได้ระบุรายละเอียดที่จำเป็น","133, 119, 114, 113, 117",gemini-2.5-flash,"Page: 117
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับชนิดของอุปกรณ์ดับเพลิงที่ต้องใช้ หรือวิธีที่ผู้ผจญเพลิงต้องป้องกันตนเอง หากเกิดเพลิงไหม้กองวัสดุปูนฉาบตราผึ้ง 135F แม้ว่าจะมีหัวข้อ ""5. FIREFIGHTING MEASURES"" อยู่ในเอกสารบนหน้า 117 แต่ข้อมูลในส่วนนี้ว่างเปล่าและไม่ได้ระบุรายละเอียดที่จำเป็น",0.0,0.0,0,0.7898,19.09,5,16,0,0,"Assistant abstained, claiming no information, which directly contradicts the reference answer and its cited page."
+Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact,หาก Sikadur 52TH ซึ่งเป็นวัสดุแบบของเหลวปนเปื้อนในท่อระบายน้ำเสียปริมาณมาก ต้องดำเนินการอย่างไร,1) ประเภทวัสดุ: Sikadur 52TH เป็นวัสดุซ่อมแบบของเหลว 2) มาตรการ: ต้องระวังไม่ให้ปนเปื้อนเพราะเป็นสารเคมีอันตราย หากพบปนเปื้อนปริมาณมากให้ปิดทางระบายท่อน้ำทิ้งแล้วแจ้งหน่วยงานที่เกี่ยวข้องทันที และให้กำหนดตัวผู้ที่สามารถใช้วัสดุแบบเหลวได้,137,Construction-Related,Material,"หาก Sikadur 52TH ซึ่งเป็นวัสดุแบบของเหลวปนเปื้อนในท่อระบายน้ำเสียปริมาณมาก ต้องดำเนินการดังนี้:
+1.  ปิดทางระบายท่อน้ำทิ้ง
+2.  แจ้งหน่วยงานที่เกี่ยวข้องทันที","60, 17, 129, 127, 137",gemini-2.5-flash,"Page: 137
+Answer: หาก Sikadur 52TH ซึ่งเป็นวัสดุแบบของเหลวปนเปื้อนในท่อระบายน้ำเสียปริมาณมาก ต้องดำเนินการดังนี้:
+1.  ปิดทางระบายท่อน้ำทิ้ง
+2.  แจ้งหน่วยงานที่เกี่ยวข้องทันที",1.0,0.2,1,0.8742,Construction-Related,Material,"หาก Sikadur 52TH ซึ่งเป็นวัสดุแบบของเหลวปนเปื้อนในท่อระบายน้ำเสียปริมาณมาก จะต้องดำเนินการดังนี้:
+1.  ปิดทางระบายท่อน้ำทิ้ง
+2.  แจ้งหน่วยงานที่เกี่ยวข้องทันที","60, 137, 130, 129, 125",gemini-2.5-flash,"Page: 137
+Answer: หาก Sikadur 52TH ซึ่งเป็นวัสดุแบบของเหลวปนเปื้อนในท่อระบายน้ำเสียปริมาณมาก จะต้องดำเนินการดังนี้:
+1.  ปิดทางระบายท่อน้ำทิ้ง
+2.  แจ้งหน่วยงานที่เกี่ยวข้องทันที",1.0,0.2,1,0.8745,Construction-Related,Material,"หากพบว่า Sikadur 52TH ซึ่งเป็นวัสดุแบบของเหลวมีการปนเปื้อนปริมาณมากในท่อระบายน้ำเสีย จะต้องดำเนินการดังนี้:
+1.  ปิดทางระบายท่อน้ำทิ้ง
+2.  แจ้งหน่วยงานที่เกี่ยวข้องทันที","60, 137, 129, 130, 127",gemini-2.5-flash,"Page: 137
+Answer: หากพบว่า Sikadur 52TH ซึ่งเป็นวัสดุแบบของเหลวมีการปนเปื้อนปริมาณมากในท่อระบายน้ำเสีย จะต้องดำเนินการดังนี้:
+1.  ปิดทางระบายท่อน้ำทิ้ง
+2.  แจ้งหน่วยงานที่เกี่ยวข้องทันที",1.0,0.2,1,0.8818,12.46,30,24,30,22,Answer correct on immediate actions but missed one key action and hazardous chemical context. Noisy citations.
+Human Risk / Material,Risk Assessment in Repair Working / Material Safety Data,อันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้มีค่าความเสี่ยงเริ่มต้นเท่าใด และหากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลอย่างไร,"1) ระดับความเสี่ยงเริ่มต้น (Risk Assessment): HCR 3, PR 3, RF 9 (High Risk) 2) การปฐมพยาบาล (MSDS): ถอดเสื้อผ้าที่ปนเปื้อนออก ล้างตัวด้วยสบู่และน้ำ แล้วพบแพทย์ทันที","121, 127",Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุค่าความเสี่ยงเริ่มต้นของการสัมผัสสารเคมีจนผิวหนังไหม้ได้ และไม่มีข้อมูลเกี่ยวกับการปฐมพยาบาลหากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) โดยเฉพาะ มีเพียงข้อมูลสำหรับ Sikadur 32 TH (PART B) และ Sikadur 41 CF Normal (PART A) เท่านั้น,"55, 52, 26, 47, 126",gemini-2.5-flash,"Page: 126
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุค่าความเสี่ยงเริ่มต้นของการสัมผัสสารเคมีจนผิวหนังไหม้ได้ และไม่มีข้อมูลเกี่ยวกับการปฐมพยาบาลหากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) โดยเฉพาะ มีเพียงข้อมูลสำหรับ Sikadur 32 TH (PART B) และ Sikadur 41 CF Normal (PART A) เท่านั้น",0.0,0.0,0,0.7136,Construction-Related,Human Risk,"สำหรับอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ เอกสารที่ให้มาไม่ได้ระบุค่าความเสี่ยงเริ่มต้นสำหรับกรณีดังกล่าว
+
+หากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลดังนี้:
+1.  ถอดเสื้อผ้าที่ปนเปื้อนออก (Chapter: Materials Safety Data, Page: 127)
+2.  ล้างตัวด้วยสบู่และน้ำ (Chapter: Materials Safety Data, Page: 127)
+3.  พบแพทย์ทันที (Chapter: Materials Safety Data, Page: 127)","127, 128, 126, 129",gemini-2.5-flash,"Page: 127
+Answer:
+สำหรับอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ เอกสารที่ให้มาไม่ได้ระบุค่าความเสี่ยงเริ่มต้นสำหรับกรณีดังกล่าว
+
+หากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) ต้องปฐมพยาบาลดังนี้:
+1.  ถอดเสื้อผ้าที่ปนเปื้อนออก (Chapter: Materials Safety Data, Page: 127)
+2.  ล้างตัวด้วยสบู่และน้ำ (Chapter: Materials Safety Data, Page: 127)
+3.  พบแพทย์ทันที (Chapter: Materials Safety Data, Page: 127)",0.5,0.25,1,0.7746,Construction-Related,Human Risk,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับค่าความเสี่ยงเริ่มต้นของการสัมผัสสารเคมีจนผิวหนังไหม้
+
+หากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) การปฐมพยาบาลเบื้องต้นคือ:
+1.  ถอดเสื้อผ้าที่ปนเปื้อนออก
+2.  ล้างตัวด้วยสบู่และน้ำ
+3.  พบแพทย์ทันที (อ้างอิง: Chapter: Materials Safety Data, Page: 127)","127, 126, 55, 52, 128",gemini-2.5-flash,"Page: 127
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับค่าความเสี่ยงเริ่มต้นของการสัมผัสสารเคมีจนผิวหนังไหม้
+
+หากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) การปฐมพยาบาลเบื้องต้นคือ:
+1.  ถอดเสื้อผ้าที่ปนเปื้อนออก
+2.  ล้างตัวด้วยสบู่และน้ำ
+3.  พบแพทย์ทันที (อ้างอิง: Chapter: Materials Safety Data, Page: 127)",0.5,0.2,1,0.7813,17.75,26,21,10,5,"Failed to find risk assessment data, claiming no info (hallucination). First aid steps were correct and grounded."
+Repair Method / Human Risk,Spalling Edge Repair / Risk Assessment in Repair Working,ขณะซ่อม Spalling Edge ด้วยเครื่องตัด/เครื่องเจียรคอนกรีต มีอันตรายใด และมีวิธีลดความเสี่ยงอย่างไร,"1) อันตราย (Risk Assessment): ไฟฟ้าดูด และโดนใบเจียรบาด 2) วิธีลดความเสี่ยง: อบรมวิธีป้องกัน, ใช้เครื่องมือที่ผ่านการตรวจสภาพแล้วเท่านั้น, ติดตั้งเซฟการ์ดที่เครื่องเจียร, สวม PPE ครบ และจัดพื้นที่ทำงานให้เหมาะสม","28, 121",Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอันตรายและวิธีการลดความเสี่ยงขณะซ่อม Spalling Edge ด้วยเครื่องตัด/เครื่องเจียรคอนกรีต,"4, 24, 142, 140, 141",gemini-2.5-flash,"Page: 4, 24, 140, 141, 142
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอันตรายและวิธีการลดความเสี่ยงขณะซ่อม Spalling Edge ด้วยเครื่องตัด/เครื่องเจียรคอนกรีต",0.0,0.0,0,0.7069,Construction-Related,Human Risk,"ขณะซ่อม Spalling Edge ด้วยเครื่องตัด/เครื่องเจียรคอนกรีต มีอันตรายและวิธีลดความเสี่ยงดังนี้:
+
+**อันตราย:**
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค
+
+**วิธีลดความเสี่ยง:**
+*   อบรมวิธีการป้องกันความเสี่ยงในการใช้เครื่องเจียรคอนกรีต
+*   ใช้เครื่องมือที่ผ่านการตรวจสภาพแล้วเท่านั้น
+*   ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+*   ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+*   จัดพื้นที่การทำงานให้เหมาะสม
+
+(อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121)","121, 25, 4, 127, 126",gemini-2.5-flash,"Page: 121
+Answer: ขณะซ่อม Spalling Edge ด้วยเครื่องตัด/เครื่องเจียรคอนกรีต มีอันตรายและวิธีลดความเสี่ยงดังนี้:
+
+**อันตราย:**
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค
+
+**วิธีลดความเสี่ยง:**
+*   อบรมวิธีการป้องกันความเสี่ยงในการใช้เครื่องเจียรคอนกรีต
+*   ใช้เครื่องมือที่ผ่านการตรวจสภาพแล้วเท่านั้น
+*   ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+*   ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+*   จัดพื้นที่การทำงานให้เหมาะสม
+
+(อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121)",0.5,0.2,1,0.8598,Construction-Related,Human Risk,"ขณะซ่อม Spalling Edge ด้วยเครื่องตัด/เครื่องเจียรคอนกรีต มีอันตรายและวิธีลดความเสี่ยงดังนี้:
+
+อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต (Chapter: Risk Assessment In Repair Working, Page: 121):
+1.  ไฟฟ้าดูด (Electric shock)
+2.  โคนใบเจียรมาค (Grinder blade breaking/coming off)
+
+วิธีลดความเสี่ยง (Chapter: Risk Assessment In Repair Working, Page: 121):
+1.  อบรมวิธีการป้องกันความเสี่ยงในการใช้เครื่องเจียรคอนกรีต
+2.  ใช้เครื่องมือที่ผ่านการตรวจสภาพแล้วเท่านั้น
+3.  ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+4.  ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+5.  จัดพื้นที่การทำงานให้เหมาะสม","4, 121, 24, 25, 142",gemini-2.5-flash,"Page: 121, 25
+Answer: ขณะซ่อม Spalling Edge ด้วยเครื่องตัด/เครื่องเจียรคอนกรีต มีอันตรายและวิธีลดความเสี่ยงดังนี้:
+
+อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต (Chapter: Risk Assessment In Repair Working, Page: 121):
+1.  ไฟฟ้าดูด (Electric shock)
+2.  โคนใบเจียรมาค (Grinder blade breaking/coming off)
+
+วิธีลดความเสี่ยง (Chapter: Risk Assessment In Repair Working, Page: 121):
+1.  อบรมวิธีการป้องกันความเสี่ยงในการใช้เครื่องเจียรคอนกรีต
+2.  ใช้เครื่องมือที่ผ่านการตรวจสภาพแล้วเท่านั้น
+3.  ติดตั้งเซฟการ์ดที่เครื่องเจียรคอนกรีต
+4.  ผู้ปฏิบัติงานต้องสวมใส่อุปกรณ์ PPE ที่กำหนดให้ครบ
+5.  จัดพื้นที่การทำงานให้เหมาะสม",0.5,0.2,1,0.8415,15.81,38,25,38,22,"Answer is correct and complete, matching the reference. Grounding is good, citing a key page but with extra citations."
+Material / Non-Construction Questions,Material Data Sheet / Material Approval Document,ปูนฉาบแต่งบางพิเศษ Bee Brand No.124 มีกำลังอัดที่ 28 วันเท่าใด และได้รับอนุมัติจากสำนักงานโครงการหรือไม่,1) กำลังอัดที่ 28 วัน (Data Sheet): 20.0 MPa 2) สถานะอนุมัติ: ได้รับอนุมัติให้ใช้แต่งผิวคอนกรีต Precast Segment ที่โรงงานผลิตชิ้นส่วนอุโมงค์,"109, 146",Construction-Related,Material,"ปูนฉาบแต่งบางพิเศษ Bee Brand No.124 มีกำลังอัดที่ 28 วันเท่ากับ 20.0 MPa (เมกะพาสคาล) (Chapter: Materials Data Sheet, Page: 109) และได้รับการอนุมัติใช้งานจากสำนักงานโครงการ (Chapter: Guildline For Repair, Page: 8).","101, 8, 109, 113, 133",gemini-2.5-flash,"Page: 8, 109
+Answer: ปูนฉาบแต่งบางพิเศษ Bee Brand No.124 มีกำลังอัดที่ 28 วันเท่ากับ 20.0 MPa (เมกะพาสคาล) (Chapter: Materials Data Sheet, Page: 109) และได้รับการอนุมัติใช้งานจากสำนักงานโครงการ (Chapter: Guildline For Repair, Page: 8).",0.5,0.2,1,0.7819,Construction-Related,Material,"ปูนฉาบแต่งบางพิเศษ Bee Brand No.124 มีกำลังอัดที่ 28 วันเท่ากับ 20.0 MPa (Chapter: Materials Data Sheet, Page: 109).
+
+เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุว่าผลิตภัณฑ์ดังกล่าวได้รับการอนุมัติจากสำนักงานโครงการหรือไม่","101, 109, 102, 103, 104",gemini-2.5-flash,"Page: 109
+Answer: ปูนฉาบแต่งบางพิเศษ Bee Brand No.124 มีกำลังอัดที่ 28 วันเท่ากับ 20.0 MPa (Chapter: Materials Data Sheet, Page: 109).
+
+เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุว่าผลิตภัณฑ์ดังกล่าวได้รับการอนุมัติจากสำนักงานโครงการหรือไม่",0.5,0.2,1,0.7671,Construction-Related,Material,"ปูนฉาบแต่งบางพิเศษ Bee Brand No.124 มีกำลังอัดที่ 28 วันเท่ากับ 20.0 MPa (เมกะปาสคาล) (Chapter: Materials Data Sheet, Page: 109) และได้รับการอนุมัติจากสำนักงานโครงการให้ใช้ในการแต่งผิวคอนกรีต Precast Segment ที่โรงงานผลิตชิ้นส่วนอุโมงค์ได้ (Chapter: Material Approval Document from the Project Office, Page: 146; Chapter: Guildline For Repair, Page: 8)","101, 109, 113, 146, 8",gemini-2.5-flash,"Page: 109, 146, 8
+Answer: ปูนฉาบแต่งบางพิเศษ Bee Brand No.124 มีกำลังอัดที่ 28 วันเท่ากับ 20.0 MPa (เมกะปาสคาล) (Chapter: Materials Data Sheet, Page: 109) และได้รับการอนุมัติจากสำนักงานโครงการให้ใช้ในการแต่งผิวคอนกรีต Precast Segment ที่โรงงานผลิตชิ้นส่วนอุโมงค์ได้ (Chapter: Material Approval Document from the Project Office, Page: 146; Chapter: Guildline For Repair, Page: 8)",1.0,0.4,1,0.8545,14.77,38,26,40,10,"Answer is fully correct. However, it cited multiple pages (101, 113, 8) not in the reference."
+Material / Non-Construction Questions,Material Approval Document / Repair with Cementitious Mortar,วัสดุ Sika Skim Coat ได้รับอนุมัติจากสำนักงานโครงการให้ใช้งานหรือไม่ และมีอัตราส่วนผสมในงานซ่อมเท่าใด,1) สถานะอนุมัติ: ได้รับอนุมัติให้ใช้แต่งผิวคอนกรีตที่เป็นร่องรอยบกพร่อง เช่น รอยตะเข็บ รอยเม็ดทราย และผิวที่มีรูพรุน 2) อัตราส่วนผสม: ปูน : น้ำ = 1 : 0.35 โดยน้ำหนัก,"144, 11",Construction-Related,Material,"1.  **การอนุมัติใช้งาน**: วัสดุ Sika Skim Coat ได้รับการอนุมัติและระบุว่าเป็นปูนฉาบซ่อมที่ใช้ในโครงการสำหรับงานซ่อมแซมรอยแตกปืน (Spalling Edge Repair) และงานซ่อมแซมช่องว่างและโพรงอากาศ (Voids And Blowholes Repair) (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).
+2.  **อัตราส่วนผสมในงานซ่อม**: อัตราส่วนผสมสำหรับ Sika Skim Coat ในงานซ่อมคือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34). นอกจากนี้ ข้อมูลผลิตภัณฑ์ยังระบุอัตราส่วนการผสมน้ำ 7.0-7.4 ลิตร (35%-37%) ต่อน้ำหนัก Sika Skim Coat 20 กก. สำหรับสีเทา และ 7.4-7.8 ลิตร (37%-39%) สำหรับสีขาว (Chapter: Materials Data Sheet, Page: 46).","45, 135, 46, 27, 34",gemini-2.5-flash,"Page: 27, 34, 46
+Answer:
+1.  **การอนุมัติใช้งาน**: วัสดุ Sika Skim Coat ได้รับการอนุมัติและระบุว่าเป็นปูนฉาบซ่อมที่ใช้ในโครงการสำหรับงานซ่อมแซมรอยแตกปืน (Spalling Edge Repair) และงานซ่อมแซมช่องว่างและโพรงอากาศ (Voids And Blowholes Repair) (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).
+2.  **อัตราส่วนผสมในงานซ่อม**: อัตราส่วนผสมสำหรับ Sika Skim Coat ในงานซ่อมคือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34). นอกจากนี้ ข้อมูลผลิตภัณฑ์ยังระบุอัตราส่วนการผสมน้ำ 7.0-7.4 ลิตร (35%-37%) ต่อน้ำหนัก Sika Skim Coat 20 กก. สำหรับสีเทา และ 7.4-7.8 ลิตร (37%-39%) สำหรับสีขาว (Chapter: Materials Data Sheet, Page: 46).",0.0,0.0,0,0.7977,Construction-Related,Material,"1.  ใช่ วัสดุ Sika Skim Coat ได้รับอนุมัติให้ใช้งานโดยสำนักงานโครงการ ซึ่งระบุไว้ในส่วน ""2. วัสดุที่ใช้ในการซ่อมแซม"" และ ""2.1 ปูนฉาบซ่อมที่ใช้ในโครงการ"" สำหรับโครงการ SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER (อ้างอิง: Chapter: Voids And Blowholes Repair, Page: 34)
+2.  อัตราส่วนผสมในงานซ่อมสำหรับ Sika Skim Coat คือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (อ้างอิง: Chapter: Voids And Blowholes Repair, Page: 34). ข้อมูลเพิ่มเติมจากเอกสารระบุว่าสำหรับสีเทาใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อน้ำหนัก Sika Skim Coat 20 กก. (อ้างอิง: Chapter: Materials Data Sheet, Page: 46)","46, 45, 34, 125",gemini-2.5-flash,"Page: 34, 46
+Answer:
+1.  ใช่ วัสดุ Sika Skim Coat ได้รับอนุมัติให้ใช้งานโดยสำนักงานโครงการ ซึ่งระบุไว้ในส่วน ""2. วัสดุที่ใช้ในการซ่อมแซม"" และ ""2.1 ปูนฉาบซ่อมที่ใช้ในโครงการ"" สำหรับโครงการ SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER (อ้างอิง: Chapter: Voids And Blowholes Repair, Page: 34)
+2.  อัตราส่วนผสมในงานซ่อมสำหรับ Sika Skim Coat คือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (อ้างอิง: Chapter: Voids And Blowholes Repair, Page: 34). ข้อมูลเพิ่มเติมจากเอกสารระบุว่าสำหรับสีเทาใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อน้ำหนัก Sika Skim Coat 20 กก. (อ้างอิง: Chapter: Materials Data Sheet, Page: 46)",0.0,0.0,0,0.7922,Construction-Related,Material,"ใช่ วัสดุ Sika Skim Coat ได้รับการระบุว่าเป็นปูนฉาบซ่อมที่ใช้ในโครงการ ซึ่งแสดงว่าได้รับอนุมัติให้ใช้งาน (Chapter: Voids And Blowholes Repair, Page: 34; Chapter: Spalling Edge Repair, Page: 27; Chapter: Repair With Epoxy Resin, Page: 18)
+
+อัตราส่วนผสมในงานซ่อมคือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair, Page: 34; Chapter: Spalling Edge Repair, Page: 27; Chapter: Repair With Epoxy Resin, Page: 18)","45, 46, 34, 27, 18",gemini-2.5-flash,"Page: 18, 27, 34
+Answer: ใช่ วัสดุ Sika Skim Coat ได้รับการระบุว่าเป็นปูนฉาบซ่อมที่ใช้ในโครงการ ซึ่งแสดงว่าได้รับอนุมัติให้ใช้งาน (Chapter: Voids And Blowholes Repair, Page: 34; Chapter: Spalling Edge Repair, Page: 27; Chapter: Repair With Epoxy Resin, Page: 18)
+
+อัตราส่วนผสมในงานซ่อมคือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair, Page: 34; Chapter: Spalling Edge Repair, Page: 27; Chapter: Repair With Epoxy Resin, Page: 18)",0.0,0.0,0,0.7793,22.92,34,17,20,0,"Approval conditions are incomplete; all cited pages are incorrect, indicating poor grounding."
+Human Risk / Repair Method,Spalling Edge Repair / Material Safety Data,ในงานซ่อม Spalling Edge ที่ใช้ Sikadur 32TH หากวัสดุ Part B กระเด็นเข้าตาจะอันตรายเพียงใด และต้องป้องกันอย่างไร,1) วัสดุที่ใช้ (RP-TN-03): Sikadur 32TH (A:B = 2:1) 2) อันตรายต่อดวงตาของ Part B: ทำลายเนื้อเยื่อตาอย่างรุนแรง อาจทำให้ตาบอดได้ 3) มาตรการป้องกัน: สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน,"26, 126",Construction-Related,Human Risk,"ข้อมูลที่ให้มาไม่มีรายละเอียดเพียงพอที่จะตอบคำถามเกี่ยวกับอันตรายของวัสดุ Sikadur 32TH Part B หากกระเด็นเข้าตา และวิธีการป้องกันอย่างไร เนื่องจากเอกสาร Product Data Sheet สำหรับ Sikadur® -32TH (Page 58) ไม่ได้ระบุข้อมูลด้านความปลอดภัย, อันตรายต่อสุขภาพ หรือมาตรการป้องกัน","4, 58, 26, 24, 55",gemini-2.5-flash,"Page: 58
+Answer: ข้อมูลที่ให้มาไม่มีรายละเอียดเพียงพอที่จะตอบคำถามเกี่ยวกับอันตรายของวัสดุ Sikadur 32TH Part B หากกระเด็นเข้าตา และวิธีการป้องกันอย่างไร เนื่องจากเอกสาร Product Data Sheet สำหรับ Sikadur® -32TH (Page 58) ไม่ได้ระบุข้อมูลด้านความปลอดภัย, อันตรายต่อสุขภาพ หรือมาตรการป้องกัน",0.5,0.2,1,0.833,Construction-Related,Human Risk,"หากวัสดุ Sikadur 32 TH (PART B) กระเด็นเข้าตาจะทำลายเนื้อเยื่อตาอย่างรุนแรง อาจทำให้ตาบอดได้ (Chapter: Materials Safety Data, Page: 126)
+
+การป้องกันคือต้องสวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 126)","126, 127, 125, 129, 128",gemini-2.5-flash,"Page: 126
+Answer: หากวัสดุ Sikadur 32 TH (PART B) กระเด็นเข้าตาจะทำลายเนื้อเยื่อตาอย่างรุนแรง อาจทำให้ตาบอดได้ (Chapter: Materials Safety Data, Page: 126)
+
+การป้องกันคือต้องสวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 126)",0.5,0.2,1,0.899,Construction-Related,Human Risk,"หากวัสดุ Sikadur 32TH (Part B) กระเด็นเข้าตา อาจทำลายเนื้อเยื่อตาอย่างรุนแรงและอาจทำให้ตาบอดได้ (Chapter: Materials Safety Data, Page: 126)
+
+สำหรับการป้องกัน ควร สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 126)","4, 126, 58, 127, 26",gemini-2.5-flash,"Page: 126
+Answer: หากวัสดุ Sikadur 32TH (Part B) กระเด็นเข้าตา อาจทำลายเนื้อเยื่อตาอย่างรุนแรงและอาจทำให้ตาบอดได้ (Chapter: Materials Safety Data, Page: 126)
+
+สำหรับการป้องกัน ควร สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 126)",1.0,0.4,1,0.896,23.15,37,26,32,22,"Correctly identified danger and prevention, but missed material mixing ratio. Included noisy citations."
+Material / Repair Method,Material Data Sheet / Spalling Edge Repair,ค่าแรงยึดเกาะกับคอนกรีตของ Sikadur 31 CF Normal เป็นเท่าใด และวัสดุนี้ใช้ผสมในงานซ่อม Spalling Edge ด้วยอัตราส่วนเท่าใด,1) Bond Strength: มากกว่า 4 N/mm² ทั้งบนคอนกรีตแห้งและชื้น (100% concrete failure) 2) อัตราส่วนในงาน RP-TN-03: Sikadur 31 CF Normal = A : B = 2 : 1,"49, 26",Construction-Related,Material,"เอกสารที่ให้มาไม่ได้ระบุค่าแรงยึดเกาะกับคอนกรีตของ Sikadur 31 CF Normal เป็นตัวเลขที่ชัดเจน ระบุเพียงว่ามี ""Very good adhesion to most construction materials"" และ ""High strength adhesive"" (Chapter: Materials Data Sheet, Page: 47)
+
+สำหรับอัตราส่วนผสมในการซ่อม Spalling Edge ของ Sikadur 31 CF Normal คือ วัสดุ A: 2 และ วัสดุ B: 1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)","47, 52, 137, 26, 55",gemini-2.5-flash,"Page: 26, 47
+Answer: เอกสารที่ให้มาไม่ได้ระบุค่าแรงยึดเกาะกับคอนกรีตของ Sikadur 31 CF Normal เป็นตัวเลขที่ชัดเจน ระบุเพียงว่ามี ""Very good adhesion to most construction materials"" และ ""High strength adhesive"" (Chapter: Materials Data Sheet, Page: 47)
+
+สำหรับอัตราส่วนผสมในการซ่อม Spalling Edge ของ Sikadur 31 CF Normal คือ วัสดุ A: 2 และ วัสดุ B: 1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)",0.5,0.2,1,0.8345,Construction-Related,Material,"ค่าแรงยึดเกาะกับคอนกรีตของ Sikadur-31 CF Normal มีดังนี้ (Chapter: Mechanical/Physical Properties, Page: 4):
+*   คอนกรีตแห้ง (Concrete dry) ที่อุณหภูมิ +10°C เป็นเวลา 1 วัน: > 4 N/mm²*
+*   คอนกรีตชื้น (Concrete moist) ที่อุณหภูมิ +10°C เป็นเวลา 1 วัน: > 4 N/mm²*
+    *หมายเหตุ: *100% ของความเสียหายเกิดกับคอนกรีต
+
+Sikadur-31 CF Normal ใช้สำหรับซ่อมแซมมุมและขอบ (Corners and edges) รวมถึงซ่อมแซมขอบ/สันรอยต่อและรอยแตก (Joint and crack arris / edge repair) ซึ่งครอบคลุมการซ่อม Spalling Edge (Chapter: Uses, Page: 3) อัตราส่วนผสมของวัสดุนี้คือ (Chapter: Mixing, Page: 2):
+*   Part A: Part B = 2:1 โดยน้ำหนักหรือปริมาตร","50, 47, 49, 55",gemini-2.5-flash,"Page: 2, 3, 4
+Answer:
+ค่าแรงยึดเกาะกับคอนกรีตของ Sikadur-31 CF Normal มีดังนี้ (Chapter: Mechanical/Physical Properties, Page: 4):
+*   คอนกรีตแห้ง (Concrete dry) ที่อุณหภูมิ +10°C เป็นเวลา 1 วัน: > 4 N/mm²*
+*   คอนกรีตชื้น (Concrete moist) ที่อุณหภูมิ +10°C เป็นเวลา 1 วัน: > 4 N/mm²*
+    *หมายเหตุ: *100% ของความเสียหายเกิดกับคอนกรีต
+
+Sikadur-31 CF Normal ใช้สำหรับซ่อมแซมมุมและขอบ (Corners and edges) รวมถึงซ่อมแซมขอบ/สันรอยต่อและรอยแตก (Joint and crack arris / edge repair) ซึ่งครอบคลุมการซ่อม Spalling Edge (Chapter: Uses, Page: 3) อัตราส่วนผสมของวัสดุนี้คือ (Chapter: Mixing, Page: 2):
+*   Part A: Part B = 2:1 โดยน้ำหนักหรือปริมาตร",0.5,0.25,1,0.8494,Construction-Related,Material,"เอกสารที่ให้มามีข้อมูลระบุว่า Sikadur-31 CF Normal มีคุณสมบัติ ""การยึดเกาะกับวัสดุก่อสร้างส่วนใหญ่ดีมาก"" (Very good adhesion to most construction materials) และเป็น ""กาวที่มีความแข็งแรงสูง"" (High strength adhesive) แต่ไม่มีการระบุค่าแรงยึดเกาะกับคอนกรีตเป็นตัวเลขที่ชัดเจน (Chapter: Materials Data Sheet, Page: 47).
+
+สำหรับการผสมเพื่อใช้ในงานซ่อม Spalling Edge (ซึ่งอยู่ในหมวด Joint and crack arris / edge repair) อัตราส่วนการผสมของ Sikadur-31 CF Normal คือ Part A : Part B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50).","47, 52, 55, 50",gemini-2.5-flash,"Page: 47, 50
+Answer: เอกสารที่ให้มามีข้อมูลระบุว่า Sikadur-31 CF Normal มีคุณสมบัติ ""การยึดเกาะกับวัสดุก่อสร้างส่วนใหญ่ดีมาก"" (Very good adhesion to most construction materials) และเป็น ""กาวที่มีความแข็งแรงสูง"" (High strength adhesive) แต่ไม่มีการระบุค่าแรงยึดเกาะกับคอนกรีตเป็นตัวเลขที่ชัดเจน (Chapter: Materials Data Sheet, Page: 47).
+
+สำหรับการผสมเพื่อใช้ในงานซ่อม Spalling Edge (ซึ่งอยู่ในหมวด Joint and crack arris / edge repair) อัตราส่วนการผสมของ Sikadur-31 CF Normal คือ Part A : Part B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50).",0.0,0.0,0,0.8435,18.14,26,17,20,10,"Bond strength value was stated as unavailable, contradicting reference. Mixing ratio was correct but cited page was wrong."
+Environmental / Preventive Measures / Material,Preventative Measures and Environmental Impact,เพื่อป้องกันการปนเปื้อนในดินจากวัสดุซ่อมทั้งแบบผงและแบบของเหลว พื้นที่สำหรับงานซ่อมต้องมีลักษณะอย่างไร,พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อม (ทั้งแบบผงและแบบของเหลว) ปนเปื้อนลงในดิน,"136, 138",Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับลักษณะของพื้นที่สำหรับงานซ่อมเพื่อป้องกันการปนเปื้อนในดินจากวัสดุซ่อมทั้งแบบผงและแบบของเหลว,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับลักษณะของพื้นที่สำหรับงานซ่อมเพื่อป้องกันการปนเปื้อนในดินจากวัสดุซ่อมทั้งแบบผงและแบบของเหลว",0.0,0.0,0,0.8264,Construction-Related,Environmental / Preventive Measures,"เพื่อป้องกันการปนเปื้อนในดินจากวัสดุซ่อมทั้งแบบผงและแบบของเหลว พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนในดิน (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)","136, 138, 135, 137",gemini-2.5-flash,"Page: 136, 138
+Answer: เพื่อป้องกันการปนเปื้อนในดินจากวัสดุซ่อมทั้งแบบผงและแบบของเหลว พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนในดิน (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)",1.0,0.5,1,0.9255,Construction-Related,Environmental / Preventive Measures,"เพื่อป้องกันการปนเปื้อนในดินจากวัสดุซ่อมทั้งแบบผงและแบบของเหลว พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)","136, 138, 135, 137",gemini-2.5-flash,"Page: 136, 138
+Answer: เพื่อป้องกันการปนเปื้อนในดินจากวัสดุซ่อมทั้งแบบผงและแบบของเหลว พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)",1.0,0.5,1,0.9301,10.03,38,27,40,22,"Answer is identical to reference but includes extra, unneeded page citations (135, 137)."
+Repair Method / Material,Repair with Cementitious Mortar / Material Data Sheet,ในการซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) หากเลือกใช้ Conpatch 300 ต้องผสมในอัตราส่วนเท่าใด และวัสดุนี้เหมาะกับการซ่อมผิวที่ลึกเท่าใด,1) อัตราส่วน (RP-TN-01): Conpatch 300 = ปูน : น้ำ = 1 : 0.2 โดยน้ำหนัก 2) Conpatch 300 เหมาะกับการซ่อมผิวหน้าคอนกรีตที่ลึกประมาณ 1-2 มม. (cosmetic repair mortar),"11, 62",Construction-Related,Material,ตามเอกสารที่ให้มาไม่มีข้อมูลระบุอัตราส่วนผสมของ Conpatch 300 ในการซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) และไม่มีข้อมูลระบุความลึกของผิวที่วัสดุ Conpatch 300 เหมาะสมในการซ่อมแซมอย่างชัดเจน,"7, 10, 9, 12, 25",gemini-2.5-flash,"Page: 12
+Answer: ตามเอกสารที่ให้มาไม่มีข้อมูลระบุอัตราส่วนผสมของ Conpatch 300 ในการซ่อมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) และไม่มีข้อมูลระบุความลึกของผิวที่วัสดุ Conpatch 300 เหมาะสมในการซ่อมแซมอย่างชัดเจน",0.0,0.0,0,0.8937,Construction-Related,Material,"หากเลือกใช้ Conpatch 300 ในการซ่อมรอยร้าว วัสดุนี้เหมาะสำหรับซ่อมแซมผิวที่มีความเสียหายตื้นตั้งแต่ 1-2 มม. (Chapter: Materials Data Sheet, Page: 62) และควรทำงานเป็นชั้นบางๆ น้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)
+
+สำหรับอัตราส่วนผสมของ Conpatch 300 เอกสารระบุให้ผสมตามคำแนะนำในเอกสารข้อมูล (Chapter: Materials Data Sheet, Page: 62) และยังระบุให้ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น (Chapter: Repair With Cementitious Mortar, Page: 12) แต่รายละเอียดอัตราส่วนผสมที่ชัดเจนไม่ได้ระบุไว้ในบริบทของเอกสารที่ให้มา","62, 12, 10, 25, 30",gemini-2.5-flash,"Page: 12, 62
+Answer: หากเลือกใช้ Conpatch 300 ในการซ่อมรอยร้าว วัสดุนี้เหมาะสำหรับซ่อมแซมผิวที่มีความเสียหายตื้นตั้งแต่ 1-2 มม. (Chapter: Materials Data Sheet, Page: 62) และควรทำงานเป็นชั้นบางๆ น้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)
+
+สำหรับอัตราส่วนผสมของ Conpatch 300 เอกสารระบุให้ผสมตามคำแนะนำในเอกสารข้อมูล (Chapter: Materials Data Sheet, Page: 62) และยังระบุให้ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น (Chapter: Repair With Cementitious Mortar, Page: 12) แต่รายละเอียดอัตราส่วนผสมที่ชัดเจนไม่ได้ระบุไว้ในบริบทของเอกสารที่ให้มา",0.5,0.2,1,0.9004,Construction-Related,Material,"ข้อมูลในเอกสารไม่ได้ระบุอัตราส่วนผสมของ Conpatch 300 ไว้ชัดเจน โดยมีการกล่าวถึงเพียง ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" แต่ไม่ได้แสดงอัตราส่วนดังกล่าวในเนื้อหาที่ให้มา (Chapter: Repair With Cementitious Mortar, Page: 12)
+
+สำหรับการซ่อมผิวด้วย Cementitious Mortar (RP-TN-01) นั้น เหมาะสำหรับการซ่อมแซมรอยร้าวที่มีความลึกมากกว่า 15mm. (Chapter: Repair With Cementitious Mortar, Page: 10)","10, 12, 25, 28, 7",gemini-2.5-flash,"Page: 10, 12
+Answer: ข้อมูลในเอกสารไม่ได้ระบุอัตราส่วนผสมของ Conpatch 300 ไว้ชัดเจน โดยมีการกล่าวถึงเพียง ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" แต่ไม่ได้แสดงอัตราส่วนดังกล่าวในเนื้อหาที่ให้มา (Chapter: Repair With Cementitious Mortar, Page: 12)
+
+สำหรับการซ่อมผิวด้วย Cementitious Mortar (RP-TN-01) นั้น เหมาะสำหรับการซ่อมแซมรอยร้าวที่มีความลึกมากกว่า 15mm. (Chapter: Repair With Cementitious Mortar, Page: 10)",0.0,0.0,0,0.8907,19.72,10,14,0,0,Assistant incorrectly states information is unavailable and provides wrong depth for Conpatch 300. Citations are incorrect.
+Material / Human Risk,Material Safety Data / Risk Assessment in Repair Working,Sika Skim Coat ซึ่งเป็นวัสดุแบบผงมีความเสี่ยงด้านสุขภาพจากการสูดดมอย่างไร และมีวิธีลดความเสี่ยงตาม Risk Assessment อย่างไร,"1) อันตรายจากการสูดดม (MSDS): อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ 2) วิธีลดความเสี่ยง (Risk Assessment): กำหนดเวลาทำงานกับสารที่เป็นฝุ่นผง/สารระเหย, สวมหน้ากากป้องกันที่เหมาะสม, กำหนดพื้นที่ทำงาน และตรวจสุขภาพผู้ปฏิบัติงาน","125, 121",Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับความเสี่ยงด้านสุขภาพจากการสูดดม Sika Skim Coat หรือวิธีการลดความเสี่ยงตามการประเมินความเสี่ยง,"45, 46, 27, 34, 18",gemini-2.5-flash,"Page: 45, 46
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับความเสี่ยงด้านสุขภาพจากการสูดดม Sika Skim Coat หรือวิธีการลดความเสี่ยงตามการประเมินความเสี่ยง",0.0,0.0,0,0.6939,Construction-Related,Human Risk,"Sika Skim Coat ซึ่งเป็นวัสดุแบบผงมีความเสี่ยงด้านสุขภาพจากการสูดดมคือ อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 125).
+
+วิธีลดความเสี่ยงตาม Risk Assessment มีดังนี้:
+*   **มาตรการป้องกันเฉพาะสำหรับ Sika Skim Coat:**
+    *   ใช้หน้ากากป้องกันที่เหมาะสม เพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อมได้ (Chapter: Materials Safety Data, Page: 125).
+*   **มาตรการลดความเสี่ยงทั่วไปสำหรับสารเคมีที่เป็นฝุ่นผง:**
+    *   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   ใช้หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   กำหนดพื้นที่การทำงาน (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย (Chapter: Risk Assessment In Repair Working, Page: 121).","125, 46, 45, 121",gemini-2.5-flash,"Page: 1, 5
+Answer: Sika Skim Coat ซึ่งเป็นวัสดุแบบผงมีความเสี่ยงด้านสุขภาพจากการสูดดมคือ อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 125).
+
+วิธีลดความเสี่ยงตาม Risk Assessment มีดังนี้:
+*   **มาตรการป้องกันเฉพาะสำหรับ Sika Skim Coat:**
+    *   ใช้หน้ากากป้องกันที่เหมาะสม เพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อมได้ (Chapter: Materials Safety Data, Page: 125).
+*   **มาตรการลดความเสี่ยงทั่วไปสำหรับสารเคมีที่เป็นฝุ่นผง:**
+    *   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   ใช้หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   กำหนดพื้นที่การทำงาน (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว (Chapter: Risk Assessment In Repair Working, Page: 121).
+    *   อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย (Chapter: Risk Assessment In Repair Working, Page: 121).",1.0,0.5,1,0.8152,Construction-Related,Human Risk,"Sika Skim Coat ซึ่งเป็นวัสดุแบบผงมีความเสี่ยงด้านสุขภาพจากการสูดดมคือ อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 125).
+
+วิธีลดความเสี่ยงตามมาตรการป้องกันคือ ใช้หน้ากากป้องกันที่เหมาะสม เพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อมได้ (Chapter: Materials Safety Data, Page: 125).","45, 46, 125, 27, 34",gemini-2.5-flash,"Page: 125
+Answer:
+Sika Skim Coat ซึ่งเป็นวัสดุแบบผงมีความเสี่ยงด้านสุขภาพจากการสูดดมคือ อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 125).
+
+วิธีลดความเสี่ยงตามมาตรการป้องกันคือ ใช้หน้ากากป้องกันที่เหมาะสม เพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อมได้ (Chapter: Materials Safety Data, Page: 125).",0.5,0.2,1,0.8137,15.68,27,22,20,15,Correctly identified risk. Missed 3/4 risk reduction methods. Cited wrong page for risk reduction methods.
+Repair Method / Material,Repair with Epoxy Resin / Material Data Sheet,ในการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) ต้องเซาะร่อง V กว้างเท่าใด และความกว้างรอยร้าวสูงสุดที่ Sikadur 52TH อัดฉีดได้คือเท่าใด,1) การเซาะร่อง (RP-TN-02): ร่องรูปตัว V ปากร่องกว้างประมาณ 3-5 มม. 2) ความกว้างรอยร้าวสูงสุดที่ Sikadur 52TH อัดฉีดได้ (Data Sheet): 5 มม.,"19, 60",Construction-Related,Material,"ไม่ปรากฏข้อมูลเกี่ยวกับความกว้างของร่อง V ที่ต้องเซาะในการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) ในเอกสารที่ให้มา
+
+ความกว้างรอยร้าวสูงสุดที่ควรทำการอัดฉีดด้วย Sikadur 52TH คือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)","16, 15, 17, 7, 60",gemini-2.5-flash,"Page: 60
+Answer: ไม่ปรากฏข้อมูลเกี่ยวกับความกว้างของร่อง V ที่ต้องเซาะในการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) ในเอกสารที่ให้มา
+
+ความกว้างรอยร้าวสูงสุดที่ควรทำการอัดฉีดด้วย Sikadur 52TH คือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)",0.5,0.2,1,0.9152,Construction-Related,Material,"ในการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) ต้องเซาะร่อง V ให้บริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)
+
+ความกว้างสูงสุดของรอยแตกร้าวที่ Sikadur 52TH ควรทำการอัดฉีดคือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)","16, 60, 17, 20, 19",gemini-2.5-flash,"Page: 19, 60
+Answer: ในการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) ต้องเซาะร่อง V ให้บริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)
+
+ความกว้างสูงสุดของรอยแตกร้าวที่ Sikadur 52TH ควรทำการอัดฉีดคือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)",1.0,0.4,1,0.9092,Construction-Related,Material,"ในการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) ต้องเซาะร่อง V ให้บริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)
+
+ความกว้างรอยร้าวสูงสุดที่ Sikadur 52TH ควรทำการอัดฉีด คือ 5 mm. (Chapter: Materials Data Sheet, Page: 60)","16, 17, 60, 15, 19",gemini-2.5-flash,"Page: 19, 60
+Answer:
+ในการซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) ต้องเซาะร่อง V ให้บริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)
+
+ความกว้างรอยร้าวสูงสุดที่ Sikadur 52TH ควรทำการอัดฉีด คือ 5 mm. (Chapter: Materials Data Sheet, Page: 60)",1.0,0.4,1,0.9083,13.65,39,26,40,30,"The answer perfectly matches the reference for both questions, including all numeric details and correct page citations."
+Non-Construction Questions / Material,Material Approval Document,ผลิตภัณฑ์ Conpatch 500 TP ได้รับอนุมัติจากสำนักงานโครงการหรือไม่ และผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้งานลักษณะใด,1) Conpatch 500 TP: ไม่อนุมัติ เนื่องจากการซ่อมรูพรุน/โพรงต้องตรวจสอบโดยละเอียดเป็นกรณีไป 2) Conpatch 300: อนุมัติให้ใช้ซ่อมพื้นผิวคอนกรีตแบบบางที่มีตำหนิจากรอยขูดขีดขนาดเล็กหรือฟองอากาศจากงานหล่อ,148,Construction-Related,Material,"ผลิตภัณฑ์ Conpatch 500 TP ไม่ได้รับการอนุมัติจากสำนักงานโครงการสำหรับการซ่อมแซมพื้นผิวคอนกรีตที่เป็นรูพรุน โพรงขนาดเล็กที่เกิดจากการหล่อคอนกรีตไม่สมบูรณ์ (Chapter: Material Approval Document from the Project Office, Page: 148).
+ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148).","148, 62, 18, 34, 67",gemini-2.5-flash,"Page: 148
+Answer:
+ผลิตภัณฑ์ Conpatch 500 TP ไม่ได้รับการอนุมัติจากสำนักงานโครงการสำหรับการซ่อมแซมพื้นผิวคอนกรีตที่เป็นรูพรุน โพรงขนาดเล็กที่เกิดจากการหล่อคอนกรีตไม่สมบูรณ์ (Chapter: Material Approval Document from the Project Office, Page: 148).
+ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148).",1.0,0.2,1,0.9319,Construction-Related,Material,"*   ผลิตภัณฑ์ Conpatch 500 TP ไม่ได้รับการอนุมัติจากสำนักงานโครงการ (Chapter: Material Approval Document from the Project Office, Page: 148).
+*   ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิอันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148).","148, 64, 8, 63, 130",gemini-2.5-flash,"Page: 148
+Answer:
+*   ผลิตภัณฑ์ Conpatch 500 TP ไม่ได้รับการอนุมัติจากสำนักงานโครงการ (Chapter: Material Approval Document from the Project Office, Page: 148).
+*   ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิอันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148).",1.0,0.2,1,0.9194,Construction-Related,Material,"1.  ผลิตภัณฑ์ Conpatch 500 TP ไม่ได้รับอนุมัติจากสำนักงานโครงการ (Chapter: Material Approval Document from the Project Office, Page: 148).
+2.  ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148).","148, 62, 18, 67, 64",gemini-2.5-flash,"Page: 148
+Answer:
+1.  ผลิตภัณฑ์ Conpatch 500 TP ไม่ได้รับอนุมัติจากสำนักงานโครงการ (Chapter: Material Approval Document from the Project Office, Page: 148).
+2.  ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต (Chapter: Material Approval Document from the Project Office, Page: 148).",1.0,0.2,1,0.9219,12.98,39,27,30,22,"Missed the reason for Conpatch 500 TP's non-approval; included noisy, irrelevant citations."
+Repair Method / Material,Material Data Sheet / Spalling Edge Repair,ในงานซ่อม Spalling Edge (RP-TN-03) ต้องทาน้ำยาประสาน Sikadur 32TH ก่อน วัสดุนี้มีปริมาณการใช้งานเท่าใด และผสมในอัตราส่วนเท่าใด,1) ปริมาณการใช้งาน (Data Sheet): 0.3-0.8 กก./ตร.ม. ขึ้นอยู่กับความพรุนของพื้นผิว 2) อัตราส่วนผสม: A : B = 2 : 1 โดยน้ำหนัก,"58, 26",Construction-Related,Material,"Sikadur 32 TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับปริมาณการใช้งานของ Sikadur 32 TH","24, 7, 4, 26, 25",gemini-2.5-flash,"Page: 26
+Answer: Sikadur 32 TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับปริมาณการใช้งานของ Sikadur 32 TH",0.5,0.2,1,0.7975,Construction-Related,Material,"สำหรับน้ำยาประสานคอนกรีต Sikadur 32TH:
+*   ปริมาณการใช้งาน (Coverage) อยู่ที่ 0.3-0.8 kg/m2 ขึ้นอยู่กับความพรุนของพื้นผิว (Chapter: Materials Data Sheet, Page: 58).
+*   อัตราส่วนผสมคือ A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).","29, 58, 26, 60, 25",gemini-2.5-flash,"Page: 26, 58
+Answer: สำหรับน้ำยาประสานคอนกรีต Sikadur 32TH:
+*   ปริมาณการใช้งาน (Coverage) อยู่ที่ 0.3-0.8 kg/m2 ขึ้นอยู่กับความพรุนของพื้นผิว (Chapter: Materials Data Sheet, Page: 58).
+*   อัตราส่วนผสมคือ A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).",1.0,0.4,1,0.8507,Construction-Related,Material,"ในงานซ่อม Spalling Edge (RP-TN-03) น้ำยาประสาน Sikadur 32 TH ผสมในอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับปริมาณการใช้งานของ Sikadur 32 TH","26, 24, 29, 25, 7",gemini-2.5-flash,"Page: 26
+Answer: ในงานซ่อม Spalling Edge (RP-TN-03) น้ำยาประสาน Sikadur 32 TH ผสมในอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)
+
+เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับปริมาณการใช้งานของ Sikadur 32 TH",0.5,0.2,1,0.787,10.73,27,20,20,10,"Correctly identified mixing ratio and cited page 26. However, incorrectly claimed usage amount was unavailable, contradicting reference page 58."
+Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact,วัสดุ Condur SC และ Renderoc Skim Coat จัดอยู่ในหมวดมาตรการสิ่งแวดล้อมใด และเมื่อหกลงดินต้องจัดการต่างกันอย่างไร,1) Condur SC เป็นวัสดุแบบของเหลว ส่วน Renderoc Skim Coat เป็นวัสดุแบบผง 2) เมื่อหกลงดิน: วัสดุของเหลว (Condur SC) ให้ใช้ทรายหรือขี้เลื่อยกองทับดูดซับแล้วกวาดใส่ถุงดำ ส่วนวัสดุผง (Renderoc) ให้กวาดวัสดุใส่ถุงดำทิ้งในพื้นที่ทิ้งสารเคมี,"137, 135",Construction-Related,Human Risk,"1.  **Condur SC:**
+    *   Condur SC จัดเป็นวัสดุประเภทอีพ็อกซี่เรซิ่น (Epoxy Resin) (Chapter: Guildline For Repair, Page: 8) ซึ่งโดยทั่วไปจัดเป็นวัสดุซ่อมแบบของเหลว
+    *   อย่างไรก็ตาม ในเอกสารไม่ได้ระบุโดยชัดเจนว่า Condur SC จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลวหรือไม่ และไม่ได้ให้รายละเอียดเกี่ยวกับวิธีการจัดการเมื่อวัสดุประเภทของเหลวหกลงดิน ดังนั้นจึงมีข้อมูลไม่เพียงพอที่จะตอบคำถามนี้โดยอ้างอิงจากบริบทที่ให้มา
+
+2.  **Renderoc Skim Coat:**
+    *   Renderoc Skim Coat จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   เมื่อวัสดุซ่อมแบบผง (ซึ่งรวมถึง Renderoc Skim Coat) หกลงดินและปนเปื้อนในท่อระบายน้ำเสีย หรือปนเปื้อนในแหล่งน้ำธรรมชาติ จะมีแนวทางการจัดการดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+        *   **หากปนเปื้อนในท่อระบายน้ำเสีย:** ต้องปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+        *   **หากปนเปื้อนในแหล่งน้ำธรรมชาติ:** แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง
+
+เนื่องจากเอกสารไม่มีข้อมูลเฉพาะสำหรับการจัดการ Condur SC เมื่อหกลงดิน จึงไม่สามารถระบุความแตกต่างในการจัดการวัสดุทั้งสองชนิดได้","8, 135, 46, 18, 27",gemini-2.5-flash,"Page: 8, 135
+Answer:
+
+1.  **Condur SC:**
+    *   Condur SC จัดเป็นวัสดุประเภทอีพ็อกซี่เรซิ่น (Epoxy Resin) (Chapter: Guildline For Repair, Page: 8) ซึ่งโดยทั่วไปจัดเป็นวัสดุซ่อมแบบของเหลว
+    *   อย่างไรก็ตาม ในเอกสารไม่ได้ระบุโดยชัดเจนว่า Condur SC จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลวหรือไม่ และไม่ได้ให้รายละเอียดเกี่ยวกับวิธีการจัดการเมื่อวัสดุประเภทของเหลวหกลงดิน ดังนั้นจึงมีข้อมูลไม่เพียงพอที่จะตอบคำถามนี้โดยอ้างอิงจากบริบทที่ให้มา
+
+2.  **Renderoc Skim Coat:**
+    *   Renderoc Skim Coat จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   เมื่อวัสดุซ่อมแบบผง (ซึ่งรวมถึง Renderoc Skim Coat) หกลงดินและปนเปื้อนในท่อระบายน้ำเสีย หรือปนเปื้อนในแหล่งน้ำธรรมชาติ จะมีแนวทางการจัดการดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+        *   **หากปนเปื้อนในท่อระบายน้ำเสีย:** ต้องปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+        *   **หากปนเปื้อนในแหล่งน้ำธรรมชาติ:** แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง
+
+เนื่องจากเอกสารไม่มีข้อมูลเฉพาะสำหรับการจัดการ Condur SC เมื่อหกลงดิน จึงไม่สามารถระบุความแตกต่างในการจัดการวัสดุทั้งสองชนิดได้",0.5,0.2,1,0.8999,Construction-Related,Human Risk,"**สำหรับ Condur SC:**
+เอกสารไม่ได้ระบุว่าวัสดุ Condur SC จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผงหรือวัสดุซ่อมแบบของเหลว (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). นอกจากนี้ เอกสารยังไม่ได้ให้ข้อมูลเกี่ยวกับวิธีการจัดการเมื่อวัสดุ Condur SC หกลงดิน
+
+**สำหรับ Renderoc Skim Coat:**
+Renderoc Skim Coat จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับ **วัสดุซ่อมแบบผง** (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+
+เมื่อวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียและมีการกำจัดน้ำที่ปนเปื้อนนั้น เอกสารระบุว่า **""ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด""** หากปริมาณมากจนไม่สามารถกำจัดเองได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+
+อย่างไรก็ตาม เอกสารไม่ได้ให้คำแนะนำเฉพาะเจาะจงเกี่ยวกับวิธีการจัดการผง Renderoc Skim Coat ที่หกลงบนพื้นดินโดยตรง นอกเหนือจากมาตรการป้องกันทั่วไป เช่น การแบ่งพื้นที่สำหรับงานซ่อมแซม และห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้ รวมถึงการเปลี่ยนบรรจุภัณฑ์ที่ฉีกขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). หากวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ ต้องแจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).","132, 99, 131, 135, 98",gemini-2.5-flash,"Page: 135
+Answer:
+**สำหรับ Condur SC:**
+เอกสารไม่ได้ระบุว่าวัสดุ Condur SC จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผงหรือวัสดุซ่อมแบบของเหลว (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). นอกจากนี้ เอกสารยังไม่ได้ให้ข้อมูลเกี่ยวกับวิธีการจัดการเมื่อวัสดุ Condur SC หกลงดิน
+
+**สำหรับ Renderoc Skim Coat:**
+Renderoc Skim Coat จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับ **วัสดุซ่อมแบบผง** (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+
+เมื่อวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียและมีการกำจัดน้ำที่ปนเปื้อนนั้น เอกสารระบุว่า **""ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด""** หากปริมาณมากจนไม่สามารถกำจัดเองได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).
+
+อย่างไรก็ตาม เอกสารไม่ได้ให้คำแนะนำเฉพาะเจาะจงเกี่ยวกับวิธีการจัดการผง Renderoc Skim Coat ที่หกลงบนพื้นดินโดยตรง นอกเหนือจากมาตรการป้องกันทั่วไป เช่น การแบ่งพื้นที่สำหรับงานซ่อมแซม และห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้ รวมถึงการเปลี่ยนบรรจุภัณฑ์ที่ฉีกขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135). หากวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ ต้องแจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135).",0.5,0.2,1,0.8782,Construction-Related,Environmental / Preventive Measures,"1.  **หมวดมาตรการสิ่งแวดล้อม:**
+    *   **Renderoc Skim Coat:** จัดอยู่ในหมวด ""มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   **Condur SC:** เอกสารที่ให้มาไม่มีข้อมูลระบุอย่างชัดเจนว่า Condur SC จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมใด
+
+2.  **การจัดการเมื่อหกลงดิน:**
+    *   **Renderoc Skim Coat (วัสดุซ่อมแบบผง):**
+        *   เอกสารระบุว่า หากวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย จะต้อง ""ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   หากปนเปื้อนในแหล่งน้ำธรรมชาติ จะต้อง ""แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   มาตรการป้องกันรวมถึงการจัดพื้นที่สำหรับงานซ่อมแซมและห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้ หากบรรจุภัณฑ์ฉีกขาดให้เปลี่ยนบรรจุภัณฑ์ใหม่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   อย่างไรก็ตาม เอกสารไม่ได้ระบุวิธีการจัดการที่เฉพาะเจาะจงสำหรับกรณีที่ Renderoc Skim Coat (ในรูปผงแห้ง) หกลงบนพื้นดินโดยตรง
+    *   **Condur SC:** เอกสารที่ให้มาไม่มีข้อมูลระบุวิธีการจัดการ Condur SC เมื่อหกลงดิน เนื่องจากไม่มีรายละเอียดเพิ่มเติมภายใต้หมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)","135, 8, 132, 99, 46",gemini-2.5-flash,"Page: 135
+Answer:
+1.  **หมวดมาตรการสิ่งแวดล้อม:**
+    *   **Renderoc Skim Coat:** จัดอยู่ในหมวด ""มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   **Condur SC:** เอกสารที่ให้มาไม่มีข้อมูลระบุอย่างชัดเจนว่า Condur SC จัดอยู่ในหมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมใด
+
+2.  **การจัดการเมื่อหกลงดิน:**
+    *   **Renderoc Skim Coat (วัสดุซ่อมแบบผง):**
+        *   เอกสารระบุว่า หากวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย จะต้อง ""ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   หากปนเปื้อนในแหล่งน้ำธรรมชาติ จะต้อง ""แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   มาตรการป้องกันรวมถึงการจัดพื้นที่สำหรับงานซ่อมแซมและห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้ หากบรรจุภัณฑ์ฉีกขาดให้เปลี่ยนบรรจุภัณฑ์ใหม่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   อย่างไรก็ตาม เอกสารไม่ได้ระบุวิธีการจัดการที่เฉพาะเจาะจงสำหรับกรณีที่ Renderoc Skim Coat (ในรูปผงแห้ง) หกลงบนพื้นดินโดยตรง
+    *   **Condur SC:** เอกสารที่ให้มาไม่มีข้อมูลระบุวิธีการจัดการ Condur SC เมื่อหกลงดิน เนื่องจากไม่มีรายละเอียดเพิ่มเติมภายใต้หมวดมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)",0.5,0.2,1,0.8749,52.91,18,18,5,5,"Assistant incorrectly states spill management information is missing for both materials, directly contradicting the reference."

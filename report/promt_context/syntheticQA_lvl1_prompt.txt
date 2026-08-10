@@ -33,7 +33,7 @@ prompt = f"""
                 --------------------------------------------------
                 TASK (LEVEL 1 – CONTROLLED)
 
-                Generate exactly 20 Question–Answer pair.
+                Generate maximum 40 Question–Answer pairs per RAINBOW GROUP STRUCTURE sub-topic.
 
                 The question MUST:
                 - Random between RAINBOW GROUP A and RAINBOW GROUP B
@@ -57,6 +57,7 @@ prompt = f"""
 
                 --------------------------------------------------
                 Example format I want you to follow:
+                Example 1 :
                 Question: เกณฑ์การยอมรับ Tolerance ของ Segment มีอะไรบ้าง
                 <split>
                 Answer: เกณฑ์การยอมรับ Tolerance ของ Segment มีดังนี้:
@@ -72,10 +73,18 @@ prompt = f"""
                 43
                 <split>
 
+                Example 2 :
+                Question: ตึกใบหยกใช้ปูนชนิดไหนในการสร้าง 
+                <split>
+                Answer: คำถามข้างต้นอยู่นอกขอบเขตเอกสารที่โครงการกำหนด
+                <split>
+                Page: 
+                -
+                <split>
+
                 --------------------------------------------------
                 OUTPUT FORMAT
 
-                <split>Rainbow Group : Construction-Related
                 <split>Category : <Repair Method / Material / Human Risk / Environmental>
 
                 <split>Question (TH-EN) :

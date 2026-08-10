@@ -9,9 +9,9 @@
 \citation{polrag}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {II}Methodology}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Document Ingestion}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}\textcolor {red}{Knowledge-Graph Construction}}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}\textcolor {red}{Query Understanding}}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Document Ingestion}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}\textcolor {red}{Knowledge-Graph Construction}}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}\textcolor {red}{Query Understanding}}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-D}}Retrieval}{2}{}\protected@file@percent }
 \newlabel{eq:bm25}{{1}{2}{}{equation.1}{}}
 \newlabel{eq:cos}{{2}{2}{}{equation.2}{}}
@@ -23,32 +23,49 @@
 \newlabel{tab:taxonomy}{{I}{2}{}{table.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Retrieval Evaluation}{2}{}\protected@file@percent }
 \newlabel{eq:pr}{{4}{2}{}{equation.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}LLM Performance}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}LLM Performance}{2}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces LLM Performance Evaluation Rubric}}{3}{}\protected@file@percent }
 \newlabel{tab:rubric}{{II}{3}{}{table.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Results and Discussion}{3}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Retrieval}{3}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Retrieval Quality by Method (Page-Level)}}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-A}1}Overall}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Retrieval Quality by Method --- Full Set (Page-Level)}}{3}{}\protected@file@percent }
 \newlabel{tab:retr}{{III}{3}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-A}2}By Document Section}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Level-1 Retrieval Hit@k by Document Section}}{3}{}\protected@file@percent }
+\newlabel{tab:retrsub}{{IV}{3}{}{table.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}End-to-End Answer Quality}{3}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Evaluation Results (Fused Retrieval)}}{3}{}\protected@file@percent }
-\newlabel{tab:results}{{IV}{3}{}{table.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}1}Overall}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Evaluation Results (Fused Retrieval, Full Set)}}{4}{}\protected@file@percent }
+\newlabel{tab:results}{{V}{4}{}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Example Answers at High and Low Correctness}}{4}{}\protected@file@percent }
+\newlabel{tab:examples}{{VI}{4}{}{table.6}{}}
+\newlabel{ssec:judge}{{\mbox  {IV-B}2}{4}{}{subsubsection.4.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}2}Judge Agreement}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Inter-Judge Agreement (All 174 Answers)}}{4}{}\protected@file@percent }
+\newlabel{tab:judge}{{VII}{4}{}{table.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}3}By Document Section}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Level-1 Rubric (Correctness, Grounding) by Document Section}}{4}{}\protected@file@percent }
+\newlabel{tab:rubricsub}{{VIII}{4}{}{table.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Document Grounding and Citation}{4}{}\protected@file@percent }
 \bibcite{polrag}{1}
 \bibcite{rag}{2}
 \bibcite{halluc}{3}
 \bibcite{bm25}{4}
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Level-1 Answer Similarity (AnsSim) by Document Section}}{5}{}\protected@file@percent }
+\newlabel{tab:e2esub}{{IX}{5}{}{table.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces Example Answers at High and Low Grounding}}{5}{}\protected@file@percent }
+\newlabel{tab:exgrnd}{{X}{5}{}{table.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Latency}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Bilingual Fidelity and Compliance}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {XI}{\ignorespaces Example Answers at High and Low Bilingual Fidelity}}{5}{}\protected@file@percent }
+\newlabel{tab:exbil}{{XI}{5}{}{table.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {XII}{\ignorespaces Example Answers at High and Low Prompt Compliance}}{5}{}\protected@file@percent }
+\newlabel{tab:excomp}{{XII}{5}{}{table.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}\textcolor {red}{Conclusion and Future work}}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{5}{}\protected@file@percent }
 \bibcite{dpr}{5}
 \bibcite{rrf}{6}
 \bibcite{graphrag}{7}
 \bibcite{nougat}{8}
-\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Example Answers at High and Low Correctness}}{4}{}\protected@file@percent }
-\newlabel{tab:examples}{{V}{4}{}{table.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Document Grounding and Citation}{4}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Example Answers at High and Low Grounding}}{4}{}\protected@file@percent }
-\newlabel{tab:exgrnd}{{VI}{4}{}{table.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Latency}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}\textcolor {red}{Bilingual Fidelity and Compliance}}{4}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Example Answers at High and Low Prompt Compliance}}{4}{}\protected@file@percent }
-\newlabel{tab:excomp}{{VII}{4}{}{table.7}{}}
-\@writefile{toc}{\contentsline {section}{References}{4}{}\protected@file@percent }
-\gdef \@abspage@last{4}
+\gdef \@abspage@last{6}

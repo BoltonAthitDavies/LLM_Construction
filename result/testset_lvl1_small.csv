@@ -1,0 +1,137 @@
+﻿Rainbow Group,Category,sub Category,Question,Answer,Page,predicted_keyword_Rainbow Group,predicted_keyword_Category,predicted_keyword_Answer,predicted_keyword_Page,predicted_keyword_answer_model,predicted_keyword_raw_answer,predicted_keyword_PageRecall,predicted_keyword_PagePrec,predicted_keyword_Hit,predicted_keyword_AnsSim,predicted_vector_Rainbow Group,predicted_vector_Category,predicted_vector_Answer,predicted_vector_Page,predicted_vector_answer_model,predicted_vector_raw_answer,predicted_vector_PageRecall,predicted_vector_PagePrec,predicted_vector_Hit,predicted_vector_AnsSim,predicted_fused_Rainbow Group,predicted_fused_Category,predicted_fused_Answer,predicted_fused_Page,predicted_fused_answer_model,predicted_fused_raw_answer,predicted_fused_PageRecall,predicted_fused_PagePrec,predicted_fused_Hit,predicted_fused_AnsSim,compute_time_s,claude_fused_eng,claude_fused_grounding
+ Construction-Related, Repair Method,Guideline for Repair,เกณฑ์การซ่อมแซมรอยร้าว (Crack Repair) สำหรับรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar คืออะไร,ต้องมีความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3) และมีความลึกมากกว่า 15 มม.,3,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar มีดังนี้:
+*   ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3 มม.)
+*   ความลึกของรอยร้าวมากกว่า 15 มม. (Depth > 15 มม.)","10, 3, 7, 52, 47",gemini-2.5-flash,"Page: 3, 10
+Answer: เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar มีดังนี้:
+*   ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3 มม.)
+*   ความลึกของรอยร้าวมากกว่า 15 มม. (Depth > 15 มม.)",1.0,0.2,1,0.8211,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมรอยร้าว (Crack Repair) สำหรับรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar มีดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, Table 1):
+*   ความกว้าง A (A(mm.)): มากกว่า 0.1 mm แต่น้อยกว่า 0.3 mm (0.1 < A < 0.3)
+*   ความกว้าง B (B(mm.)): มากกว่า 0.3 mm แต่น้อยกว่าหรือเท่ากับ 0.5 mm (0.3 < B ≤ 0.5)
+*   ความลึก (Depth): มากกว่า 15 mm (Depth > 15)","3, 10, 115, 114, 25",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์การซ่อมแซมรอยร้าว (Crack Repair) สำหรับรอยร้าวแบบ Hard Crack ที่ต้องซ่อมแซมด้วย Cementitious Mortar มีดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, Table 1):
+*   ความกว้าง A (A(mm.)): มากกว่า 0.1 mm แต่น้อยกว่า 0.3 mm (0.1 < A < 0.3)
+*   ความกว้าง B (B(mm.)): มากกว่า 0.3 mm แต่น้อยกว่าหรือเท่ากับ 0.5 mm (0.3 < B ≤ 0.5)
+*   ความลึก (Depth): มากกว่า 15 mm (Depth > 15)",1.0,0.2,1,0.8195,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ด้วย Cementitious Mortar คือ:
+*   ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3)
+*   ความลึกของรอยร้าว (Depth) มากกว่า 15 มม.
+
+(อ้างอิง: Chapter: Guildline For Repair, Page: 3)","10, 3, 7, 115, 52",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์การซ่อมแซมรอยร้าวแบบ Hard Crack ด้วย Cementitious Mortar คือ:
+*   ความกว้างของรอยร้าว (A) มากกว่า 0.1 มม. แต่น้อยกว่า 0.3 มม. (0.1 < A < 0.3)
+*   ความลึกของรอยร้าว (Depth) มากกว่า 15 มม.
+
+(อ้างอิง: Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.8192,11.46,39,27
+ Construction-Related, Material,Repair with Epoxy Resin,อัตราส่วนผสม (Mixing Ratio) ของวัสดุ Sikadur 52TH คือเท่าใด,อัตราส่วนผสมคือ วัสดุ A : วัสดุ B = 2 : 1,17,Construction-Related,Material,"อัตราส่วนผสมของวัสดุ Sikadur 52TH คือ วัสดุ A จำนวน 2 ส่วน และ วัสดุ B จำนวน 1 ส่วน (Chapter: Repair With Epoxy Resin, Page: 17).","60, 17, 58, 55",gemini-2.5-flash,"Page: 17
+Answer: อัตราส่วนผสมของวัสดุ Sikadur 52TH คือ วัสดุ A จำนวน 2 ส่วน และ วัสดุ B จำนวน 1 ส่วน (Chapter: Repair With Epoxy Resin, Page: 17).",1.0,0.25,1,0.7748,Construction-Related,Material,"อัตราส่วนผสมของวัสดุ Sikadur 52TH โดยน้ำหนักและโดยปริมาตรคือ ส่วนผสม A : ส่วนผสม B = 2 : 1 (Chapter: Materials Data Sheet, Page: 61).","60, 58, 61, 59, 55",gemini-2.5-flash,"Page: 61
+Answer: อัตราส่วนผสมของวัสดุ Sikadur 52TH โดยน้ำหนักและโดยปริมาตรคือ ส่วนผสม A : ส่วนผสม B = 2 : 1 (Chapter: Materials Data Sheet, Page: 61).",0.0,0.0,0,0.8037,Construction-Related,Material,"อัตราส่วนผสมของวัสดุ Sikadur 52TH คือ วัสดุ A: วัสดุ B = 2:1 (Chapter: Repair With Epoxy Resin, Page: 17).","60, 58, 55, 17",gemini-2.5-flash,"Page: 17
+Answer: อัตราส่วนผสมของวัสดุ Sikadur 52TH คือ วัสดุ A: วัสดุ B = 2:1 (Chapter: Repair With Epoxy Resin, Page: 17).",1.0,0.25,1,0.7957,8.79,39,27
+ Construction-Related, Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมากคืออะไร,ให้ทำการเปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด แล้วขนย้ายออกจากจุดที่รั่วไหล จากนั้นให้กวาดวัสดุที่รั่วไหลกองรวมกัน แล้วใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย แล้วจึงทำการตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี,136,Construction-Related,Material,ข้อมูลที่ให้มาไม่มีรายละเอียดเพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมาก,unknown,gemini-2.5-flash,"Page:
+Answer: ข้อมูลที่ให้มาไม่มีรายละเอียดเพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมาก",0.0,0.0,0,0.7037,Construction-Related,Human Risk,"มาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมาก (หากบรรจุภัณฑ์ฉีกขาด จนทำให้วัสดุรั่วไหลจำนวนมาก) มีดังนี้:
+1. เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2. ขนย้ายออกจากจุดที่รั่วไหล
+3. กวาดวัสดุที่รั่วไหลกองรวมกัน
+4. ใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5. ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี
+
+(Ref: Chapter: Preventative Measures And Revise Environment Impact, Page: 136)","136, 138, 135, 137",gemini-2.5-flash,"Page: 136
+Answer: มาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมาก (หากบรรจุภัณฑ์ฉีกขาด จนทำให้วัสดุรั่วไหลจำนวนมาก) มีดังนี้:
+1. เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2. ขนย้ายออกจากจุดที่รั่วไหล
+3. กวาดวัสดุที่รั่วไหลกองรวมกัน
+4. ใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5. ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี
+
+(Ref: Chapter: Preventative Measures And Revise Environment Impact, Page: 136)",1.0,0.25,1,0.8653,Construction-Related,Human Risk,"มาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมากคือ:
+1.  ให้เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2.  ขนย้ายออกจากจุดที่รั่วไหล
+3.  กวาดวัสดุที่รั่วไหลกองรวมกัน
+4.  ใช้ผ้าหรือกระสอบคลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5.  ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 136)","136, 138, 135, 137",gemini-2.5-flash,"Page: 136
+Answer: มาตรการป้องกันผลกระทบด้านคุณภาพดินสำหรับวัสดุซ่อมแบบผง กรณีที่มีการรั่วไหลจำนวนมากคือ:
+1.  ให้เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2.  ขนย้ายออกจากจุดที่รั่วไหล
+3.  กวาดวัสดุที่รั่วไหลกองรวมกัน
+4.  ใช้ผ้าหรือกระสอบคลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5.  ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 136)",1.0,0.25,1,0.8538,9.93,39,28
+ Construction-Related, Repair Method,Guideline for Repair,เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar คืออะไร,ขนาดความเสียหายต้องอยู่ในเกณฑ์ดังนี้:- A (mm.): 5-50- B (mm.): 5-50- C (mm.): 5-70,4,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar (ตาม Reference Method RP-TN-03) คือเมื่อความเสียหายมีขนาดดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.","7, 4, 25, 24, 142",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar (ตาม Reference Method RP-TN-03) คือเมื่อความเสียหายมีขนาดดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.",1.0,0.2,1,0.8228,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar คือ เมื่อขนาดของความเสียหายอยู่ในช่วงดังต่อไปนี้ (อ้างอิงจากตาราง 2 Guideline for Spalling Edge Repair):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.","25, 4, 10, 5, 115",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar คือ เมื่อขนาดของความเสียหายอยู่ในช่วงดังต่อไปนี้ (อ้างอิงจากตาราง 2 Guideline for Spalling Edge Repair):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.",1.0,0.2,1,0.8201,Construction-Related,Repair Method,"เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar โดยใช้วิธี RP-TN-03 คือ:
+*   A (mm.): 5-50
+*   B (mm.): 5-50
+*   C (mm.): 5-70
+
+(อ้างอิง: Chapter: Guildline For Repair, Page: 4, Table2 Guideline for Spalling Edge Repair)","25, 4, 7, 10, 24",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การซ่อมแซมสำหรับการแตกบิ่นที่ขอบ (Spalling Edge) ที่ต้องซ่อมด้วย Cementitious Mortar โดยใช้วิธี RP-TN-03 คือ:
+*   A (mm.): 5-50
+*   B (mm.): 5-50
+*   C (mm.): 5-70
+
+(อ้างอิง: Chapter: Guildline For Repair, Page: 4, Table2 Guideline for Spalling Edge Repair)",1.0,0.2,1,0.8073,11.51,39,27
+ Construction-Related, Repair Method,Voids and Blowholes Repair (High Strength Mortar),ขั้นตอนการเตรียมพื้นผิวสำหรับการซ่อมรูฟองอากาศ (Voids and Blowholes) ด้วย High Strength Mortar ในข้อ 3.1 คืออะไร,ใช้กระดาษทรายขัดขอบรูฟองอากาศเพื่อให้การซ่อมแซมทำได้เต็มพื้นที่,40,Construction-Related,Repair Method,"The provided document context does not contain enough information regarding the surface preparation steps (ขั้นตอนการเตรียมพื้นผิว) for repairing voids and blowholes with High Strength Mortar under ""ข้อ 3.1"". Page 39, which is part of the RP-TN-05 document for this repair method, lists the equipment used but does not detail preparation steps.","38, 39, 6, 7, 52",gemini-2.5-flash,"Page: 39
+Answer: The provided document context does not contain enough information regarding the surface preparation steps (ขั้นตอนการเตรียมพื้นผิว) for repairing voids and blowholes with High Strength Mortar under ""ข้อ 3.1"". Page 39, which is part of the RP-TN-05 document for this repair method, lists the equipment used but does not detail preparation steps.",0.0,0.0,0,0.6912,Construction-Related,Repair Method,"The provided document context does not contain enough information regarding step 3.1 for the surface preparation process for Voids and Blowholes Repair With High Strength Mortar. The available steps for this method start from 3.2 (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 41).","35, 41, 39, 33, 12",gemini-2.5-flash,"Page: N/A
+Answer: The provided document context does not contain enough information regarding step 3.1 for the surface preparation process for Voids and Blowholes Repair With High Strength Mortar. The available steps for this method start from 3.2 (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 41).",0.0,0.0,0,0.6596,Construction-Related,Repair Method,"The provided document context contains information on ""Voids And Blowholes Repair With High Strength Mortar"" (RP-TN-05) on page 39, including the equipment used. However, it does not detail the repair steps (ขั้นตอนในการซ่อมแซม) for this specific method (RP-TN-05). The repair steps, including step 3.1 for cleaning the concrete surface, are provided for ""Voids And Blowholes Repair With Cementitious Mortar"" (RP-TN-04) on page 35, which is a different repair method. Therefore, the context does not contain enough information to answer the question about the preparation steps for High Strength Mortar repair.","39, 6, 33, 38, 35",gemini-2.5-flash,"Page: 39
+Answer: The provided document context contains information on ""Voids And Blowholes Repair With High Strength Mortar"" (RP-TN-05) on page 39, including the equipment used. However, it does not detail the repair steps (ขั้นตอนในการซ่อมแซม) for this specific method (RP-TN-05). The repair steps, including step 3.1 for cleaning the concrete surface, are provided for ""Voids And Blowholes Repair With Cementitious Mortar"" (RP-TN-04) on page 35, which is a different repair method. Therefore, the context does not contain enough information to answer the question about the preparation steps for High Strength Mortar repair.",0.0,0.0,0,0.6566,14.15,6,16
+ Construction-Related, Material,Material Data Sheet,กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือเท่าใด,"60 MPa (7,300 psi)",115,Construction-Related,Material,กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือ 60 MPa.,"114, 113, 115, 8",gemini-2.5-flash,"Page: 114, 115
+Answer: กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือ 60 MPa.",1.0,0.25,1,0.6764,Construction-Related,Material,กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือ 60 MPa.,"114, 113, 115, 119",gemini-2.5-flash,"Page: 114
+Answer: กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือ 60 MPa.",1.0,0.25,1,0.6764,Construction-Related,Material,"กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือ 60 MPa (Chapter: Materials Data Sheet, Page: 114).","114, 113, 115",gemini-2.5-flash,"Page: 114
+Answer: กำลังอัด (Compressive Strength) ของ Bee Brand No. 135/135F ที่อายุ 28 วัน คือ 60 MPa (Chapter: Materials Data Sheet, Page: 114).",1.0,0.3333,1,0.6716,8.95,31,25
+ Construction-Related, Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการป้องกันผลกระทบด้านคุณภาพน้ำ สำหรับวัสดุซ่อมแบบของเหลว ในกรณีปนเปื้อนในท่อระบายน้ำเสีย คืออะไร,แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้ ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด และให้กำหนดตัวผู้ที่สามารถใช้วัสดุซ่อมแบบเหลวได้,137,Construction-Related,Material,ข้อมูลที่ให้มาไม่มีรายละเอียดเพียงพอที่จะตอบคำถามนี้,unknown,gemini-2.5-flash,"Page:
+Answer: ข้อมูลที่ให้มาไม่มีรายละเอียดเพียงพอที่จะตอบคำถามนี้",0.0,0.0,0,0.5412,Construction-Related,Environmental / Preventive Measures,"มาตรการป้องกันผลกระทบด้านคุณภาพน้ำ สำหรับวัสดุซ่อมแบบของเหลว ในกรณีปนเปื้อนในท่อระบายน้ำเสีย มีดังนี้:
+
+*   สำหรับวัสดุซ่อมแบบของเหลวจะต้องแบ่งพื้นที่สำหรับงานซ่อมแซม
+*   ห้ามใช้วัสดุปนเปื้อนในท่อซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+*   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+*   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+*   กำหนดตัวผู้ที่สามารถใช้วัสดุซ่อมแบบเหลวได้
+
+(Chapter: Preventative Measures And Revise Environment Impact, Page: 137)","137, 135, 136, 138",gemini-2.5-flash,"Page: 137
+Answer: มาตรการป้องกันผลกระทบด้านคุณภาพน้ำ สำหรับวัสดุซ่อมแบบของเหลว ในกรณีปนเปื้อนในท่อระบายน้ำเสีย มีดังนี้:
+
+*   สำหรับวัสดุซ่อมแบบของเหลวจะต้องแบ่งพื้นที่สำหรับงานซ่อมแซม
+*   ห้ามใช้วัสดุปนเปื้อนในท่อซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+*   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+*   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+*   กำหนดตัวผู้ที่สามารถใช้วัสดุซ่อมแบบเหลวได้
+
+(Chapter: Preventative Measures And Revise Environment Impact, Page: 137)",1.0,0.25,1,0.8525,Construction-Related,Environmental / Preventive Measures,"มาตรการป้องกันผลกระทบด้านคุณภาพน้ำ สำหรับวัสดุซ่อมแบบของเหลว ในกรณีปนเปื้อนในท่อระบายน้ำเสีย มีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 137):
+
+*   แบ่งพื้นที่สำหรับงานซ่อมแซม
+*   ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+*   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+*   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+*   กำหนดตัวผู้ที่สามารถใช้วัสดุซ่อมแบบเหลวได้","137, 135, 136, 138",gemini-2.5-flash,"Page: 137
+Answer: มาตรการป้องกันผลกระทบด้านคุณภาพน้ำ สำหรับวัสดุซ่อมแบบของเหลว ในกรณีปนเปื้อนในท่อระบายน้ำเสีย มีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 137):
+
+*   แบ่งพื้นที่สำหรับงานซ่อมแซม
+*   ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+*   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+*   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+*   กำหนดตัวผู้ที่สามารถใช้วัสดุซ่อมแบบเหลวได้",1.0,0.25,1,0.8562,10.58,39,28
+ Construction-Related, Repair Method,Repair with Epoxy Resin,ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของร่องที่ต้องเซาะ (V-shape) คือเท่าใด,ความกว้างบริเวณปากร่องประมาณ 3-5 mm.,19,Construction-Related,Repair Method,"ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของร่องที่ต้องเซาะ (V-shape) คือประมาณ 3-5 มิลลิเมตร (Chapter: Repair With Epoxy Resin, Page: 19)","16, 15, 71, 78, 19",gemini-2.5-flash,"Page: 19
+Answer: ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของร่องที่ต้องเซาะ (V-shape) คือประมาณ 3-5 มิลลิเมตร (Chapter: Repair With Epoxy Resin, Page: 19)",1.0,0.2,1,0.7503,Construction-Related,Repair Method,"ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของปากร่องที่ต้องเซาะ (V-shape) คือประมาณ 3-5 มม. (Chapter: Repair With Epoxy Resin, Page: 19)","16, 20, 19, 3, 10",gemini-2.5-flash,"Page: 19
+Answer: ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของปากร่องที่ต้องเซาะ (V-shape) คือประมาณ 3-5 มม. (Chapter: Repair With Epoxy Resin, Page: 19)",1.0,0.2,1,0.7619,Construction-Related,Repair Method,"ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของร่องที่ต้องเซาะ (V-shape) คือประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)","16, 19, 3, 15, 20",gemini-2.5-flash,"Page: 19
+Answer: ในการซ่อมแซมรอยร้าวด้วย Epoxy Resin ขนาดความกว้างของร่องที่ต้องเซาะ (V-shape) คือประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)",1.0,0.2,1,0.7611,7.68,38,27
+ Non-Construction Questions, General / Admin,Guideline for Repair,บริษัทผู้รับเหมา (Contractor) ที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือบริษัทใด,บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน) (SINO-THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED),1,Construction-Related,Repair Method,"บริษัทผู้รับเหมา (Contractor) ที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).","142, 140, 141, 63, 97",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: บริษัทผู้รับเหมา (Contractor) ที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).",0.0,0.0,0,0.771,Construction-Related,Repair Method,บริษัทผู้รับเหมาที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือ บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน) หรือ SINO-THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED,"139, 9, 2, 28, 40",gemini-2.5-flash,"Page: 139, 9, 2, 28, 40
+Answer: บริษัทผู้รับเหมาที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือ บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน) หรือ SINO-THAI ENGINEERING & CONSTRUCTION PUBLIC COMPANY LIMITED",0.0,0.0,0,0.8364,Construction-Related,Repair Method,"บริษัทผู้รับเหมา (Contractor) ที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)) (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).","142, 139, 140, 9, 141",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: บริษัทผู้รับเหมา (Contractor) ที่ดำเนินการซ่อมแซมชิ้นส่วนอุโมงค์คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)) (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).",0.0,0.0,0,0.7809,9.54,38,16
+ Construction-Related, Human Risk,Risk Assessment in Repair Working,ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับใด,"HCR = 3, PR = 3, RF = 9 (High Risk)",121,Construction-Related,Human Risk,"ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับ ""High Risk"" (ความเสี่ยงสูง) โดยมีค่า HCR = 3, PR = 3 และ RF = 9 (อ้างอิง ตารางที่ 1 ใน Chapter: Risk Assessment In Repair Working, Page: 121 และ RISK FACTOR MATRIX ใน Chapter: Risk Assessment In Repair Working, Page: 123).","121, 122, 123, 120",gemini-2.5-flash,"Page: 121, 123
+Answer: ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับ ""High Risk"" (ความเสี่ยงสูง) โดยมีค่า HCR = 3, PR = 3 และ RF = 9 (อ้างอิง ตารางที่ 1 ใน Chapter: Risk Assessment In Repair Working, Page: 121 และ RISK FACTOR MATRIX ใน Chapter: Risk Assessment In Repair Working, Page: 123).",1.0,0.25,1,0.7594,Construction-Related,Human Risk,"ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับสูง (High Risk) เนื่องจากมีค่า Risk Factor (RF) เท่ากับ 9 ซึ่งอยู่ในช่วง 8-16 ตามตารางประเมินความเสี่ยง (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121).","121, 122, 125, 130",gemini-2.5-flash,"Page: 121
+Answer: ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับสูง (High Risk) เนื่องจากมีค่า Risk Factor (RF) เท่ากับ 9 ซึ่งอยู่ในช่วง 8-16 ตามตารางประเมินความเสี่ยง (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121).",1.0,0.25,1,0.7088,Construction-Related,Human Risk,"ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับสูง (High Risk) โดยมีค่า RF เท่ากับ 9 (Chapter: Risk Assessment In Repair Working, Page: 121).","121, 122, 123, 125",gemini-2.5-flash,"Page: 121
+Answer: ระดับความเสี่ยง (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้ หรืออักเสบ อยู่ในระดับสูง (High Risk) โดยมีค่า RF เท่ากับ 9 (Chapter: Risk Assessment In Repair Working, Page: 121).",1.0,0.25,1,0.699,9.51,28,24
+ Non-Construction Questions, General / Admin,Preventative Measures and Environmental Impact,วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือวันที่เท่าใด,14/2/2017,135,Construction-Related,Environmental / Preventive Measures,"วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือ 14/2/2017 (Chapter: Preventative Measures And Revise Environment Impact, Page: 135, 136, 137, 138).","136, 135, 138, 137, 134",gemini-2.5-flash,"Page: 135, 136, 137, 138
+Answer: วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือ 14/2/2017 (Chapter: Preventative Measures And Revise Environment Impact, Page: 135, 136, 137, 138).",1.0,0.2,1,0.66,Construction-Related,Environmental / Preventive Measures,"วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือ 14/2/2017 (Chapter: Preventative Measures And Revise Environment Impact, Page: 135, 136, 138).","136, 135, 138, 134",gemini-2.5-flash,"Page: 135, 136, 138
+Answer: วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือ 14/2/2017 (Chapter: Preventative Measures And Revise Environment Impact, Page: 135, 136, 138).",1.0,0.25,1,0.6724,Construction-Related,Environmental / Preventive Measures,"วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือ 14/2/2017 (Chapter: Preventative Measures And Revise Environment Impact, Page: 136).","136, 135, 138, 134",gemini-2.5-flash,"Page: 136
+Answer: วันที่ (Date) ของเอกสาร EV-TN-01 Issue 1 คือ 14/2/2017 (Chapter: Preventative Measures And Revise Environment Impact, Page: 136).",1.0,0.25,1,0.6784,9.76,38,26

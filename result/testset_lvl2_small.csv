@@ -1,0 +1,446 @@
+﻿Rainbow Group,Category,sub Category,Question,Answer,Page,predicted_keyword_Rainbow Group,predicted_keyword_Category,predicted_keyword_Answer,predicted_keyword_Page,predicted_keyword_answer_model,predicted_keyword_raw_answer,predicted_keyword_PageRecall,predicted_keyword_PagePrec,predicted_keyword_Hit,predicted_keyword_AnsSim,predicted_vector_Rainbow Group,predicted_vector_Category,predicted_vector_Answer,predicted_vector_Page,predicted_vector_answer_model,predicted_vector_raw_answer,predicted_vector_PageRecall,predicted_vector_PagePrec,predicted_vector_Hit,predicted_vector_AnsSim,predicted_fused_Rainbow Group,predicted_fused_Category,predicted_fused_Answer,predicted_fused_Page,predicted_fused_answer_model,predicted_fused_raw_answer,predicted_fused_PageRecall,predicted_fused_PagePrec,predicted_fused_Hit,predicted_fused_AnsSim,compute_time_s,claude_fused_eng,claude_fused_grounding
+ Construction-Related, Repair Method / Material / Environmental,Guideline for Repair / Preventative Measures and Environmental Impact,Question (TH) :ในการซ่อมแซมรูฟองอากาศ (Voids) ที่มีขนาดความกว้าง 5 มม. และลึก 5 มม. โดยใช้วัสดุ Sika Skim Coat ผู้ปฏิบัติงานต้องปฏิบัติตามมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภทนี้อย่างไร,Answer (TH) :1. การเลือกวิธีซ่อม: รูฟองอากาศขนาดกว้างและลึก ≤ 10 มม. ให้ซ่อมด้วย Cementitious Mortar (RP-TN-04)2. มาตรการสิ่งแวดล้อม (สำหรับวัสดุซ่อมแบบผง - Sika Skim Coat):   - ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก   - ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด   - แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้   - หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่ปิดมิดชิดได้," 6, 8, 135",Construction-Related,Environmental / Preventive Measures,จากเอกสารที่ให้มา ไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุ Sika Skim Coat,"46, 102, 8, 45",gemini-2.5-flash,"Page: 45, 46
+Answer: จากเอกสารที่ให้มา ไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุ Sika Skim Coat",0.3333,0.25,1,0.7222,Construction-Related,Human Risk,"ในการซ่อมแซมรูฟองอากาศโดยใช้วัสดุ Sika Skim Coat ซึ่งเป็นวัสดุซ่อมแบบผง ผู้ปฏิบัติงานต้องปฏิบัติตามมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมด้านคุณภาพน้ำ ดังนี้:
+
+1.  **สำหรับการปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   **มาตรการป้องกัน:**
+        *   แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้ ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   **วิธีการแก้ไขหากเกิดการปนเปื้อน:**
+        *   ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+
+2.  **สำหรับการปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   **มาตรการป้องกัน:**
+        *   จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   จัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อยน้ำออกจากโรงงาน (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   **วิธีการแก้ไขหากเกิดการปนเปื้อน:**
+        *   แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)","46, 135, 125, 137, 33",gemini-2.5-flash,"Page: 135
+Answer: ในการซ่อมแซมรูฟองอากาศโดยใช้วัสดุ Sika Skim Coat ซึ่งเป็นวัสดุซ่อมแบบผง ผู้ปฏิบัติงานต้องปฏิบัติตามมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมด้านคุณภาพน้ำ ดังนี้:
+
+1.  **สำหรับการปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   **มาตรการป้องกัน:**
+        *   แบ่งพื้นที่สำหรับงานซ่อมแซม ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้ ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   **วิธีการแก้ไขหากเกิดการปนเปื้อน:**
+        *   ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+
+2.  **สำหรับการปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   **มาตรการป้องกัน:**
+        *   จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+        *   จัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อยน้ำออกจากโรงงาน (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+    *   **วิธีการแก้ไขหากเกิดการปนเปื้อน:**
+        *   แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)",0.3333,0.2,1,0.8411,Construction-Related,Human Risk,"ในการซ่อมแซมโดยใช้วัสดุ Sika Skim Coat ผู้ปฏิบัติงานต้องปฏิบัติตามมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภทผง ดังนี้ (อ้างอิง Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+
+1.  **มาตรการป้องกันผลกระทบเมื่อวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   **มาตรการการป้องกันผลกระทบ:**
+        *   แบ่งพื้นที่สำหรับงานซ่อมแซม
+        *   ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+        *   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+        *   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+    *   **วิธีการแก้ไข (หากเกิดการปนเปื้อน):**
+        *   ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+        *   ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+        *   หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+
+2.  **มาตรการป้องกันผลกระทบเมื่อวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   **มาตรการการป้องกันผลกระทบ:**
+        *   จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน
+        *   จัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อย
+    *   **วิธีการแก้ไข (หากเกิดการปนเปื้อน):**
+        *   แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง","46, 45, 102, 135",gemini-2.5-flash,"Page: 135
+Answer:ในการซ่อมแซมโดยใช้วัสดุ Sika Skim Coat ผู้ปฏิบัติงานต้องปฏิบัติตามมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมด้านคุณภาพน้ำสำหรับวัสดุประเภทผง ดังนี้ (อ้างอิง Chapter: Preventative Measures And Revise Environment Impact, Page: 135)
+
+1.  **มาตรการป้องกันผลกระทบเมื่อวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสีย:**
+    *   **มาตรการการป้องกันผลกระทบ:**
+        *   แบ่งพื้นที่สำหรับงานซ่อมแซม
+        *   ห้ามใช้วัสดุซ่อมนอกพื้นที่ที่จัดเตรียมไว้โดยเด็ดขาด
+        *   หากบรรจุภัณฑ์ฉีกขาด ให้เปลี่ยนบรรจุภัณฑ์ใหม่ หรือภาชนะที่สามารถปิดมิดชิดได้
+        *   ห้ามนำบรรจุภัณฑ์เก่ามาใช้โดยเด็ดขาด
+    *   **วิธีการแก้ไข (หากเกิดการปนเปื้อน):**
+        *   ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+        *   ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+        *   หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที
+
+2.  **มาตรการป้องกันผลกระทบเมื่อวัสดุซ่อมแบบผงปนเปื้อนในแหล่งน้ำธรรมชาติ:**
+    *   **มาตรการการป้องกันผลกระทบ:**
+        *   จัดพื้นที่สำหรับงานซ่อมแซม ให้อยู่ห่างจากแหล่งน้ำธรรมชาติ เพื่อป้องกันการปนเปื้อน
+        *   จัดให้มีบ่อพักน้ำและบ่อบำบัดก่อนปล่อย
+    *   **วิธีการแก้ไข (หากเกิดการปนเปื้อน):**
+        *   แจ้งหน่วยงานของรัฐที่ดูแลเรื่องสิ่งแวดล้อมทันที เนื่องจากวัสดุซ่อมดังกล่าวก่อให้เกิดผลกระทบต่อสิ่งมีชีวิตธรรมชาติโดยตรง",0.3333,0.25,1,0.8299,30.21,28,22
+ Construction-Related, Repair Method / Material / Human Risk,Material Safety Data,Question (TH) :หากช่างซ่อมบำรุงเผลอกลืนวัสดุ Sikadur 52 TH (Part B) ในระหว่างการทำงานซ่อมแซมรอยร้าว ตามข้อมูลความปลอดภัยของวัสดุ (Material Safety Data) จะเกิดผลกระทบอย่างไรและมีวิธีปฐมพยาบาลเบื้องต้นอย่างไร,Answer (TH) :1. ผลกระทบ: อาจเป็นอันตรายถึงตายได้ (ทำให้ผิวหนังไหม้อย่างรุนแรงเมื่อสัมผัส และเป็นอันตรายเมื่อกลืน)2. การปฐมพยาบาล:   - บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก   - ห้ามทำให้อาเจียนโดยเด็ดขาด   - พาไปพบแพทย์โดยทันที, 130,Construction-Related,Human Risk,"หากช่างซ่อมบำรุงเผลอกลืนวัสดุ Sikadur 52 TH (Part B) ในระหว่างการทำงานซ่อมแซมรอยร้าว ตามข้อมูลความปลอดภัยของวัสดุ (Material Safety Data) จะเกิดผลกระทบและมีวิธีปฐมพยาบาลเบื้องต้นดังนี้ (Chapter: Materials Safety Data, Page: 130):
+
+**ผลกระทบ:**
+*   อาจเป็นอันตรายถึงตายได้
+
+**วิธีปฐมพยาบาลเบื้องต้น:**
+1.  บ้วนปาก
+2.  ดื่มน้ำสะอาดตามเป็นปริมาณมาก
+3.  ห้ามทำให้อาเจียนโดยเด็ดขาด
+4.  พาไปพบแพทย์โดยทันที","129, 130, 8, 125, 137",gemini-2.5-flash,"Page: 130
+Answer:หากช่างซ่อมบำรุงเผลอกลืนวัสดุ Sikadur 52 TH (Part B) ในระหว่างการทำงานซ่อมแซมรอยร้าว ตามข้อมูลความปลอดภัยของวัสดุ (Material Safety Data) จะเกิดผลกระทบและมีวิธีปฐมพยาบาลเบื้องต้นดังนี้ (Chapter: Materials Safety Data, Page: 130):
+
+**ผลกระทบ:**
+*   อาจเป็นอันตรายถึงตายได้
+
+**วิธีปฐมพยาบาลเบื้องต้น:**
+1.  บ้วนปาก
+2.  ดื่มน้ำสะอาดตามเป็นปริมาณมาก
+3.  ห้ามทำให้อาเจียนโดยเด็ดขาด
+4.  พาไปพบแพทย์โดยทันที",1.0,0.2,1,0.7818,Construction-Related,Human Risk,"หากช่างซ่อมบำรุงเผลอกลืนวัสดุ Sikadur 52 TH (Part B) อาจเป็นอันตรายถึงตายได้ (Chapter: Materials Safety Data, Page: 130)
+
+มีวิธีปฐมพยาบาลเบื้องต้นดังนี้:
+1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก (Chapter: Materials Safety Data, Page: 130)
+2.  ห้ามทำให้อาเจียนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 130)
+3.  แล้วพาไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 130)","127, 129, 125, 130, 126",gemini-2.5-flash,"Page: 130
+Answer: หากช่างซ่อมบำรุงเผลอกลืนวัสดุ Sikadur 52 TH (Part B) อาจเป็นอันตรายถึงตายได้ (Chapter: Materials Safety Data, Page: 130)
+
+มีวิธีปฐมพยาบาลเบื้องต้นดังนี้:
+1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก (Chapter: Materials Safety Data, Page: 130)
+2.  ห้ามทำให้อาเจียนโดยเด็ดขาด (Chapter: Materials Safety Data, Page: 130)
+3.  แล้วพาไปพบแพทย์โดยทันที (Chapter: Materials Safety Data, Page: 130)",1.0,0.2,1,0.7458,Construction-Related,Human Risk,"หากช่างซ่อมบำรุงเผลอกลืนวัสดุ Sikadur 52 TH (Part B) ในระหว่างการทำงานซ่อมแซมรอยร้าว จะเกิดผลกระทบและมีวิธีปฐมพยาบาลเบื้องต้นดังนี้ (Chapter: Materials Safety Data, Page: 130):
+
+**ผลกระทบ:**
+*   อาจเป็นอันตรายถึงตายได้
+
+**การปฐมพยาบาลเบื้องต้น:**
+1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก
+2.  ห้ามทำให้อาเจียนโดยเด็ดขาด
+3.  พาไปพบแพทย์โดยทันที","129, 130, 125, 126, 127",gemini-2.5-flash,"Page: 130
+Answer: หากช่างซ่อมบำรุงเผลอกลืนวัสดุ Sikadur 52 TH (Part B) ในระหว่างการทำงานซ่อมแซมรอยร้าว จะเกิดผลกระทบและมีวิธีปฐมพยาบาลเบื้องต้นดังนี้ (Chapter: Materials Safety Data, Page: 130):
+
+**ผลกระทบ:**
+*   อาจเป็นอันตรายถึงตายได้
+
+**การปฐมพยาบาลเบื้องต้น:**
+1.  บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก
+2.  ห้ามทำให้อาเจียนโดยเด็ดขาด
+3.  พาไปพบแพทย์โดยทันที",1.0,0.2,1,0.781,8.93,39,27
+ Construction-Related, Repair Method / Material,Spalling Edge Repair / Material Data Sheet,Question (TH) :ในขั้นตอนการซ่อมแซมรอยแตกบิ่นที่ขอบ (Spalling Edge Repair) ตามวิธี RP-TN-03 ต้องใช้วัสดุเชื่อมประสานคอนกรีต Sikadur 32 TH อัตราส่วนผสมโดยน้ำหนักเป็นเท่าใด และตาม Data Sheet มีค่า Pot Life ที่ 20°C นานเท่าใด,Answer (TH) :1. อัตราส่วนผสม (RP-TN-03): A:B = 2:1 โดยน้ำหนัก2. Pot Life ที่ 20°C (Data Sheet): 40 นาที," 26, 59",Construction-Related,Material,"ในขั้นตอนการซ่อมแซมรอยแตกบิ่นที่ขอบ (Spalling Edge Repair) ตามวิธี RP-TN-03 ต้องใช้วัสดุเชื่อมประสานคอนกรีต Sikadur 32 TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).
+
+สำหรับค่า Pot Life ที่ 20°C ตาม Data Sheet ของ Sikadur 32 TH นั้น ไม่ปรากฏข้อมูลในเอกสารที่ให้มา","4, 29, 7, 26, 24",gemini-2.5-flash,"Page: 26, 29
+Answer: ในขั้นตอนการซ่อมแซมรอยแตกบิ่นที่ขอบ (Spalling Edge Repair) ตามวิธี RP-TN-03 ต้องใช้วัสดุเชื่อมประสานคอนกรีต Sikadur 32 TH ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).
+
+สำหรับค่า Pot Life ที่ 20°C ตาม Data Sheet ของ Sikadur 32 TH นั้น ไม่ปรากฏข้อมูลในเอกสารที่ให้มา",0.5,0.2,1,0.8356,Construction-Related,Material,"ตามขั้นตอนการซ่อมแซมรอยแตกบิ่นที่ขอบ (Spalling Edge Repair) ตามวิธี RP-TN-03:
+1.  วัสดุเชื่อมประสานคอนกรีต Sikadur 32 TH มีอัตราส่วนผสมโดยน้ำหนักเป็น A:B = 2:1 (Chapter: Spalling Edge Repair, Page: 26)
+2.  ตาม Data Sheet (ข้อมูลเชิงเทคนิค) ค่า Pot Life ของ Sikadur 32 TH ที่อุณหภูมิ 20°C คือ 60 นาที (Chapter: Materials Data Sheet, Page: 61)","29, 26, 61, 25, 60",gemini-2.5-flash,"Page: 26, 61
+Answer:
+ตามขั้นตอนการซ่อมแซมรอยแตกบิ่นที่ขอบ (Spalling Edge Repair) ตามวิธี RP-TN-03:
+1.  วัสดุเชื่อมประสานคอนกรีต Sikadur 32 TH มีอัตราส่วนผสมโดยน้ำหนักเป็น A:B = 2:1 (Chapter: Spalling Edge Repair, Page: 26)
+2.  ตาม Data Sheet (ข้อมูลเชิงเทคนิค) ค่า Pot Life ของ Sikadur 32 TH ที่อุณหภูมิ 20°C คือ 60 นาที (Chapter: Materials Data Sheet, Page: 61)",0.5,0.2,1,0.8356,Construction-Related,Material,"1.  สำหรับขั้นตอนการซ่อมแซมรอยแตกบิ่นที่ขอบ (Spalling Edge Repair) ตามวิธี RP-TN-03 วัสดุเชื่อมประสานคอนกรีต Sikadur 32 TH ใช้อัตราส่วนผสม A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).
+2.  เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับค่า Pot Life ที่ 20°C ของ Sikadur 32 TH (Chapter: Spalling Edge Repair, Page: 26, 29).","29, 26, 25, 4, 7",gemini-2.5-flash,"Page: 26, 29
+Answer:
+1.  สำหรับขั้นตอนการซ่อมแซมรอยแตกบิ่นที่ขอบ (Spalling Edge Repair) ตามวิธี RP-TN-03 วัสดุเชื่อมประสานคอนกรีต Sikadur 32 TH ใช้อัตราส่วนผสม A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).
+2.  เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับค่า Pot Life ที่ 20°C ของ Sikadur 32 TH (Chapter: Spalling Edge Repair, Page: 26, 29).",0.5,0.2,1,0.8311,11.06,28,21
+ Non-Construction Questions, Documentation / Quality Control,Tunnel Segment Repair Note,"Question (TH) :หากต้องการบันทึกการซ่อมแซมชิ้นส่วนอุโมงค์ประเภท ""Counter Key"" จะต้องใช้แบบฟอร์มหมายเลขใด และในส่วนของการยอมรับ (Acceptance) ต้องมีการลงนามโดยตำแหน่งใดบ้าง",Answer (TH) :1. แบบฟอร์ม: TUNNEL-QCY-RN-412. ผู้ลงนาม:   - Production Engineer   - QC Engineer   - Consultant, 141,Construction-Related,Repair Method,"หากต้องการบันทึกการซ่อมแซมชิ้นส่วนอุโมงค์ประเภท ""Counter Key"" จะต้องใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141)
+
+ในส่วนของการยอมรับ (Acceptance) ต้องมีการลงนามโดยตำแหน่งดังต่อไปนี้:
+*   Production Engineer
+*   QC Engineer
+*   Consultant
+(Chapter: Tunnel SegmentA Repair Note, Page: 141)","141, 142, 140, 8, 59",gemini-2.5-flash,"Page: 141
+Answer: หากต้องการบันทึกการซ่อมแซมชิ้นส่วนอุโมงค์ประเภท ""Counter Key"" จะต้องใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141)
+
+ในส่วนของการยอมรับ (Acceptance) ต้องมีการลงนามโดยตำแหน่งดังต่อไปนี้:
+*   Production Engineer
+*   QC Engineer
+*   Consultant
+(Chapter: Tunnel SegmentA Repair Note, Page: 141)",1.0,0.2,1,0.8612,Construction-Related,Repair Method,"หากต้องการบันทึกการซ่อมแซมชิ้นส่วนอุโมงค์ประเภท ""Counter Key"" จะต้องใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141)
+
+ในส่วนของการยอมรับ (Acceptance) ต้องมีการลงนามโดยตำแหน่งดังต่อไปนี้ (Chapter: Tunnel SegmentA Repair Note, Page: 141):
+*   Production Engineer
+*   QC Engineer
+*   Consultant","141, 142, 140, 40, 2",gemini-2.5-flash,"Page: 141
+Answer: หากต้องการบันทึกการซ่อมแซมชิ้นส่วนอุโมงค์ประเภท ""Counter Key"" จะต้องใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141)
+
+ในส่วนของการยอมรับ (Acceptance) ต้องมีการลงนามโดยตำแหน่งดังต่อไปนี้ (Chapter: Tunnel SegmentA Repair Note, Page: 141):
+*   Production Engineer
+*   QC Engineer
+*   Consultant",1.0,0.2,1,0.8584,Construction-Related,Repair Method,"หากต้องการบันทึกการซ่อมแซมชิ้นส่วนอุโมงค์ประเภท ""Counter Key"" จะต้องใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141)
+
+ในส่วนของการยอมรับ (Acceptance) ต้องมีการลงนามโดยตำแหน่งดังนี้:
+*   Production Engineer
+*   QC Engineer
+*   Consultant
+(Chapter: Tunnel SegmentA Repair Note, Page: 141)","141, 142, 140, 8, 40",gemini-2.5-flash,"Page: 141
+Answer: หากต้องการบันทึกการซ่อมแซมชิ้นส่วนอุโมงค์ประเภท ""Counter Key"" จะต้องใช้แบบฟอร์มหมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141)
+
+ในส่วนของการยอมรับ (Acceptance) ต้องมีการลงนามโดยตำแหน่งดังนี้:
+*   Production Engineer
+*   QC Engineer
+*   Consultant
+(Chapter: Tunnel SegmentA Repair Note, Page: 141)",1.0,0.2,1,0.8598,9.94,40,28
+ Construction-Related, Repair Method / Human Risk,Repair with Cementitious Mortar / Risk Assessment in Repair Working,Question (TH) :ในขั้นตอนการซ่อมแซมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) หากมีการใช้เครื่องเจียรคอนกรีตเพื่อขัดแต่งผิว ตามการประเมินความเสี่ยง (Risk Assessment) มีอันตรายที่อาจเกิดขึ้นอะไรบ้าง และระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) มีค่าเท่าใด,"Answer (TH) :1. อันตราย: ไฟฟ้าดูด, โดนใบเจียรบาด2. ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating): 12 (คำนวณจาก HCR 4 x PR 3)"," 13, 121",Construction-Related,Human Risk,"ตามเอกสารที่ให้มา ไม่ได้ระบุโดยตรงว่าการซ่อมแซมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) มีการใช้เครื่องเจียรคอนกรีตเพื่อขัดแต่งผิว (อ้างอิง Chapter: Guildline For Repair, Page: 7)
+
+อย่างไรก็ตาม หากมีการใช้เครื่องเจียรคอนกรีตในการทำงานซ่อมแซม ตามการประเมินความเสี่ยง (Risk Assessment) มีอันตรายที่อาจเกิดขึ้นและระดับความเสี่ยงเริ่มต้นดังนี้ (อ้างอิง Chapter: Risk Assessment In Repair Working, Page: 121):
+
+**อันตรายที่อาจเกิดขึ้น:**
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค
+
+**ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating):**
+*   HCR = 4
+*   PR = 3
+*   RF = 12","122, 121, 120, 7",gemini-2.5-flash,"Page: 121
+Answer: ตามเอกสารที่ให้มา ไม่ได้ระบุโดยตรงว่าการซ่อมแซมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) มีการใช้เครื่องเจียรคอนกรีตเพื่อขัดแต่งผิว (อ้างอิง Chapter: Guildline For Repair, Page: 7)
+
+อย่างไรก็ตาม หากมีการใช้เครื่องเจียรคอนกรีตในการทำงานซ่อมแซม ตามการประเมินความเสี่ยง (Risk Assessment) มีอันตรายที่อาจเกิดขึ้นและระดับความเสี่ยงเริ่มต้นดังนี้ (อ้างอิง Chapter: Risk Assessment In Repair Working, Page: 121):
+
+**อันตรายที่อาจเกิดขึ้น:**
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค
+
+**ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating):**
+*   HCR = 4
+*   PR = 3
+*   RF = 12",0.5,0.25,1,0.7914,Construction-Related,Human Risk,"ในขั้นตอนการซ่อมแซมรอยร้าวด้วย Cementitious Mortar หากมีการใช้เครื่องเจียรคอนกรีตเพื่อขัดแต่งผิว ตามการประเมินความเสี่ยง มีอันตรายที่อาจเกิดขึ้นดังนี้ (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121):
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค
+
+ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) มีค่าเท่ากับ HCR 4, PR 3, RF 12 (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121).","121, 120, 25, 10, 133",gemini-2.5-flash,"Page: 121
+Answer:ในขั้นตอนการซ่อมแซมรอยร้าวด้วย Cementitious Mortar หากมีการใช้เครื่องเจียรคอนกรีตเพื่อขัดแต่งผิว ตามการประเมินความเสี่ยง มีอันตรายที่อาจเกิดขึ้นดังนี้ (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121):
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค
+
+ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) มีค่าเท่ากับ HCR 4, PR 3, RF 12 (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121).",0.5,0.2,1,0.8202,Construction-Related,Human Risk,"ในขั้นตอนการซ่อมแซมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) หากมีการใช้เครื่องเจียรคอนกรีตเพื่อขัดแต่งผิว ตามการประเมินความเสี่ยง (Risk Assessment) มีอันตรายที่อาจเกิดขึ้นดังนี้ (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121):
+*   **อันตรายจากการใช้เครื่องเจียรคอนกรีต:**
+    *   **เหตุการณ์อันตรายที่อาจเกิดขึ้น:**
+        *   ไฟฟ้าดูด
+        *   โคนใบเจียรมาค
+    *   **ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating):**
+        *   HCR = 4
+        *   PR = 3
+        *   RF = 12","121, 120, 122, 10, 123",gemini-2.5-flash,"Page: 121
+Answer:ในขั้นตอนการซ่อมแซมรอยร้าวด้วย Cementitious Mortar (RP-TN-01) หากมีการใช้เครื่องเจียรคอนกรีตเพื่อขัดแต่งผิว ตามการประเมินความเสี่ยง (Risk Assessment) มีอันตรายที่อาจเกิดขึ้นดังนี้ (อ้างอิงจาก Chapter: Risk Assessment In Repair Working, Page: 121):
+*   **อันตรายจากการใช้เครื่องเจียรคอนกรีต:**
+    *   **เหตุการณ์อันตรายที่อาจเกิดขึ้น:**
+        *   ไฟฟ้าดูด
+        *   โคนใบเจียรมาค
+    *   **ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating):**
+        *   HCR = 4
+        *   PR = 3
+        *   RF = 12",0.5,0.2,1,0.8004,15.21,39,26
+ Construction-Related, Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact,Question (TH) :หากเกิดเหตุเพลิงไหม้ในพื้นที่จัดเก็บวัสดุ Sikadur 41 CF Normal (วัสดุซ่อมแบบของเหลว) ควรใช้อุปกรณ์ดับเพลิงชนิดใดบ้าง และมีข้อห้ามในการใช้อุปกรณ์ดับเพลิงประเภทใดในระยะแรกเพื่อลดอุณหภูมิ,"Answer (TH) :1. อุปกรณ์ดับเพลิงที่ใช้ได้: โฟมดับเพลิงชนิดทนแอลกอฮอล์, ถังดับเพลิงชนิด CO2, ถังดับเพลิงแบบผง2. ข้อห้าม: ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด (ใช้น้ำฉีดลดอุณหภูมิได้หากอยู่ห่าง)"," 137, 138",Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับชนิดของอุปกรณ์ดับเพลิงที่ควรใช้ หรือข้อห้ามในการใช้อุปกรณ์ดับเพลิงในระยะแรกเพื่อลดอุณหภูมิ หากเกิดเหตุเพลิงไหม้ในพื้นที่จัดเก็บวัสดุ Sikadur 41 CF Normal (วัสดุซ่อมแบบของเหลว),"137, 26, 8, 52, 55",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับชนิดของอุปกรณ์ดับเพลิงที่ควรใช้ หรือข้อห้ามในการใช้อุปกรณ์ดับเพลิงในระยะแรกเพื่อลดอุณหภูมิ หากเกิดเหตุเพลิงไหม้ในพื้นที่จัดเก็บวัสดุ Sikadur 41 CF Normal (วัสดุซ่อมแบบของเหลว)",0.5,0.2,1,0.7555,Construction-Related,Material,"หากเกิดเหตุเพลิงไหม้ในพื้นที่จัดเก็บวัสดุ Sikadur 41 CF Normal (วัสดุซ่อมแบบของเหลว) ควรใช้อุปกรณ์ดับเพลิงดังต่อไปนี้:
+*   โฟมดับเพลิงชนิดทนแอลกอฮอล์
+*   ถังดับเพลิงชนิด CO2
+*   ถังดับเพลิงแบบผง
+
+ในระยะแรกเพื่อลดอุณหภูมิ หากถังดับเพลิงหรืออุปกรณ์ดับเพลิงอยู่ห่างจากพื้นที่ สามารถใช้น้ำฉีดได้ แต่มีข้อห้ามในการใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด","127, 128, 126, 129, 138",gemini-2.5-flash,"Page: 138
+Answer: หากเกิดเหตุเพลิงไหม้ในพื้นที่จัดเก็บวัสดุ Sikadur 41 CF Normal (วัสดุซ่อมแบบของเหลว) ควรใช้อุปกรณ์ดับเพลิงดังต่อไปนี้:
+*   โฟมดับเพลิงชนิดทนแอลกอฮอล์
+*   ถังดับเพลิงชนิด CO2
+*   ถังดับเพลิงแบบผง
+
+ในระยะแรกเพื่อลดอุณหภูมิ หากถังดับเพลิงหรืออุปกรณ์ดับเพลิงอยู่ห่างจากพื้นที่ สามารถใช้น้ำฉีดได้ แต่มีข้อห้ามในการใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด",0.5,0.2,1,0.829,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอุปกรณ์ดับเพลิงที่ควรใช้หรือข้อห้ามในการใช้อุปกรณ์ดับเพลิงในกรณีเกิดเพลิงไหม้ในพื้นที่จัดเก็บวัสดุ Sikadur 41 CF Normal,"126, 137, 127, 26, 128",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอุปกรณ์ดับเพลิงที่ควรใช้หรือข้อห้ามในการใช้อุปกรณ์ดับเพลิงในกรณีเกิดเพลิงไหม้ในพื้นที่จัดเก็บวัสดุ Sikadur 41 CF Normal",0.5,0.2,1,0.7356,10.87,5,17
+ Construction-Related, Material / Repair Method,Repair with Cementitious Mortar / Material Approval Document,Question (TH) :วัสดุ Conpatch 300 ได้รับอนุมัติให้ใช้ในงานซ่อมแซมลักษณะใดตามหนังสืออนุมัติ และมีอัตราส่วนผสมปูนต่อน้ำตามคู่มือการซ่อมแซม (RP-TN-01/04) เท่าใด,Answer (TH) :1. ลักษณะงานที่อนุมัติ: ซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีต2. อัตราส่วนผสม: ปูน : น้ำ = 1 : 0.2 โดยน้ำหนัก," 11, 148",Construction-Related,Material,"วัสดุ Conpatch 300 ได้รับอนุมัติให้ใช้ในงานซ่อมแซมลักษณะดังนี้:
+1.  **การซ่อมรอยร้าว (Crack repair)**: ระบุในบทที่ ""Repair With Cementitious Mortar"" (RP-TN-01) (หน้า 12)
+2.  **การซ่อมช่องว่างหรือโพรงอากาศ (Voids or Blowholes repair)**: ระบุในบทที่ ""Voids And Blowholes Repair"" (RP-TN-04) (หน้า 34)
+
+สถานะการใช้งานของ Conpatch 300 คือ ""ได้รับการอนุมัติใช้งาน"" โดยจัดอยู่ในประเภท ""ปูนฉาบซ่อม"" (หน้า 8)
+
+อัตราส่วนผสมปูนต่อน้ำของ Conpatch 300 ตามคู่มือการซ่อมแซม (RP-TN-04) คือ ปูน:น้ำ = 1:0.2 โดยน้ำหนัก (หน้า 34)","7, 8, 26, 34, 12",gemini-2.5-flash,"Page: 8, 12, 34
+Answer:
+วัสดุ Conpatch 300 ได้รับอนุมัติให้ใช้ในงานซ่อมแซมลักษณะดังนี้:
+1.  **การซ่อมรอยร้าว (Crack repair)**: ระบุในบทที่ ""Repair With Cementitious Mortar"" (RP-TN-01) (หน้า 12)
+2.  **การซ่อมช่องว่างหรือโพรงอากาศ (Voids or Blowholes repair)**: ระบุในบทที่ ""Voids And Blowholes Repair"" (RP-TN-04) (หน้า 34)
+
+สถานะการใช้งานของ Conpatch 300 คือ ""ได้รับการอนุมัติใช้งาน"" โดยจัดอยู่ในประเภท ""ปูนฉาบซ่อม"" (หน้า 8)
+
+อัตราส่วนผสมปูนต่อน้ำของ Conpatch 300 ตามคู่มือการซ่อมแซม (RP-TN-04) คือ ปูน:น้ำ = 1:0.2 โดยน้ำหนัก (หน้า 34)",0.0,0.0,0,0.7594,Construction-Related,Material,"สำหรับคำถามเกี่ยวกับประเภทงานซ่อมแซมที่ Conpatch 300 ได้รับอนุมัติให้ใช้ตามหนังสืออนุมัติ:
+เอกสารบริบทมี ""รายงาน"" จากกรมวิทยาศาสตร์บริการ (Chapter: Materials Data Sheet, Page: 67) ซึ่งให้ผลการทดสอบสำหรับ ""Conpatch 300"" อย่างไรก็ตาม รายงานนี้ไม่ได้ระบุอย่างชัดเจนว่า Conpatch 300 ได้รับการอนุมัติสำหรับงานซ่อมแซมประเภทใด
+
+เอกสาร ""Materials Data Sheet"" (Chapter: Materials Data Sheet, Page: 62) อธิบายว่า Conpatch 300 เป็น ""สีทาบางสำหรับซ่อมผิวคอนกรีต"" (Thin Fairing Coat for Concrete Surface Repairs) และใช้ซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. อย่างไรก็ตาม นี่คือการระบุวัตถุประสงค์การใช้งานจากผู้ผลิต ไม่ใช่ ""หนังสืออนุมัติ"" ที่ระบุประเภทงานซ่อมแซมที่ได้รับอนุมัติโดยหน่วยงานอิสระโดยตรง
+
+ดังนั้น เอกสารบริบทไม่มีข้อมูลเพียงพอจาก ""หนังสืออนุมัติ"" ที่ระบุประเภทงานซ่อมแซมที่ Conpatch 300 ได้รับอนุมัติอย่างชัดเจน
+
+สำหรับคำถามเกี่ยวกับอัตราส่วนผสมปูนต่อน้ำ:
+อัตราส่วนผสมสำหรับ Conpatch 300 ตามเอกสาร RP-TN-01 (Chapter: Repair With Cementitious Mortar, Page: 11) คือ ปูน:น้ำ = 1:0.2 โดยน้ำหนัก","62, 12, 11, 64, 67",gemini-2.5-flash,"Page: 11, 62, 67
+Answer:
+สำหรับคำถามเกี่ยวกับประเภทงานซ่อมแซมที่ Conpatch 300 ได้รับอนุมัติให้ใช้ตามหนังสืออนุมัติ:
+เอกสารบริบทมี ""รายงาน"" จากกรมวิทยาศาสตร์บริการ (Chapter: Materials Data Sheet, Page: 67) ซึ่งให้ผลการทดสอบสำหรับ ""Conpatch 300"" อย่างไรก็ตาม รายงานนี้ไม่ได้ระบุอย่างชัดเจนว่า Conpatch 300 ได้รับการอนุมัติสำหรับงานซ่อมแซมประเภทใด
+
+เอกสาร ""Materials Data Sheet"" (Chapter: Materials Data Sheet, Page: 62) อธิบายว่า Conpatch 300 เป็น ""สีทาบางสำหรับซ่อมผิวคอนกรีต"" (Thin Fairing Coat for Concrete Surface Repairs) และใช้ซ่อมแซมความเสียหายของพื้นผิวที่มีความลึก 1-2 มม. อย่างไรก็ตาม นี่คือการระบุวัตถุประสงค์การใช้งานจากผู้ผลิต ไม่ใช่ ""หนังสืออนุมัติ"" ที่ระบุประเภทงานซ่อมแซมที่ได้รับอนุมัติโดยหน่วยงานอิสระโดยตรง
+
+ดังนั้น เอกสารบริบทไม่มีข้อมูลเพียงพอจาก ""หนังสืออนุมัติ"" ที่ระบุประเภทงานซ่อมแซมที่ Conpatch 300 ได้รับอนุมัติอย่างชัดเจน
+
+สำหรับคำถามเกี่ยวกับอัตราส่วนผสมปูนต่อน้ำ:
+อัตราส่วนผสมสำหรับ Conpatch 300 ตามเอกสาร RP-TN-01 (Chapter: Repair With Cementitious Mortar, Page: 11) คือ ปูน:น้ำ = 1:0.2 โดยน้ำหนัก",0.5,0.2,1,0.7576,Construction-Related,Material,"1.  **ลักษณะงานซ่อมแซมที่ได้รับอนุมัติ:**
+    วัสดุ Conpatch 300 ได้รับการอนุมัติให้ใช้งานในประเภท ""ปูนฉาบซ่อม"" (Chapter: Guildline For Repair, Page: 8) ซึ่งเป็นวัสดุฉาบผิวบางสำหรับงานซ่อมแซมผิวคอนกรีต โดยใช้ซ่อมแซมความเสียหายของผิวคอนกรีตที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62)
+
+2.  **อัตราส่วนผสมปูนต่อน้ำตามคู่มือการซ่อมแซม (RP-TN-01/04):**
+    ในคู่มือการซ่อมแซม (RP-TN-01) ระบุให้ ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" (Chapter: Repair With Cementitious Mortar, Page: 12) แต่ไม่ได้ระบุอัตราส่วนผสมที่ชัดเจนในบริบทของเอกสารที่ให้มา นอกจากนี้ เอกสารข้อมูลวัสดุของ Conpatch 300 ก็ระบุให้ ""Mix Conpatch 300 following the instructions on the data sheet"" แต่ไม่ได้แสดงอัตราส่วนผสมปูนต่อน้ำภายในเอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 62) ดังนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมปูนต่อน้ำตามคู่มือการซ่อมแซม (RP-TN-01/04) ได้","12, 8, 28, 7, 62",gemini-2.5-flash,"Page: 8, 12, 62
+Answer:
+1.  **ลักษณะงานซ่อมแซมที่ได้รับอนุมัติ:**
+    วัสดุ Conpatch 300 ได้รับการอนุมัติให้ใช้งานในประเภท ""ปูนฉาบซ่อม"" (Chapter: Guildline For Repair, Page: 8) ซึ่งเป็นวัสดุฉาบผิวบางสำหรับงานซ่อมแซมผิวคอนกรีต โดยใช้ซ่อมแซมความเสียหายของผิวคอนกรีตที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62)
+
+2.  **อัตราส่วนผสมปูนต่อน้ำตามคู่มือการซ่อมแซม (RP-TN-01/04):**
+    ในคู่มือการซ่อมแซม (RP-TN-01) ระบุให้ ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" (Chapter: Repair With Cementitious Mortar, Page: 12) แต่ไม่ได้ระบุอัตราส่วนผสมที่ชัดเจนในบริบทของเอกสารที่ให้มา นอกจากนี้ เอกสารข้อมูลวัสดุของ Conpatch 300 ก็ระบุให้ ""Mix Conpatch 300 following the instructions on the data sheet"" แต่ไม่ได้แสดงอัตราส่วนผสมปูนต่อน้ำภายในเอกสารที่ให้มา (Chapter: Materials Data Sheet, Page: 62) ดังนั้น เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมปูนต่อน้ำตามคู่มือการซ่อมแซม (RP-TN-01/04) ได้",0.0,0.0,0,0.8247,37.43,18,15
+ Construction-Related, Material / Human Risk,Risk Assessment in Repair Working,Question (TH) :ในการใช้งานปูนฉาบแต่งตราผึ้ง 124 ซึ่งเป็นวัสดุแบบผง ความเสี่ยงด้านสุขภาพจากการสูดดมคืออะไร และวิธีกรลดความเสี่ยงที่ระบุไว้ใน Risk Assessment คืออะไร,"Answer (TH) :1. ความเสี่ยงจากการสูดดม: ระคายเคืองระบบทางเดินหายใจ, วิงเวียนศีรษะ, หมดสติ2. วิธีการลดความเสี่ยง:   - กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผง หรือสารระเหย   - สวมหน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี   - กำหนดพื้นที่การทำงาน   - ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว", 121,Construction-Related,Human Risk,"จากเอกสารที่ให้มา ปูนฉาบแต่งตราผึ้ง 124 จัดอยู่ในประเภทปูนฉาบซ่อม (Chapter: Guildline For Repair, Page: 8) และหากเป็นวัสดุแบบผง การสูดดมสารเคมีดังกล่าวอาจก่อให้เกิดความเสี่ยงด้านสุขภาพดังนี้ (Chapter: Risk Assessment In Repair Working, Page: 121):
+*   ระคายเคืองระบบทางเดินหายใจ
+*   วิงเวียนศีรษะ
+*   หมดสติ
+
+วิธีการลดความเสี่ยงที่ระบุไว้ใน Risk Assessment สำหรับอันตรายจากการสูดดมสารเคมี (ที่เป็นฝุ่นผงหรือสารระเหย) มีดังนี้ (Chapter: Risk Assessment In Repair Working, Page: 121):
+*   อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+*   จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+*   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย
+*   จัดหาหน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี
+*   กำหนดพื้นที่การทำงาน
+*   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว","122, 120, 121, 8, 123",gemini-2.5-flash,"Page: 8, 121
+Answer: จากเอกสารที่ให้มา ปูนฉาบแต่งตราผึ้ง 124 จัดอยู่ในประเภทปูนฉาบซ่อม (Chapter: Guildline For Repair, Page: 8) และหากเป็นวัสดุแบบผง การสูดดมสารเคมีดังกล่าวอาจก่อให้เกิดความเสี่ยงด้านสุขภาพดังนี้ (Chapter: Risk Assessment In Repair Working, Page: 121):
+*   ระคายเคืองระบบทางเดินหายใจ
+*   วิงเวียนศีรษะ
+*   หมดสติ
+
+วิธีการลดความเสี่ยงที่ระบุไว้ใน Risk Assessment สำหรับอันตรายจากการสูดดมสารเคมี (ที่เป็นฝุ่นผงหรือสารระเหย) มีดังนี้ (Chapter: Risk Assessment In Repair Working, Page: 121):
+*   อบรมวิธีการปฐมพยาบาลผู้ป่วยที่สัมผัสสารเคมีเบื้องต้น
+*   จัดเตรียมอุปกรณ์ในการปฐมพยาบาล
+*   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย
+*   จัดหาหน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี
+*   กำหนดพื้นที่การทำงาน
+*   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว",1.0,0.2,1,0.8285,Construction-Related,Human Risk,"ในการใช้งานปูนฉาบแต่งตราผึ้ง 124 ซึ่งเป็นวัสดุแบบผง ความเสี่ยงด้านสุขภาพจากการสูดดมคือ:
+*   **การสูดดม (เฉียบพลัน):** การหายใจเอาฝุ่นเข้าไปอาจทำให้เกิดการระคายเคืองที่จมูก คอ หรือปอด และสำลักได้ ผลกระทบที่อธิบายไว้ขึ้นอยู่กับระดับการสัมผัส (Chapter: Materials Data Sheet, Page: 107)
+*   **การสูดดม (เรื้อรัง):** การสัมผัสเป็นเวลานานหรือซ้ำๆ อาจทำให้เกิดการบาดเจ็บที่ปอดรวมถึงภาวะซิลิโคสิส ความเสี่ยงของการบาดเจ็บขึ้นอยู่กับระยะเวลาและระดับการสัมผัส (Chapter: Materials Data Sheet, Page: 107)
+*   อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 133)
+
+วิธีกรลดความเสี่ยงที่ระบุไว้ใน Risk Assessment คือ:
+*   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ใช้หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   กำหนดพื้นที่การทำงาน (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย (Chapter: Risk Assessment In Repair Working, Page: 121)","107, 133, 121, 103, 102",gemini-2.5-flash,"Page: 107, 121, 133
+Answer: ในการใช้งานปูนฉาบแต่งตราผึ้ง 124 ซึ่งเป็นวัสดุแบบผง ความเสี่ยงด้านสุขภาพจากการสูดดมคือ:
+*   **การสูดดม (เฉียบพลัน):** การหายใจเอาฝุ่นเข้าไปอาจทำให้เกิดการระคายเคืองที่จมูก คอ หรือปอด และสำลักได้ ผลกระทบที่อธิบายไว้ขึ้นอยู่กับระดับการสัมผัส (Chapter: Materials Data Sheet, Page: 107)
+*   **การสูดดม (เรื้อรัง):** การสัมผัสเป็นเวลานานหรือซ้ำๆ อาจทำให้เกิดการบาดเจ็บที่ปอดรวมถึงภาวะซิลิโคสิส ความเสี่ยงของการบาดเจ็บขึ้นอยู่กับระยะเวลาและระดับการสัมผัส (Chapter: Materials Data Sheet, Page: 107)
+*   อาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 133)
+
+วิธีกรลดความเสี่ยงที่ระบุไว้ใน Risk Assessment คือ:
+*   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ใช้หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   กำหนดพื้นที่การทำงาน (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย (Chapter: Risk Assessment In Repair Working, Page: 121)",1.0,0.2,1,0.8137,Construction-Related,Human Risk,"ในการใช้งานปูนฉาบแต่งตราผึ้ง 124 ซึ่งเป็นวัสดุแบบผง ความเสี่ยงด้านสุขภาพจากการสูดดมมีดังนี้:
+
+*   **ผลกระทบเฉียบพลัน (acute):** การหายใจเอาฝุ่นเข้าไปอาจทำให้เกิดการระคายเคืองที่จมูก คอ หรือปอด และทำให้สำลักได้ (Chapter: Materials Data Sheet, Page: 107)
+*   **ผลกระทบเรื้อรัง (chronic):** การสัมผัสเป็นเวลานานหรือซ้ำๆ อาจทำให้เกิดการบาดเจ็บที่ปอดรวมถึงโรคปอดจากฝุ่นซิลิกา (silicosis) (Chapter: Materials Data Sheet, Page: 107) หรืออาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 133)
+
+วิธีกรลดความเสี่ยงที่ระบุไว้ใน Risk Assessment คือ:
+
+*   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ใช้หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   กำหนดพื้นที่การทำงาน (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ใช้หน้ากากป้องกันที่เหมาะสม เพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อมได้ (Chapter: Materials Safety Data, Page: 133)","107, 121, 122, 120, 133",gemini-2.5-flash,"Page: 107, 121, 133
+Answer:
+ในการใช้งานปูนฉาบแต่งตราผึ้ง 124 ซึ่งเป็นวัสดุแบบผง ความเสี่ยงด้านสุขภาพจากการสูดดมมีดังนี้:
+
+*   **ผลกระทบเฉียบพลัน (acute):** การหายใจเอาฝุ่นเข้าไปอาจทำให้เกิดการระคายเคืองที่จมูก คอ หรือปอด และทำให้สำลักได้ (Chapter: Materials Data Sheet, Page: 107)
+*   **ผลกระทบเรื้อรัง (chronic):** การสัมผัสเป็นเวลานานหรือซ้ำๆ อาจทำให้เกิดการบาดเจ็บที่ปอดรวมถึงโรคปอดจากฝุ่นซิลิกา (silicosis) (Chapter: Materials Data Sheet, Page: 107) หรืออาจทำให้เกิดการระคายเคืองต่อระบบทางเดินหายใจ (Chapter: Materials Safety Data, Page: 133)
+
+วิธีกรลดความเสี่ยงที่ระบุไว้ใน Risk Assessment คือ:
+
+*   กำหนดเวลาในการทำงานร่วมกับสารเคมีที่เป็นฝุ่นผงหรือสารระเหย (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ใช้หน้ากากป้องกันที่เหมาะสมกับลักษณะสารเคมี (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   กำหนดพื้นที่การทำงาน (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ตรวจสุขภาพผู้ปฏิบัติงาน เพื่อป้องกันผลกระทบในระยะยาว (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   อบรมวิธีการจัดการเมื่อวัสดุรั่วไหลหรือฟุ้งกระจาย (Chapter: Risk Assessment In Repair Working, Page: 121)
+*   ใช้หน้ากากป้องกันที่เหมาะสม เพื่อให้มีอากาศถ่ายเทและป้องกันฝุ่นจากวัสดุซ่อมได้ (Chapter: Materials Safety Data, Page: 133)",1.0,0.2,1,0.7955,18.41,30,23
+ Non-Construction Questions, Document Control,Guideline for Repair,"Question (TH) :เอกสาร ""Guideline for Repair"" มีรหัสเอกสาร (Document No.) อะไร และเป็นการแก้ไขฉบับที่เท่าใด (Issue) วันที่เท่าใด",Answer (TH) :1. รหัสเอกสาร: TB-RP-012. ฉบับที่: Issue 23. วันที่: 20/6/2017, 2,Construction-Related,Repair Method,"เอกสาร ""Guideline for Repair"" มีรหัสเอกสาร (Document No.) คือ TB-RP-01 เป็นการแก้ไขฉบับที่ 2 (Issue 2) และมีวันที่ 20/6/2017","5, 25, 4, 3, 6",gemini-2.5-flash,"Page: 3, 4, 5, 6
+Answer: เอกสาร ""Guideline for Repair"" มีรหัสเอกสาร (Document No.) คือ TB-RP-01 เป็นการแก้ไขฉบับที่ 2 (Issue 2) และมีวันที่ 20/6/2017",0.0,0.0,0,0.7919,Construction-Related,Repair Method,"เอกสาร ""Guideline for Repair"" มีรหัสเอกสาร (Document No.) คือ TB-RP-01 และเป็นการแก้ไขฉบับที่ 2 (Issue 2) วันที่ 20/6/2017","25, 1, 40, 33, 7",gemini-2.5-flash,"Page: 1, 7
+Answer:เอกสาร ""Guideline for Repair"" มีรหัสเอกสาร (Document No.) คือ TB-RP-01 และเป็นการแก้ไขฉบับที่ 2 (Issue 2) วันที่ 20/6/2017",0.0,0.0,0,0.7956,Construction-Related,Repair Method,"เอกสาร ""Guideline for Repair"" มีรหัสเอกสาร (Document No.) คือ TB-RP-01 และเป็นการแก้ไขฉบับที่ 2 (Issue 2) วันที่ 20/6/2017 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 2, 5)","25, 5, 142, 1, 4",gemini-2.5-flash,"Page: 2, 4, 5
+Answer: เอกสาร ""Guideline for Repair"" มีรหัสเอกสาร (Document No.) คือ TB-RP-01 และเป็นการแก้ไขฉบับที่ 2 (Issue 2) วันที่ 20/6/2017 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 2, 5)",0.0,0.0,0,0.7894,10.45,40,18
+ Construction-Related, Material / Material Data Sheet,Material Data Sheet,Question (TH) :วัสดุ Sikadur 31 CF Normal ที่ใช้ในการซ่อมแซม มีค่า Potlife (ขนาด 200g) ที่อุณหภูมิ +30°C นานเท่าใด และตาม Data Sheet สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้หรือไม่,Answer (TH) :1. Potlife (+30°C): ประมาณ 35 นาที2. การใช้งานกับพื้นผิวชื้น: สามารถใช้ได้ (Suitable for dry and damp concrete surfaces)," 47, 51",Construction-Related,Material,"ข้อมูลเกี่ยวกับ Potlife (ขนาด 200g) ของ Sikadur 31 CF Normal ที่อุณหภูมิ +30°C ไม่ได้ระบุไว้ในเอกสารที่ให้มา
+
+ตามเอกสาร Data Sheet (Chapter: Materials Data Sheet, Page: 2) วัสดุ Sikadur 31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ โดยระบุว่าเป็น ""moisture tolerant"" และ ""Suitable for dry and damp concrete surfaces""","26, 47, 55, 52",gemini-2.5-flash,"Page: 2
+Answer: ข้อมูลเกี่ยวกับ Potlife (ขนาด 200g) ของ Sikadur 31 CF Normal ที่อุณหภูมิ +30°C ไม่ได้ระบุไว้ในเอกสารที่ให้มา
+
+ตามเอกสาร Data Sheet (Chapter: Materials Data Sheet, Page: 2) วัสดุ Sikadur 31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ โดยระบุว่าเป็น ""moisture tolerant"" และ ""Suitable for dry and damp concrete surfaces""",0.5,0.25,1,0.8043,Construction-Related,Material,"ข้อมูลในเอกสารที่ให้มาไม่มีรายละเอียดเกี่ยวกับค่า Potlife (สำหรับขนาด 200g) ของวัสดุ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C
+
+อย่างไรก็ตาม Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ โดยระบุว่า ""เมื่อทากับคอนกรีตที่มีความชื้น ให้แปรงกาวให้ซึมเข้าสู่พื้นผิวได้ดี"" (Chapter: Materials Data Sheet, Page: 50) และ ""เหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น"" (Chapter: Materials Data Sheet, Page: 47)","50, 55, 47",gemini-2.5-flash,"Page: 47, 50
+Answer: ข้อมูลในเอกสารที่ให้มาไม่มีรายละเอียดเกี่ยวกับค่า Potlife (สำหรับขนาด 200g) ของวัสดุ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C
+
+อย่างไรก็ตาม Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ โดยระบุว่า ""เมื่อทากับคอนกรีตที่มีความชื้น ให้แปรงกาวให้ซึมเข้าสู่พื้นผิวได้ดี"" (Chapter: Materials Data Sheet, Page: 50) และ ""เหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น"" (Chapter: Materials Data Sheet, Page: 47)",0.5,0.3333,1,0.7971,Construction-Related,Material,"1.  เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับค่า Potlife (ขนาด 200g) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C
+2.  ตามข้อมูลใน Product Data Sheet, Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ เนื่องจากเป็นผลิตภัณฑ์ที่ ""moisture tolerant"" (ทนต่อความชื้น) และ ""Suitable for dry and damp concrete surfaces"" (เหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น) (Chapter: Materials Data Sheet, Page: 47) นอกจากนี้ยังระบุว่า ""When applied to mat moisture concrete, brush the adhesive well into substrate."" (Chapter: Materials Data Sheet, Page: 50)","47, 55, 50, 26",gemini-2.5-flash,"Page: 47, 50
+Answer:1.  เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับค่า Potlife (ขนาด 200g) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C
+2.  ตามข้อมูลใน Product Data Sheet, Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ เนื่องจากเป็นผลิตภัณฑ์ที่ ""moisture tolerant"" (ทนต่อความชื้น) และ ""Suitable for dry and damp concrete surfaces"" (เหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น) (Chapter: Materials Data Sheet, Page: 47) นอกจากนี้ยังระบุว่า ""When applied to mat moisture concrete, brush the adhesive well into substrate."" (Chapter: Materials Data Sheet, Page: 50)",0.5,0.25,1,0.8323,12.14,27,24
+ Construction-Related, Material / Environmental / Preventive Measures,Preventative Measures and Environmental Impact,Question (TH) :หากวัสดุ Conpatch 300 (วัสดุซ่อมแบบผง) รั่วไหลลงสู่พื้นดินเป็นจำนวนมาก มาตรการป้องกันและแก้ไขตามเอกสารสิ่งแวดล้อมระบุให้ดำเนินการอย่างไร,Answer (TH) :1. เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่ปิดมิดชิดได้ แล้วขนย้ายออกจากจุดที่รั่วไหล2. กวาดวัสดุที่รั่วไหลกองรวมกัน แล้วใช้ผ้าหรือกระสอบคลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย3. ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี, 136,Construction-Related,Environmental / Preventive Measures,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการป้องกันและแก้ไขหากวัสดุ Conpatch 300 รั่วไหลลงสู่พื้นดินเป็นจำนวนมากตามที่ระบุในเอกสารสิ่งแวดล้อม,"8, 62, 130, 18, 34",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการป้องกันและแก้ไขหากวัสดุ Conpatch 300 รั่วไหลลงสู่พื้นดินเป็นจำนวนมากตามที่ระบุในเอกสารสิ่งแวดล้อม",0.0,0.0,0,0.6791,Construction-Related,Human Risk,"ตามเอกสารสิ่งแวดล้อม มาตรการป้องกันและแก้ไขหากวัสดุ Conpatch 300 (วัสดุซ่อมแบบผง) รั่วไหลลงสู่พื้นดินเป็นจำนวนมาก มีดังนี้ (อ้างอิง Chapter: Preventative Measures And Revise Environment Impact, Page: 136):
+
+1.  มาตรการป้องกัน: พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนในดิน
+2.  มาตรการแก้ไขกรณีรั่วไหลจำนวนมาก:
+    *   ทำการเปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+    *   ขนย้ายออกจากจุดที่รั่วไหล
+    *   กวาดวัสดุที่รั่วไหลกองรวมกัน
+    *   ใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+    *   ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี","135, 62, 130, 136",gemini-2.5-flash,"Page: 136
+Answer: ตามเอกสารสิ่งแวดล้อม มาตรการป้องกันและแก้ไขหากวัสดุ Conpatch 300 (วัสดุซ่อมแบบผง) รั่วไหลลงสู่พื้นดินเป็นจำนวนมาก มีดังนี้ (อ้างอิง Chapter: Preventative Measures And Revise Environment Impact, Page: 136):
+
+1.  มาตรการป้องกัน: พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนในดิน
+2.  มาตรการแก้ไขกรณีรั่วไหลจำนวนมาก:
+    *   ทำการเปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+    *   ขนย้ายออกจากจุดที่รั่วไหล
+    *   กวาดวัสดุที่รั่วไหลกองรวมกัน
+    *   ใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+    *   ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี",1.0,0.25,1,0.8302,Construction-Related,Environmental / Preventive Measures,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่ระบุมาตรการป้องกันและแก้ไขโดยตรง หากวัสดุ Conpatch 300 (วัสดุซ่อมแบบผง) รั่วไหลลงสู่พื้นดินเป็นจำนวนมาก เอกสารระบุถึงมาตรการเมื่อวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียหรือแหล่งน้ำธรรมชาติ แต่ไม่ได้กล่าวถึงกรณีที่วัสดุผงรั่วไหลลงพื้นดินโดยตรงอย่างชัดเจน (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)","62, 130, 8, 135",gemini-2.5-flash,"Page: 135
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่ระบุมาตรการป้องกันและแก้ไขโดยตรง หากวัสดุ Conpatch 300 (วัสดุซ่อมแบบผง) รั่วไหลลงสู่พื้นดินเป็นจำนวนมาก เอกสารระบุถึงมาตรการเมื่อวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียหรือแหล่งน้ำธรรมชาติ แต่ไม่ได้กล่าวถึงกรณีที่วัสดุผงรั่วไหลลงพื้นดินโดยตรงอย่างชัดเจน (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)",0.0,0.0,0,0.7256,17.1,6,16
+ Construction-Related, Human Risk / Material Safety Data,Material Safety Data,Question (TH) :หากผิวหนังสัมผัสกับ Sikadur 41 CF Normal (Part B) จนเกิดการไหม้หรือระคายเคือง ตามข้อมูลความปลอดภัย (Material Safety Data) ต้องปฐมพยาบาลอย่างไร และระบุว่าหากไม่ทำการรักษาจะเกิดผลเสียอย่างไร,Answer (TH) :1. การปฐมพยาบาล: ถอดเสื้อผ้าที่ปนเปื้อนออก แล้วล้างตัวด้วยสบู่และน้ำ แล้วพบแพทย์ทันที2. ผลเสียหากไม่รักษา: หากโดนกัดกร่อนจนเป็นแผลแล้วไม่ทำการรักษา จะทำให้แผลสมานตัวช้า, 127,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับการปฐมพยาบาลสำหรับ Sikadur 41 CF Normal (Part B) เมื่อผิวหนังสัมผัสจนเกิดการไหม้หรือระคายเคือง และไม่ระบุถึงผลเสียหากไม่ได้รับการรักษา,"55, 52, 26, 126, 137",gemini-2.5-flash,"Page: 126
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับการปฐมพยาบาลสำหรับ Sikadur 41 CF Normal (Part B) เมื่อผิวหนังสัมผัสจนเกิดการไหม้หรือระคายเคือง และไม่ระบุถึงผลเสียหากไม่ได้รับการรักษา",0.0,0.0,0,0.718,Construction-Related,Human Risk,"หากผิวหนังสัมผัสกับ Sikadur 41 CF Normal (Part B) จนเกิดการระคายเคือง การปฐมพยาบาลเบื้องต้นมีดังนี้:
+1.  ถอดเสื้อผ้าที่ปนเปื้อนออก
+2.  ล้างตัวด้วยสบู่และน้ำ
+3.  พบแพทย์ทันที
+
+สำหรับผลเสียหากไม่ทำการรักษา เอกสารระบุเพียงว่า Sikadur 41 CF Normal (Part B) ทำให้เกิดการระคายเคืองที่ผิวหนัง และแนะนำให้พบแพทย์ทันที แต่ไม่ได้ให้ข้อมูลโดยละเอียดเกี่ยวกับผลเสียเฉพาะเจาะจงที่เกิดขึ้นหากไม่ทำการรักษาสำหรับการระคายเคืองจากผลิตภัณฑ์นี้","127, 128, 129, 125, 126",gemini-2.5-flash,"Page: 127
+Answer: หากผิวหนังสัมผัสกับ Sikadur 41 CF Normal (Part B) จนเกิดการระคายเคือง การปฐมพยาบาลเบื้องต้นมีดังนี้:
+1.  ถอดเสื้อผ้าที่ปนเปื้อนออก
+2.  ล้างตัวด้วยสบู่และน้ำ
+3.  พบแพทย์ทันที
+
+สำหรับผลเสียหากไม่ทำการรักษา เอกสารระบุเพียงว่า Sikadur 41 CF Normal (Part B) ทำให้เกิดการระคายเคืองที่ผิวหนัง และแนะนำให้พบแพทย์ทันที แต่ไม่ได้ให้ข้อมูลโดยละเอียดเกี่ยวกับผลเสียเฉพาะเจาะจงที่เกิดขึ้นหากไม่ทำการรักษาสำหรับการระคายเคืองจากผลิตภัณฑ์นี้",1.0,0.2,1,0.7882,Construction-Related,Human Risk,"หากผิวหนังสัมผัสกับ Sikadur 41 CF Normal (Part B) จนเกิดการไหม้หรือระคายเคือง การปฐมพยาบาลเบื้องต้นตามข้อมูลความปลอดภัย (Material Safety Data) มีดังนี้:
+
+*   ถอดเสื้อผ้าที่ปนเปื้อนออก
+*   ล้างตัวด้วยสบู่และน้ำ
+*   หากโดนกัดกร่อนจนเป็นแผล ให้พบแพทย์ทันที
+
+หากไม่ทำการรักษาในกรณีที่โดนกัดกร่อนจนเป็นแผล จะทำให้แผลสมานตัวช้า","129, 126, 55, 127, 52",gemini-2.5-flash,"Page: 127
+Answer:หากผิวหนังสัมผัสกับ Sikadur 41 CF Normal (Part B) จนเกิดการไหม้หรือระคายเคือง การปฐมพยาบาลเบื้องต้นตามข้อมูลความปลอดภัย (Material Safety Data) มีดังนี้:
+
+*   ถอดเสื้อผ้าที่ปนเปื้อนออก
+*   ล้างตัวด้วยสบู่และน้ำ
+*   หากโดนกัดกร่อนจนเป็นแผล ให้พบแพทย์ทันที
+
+หากไม่ทำการรักษาในกรณีที่โดนกัดกร่อนจนเป็นแผล จะทำให้แผลสมานตัวช้า",1.0,0.2,1,0.8042,15.91,39,26
+ Construction-Related, Repair Method / Repair Tools,Repair with Epoxy Resin,Question (TH) :ในขั้นตอนการเตรียมผิวสำหรับซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) จะต้องใช้เครื่องมือใดในการเซาะร่อง และต้องเซาะร่องให้มีขนาดความกว้างเท่าใด,Answer (TH) :1. เครื่องมือ: เครื่องตัดและใบตัดคอนกรีต2. ขนาดความกว้างร่อง: 3-5 มม. (โดยประมาณ)," 17, 19",Construction-Related,Repair Method,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับเครื่องมือที่ใช้ในการเซาะร่องหรือขนาดความกว้างของการเซาะร่องในขั้นตอนการเตรียมผิวสำหรับซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) มีเพียงข้อมูลระบุว่าวิธีการนี้ใช้สำหรับรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. แต่ไม่ถึงเหล็กเสริม (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3)","16, 15, 7, 3, 29",gemini-2.5-flash,"Page: 1, 3, 4
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับเครื่องมือที่ใช้ในการเซาะร่องหรือขนาดความกว้างของการเซาะร่องในขั้นตอนการเตรียมผิวสำหรับซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) มีเพียงข้อมูลระบุว่าวิธีการนี้ใช้สำหรับรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. แต่ไม่ถึงเหล็กเสริม (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3)",0.0,0.0,0,0.7612,Construction-Related,Repair Method,"ในขั้นตอนการเตรียมผิวสำหรับซ่อมรอยร้าวด้วย Epoxy Resin จะต้องใช้เครื่องตัดคอนกรีตในการเซาะร่อง และต้องเซาะร่องให้มีลักษณะคล้ายตัว V โดยให้บริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)","16, 20, 19, 17, 10",gemini-2.5-flash,"Page: 19
+Answer: ในขั้นตอนการเตรียมผิวสำหรับซ่อมรอยร้าวด้วย Epoxy Resin จะต้องใช้เครื่องตัดคอนกรีตในการเซาะร่อง และต้องเซาะร่องให้มีลักษณะคล้ายตัว V โดยให้บริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)",1.0,0.4,1,0.803,Construction-Related,Repair Method,"ในขั้นตอนการเตรียมผิวสำหรับซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) จะต้องใช้เครื่องตัดคอนกรีตในการเซาะร่อง และต้องเซาะร่องให้มีขนาดความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)","16, 15, 20, 7, 19",gemini-2.5-flash,"Page: 19
+Answer:ในขั้นตอนการเตรียมผิวสำหรับซ่อมรอยร้าวด้วย Epoxy Resin (RP-TN-02) จะต้องใช้เครื่องตัดคอนกรีตในการเซาะร่อง และต้องเซาะร่องให้มีขนาดความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)",0.5,0.2,1,0.8187,10.16,37,26
+ Construction-Related, Guideline for Repair / Repair Method,Guideline for Repair,"Question (TH) :หากเกิดรอยแตกบิ่นที่ขอบ (Spalling Edge) โดยมีขนาด A=30 มม. B=30 มม. ซึ่งอยู่ในเกณฑ์ซ่อมได้ แต่จากการตรวจสอบพบว่า ""เหล็กเสริมโผล่"" (Rebar exposed) จะต้องดำเนินการซ่อมแซมด้วยวิธีใด",Answer (TH) :Action: Reject (ปฏิเสธชิ้นงาน/ไม่ซ่อมแซม), 4,Construction-Related,Repair Method,"หากเกิดรอยแตกบิ่นที่ขอบ (Spalling Edge) โดยมีเหล็กเสริมโผล่ (Rebar exposed) จะต้องดำเนินการ ""Reject"" ตามตารางที่ 2 Guideline for Spalling Edge Repair (Chapter: Guildline For Repair, Page: 4)","4, 6, 61, 46, 5",gemini-2.5-flash,"Page: 4
+Answer: หากเกิดรอยแตกบิ่นที่ขอบ (Spalling Edge) โดยมีเหล็กเสริมโผล่ (Rebar exposed) จะต้องดำเนินการ ""Reject"" ตามตารางที่ 2 Guideline for Spalling Edge Repair (Chapter: Guildline For Repair, Page: 4)",1.0,0.2,1,0.7277,Construction-Related,Repair Method,"ตามเอกสาร Guidelines for Spalling Edge Repair ระบุว่าหากพบ ""เหล็กเสริมโผล่"" (Rebar exposed) แม้ว่าขนาดความเสียหายจะอยู่ในเกณฑ์ที่สามารถซ่อมแซมได้ ก็จะต้องดำเนินการ ""Reject"" (การไม่ยอมรับ) ค่ะ (Chapter: Guildline For Repair, Page: 4)","4, 3, 25, 31, 28",gemini-2.5-flash,"Page: 4
+Answer:ตามเอกสาร Guidelines for Spalling Edge Repair ระบุว่าหากพบ ""เหล็กเสริมโผล่"" (Rebar exposed) แม้ว่าขนาดความเสียหายจะอยู่ในเกณฑ์ที่สามารถซ่อมแซมได้ ก็จะต้องดำเนินการ ""Reject"" (การไม่ยอมรับ) ค่ะ (Chapter: Guildline For Repair, Page: 4)",1.0,0.2,1,0.7288,Construction-Related,Repair Method,"ตามตารางที่ 2 Guideline for Spalling Edge Repair ในกรณีที่พบ ""เหล็กเสริมโผล่"" (Rebar exposed) ไม่ว่าจะอยู่ในช่วงขนาดใดก็ตาม จะต้องดำเนินการ ""Reject"" (ปฏิเสธ) ชิ้นงานนั้น
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 4)","4, 6, 3, 61, 25",gemini-2.5-flash,"Page: 4
+Answer:
+ตามตารางที่ 2 Guideline for Spalling Edge Repair ในกรณีที่พบ ""เหล็กเสริมโผล่"" (Rebar exposed) ไม่ว่าจะอยู่ในช่วงขนาดใดก็ตาม จะต้องดำเนินการ ""Reject"" (ปฏิเสธ) ชิ้นงานนั้น
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 4)",1.0,0.2,1,0.7532,9.38,38,26
+ Construction-Related, Human Risk / Risk Assessment,Risk Assessment in Repair Working,Question (TH) :ตามการประเมินความเสี่ยง (Risk Assessment) เรื่องอันตรายจากการกลืนสารเคมี มีข้อห้ามเกี่ยวกับอาหารในพื้นที่ทำงานอย่างไรเพื่อลดความเสี่ยง,Answer (TH) :ห้ามนําอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด, 122,Construction-Related,Human Risk,"ตามการประเมินความเสี่ยงเรื่องอันตรายจากการกลืนสารเคมี มีข้อห้ามเกี่ยวกับอาหารในพื้นที่ทำงานเพื่อลดความเสี่ยงดังนี้:
+*   ห้ามนําอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด (Chapter: Risk Assessment In Repair Working, Page: 122)","122, 120, 121, 123",gemini-2.5-flash,"Page: 122
+Answer: ตามการประเมินความเสี่ยงเรื่องอันตรายจากการกลืนสารเคมี มีข้อห้ามเกี่ยวกับอาหารในพื้นที่ทำงานเพื่อลดความเสี่ยงดังนี้:
+*   ห้ามนําอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด (Chapter: Risk Assessment In Repair Working, Page: 122)",1.0,0.25,1,0.8167,Construction-Related,Human Risk,"ตามการประเมินความเสี่ยง เรื่องอันตรายจากการกลืนสารเคมี มีข้อห้ามเกี่ยวกับการนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด เพื่อลดความเสี่ยง (Chapter: Risk Assessment In Repair Working, Page: 122)","122, 121, 131, 128, 132",gemini-2.5-flash,"Page: 122
+Answer: ตามการประเมินความเสี่ยง เรื่องอันตรายจากการกลืนสารเคมี มีข้อห้ามเกี่ยวกับการนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด เพื่อลดความเสี่ยง (Chapter: Risk Assessment In Repair Working, Page: 122)",1.0,0.2,1,0.7758,Construction-Related,Human Risk,"ตามการประเมินความเสี่ยง (Risk Assessment) เรื่องอันตรายจากการกลืนสารเคมี เพื่อลดความเสี่ยง มีข้อห้ามเกี่ยวกับอาหารในพื้นที่ทำงานคือ ""ห้ามนําอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด"" (Chapter: Risk Assessment In Repair Working, Page: 122)","122, 121, 120, 131",gemini-2.5-flash,"Page: 122
+Answer: ตามการประเมินความเสี่ยง (Risk Assessment) เรื่องอันตรายจากการกลืนสารเคมี เพื่อลดความเสี่ยง มีข้อห้ามเกี่ยวกับอาหารในพื้นที่ทำงานคือ ""ห้ามนําอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด"" (Chapter: Risk Assessment In Repair Working, Page: 122)",1.0,0.25,1,0.8103,10.66,40,28
+ Construction-Related, Material / Repair Method,Guideline for Repair,"Question (TH) :วัสดุ ""Renderoc Skim Coat"" เป็นของแบรนด์ใด และได้รับการอนุมัติใช้งาน (Status) หรือไม่ ตามตารางรายการวัสดุซ่อม (Material List) ที่ระบุใน Guideline",Answer (TH) :1. แบรนด์: FOSROC2. สถานะ: ได้รับการอนุมัติใช้งาน, 8,Construction-Related,Material,"วัสดุ ""Renderoc Skim Coat"" เป็นของแบรนด์ FOSROC และได้รับการอนุมัติใช้งาน (ได้รับการอนุมัติใช้งาน) ตามตารางรายการวัสดุซ่อมใน Guildline For Repair (Chapter: Guildline For Repair, Page: 8).","8, 135, 98, 18, 27",gemini-2.5-flash,"Page: 8
+Answer: วัสดุ ""Renderoc Skim Coat"" เป็นของแบรนด์ FOSROC และได้รับการอนุมัติใช้งาน (ได้รับการอนุมัติใช้งาน) ตามตารางรายการวัสดุซ่อมใน Guildline For Repair (Chapter: Guildline For Repair, Page: 8).",1.0,0.2,1,0.798,Construction-Related,Material,"วัสดุ ""Renderoc Skim Coat"" เป็นของแบรนด์ FOSROC (ฟอสรอค) และได้รับการอนุมัติใช้งานตามตารางรายการวัสดุซ่อมที่ระบุใน Guideline (อ้างอิง Chapter: Guildline For Repair, Page: 8).","98, 34, 8, 99, 100",gemini-2.5-flash,"Page: 8
+Answer: วัสดุ ""Renderoc Skim Coat"" เป็นของแบรนด์ FOSROC (ฟอสรอค) และได้รับการอนุมัติใช้งานตามตารางรายการวัสดุซ่อมที่ระบุใน Guideline (อ้างอิง Chapter: Guildline For Repair, Page: 8).",1.0,0.2,1,0.7988,Construction-Related,Material,"วัสดุ ""Renderoc Skim Coat"" เป็นของแบรนด์ FOSROC และได้รับการอนุมัติใช้งาน (ได้รับการอนุมัติใช้งาน) ตามตารางรายการวัสดุซ่อมที่ระบุใน Guideline (Chapter: Guildline For Repair, Page: 8).","8, 98, 34, 18, 27",gemini-2.5-flash,"Page: 8
+Answer: วัสดุ ""Renderoc Skim Coat"" เป็นของแบรนด์ FOSROC และได้รับการอนุมัติใช้งาน (ได้รับการอนุมัติใช้งาน) ตามตารางรายการวัสดุซ่อมที่ระบุใน Guideline (Chapter: Guildline For Repair, Page: 8).",1.0,0.2,1,0.7993,8.51,39,27
+ Non-Construction Questions, Project Information,Risk Assessment in Repair Working / Preventative Measures and Environmental Impact,Question (TH) :ชื่อโครงการก่อสร้างที่ระบุอยู่ในส่วนหัวของเอกสาร Risk Assessment คือโครงการอะไร และใช้รหัสเอกสาร (Document No.) อะไรสำหรับเอกสาร Preventative Measures,Answer (TH) :1. ชื่อโครงการ: โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา (Project: Sewerage Tunnel Bung Nong Bon to Chaophraya River)2. รหัสเอกสาร Preventative Measures: EV-TN-01," 120, 134",Construction-Related,Human Risk,"ชื่อโครงการก่อสร้างที่ระบุอยู่ในส่วนหัวของเอกสาร Risk Assessment คือ ""SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER"" (อ้างอิง Chapter: Risk Assessment In Repair Working, Page: 120) และรหัสเอกสาร (Document No.) สำหรับเอกสาร Preventative Measures คือ ""EV-TN-01"" (อ้างอิง Chapter: Preventative Measures And Revise Environment Impact, Page: 134).","134, 122, 120, 121, 135",gemini-2.5-flash,"Page: 120, 134
+Answer: ชื่อโครงการก่อสร้างที่ระบุอยู่ในส่วนหัวของเอกสาร Risk Assessment คือ ""SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER"" (อ้างอิง Chapter: Risk Assessment In Repair Working, Page: 120) และรหัสเอกสาร (Document No.) สำหรับเอกสาร Preventative Measures คือ ""EV-TN-01"" (อ้างอิง Chapter: Preventative Measures And Revise Environment Impact, Page: 134).",1.0,0.4,1,0.886,Construction-Related,Human Risk,โครงการก่อสร้างที่ระบุอยู่ในส่วนหัวของเอกสาร Risk Assessment คือ โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา (SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER) [3] และใช้รหัสเอกสาร (Document No.) EV-TN-01 สำหรับเอกสาร Preventative Measures [5],"122, 121, 120, 123, 134",gemini-2.5-flash,"Page: 3, 5
+Answer: โครงการก่อสร้างที่ระบุอยู่ในส่วนหัวของเอกสาร Risk Assessment คือ โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา (SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER) [3] และใช้รหัสเอกสาร (Document No.) EV-TN-01 สำหรับเอกสาร Preventative Measures [5]",1.0,0.4,1,0.8994,Construction-Related,Human Risk,"ชื่อโครงการก่อสร้างที่ระบุอยู่ในส่วนหัวของเอกสาร Risk Assessment คือ ""SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER"" (โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา) (Chapter: Risk Assessment In Repair Working, Page: 120).
+รหัสเอกสาร (Document No.) สำหรับเอกสาร Preventative Measures คือ ""EV-TN-01"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 134).","122, 134, 121, 120, 135",gemini-2.5-flash,"Page: 120, 134
+Answer: ชื่อโครงการก่อสร้างที่ระบุอยู่ในส่วนหัวของเอกสาร Risk Assessment คือ ""SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER"" (โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา) (Chapter: Risk Assessment In Repair Working, Page: 120).
+รหัสเอกสาร (Document No.) สำหรับเอกสาร Preventative Measures คือ ""EV-TN-01"" (Chapter: Preventative Measures And Revise Environment Impact, Page: 134).",1.0,0.4,1,0.8962,10.1,40,29

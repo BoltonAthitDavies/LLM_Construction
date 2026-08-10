@@ -543,7 +543,7 @@ class RAGFlow:
     _RATE_LIMIT_SIGNALS = ("RESOURCE_EXHAUSTED", "RATE_LIMIT_EXCEEDED", "429", "quota")
 
     def _generate_with_gemini(self, prompt: str) -> tuple[str, str]:
-        candidate_models = [self.gemini_model, "gemini-2.5-flash", "gemini-1.5-flash"]
+        candidate_models = [self.gemini_model, "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-latest"]
         seen: set[str] = set()
         model_list: list[str] = []
         for m in candidate_models:
@@ -680,12 +680,11 @@ class RAGFlow:
             try:
                 raw_answer, model_used = self._generate_with_gemini(prompt)
             except Exception as exc:
-                err_text = str(exc)
-                if any(c in err_text for c in ("RESOURCE_EXHAUSTED", "RATE_LIMIT_EXCEEDED", "429")):
-                    raw_answer = self._extractive_fallback(question, context)
-                    model_used = "extractive-fallback"
-                else:
-                    raise
+                # Any generation failure (rate limit, dead model, network) falls back to
+                # extractive answering so a single bad question cannot abort the batch.
+                print(f"[generate] {mode} fallback after error: {str(exc)[:80]}")
+                raw_answer = self._extractive_fallback(question, context)
+                model_used = "extractive-fallback"
 
             parsed = self._extract_json_object(raw_answer) or self._extract_labeled_fields(raw_answer)
             predictions = self._normalize_prediction_payload(parsed, raw_answer, question, page)

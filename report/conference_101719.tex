@@ -7,11 +7,28 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+
+% --- Thai language support (compile with XeLaTeX or LuaLaTeX) ---
+% Under pdfLaTeX, \thai{...} degrades gracefully (Thai glyphs won't render).
+\usepackage{iftex}
+\ifpdftex
+  \newcommand{\thai}[1]{#1}
+\else
+  \usepackage{fontspec}
+  % Keep the body in Times New Roman so the 10pt Times requirement still holds
+  % when fontspec is loaded for Thai support.
+  \setmainfont{Times New Roman}
+  \newfontfamily\thaifont{TH Sarabun New}[Script=Thai]
+  % Use as: \thai{สวัสดีครับ}
+  \newcommand{\thai}[1]{{\thaifont #1}}
+\fi
+% ----------------------------------------------------------------
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{LLM with Construction Engineering Prior Knowledge using agentic graphRAG\\
+\title{SmartCivil : LLM with Construction Engineering Prior Knowledge using agentic graphRAG\\
 }
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Peter Parker}
@@ -36,28 +53,7 @@ email address or ORCID}
 \maketitle
 
 \begin{abstract}
-On large construction projects, engineering instructions and method
-statements must travel through a long chain of members---from the client to
-the site engineer, the foreman, and finally the workers on site. In practice
-this chain is lossy: information is fragmented across chat applications and
-paper records, critical numeric tolerances in repair procedures are misread,
-and Thai--English language barriers with a multinational workforce introduce
-further ambiguity, all of which translates into rework and non-conformance
-reports. We present SmartCivil, a question-answering framework that couples a
-large language model (LLM) with a knowledge graph to give site members
-reliable, source-grounded access to engineering knowledge. Scanned bilingual
-method statements are ingested by a vision-language OCR model; the extracted
-text, headings, tables, and figures populate a knowledge graph whose entities
-and relations make the engineering knowledge explicit and queryable. For each
-user question the system performs hybrid retrieval---keyword, full-text, and
-dense semantic search---whose rankings are merged by reciprocal rank fusion,
-and an LLM synthesises an answer that is constrained to the retrieved context
-and annotated with page-level citations. We evaluate the framework on a
-tunnel-segment repair corpus using both single-category and multi-category
-questions, scoring engineering-answer correctness, document grounding,
-bilingual fidelity, and response latency. The results characterise where
-retrieval-augmented generation succeeds and where document grounding remains
-the limiting factor for safety-critical construction question answering.
+\textcolor{red}{[Incomplete — to be written.]}
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -239,7 +235,11 @@ Non-Construction & Document/project metadata (Group~B) \\
 \end{center}
 \end{table}
 
-Two difficulty levels are evaluated, with 20 questions each:
+Two difficulty levels are evaluated. Each level merges a larger automatically
+generated set with a smaller hand-curated set (near-duplicate items removed):
+Level~1 comprises 113 questions ($102+11$) and Level~2 comprises 61 ($44+17$),
+for 174 in total. All results below are reported over these combined sets. The
+levels differ in reasoning demand:
 \begin{itemize}
 \item \textbf{Level~1 (single-category):} each question targets exactly one
 category and is answerable from a single section.
@@ -319,27 +319,32 @@ per-question time: $\le 5$\,s scores 10, 6--10\,s scores 8, 11--20\,s scores 5,
 and $>20$\,s scores 0.
 
 \section{Results and Discussion}
-We evaluate on two question sets: a single-category set (Level~1, $n=20$) and a
+We evaluate on two question sets: a single-category set (Level~1, $n=113$) and a
 multi-category set that pairs two or three topics per question (Level~2,
-$n=20$). The reported configuration uses multilingual dense embeddings for the
+$n=61$). The reported configuration uses multilingual dense embeddings for the
 semantic retriever and disables LLM query rewriting, a setting selected because
-an ablation showed rewriting degraded retrieval (it lowered keyword Hit@k on
-Level~2 from $0.75$ to $0.55$).
+an ablation on a held-out subset showed rewriting degraded retrieval (it lowered
+keyword Hit@k on the multi-category set from $0.75$ to $0.55$).
 
 \subsection{Retrieval}
-Table~\ref{tab:retr} reports the page-level recall, precision, and Hit@k
-defined in~(\ref{eq:pr}) for each retriever. The dense (\emph{vector}) retriever is the
-strongest single method, and RRF fusion gives the best result on Level~1; on
-Level~2 the vector retriever alone is best, as the weaker keyword ranking
-slightly drags the fusion down. Precision is uniformly low because the system
-returns $k=5$ pages per query while most answers reside on a single page, so
-recall and Hit@k are the informative signals. Crucially, dense retrieval is
-decisive only with genuine semantic embeddings: with a non-semantic baseline
-embedding the vector retriever collapsed (Level~2 Hit@k $0.40$) and fusion added
-nothing, whereas with real embeddings it reaches $0.95$.
+We report page-level recall, precision, and Hit@k defined in~(\ref{eq:pr}) for
+each retriever, first aggregated over the full set and then broken down by the
+document section (sub-category) each question targets. Precision is uniformly low
+because the system returns $k=5$ pages per query while most answers reside on a
+single page, so recall and Hit@k are the informative signals.
+
+\subsubsection{Overall}
+On the full set (Level~1 $n=113$, Level~2 $n=61$, Table~\ref{tab:retr}) the dense
+(\emph{vector}) retriever is the strongest method on both levels, and RRF
+fusion---dominated here by the weaker keyword ranking---trails it rather than
+improving on it, indicating that once dense retrieval is reliable the lexical
+signal adds little for this corpus. Dense retrieval is decisive only with genuine
+semantic embeddings: with a non-semantic baseline embedding the vector retriever
+collapsed (Level~2 Hit@k $0.40$) and fusion added nothing, whereas with real
+embeddings it reaches $0.87$.
 
 \begin{table}[htbp]
-\caption{Retrieval Quality by Method (Page-Level)}
+\caption{Retrieval Quality by Method --- Full Set (Page-Level)}
 \begin{center}
 \footnotesize
 \begin{tabular}{|l|ccc|ccc|}
@@ -348,53 +353,110 @@ nothing, whereas with real embeddings it reaches $0.95$.
 \cline{2-7}
 \textbf{Retriever} & Rec. & Prec. & Hit & Rec. & Prec. & Hit \\
 \hline
-Keyword (BM25) & 0.45 & 0.10 & 0.45 & 0.57 & 0.17 & 0.75 \\
+Keyword (BM25) & 0.49 & 0.10 & 0.49 & 0.42 & 0.14 & 0.61 \\
 \hline
-Vector (dense) & 0.65 & 0.15 & 0.65 & 0.77 & 0.23 & \textbf{0.95} \\
+Vector (dense) & \textbf{0.81} & \textbf{0.18} & \textbf{0.81} & \textbf{0.64} & \textbf{0.22} & \textbf{0.87} \\
 \hline
-Fused (RRF) & \textbf{0.75} & \textbf{0.17} & \textbf{0.75} & 0.67 & 0.20 & 0.85 \\
+Fused (RRF) & 0.76 & 0.17 & 0.76 & 0.57 & 0.19 & 0.74 \\
 \hline
 \end{tabular}
 \label{tab:retr}
 \end{center}
 \end{table}
 
-\subsection{End-to-End Answer Quality}
-Each fused-retrieval answer was scored against an expert ground truth on the
-rubric of Table~\ref{tab:rubric}; latency was derived from the measured
-per-question time, and bilingual capability and system-prompt compliance were
-assessed at the system level. Table~\ref{tab:results} reports the aggregate.
+\subsubsection{By Document Section}
+Table~\ref{tab:retrsub} breaks Level-1 Hit@k down by the document section
+(sub-category) each question targets. Vector retrieval is the strongest or tied
+method in almost every section. The keyword retriever all but fails on the
+Thai-prose-heavy Preventative Measures and Material Safety Data sections (Hit@k
+$0.08$ and $0.00$), where exact-term overlap is rare, yet leads on the
+identifier-dense Repair Note;
+this complementarity is what fusion exploits in a few sections (e.g.\ Material
+Approval). The Out-of-Scope (non-construction) questions correctly retrieve no
+relevant page. Level~2 is omitted here because its multi-section questions leave
+mostly singleton groups.
 
 \begin{table}[htbp]
-\caption{Evaluation Results (Fused Retrieval)}
+\caption{Level-1 Retrieval Hit@k by Document Section}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.40\columnwidth}|c|ccc|}
+\hline
+\textbf{Document Section} & \textbf{$n$} & \textbf{KW} & \textbf{Vec} & \textbf{Fus} \\
+\hline
+Material Data Sheet & 33 & 0.67 & \textbf{0.85} & \textbf{0.85} \\
+\hline
+Guideline for Repair & 18 & 0.67 & \textbf{0.89} & 0.78 \\
+\hline
+Preventative Measures & 12 & 0.08 & \textbf{1.00} & \textbf{1.00} \\
+\hline
+Material Safety Data & 8 & 0.00 & \textbf{0.88} & 0.50 \\
+\hline
+Cementitious Mortar & 8 & 0.25 & \textbf{0.50} & 0.38 \\
+\hline
+Epoxy Resin & 8 & 0.50 & \textbf{0.75} & \textbf{0.75} \\
+\hline
+Risk Assessment & 7 & 0.57 & \textbf{1.00} & \textbf{1.00} \\
+\hline
+Spalling Edge & 5 & 0.40 & \textbf{0.80} & 0.60 \\
+\hline
+Repair Note & 4 & \textbf{1.00} & 0.50 & \textbf{1.00} \\
+\hline
+Voids (High-Str. Mortar) & 4 & \textbf{0.50} & \textbf{0.50} & \textbf{0.50} \\
+\hline
+Material Approval & 2 & 0.50 & 0.50 & \textbf{1.00} \\
+\hline
+Out of Scope & 2 & 0.00 & 0.00 & 0.00 \\
+\hline
+Voids \& Blowholes & 2 & 0.50 & \textbf{1.00} & 0.50 \\
+\hline
+\end{tabular}
+\label{tab:retrsub}
+\end{center}
+\end{table}
+
+\subsection{End-to-End Answer Quality}
+Each fused-retrieval answer was scored against an expert ground truth on the
+rubric of Table~\ref{tab:rubric} using an LLM-as-judge protocol over the full
+evaluation set; latency is derived from the measured per-question time, and
+bilingual capability and system-prompt compliance are assessed at the system
+level. To gauge the reliability of automatic grading, every answer was scored
+independently by two judges from different model families---a Claude model as the
+primary judge and a Gemini model as the secondary; Table~\ref{tab:results} reports
+the primary (Claude) judge and Section~\ref{ssec:judge} the agreement between them.
+
+\subsubsection{Overall}
+\begin{table}[htbp]
+\caption{Evaluation Results (Fused Retrieval, Full Set)}
 \begin{center}
 \begin{tabular}{|p{0.42\columnwidth}|c|c|c|}
 \hline
 \textbf{Dimension} & \textbf{Max} & \textbf{L1} & \textbf{L2} \\
 \hline
-Engineering Answer Correctness & 40 & 33.0 & 32.9 \\
+Engineering Answer Correctness & 40 & 31.8 & 28.4 \\
 \hline
-Document Grounding Accuracy & 30 & 23.1 & 23.4 \\
+Document Grounding Accuracy & 30 & 23.3 & 21.8 \\
 \hline
-Response Latency & 10 & 3.2 & 0.8 \\
+Response Latency & 10 & 5.9 & 3.8 \\
 \hline
 Bilingual Capability (TH--EN) & 10 & 9.0 & 9.0 \\
 \hline
 System Prompt Compliance & 10 & 9.0 & 9.0 \\
 \hline
-\textbf{Total} & \textbf{100} & \textbf{77.3} & \textbf{75.0} \\
+\textbf{Total} & \textbf{100} & \textbf{79.0} & \textbf{72.0} \\
 \hline
 \end{tabular}
 \label{tab:results}
 \end{center}
 \end{table}
 
-Engineering-answer correctness is high on both sets (33.0 and 32.9 of 40):
+Engineering-answer correctness is solid on both sets (31.8 and 28.4 of 40):
 when the right page is retrieved, the model identifies the correct repair
 method and quantitative conditions, and multi-category questions are usually
-answered across all their sub-parts. The residual gap comes from a few honest
-abstentions on questions whose evidence was not retrieved, and from occasional
-omission of a second numeric sub-part (e.g.\ a mixing ratio or pot life).
+answered across all their sub-parts. The lower Level-2 score reflects its
+harder, compound questions and a higher rate of honest abstentions when the
+evidence is not retrieved, together with occasional omission of a second numeric
+sub-part (e.g.\ a mixing ratio or pot life).
 
 Table~\ref{tab:examples} contrasts a high- and a low-scoring answer (both
 translated from Thai). The Excellent answer reproduces the correct method-
@@ -434,8 +496,139 @@ Why & wrong numeric value; contradicts the data sheet despite fluent form. \\
 \end{center}
 \end{table}
 
+\subsubsection{Judge Agreement}
+\label{ssec:judge}
+LLM-as-judge scoring is itself a model output, so we cross-validate the primary
+judge (Claude) against a second judge from a different model family (Gemini) over
+all $174$ answers (Table~\ref{tab:judge}). Because the system's answers are
+themselves generated by a Gemini model, using a different-family model as the
+primary judge avoids same-family self-preference. The two judges agree closely on
+engineering correctness (Pearson $r=0.93$, mean absolute difference $4.3$ of
+$40$) but diverge on grounding ($r=0.86$, yet an $8.8$-point gap): the Gemini
+judge is systematically stricter, treating the multi-page citations as a
+grounding failure rather than awarding partial credit when the correct page is
+among those returned. The
+strong rank correlations indicate the judges order answers consistently; the
+grounding offset is a calibration difference, so absolute grounding scores
+should be read with a margin.
+
+\begin{table}[htbp]
+\caption{Inter-Judge Agreement (All 174 Answers)}
+\begin{center}
+\footnotesize
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Dimension} & \textbf{Claude} & \textbf{Gemini} & \textbf{$r$} & \textbf{$|\Delta|$} \\
+\hline
+Eng.\ Correctness (/40) & 30.6 & 28.5 & 0.93 & 4.3 \\
+\hline
+Doc.\ Grounding (/30) & 22.8 & 14.3 & 0.86 & 8.8 \\
+\hline
+\end{tabular}
+\label{tab:judge}
+\end{center}
+\end{table}
+
+\subsubsection{By Document Section}
+Table~\ref{tab:rubricsub} breaks the two content dimensions of the rubric down by
+document section on the full Level-1 set. Correctness and grounding are highest
+on the well-structured Guideline, Risk Assessment, Preventative Measures, and
+Repair Note sections, and lowest on Material Safety Data and the sparse Voids
+questions---mirroring the retrieval difficulty in those sections, since an answer
+can only be correct and grounded when its evidence page is retrieved.
+
+\begin{table}[htbp]
+\caption{Level-1 Rubric (Correctness, Grounding) by Document Section}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.46\columnwidth}|c|c|c|}
+\hline
+\textbf{Document Section} & \textbf{$n$} & \textbf{Eng/40} & \textbf{Grnd/30} \\
+\hline
+Material Data Sheet & 33 & 29.8 & 23.6 \\
+\hline
+Guideline for Repair & 18 & 36.6 & 23.6 \\
+\hline
+Preventative Measures & 12 & \textbf{38.6} & \textbf{26.3} \\
+\hline
+Material Safety Data & 8 & 22.2 & 20.1 \\
+\hline
+Cementitious Mortar & 8 & 30.8 & 19.5 \\
+\hline
+Epoxy Resin & 8 & 29.8 & 22.4 \\
+\hline
+Risk Assessment & 7 & 36.3 & 25.9 \\
+\hline
+Spalling Edge & 5 & 30.0 & 21.6 \\
+\hline
+Repair Note & 4 & 38.2 & 26.0 \\
+\hline
+Voids (High-Str. Mortar) & 4 & 21.0 & 21.0 \\
+\hline
+Material Approval & 2 & 38.0 & 26.0 \\
+\hline
+Out of Scope & 2 & 33.0 & 22.0 \\
+\hline
+Voids \& Blowholes & 2 & 22.0 & 21.0 \\
+\hline
+\end{tabular}
+\label{tab:rubricsub}
+\end{center}
+\end{table}
+
+As a second, fully-automatic per-section view, we also report the
+answer-to-ground-truth similarity (AnsSim, the cosine similarity
+between the generated and reference answer embeddings), broken down by document
+section on the full Level-1 set
+(Table~\ref{tab:e2esub}). The trend mirrors retrieval: the vector and fused
+configurations produce answers closer to the reference than keyword in almost
+every section, and the gap is widest on Preventative Measures
+($0.63 \rightarrow 0.85$), exactly where keyword retrieval failed. AnsSim is only
+a coarse proxy---it rewards surface overlap rather than engineering
+correctness---so it is reported here to expose per-section trends, not as a
+substitute for the rubric of Table~\ref{tab:results}.
+
+\begin{table}[htbp]
+\caption{Level-1 Answer Similarity (AnsSim) by Document Section}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.40\columnwidth}|c|ccc|}
+\hline
+\textbf{Document Section} & \textbf{$n$} & \textbf{KW} & \textbf{Vec} & \textbf{Fus} \\
+\hline
+Material Data Sheet & 33 & 0.71 & \textbf{0.72} & \textbf{0.72} \\
+\hline
+Guideline for Repair & 18 & 0.76 & \textbf{0.79} & \textbf{0.79} \\
+\hline
+Preventative Measures & 12 & 0.63 & \textbf{0.85} & 0.84 \\
+\hline
+Material Safety Data & 8 & 0.68 & \textbf{0.78} & 0.73 \\
+\hline
+Cementitious Mortar & 8 & 0.75 & 0.80 & \textbf{0.81} \\
+\hline
+Epoxy Resin & 8 & 0.74 & \textbf{0.78} & 0.77 \\
+\hline
+Risk Assessment & 7 & 0.72 & 0.77 & \textbf{0.78} \\
+\hline
+Spalling Edge & 5 & 0.79 & \textbf{0.82} & 0.81 \\
+\hline
+Repair Note & 4 & 0.74 & 0.66 & \textbf{0.76} \\
+\hline
+Voids (High-Str. Mortar) & 4 & 0.74 & \textbf{0.75} & 0.74 \\
+\hline
+Material Approval & 2 & 0.79 & 0.77 & \textbf{0.82} \\
+\hline
+Out of Scope & 2 & \textbf{0.66} & \textbf{0.66} & 0.65 \\
+\hline
+Voids \& Blowholes & 2 & 0.76 & \textbf{0.84} & 0.74 \\
+\hline
+\end{tabular}
+\label{tab:e2esub}
+\end{center}
+\end{table}
+
 \subsection{Document Grounding and Citation}
-Grounding scores in the upper \emph{Good} band (23.1 and 23.4 of 30): answers
+Grounding scores in the \emph{Good} band (23.3 and 21.8 of 30): answers
 are overwhelmingly faithful to the corpus and carry chapter/page citations, but
 the score is capped by noisy citations---the system returns several candidate
 pages where typically one is correct, and a handful of otherwise-correct
@@ -475,19 +668,53 @@ Why & fact is right, but the cited page is unsupported (page-hit miss); groundin
 \end{table}
 
 \subsection{Latency}
-Latency remains the weakest dimension (mean $19.7$\,s on Level~1, $28.7$\,s on
-Level~2), because each query is answered independently for every retrieval mode
-and passes through a second answer-formatting stage. This is the most
-actionable deficit; restricting to the fused mode and dropping the second pass
-would reduce it substantially.
+Dropping the second answer-formatting pass roughly halves response time relative
+to the full pipeline, giving means of $11.9$\,s (Level~1) and $17.6$\,s
+(Level~2). Most questions fall in the $6$--$20$\,s bands, giving latency scores
+of $5.9$ and $3.8$ of $10$; the multi-category set is slower because its compound
+questions retrieve and synthesise more context. Latency nonetheless remains the
+lowest-scoring dimension and the clearest target for further optimisation.
 
-\subsection{\textcolor{red}{Bilingual Fidelity and Compliance}}
-\textcolor{red}{[Pending: bilingual evaluation needs Thai-language examples, which
-cannot be typeset in this pdf\LaTeX{} build for now.]}
+\subsection{Bilingual Fidelity and Compliance}
 Bilingual capability and prompt compliance are strong: answers consistently
-match the language of the question, preserve English material and technical
-terms, cite their sources, and abstain when the context is insufficient. The
-defining compliance behaviour is correctly \emph{declining} an unanswerable
+match the language of the question, preserve English material names and
+repair-method identifiers word-for-word within Thai prose, cite their sources, and
+abstain when the context is insufficient. Table~\ref{tab:exbil} contrasts a
+high- and a low-fidelity answer. In the Excellent case a Thai question is
+answered in Thai while the English method code \emph{RP-TN-02} and material names
+are preserved word-for-word, so a bilingual site team reads it without translation
+loss. The Poor case reproduces an OCR-corrupted Thai term word-for-word, leaving a
+safety hazard unintelligible; genuine wrong-language responses were not observed,
+so terminology corruption from noisy OCR is the dominant bilingual failure mode.
+
+\begin{table}[htbp]
+\caption{Example Answers at High and Low Bilingual Fidelity}
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.13\columnwidth}|p{0.78\columnwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Excellent --- 9/10}} \\
+\hline
+Question & \thai{รอยร้าวแบบ Hard Crack กว้าง 0.4 มม. ลึก 20 มม. ใช้วิธีซ่อมรหัสใด} \\
+\hline
+System & \thai{ใช้วิธี RP-TN-02 (Repair with Epoxy Resin) เนื่องจากรอยร้าวกว้าง 0.3--0.5 มม. และลึกมากกว่า 15 มม.} \\
+\hline
+Why & answered in Thai with the English method code and material names kept word-for-word; meaning fully intact. \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Poor --- 3/10}} \\
+\hline
+Question & \thai{อันตรายจากการใช้เครื่องเจียรคอนกรีตมีอะไรบ้าง} \\
+\hline
+System & \thai{ไฟฟ้าดูด และ โคนใบเจียรมาค} --- corrupted; should read \thai{โดนใบเจียรบาด} (``cut by the grinder blade''). \\
+\hline
+Why & passes an OCR-garbled Thai term through word-for-word, so the second hazard is unintelligible. \\
+\hline
+\end{tabular}
+\label{tab:exbil}
+\end{center}
+\end{table}
+
+The defining compliance behaviour is correctly \emph{declining} an unanswerable
 question rather than guessing; Table~\ref{tab:excomp} contrasts this with the
 opposite failure, where the system over-generates beyond the retrieved context.
 
@@ -521,6 +748,9 @@ Why & out-of-scope over-generation; violates ``answer strictly from the retrieve
 Overall the framework is reliable when retrieval succeeds; with semantic
 embeddings in place, latency and citation precision are the remaining
 priorities for future work.
+
+\section{\textcolor{red}{Conclusion and Future work}}
+\textcolor{red}{[Incomplete — to be written.]}
 
 \iffalse
 \section{Ease of Use}

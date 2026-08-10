@@ -1,0 +1,239 @@
+START Tue Jun 16 21:24:58 SEAST 2026
+  Loaded 6 API keys from C:\Users\User\LLM_Construction\src\geminikey.txt
+  Embedding cache: 417 vectors from gemini-embedding-001.json
+  Embeddings backend: gemini
+Building knowledge base...
+  Loaded 218 chunks from dataset_json
+Knowledge base ready.
+
+Processed 1/11 — 11.5s (total so far: 15.5s)
+Processed 2/11 — 8.8s (total so far: 28.5s)
+Processed 3/11 — 9.9s (total so far: 42.2s)
+Processed 4/11 — 11.5s (total so far: 60.0s)
+Processed 5/11 — 14.2s (total so far: 78.1s)
+Processed 6/11 — 8.9s (total so far: 89.5s)
+Processed 7/11 — 10.6s (total so far: 103.7s)
+Processed 8/11 — 7.7s (total so far: 113.8s)
+Processed 9/11 — 9.5s (total so far: 125.8s)
+Processed 10/11 — 9.5s (total so far: 138.7s)
+Processed 11/11 — 9.8s (total so far: 150.8s)
+
+Batch complete — 11 questions in 150.8s (avg 13.7s / question)
+Saved predictions to: result\testset_lvl1_small.csv
+
+=== Per-method comparison (n=11, mean answer time 13.7s) ===
+| Mode | PageRecall | PagePrec | Hit@k | AnsSim |
+|---|---|---|---|---|
+| keyword (single) | 0.636 | 0.141 | 0.636 | 0.725 |
+| vector (single) | 0.727 | 0.168 | 0.727 | 0.771 |
+| fused (combined) | 0.818 | 0.198 | 0.818 | 0.762 |
+[done result/testset_lvl1_small.csv Tue Jun 16 21:27:48 SEAST 2026]
+  Loaded 6 API keys from C:\Users\User\LLM_Construction\src\geminikey.txt
+  Embedding cache: 446 vectors from gemini-embedding-001.json
+  Embeddings backend: gemini
+Building knowledge base...
+  Loaded 218 chunks from dataset_json
+Knowledge base ready.
+
+Processed 1/17 — 23.7s (total so far: 27.2s)
+Processed 2/17 — 9.9s (total so far: 40.5s)
+Processed 3/17 — 11.4s (total so far: 55.5s)
+Processed 4/17 — 9.1s (total so far: 66.7s)
+Processed 5/17 — 14.2s (total so far: 84.5s)
+Processed 6/17 — 13.9s (total so far: 101.9s)
+Processed 7/17 — 35.0s (total so far: 140.6s)
+Processed 8/17 — 25.6s (total so far: 169.7s)
+Traceback (most recent call last):
+  File "C:\Users\User\LLM_Construction\src\RAG.py", line 1098, in <module>
+    main()
+  File "C:\Users\User\LLM_Construction\src\RAG.py", line 1009, in main
+    result = rag.predict_expected_columns(question)
+  File "C:\Users\User\LLM_Construction\src\RAG.py", line 681, in predict_expected_columns
+    raw_answer, model_used = self._generate_with_gemini(prompt)
+  File "C:\Users\User\LLM_Construction\src\RAG.py", line 571, in _generate_with_gemini
+    raise RuntimeError(last_error or "Gemini generation failed")
+RuntimeError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+[done result/testset_lvl2_small.csv Tue Jun 16 21:31:21 SEAST 2026]
+  Loaded 6 API keys from C:\Users\User\LLM_Construction\src\geminikey.txt
+  Embedding cache: 469 vectors from gemini-embedding-001.json
+  Embeddings backend: gemini
+Building knowledge base...
+  Loaded 218 chunks from dataset_json
+Knowledge base ready.
+
+Processed 1/102 — 28.7s (total so far: 40.3s)
+Processed 2/102 — 11.7s (total so far: 57.4s)
+Processed 3/102 — 12.3s (total so far: 75.1s)
+Processed 4/102 — 9.5s (total so far: 89.8s)
+Processed 5/102 — 12.1s (total so far: 107.2s)
+Processed 6/102 — 9.3s (total so far: 121.5s)
+Processed 7/102 — 11.0s (total so far: 137.5s)
+Processed 8/102 — 8.5s (total so far: 151.0s)
+Processed 9/102 — 22.9s (total so far: 179.0s)
+Processed 10/102 — 30.0s (total so far: 215.3s)
+Processed 11/102 — 7.6s (total so far: 228.9s)
+Processed 12/102 — 12.3s (total so far: 246.8s)
+Processed 13/102 — 12.2s (total so far: 266.8s)
+Processed 14/102 — 7.9s (total so far: 281.2s)
+Processed 15/102 — 18.0s (total so far: 304.7s)
+Processed 16/102 — 12.4s (total so far: 322.8s)
+Processed 17/102 — 17.8s (total so far: 346.9s)
+Processed 18/102 — 14.0s (total so far: 367.3s)
+Processed 19/102 — 13.0s (total so far: 385.7s)
+Processed 20/102 — 10.6s (total so far: 401.9s)
+Processed 21/102 — 9.6s (total so far: 417.4s)
+Processed 22/102 — 11.2s (total so far: 434.5s)
+Processed 23/102 — 9.5s (total so far: 449.7s)
+Processed 24/102 — 17.7s (total so far: 472.8s)
+Processed 25/102 — 11.6s (total so far: 490.1s)
+Processed 26/102 — 29.9s (total so far: 526.2s)
+Processed 27/102 — 10.5s (total so far: 542.8s)
+Processed 28/102 — 11.4s (total so far: 560.3s)
+Processed 29/102 — 12.4s (total so far: 579.2s)
+Processed 30/102 — 11.0s (total so far: 594.7s)
+Processed 31/102 — 10.1s (total so far: 610.0s)
+Processed 32/102 — 20.7s (total so far: 637.0s)
+Processed 33/102 — 19.5s (total so far: 662.9s)
+Processed 34/102 — 12.5s (total so far: 681.8s)
+Processed 35/102 — 8.9s (total so far: 695.6s)
+Processed 36/102 — 9.1s (total so far: 709.5s)
+Processed 37/102 — 11.2s (total so far: 727.7s)
+Processed 38/102 — 9.5s (total so far: 744.1s)
+Processed 39/102 — 7.5s (total so far: 755.1s)
+Processed 40/102 — 9.1s (total so far: 769.0s)
+Processed 41/102 — 9.0s (total so far: 784.4s)
+Processed 42/102 — 8.6s (total so far: 794.7s)
+Processed 43/102 — 8.8s (total so far: 811.0s)
+Processed 44/102 — 8.6s (total so far: 824.6s)
+Processed 45/102 — 9.5s (total so far: 841.5s)
+Processed 46/102 — 11.8s (total so far: 860.0s)
+Processed 47/102 — 10.3s (total so far: 878.1s)
+Processed 48/102 — 9.0s (total so far: 890.7s)
+Processed 49/102 — 7.4s (total so far: 903.8s)
+Processed 50/102 — 10.6s (total so far: 922.7s)
+Processed 51/102 — 15.9s (total so far: 947.2s)
+Processed 52/102 — 17.6s (total so far: 972.1s)
+Processed 53/102 — 13.0s (total so far: 1006.2s)
+Processed 54/102 — 15.3s (total so far: 1028.8s)
+Processed 55/102 — 10.2s (total so far: 1046.6s)
+Processed 56/102 — 19.9s (total so far: 1073.9s)
+Processed 57/102 — 12.3s (total so far: 1093.3s)
+Processed 58/102 — 8.0s (total so far: 1108.9s)
+Processed 59/102 — 10.3s (total so far: 1122.9s)
+Processed 60/102 — 9.1s (total so far: 1139.4s)
+Processed 61/102 — 7.8s (total so far: 1154.8s)
+Processed 62/102 — 7.1s (total so far: 1167.7s)
+Processed 63/102 — 9.8s (total so far: 1184.8s)
+Processed 64/102 — 12.3s (total so far: 1204.8s)
+Processed 65/102 — 11.2s (total so far: 1223.2s)
+Processed 66/102 — 10.9s (total so far: 1241.7s)
+Processed 67/102 — 11.7s (total so far: 1261.2s)
+Processed 68/102 — 12.4s (total so far: 1281.1s)
+Processed 69/102 — 7.6s (total so far: 1296.3s)
+Processed 70/102 — 10.5s (total so far: 1314.2s)
+Processed 71/102 — 7.8s (total so far: 1329.1s)
+Processed 72/102 — 7.6s (total so far: 1342.1s)
+Processed 73/102 — 10.2s (total so far: 1357.7s)
+Processed 74/102 — 12.7s (total so far: 1378.1s)
+Processed 75/102 — 8.6s (total so far: 1394.5s)
+Processed 76/102 — 10.2s (total so far: 1412.6s)
+Processed 77/102 — 13.9s (total so far: 1434.6s)
+Processed 78/102 — 15.4s (total so far: 1460.8s)
+Processed 79/102 — 11.9s (total so far: 1481.1s)
+Processed 80/102 — 10.6s (total so far: 1500.6s)
+Processed 81/102 — 14.8s (total so far: 1527.2s)
+Processed 82/102 — 10.4s (total so far: 1547.1s)
+Processed 83/102 — 9.6s (total so far: 1572.5s)
+Processed 84/102 — 9.2s (total so far: 1599.3s)
+Processed 85/102 — 14.0s (total so far: 1621.7s)
+Processed 86/102 — 9.6s (total so far: 1638.5s)
+Processed 87/102 — 16.0s (total so far: 1663.2s)
+Processed 88/102 — 13.3s (total so far: 1685.8s)
+Processed 89/102 — 13.2s (total so far: 1707.2s)
+Processed 90/102 — 9.8s (total so far: 1724.1s)
+Processed 91/102 — 7.6s (total so far: 1739.1s)
+Processed 92/102 — 11.4s (total so far: 1753.0s)
+Processed 93/102 — 10.3s (total so far: 1772.3s)
+Processed 94/102 — 7.3s (total so far: 1784.8s)
+Processed 95/102 — 11.8s (total so far: 1806.2s)
+Processed 96/102 — 10.4s (total so far: 1823.7s)
+Processed 97/102 — 9.3s (total so far: 1842.2s)
+Processed 98/102 — 12.4s (total so far: 1862.2s)
+Processed 99/102 — 13.5s (total so far: 1885.1s)
+Processed 100/102 — 21.1s (total so far: 1916.0s)
+Processed 101/102 — 14.2s (total so far: 1940.6s)
+Processed 102/102 — 9.7s (total so far: 1961.3s)
+
+Batch complete — 102 questions in 1961.3s (avg 19.2s / question)
+Saved predictions to: result\testset_lvl1_large.csv
+
+=== Per-method comparison (n=102, mean answer time 19.2s) ===
+| Mode | PageRecall | PagePrec | Hit@k | AnsSim |
+|---|---|---|---|---|
+| keyword (single) | 0.471 | 0.100 | 0.471 | 0.719 |
+| vector (single) | 0.814 | 0.183 | 0.814 | 0.766 |
+| fused (combined) | 0.755 | 0.167 | 0.755 | 0.766 |
+[done result/testset_lvl1_large.csv Tue Jun 16 22:04:22 SEAST 2026]
+  Loaded 6 API keys from C:\Users\User\LLM_Construction\src\geminikey.txt
+  Embedding cache: 942 vectors from gemini-embedding-001.json
+  Embeddings backend: gemini
+Building knowledge base...
+  Loaded 218 chunks from dataset_json
+Knowledge base ready.
+
+Processed 1/44 — 22.3s (total so far: 32.2s)
+Processed 2/44 — 21.1s (total so far: 62.3s)
+Processed 3/44 — 13.4s (total so far: 83.6s)
+Processed 4/44 — 31.3s (total so far: 123.3s)
+Processed 5/44 — 19.4s (total so far: 151.0s)
+Processed 6/44 — 20.2s (total so far: 179.1s)
+Processed 7/44 — 12.7s (total so far: 199.5s)
+Processed 8/44 — 15.7s (total so far: 223.1s)
+Processed 9/44 — 11.5s (total so far: 242.9s)
+Processed 10/44 — 35.9s (total so far: 287.3s)
+Processed 11/44 — 11.5s (total so far: 307.4s)
+Processed 12/44 — 12.0s (total so far: 328.0s)
+Processed 13/44 — 14.3s (total so far: 350.7s)
+Processed 14/44 — 17.0s (total so far: 377.7s)
+Processed 15/44 — 23.0s (total so far: 416.7s)
+Processed 16/44 — 16.7s (total so far: 448.6s)
+Processed 17/44 — 21.1s (total so far: 479.0s)
+Processed 18/44 — 37.6s (total so far: 525.1s)
+Processed 19/44 — 13.0s (total so far: 546.9s)
+Processed 20/44 — 12.9s (total so far: 568.6s)
+Processed 21/44 — 23.5s (total so far: 600.2s)
+Processed 22/44 — 11.7s (total so far: 620.0s)
+Processed 23/44 — 22.6s (total so far: 651.6s)
+Processed 24/44 — 14.4s (total so far: 675.2s)
+Processed 25/44 — 18.6s (total so far: 702.8s)
+Processed 26/44 — 20.7s (total so far: 732.3s)
+Processed 27/44 — 28.3s (total so far: 769.8s)
+Processed 28/44 — 15.1s (total so far: 793.9s)
+Processed 29/44 — 10.4s (total so far: 814.0s)
+Processed 30/44 — 19.1s (total so far: 842.5s)
+Processed 31/44 — 12.5s (total so far: 864.8s)
+Processed 32/44 — 17.7s (total so far: 893.5s)
+Processed 33/44 — 15.8s (total so far: 919.2s)
+Processed 34/44 — 14.8s (total so far: 943.8s)
+Processed 35/44 — 22.9s (total so far: 1002.5s)
+Processed 36/44 — 23.1s (total so far: 1047.1s)
+Processed 37/44 — 18.1s (total so far: 1076.1s)
+Processed 38/44 — 10.0s (total so far: 1097.9s)
+Processed 39/44 — 19.7s (total so far: 1128.4s)
+Processed 40/44 — 15.7s (total so far: 1154.4s)
+Processed 41/44 — 13.7s (total so far: 1178.7s)
+Processed 42/44 — 13.0s (total so far: 1201.5s)
+Processed 43/44 — 10.7s (total so far: 1221.8s)
+Processed 44/44 — 52.9s (total so far: 1283.7s)
+
+Batch complete — 44 questions in 1283.7s (avg 29.2s / question)
+Saved predictions to: result\testset_lvl2_large.csv
+
+=== Per-method comparison (n=44, mean answer time 29.2s) ===
+| Mode | PageRecall | PagePrec | Hit@k | AnsSim |
+|---|---|---|---|---|
+| keyword (single) | 0.375 | 0.124 | 0.568 | 0.833 |
+| vector (single) | 0.591 | 0.212 | 0.841 | 0.859 |
+| fused (combined) | 0.545 | 0.186 | 0.705 | 0.851 |
+[done result/testset_lvl2_large.csv Tue Jun 16 22:26:14 SEAST 2026]
+ALL DONE Tue Jun 16 22:26:14 SEAST 2026

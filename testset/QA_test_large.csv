@@ -1,0 +1,103 @@
+﻿Category,sub Category,Question,Answer,Page
+Repair Method,Guideline for Repair,ความเสียหายที่เกิดขึ้นกับชิ้นส่วนอุโมงค์ตาม Guideline for Repair แบ่งออกเป็นกี่ลักษณะ อะไรบ้าง,แบ่งออกเป็น 4 ลักษณะ ได้แก่ 1) รอยร้าว (Crack) 2) แตกบิ่นที่ขอบ (Spalling Edge) 3) แตกบิ่นบริเวณ Gasket (Spalling Recesses) 4) รูฟองอากาศ (Voids or Blowholes),2
+Repair Method,Guideline for Repair,เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือเท่าใด,เมื่อความกว้าง A ≤ 0.1 มม. และ B ≤ 0.3 มม. โดยมีความลึก (Depth) น้อยกว่า 15 มม.,3
+Repair Method,Guideline for Repair,รอยร้าว (Crack) ขนาดใดที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02),เมื่อ 0.3 ≤ A ≤ 0.5 มม. และมีความลึกมากกว่า 15 มม.,3
+Repair Method,Guideline for Repair,เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) คือเท่าใด,เมื่อความกว้าง A > 0.5 มม. และ B > 0.5 มม. (ความลึกถึงระดับ hydro swelling),3
+Repair Method,Guideline for Repair,เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายเท่าใด,"A: 5-50 มม., B: 5-50 มม., C: 5-70 มม.",4
+Repair Method,Guideline for Repair,เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเท่าใด,"เมื่อ A > 50 มม., B > 50 มม., C > 70 มม. หรือมีเหล็กเสริมโผล่ (rebar exposed)",4
+Repair Method,Guideline for Repair,เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือเท่าใด,"A: 2-10 มม., B: 5-30 มม., C: 0-10 มม.",5
+Repair Method,Guideline for Repair,เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses คือเท่าใด,"เมื่อ A > 10 มม., B > 30 มม., C > 10 มม.",5
+Repair Method,Guideline for Repair,รูฟองอากาศ (Voids or Blowholes) ขนาดใดที่ซ่อมด้วย Cementitious Mortar (RP-TN-04),เมื่อมีความกว้างและความลึกในช่วงประมาณ 2-10 มม. (Wide ≤ 10 มม. และ Depth ≤ 10 มม.),6
+Repair Method,Guideline for Repair,รูฟองอากาศ (Voids or Blowholes) ขนาดใดที่ต้องซ่อมด้วย High Strength Mortar (RP-TN-05),"เมื่อมีความกว้างและความลึกมากกว่า 10 มม. (Wide > 10 มม., Depth > 10 มม.)",6
+Repair Method,Guideline for Repair,ความเสียหายจากการผลิตและจากการขนส่ง/ขนย้ายต้องไม่เกินกี่เปอร์เซ็นต์,ความเสียหายจากการผลิตไม่เกิน 5% ของจำนวน Rings ที่ผลิตได้ และความเสียหายจากการขนส่งและการขนย้ายไม่เกิน 2% ของจำนวน Rings ของการขนส่ง,2
+Repair Method,Guideline for Repair,การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัสใด,ใช้วิธี RP-TN-01 (Repair with Cementitious Mortar),3
+Repair Method,Repair with Cementitious Mortar,วิธี RP-TN-01 (Repair with Cementitious Mortar) ใช้ซ่อมรอยร้าวขนาดใด,ใช้ซ่อมรอยร้าวทั่วไปที่มีความกว้างมากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม. และความลึกมากกว่า 15 มม. รวมทั้งรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5 มม.,10
+Repair Method,Repair with Cementitious Mortar,การวัดความกว้างของรอยร้าวในงานซ่อมต้องใช้เครื่องมือใด,ต้องใช้แผ่น Crack Width Indicator ในการวัด,10
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของ Sika Skim Coat ในงานซ่อมด้วย Cementitious Mortar คือเท่าใด,ปูน : น้ำ = 1 : 0.35 โดยน้ำหนัก,11
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของ Renderoc Skim Coat คือเท่าใด,ปูน : น้ำ = 1 : 0.11 โดยน้ำหนัก,11
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar คือเท่าใด,ปูน : น้ำ = 1 : 0.2 โดยน้ำหนัก,11
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือเท่าใด,ปูน : น้ำ = 1 : 0.4 โดยน้ำหนัก,11
+Repair Method,Repair with Cementitious Mortar,อุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) มีอะไรบ้าง,"เครื่องเป่าลม, เกรียง, ฟองน้ำหรือลูกกลิ้ง, กระดาษทราย และภาชนะใส่วัสดุซ่อม",11
+Repair Method,Repair with Cementitious Mortar,ขั้นตอนแรก (3.1) ของการซ่อมรอยร้าวด้วย Cementitious Mortar คืออะไร,ใช้เครื่องเป่าลมเป่าทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรอยร้าว และตรวจสอบความสะอาดก่อนการซ่อมแซม,12
+Repair Method,Repair with Epoxy Resin,วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ซ่อมรอยร้าวขนาดใด,ใช้ซ่อมรอยร้าวทั่วไปที่มีความกว้างตั้งแต่ 0.3 มม. ถึง 0.5 มม. และมีความลึกมากกว่า 15 มม. แต่ไม่ถึงเหล็กเสริม,16
+Repair Method,Repair with Epoxy Resin,อัตราส่วนผสมของวัสดุ Sikadur 52TH ในงานซ่อมด้วย Epoxy Resin คือเท่าใด,วัสดุ A : วัสดุ B = 2 : 1,17
+Repair Method,Repair with Epoxy Resin,อัตราส่วนผสมของวัสดุ Condur SC ในงานซ่อมด้วย Epoxy Resin คือเท่าใด,วัสดุ A : วัสดุ B = 4 : 1,17
+Repair Method,Repair with Epoxy Resin,ในการซ่อมด้วย Epoxy Resin ต้องเซาะร่องตามแนวรอยร้าวให้มีลักษณะและขนาดอย่างไร,เซาะร่องให้มีลักษณะคล้ายตัว V โดยให้บริเวณปากร่องมีความกว้างประมาณ 3-5 มม.,19
+Repair Method,Repair with Epoxy Resin,การทำแนวกั้นขนานกับรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละเท่าใด,ห่างจากรอยร้าวฝั่งละประมาณ 5 มม. เพื่อไม่ให้วัสดุซ่อมโดนผิวคอนกรีตส่วนอื่น,20
+Repair Method,Repair with Epoxy Resin,อุปกรณ์ที่เพิ่มเข้ามาในงานซ่อม Epoxy Resin เมื่อเทียบกับงาน Cementitious Mortar คืออะไร,เครื่องตัดและใบตัดคอนกรีต (สำหรับเซาะร่องตามแนวรอยร้าว),17
+Repair Method,Spalling Edge Repair,มอร์ต้าร์ที่ใช้ซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่าเท่าใด,ต้องใช้มอร์ต้าร์ที่มีกำลังอัดสูงกว่า 400 ksc และมีการหดตัวต่ำ รวมทั้งต้องใช้น้ำยาประสานคอนกรีต,25
+Repair Method,Spalling Edge Repair,วัสดุเชื่อมประสานคอนกรีต Sikadur 32TH ที่ใช้ในงาน Spalling Edge Repair ผสมด้วยอัตราส่วนเท่าใด,Sikadur 32TH ผสมด้วยอัตราส่วน A : B = 2 : 1 โดยน้ำหนัก,26
+Repair Method,Spalling Edge Repair,อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal ที่ใช้ในงาน Spalling Edge ผสมด้วยอัตราส่วนเท่าใด,วัสดุ A : B : C = 2 : 1 : 2.5 โดยน้ำหนัก,26
+Repair Method,Spalling Edge Repair,ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คืออะไร,ใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวเส้นตรงชัดเจนเพื่อเตรียมการซ่อมแซม,28
+Repair Method,Spalling Edge Repair,ในงาน Spalling Edge Repair ต้องทาน้ำยาประสานคอนกรีต Sikadur 32TH บริเวณใด,ทาเฉพาะบนผิวคอนกรีตที่แตก,29
+Repair Method,Voids and Blowholes Repair,วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมรูฟองอากาศขนาดใด,ใช้ซ่อมรูฟองอากาศที่มีความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม.,33
+Repair Method,Voids and Blowholes Repair,ในการฉาบอุดรูฟองอากาศด้วย Cementitious Mortar ผู้ปฏิบัติงานต้องฉาบขณะที่ผิวคอนกรีตเป็นอย่างไร,ต้องฉาบในขณะที่ผิวคอนกรีตยังชุ่มน้ำอยู่,35
+Repair Method,Voids and Blowholes Repair (High Strength Mortar),วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้ซ่อมรูฟองอากาศขนาดใด,ใช้ซ่อมรูฟองอากาศที่มีความกว้างและความลึกมากกว่า 10 มม. ซึ่งต้องใช้วัสดุที่มีกำลังอัดและการยึดเกาะสูง และการขยายตัวต่ำกว่าวัสดุฉาบซ่อมทั่วไป,39
+Repair Method,Voids and Blowholes Repair (High Strength Mortar),วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสมเท่าใด,ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก,40
+Repair Method,Voids and Blowholes Repair (High Strength Mortar),ขั้นตอนแรก (3.1) ของการซ่อมรูฟองอากาศด้วย High Strength Mortar คืออะไร,ใช้กระดาษทรายขัดขอบรูฟองอากาศเพื่อให้การซ่อมแซมทำได้เต็มพื้นที่,40
+Material,Material Data Sheet,ระยะเวลาการทำงาน (Potlife) ของ Sika Skim Coat ที่อุณหภูมิ 30°C คือเท่าใด,ประมาณ 45 นาที ที่อุณหภูมิ 30°C,46
+Material,Material Data Sheet,ความหนาในการฉาบ Sika Skim Coat อยู่ในช่วงเท่าใด,ประมาณ 0.5 - 2.0 มม.,46
+Material,Material Data Sheet,ขนาดของเม็ดผง Sika Skim Coat ไม่เกินเท่าใด,ไม่เกิน 0.1 มิลลิเมตร,46
+Material,Material Data Sheet,อายุการเก็บรักษา (Shelf Life) ของ Sika Skim Coat คือเท่าใด,12 เดือน เมื่อจัดเก็บในพื้นที่แห้งปราศจากความชื้นและหลีกเลี่ยงแสงแดด,45
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-31 CF Normal คือเท่าใด,Part A : Part B = 2 : 1 โดยน้ำหนักหรือปริมาตร,50
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C คือเท่าใด,ประมาณ 35 นาที (สำหรับปริมาณ 200 กรัม),51
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +10°C คือเท่าใด,ประมาณ 145 นาที (สำหรับปริมาณ 200 กรัม),51
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือเท่าใด,60 - 70 N/mm²,49
+Material,Material Data Sheet,Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้หรือไม่,ได้ เนื่องจากเป็นวัสดุที่ทนความชื้น (moisture tolerant) เหมาะกับพื้นผิวคอนกรีตทั้งแบบแห้งและชื้น (Suitable for dry and damp concrete surfaces),47
+Material,Material Data Sheet,อายุการเก็บรักษาของ Sikadur-31 CF Normal คือเท่าใด และต้องเก็บที่อุณหภูมิเท่าใด,24 เดือน หากเก็บในบรรจุภัณฑ์เดิมที่ปิดสนิทในที่แห้ง ที่อุณหภูมิระหว่าง +5°C ถึง +30°C,48
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-41 CF Normal คือเท่าใด,Part A : B : C = 2 : 1 : 2.5 โดยน้ำหนัก (หรือ 2 : 1 : 3.4 โดยปริมาตร),55
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C คือเท่าใด,ประมาณ 40 นาที (สำหรับปริมาณ 200 กรัม),56
+Material,Material Data Sheet,ปริมาณการใช้งาน (Consumption) ของ Sikadur-41 CF Normal คือเท่าใด,ประมาณ 2.0 กก./ตร.ม. ต่อความหนา 1 มม.,55
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-32TH คือเท่าใด,Comp. A : B = 2 : 1 โดยน้ำหนัก,59
+Material,Material Data Sheet,ระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH ที่อุณหภูมิ 20°C และ 30°C คือเท่าใด,ที่ 20°C ประมาณ 90 นาที และที่ 30°C ประมาณ 40 นาที (ที่ 40°C ประมาณ 20 นาที),59
+Material,Material Data Sheet,ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ของ Sikadur-32TH คือเท่าใด,2.5-3 N/mm² (Concrete failure),59
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ของ Sikadur-32TH คือเท่าใด,60-70 N/mm²,59
+Material,Material Data Sheet,ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือเท่าใด,0.3-0.8 กก./ตร.ม. ขึ้นอยู่กับความพรุนของพื้นผิว,58
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-52TH คือเท่าใด,ส่วนผสม A : ส่วนผสม B = 2 : 1 (โดยน้ำหนักและโดยปริมาตร),61
+Material,Material Data Sheet,ระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C คือเท่าใด,ประมาณ 30 นาที (สำหรับปริมาณ 2 กก.),61
+Material,Material Data Sheet,ค่าแรงยึดเกาะต่อคอนกรีตของ Sikadur-52TH คือเท่าใด,3-4 นิวตัน/ตร.มม. (คอนกรีตแตกก่อน),61
+Material,Material Data Sheet,ความกว้างสูงสุดของรอยแตกร้าวที่ควรอัดฉีดด้วย Sikadur-52TH คือเท่าใด,5 มม. และอายุต่ำสุดของเนื้อคอนกรีตใหม่ที่ใช้ได้คือ 3-6 สัปดาห์,60
+Material,Material Data Sheet,ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือเท่าใด,วัดได้ 290 เซนติพอยส์ ที่ 20°C (และ 130 เซนติพอยส์ ที่ 30°C),61
+Material,Material Data Sheet,Conpatch 300 ใช้ซ่อมความเสียหายผิวหน้าคอนกรีตได้ลึกเท่าใด,ใช้ซ่อมความเสียหายผิวหน้าที่ลึกประมาณ 1-2 มม. (เป็น polymer modified cosmetic repair mortar ชนิดส่วนเดียว),62
+Material,Material Data Sheet,อัตราส่วนผสมของ Condur SC คือเท่าใด,A : B = 4 : 1 โดยน้ำหนัก (หรือ 3 : 1 โดยปริมาตร),69
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือเท่าใด,ประมาณ 50-70 นาที,70
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือเท่าใด,20.0 MPa ที่อายุ 28 วัน (สำหรับ 124 และ 124W),109
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ที่อายุ 28 วันของ Bee Brand No.135/135F คือเท่าใด,"60 MPa (7,300 psi) ที่อายุ 28 วัน",115
+Material,Material Data Sheet,กำลังอัดที่อายุ 1 วันและ 7 วันของ Bee Brand No.135/135F คือเท่าใด,"1 วัน: 25 MPa (3,500 psi) และ 7 วัน: 40 MPa (5,800 psi)",115
+Material,Material Data Sheet,อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F คือเท่าใด,น้ำ = 17-19 % โดยน้ำหนัก,115
+Material,Material Data Sheet,ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่ 28 วันของ Bee Brand No.135/135F คือเท่าใด,5.5 MPa (800 psi) ที่อายุ 28 วัน,115
+Material,Material Data Sheet,ความแตกต่างระหว่าง Bee Brand No.135 และ No.135F คืออะไร,No.135F จะมีส่วนผสมของ Cellulose Fiber เพิ่มเข้ามา ส่วน No.135 ไม่มี,114
+Human Risk,Risk Assessment in Repair Working,อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีตมีอะไรบ้าง,ไฟฟ้าดูด และโดนใบเจียรบาด,121
+Human Risk,Risk Assessment in Repair Working,ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือเท่าใด,"HCR = 4, PR = 3, RF = 12 (High Risk)",121
+Human Risk,Risk Assessment in Repair Working,"ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจากอะไร",RF = HCR × PR (Hazard Class Rating คูณด้วย Probability Rating),123
+Human Risk,Risk Assessment in Repair Working,ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือเท่าใด,ค่า 8-16 ถือเป็นความเสี่ยงสูง (High Risk) โดย 1-4 = Low Risk และ 5-7 = Medium Risk,121
+Human Risk,Risk Assessment in Repair Working,ระดับความเสี่ยงเริ่มต้นของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้หรืออักเสบคือเท่าใด,"HCR = 3, PR = 3, RF = 9 (High Risk)",121
+Human Risk,Risk Assessment in Repair Working,วิธีลดความเสี่ยงจากการกลืนสารเคมีในเรื่องเกี่ยวกับอาหารคืออะไร,ห้ามนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด และทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน,122
+Human Risk,Material Safety Data,การปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตาคืออะไร,ถอดคอนแทคเลนส์ ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่องไม่น้อยกว่า 10 นาที แล้วพาไปพบแพทย์ทันที,125
+Human Risk,Material Safety Data,หากกลืนวัสดุ Sikadur 52TH (Part B) จะเกิดอันตรายอย่างไร,อาจเป็นอันตรายถึงตายได้,130
+Human Risk,Material Safety Data,การปฐมพยาบาลเบื้องต้นกรณีกลืน Sikadur 52TH (Part B) คืออะไร,บ้วนปากแล้วดื่มน้ำสะอาดเป็นปริมาณมาก ห้ามทำให้อาเจียนโดยเด็ดขาด แล้วพาไปพบแพทย์โดยทันที,130
+Human Risk,Material Safety Data,หากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) จนเป็นแผลแล้วไม่ทำการรักษาจะเกิดผลเสียอย่างไร,หากโดนกัดกร่อนจนเป็นแผลแล้วไม่ทำการรักษา จะทำให้แผลสมานตัวช้า,127
+Human Risk,Material Safety Data,ความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32TH (Part B) คืออะไร,ทำลายเนื้อเยื่อตาอย่างรุนแรง อาจทำให้ตาบอดได้,126
+Human Risk,Material Safety Data,มาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมีคืออะไร,สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน,125
+Human Risk,Material Safety Data,การปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตาคืออะไร,ใช้น้ำเปล่าล้างตาประมาณ 15 นาที แล้วไปพบแพทย์ ห้ามใช้สารเคมีที่เป็นตัวทำละลายหรือทินเนอร์ในการล้างโดยเด็ดขาด,130
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมแบ่งตามประเภทวัสดุได้กี่หมวด,แบ่งได้ 2 หมวด ได้แก่ 1) มาตรการสำหรับวัสดุซ่อมแบบผง และ 2) มาตรการสำหรับวัสดุซ่อมแบบของเหลว,135
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,วัสดุซ่อมแบบผงตามมาตรการสิ่งแวดล้อมมีอะไรบ้าง,"Sika Skim Coat, Conpatch 300, Renderoc Skimcoat, ปูนฉาบแต่งตราผึ้ง 124, ตราผึ้ง 124L และตราผึ้ง 135F",135
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,วัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อมมีอะไรบ้าง,"Sikadur 32TH, Sikadur 52TH, Sikadur 31 CF Normal, Sikadur 41 CF Normal และ Condur SC",137
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงรั่วไหลปนเปื้อนดินจำนวนมากคืออะไร,เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่ปิดได้มิดชิด แล้วขนย้ายออกจากจุดที่รั่วไหล จากนั้นกวาดวัสดุที่รั่วไหลกองรวมกัน ใช้ผ้าหรือกระสอบคลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย แล้วตักวัสดุใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี,136
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,อุปกรณ์ที่ใช้ดับเพลิงกรณีเกิดเพลิงไหม้วัสดุซ่อมมีอะไรบ้าง,"โฟมดับเพลิงชนิดทนแอลกอฮอล์, ถังดับเพลิงชนิด CO2 และถังดับเพลิงแบบผง",136
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,ข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อมคืออะไร,ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด และหากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก ผู้ผจญเพลิงต้องสวมหน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี,136
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดินคืออะไร,ใช้ทรายหรือขี้เลื่อยกองทับวัสดุที่รั่วไหลเพื่อเป็นตัวดูดซับสารเคมี จากนั้นกวาดวัสดุดูดซับใส่ถุงดำแล้วทิ้งในพื้นที่สำหรับทิ้งสารเคมี,138
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียคืออะไร,ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด หากปนเปื้อนปริมาณมากจนกำจัดไม่ได้ต้องติดต่อหน่วยงานที่กำจัดสารเคมีได้ทันที,135
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,เพื่อป้องกันการปนเปื้อนในดิน พื้นที่สำหรับงานซ่อมแซมต้องมีลักษณะอย่างไร,ต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนลงในดิน,136
+Non-Construction Questions,Guideline for Repair,ชื่อโครงการ (Project Name) ที่ระบุไว้ในเอกสารคืออะไร,SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER (โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา),1
+Non-Construction Questions,Tunnel Segment Repair Note,บริษัทที่ปรึกษา (Consultant) ของโครงการนี้คือใคร,TEAM TWI GFE,140
+Non-Construction Questions,Tunnel Segment Repair Note,บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือใคร,SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED,140
+Non-Construction Questions,Guideline for Repair,หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คืออะไร,TB-RP-01,1
+Non-Construction Questions,Guideline for Repair,เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่เท่าใดและลงวันที่เท่าใด,Issue 2 ลงวันที่ 20/6/2017,2
+Non-Construction Questions,Tunnel Segment Repair Note,แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลขใด,TUNNEL-QCY-RN-41,141
+Non-Construction Questions,Tunnel Segment Repair Note,ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งใดบ้าง,"Production Engineer, QC Engineer และ Consultant",140
+Non-Construction Questions,Material Safety Data,เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่เท่าใดและลงวันที่เท่าใด,Issue 1 ลงวันที่ 14/2/2017,125
+Non-Construction Questions,Material Approval Document,ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135F ได้รับการอนุมัติจากสำนักงานโครงการให้ใช้งานหรือไม่,ไม่อนุมัติให้ใช้ เนื่องจากยังไม่ทราบรายละเอียดการซ่อมแซมที่แน่ชัด หากจะใช้ต้องเสนอวิธีการซ่อมแซมพร้อมวัสดุให้พิจารณาอนุมัติเป็นกรณีไป,147
+Non-Construction Questions,Material Approval Document,ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้งานลักษณะใดตามเอกสารอนุมัติวัสดุ,อนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็กหรือฟองอากาศจากงานหล่อคอนกรีต,148
+Non-Construction Questions,Out of Scope,ตึกใบหยกใช้ปูนชนิดไหนในการสร้าง,คำถามข้างต้นอยู่นอกขอบเขตเอกสารที่โครงการกำหนด,-
+Non-Construction Questions,Out of Scope,งบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้คือเท่าใด,คำถามข้างต้นอยู่นอกขอบเขตเอกสารที่โครงการกำหนด,-

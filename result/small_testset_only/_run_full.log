@@ -1,0 +1,196 @@
+START Tue Jun  9 22:35:47 SEAST 2026
+  Loaded 6 API keys from C:\Users\User\LLM_Construction\src\geminikey.txt
+  Embedding cache: 258 vectors from gemini-embedding-001.json
+  Embeddings backend: gemini
+Building knowledge base...
+  Loaded 218 chunks from dataset_json
+Knowledge base ready.
+
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 1/20 — 24.1s (total so far: 27.8s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 2/20 — 17.2s (total so far: 48.9s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 3/20 — 15.3s (total so far: 67.9s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 4/20 — 26.1s (total so far: 97.8s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 5/20 — 17.1s (total so far: 118.8s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 6/20 — 24.0s (total so far: 146.5s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 7/20 — 17.2s (total so far: 167.5s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 8/20 — 14.8s (total so far: 185.2s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 9/20 — 23.4s (total so far: 212.5s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 10/20 — 17.7s (total so far: 234.3s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 11/20 — 24.2s (total so far: 262.3s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 12/20 — 15.7s (total so far: 281.9s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>. Keeping original answer.
+Processed 13/20 — 21.2s (total so far: 307.0s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 14/20 — 19.2s (total so far: 330.4s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 15/20 — 18.1s (total so far: 352.4s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 16/20 — 17.5s (total so far: 373.9s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 17/20 — 27.6s (total so far: 405.5s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 18/20 — 18.2s (total so far: 427.9s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 19/20 — 18.3s (total so far: 450.5s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 20/20 — 16.6s (total so far: 471.8s)
+
+Batch complete — 20 questions in 471.8s (avg 23.6s / question)
+Saved predictions to: result\QA_test_out_gemini.csv
+
+=== Per-method comparison (n=20, mean answer time 23.6s) ===
+| Mode | PageRecall | PagePrec | Hit@k | AnsSim |
+|---|---|---|---|---|
+| keyword (single) | 0.450 | 0.104 | 0.450 | 0.705 |
+| vector (single) | 0.650 | 0.145 | 0.650 | 0.745 |
+| fused (combined) | 0.750 | 0.174 | 0.750 | 0.759 |
+  Loaded 6 API keys from C:\Users\User\LLM_Construction\src\geminikey.txt
+  Embedding cache: 337 vectors from gemini-embedding-001.json
+  Embeddings backend: gemini
+Building knowledge base...
+  Loaded 218 chunks from dataset_json
+Knowledge base ready.
+
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 39: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 1/20 — 39.4s (total so far: 43.7s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 2/20 — 21.5s (total so far: 69.3s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 3/20 — 23.9s (total so far: 97.9s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 4/20 — 21.9s (total so far: 124.4s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 5/20 — 24.5s (total so far: 154.0s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 6/20 — 28.2s (total so far: 186.9s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 7/20 — 27.5s (total so far: 219.3s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 8/20 — 23.5s (total so far: 247.6s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 39: character maps to <undefined>. Keeping original answer.
+Processed 9/20 — 60.2s (total so far: 312.2s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 39: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 10/20 — 34.9s (total so far: 351.8s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 11/20 — 17.3s (total so far: 373.6s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 12/20 — 25.9s (total so far: 404.2s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 13/20 — 44.2s (total so far: 453.1s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 14/20 — 41.8s (total so far: 500.0s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 15/20 — 23.8s (total so far: 528.7s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 16/20 — 28.8s (total so far: 562.1s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 17/20 — 27.7s (total so far: 594.6s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 18/20 — 19.4s (total so far: 618.8s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 19/20 — 19.2s (total so far: 642.6s)
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+[reformat] ERROR: 'charmap' codec can't encode character '\u2192' in position 38: character maps to <undefined>. Keeping original answer.
+Processed 20/20 — 21.2s (total so far: 669.0s)
+
+Batch complete — 20 questions in 669.0s (avg 33.4s / question)
+Saved predictions to: result\QA_test_lvl2_out_gemini.csv
+
+=== Per-method comparison (n=20, mean answer time 33.4s) ===
+| Mode | PageRecall | PagePrec | Hit@k | AnsSim |
+|---|---|---|---|---|
+| keyword (single) | 0.567 | 0.170 | 0.750 | 0.789 |
+| vector (single) | 0.767 | 0.229 | 0.950 | 0.815 |
+| fused (combined) | 0.667 | 0.198 | 0.850 | 0.811 |
+DONE Tue Jun  9 22:55:03 SEAST 2026

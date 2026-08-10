@@ -1,0 +1,919 @@
+﻿Category,sub Category,Question,Answer,Page,predicted_keyword_Rainbow Group,predicted_keyword_Category,predicted_keyword_Answer,predicted_keyword_Page,predicted_keyword_answer_model,predicted_keyword_raw_answer,predicted_keyword_PageRecall,predicted_keyword_PagePrec,predicted_keyword_Hit,predicted_keyword_AnsSim,predicted_vector_Rainbow Group,predicted_vector_Category,predicted_vector_Answer,predicted_vector_Page,predicted_vector_answer_model,predicted_vector_raw_answer,predicted_vector_PageRecall,predicted_vector_PagePrec,predicted_vector_Hit,predicted_vector_AnsSim,predicted_fused_Rainbow Group,predicted_fused_Category,predicted_fused_Answer,predicted_fused_Page,predicted_fused_answer_model,predicted_fused_raw_answer,predicted_fused_PageRecall,predicted_fused_PagePrec,predicted_fused_Hit,predicted_fused_AnsSim,compute_time_s,claude_fused_eng,claude_fused_grounding
+Repair Method,Guideline for Repair,ความเสียหายที่เกิดขึ้นกับชิ้นส่วนอุโมงค์ตาม Guideline for Repair แบ่งออกเป็นกี่ลักษณะ อะไรบ้าง,แบ่งออกเป็น 4 ลักษณะ ได้แก่ 1) รอยร้าว (Crack) 2) แตกบิ่นที่ขอบ (Spalling Edge) 3) แตกบิ่นบริเวณ Gasket (Spalling Recesses) 4) รูฟองอากาศ (Voids or Blowholes),2,Construction-Related,Repair Method,"ตามเอกสาร ""Guideline For Repair"" (Chapter: Guildline For Repair, Page: 5) ที่ให้มานั้น ได้กล่าวถึงและให้แนวทางการซ่อมแซมความเสียหายประเภท ""แตกบินบริเวณ Gasket (Spalling Recesses)"" เพียงลักษณะเดียวอย่างชัดเจน อย่างไรก็ตาม เอกสารในบริบทนี้ไม่ได้ระบุหรือแบ่งประเภทความเสียหายทั้งหมดออกเป็นกี่ลักษณะอย่างเป็นทางการ","1, 142, 140, 141, 5",gemini-2.5-flash,"Page: 5
+Answer: ตามเอกสาร ""Guideline For Repair"" (Chapter: Guildline For Repair, Page: 5) ที่ให้มานั้น ได้กล่าวถึงและให้แนวทางการซ่อมแซมความเสียหายประเภท ""แตกบินบริเวณ Gasket (Spalling Recesses)"" เพียงลักษณะเดียวอย่างชัดเจน อย่างไรก็ตาม เอกสารในบริบทนี้ไม่ได้ระบุหรือแบ่งประเภทความเสียหายทั้งหมดออกเป็นกี่ลักษณะอย่างเป็นทางการ",0.0,0.0,0,0.8064,Construction-Related,Repair Method,"ความเสียหายที่เกิดขึ้นกับชิ้นส่วนอุโมงค์ตาม Guideline for Repair แบ่งออกเป็น 4 ลักษณะ ได้แก่ (Chapter: Guildline For Repair, Page: 2):
+1.) รอยร้าว (Crack)
+2.) แตกบิ่นที่ขอบ (Spalling Edge)
+3.) แตกบิ่นบริเวณ Gasket (Spalling Recesses)
+4.) รูฟองอากาศ (Voids or Blowholes)","2, 3, 1, 5, 140",gemini-2.5-flash,"Page: 2
+Answer: ความเสียหายที่เกิดขึ้นกับชิ้นส่วนอุโมงค์ตาม Guideline for Repair แบ่งออกเป็น 4 ลักษณะ ได้แก่ (Chapter: Guildline For Repair, Page: 2):
+1.) รอยร้าว (Crack)
+2.) แตกบิ่นที่ขอบ (Spalling Edge)
+3.) แตกบิ่นบริเวณ Gasket (Spalling Recesses)
+4.) รูฟองอากาศ (Voids or Blowholes)",1.0,0.2,1,0.8926,Construction-Related,Repair Method,"ตามเอกสาร Guideline for Repair ความเสียหายที่เกิดขึ้นกับชิ้นส่วนอุโมงค์ที่ระบุแนวทางการซ่อมแซมแบ่งออกเป็น 2 ลักษณะ ได้แก่
+*   รอยร้าว (Crack) (Chapter: Guildline For Repair, Page: 3)
+*   แตกบิ่นบริเวณ Gasket (Spalling Recesses) (Chapter: Guildline For Repair, Page: 5)","1, 142, 140, 3, 5",gemini-2.5-flash,"Page: 3, 5
+Answer: ตามเอกสาร Guideline for Repair ความเสียหายที่เกิดขึ้นกับชิ้นส่วนอุโมงค์ที่ระบุแนวทางการซ่อมแซมแบ่งออกเป็น 2 ลักษณะ ได้แก่
+*   รอยร้าว (Crack) (Chapter: Guildline For Repair, Page: 3)
+*   แตกบิ่นบริเวณ Gasket (Spalling Recesses) (Chapter: Guildline For Repair, Page: 5)",0.0,0.0,0,0.8111,28.67,8,8
+Repair Method,Guideline for Repair,เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือเท่าใด,เมื่อความกว้าง A ≤ 0.1 มม. และ B ≤ 0.3 มม. โดยมีความลึก (Depth) น้อยกว่า 15 มม.,3,Construction-Related,Repair Method,"เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือ:
+*   ความกว้างรอยร้าว (A) ≤ 0.1 มม.
+*   ความกว้างรอยร้าว (B) ≤ 0.3 มม.
+*   ความลึกของรอยร้าว < 15 มม.
+
+อ้างอิงจาก Table1 Guideline for Crack Repair (Chapter: Guideline For Repair, Page: 3).","3, 10, 16, 142, 140",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือ:
+*   ความกว้างรอยร้าว (A) ≤ 0.1 มม.
+*   ความกว้างรอยร้าว (B) ≤ 0.3 มม.
+*   ความลึกของรอยร้าว < 15 มม.
+
+อ้างอิงจาก Table1 Guideline for Crack Repair (Chapter: Guideline For Repair, Page: 3).",1.0,0.2,1,0.7692,Construction-Related,Repair Method,"เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือ A ≤ 0.1 mm และ B ≤ 0.3 mm (Chapter: Guildline For Repair, Page: 3).","3, 10, 16, 5, 2",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือ A ≤ 0.1 mm และ B ≤ 0.3 mm (Chapter: Guildline For Repair, Page: 3).",1.0,0.2,1,0.7653,Construction-Related,Repair Method,"เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือ:
+*   ความกว้าง A (Hard Crack) ≤ 0.1 มม.
+*   ความกว้าง B (Shrinkage Crack) ≤ 0.3 มม.
+*   ความลึกน้อยกว่า 15 มม. (Depth < 15)
+
+อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, Table1 Guideline for Crack Repair.","3, 10, 16, 142, 5",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์ความเสียหายที่ไม่ต้องซ่อมแซม (No Repair) สำหรับรอยร้าว (Crack) คือ:
+*   ความกว้าง A (Hard Crack) ≤ 0.1 มม.
+*   ความกว้าง B (Shrinkage Crack) ≤ 0.3 มม.
+*   ความลึกน้อยกว่า 15 มม. (Depth < 15)
+
+อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, Table1 Guideline for Crack Repair.",1.0,0.2,1,0.7808,11.65,38,26
+Repair Method,Guideline for Repair,รอยร้าว (Crack) ขนาดใดที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02),เมื่อ 0.3 ≤ A ≤ 0.5 มม. และมีความลึกมากกว่า 15 มม.,3,Construction-Related,Repair Method,"รอยร้าวที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02) คือรอยร้าวที่มีความกว้างตั้งแต่ 0.3 มม. ถึง 0.5 มม. (0.3≤A≤0.5) และมีความลึกมากกว่า 15 มม. (Depth>15) (อ้างอิง: Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Epoxy Resin, Page: 16)","3, 16, 7, 15, 71",gemini-2.5-flash,"Page: 3, 16
+Answer: รอยร้าวที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02) คือรอยร้าวที่มีความกว้างตั้งแต่ 0.3 มม. ถึง 0.5 มม. (0.3≤A≤0.5) และมีความลึกมากกว่า 15 มม. (Depth>15) (อ้างอิง: Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Epoxy Resin, Page: 16)",1.0,0.2,1,0.78,Construction-Related,Repair Method,"รอยร้าว (Crack) ที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02) มีขนาดดังนี้:
+1.  **ความกว้างของรอยร้าว (Crack Width):** ตั้งแต่ 0.3 mm. ถึง 0.5 mm. (อ้างอิง Chapter: Repair With Epoxy Resin, Page: 16 และ Chapter: Guildline For Repair, Page: 3)
+2.  **ความลึกของรอยร้าว (Depth):** มากกว่า 15 mm. แต่ไม่ถึงเหล็กเสริม (อ้างอิง Chapter: Repair With Epoxy Resin, Page: 16 และ Chapter: Guildline For Repair, Page: 3)","16, 3, 20, 10, 17",gemini-2.5-flash,"Page: 3, 16
+Answer: รอยร้าว (Crack) ที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02) มีขนาดดังนี้:
+1.  **ความกว้างของรอยร้าว (Crack Width):** ตั้งแต่ 0.3 mm. ถึง 0.5 mm. (อ้างอิง Chapter: Repair With Epoxy Resin, Page: 16 และ Chapter: Guildline For Repair, Page: 3)
+2.  **ความลึกของรอยร้าว (Depth):** มากกว่า 15 mm. แต่ไม่ถึงเหล็กเสริม (อ้างอิง Chapter: Repair With Epoxy Resin, Page: 16 และ Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.7075,Construction-Related,Repair Method,"รอยร้าวที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02) คือรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3 และ Chapter: Repair With Epoxy Resin, Page: 16).","3, 16, 7, 20, 15",gemini-2.5-flash,"Page: 3, 16
+Answer: รอยร้าวที่ต้องซ่อมด้วย Epoxy Resin (RP-TN-02) คือรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3 และ Chapter: Repair With Epoxy Resin, Page: 16).",1.0,0.2,1,0.7102,12.33,38,26
+Repair Method,Guideline for Repair,เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) คือเท่าใด,เมื่อความกว้าง A > 0.5 มม. และ B > 0.5 มม. (ความลึกถึงระดับ hydro swelling),3,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) ตามตารางที่ 1 Guideline for Crack Repair คือ:
+*   A(mm.) มากกว่า 0.5 มิลลิเมตร (mm.)
+*   B(mm.) มากกว่า 0.5 มิลลิเมตร (mm.)
+*   ความลึก (Depth) ถึง Hydro Swelling
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 3)","3, 10, 5, 70, 4",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) ตามตารางที่ 1 Guideline for Crack Repair คือ:
+*   A(mm.) มากกว่า 0.5 มิลลิเมตร (mm.)
+*   B(mm.) มากกว่า 0.5 มิลลิเมตร (mm.)
+*   ความลึก (Depth) ถึง Hydro Swelling
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.8172,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) คือ เมื่อค่า A (ความกว้างรอยร้าวประเภท Hard Crack) มีขนาดมากกว่า 0.5 มม. และค่า B (ความกว้างรอยร้าวประเภท Shrinkage Crack) มีขนาดมากกว่า 0.5 มม. (Chapter: Guildline For Repair, Page: 3)","3, 10, 5, 16, 2",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) คือ เมื่อค่า A (ความกว้างรอยร้าวประเภท Hard Crack) มีขนาดมากกว่า 0.5 มม. และค่า B (ความกว้างรอยร้าวประเภท Shrinkage Crack) มีขนาดมากกว่า 0.5 มม. (Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.7538,Construction-Related,Material,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) คือ:
+*   ความกว้าง A (mm.) มากกว่า 0.5
+*   ความกว้าง B (mm.) มากกว่า 0.5
+*   ความลึกถึงวัสดุไฮโดร สเวลลิ่ง (Depth to hydro swelling) (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3)","3, 10, 5, 16, 4",gemini-2.5-flash,"Page: 3
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับรอยร้าว (Crack) คือ:
+*   ความกว้าง A (mm.) มากกว่า 0.5
+*   ความกว้าง B (mm.) มากกว่า 0.5
+*   ความลึกถึงวัสดุไฮโดร สเวลลิ่ง (Depth to hydro swelling) (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.836,9.52,38,26
+Repair Method,Guideline for Repair,เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายเท่าใด,"A: 5-50 มม., B: 5-50 มม., C: 5-70 มม.",4,Construction-Related,Repair Method,"เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.","7, 25, 4, 24, 5",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 4):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.",1.0,0.2,1,0.7338,Construction-Related,Repair Method,"เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายดังนี้ (Chapter: Guildline For Repair, Page: 4):
+*   A(mm.): 5-50
+*   B(mm.): 5-50
+*   C(mm.): 5-70","25, 4, 10, 5, 3",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายดังนี้ (Chapter: Guildline For Repair, Page: 4):
+*   A(mm.): 5-50
+*   B(mm.): 5-50
+*   C(mm.): 5-70",1.0,0.2,1,0.7075,Construction-Related,Repair Method,"เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายดังนี้ (อ้างอิงจาก Table 2 Guideline for Spalling Edge Repair):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.","25, 4, 10, 5, 33",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การซ่อมแตกบิ่นที่ขอบ (Spalling Edge) ด้วย Cementitious Mortar (RP-TN-03) มีขนาดความเสียหายดังนี้ (อ้างอิงจาก Table 2 Guideline for Spalling Edge Repair):
+*   A: 5-50 มม.
+*   B: 5-50 มม.
+*   C: 5-70 มม.",1.0,0.2,1,0.7291,12.08,39,26
+Repair Method,Guideline for Repair,เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเท่าใด,"เมื่อ A > 50 มม., B > 50 มม., C > 70 มม. หรือมีเหล็กเสริมโผล่ (rebar exposed)",4,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเมื่อค่า A(mm.) >50, B(mm.) >50, C(mm.) >70 หรือเหล็กเสริมโผล่ (rebar exposed) (Guildline For Repair, Page: 4).","4, 24, 142, 5, 140",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเมื่อค่า A(mm.) >50, B(mm.) >50, C(mm.) >70 หรือเหล็กเสริมโผล่ (rebar exposed) (Guildline For Repair, Page: 4).",1.0,0.2,1,0.8519,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเมื่อขนาด A (mm.) >50, B (mm.) >50, หรือ C (mm.) >70 หรือเมื่อมีเหล็กเสริมโผล่ออกมา (rebar exposed) (Chapter: Guildline For Repair, Page: 4).","4, 5, 3, 25, 2",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเมื่อขนาด A (mm.) >50, B (mm.) >50, หรือ C (mm.) >70 หรือเมื่อมีเหล็กเสริมโผล่ออกมา (rebar exposed) (Chapter: Guildline For Repair, Page: 4).",1.0,0.2,1,0.8462,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเมื่อค่า A(mm.) >50 หรือเหล็กเส้นโผล่ (rebar exposed), ค่า B(mm.) >50 หรือเหล็กเส้นโผล่, และค่า C(mm.) >70 หรือเหล็กเส้นโผล่ (Chapter: Guildline For Repair, Page: 4).","4, 5, 142, 140, 2",gemini-2.5-flash,"Page: 4
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับแตกบิ่นที่ขอบ (Spalling Edge) คือเมื่อค่า A(mm.) >50 หรือเหล็กเส้นโผล่ (rebar exposed), ค่า B(mm.) >50 หรือเหล็กเส้นโผล่, และค่า C(mm.) >70 หรือเหล็กเส้นโผล่ (Chapter: Guildline For Repair, Page: 4).",1.0,0.2,1,0.8409,9.35,39,27
+Repair Method,Guideline for Repair,เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือเท่าใด,"A: 2-10 มม., B: 5-30 มม., C: 0-10 มม.",5,Construction-Related,Repair Method,"เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือ:
+*   A(mm.): 2-10
+*   B(mm.): 5-30
+*   C(mm.): 0-10
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 5, Table3 Guideline for Recesses Repair)","7, 5, 25, 2, 6",gemini-2.5-flash,"Page: 5
+Answer: เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือ:
+*   A(mm.): 2-10
+*   B(mm.): 5-30
+*   C(mm.): 0-10
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 5, Table3 Guideline for Recesses Repair)",1.0,0.2,1,0.704,Construction-Related,Repair Method,"เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือ:
+*   A(mm.): 2-10
+*   B(mm.): 5-30
+*   C(mm.): 0-10
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 5)","25, 5, 10, 4, 33",gemini-2.5-flash,"Page: 5
+Answer: เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือ:
+*   A(mm.): 2-10
+*   B(mm.): 5-30
+*   C(mm.): 0-10
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 5)",1.0,0.2,1,0.7085,Construction-Related,Repair Method,"เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือ:
+*   A: 2-10 มม.
+*   B: 5-30 มม.
+*   C: 0-10 มม.","25, 5, 4, 10, 6",gemini-2.5-flash,"Page: 5
+Answer: เกณฑ์การซ่อมแตกบิ่นบริเวณ Gasket (Spalling Recesses) ด้วย Cementitious Mortar (RP-TN-03) คือ:
+*   A: 2-10 มม.
+*   B: 5-30 มม.
+*   C: 0-10 มม.",1.0,0.2,1,0.7382,10.98,39,26
+Repair Method,Guideline for Repair,เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses คือเท่าใด,"เมื่อ A > 10 มม., B > 30 มม., C > 10 มม.",5,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses คือ เมื่อค่า A(mm.) > 10, B(mm.) > 30, หรือ C(mm.) > 10 (Guildline For Repair, Page: 5).","5, 4, 142, 140, 141",gemini-2.5-flash,"Page: 5
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses คือ เมื่อค่า A(mm.) > 10, B(mm.) > 30, หรือ C(mm.) > 10 (Guildline For Repair, Page: 5).",1.0,0.2,1,0.759,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses มีดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 5):
+*   A (มม.): >10
+*   B (มม.): >30
+*   C (มม.): >10","5, 4, 6, 3, 25",gemini-2.5-flash,"Page: 5
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses มีดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 5):
+*   A (มม.): >10
+*   B (มม.): >30
+*   C (มม.): >10",1.0,0.2,1,0.7645,Construction-Related,Repair Method,"เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses คือ:
+*   A(mm.) >10
+*   B(mm.) >30
+*   C(mm.) >10
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 5, Table3 Guideline for Recesses Repair)","5, 4, 140, 2, 141",gemini-2.5-flash,"Page: 5
+Answer: เกณฑ์การปฏิเสธชิ้นงาน (Reject) สำหรับ Spalling Recesses คือ:
+*   A(mm.) >10
+*   B(mm.) >30
+*   C(mm.) >10
+
+(อ้างอิงจาก Chapter: Guildline For Repair, Page: 5, Table3 Guideline for Recesses Repair)",1.0,0.2,1,0.7569,8.53,39,27
+Repair Method,Guideline for Repair,รูฟองอากาศ (Voids or Blowholes) ขนาดใดที่ซ่อมด้วย Cementitious Mortar (RP-TN-04),เมื่อมีความกว้างและความลึกในช่วงประมาณ 2-10 มม. (Wide ≤ 10 มม. และ Depth ≤ 10 มม.),6,Construction-Related,Repair Method,"รูฟองอากาศ (Voids or Blowholes) ที่ซ่อมด้วย Cementitious Mortar (RP-TN-04) มีขนาดดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 6 และ Chapter: Voids And Blowholes Repair, Page: 33):
+
+*   **พื้นผิวด้านนอก (A.Outside Surface)**:
+    *   ความกว้าง: ≤ 10 mm.
+    *   ความลึก: ≤ 10 mm.
+*   **พื้นผิวด้านใน (B.Inside Surface)**:
+    *   ความกว้าง: > 2 mm. และ ≤ 10 mm.
+    *   ความลึก: ≤ 10 mm.
+*   **พื้นผิวปะเก็น (C.Gasket Surface)**:
+    *   ความกว้าง: ≤ 10 mm.
+    *   ความลึก: ≤ 10 mm.","6, 7, 33, 32, 38",gemini-2.5-flash,"Page: 6, 33
+Answer: รูฟองอากาศ (Voids or Blowholes) ที่ซ่อมด้วย Cementitious Mortar (RP-TN-04) มีขนาดดังนี้ (อ้างอิงจาก Chapter: Guildline For Repair, Page: 6 และ Chapter: Voids And Blowholes Repair, Page: 33):
+
+*   **พื้นผิวด้านนอก (A.Outside Surface)**:
+    *   ความกว้าง: ≤ 10 mm.
+    *   ความลึก: ≤ 10 mm.
+*   **พื้นผิวด้านใน (B.Inside Surface)**:
+    *   ความกว้าง: > 2 mm. และ ≤ 10 mm.
+    *   ความลึก: ≤ 10 mm.
+*   **พื้นผิวปะเก็น (C.Gasket Surface)**:
+    *   ความกว้าง: ≤ 10 mm.
+    *   ความลึก: ≤ 10 mm.",1.0,0.2,1,0.6816,Construction-Related,Repair Method,"รูฟองอากาศ (Voids or Blowholes) ที่มีขนาดความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม. สามารถซ่อมแซมได้ด้วย Cementitious Mortar (RP-TN-04) (Chapter: Voids And Blowholes Repair, Page: 33).
+
+ตามแนวทางใน Table 4 Guideline for Voids or Blowholes Repair (Chapter: Guildline For Repair, Page: 6):
+*   สำหรับพื้นผิวด้านนอก (A.Outside Surface): ความกว้าง A≤10 มม. และความลึก A≤10 มม.
+*   สำหรับพื้นผิวด้านใน (B.Inside Surface): ความกว้าง 2<B≤10 มม. และความลึก B≤10 มม.
+*   สำหรับพื้นผิวปะเก็น (C.Gasket Surface): ความกว้าง C≤10 มม. และความลึก C≤10 มม.
+
+ทั้งนี้ รูฟองอากาศที่มีความกว้างน้อยกว่า 2 มม. ไม่ต้องทำการซ่อมแซม (Chapter: Guildline For Repair, Page: 6).","33, 6, 39, 25, 38",gemini-2.5-flash,"Page: 33, 6
+Answer: รูฟองอากาศ (Voids or Blowholes) ที่มีขนาดความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม. สามารถซ่อมแซมได้ด้วย Cementitious Mortar (RP-TN-04) (Chapter: Voids And Blowholes Repair, Page: 33).
+
+ตามแนวทางใน Table 4 Guideline for Voids or Blowholes Repair (Chapter: Guildline For Repair, Page: 6):
+*   สำหรับพื้นผิวด้านนอก (A.Outside Surface): ความกว้าง A≤10 มม. และความลึก A≤10 มม.
+*   สำหรับพื้นผิวด้านใน (B.Inside Surface): ความกว้าง 2<B≤10 มม. และความลึก B≤10 มม.
+*   สำหรับพื้นผิวปะเก็น (C.Gasket Surface): ความกว้าง C≤10 มม. และความลึก C≤10 มม.
+
+ทั้งนี้ รูฟองอากาศที่มีความกว้างน้อยกว่า 2 มม. ไม่ต้องทำการซ่อมแซม (Chapter: Guildline For Repair, Page: 6).",1.0,0.2,1,0.6867,Construction-Related,Repair Method,"รูฟองอากาศ (Voids or Blowholes) ที่ซ่อมด้วย Cementitious Mortar (RP-TN-04) มีขนาดความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+รายละเอียดเพิ่มเติมตามตำแหน่งของรูฟองอากาศมีดังนี้ (Chapter: Guideline For Repair, Page: 6):
+*   **Outside Surface (A):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **Inside Surface (B):** ความกว้าง > 2 มม. และ ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **Gasket Surface (C):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.","6, 33, 39, 38, 10",gemini-2.5-flash,"Page: 6, 33
+Answer: รูฟองอากาศ (Voids or Blowholes) ที่ซ่อมด้วย Cementitious Mortar (RP-TN-04) มีขนาดความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+รายละเอียดเพิ่มเติมตามตำแหน่งของรูฟองอากาศมีดังนี้ (Chapter: Guideline For Repair, Page: 6):
+*   **Outside Surface (A):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **Inside Surface (B):** ความกว้าง > 2 มม. และ ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **Gasket Surface (C):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.",1.0,0.2,1,0.7046,22.95,38,26
+Repair Method,Guideline for Repair,รูฟองอากาศ (Voids or Blowholes) ขนาดใดที่ต้องซ่อมด้วย High Strength Mortar (RP-TN-05),"เมื่อมีความกว้างและความลึกมากกว่า 10 มม. (Wide > 10 มม., Depth > 10 มม.)",6,Construction-Related,Repair Method,"รูฟองอากาศ (Voids or Blowholes) ที่ต้องซ่อมด้วย High Strength Mortar (RP-TN-05) คือรูที่มีขนาดความกว้างและความลึกมากกว่า 10 มม. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39)
+
+ตามแนวทางการซ่อมแซม (Guideline for Voids or Blowholes Repair) ในเอกสารระบุเพิ่มเติมดังนี้ (Chapter: Guildline For Repair, Page: 6):
+*   **สำหรับพื้นผิวด้านนอก (A. Outside Surface):** ความกว้าง (Wide) > 10 มม., ความลึก (Depth) > 10 มม. และมีการเปิดของเหล็กเสริม (Rebar exposed)
+*   **สำหรับพื้นผิวด้านใน (B. Inside Surface):** ความกว้าง (Wide) > 10 มม., ความลึก (Depth) > 10 มม. และมีการเปิดของเหล็กเสริม (Rebar exposed)
+*   **สำหรับพื้นผิวปะเก็น (C. Gasket Surface):** ความกว้าง (Wide) A 10 (ตามที่ระบุในเอกสาร), ความลึก (Depth) > 10 มม. และมีการเปิดของเหล็กเสริม (Rebar exposed)","6, 38, 7, 39, 2",gemini-2.5-flash,"Page: 6, 39
+Answer: รูฟองอากาศ (Voids or Blowholes) ที่ต้องซ่อมด้วย High Strength Mortar (RP-TN-05) คือรูที่มีขนาดความกว้างและความลึกมากกว่า 10 มม. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39)
+
+ตามแนวทางการซ่อมแซม (Guideline for Voids or Blowholes Repair) ในเอกสารระบุเพิ่มเติมดังนี้ (Chapter: Guildline For Repair, Page: 6):
+*   **สำหรับพื้นผิวด้านนอก (A. Outside Surface):** ความกว้าง (Wide) > 10 มม., ความลึก (Depth) > 10 มม. และมีการเปิดของเหล็กเสริม (Rebar exposed)
+*   **สำหรับพื้นผิวด้านใน (B. Inside Surface):** ความกว้าง (Wide) > 10 มม., ความลึก (Depth) > 10 มม. และมีการเปิดของเหล็กเสริม (Rebar exposed)
+*   **สำหรับพื้นผิวปะเก็น (C. Gasket Surface):** ความกว้าง (Wide) A 10 (ตามที่ระบุในเอกสาร), ความลึก (Depth) > 10 มม. และมีการเปิดของเหล็กเสริม (Rebar exposed)",1.0,0.2,1,0.7013,Construction-Related,Repair Method,"รูฟองอากาศ (Voids or Blowholes) ที่มีขนาดความกว้างและความลึกมากกว่า 10mm. จะต้องซ่อมด้วย High Strength Mortar (RP-TN-05) (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39)
+
+ตามตาราง Guideline for Voids or Blowholes Repair (Chapter: Guildline For Repair, Page: 6) กำหนดให้:
+*   สำหรับการซ่อมด้วย High Strength Mortar (RP-TN-05)
+    *   สำหรับพื้นผิวด้านนอก (A.Outside Surface): ความกว้าง (Wide: A) > 10 mm. และ ความลึก (Depth: A) > 10 mm.
+    *   สำหรับพื้นผิวด้านใน (B.Inside Surface): ความกว้าง (Wide: A) > 10 mm. และ ความลึก (Depth: A) > 10 mm.
+    *   สำหรับพื้นผิวปะเก็น (C.Gasket Surface): ความกว้าง (Wide: A) > 10 mm. และ ความลึก (Depth: A) > 10 mm.","39, 6, 33, 38, 41",gemini-2.5-flash,"Page: 6, 39
+Answer: รูฟองอากาศ (Voids or Blowholes) ที่มีขนาดความกว้างและความลึกมากกว่า 10mm. จะต้องซ่อมด้วย High Strength Mortar (RP-TN-05) (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39)
+
+ตามตาราง Guideline for Voids or Blowholes Repair (Chapter: Guildline For Repair, Page: 6) กำหนดให้:
+*   สำหรับการซ่อมด้วย High Strength Mortar (RP-TN-05)
+    *   สำหรับพื้นผิวด้านนอก (A.Outside Surface): ความกว้าง (Wide: A) > 10 mm. และ ความลึก (Depth: A) > 10 mm.
+    *   สำหรับพื้นผิวด้านใน (B.Inside Surface): ความกว้าง (Wide: A) > 10 mm. และ ความลึก (Depth: A) > 10 mm.
+    *   สำหรับพื้นผิวปะเก็น (C.Gasket Surface): ความกว้าง (Wide: A) > 10 mm. และ ความลึก (Depth: A) > 10 mm.",1.0,0.2,1,0.7086,Construction-Related,Repair Method,"รูฟองอากาศ (Voids or Blowholes) ที่ต้องซ่อมด้วย High Strength Mortar (RP-TN-05) คือ:
+
+*   รูฟองอากาศที่มีความกว้างและความลึกมากกว่า 10 มิลลิเมตร (mm.) ไม่ว่าจะเป็นบนพื้นผิวด้านนอก (A), ด้านใน (B), หรือพื้นผิวปะเก็น (C) (Chapter: Guildline For Repair, Page: 6; Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39)
+*   กรณีที่มีเหล็กเสริม (Rebar) โผล่ออกมา (Chapter: Guildline For Repair, Page: 6)","6, 39, 38, 33, 7",gemini-2.5-flash,"Page: 6, 39
+Answer: รูฟองอากาศ (Voids or Blowholes) ที่ต้องซ่อมด้วย High Strength Mortar (RP-TN-05) คือ:
+
+*   รูฟองอากาศที่มีความกว้างและความลึกมากกว่า 10 มิลลิเมตร (mm.) ไม่ว่าจะเป็นบนพื้นผิวด้านนอก (A), ด้านใน (B), หรือพื้นผิวปะเก็น (C) (Chapter: Guildline For Repair, Page: 6; Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39)
+*   กรณีที่มีเหล็กเสริม (Rebar) โผล่ออกมา (Chapter: Guildline For Repair, Page: 6)",1.0,0.2,1,0.6683,30.05,38,26
+Repair Method,Guideline for Repair,ความเสียหายจากการผลิตและจากการขนส่ง/ขนย้ายต้องไม่เกินกี่เปอร์เซ็นต์,ความเสียหายจากการผลิตไม่เกิน 5% ของจำนวน Rings ที่ผลิตได้ และความเสียหายจากการขนส่งและการขนย้ายไม่เกิน 2% ของจำนวน Rings ของการขนส่ง,2,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับเปอร์เซ็นต์ความเสียหายจากการผลิตและการขนส่ง/ขนย้าย,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับเปอร์เซ็นต์ความเสียหายจากการผลิตและการขนส่ง/ขนย้าย",0.0,0.0,0,0.775,Construction-Related,Repair Method,"ความเสียหายจากการผลิตต้องไม่เกิน 5% ของจำนวน Rings ที่ผลิตได้ และความเสียหายจากการขนส่งและการขนย้ายต้องไม่เกิน 2% ของจำนวน Rings ของการขนส่ง (Chapter: Guildline For Repair, Page: 2)","2, 114, 147, 131, 102",gemini-2.5-flash,"Page: 2
+Answer: ความเสียหายจากการผลิตต้องไม่เกิน 5% ของจำนวน Rings ที่ผลิตได้ และความเสียหายจากการขนส่งและการขนย้ายต้องไม่เกิน 2% ของจำนวน Rings ของการขนส่ง (Chapter: Guildline For Repair, Page: 2)",1.0,0.2,1,0.9433,Construction-Related,Repair Method,"ความเสียหายจากการผลิตต้องไม่เกิน 5% ของจำนวน Rings ที่ผลิตได้ และความเสียหายจากการขนส่งและการขนย้ายต้องไม่เกิน 2% ของจำนวน Rings ของการขนส่ง (Chapter: Guildline For Repair, Page: 2).","2, 114, 147, 131, 102",gemini-2.5-flash,"Page: 2
+Answer: ความเสียหายจากการผลิตต้องไม่เกิน 5% ของจำนวน Rings ที่ผลิตได้ และความเสียหายจากการขนส่งและการขนย้ายต้องไม่เกิน 2% ของจำนวน Rings ของการขนส่ง (Chapter: Guildline For Repair, Page: 2).",1.0,0.2,1,0.9443,7.58,39,27
+Repair Method,Guideline for Repair,การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัสใด,ใช้วิธี RP-TN-01 (Repair with Cementitious Mortar),3,Construction-Related,Repair Method,"การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัส RP-TN-01 (Chapter: Guildline For Repair, Page: 7; Chapter: Repair With Cementitious Mortar, Page: 10).","10, 7, 9, 3, 25",gemini-2.5-flash,"Page: 7, 10
+Answer: การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัส RP-TN-01 (Chapter: Guildline For Repair, Page: 7; Chapter: Repair With Cementitious Mortar, Page: 10).",1.0,0.2,1,0.9348,Construction-Related,Repair Method,"การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัส RP-TN-01 (Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Cementitious Mortar, Page: 10).","10, 12, 3, 114, 25",gemini-2.5-flash,"Page: 3, 10
+Answer: การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัส RP-TN-01 (Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Cementitious Mortar, Page: 10).",1.0,0.2,1,0.9349,Construction-Related,Repair Method,"การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัส RP-TN-01 (Chapter: Guildline For Repair, Page: 3, 7) (Chapter: Repair With Cementitious Mortar, Page: 10).","10, 3, 7, 25, 12",gemini-2.5-flash,"Page: 3, 7, 10
+Answer: การซ่อมรอยร้าว (Crack) ด้วย Cementitious Mortar ใช้วิธีการอ้างอิงรหัส RP-TN-01 (Chapter: Guildline For Repair, Page: 3, 7) (Chapter: Repair With Cementitious Mortar, Page: 10).",1.0,0.2,1,0.9298,12.29,38,26
+Repair Method,Repair with Cementitious Mortar,วิธี RP-TN-01 (Repair with Cementitious Mortar) ใช้ซ่อมรอยร้าวขนาดใด,ใช้ซ่อมรอยร้าวทั่วไปที่มีความกว้างมากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม. และความลึกมากกว่า 15 มม. รวมทั้งรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5 มม.,10,Construction-Related,Repair Method,"วิธี RP-TN-01 (Repair With Cementitious Mortar) ใช้ซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างมากกว่า 0.1mm. แต่ไม่ถึง 0.3mm. และความลึกของรอยร้าวมากกว่า 15mm. นอกจากนี้ยังใช้ซ่อมแซมรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5mm. (Chapter: Repair With Cementitious Mortar, Page: 10)","7, 10, 9, 25, 6",gemini-2.5-flash,"Page: 10
+Answer: วิธี RP-TN-01 (Repair With Cementitious Mortar) ใช้ซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างมากกว่า 0.1mm. แต่ไม่ถึง 0.3mm. และความลึกของรอยร้าวมากกว่า 15mm. นอกจากนี้ยังใช้ซ่อมแซมรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5mm. (Chapter: Repair With Cementitious Mortar, Page: 10)",1.0,0.2,1,0.8509,Construction-Related,Repair Method,"วิธี RP-TN-01 (Repair With Cementitious Mortar) ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างมากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม. และมีความลึกมากกว่า 15 มม. นอกจากนี้ยังใช้ซ่อมแซมรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5 มม. โดยมีความลึกมากกว่า 15 มม. (อ้างอิง Chapter: Repair With Cementitious Mortar, Page: 10 และ Chapter: Guildline For Repair, Page: 3)","10, 25, 16, 3, 33",gemini-2.5-flash,"Page: 3, 10
+Answer: วิธี RP-TN-01 (Repair With Cementitious Mortar) ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างมากกว่า 0.1 มม. แต่ไม่ถึง 0.3 มม. และมีความลึกมากกว่า 15 มม. นอกจากนี้ยังใช้ซ่อมแซมรอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5 มม. โดยมีความลึกมากกว่า 15 มม. (อ้างอิง Chapter: Repair With Cementitious Mortar, Page: 10 และ Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.8461,Construction-Related,Repair Method,"วิธี RP-TN-01 (Repair with Cementitious Mortar) ใช้ในการซ่อมแซมรอยร้าวประเภทดังนี้:
+*   รอยร้าวทั่วไป (Hard Crack) ที่มีความกว้างมากกว่า 0.1 mm. แต่ไม่ถึง 0.3 mm. และความลึกมากกว่า 15 mm. (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Guildline For Repair, Page: 3).
+*   รอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5 mm. และความลึกมากกว่า 15 mm. (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Guildline For Repair, Page: 3).","10, 25, 3, 33, 7",gemini-2.5-flash,"Page: 3, 10
+Answer: วิธี RP-TN-01 (Repair with Cementitious Mortar) ใช้ในการซ่อมแซมรอยร้าวประเภทดังนี้:
+*   รอยร้าวทั่วไป (Hard Crack) ที่มีความกว้างมากกว่า 0.1 mm. แต่ไม่ถึง 0.3 mm. และความลึกมากกว่า 15 mm. (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Guildline For Repair, Page: 3).
+*   รอยร้าวแบบ Shrinkage Crack ที่มีความกว้าง 0.3-0.5 mm. และความลึกมากกว่า 15 mm. (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Guildline For Repair, Page: 3).",1.0,0.2,1,0.8317,12.2,39,26
+Repair Method,Repair with Cementitious Mortar,การวัดความกว้างของรอยร้าวในงานซ่อมต้องใช้เครื่องมือใด,ต้องใช้แผ่น Crack Width Indicator ในการวัด,10,Construction-Related,Repair Method,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับเครื่องมือที่ใช้ในการวัดความกว้างของรอยร้าวในงานซ่อม,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับเครื่องมือที่ใช้ในการวัดความกว้างของรอยร้าวในงานซ่อม",0.0,0.0,0,0.7565,Construction-Related,Repair Method,"การวัดความกว้างของรอยร้าวในงานซ่อมต้องใช้แผ่น Crack Width Indicator (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Repair With Epoxy Resin, Page: 16).","10, 16, 20, 25, 3",gemini-2.5-flash,"Page: 10, 16
+Answer: การวัดความกว้างของรอยร้าวในงานซ่อมต้องใช้แผ่น Crack Width Indicator (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Repair With Epoxy Resin, Page: 16).",1.0,0.2,1,0.8829,Construction-Related,Repair Method,"การวัดความกว้างของรอยร้าวต้องใช้แผ่น Crack Width Indicator ในการวัด (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Repair With Epoxy Resin, Page: 16).","10, 16, 20, 25, 3",gemini-2.5-flash,"Page: 10, 16
+Answer: การวัดความกว้างของรอยร้าวต้องใช้แผ่น Crack Width Indicator ในการวัด (Chapter: Repair With Cementitious Mortar, Page: 10; Chapter: Repair With Epoxy Resin, Page: 16).",1.0,0.2,1,0.8877,7.91,38,26
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของ Sika Skim Coat ในงานซ่อมด้วย Cementitious Mortar คือเท่าใด,ปูน : น้ำ = 1 : 0.35 โดยน้ำหนัก,11,Construction-Related,Repair Method,"อัตราส่วนผสมของ Sika Skim Coat ในงานซ่อมด้วย Cementitious Mortar คือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Mortar:Water = 1:0.35 by weight) (Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).","45, 46, 27, 34, 18",gemini-2.5-flash,"Page: 18, 27, 34
+Answer: อัตราส่วนผสมของ Sika Skim Coat ในงานซ่อมด้วย Cementitious Mortar คือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Mortar:Water = 1:0.35 by weight) (Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).",0.0,0.0,0,0.7899,Construction-Related,Repair Method,"อัตราส่วนผสมของ Sika Skim Coat คือ:
+*   สำหรับสีเทา: ใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อน้ำยา Sika Skim Coat 1 ถุง (20 กก.)
+*   สำหรับสีขาว: ใช้น้ำ 7.4-7.8 ลิตร (37%-39%) ต่อน้ำยา Sika Skim Coat 1 ถุง (20 กก.)","46, 45, 103, 102, 99",gemini-2.5-flash,"Page: 46
+Answer: อัตราส่วนผสมของ Sika Skim Coat คือ:
+*   สำหรับสีเทา: ใช้น้ำ 7.0-7.4 ลิตร (35%-37%) ต่อน้ำยา Sika Skim Coat 1 ถุง (20 กก.)
+*   สำหรับสีขาว: ใช้น้ำ 7.4-7.8 ลิตร (37%-39%) ต่อน้ำยา Sika Skim Coat 1 ถุง (20 กก.)",0.0,0.0,0,0.7394,Construction-Related,Repair Method,"อัตราส่วนผสมของ Sika Skim Coat ในงานซ่อมคือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).","45, 46, 27, 103, 34",gemini-2.5-flash,"Page: 3, 5
+Answer: อัตราส่วนผสมของ Sika Skim Coat ในงานซ่อมคือ ปูน:น้ำ = 1:0.35 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).",0.0,0.0,0,0.7877,18.02,37,16
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของ Renderoc Skim Coat คือเท่าใด,ปูน : น้ำ = 1 : 0.11 โดยน้ำหนัก,11,Construction-Related,Repair Method,"อัตราส่วนผสมของ Renderoc Skim Coat คือ ปูน:น้ำ = 1:0.11 โดยน้ำหนัก (Chapter: Repair With Cementitious Mortar, Page: 11; Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).","18, 27, 34, 145, 11",gemini-2.5-flash,"Page: 11, 18, 27, 34
+Answer: อัตราส่วนผสมของ Renderoc Skim Coat คือ ปูน:น้ำ = 1:0.11 โดยน้ำหนัก (Chapter: Repair With Cementitious Mortar, Page: 11; Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Spalling Edge Repair, Page: 27; Chapter: Voids And Blowholes Repair, Page: 34).",1.0,0.2,1,0.769,Construction-Related,Material,"อัตราส่วนผสมของ Renderoc Skimcoat มีดังนี้:
+
+*   **Renderoc Skimcoat (Base Coat)**: ใช้น้ำ 7-7.5 ลิตรต่อน้ำหนัก 25 กก. หนึ่งถุง (Chapter: Materials Data Sheet, Page: 100)
+*   **Renderoc Skimcoat (Finish Coat)**: ใช้น้ำ 7.5-8 ลิตรต่อน้ำหนัก 25 กก. หนึ่งถุง (Chapter: Materials Data Sheet, Page: 100)
+
+นอกจากนี้ ผลลัพธ์คุณสมบัติบางอย่างถูกระบุว่าได้มาจากการทดสอบที่อัตราส่วนน้ำต่อผงอยู่ที่ 0.11 ที่อุณหภูมิ 20°C (Chapter: Materials Data Sheet, Page: 98)","99, 100, 98",gemini-2.5-flash,"Page: 98, 100
+Answer: อัตราส่วนผสมของ Renderoc Skimcoat มีดังนี้:
+
+*   **Renderoc Skimcoat (Base Coat)**: ใช้น้ำ 7-7.5 ลิตรต่อน้ำหนัก 25 กก. หนึ่งถุง (Chapter: Materials Data Sheet, Page: 100)
+*   **Renderoc Skimcoat (Finish Coat)**: ใช้น้ำ 7.5-8 ลิตรต่อน้ำหนัก 25 กก. หนึ่งถุง (Chapter: Materials Data Sheet, Page: 100)
+
+นอกจากนี้ ผลลัพธ์คุณสมบัติบางอย่างถูกระบุว่าได้มาจากการทดสอบที่อัตราส่วนน้ำต่อผงอยู่ที่ 0.11 ที่อุณหภูมิ 20°C (Chapter: Materials Data Sheet, Page: 98)",0.0,0.0,0,0.7201,Non-Construction Questions,General / Admin,อัตราส่วนผสมของ Renderoc Skim Coat คือ ปูน:น้ำ = 1:0.11 โดยน้ำหนัก,"98, 45, 18, 99, 27",gemini-2.5-flash,"Page: 18, 27
+Answer: อัตราส่วนผสมของ Renderoc Skim Coat คือ ปูน:น้ำ = 1:0.11 โดยน้ำหนัก",0.0,0.0,0,0.8217,12.38,37,16
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar คือเท่าใด,ปูน : น้ำ = 1 : 0.2 โดยน้ำหนัก,11,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar อย่างชัดเจน
+
+ใน Chapter: Materials Data Sheet, Page: 62 ระบุว่า ""Mix Conpatch 300 following the instructions on the data sheet."" ซึ่งหมายถึงให้ผสมตามคำแนะนำในเอกสารข้อมูลผลิตภัณฑ์ แต่คำแนะนำดังกล่าวไม่ได้ระบุรายละเอียดอัตราส่วนผสมไว้ในเอกสารที่ให้มา
+
+ใน Chapter: Repair With Cementitious Mortar, Page: 12 ระบุว่า ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" แต่ไม่มีการระบุอัตราส่วนดังกล่าวไว้ในหน้าที่ให้มา","62, 7, 12, 28, 10",gemini-2.5-flash,"Page: 12, 62
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar อย่างชัดเจน
+
+ใน Chapter: Materials Data Sheet, Page: 62 ระบุว่า ""Mix Conpatch 300 following the instructions on the data sheet."" ซึ่งหมายถึงให้ผสมตามคำแนะนำในเอกสารข้อมูลผลิตภัณฑ์ แต่คำแนะนำดังกล่าวไม่ได้ระบุรายละเอียดอัตราส่วนผสมไว้ในเอกสารที่ให้มา
+
+ใน Chapter: Repair With Cementitious Mortar, Page: 12 ระบุว่า ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" แต่ไม่มีการระบุอัตราส่วนดังกล่าวไว้ในหน้าที่ให้มา",0.0,0.0,0,0.6833,Construction-Related,Repair Method,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอัตราส่วนผสมที่เฉพาะเจาะจงของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar
+
+*   เอกสาร [1] (หน้า 62) ระบุให้ ""ผสม Conpatch 300 ตามคำแนะนำในเอกสารข้อมูล"" แต่ไม่ได้ระบุอัตราส่วนการผสมโดยละเอียด
+*   เอกสาร [3] (หน้า 12) อ้างถึง ""อัตราส่วนข้างต้น"" สำหรับการผสมปูนฉาบซ่อม แต่ไม่ได้แสดงอัตราส่วนดังกล่าวในเนื้อหาที่ให้มา","62, 64, 12, 63, 103",gemini-2.5-flash,"Page: 62, 12
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอัตราส่วนผสมที่เฉพาะเจาะจงของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar
+
+*   เอกสาร [1] (หน้า 62) ระบุให้ ""ผสม Conpatch 300 ตามคำแนะนำในเอกสารข้อมูล"" แต่ไม่ได้ระบุอัตราส่วนการผสมโดยละเอียด
+*   เอกสาร [3] (หน้า 12) อ้างถึง ""อัตราส่วนข้างต้น"" สำหรับการผสมปูนฉาบซ่อม แต่ไม่ได้แสดงอัตราส่วนดังกล่าวในเนื้อหาที่ให้มา",0.0,0.0,0,0.6918,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar ได้อย่างชัดเจน โดยที่หน้า 62 (Chapter: Materials Data Sheet) ระบุให้ ""ผสม Conpatch 300 ตามคำแนะนำในเอกสารข้อมูล"" แต่ไม่ได้ให้รายละเอียดอัตราส่วน และหน้า 12 (Chapter: Repair With Cementitious Mortar) ระบุให้ ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" แต่ก็ไม่ได้ระบุอัตราส่วนดังกล่าวในเอกสารที่ให้มา","62, 12, 67, 7, 64",gemini-2.5-flash,"Page: 62, 12
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุอัตราส่วนผสมของ Conpatch 300 ในงานซ่อมด้วย Cementitious Mortar ได้อย่างชัดเจน โดยที่หน้า 62 (Chapter: Materials Data Sheet) ระบุให้ ""ผสม Conpatch 300 ตามคำแนะนำในเอกสารข้อมูล"" แต่ไม่ได้ให้รายละเอียดอัตราส่วน และหน้า 12 (Chapter: Repair With Cementitious Mortar) ระบุให้ ""ผสมปูนฉาบซ่อมตามอัตราส่วนข้างต้น"" แต่ก็ไม่ได้ระบุอัตราส่วนดังกล่าวในเอกสารที่ให้มา",0.0,0.0,0,0.697,17.82,6,16
+Repair Method,Repair with Cementitious Mortar,อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือเท่าใด,ปูน : น้ำ = 1 : 0.4 โดยน้ำหนัก,11,Construction-Related,Repair Method,"อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือ ปูน:น้ำ = 1:0.4 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Repair With Epoxy Resin, Page: 18).","103, 102, 109, 27, 18",gemini-2.5-flash,"Page: 18, 27
+Answer: อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือ ปูน:น้ำ = 1:0.4 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27; Chapter: Repair With Epoxy Resin, Page: 18).",0.0,0.0,0,0.7817,Construction-Related,Material,"อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือ น้ำ 7.5-8.5 ลิตร ต่อน้ำหนักปูน 1 ถุง (20 กิโลกรัม) โดยต้องผสมให้เป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 102, 103, 109).","102, 103, 109, 101, 104",gemini-2.5-flash,"Page: 102, 103, 109
+Answer: อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือ น้ำ 7.5-8.5 ลิตร ต่อน้ำหนักปูน 1 ถุง (20 กิโลกรัม) โดยต้องผสมให้เป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 102, 103, 109).",0.0,0.0,0,0.747,Construction-Related,Repair Method,"อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือ ปูน:น้ำ = 1:0.4 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27).","103, 102, 109, 27, 101",gemini-2.5-flash,"Page: 27
+Answer: อัตราส่วนผสมของปูนฉาบแต่งตราผึ้ง 124 และ 124L คือ ปูน:น้ำ = 1:0.4 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 27).",0.0,0.0,0,0.7898,14.05,37,16
+Repair Method,Repair with Cementitious Mortar,อุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) มีอะไรบ้าง,"เครื่องเป่าลม, เกรียง, ฟองน้ำหรือลูกกลิ้ง, กระดาษทราย และภาชนะใส่วัสดุซ่อม",11,Construction-Related,Repair Method,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) โดยเฉพาะ นอกจาก ""แผ่น Crack Width Indicator"" ซึ่งใช้ในการวัดความกว้างของรอยร้าว","7, 10, 9, 25, 6",gemini-2.5-flash,"Page: 10
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) โดยเฉพาะ นอกจาก ""แผ่น Crack Width Indicator"" ซึ่งใช้ในการวัดความกว้างของรอยร้าว",0.0,0.0,0,0.6617,Construction-Related,Material,"อุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) มีดังนี้ (Chapter: Repair With Cementitious Mortar, Page: 11):
+*   เครื่องเป่าลม
+*   เกรียง
+*   ฟองน้ำหรือลูกกลิ้ง
+*   กระดาษทราย
+*   ภาชนะใส่วัสดุซ่อม","25, 33, 11, 17, 10",gemini-2.5-flash,"Page: 11
+Answer: อุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) มีดังนี้ (Chapter: Repair With Cementitious Mortar, Page: 11):
+*   เครื่องเป่าลม
+*   เกรียง
+*   ฟองน้ำหรือลูกกลิ้ง
+*   กระดาษทราย
+*   ภาชนะใส่วัสดุซ่อม",1.0,0.2,1,0.8456,Construction-Related,Repair Method,"เอกสารที่ให้มาไม่ได้ระบุรายการอุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) โดยเฉพาะเจาะจงเป็นรายการ อย่างไรก็ตาม ขั้นตอนการซ่อมแซม (Document [5], Page 12) ระบุว่ามีการใช้เครื่องเป่าลม (เครื่องเป่าลม) เพื่อทำความสะอาดพื้นผิวคอนกรีตบริเวณรอยร้าว","25, 10, 33, 7, 12",gemini-2.5-flash,"Page: 10, 12
+Answer: เอกสารที่ให้มาไม่ได้ระบุรายการอุปกรณ์ที่ใช้ในการซ่อมแซมด้วย Cementitious Mortar (RP-TN-01) โดยเฉพาะเจาะจงเป็นรายการ อย่างไรก็ตาม ขั้นตอนการซ่อมแซม (Document [5], Page 12) ระบุว่ามีการใช้เครื่องเป่าลม (เครื่องเป่าลม) เพื่อทำความสะอาดพื้นผิวคอนกรีตบริเวณรอยร้าว",0.0,0.0,0,0.7939,12.96,14,14
+Repair Method,Repair with Cementitious Mortar,ขั้นตอนแรก (3.1) ของการซ่อมรอยร้าวด้วย Cementitious Mortar คืออะไร,ใช้เครื่องเป่าลมเป่าทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรอยร้าว และตรวจสอบความสะอาดก่อนการซ่อมแซม,12,Construction-Related,Repair Method,The provided document context does not contain enough information to describe the first step (3.1) of the repair process with Cementitious Mortar.,"10, 7, 25, 33, 9",gemini-2.5-flash,"Page: N/A
+Answer: The provided document context does not contain enough information to describe the first step (3.1) of the repair process with Cementitious Mortar.",0.0,0.0,0,0.673,Construction-Related,Repair Method,"ขั้นตอนแรก (3.1) ของการซ่อมรอยร้าวด้วย Cementitious Mortar คือ การใช้เครื่องเป่าลมเป่าทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรอยร้าว ตรวจสอบความสะอาดก่อนการซ่อมแซม (Chapter: Repair With Cementitious Mortar, Page: 12).","12, 19, 10, 25, 30",gemini-2.5-flash,"Page: 12
+Answer: ขั้นตอนแรก (3.1) ของการซ่อมรอยร้าวด้วย Cementitious Mortar คือ การใช้เครื่องเป่าลมเป่าทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรอยร้าว ตรวจสอบความสะอาดก่อนการซ่อมแซม (Chapter: Repair With Cementitious Mortar, Page: 12).",1.0,0.2,1,0.8962,Construction-Related,Repair Method,"ขั้นตอนแรก (3.1) ของการซ่อมรอยร้าวด้วย Cementitious Mortar คือ การใช้เครื่องเป่าลมเป่าทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรอยร้าว และตรวจสอบความสะอาดก่อนการซ่อมแซม (Chapter: Repair With Cementitious Mortar, Page: 12).","10, 25, 12, 7, 19",gemini-2.5-flash,"Page: 12
+Answer: ขั้นตอนแรก (3.1) ของการซ่อมรอยร้าวด้วย Cementitious Mortar คือ การใช้เครื่องเป่าลมเป่าทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรอยร้าว และตรวจสอบความสะอาดก่อนการซ่อมแซม (Chapter: Repair With Cementitious Mortar, Page: 12).",1.0,0.2,1,0.8935,10.61,38,26
+Repair Method,Repair with Epoxy Resin,วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ซ่อมรอยร้าวขนาดใด,ใช้ซ่อมรอยร้าวทั่วไปที่มีความกว้างตั้งแต่ 0.3 มม. ถึง 0.5 มม. และมีความลึกมากกว่า 15 มม. แต่ไม่ถึงเหล็กเสริม,16,Construction-Related,Repair Method,"วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ซ่อมแซมรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3).","16, 7, 15, 3, 70",gemini-2.5-flash,"Page: 3, 16
+Answer: วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ซ่อมแซมรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3).",1.0,0.2,1,0.8135,Construction-Related,Repair Method,"วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ในการซ่อมแซมรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3)","16, 20, 10, 3, 17",gemini-2.5-flash,"Page: 16, 3
+Answer: วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ในการซ่อมแซมรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.7891,Construction-Related,Repair Method,"วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3)","16, 3, 15, 25, 7",gemini-2.5-flash,"Page: 3, 16
+Answer: วิธี RP-TN-02 (Repair with Epoxy Resin) ใช้ในการซ่อมแซมรอยร้าวทั่วไปที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. (Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Guildline For Repair, Page: 3)",1.0,0.2,1,0.818,9.61,33,26
+Repair Method,Repair with Epoxy Resin,อัตราส่วนผสมของวัสดุ Sikadur 52TH ในงานซ่อมด้วย Epoxy Resin คือเท่าใด,วัสดุ A : วัสดุ B = 2 : 1,17,Construction-Related,Material,"อัตราส่วนผสมของวัสดุ Sikadur 52TH ในงานซ่อมด้วย Epoxy Resin คือ วัสดุ A: 2 ส่วน และ วัสดุ B: 1 ส่วน (Chapter: Repair With Epoxy Resin, Page: 17).","60, 58, 17, 16, 47",gemini-2.5-flash,"Page: 17
+Answer: อัตราส่วนผสมของวัสดุ Sikadur 52TH ในงานซ่อมด้วย Epoxy Resin คือ วัสดุ A: 2 ส่วน และ วัสดุ B: 1 ส่วน (Chapter: Repair With Epoxy Resin, Page: 17).",1.0,0.2,1,0.7476,Construction-Related,Material,"อัตราส่วนผสมของวัสดุ Sikadur 52TH ในงานซ่อมด้วย Epoxy Resin คือ วัสดุ A : วัสดุ B = 2 : 1 (Chapter: Repair With Epoxy Resin, Page: 17; Chapter: Materials Data Sheet, Page: 61).","60, 58, 61, 26, 17",gemini-2.5-flash,"Page: 17, 61
+Answer: อัตราส่วนผสมของวัสดุ Sikadur 52TH ในงานซ่อมด้วย Epoxy Resin คือ วัสดุ A : วัสดุ B = 2 : 1 (Chapter: Repair With Epoxy Resin, Page: 17; Chapter: Materials Data Sheet, Page: 61).",1.0,0.2,1,0.7625,Construction-Related,Material,อัตราส่วนผสมของวัสดุ Sikadur 52TH คือ ส่วนผสม A : ส่วนผสม B = 2 : 1 โดยน้ำหนักและโดยปริมาตร,"60, 58, 17, 61, 16",gemini-2.5-flash,"Page: 17, 61
+Answer: อัตราส่วนผสมของวัสดุ Sikadur 52TH คือ ส่วนผสม A : ส่วนผสม B = 2 : 1 โดยน้ำหนักและโดยปริมาตร",1.0,0.2,1,0.7822,11.2,38,26
+Repair Method,Repair with Epoxy Resin,อัตราส่วนผสมของวัสดุ Condur SC ในงานซ่อมด้วย Epoxy Resin คือเท่าใด,วัสดุ A : วัสดุ B = 4 : 1,17,Construction-Related,Material,"เอกสารไม่ได้ระบุอัตราส่วนผสมที่ชัดเจนเป็นตัวเลขสำหรับวัสดุ Condur SC แต่ระบุว่า Condur SC บรรจุมาในชุดที่กำหนดสัดส่วนมาจากโรงงานซึ่งประกอบด้วยปริมาณที่ถูกต้องของส่วนประกอบ A (เรซิน) และส่วนประกอบ B (สารเร่งแข็ง) โดยให้เทส่วนประกอบ B ทั้งหมดลงในส่วนประกอบ A และผสมให้เข้ากันประมาณ 3 นาทีจนได้เนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 70)","71, 70, 72, 68",gemini-2.5-flash,"Page: 70
+Answer: เอกสารไม่ได้ระบุอัตราส่วนผสมที่ชัดเจนเป็นตัวเลขสำหรับวัสดุ Condur SC แต่ระบุว่า Condur SC บรรจุมาในชุดที่กำหนดสัดส่วนมาจากโรงงานซึ่งประกอบด้วยปริมาณที่ถูกต้องของส่วนประกอบ A (เรซิน) และส่วนประกอบ B (สารเร่งแข็ง) โดยให้เทส่วนประกอบ B ทั้งหมดลงในส่วนประกอบ A และผสมให้เข้ากันประมาณ 3 นาทีจนได้เนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 70)",0.0,0.0,0,0.7226,Construction-Related,Material,"อัตราส่วนผสมของวัสดุ Condur SC คือ:
+*   A: B 4:1 โดยน้ำหนัก
+*   A: B 3:1 โดยปริมาตร","70, 69, 71, 68",gemini-2.5-flash,"Page: 69
+Answer: อัตราส่วนผสมของวัสดุ Condur SC คือ:
+*   A: B 4:1 โดยน้ำหนัก
+*   A: B 3:1 โดยปริมาตร",0.0,0.0,0,0.7752,Construction-Related,Material,"อัตราส่วนผสมของวัสดุ Condur SC คือ:
+*   ส่วน A : ส่วน B 4:1 โดยน้ำหนัก
+*   ส่วน A : ส่วน B 3:1 โดยปริมาตร","70, 71, 69, 72",gemini-2.5-flash,"Page: 69
+Answer: อัตราส่วนผสมของวัสดุ Condur SC คือ:
+*   ส่วน A : ส่วน B 4:1 โดยน้ำหนัก
+*   ส่วน A : ส่วน B 3:1 โดยปริมาตร",0.0,0.0,0,0.7706,9.48,38,16
+Repair Method,Repair with Epoxy Resin,ในการซ่อมด้วย Epoxy Resin ต้องเซาะร่องตามแนวรอยร้าวให้มีลักษณะและขนาดอย่างไร,เซาะร่องให้มีลักษณะคล้ายตัว V โดยให้บริเวณปากร่องมีความกว้างประมาณ 3-5 มม.,19,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่ระบุว่าในการซ่อมด้วย Epoxy Resin ต้องเซาะร่องตามแนวรอยร้าวให้มีลักษณะและขนาดอย่างไร อย่างไรก็ตาม ในขั้นตอนการเตรียมพื้นผิวสำหรับวัสดุอีพ็อกซี่เรซิ่น ได้ระบุให้ทำความสะอาดรอยร้าวและขัดพื้นผิวบริเวณที่จะใช้วัสดุอุดรอยร้าวด้วยแปรงลวดหรือเครื่องขัด เพื่อให้ได้พื้นผิวที่เรียบและแข็งแรงก่อนการอุดรอยร้าว (Chapter: Materials Data Sheet, Page: 71)","16, 15, 71, 7, 3",gemini-2.5-flash,"Page: 71
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่ระบุว่าในการซ่อมด้วย Epoxy Resin ต้องเซาะร่องตามแนวรอยร้าวให้มีลักษณะและขนาดอย่างไร อย่างไรก็ตาม ในขั้นตอนการเตรียมพื้นผิวสำหรับวัสดุอีพ็อกซี่เรซิ่น ได้ระบุให้ทำความสะอาดรอยร้าวและขัดพื้นผิวบริเวณที่จะใช้วัสดุอุดรอยร้าวด้วยแปรงลวดหรือเครื่องขัด เพื่อให้ได้พื้นผิวที่เรียบและแข็งแรงก่อนการอุดรอยร้าว (Chapter: Materials Data Sheet, Page: 71)",0.0,0.0,0,0.6514,Construction-Related,Repair Method,"ในการซ่อมด้วย Epoxy Resin ต้องเซาะร่องตามแนวรอยร้าวโดยใช้เครื่องตัดคอนกรีต โดยให้ร่องมีลักษณะคล้ายตัว V และบริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)","20, 16, 19, 30, 3",gemini-2.5-flash,"Page: 19
+Answer: ในการซ่อมด้วย Epoxy Resin ต้องเซาะร่องตามแนวรอยร้าวโดยใช้เครื่องตัดคอนกรีต โดยให้ร่องมีลักษณะคล้ายตัว V และบริเวณปากร่องมีความกว้างประมาณ 3-5 mm. (Chapter: Repair With Epoxy Resin, Page: 19)",1.0,0.2,1,0.8215,Construction-Related,Material,"เอกสารไม่ได้ให้ข้อมูลเกี่ยวกับลักษณะและขนาดของการเซาะร่องตามแนวรอยร้าวที่ต้องทำในการซ่อมด้วย Epoxy Resin อย่างชัดเจน (Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 71).
+
+อย่างไรก็ตาม, เอกสารระบุว่า:
+*   วิธีการซ่อมแซมรอยร้าวด้วย Epoxy Resin ใช้สำหรับรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. แต่ไม่ถึงเหล็กเสริม (Chapter: Repair With Epoxy Resin, Page: 16).
+*   ขั้นตอนการทำงานระบุให้ ""ทำแนวกั้นขนานกับแนวรอยร้าวทั้ง 2 ฝั่ง ห่างจากรอยร้าวฝั่งละ 5mm. โดยประมาณ เพื่อไม่ให้วัสดุซ่อมโดนผิวคอนกรีตส่วนอื่น"" (Chapter: Repair With Epoxy Resin, Page: 20).
+*   จากนั้นจึง ""หยอดวัสดุซ่อมอีพ็อกซี่เรซิ่นที่ผสมตามอัตราส่วนข้างต้นลงในร่องตามแนวรอยร้าว"" (Chapter: Repair With Epoxy Resin, Page: 20). ""ร่อง"" ในที่นี้ดูเหมือนจะหมายถึงช่องที่เกิดจากแนวกั้นบนผิวคอนกรีต ไม่ใช่ร่องที่เซาะลึกลงไปในเนื้อคอนกรีตเอง.","16, 3, 20, 15, 71",gemini-2.5-flash,"Page: 3, 16, 20, 71
+Answer: เอกสารไม่ได้ให้ข้อมูลเกี่ยวกับลักษณะและขนาดของการเซาะร่องตามแนวรอยร้าวที่ต้องทำในการซ่อมด้วย Epoxy Resin อย่างชัดเจน (Chapter: Guildline For Repair, Page: 3; Chapter: Repair With Epoxy Resin, Page: 16; Chapter: Materials Data Sheet, Page: 71).
+
+อย่างไรก็ตาม, เอกสารระบุว่า:
+*   วิธีการซ่อมแซมรอยร้าวด้วย Epoxy Resin ใช้สำหรับรอยร้าวที่มีความกว้างตั้งแต่ 0.3 mm. ถึง 0.5 mm. และมีความลึกมากกว่า 15 mm. แต่ไม่ถึงเหล็กเสริม (Chapter: Repair With Epoxy Resin, Page: 16).
+*   ขั้นตอนการทำงานระบุให้ ""ทำแนวกั้นขนานกับแนวรอยร้าวทั้ง 2 ฝั่ง ห่างจากรอยร้าวฝั่งละ 5mm. โดยประมาณ เพื่อไม่ให้วัสดุซ่อมโดนผิวคอนกรีตส่วนอื่น"" (Chapter: Repair With Epoxy Resin, Page: 20).
+*   จากนั้นจึง ""หยอดวัสดุซ่อมอีพ็อกซี่เรซิ่นที่ผสมตามอัตราส่วนข้างต้นลงในร่องตามแนวรอยร้าว"" (Chapter: Repair With Epoxy Resin, Page: 20). ""ร่อง"" ในที่นี้ดูเหมือนจะหมายถึงช่องที่เกิดจากแนวกั้นบนผิวคอนกรีต ไม่ใช่ร่องที่เซาะลึกลงไปในเนื้อคอนกรีตเอง.",0.0,0.0,0,0.7034,17.69,8,15
+Repair Method,Repair with Epoxy Resin,การทำแนวกั้นขนานกับรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละเท่าใด,ห่างจากรอยร้าวฝั่งละประมาณ 5 มม. เพื่อไม่ให้วัสดุซ่อมโดนผิวคอนกรีตส่วนอื่น,20,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลระบุว่าการทำแนวกั้นขนานกับรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละเท่าใด เอกสารเพียงระบุให้ปิดผนึกพื้นผิวรอยร้าวด้วยวัสดุปิดผนึก Condur EA1 เพื่อไม่ให้เรซินอีพ็อกซี่ที่ฉีดไหลออกมา (Chapter: Materials Data Sheet, Page: 71).","16, 15, 71, 7, 3",gemini-2.5-flash,"Page: 71
+Answer: เอกสารที่ให้มาไม่มีข้อมูลระบุว่าการทำแนวกั้นขนานกับรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละเท่าใด เอกสารเพียงระบุให้ปิดผนึกพื้นผิวรอยร้าวด้วยวัสดุปิดผนึก Condur EA1 เพื่อไม่ให้เรซินอีพ็อกซี่ที่ฉีดไหลออกมา (Chapter: Materials Data Sheet, Page: 71).",0.0,0.0,0,0.756,Construction-Related,Repair Method,"การทำแนวกั้นขนานกับแนวรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละ 5mm. โดยประมาณ (Chapter: Repair With Epoxy Resin, Page: 20)","20, 16, 3, 71, 30",gemini-2.5-flash,"Page: 20
+Answer: การทำแนวกั้นขนานกับแนวรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละ 5mm. โดยประมาณ (Chapter: Repair With Epoxy Resin, Page: 20)",1.0,0.2,1,0.8552,Construction-Related,Repair Method,"การทำแนวกั้นขนานกับแนวรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละประมาณ 5 มม. (Chapter: Repair With Epoxy Resin, Page: 20)","16, 3, 20, 15, 71",gemini-2.5-flash,"Page: 20
+Answer: การทำแนวกั้นขนานกับแนวรอยร้าวในงาน Epoxy Resin ต้องห่างจากรอยร้าวฝั่งละประมาณ 5 มม. (Chapter: Repair With Epoxy Resin, Page: 20)",1.0,0.2,1,0.8489,11.58,38,26
+Repair Method,Repair with Epoxy Resin,อุปกรณ์ที่เพิ่มเข้ามาในงานซ่อม Epoxy Resin เมื่อเทียบกับงาน Cementitious Mortar คืออะไร,เครื่องตัดและใบตัดคอนกรีต (สำหรับเซาะร่องตามแนวรอยร้าว),17,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอในการระบุอุปกรณ์ที่เพิ่มเข้ามาในงานซ่อม Epoxy Resin เมื่อเทียบกับงาน Cementitious Mortar เนื่องจากทั้งสองวิธีต่างระบุถึงการใช้ ""แผ่น Crack Width Indicator"" ในการวัดความกว้างของรอยร้าว และไม่ได้ระบุอุปกรณ์อื่นๆ ที่นอกเหนือจากวัสดุซ่อมแซมโดยเฉพาะ","7, 10, 9, 16, 15",gemini-2.5-flash,"Page: 10, 16
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอในการระบุอุปกรณ์ที่เพิ่มเข้ามาในงานซ่อม Epoxy Resin เมื่อเทียบกับงาน Cementitious Mortar เนื่องจากทั้งสองวิธีต่างระบุถึงการใช้ ""แผ่น Crack Width Indicator"" ในการวัดความกว้างของรอยร้าว และไม่ได้ระบุอุปกรณ์อื่นๆ ที่นอกเหนือจากวัสดุซ่อมแซมโดยเฉพาะ",0.0,0.0,0,0.677,Construction-Related,Repair Method,ตามข้อมูลในเอกสารที่ให้มา ไม่มีอุปกรณ์ใดที่เพิ่มเข้ามาในงานซ่อมแซมด้วยอีพ็อกซี่เรซิ่น (Repair With Epoxy Resin) เมื่อเทียบกับงานซ่อมแซมด้วยซีเมนต์มอร์ต้าร์ (Cementitious Mortar) เนื่องจากอุปกรณ์ที่ระบุไว้สำหรับงานซ่อมแซมด้วยอีพ็อกซี่เรซิ่น (หน้า 17) ล้วนมีอยู่ในรายการอุปกรณ์สำหรับงานซ่อมแซมซีเมนต์มอร์ต้าร์ (หน้า 25) หรือมีตัวเลือกที่ครอบคลุมกว่าอยู่ในรายการของซีเมนต์มอร์ต้าร์แล้ว,"17, 30, 25, 26, 115",gemini-2.5-flash,"Page: 17, 25
+Answer: ตามข้อมูลในเอกสารที่ให้มา ไม่มีอุปกรณ์ใดที่เพิ่มเข้ามาในงานซ่อมแซมด้วยอีพ็อกซี่เรซิ่น (Repair With Epoxy Resin) เมื่อเทียบกับงานซ่อมแซมด้วยซีเมนต์มอร์ต้าร์ (Cementitious Mortar) เนื่องจากอุปกรณ์ที่ระบุไว้สำหรับงานซ่อมแซมด้วยอีพ็อกซี่เรซิ่น (หน้า 17) ล้วนมีอยู่ในรายการอุปกรณ์สำหรับงานซ่อมแซมซีเมนต์มอร์ต้าร์ (หน้า 25) หรือมีตัวเลือกที่ครอบคลุมกว่าอยู่ในรายการของซีเมนต์มอร์ต้าร์แล้ว",1.0,0.2,1,0.6659,Construction-Related,Repair Method,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอุปกรณ์ที่ใช้ในงานซ่อมแซมด้วย Cementitious Mortar จึงไม่สามารถระบุอุปกรณ์ที่เพิ่มเข้ามาในงานซ่อม Epoxy Resin เมื่อเทียบกับงาน Cementitious Mortar ได้,"16, 7, 17, 10, 30",gemini-2.5-flash,"Page: 17
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอุปกรณ์ที่ใช้ในงานซ่อมแซมด้วย Cementitious Mortar จึงไม่สามารถระบุอุปกรณ์ที่เพิ่มเข้ามาในงานซ่อม Epoxy Resin เมื่อเทียบกับงาน Cementitious Mortar ได้",1.0,0.2,1,0.6775,29.86,6,16
+Repair Method,Spalling Edge Repair,มอร์ต้าร์ที่ใช้ซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่าเท่าใด,ต้องใช้มอร์ต้าร์ที่มีกำลังอัดสูงกว่า 400 ksc และมีการหดตัวต่ำ รวมทั้งต้องใช้น้ำยาประสานคอนกรีต,25,Construction-Related,Repair Method,"มอร์ต้าร์ที่ใช้ซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).","7, 25, 24, 30, 31",gemini-2.5-flash,"Page: 25
+Answer: มอร์ต้าร์ที่ใช้ซ่อมแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).",1.0,0.2,1,0.8308,Construction-Related,Repair Method,"มอร์ต้าร์ที่ใช้ซ่อมแซมรอยแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).","25, 10, 30, 115, 28",gemini-2.5-flash,"Page: 25
+Answer: มอร์ต้าร์ที่ใช้ซ่อมแซมรอยแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).",1.0,0.2,1,0.8344,Construction-Related,Repair Method,"มอร์ต้าร์ที่ใช้ซ่อมแซมแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).","25, 30, 28, 7, 10",gemini-2.5-flash,"Page: 25
+Answer: มอร์ต้าร์ที่ใช้ซ่อมแซมแตกบิ่นที่ขอบ (RP-TN-03) ต้องมีกำลังอัดสูงกว่า 400 ksc (Chapter: Spalling Edge Repair, Page: 25).",1.0,0.2,1,0.8335,10.5,31,25
+Repair Method,Spalling Edge Repair,วัสดุเชื่อมประสานคอนกรีต Sikadur 32TH ที่ใช้ในงาน Spalling Edge Repair ผสมด้วยอัตราส่วนเท่าใด,Sikadur 32TH ผสมด้วยอัตราส่วน A : B = 2 : 1 โดยน้ำหนัก,26,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับวัสดุเชื่อมประสานคอนกรีต Sikadur 32TH ที่ใช้ในงาน Spalling Edge Repair หรืออัตราส่วนการผสม,"4, 24, 142, 140, 141",gemini-2.5-flash,"Page: 4, 24, 140, 141, 142
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับวัสดุเชื่อมประสานคอนกรีต Sikadur 32TH ที่ใช้ในงาน Spalling Edge Repair หรืออัตราส่วนการผสม",0.0,0.0,0,0.8463,Construction-Related,Material,"วัสดุเชื่อมประสานคอนกรีต Sikadur 32TH ที่ใช้ในงาน Spalling Edge Repair ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26). Chapter: Spalling Edge Repair, Page: 29 ยังระบุให้ผสมวัสดุประสานคอนกรีต Sikadur 32TH ตามอัตราส่วนที่ระบุไว้ข้างต้น.","58, 60, 29, 26, 50",gemini-2.5-flash,"Page: 26, 29
+Answer: วัสดุเชื่อมประสานคอนกรีต Sikadur 32TH ที่ใช้ในงาน Spalling Edge Repair ผสมด้วยอัตราส่วน A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26). Chapter: Spalling Edge Repair, Page: 29 ยังระบุให้ผสมวัสดุประสานคอนกรีต Sikadur 32TH ตามอัตราส่วนที่ระบุไว้ข้างต้น.",1.0,0.2,1,0.8858,Construction-Related,Material,"เอกสารที่ให้มาไม่ได้ระบุอัตราส่วนการผสมของวัสดุเชื่อมประสานคอนกรีต Sikadur 32TH โดยระบุเพียงว่าเป็นสารเชื่อมประสาน 2 ส่วนผสม และให้ผสมส่วนประกอบทั้งสองเข้าด้วยกันด้วยสว่านไฟฟ้าความเร็วต่ำจนเป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 58).","58, 4, 24, 60, 142",gemini-2.5-flash,"Page: 58
+Answer: เอกสารที่ให้มาไม่ได้ระบุอัตราส่วนการผสมของวัสดุเชื่อมประสานคอนกรีต Sikadur 32TH โดยระบุเพียงว่าเป็นสารเชื่อมประสาน 2 ส่วนผสม และให้ผสมส่วนประกอบทั้งสองเข้าด้วยกันด้วยสว่านไฟฟ้าความเร็วต่ำจนเป็นเนื้อเดียวกัน (Chapter: Materials Data Sheet, Page: 58).",0.0,0.0,0,0.8471,11.36,6,15
+Repair Method,Spalling Edge Repair,อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal ที่ใช้ในงาน Spalling Edge ผสมด้วยอัตราส่วนเท่าใด,วัสดุ A : B : C = 2 : 1 : 2.5 โดยน้ำหนัก,26,Construction-Related,Material,"อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal มีอัตราส่วนผสมดังนี้ (Chapter: Materials Data Sheet, Page: 55):
+*   ส่วน A:B:C = 2:1:2.5 โดยน้ำหนัก
+*   ส่วน A:B:C = 2:1:3.4 โดยปริมาตร
+
+ผลิตภัณฑ์นี้เป็นมอร์ตาร์ปะและซ่อมแซมแบบ 3 ส่วน ที่สามารถใช้สำหรับซ่อมแซมขอบ/สันรอยต่อและรอยแตก (Chapter: Materials Data Sheet, Page: 52).","52, 47, 55, 137",gemini-2.5-flash,"Page: 52, 55
+Answer: อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal มีอัตราส่วนผสมดังนี้ (Chapter: Materials Data Sheet, Page: 55):
+*   ส่วน A:B:C = 2:1:2.5 โดยน้ำหนัก
+*   ส่วน A:B:C = 2:1:3.4 โดยปริมาตร
+
+ผลิตภัณฑ์นี้เป็นมอร์ตาร์ปะและซ่อมแซมแบบ 3 ส่วน ที่สามารถใช้สำหรับซ่อมแซมขอบ/สันรอยต่อและรอยแตก (Chapter: Materials Data Sheet, Page: 52).",0.0,0.0,0,0.6951,Construction-Related,Material,"อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal ผสมด้วยอัตราส่วนดังนี้ (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 55):
+*   Part A: B:C = 2:1:2.5 โดยน้ำหนัก
+*   Part A: B:C = 2:1:3.4 โดยปริมาตร","55, 52, 53, 50",gemini-2.5-flash,"Page: 55
+Answer: อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal ผสมด้วยอัตราส่วนดังนี้ (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 55):
+*   Part A: B:C = 2:1:2.5 โดยน้ำหนัก
+*   Part A: B:C = 2:1:3.4 โดยปริมาตร",0.0,0.0,0,0.7531,Construction-Related,Material,"อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal ผสมด้วยอัตราส่วนดังนี้ (Chapter: Materials Data Sheet, Page: 55):
+*   ตามน้ำหนัก: Part A:B:C = 2:1:2.5
+*   ตามปริมาตร: Part A:B:C = 2:1:3.4","52, 55, 47, 53",gemini-2.5-flash,"Page: 55
+Answer: อีพ็อกซีมอร์ต้าร์ Sikadur 41 CF Normal ผสมด้วยอัตราส่วนดังนี้ (Chapter: Materials Data Sheet, Page: 55):
+*   ตามน้ำหนัก: Part A:B:C = 2:1:2.5
+*   ตามปริมาตร: Part A:B:C = 2:1:3.4",0.0,0.0,0,0.7413,12.41,37,16
+Repair Method,Spalling Edge Repair,ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คืออะไร,ใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวเส้นตรงชัดเจนเพื่อเตรียมการซ่อมแซม,28,Construction-Related,Repair Method,"ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คือ การใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวชัดเจนเพื่อเตรียมการซ่อมแซม (Chapter: Spalling Edge Repair, Page: 28).","25, 7, 28, 5, 30",gemini-2.5-flash,"Page: 28
+Answer: ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คือ การใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวชัดเจนเพื่อเตรียมการซ่อมแซม (Chapter: Spalling Edge Repair, Page: 28).",1.0,0.2,1,0.8573,Construction-Related,Repair Method,"ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คือ การใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวชัดเจนเพื่อเตรียมการซ่อมแซม (Chapter: Spalling Edge Repair, Page: 28).","25, 19, 12, 28, 31",gemini-2.5-flash,"Page: 28
+Answer: ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คือ การใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวชัดเจนเพื่อเตรียมการซ่อมแซม (Chapter: Spalling Edge Repair, Page: 28).",1.0,0.2,1,0.8573,Construction-Related,Repair Method,ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คือ การใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวชัดเจนเพื่อเตรียมการซ่อมแซม,"25, 28, 30, 31, 7",gemini-2.5-flash,"Page: 28
+Answer: ขั้นตอนแรก (3.1) ของการซ่อมแตกบิ่นที่ขอบ (RP-TN-03) คือ การใช้เครื่องตัดคอนกรีตตัดขอบคอนกรีตที่แตกให้เป็นแนวชัดเจนเพื่อเตรียมการซ่อมแซม",1.0,0.2,1,0.8852,10.97,38,26
+Repair Method,Spalling Edge Repair,ในงาน Spalling Edge Repair ต้องทาน้ำยาประสานคอนกรีต Sikadur 32TH บริเวณใด,ทาเฉพาะบนผิวคอนกรีตที่แตก,29,Construction-Related,Repair Method,ข้อมูลที่ให้มาไม่มีรายละเอียดเกี่ยวกับผลิตภัณฑ์ Sikadur 32TH หรือระบุบริเวณที่ต้องทาน้ำยาประสานคอนกรีตดังกล่าวในงาน Spalling Edge Repair,"4, 24, 142, 140, 141",gemini-2.5-flash,"Page: 4, 24, 140, 141, 142
+Answer: ข้อมูลที่ให้มาไม่มีรายละเอียดเกี่ยวกับผลิตภัณฑ์ Sikadur 32TH หรือระบุบริเวณที่ต้องทาน้ำยาประสานคอนกรีตดังกล่าวในงาน Spalling Edge Repair",0.0,0.0,0,0.7253,Construction-Related,Repair Method,"ในงาน Spalling Edge Repair ต้องทาน้ำยาประสานคอนกรีต Sikadur 32TH ลงบนผิวคอนกรีตที่แตก (Chapter: Spalling Edge Repair, Page: 29).","29, 58, 60, 4, 25",gemini-2.5-flash,"Page: 29
+Answer: ในงาน Spalling Edge Repair ต้องทาน้ำยาประสานคอนกรีต Sikadur 32TH ลงบนผิวคอนกรีตที่แตก (Chapter: Spalling Edge Repair, Page: 29).",1.0,0.2,1,0.7571,Construction-Related,Repair Method,"ในงาน Spalling Edge Repair ต้องทาน้ำยาประสานคอนกรีต Sikadur 32TH ลงบนผิวคอนกรีตที่แตก (Chapter: Spalling Edge Repair, Page: 29).","4, 24, 58, 29, 142",gemini-2.5-flash,"Page: 29
+Answer: ในงาน Spalling Edge Repair ต้องทาน้ำยาประสานคอนกรีต Sikadur 32TH ลงบนผิวคอนกรีตที่แตก (Chapter: Spalling Edge Repair, Page: 29).",1.0,0.2,1,0.7571,10.14,38,26
+Repair Method,Voids and Blowholes Repair,วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมรูฟองอากาศขนาดใด,ใช้ซ่อมรูฟองอากาศที่มีความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม.,33,Construction-Related,Repair Method,"วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 2 mm แต่ไม่เกิน 10 mm (Chapter: Voids And Blowholes Repair, Page: 33; Chapter: Guildline For Repair, Page: 6).","7, 33, 6, 32, 38",gemini-2.5-flash,"Page: 6, 33
+Answer: วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 2 mm แต่ไม่เกิน 10 mm (Chapter: Voids And Blowholes Repair, Page: 33; Chapter: Guildline For Repair, Page: 6).",1.0,0.2,1,0.7981,Construction-Related,Repair Method,"วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+ตามแนวทางปฏิบัติเพิ่มเติม (Chapter: Guildline For Repair, Page: 6) กำหนดขนาดสำหรับวิธี RP-TN-04 ดังนี้:
+*   **พื้นผิวด้านนอก (A):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **พื้นผิวด้านใน (B):** ความกว้าง > 2 มม. แต่ ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **พื้นผิวปะเก็น (C):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.","33, 39, 6, 35, 41",gemini-2.5-flash,"Page: 6, 33
+Answer: วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 2 มม. แต่ไม่เกิน 10 มม. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+ตามแนวทางปฏิบัติเพิ่มเติม (Chapter: Guildline For Repair, Page: 6) กำหนดขนาดสำหรับวิธี RP-TN-04 ดังนี้:
+*   **พื้นผิวด้านนอก (A):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **พื้นผิวด้านใน (B):** ความกว้าง > 2 มม. แต่ ≤ 10 มม. และความลึก ≤ 10 มม.
+*   **พื้นผิวปะเก็น (C):** ความกว้าง ≤ 10 มม. และความลึก ≤ 10 มม.",1.0,0.2,1,0.7786,Construction-Related,Repair Method,"วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 2 mm. แต่ไม่เกิน 10 mm. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+นอกจากนี้ ตาราง Guideline for Voids or Blowholes Repair ยังระบุขนาดสำหรับการซ่อมแซมด้วยวิธี RP-TN-04 ดังนี้ (Chapter: Guildline For Repair, Page: 6):
+*   **Outside Surface (A):** ความกว้าง (Wide) ≤ 10 mm, ความลึก (Depth) ≤ 10 mm
+*   **Inside Surface (B):** ความกว้าง (Wide) > 2 mm และ ≤ 10 mm, ความลึก (Depth) ≤ 10 mm
+*   **Gasket Surface (C):** ความกว้าง (Wide) ≤ 10 mm, ความลึก (Depth) ≤ 10 mm","33, 6, 39, 32, 38",gemini-2.5-flash,"Page: 33, 6
+Answer: วิธี RP-TN-04 (Voids and Blowholes Repair with Cementitious Mortar) ใช้ซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 2 mm. แต่ไม่เกิน 10 mm. (Chapter: Voids And Blowholes Repair, Page: 33)
+
+นอกจากนี้ ตาราง Guideline for Voids or Blowholes Repair ยังระบุขนาดสำหรับการซ่อมแซมด้วยวิธี RP-TN-04 ดังนี้ (Chapter: Guildline For Repair, Page: 6):
+*   **Outside Surface (A):** ความกว้าง (Wide) ≤ 10 mm, ความลึก (Depth) ≤ 10 mm
+*   **Inside Surface (B):** ความกว้าง (Wide) > 2 mm และ ≤ 10 mm, ความลึก (Depth) ≤ 10 mm
+*   **Gasket Surface (C):** ความกว้าง (Wide) ≤ 10 mm, ความลึก (Depth) ≤ 10 mm",1.0,0.2,1,0.7656,20.66,38,26
+Repair Method,Voids and Blowholes Repair,ในการฉาบอุดรูฟองอากาศด้วย Cementitious Mortar ผู้ปฏิบัติงานต้องฉาบขณะที่ผิวคอนกรีตเป็นอย่างไร,ต้องฉาบในขณะที่ผิวคอนกรีตยังชุ่มน้ำอยู่,35,Construction-Related,Repair Method,"The provided document context does not contain enough information to specify the required condition of the concrete surface (e.g., wet, dry) when applying cementitious mortar for voids and blowholes repair.","7, 10, 9, 25, 33",gemini-2.5-flash,"Page: 33
+Answer: The provided document context does not contain enough information to specify the required condition of the concrete surface (e.g., wet, dry) when applying cementitious mortar for voids and blowholes repair.",0.0,0.0,0,0.7266,Non-Construction Questions,General / Admin,ผู้ปฏิบัติงานจะต้องฉาบในขณะที่ผิวคอนกรีตยังชุ่มน้ำอยู่ (The operator must patch while the concrete surface is still damp/wet).,"41, 33, 35, 114, 103",gemini-2.5-flash,"Page: 35
+Answer: ผู้ปฏิบัติงานจะต้องฉาบในขณะที่ผิวคอนกรีตยังชุ่มน้ำอยู่ (The operator must patch while the concrete surface is still damp/wet).",1.0,0.2,1,0.9046,Construction-Related,Repair Method,"The provided document context for ""Voids and Blowholes Repair With Cementitious Mortar"" (RP-TN-04) does not contain enough information regarding the required condition of the concrete surface (e.g., wet, partially dry) during the application of the cementitious mortar.","33, 103, 7, 41, 10",gemini-2.5-flash,"Page: 33
+Answer: The provided document context for ""Voids and Blowholes Repair With Cementitious Mortar"" (RP-TN-04) does not contain enough information regarding the required condition of the concrete surface (e.g., wet, partially dry) during the application of the cementitious mortar.",0.0,0.0,0,0.7147,19.49,6,16
+Repair Method,Voids and Blowholes Repair (High Strength Mortar),วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้ซ่อมรูฟองอากาศขนาดใด,ใช้ซ่อมรูฟองอากาศที่มีความกว้างและความลึกมากกว่า 10 มม. ซึ่งต้องใช้วัสดุที่มีกำลังอัดและการยึดเกาะสูง และการขยายตัวต่ำกว่าวัสดุฉาบซ่อมทั่วไป,39,Construction-Related,Repair Method,"วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้ซ่อมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 มิลลิเมตร (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39; Chapter: Guildline For Repair, Page: 6).","38, 7, 39, 6, 32",gemini-2.5-flash,"Page: 39, 6
+Answer: วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้ซ่อมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 มิลลิเมตร (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39; Chapter: Guildline For Repair, Page: 6).",1.0,0.2,1,0.7955,Construction-Related,Repair Method,"วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้สำหรับซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 mm. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39; Chapter: Guildline For Repair, Page: 6)","39, 33, 6, 41, 38",gemini-2.5-flash,"Page: 39, 6
+Answer: วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้สำหรับซ่อมแซมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 mm. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39; Chapter: Guildline For Repair, Page: 6)",1.0,0.2,1,0.795,Construction-Related,Repair Method,"วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้ซ่อมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 มม. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39) หรือในกรณีที่มีเหล็กเส้นโผล่ (Rebar exposed) ไม่ว่าจะเป็นที่พื้นผิวภายนอก (Outside Surface), พื้นผิวภายใน (Inside Surface) หรือพื้นผิวปะเก็น (Gasket Surface) (Chapter: Guildline For Repair, Page: 6)","39, 38, 6, 33, 7",gemini-2.5-flash,"Page: 1, 3, 6
+Answer: วิธี RP-TN-05 (Voids and Blowholes Repair with High Strength Mortar) ใช้ซ่อมรูฟองอากาศที่มีขนาดความกว้างและความลึกมากกว่า 10 มม. (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 39) หรือในกรณีที่มีเหล็กเส้นโผล่ (Rebar exposed) ไม่ว่าจะเป็นที่พื้นผิวภายนอก (Outside Surface), พื้นผิวภายใน (Inside Surface) หรือพื้นผิวปะเก็น (Gasket Surface) (Chapter: Guildline For Repair, Page: 6)",1.0,0.2,1,0.7652,12.47,34,26
+Repair Method,Voids and Blowholes Repair (High Strength Mortar),วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสมเท่าใด,ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก,40,Construction-Related,Material,"วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสม ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40).","41, 40, 39, 7, 38",gemini-2.5-flash,"Page: 40
+Answer: วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสม ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40).",1.0,0.2,1,0.805,Construction-Related,Material,วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสม ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก,"114, 115, 40, 113",gemini-2.5-flash,"Page: 40
+Answer: วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสม ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก",1.0,0.25,1,0.8134,Construction-Related,Material,"วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสม ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40).","40, 41, 114, 115, 39",gemini-2.5-flash,"Page: 40
+Answer: วัสดุปูนฉาบตราผึ้ง 135F ที่ใช้ใน RP-TN-05 มีอัตราส่วนผสม ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 40).",1.0,0.2,1,0.805,8.93,38,26
+Repair Method,Voids and Blowholes Repair (High Strength Mortar),ขั้นตอนแรก (3.1) ของการซ่อมรูฟองอากาศด้วย High Strength Mortar คืออะไร,ใช้กระดาษทรายขัดขอบรูฟองอากาศเพื่อให้การซ่อมแซมทำได้เต็มพื้นที่,40,Construction-Related,Material,"ขั้นตอนแรกของกระบวนการซ่อมแซมด้วย High Strength Repair Mortar No. 135/135F คือ การเตรียมพื้นที่ซ่อมแซมโดยการสกัด, เลื่อยตัด, หรือพ่นทราย (Prepare the repair areas by chipping, saw-cutting, sandblasting) (Chapter: Materials Data Sheet, Page: 5).","119, 115, 52",gemini-2.5-flash,"Page: 5
+Answer: ขั้นตอนแรกของกระบวนการซ่อมแซมด้วย High Strength Repair Mortar No. 135/135F คือ การเตรียมพื้นที่ซ่อมแซมโดยการสกัด, เลื่อยตัด, หรือพ่นทราย (Prepare the repair areas by chipping, saw-cutting, sandblasting) (Chapter: Materials Data Sheet, Page: 5).",0.0,0.0,0,0.683,Construction-Related,Repair Method,"ขั้นตอนแรก (3.1) ของการซ่อมรูฟองอากาศด้วย High Strength Mortar คือ ทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรูฟองอากาศ โดยใช้เครื่องเป่าลม (Chapter: Voids And Blowholes Repair, Page: 35).","41, 115, 39, 35, 114",gemini-2.5-flash,"Page: 35
+Answer: ขั้นตอนแรก (3.1) ของการซ่อมรูฟองอากาศด้วย High Strength Mortar คือ ทำความสะอาดผิวคอนกรีตบริเวณที่เกิดรูฟองอากาศ โดยใช้เครื่องเป่าลม (Chapter: Voids And Blowholes Repair, Page: 35).",0.0,0.0,0,0.7288,Construction-Related,Repair Method,"เอกสารที่ให้มาเริ่มต้นที่ขั้นตอน 3.2 ซึ่งระบุว่าเป็นการทำความสะอาดรูฟองอากาศโดยใช้ลมเป่า ผิวคอนกรีตบริเวณที่จะทำการซ่อมจะต้องไม่มีฝุ่นหรือคราบใดๆ (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 41)
+ขั้นตอนแรก (3.1) ไม่ได้ระบุไว้ในเอกสารที่ให้มา","115, 39, 119, 41, 52",gemini-2.5-flash,"Page: 39, 41
+Answer: เอกสารที่ให้มาเริ่มต้นที่ขั้นตอน 3.2 ซึ่งระบุว่าเป็นการทำความสะอาดรูฟองอากาศโดยใช้ลมเป่า ผิวคอนกรีตบริเวณที่จะทำการซ่อมจะต้องไม่มีฝุ่นหรือคราบใดๆ (Chapter: Voids And Blowholes Repair With High Strength Mortar, Page: 41)
+ขั้นตอนแรก (3.1) ไม่ได้ระบุไว้ในเอกสารที่ให้มา",0.0,0.0,0,0.7254,9.1,6,16
+Material,Material Data Sheet,ระยะเวลาการทำงาน (Potlife) ของ Sika Skim Coat ที่อุณหภูมิ 30°C คือเท่าใด,ประมาณ 45 นาที ที่อุณหภูมิ 30°C,46,Non-Construction Questions,General / Admin,ระยะเวลาการทำงานของ Sika Skim Coat ที่อุณหภูมิ 30°C คือประมาณ 45 นาที,"46, 45, 27, 61, 34",gemini-2.5-flash,"Page: 46
+Answer: ระยะเวลาการทำงานของ Sika Skim Coat ที่อุณหภูมิ 30°C คือประมาณ 45 นาที",1.0,0.2,1,0.7361,Construction-Related,Material,"ระยะเวลาการทำงาน (Potlife) ของ Sika Skim Coat ที่อุณหภูมิ 30°C คือประมาณ 45 นาที (Chapter: Materials Data Sheet, Page: 46).","46, 45, 61, 99",gemini-2.5-flash,"Page: 46
+Answer: ระยะเวลาการทำงาน (Potlife) ของ Sika Skim Coat ที่อุณหภูมิ 30°C คือประมาณ 45 นาที (Chapter: Materials Data Sheet, Page: 46).",1.0,0.25,1,0.7138,Construction-Related,Material,"ระยะเวลาการทำงานของ Sika Skim Coat ที่อุณหภูมิ 30°C คือประมาณ 45 นาที (Chapter: Materials Data Sheet, Page: 46).","46, 45, 61, 27, 99",gemini-2.5-flash,"Page: 46
+Answer: ระยะเวลาการทำงานของ Sika Skim Coat ที่อุณหภูมิ 30°C คือประมาณ 45 นาที (Chapter: Materials Data Sheet, Page: 46).",1.0,0.2,1,0.7316,11.22,38,26
+Material,Material Data Sheet,ความหนาในการฉาบ Sika Skim Coat อยู่ในช่วงเท่าใด,ประมาณ 0.5 - 2.0 มม.,46,Construction-Related,Material,"ความหนาในการฉาบ Sika Skim Coat อยู่ในช่วงประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 46)","45, 46, 27, 34, 18",gemini-2.5-flash,"Page: 46
+Answer: ความหนาในการฉาบ Sika Skim Coat อยู่ในช่วงประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 46)",1.0,0.2,1,0.6812,Non-Construction Questions,General / Admin,ความหนาในการฉาบ Sika Skim Coat อยู่ที่ประมาณ 0.5 - 2.0 มม.,"46, 45, 99, 100",gemini-2.5-flash,"Page: 46
+Answer: ความหนาในการฉาบ Sika Skim Coat อยู่ที่ประมาณ 0.5 - 2.0 มม.",1.0,0.25,1,0.6969,Construction-Related,Material,"ความหนาในการฉาบ Sika Skim Coat อยู่ที่ประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 46).","45, 46, 27, 99",gemini-2.5-flash,"Page: 46
+Answer: ความหนาในการฉาบ Sika Skim Coat อยู่ที่ประมาณ 0.5 - 2.0 มม. (Chapter: Materials Data Sheet, Page: 46).",1.0,0.25,1,0.6846,9.52,38,26
+Material,Material Data Sheet,ขนาดของเม็ดผง Sika Skim Coat ไม่เกินเท่าใด,ไม่เกิน 0.1 มิลลิเมตร,46,Construction-Related,Material,"ขนาดของเม็ดผง Sika Skim Coat ไม่เกิน 0.1 มิลลิเมตร (Chapter: Materials Data Sheet, Page: 46).","46, 45, 27, 34, 18",gemini-2.5-flash,"Page: 46
+Answer: ขนาดของเม็ดผง Sika Skim Coat ไม่เกิน 0.1 มิลลิเมตร (Chapter: Materials Data Sheet, Page: 46).",1.0,0.2,1,0.6931,Construction-Related,Material,"ขนาดของเม็ดผง Sika Skim Coat ไม่เกิน 0.1 มิลลิเมตร (Chapter: Materials Data Sheet, Page: 46).","46, 45, 100, 98",gemini-2.5-flash,"Page: 46
+Answer: ขนาดของเม็ดผง Sika Skim Coat ไม่เกิน 0.1 มิลลิเมตร (Chapter: Materials Data Sheet, Page: 46).",1.0,0.25,1,0.6931,Construction-Related,Material,"ขนาดของเม็ดผง Sika Skim Coat ไม่เกิน 0.1 มิลลิเมตร (Chapter: Materials Data Sheet, Page: 46).","46, 45, 27, 34",gemini-2.5-flash,"Page: 46
+Answer: ขนาดของเม็ดผง Sika Skim Coat ไม่เกิน 0.1 มิลลิเมตร (Chapter: Materials Data Sheet, Page: 46).",1.0,0.25,1,0.6931,7.5,38,26
+Material,Material Data Sheet,อายุการเก็บรักษา (Shelf Life) ของ Sika Skim Coat คือเท่าใด,12 เดือน เมื่อจัดเก็บในพื้นที่แห้งปราศจากความชื้นและหลีกเลี่ยงแสงแดด,45,Construction-Related,Material,"อายุการเก็บรักษา (Shelf Life) ของ Sika Skim Coat คือ 12 เดือน (Chapter: Materials Data Sheet, Page: 45).","46, 45, 99, 27, 34",gemini-2.5-flash,"Page: 45
+Answer: อายุการเก็บรักษา (Shelf Life) ของ Sika Skim Coat คือ 12 เดือน (Chapter: Materials Data Sheet, Page: 45).",1.0,0.2,1,0.717,Construction-Related,Material,"อายุการเก็บรักษา (Shelf Life) ของ Sika Skim Coat คือ 12 เดือน (Chapter: Materials Data Sheet, Page: 45).","45, 46, 99, 125",gemini-2.5-flash,"Page: 45
+Answer: อายุการเก็บรักษา (Shelf Life) ของ Sika Skim Coat คือ 12 เดือน (Chapter: Materials Data Sheet, Page: 45).",1.0,0.25,1,0.717,Construction-Related,Material,"อายุการเก็บรักษาของ Sika Skim Coat คือ 12 เดือน (Chapter: Materials Data Sheet, Page: 45).","46, 45, 99, 27",gemini-2.5-flash,"Page: 45
+Answer: อายุการเก็บรักษาของ Sika Skim Coat คือ 12 เดือน (Chapter: Materials Data Sheet, Page: 45).",1.0,0.25,1,0.7224,9.06,34,26
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-31 CF Normal คือเท่าใด,Part A : Part B = 2 : 1 โดยน้ำหนักหรือปริมาตร,50,Construction-Related,Material,"อัตราส่วนผสมของ Sikadur-31 CF Normal คือ วัสดุ A:วัสดุ B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).","47, 137, 26, 55, 51",gemini-2.5-flash,"Page: 26
+Answer: อัตราส่วนผสมของ Sikadur-31 CF Normal คือ วัสดุ A:วัสดุ B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).",0.0,0.0,0,0.7529,Construction-Related,Material,"อัตราส่วนผสมของ Sikadur-31 CF Normal คือ ส่วน A: ส่วน B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50)","50, 55, 47",gemini-2.5-flash,"Page: 50
+Answer: อัตราส่วนผสมของ Sikadur-31 CF Normal คือ ส่วน A: ส่วน B = 2:1 โดยน้ำหนักหรือปริมาตร (Chapter: Materials Data Sheet, Page: 50)",1.0,0.3333,1,0.763,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอัตราส่วนผสมของ Sikadur-31 CF Normal,"47, 55, 50, 137",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอัตราส่วนผสมของ Sikadur-31 CF Normal",1.0,0.25,1,0.6817,8.99,6,16
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C คือเท่าใด,ประมาณ 35 นาที (สำหรับปริมาณ 200 กรัม),51,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C,"47, 55, 50, 52",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C",0.0,0.0,0,0.6187,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C,"50, 55, 48, 47",gemini-2.5-flash,"Page: 1
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C",0.0,0.0,0,0.622,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C,"55, 47, 50, 49",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +30°C",0.0,0.0,0,0.622,8.58,6,16
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +10°C คือเท่าใด,ประมาณ 145 นาที (สำหรับปริมาณ 200 กรัม),51,Non-Construction Questions,General / Admin,The provided document context does not contain enough information to determine the potlife (ระยะเวลาการใช้งาน) of Sikadur-31 CF Normal at +10°C.,"47, 55, 50, 26",gemini-2.5-flash,"Page: N/A
+Answer: The provided document context does not contain enough information to determine the potlife (ระยะเวลาการใช้งาน) of Sikadur-31 CF Normal at +10°C.",0.0,0.0,0,0.6265,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +10°C,"55, 50, 53",gemini-2.5-flash,"Page: 50
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +10°C",0.0,0.0,0,0.615,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +10°C,"55, 50, 47",gemini-2.5-flash,"Page: 2, 5
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-31 CF Normal ที่อุณหภูมิ +10°C",0.0,0.0,0,0.6136,8.8,6,16
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือเท่าใด,60 - 70 N/mm²,49,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือ 60-70 N/mm² (Chapter: Materials Data Sheet, Page: 49).","47, 54, 49, 55, 50",gemini-2.5-flash,"Page: 49
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือ 60-70 N/mm² (Chapter: Materials Data Sheet, Page: 49).",1.0,0.2,1,0.7134,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือ 60-70 N/mm² (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 49).","49, 54, 50, 47",gemini-2.5-flash,"Page: 49
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือ 60-70 N/mm² (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 49).",1.0,0.25,1,0.7157,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือ 60-70 N/mm² (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 49).","49, 54, 47, 50",gemini-2.5-flash,"Page: 49
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 7 วันของ Sikadur-31 CF Normal เมื่อบ่มที่ +30°C คือ 60-70 N/mm² (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 49).",1.0,0.25,1,0.7157,8.6,38,26
+Material,Material Data Sheet,Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้หรือไม่,ได้ เนื่องจากเป็นวัสดุที่ทนความชื้น (moisture tolerant) เหมาะกับพื้นผิวคอนกรีตทั้งแบบแห้งและชื้น (Suitable for dry and damp concrete surfaces),47,Construction-Related,Material,"Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ (Chapter: Materials Data Sheet, Page: 47).","47, 137, 26, 55, 51",gemini-2.5-flash,"Page: 47
+Answer: Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ (Chapter: Materials Data Sheet, Page: 47).",1.0,0.2,1,0.7766,Construction-Related,Material,"Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ เนื่องจากเป็นผลิตภัณฑ์ที่ทนต่อความชื้น (moisture tolerant) และเหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น (Suitable for dry and damp concrete surfaces) (Chapter: Materials Data Sheet, Page: 47) นอกจากนี้ ยังมีคำแนะนำให้แปรงกาวให้ดีลงบนพื้นผิวเมื่อทากับคอนกรีตที่มีความชื้น (When applied to mat moisture concrete, brush the adhesive well into substrate) (Chapter: Materials Data Sheet, Page: 50).","50, 47, 55",gemini-2.5-flash,"Page: 47, 50
+Answer: Sikadur-31 CF Normal สามารถใช้กับพื้นผิวคอนกรีตที่มีความชื้นได้ เนื่องจากเป็นผลิตภัณฑ์ที่ทนต่อความชื้น (moisture tolerant) และเหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น (Suitable for dry and damp concrete surfaces) (Chapter: Materials Data Sheet, Page: 47) นอกจากนี้ ยังมีคำแนะนำให้แปรงกาวให้ดีลงบนพื้นผิวเมื่อทากับคอนกรีตที่มีความชื้น (When applied to mat moisture concrete, brush the adhesive well into substrate) (Chapter: Materials Data Sheet, Page: 50).",1.0,0.3333,1,0.8278,Construction-Related,Material,"ใช่, Sikadur-31 CF Normal เป็นสารยึดติดและซ่อมแซมสองส่วนที่ทนความชื้น (moisture tolerant) และเหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น (Chapter: Materials Data Sheet, Page: 47). เมื่อใช้กับคอนกรีตที่มีความชื้น ควรแปรงกาวให้ซึมเข้าสู่พื้นผิวได้ดี (Chapter: Materials Data Sheet, Page: 50).","47, 55, 50, 137",gemini-2.5-flash,"Page: 47, 50
+Answer: ใช่, Sikadur-31 CF Normal เป็นสารยึดติดและซ่อมแซมสองส่วนที่ทนความชื้น (moisture tolerant) และเหมาะสำหรับพื้นผิวคอนกรีตที่แห้งและชื้น (Chapter: Materials Data Sheet, Page: 47). เมื่อใช้กับคอนกรีตที่มีความชื้น ควรแปรงกาวให้ซึมเข้าสู่พื้นผิวได้ดี (Chapter: Materials Data Sheet, Page: 50).",1.0,0.25,1,0.8042,9.47,38,26
+Material,Material Data Sheet,อายุการเก็บรักษาของ Sikadur-31 CF Normal คือเท่าใด และต้องเก็บที่อุณหภูมิเท่าใด,24 เดือน หากเก็บในบรรจุภัณฑ์เดิมที่ปิดสนิทในที่แห้ง ที่อุณหภูมิระหว่าง +5°C ถึง +30°C,48,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอายุการเก็บรักษาหรืออุณหภูมิในการเก็บรักษาของ Sikadur-31 CF Normal,"47, 137, 26, 55, 51",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอายุการเก็บรักษาหรืออุณหภูมิในการเก็บรักษาของ Sikadur-31 CF Normal",0.0,0.0,0,0.7528,Construction-Related,Material,"อายุการเก็บรักษาของ Sikadur-31 CF Normal คือ 24 เดือนนับจากวันที่ผลิต หากเก็บรักษาอย่างถูกต้องในบรรจุภัณฑ์เดิมที่ยังไม่เปิด ไม่เสียหาย และปิดสนิท ในสภาพแห้ง และที่อุณหภูมิระหว่าง +5°C ถึง +30°C (Chapter: Materials Data Sheet, Page: 48).","48, 50, 55, 47",gemini-2.5-flash,"Page: 48
+Answer: อายุการเก็บรักษาของ Sikadur-31 CF Normal คือ 24 เดือนนับจากวันที่ผลิต หากเก็บรักษาอย่างถูกต้องในบรรจุภัณฑ์เดิมที่ยังไม่เปิด ไม่เสียหาย และปิดสนิท ในสภาพแห้ง และที่อุณหภูมิระหว่าง +5°C ถึง +30°C (Chapter: Materials Data Sheet, Page: 48).",1.0,0.25,1,0.8002,Non-Construction Questions,General / Admin,อายุการเก็บรักษาของ Sikadur-31 CF Normal คือ 24 เดือนนับจากวันที่ผลิต หากจัดเก็บอย่างถูกต้องในบรรจุภัณฑ์เดิมที่ยังไม่เปิด ไม่เสียหาย และปิดสนิท ในสภาพแห้ง และต้องเก็บที่อุณหภูมิระหว่าง +5°C ถึง +30°C,"47, 55, 48, 137, 50",gemini-2.5-flash,"Page: 48
+Answer: อายุการเก็บรักษาของ Sikadur-31 CF Normal คือ 24 เดือนนับจากวันที่ผลิต หากจัดเก็บอย่างถูกต้องในบรรจุภัณฑ์เดิมที่ยังไม่เปิด ไม่เสียหาย และปิดสนิท ในสภาพแห้ง และต้องเก็บที่อุณหภูมิระหว่าง +5°C ถึง +30°C",1.0,0.2,1,0.8116,11.79,38,26
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-41 CF Normal คือเท่าใด,Part A : B : C = 2 : 1 : 2.5 โดยน้ำหนัก (หรือ 2 : 1 : 3.4 โดยปริมาตร),55,Construction-Related,Material,"อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+*   โดยน้ำหนัก (by weight): Part A: B:C = 2:1:2.5 (Chapter: Materials Data Sheet, Page: 55; Chapter: Spalling Edge Repair, Page: 26)
+*   โดยปริมาตร (by volume): Part A: B:C = 2:1:3.4 (Chapter: Materials Data Sheet, Page: 55)","52, 55, 137, 26",gemini-2.5-flash,"Page: 26, 55
+Answer: อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+*   โดยน้ำหนัก (by weight): Part A: B:C = 2:1:2.5 (Chapter: Materials Data Sheet, Page: 55; Chapter: Spalling Edge Repair, Page: 26)
+*   โดยปริมาตร (by volume): Part A: B:C = 2:1:3.4 (Chapter: Materials Data Sheet, Page: 55)",1.0,0.25,1,0.786,Non-Construction Questions,General / Admin,"อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+*   ส่วน A:B:C = 2:1:2.5 โดยน้ำหนัก
+*   ส่วน A:B:C = 2:1:3.4 โดยปริมาตร","55, 53, 52, 50",gemini-2.5-flash,"Page: 55
+Answer: อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+*   ส่วน A:B:C = 2:1:2.5 โดยน้ำหนัก
+*   ส่วน A:B:C = 2:1:3.4 โดยปริมาตร",1.0,0.25,1,0.8,Non-Construction Questions,General / Admin,"อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+*   ส่วน A: B:C = 2:1:2.5 โดยน้ำหนัก
+*   ส่วน A: B:C = 2:1:3.4 โดยปริมาตร","55, 52, 56, 53",gemini-2.5-flash,"Page: 55
+Answer: อัตราส่วนผสมของ Sikadur-41 CF Normal คือ:
+*   ส่วน A: B:C = 2:1:2.5 โดยน้ำหนัก
+*   ส่วน A: B:C = 2:1:3.4 โดยปริมาตร",1.0,0.25,1,0.7971,10.32,38,26
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C คือเท่าใด,ประมาณ 40 นาที (สำหรับปริมาณ 200 กรัม),56,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C,"55, 52, 47, 26",gemini-2.5-flash,"Page: 55
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C",0.0,0.0,0,0.6221,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C,"55, 53, 50, 48",gemini-2.5-flash,"Page: 55
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C",0.0,0.0,0,0.6221,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C,"55, 52, 53, 50",gemini-2.5-flash,"Page: 55, 53
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการใช้งาน (Potlife) ของ Sikadur-41 CF Normal ที่อุณหภูมิ +30°C",0.0,0.0,0,0.6221,8.97,6,16
+Material,Material Data Sheet,ปริมาณการใช้งาน (Consumption) ของ Sikadur-41 CF Normal คือเท่าใด,ประมาณ 2.0 กก./ตร.ม. ต่อความหนา 1 มม.,55,Non-Construction Questions,General / Admin,ปริมาณการใช้งานของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม.,"55, 52, 137, 50",gemini-2.5-flash,"Page: 55
+Answer: ปริมาณการใช้งานของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม.",1.0,0.25,1,0.7348,Construction-Related,Material,"ปริมาณการใช้งาน (Consumption) ของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55)","55, 50, 53, 52",gemini-2.5-flash,"Page: 55
+Answer: ปริมาณการใช้งาน (Consumption) ของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55)",1.0,0.25,1,0.7063,Construction-Related,Material,"ปริมาณการใช้งาน (Consumption) ของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55)","55, 52, 50, 137",gemini-2.5-flash,"Page: 55
+Answer: ปริมาณการใช้งาน (Consumption) ของ Sikadur-41 CF Normal คือ 2.0 kg/m² ต่อความหนา 1 มม. (Chapter: Materials Data Sheet, Page: 55)",1.0,0.25,1,0.7063,7.44,38,26
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-32TH คือเท่าใด,Comp. A : B = 2 : 1 โดยน้ำหนัก,59,Construction-Related,Repair Method,"อัตราส่วนผสมของ Sikadur-32TH คือ A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).","58, 137, 26, 59",gemini-2.5-flash,"Page: 26
+Answer: อัตราส่วนผสมของ Sikadur-32TH คือ A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26).",1.0,0.25,1,0.7407,Construction-Related,Material,"The provided document context does not contain information regarding the mixing ratio for Sikadur-32TH. It states instructions for mixing both components together but does not specify the ratio (Chapter: Materials Data Sheet, Page: 58).","58, 60, 61, 59",gemini-2.5-flash,"Page: 58, 59
+Answer: The provided document context does not contain information regarding the mixing ratio for Sikadur-32TH. It states instructions for mixing both components together but does not specify the ratio (Chapter: Materials Data Sheet, Page: 58).",1.0,0.25,1,0.626,Construction-Related,Repair Method,"อัตราส่วนผสมของ Sikadur-32TH คือ A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)","58, 60, 59, 26",gemini-2.5-flash,"Page: 26
+Answer: อัตราส่วนผสมของ Sikadur-32TH คือ A:B = 2:1 โดยน้ำหนัก (Chapter: Spalling Edge Repair, Page: 26)",1.0,0.25,1,0.7373,10.59,38,26
+Material,Material Data Sheet,ระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH ที่อุณหภูมิ 20°C และ 30°C คือเท่าใด,ที่ 20°C ประมาณ 90 นาที และที่ 30°C ประมาณ 40 นาที (ที่ 40°C ประมาณ 20 นาที),59,Non-Construction Questions,General / Admin,ข้อมูลในเอกสารที่ให้มาไม่ระบุระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH ที่อุณหภูมิ 20°C และ 30°C อย่างชัดเจน หน้า 58 กล่าวถึง Sikadur-32TH แต่ไม่มีข้อมูล Pot Life ในขณะที่หน้า 59 มีตาราง Pot Life แต่ไม่ได้ระบุว่าเป็นข้อมูลสำหรับผลิตภัณฑ์ Sikadur-32TH,"46, 59, 49, 53, 58",gemini-2.5-flash,"Page: 58, 59
+Answer: ข้อมูลในเอกสารที่ให้มาไม่ระบุระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH ที่อุณหภูมิ 20°C และ 30°C อย่างชัดเจน หน้า 58 กล่าวถึง Sikadur-32TH แต่ไม่มีข้อมูล Pot Life ในขณะที่หน้า 59 มีตาราง Pot Life แต่ไม่ได้ระบุว่าเป็นข้อมูลสำหรับผลิตภัณฑ์ Sikadur-32TH",1.0,0.2,1,0.6638,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH,"61, 50, 51, 60, 55",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH",0.0,0.0,0,0.6402,Non-Construction Questions,General / Admin,"ระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH คือ:
+*   ที่อุณหภูมิ 20°C: 40 นาที
+*   ที่อุณหภูมิ 30°C: 20 นาที","59, 58, 55, 46, 61",gemini-2.5-flash,"Page: 59
+Answer: ระยะเวลาการทำงาน (Pot Life) ของ Sikadur-32TH คือ:
+*   ที่อุณหภูมิ 20°C: 40 นาที
+*   ที่อุณหภูมิ 30°C: 20 นาที",1.0,0.2,1,0.7488,15.9,10,18
+Material,Material Data Sheet,ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ของ Sikadur-32TH คือเท่าใด,2.5-3 N/mm² (Concrete failure),59,Non-Construction Questions,General / Admin,"เอกสารที่ให้มาไม่ได้ระบุค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่เป็นตัวเลขสำหรับ Sikadur-32TH โดยตรง แต่ระบุว่า ""Sikadur-32TH ให้แรงยึดเกาะที่แข็งแรงกว่าแรงดึงของคอนกรีตเอง"" (Sikadur-32TH provide a bond of far greater strength than the tensile strength of the concrete itself.) [1]","58, 54, 49, 70",gemini-2.5-flash,"Page: 58
+Answer: เอกสารที่ให้มาไม่ได้ระบุค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่เป็นตัวเลขสำหรับ Sikadur-32TH โดยตรง แต่ระบุว่า ""Sikadur-32TH ให้แรงยึดเกาะที่แข็งแรงกว่าแรงดึงของคอนกรีตเอง"" (Sikadur-32TH provide a bond of far greater strength than the tensile strength of the concrete itself.) [1]",0.0,0.0,0,0.6758,Non-Construction Questions,General / Admin,"The document states that Sikadur-32TH provides a bond of far greater strength than the tensile strength of the concrete itself. However, a specific numerical value for the bond strength of Sikadur-32TH to concrete is not provided in the document.","58, 60, 49, 54, 61",gemini-2.5-flash,"Page: 58
+Answer: The document states that Sikadur-32TH provides a bond of far greater strength than the tensile strength of the concrete itself. However, a specific numerical value for the bond strength of Sikadur-32TH to concrete is not provided in the document.",0.0,0.0,0,0.6755,Construction-Related,Material,"ข้อมูลที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ของ Sikadur-32TH ได้อย่างเป็นตัวเลขระบุชัดเจน เอกสารระบุเพียงว่า Sikadur-32TH ให้แรงยึดเกาะที่แข็งแกร่งกว่ากำลังรับแรงดึงของคอนกรีตเองมาก (Chapter: Materials Data Sheet, Page: 58).","58, 54, 49, 75",gemini-2.5-flash,"Page: 58
+Answer: ข้อมูลที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ของ Sikadur-32TH ได้อย่างเป็นตัวเลขระบุชัดเจน เอกสารระบุเพียงว่า Sikadur-32TH ให้แรงยึดเกาะที่แข็งแกร่งกว่ากำลังรับแรงดึงของคอนกรีตเองมาก (Chapter: Materials Data Sheet, Page: 58).",0.0,0.0,0,0.6645,17.59,10,17
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ของ Sikadur-32TH คือเท่าใด,60-70 N/mm²,59,Construction-Related,Material,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับกำลังอัด (Compressive Strength) ของ Sikadur-32TH ระบุไว้ มีเพียงข้อมูลว่ามี ""High tensile strength"" (ความต้านทานแรงดึงสูง) และสามารถให้การยึดเกาะที่มีความแข็งแรงสูงกว่าความต้านทานแรงดึงของคอนกรีตเอง (Chapter: Materials Data Sheet, Page: 58)","58, 137, 26, 7",gemini-2.5-flash,"Page: 58, 7
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับกำลังอัด (Compressive Strength) ของ Sikadur-32TH ระบุไว้ มีเพียงข้อมูลว่ามี ""High tensile strength"" (ความต้านทานแรงดึงสูง) และสามารถให้การยึดเกาะที่มีความแข็งแรงสูงกว่าความต้านทานแรงดึงของคอนกรีตเอง (Chapter: Materials Data Sheet, Page: 58)",0.0,0.0,0,0.6138,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลกำลังอัด (Compressive Strength) ของ Sikadur-32TH,"60, 58, 49, 54, 59",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลกำลังอัด (Compressive Strength) ของ Sikadur-32TH",1.0,0.2,1,0.6103,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับกำลังอัด (Compressive Strength) ของ Sikadur-32TH,"58, 49, 54, 60, 137",gemini-2.5-flash,"Page: 58, 49, 54, 60, 137
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับกำลังอัด (Compressive Strength) ของ Sikadur-32TH",0.0,0.0,0,0.6157,13.0,6,16
+Material,Material Data Sheet,ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือเท่าใด,0.3-0.8 กก./ตร.ม. ขึ้นอยู่กับความพรุนของพื้นผิว,58,Non-Construction Questions,General / Admin,ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือ 0.3-0.8 กก./ตร.ม. ขึ้นอยู่กับความพรุนของพื้นผิว,"58, 46, 137, 26",gemini-2.5-flash,"Page: 58
+Answer: ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือ 0.3-0.8 กก./ตร.ม. ขึ้นอยู่กับความพรุนของพื้นผิว",1.0,0.25,1,0.7898,Construction-Related,Material,"ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือ 0.3-0.8 กก./ตร.ม. ขึ้นอยู่กับความพรุนของพื้นผิว (Chapter: Materials Data Sheet, Page: 58)","58, 60, 50, 59, 55",gemini-2.5-flash,"Page: 58
+Answer: ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือ 0.3-0.8 กก./ตร.ม. ขึ้นอยู่กับความพรุนของพื้นผิว (Chapter: Materials Data Sheet, Page: 58)",1.0,0.2,1,0.7786,Non-Construction Questions,General / Admin,ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือ 0.3-0.8 kg/m2 โดยขึ้นอยู่กับความพรุนของพื้นผิว,"58, 60, 59, 46",gemini-2.5-flash,"Page: 58
+Answer: ปริมาณการใช้งาน (Coverage) ของ Sikadur-32TH คือ 0.3-0.8 kg/m2 โดยขึ้นอยู่กับความพรุนของพื้นผิว",1.0,0.25,1,0.7847,15.28,38,26
+Material,Material Data Sheet,อัตราส่วนผสมของ Sikadur-52TH คือเท่าใด,ส่วนผสม A : ส่วนผสม B = 2 : 1 (โดยน้ำหนักและโดยปริมาตร),61,Construction-Related,Material,"อัตราส่วนผสมของ Sikadur-52TH คือ วัสดุ A 2 ส่วน ต่อ วัสดุ B 1 ส่วน (Chapter: Repair With Epoxy Resin, Page: 17).","60, 17, 61, 137, 47",gemini-2.5-flash,"Page: 17
+Answer: อัตราส่วนผสมของ Sikadur-52TH คือ วัสดุ A 2 ส่วน ต่อ วัสดุ B 1 ส่วน (Chapter: Repair With Epoxy Resin, Page: 17).",1.0,0.2,1,0.7237,Construction-Related,Material,"อัตราส่วนผสมของ Sikadur-52TH โดยน้ำหนักและโดยปริมาตร คือ ส่วนผสม A : ส่วนผสม B = 2 : 1 (Chapter: Materials Data Sheet, Page: 61).","60, 58, 61, 59, 55",gemini-2.5-flash,"Page: 61
+Answer: อัตราส่วนผสมของ Sikadur-52TH โดยน้ำหนักและโดยปริมาตร คือ ส่วนผสม A : ส่วนผสม B = 2 : 1 (Chapter: Materials Data Sheet, Page: 61).",1.0,0.2,1,0.7853,Non-Construction Questions,General / Admin,อัตราส่วนผสมของ Sikadur-52TH โดยน้ำหนักและโดยปริมาตรคือ ส่วนผสม A : ส่วนผสม B = 2 : 1,"60, 58, 17, 61",gemini-2.5-flash,"Page: 17, 61
+Answer: อัตราส่วนผสมของ Sikadur-52TH โดยน้ำหนักและโดยปริมาตรคือ ส่วนผสม A : ส่วนผสม B = 2 : 1",1.0,0.25,1,0.8043,10.18,38,26
+Material,Material Data Sheet,ระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C คือเท่าใด,ประมาณ 30 นาที (สำหรับปริมาณ 2 กก.),61,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C,"60, 55, 51, 56, 46",gemini-2.5-flash,"Page: 60
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C",0.0,0.0,0,0.6102,Non-Construction Questions,General / Admin,ระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C คือ 30 นาที,"61, 60, 51, 50, 59",gemini-2.5-flash,"Page: 61
+Answer: ระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C คือ 30 นาที",1.0,0.2,1,0.6661,Non-Construction Questions,General / Admin,ระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C คือ 30 นาที (สำหรับการผสม 2 กก.),"60, 51, 61, 55, 56",gemini-2.5-flash,"Page: 61
+Answer: ระยะเวลาการทำงาน (Potlife) ของ Sikadur-52TH ที่อุณหภูมิ 30°C คือ 30 นาที (สำหรับการผสม 2 กก.)",1.0,0.2,1,0.6804,19.94,38,26
+Material,Material Data Sheet,ค่าแรงยึดเกาะต่อคอนกรีตของ Sikadur-52TH คือเท่าใด,3-4 นิวตัน/ตร.มม. (คอนกรีตแตกก่อน),61,Non-Construction Questions,General / Admin,เอกสารระบุว่า Sikadur-52TH ให้ค่าแรงยึดเกาะสูง แต่ไม่ได้ระบุค่าตัวเลขที่เฉพาะเจาะจงของค่าแรงยึดเกาะต่อคอนกรีต,"60, 17, 61, 137, 47",gemini-2.5-flash,"Page: 60
+Answer: เอกสารระบุว่า Sikadur-52TH ให้ค่าแรงยึดเกาะสูง แต่ไม่ได้ระบุค่าตัวเลขที่เฉพาะเจาะจงของค่าแรงยึดเกาะต่อคอนกรีต",1.0,0.2,1,0.6328,Non-Construction Questions,General / Admin,ค่าแรงยึดเกาะต่อคอนกรีตของ Sikadur-52TH คือ 3-4 นิวตัน / ตร.มม. (โดยคอนกรีตแตกก่อน).,"60, 58, 54, 59, 61",gemini-2.5-flash,"Page: 61
+Answer: ค่าแรงยึดเกาะต่อคอนกรีตของ Sikadur-52TH คือ 3-4 นิวตัน / ตร.มม. (โดยคอนกรีตแตกก่อน).",1.0,0.2,1,0.7783,Construction-Related,Material,"เอกสารระบุว่า Sikadur-52TH มีคุณสมบัติในด้านการยึดเกาะสูง และให้ค่าแรงยึดเกาะสูง (Chapter: Materials Data Sheet, Page: 1) แต่ไม่ได้ระบุค่าแรงยึดเกาะต่อคอนกรีตที่เป็นตัวเลขที่เฉพาะเจาะจง","60, 58, 17, 61, 54",gemini-2.5-flash,"Page: 1
+Answer: เอกสารระบุว่า Sikadur-52TH มีคุณสมบัติในด้านการยึดเกาะสูง และให้ค่าแรงยึดเกาะสูง (Chapter: Materials Data Sheet, Page: 1) แต่ไม่ได้ระบุค่าแรงยึดเกาะต่อคอนกรีตที่เป็นตัวเลขที่เฉพาะเจาะจง",1.0,0.2,1,0.6363,12.32,10,17
+Material,Material Data Sheet,ความกว้างสูงสุดของรอยแตกร้าวที่ควรอัดฉีดด้วย Sikadur-52TH คือเท่าใด,5 มม. และอายุต่ำสุดของเนื้อคอนกรีตใหม่ที่ใช้ได้คือ 3-6 สัปดาห์,60,Construction-Related,Material,"ความกว้างสูงสุดของรอยแตกร้าวที่ควรอัดฉีดด้วย Sikadur-52TH คือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)","60, 17, 61, 137, 47",gemini-2.5-flash,"Page: 60
+Answer: ความกว้างสูงสุดของรอยแตกร้าวที่ควรอัดฉีดด้วย Sikadur-52TH คือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)",1.0,0.2,1,0.6778,Non-Construction Questions,General / Admin,ความกว้างสูงสุดของรอยแตกร้าวที่ควรอัดฉีดด้วย Sikadur-52TH คือ 5 มม.,"60, 58, 10, 16",gemini-2.5-flash,"Page: 60
+Answer: ความกว้างสูงสุดของรอยแตกร้าวที่ควรอัดฉีดด้วย Sikadur-52TH คือ 5 มม.",1.0,0.25,1,0.6963,Construction-Related,Material,"ความกว้างสูงสุดของรอยแตกร้าวที่ควรทำการอัดฉีดด้วย Sikadur-52TH คือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)","60, 58, 17, 61",gemini-2.5-flash,"Page: 60
+Answer: ความกว้างสูงสุดของรอยแตกร้าวที่ควรทำการอัดฉีดด้วย Sikadur-52TH คือ 5 มม. (Chapter: Materials Data Sheet, Page: 60)",1.0,0.25,1,0.6779,7.98,32,25
+Material,Material Data Sheet,ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือเท่าใด,วัดได้ 290 เซนติพอยส์ ที่ 20°C (และ 130 เซนติพอยส์ ที่ 30°C),61,Construction-Related,Material,"ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือ 290 เซนติพอยส์ (Chapter: Materials Data Sheet, Page: 61).","60, 17, 46, 61, 55",gemini-2.5-flash,"Page: 61
+Answer: ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือ 290 เซนติพอยส์ (Chapter: Materials Data Sheet, Page: 61).",1.0,0.2,1,0.7192,Construction-Related,Material,"ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือ 290 เซนติพอยส์ (Chapter: Materials Data Sheet, Page: 61).","60, 61, 58, 59, 53",gemini-2.5-flash,"Page: 61
+Answer: ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือ 290 เซนติพอยส์ (Chapter: Materials Data Sheet, Page: 61).",1.0,0.2,1,0.7192,Construction-Related,Material,"ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือ 290 เซนติพอยส์ (Chapter: Materials Data Sheet, Page: 61).","60, 61, 55, 17, 46",gemini-2.5-flash,"Page: 61
+Answer: ค่าความข้นเหลว (Viscosity) ของ Sikadur-52TH ที่อุณหภูมิ 20°C คือ 290 เซนติพอยส์ (Chapter: Materials Data Sheet, Page: 61).",1.0,0.2,1,0.7192,10.3,34,26
+Material,Material Data Sheet,Conpatch 300 ใช้ซ่อมความเสียหายผิวหน้าคอนกรีตได้ลึกเท่าใด,ใช้ซ่อมความเสียหายผิวหน้าที่ลึกประมาณ 1-2 มม. (เป็น polymer modified cosmetic repair mortar ชนิดส่วนเดียว),62,Construction-Related,Material,"Conpatch 300 ใช้ซ่อมความเสียหายผิวหน้าคอนกรีตได้ลึก 1-2 มม. และควรทำงานเป็นชั้นบางๆ ที่มีความหนาน้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)","62, 18, 34, 67, 65",gemini-2.5-flash,"Page: 62
+Answer: Conpatch 300 ใช้ซ่อมความเสียหายผิวหน้าคอนกรีตได้ลึก 1-2 มม. และควรทำงานเป็นชั้นบางๆ ที่มีความหนาน้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)",1.0,0.2,1,0.7635,Construction-Related,Material,"Conpatch 300 ใช้ซ่อมความเสียหายผิวหน้าคอนกรีตได้ลึก 1-2 มม. และให้ทำงานเป็นชั้นบางๆ ที่มีความลึกน้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)","62, 64, 63, 12, 67",gemini-2.5-flash,"Page: 62
+Answer: Conpatch 300 ใช้ซ่อมความเสียหายผิวหน้าคอนกรีตได้ลึก 1-2 มม. และให้ทำงานเป็นชั้นบางๆ ที่มีความลึกน้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)",1.0,0.2,1,0.7637,Construction-Related,Material,"Conpatch 300 ใช้ซ่อมแซมความเสียหายของผิวหน้าคอนกรีตได้ลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62) และควรใช้งานในชั้นบางๆ ที่มีความหนาน้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)","62, 67, 12, 28, 18",gemini-2.5-flash,"Page: 62
+Answer: Conpatch 300 ใช้ซ่อมแซมความเสียหายของผิวหน้าคอนกรีตได้ลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62) และควรใช้งานในชั้นบางๆ ที่มีความหนาน้อยกว่า 2 มม. (Chapter: Materials Data Sheet, Page: 62)",1.0,0.2,1,0.77,9.13,38,26
+Material,Material Data Sheet,อัตราส่วนผสมของ Condur SC คือเท่าใด,A : B = 4 : 1 โดยน้ำหนัก (หรือ 3 : 1 โดยปริมาตร),69,Construction-Related,Material,"อัตราส่วนผสมของ Condur SC คือ:
+*   A: B 4:1 โดยน้ำหนัก
+*   A: B 3:1 โดยปริมาตร
+
+(Chapter: Materials Data Sheet, Page: 69)","72, 69, 70, 68",gemini-2.5-flash,"Page: 69
+Answer: อัตราส่วนผสมของ Condur SC คือ:
+*   A: B 4:1 โดยน้ำหนัก
+*   A: B 3:1 โดยปริมาตร
+
+(Chapter: Materials Data Sheet, Page: 69)",1.0,0.25,1,0.7887,Construction-Related,Material,"อัตราส่วนผสมของ Condur SC คือ A:B 4:1 โดยน้ำหนัก และ A:B 3:1 โดยปริมาตร (Chapter: Materials Data Sheet, Page: 69).","68, 69, 70, 84",gemini-2.5-flash,"Page: 69
+Answer: อัตราส่วนผสมของ Condur SC คือ A:B 4:1 โดยน้ำหนัก และ A:B 3:1 โดยปริมาตร (Chapter: Materials Data Sheet, Page: 69).",1.0,0.25,1,0.7763,Non-Construction Questions,General / Admin,"อัตราส่วนผสมของ Condur SC คือ:
+*   A: B 4:1 โดยน้ำหนัก
+*   A: B 3:1 โดยปริมาตร","69, 68, 70, 71",gemini-2.5-flash,"Page: 69
+Answer: อัตราส่วนผสมของ Condur SC คือ:
+*   A: B 4:1 โดยน้ำหนัก
+*   A: B 3:1 โดยปริมาตร",1.0,0.25,1,0.7981,7.85,38,26
+Material,Material Data Sheet,ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือเท่าใด,ประมาณ 50-70 นาที,70,Construction-Related,Material,"ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70)","70, 72, 69, 68",gemini-2.5-flash,"Page: 70
+Answer: ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70)",1.0,0.25,1,0.7001,Construction-Related,Material,"ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70).","70, 68, 69, 72",gemini-2.5-flash,"Page: 70
+Answer: ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70).",1.0,0.25,1,0.7034,Construction-Related,Material,"ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70).","70, 72, 68, 69",gemini-2.5-flash,"Page: 70
+Answer: ระยะเวลาการใช้งาน (Potlife) ของ Condur SC คือ 50-70 นาที (Chapter: Materials Data Sheet, Page: 70).",1.0,0.25,1,0.7034,7.12,38,26
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือเท่าใด,20.0 MPa ที่อายุ 28 วัน (สำหรับ 124 และ 124W),109,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือ 20.0 MPa (Chapter: Materials Data Sheet, Page: 109).","101, 109, 8, 113, 66",gemini-2.5-flash,"Page: 109
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือ 20.0 MPa (Chapter: Materials Data Sheet, Page: 109).",1.0,0.2,1,0.7523,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือ 20.0 MPa (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 109).","109, 102, 103, 101, 111",gemini-2.5-flash,"Page: 109
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือ 20.0 MPa (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 109).",1.0,0.2,1,0.7559,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือ 20.0 MPa (เมกะพาสคาล) (Chapter: Materials Data Sheet, Page: 109).","109, 101, 113, 111, 102",gemini-2.5-flash,"Page: 109
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 28 วันของปูนฉาบแต่งบางพิเศษ Bee Brand No.124 คือ 20.0 MPa (เมกะพาสคาล) (Chapter: Materials Data Sheet, Page: 109).",1.0,0.2,1,0.751,9.8,38,26
+Material,Material Data Sheet,กำลังอัด (Compressive Strength) ที่อายุ 28 วันของ Bee Brand No.135/135F คือเท่าใด,"60 MPa (7,300 psi) ที่อายุ 28 วัน",115,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 28 วันของ Bee Brand No.135/135F คือ 60 MPa (60 เมกะพาสคาล) (Chapter: Materials Data Sheet, Page: 114, 115).","113, 114, 115, 8",gemini-2.5-flash,"Page: 114, 115
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 28 วันของ Bee Brand No.135/135F คือ 60 MPa (60 เมกะพาสคาล) (Chapter: Materials Data Sheet, Page: 114, 115).",1.0,0.25,1,0.7244,Construction-Related,Material,"กำลังอัด (Compressive Strength) ที่อายุ 28 วันของ Bee Brand No.135/135F คือ 60 MPa (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 114, ข้อมูลเทคนิค).","114, 113, 115, 119",gemini-2.5-flash,"Page: 114
+Answer: กำลังอัด (Compressive Strength) ที่อายุ 28 วันของ Bee Brand No.135/135F คือ 60 MPa (อ้างอิงจาก Chapter: Materials Data Sheet, Page: 114, ข้อมูลเทคนิค).",1.0,0.25,1,0.725,Construction-Related,Material,"กำลังอัดที่อายุ 28 วันของ Bee Brand No.135/135F คือ 60 MPa (Chapter: Materials Data Sheet, Page: 114).","113, 114, 115, 109",gemini-2.5-flash,"Page: 114
+Answer: กำลังอัดที่อายุ 28 วันของ Bee Brand No.135/135F คือ 60 MPa (Chapter: Materials Data Sheet, Page: 114).",1.0,0.25,1,0.7233,12.32,34,26
+Material,Material Data Sheet,กำลังอัดที่อายุ 1 วันและ 7 วันของ Bee Brand No.135/135F คือเท่าใด,"1 วัน: 25 MPa (3,500 psi) และ 7 วัน: 40 MPa (5,800 psi)",115,Non-Construction Questions,General / Admin,กำลังอัดที่อายุ 1 วันของ Bee Brand No.135/135F คือ 25 MPa และที่อายุ 7 วันคือ 40 MPa.,"113, 8, 114, 40, 101",gemini-2.5-flash,"Page: 114
+Answer: กำลังอัดที่อายุ 1 วันของ Bee Brand No.135/135F คือ 25 MPa และที่อายุ 7 วันคือ 40 MPa.",0.0,0.0,0,0.8283,Non-Construction Questions,General / Admin,กำลังอัดของ Bee Brand No.135/135F ที่อายุ 1 วันคือ 25 MPa และที่อายุ 7 วันคือ 40 MPa.,"114, 113, 115",gemini-2.5-flash,"Page: 114
+Answer: กำลังอัดของ Bee Brand No.135/135F ที่อายุ 1 วันคือ 25 MPa และที่อายุ 7 วันคือ 40 MPa.",1.0,0.3333,1,0.8213,Non-Construction Questions,General / Admin,กำลังอัดที่อายุ 1 วันของ Bee Brand No.135/135F คือ 25 MPa และที่อายุ 7 วันคือ 40 MPa.,"113, 114, 8, 115, 40",gemini-2.5-flash,"Page: 114
+Answer: กำลังอัดที่อายุ 1 วันของ Bee Brand No.135/135F คือ 25 MPa และที่อายุ 7 วันคือ 40 MPa.",1.0,0.2,1,0.8283,11.21,38,26
+Material,Material Data Sheet,อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F คือเท่าใด,น้ำ = 17-19 % โดยน้ำหนัก,115,Construction-Related,Repair Method,อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand 135F คือ ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก,"113, 8, 101, 40, 133",gemini-2.5-flash,"Page: 40
+Answer: อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand 135F คือ ปูน : น้ำ = 1 : 0.18 โดยน้ำหนัก",0.0,0.0,0,0.6582,Construction-Related,Repair Method,อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F คือ 17 - 19 % โดยน้ำหนัก (เมื่อเทียบกับปูน #135),"114, 113, 115",gemini-2.5-flash,"Page: 114
+Answer: อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135/135F คือ 17 - 19 % โดยน้ำหนัก (เมื่อเทียบกับปูน #135)",1.0,0.3333,1,0.747,Construction-Related,Material,"อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135 คือ 17 - 19% โดยน้ำหนัก (Chapter: Materials Data Sheet, Page: 114).","113, 114, 115, 8, 101",gemini-2.5-flash,"Page: 114
+Answer: อัตราส่วนการผสมน้ำของปูนฉาบซ่อมกำลังอัดสูง Bee Brand No.135 คือ 17 - 19% โดยน้ำหนัก (Chapter: Materials Data Sheet, Page: 114).",1.0,0.2,1,0.7463,10.89,38,26
+Material,Material Data Sheet,ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่ 28 วันของ Bee Brand No.135/135F คือเท่าใด,5.5 MPa (800 psi) ที่อายุ 28 วัน,115,Construction-Related,Material,"ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่ 28 วันของ Bee Brand No.135/135F คือ 5.5 MPa (800 psi) (Chapter: Materials Data Sheet, Page: 114, 115).","113, 115, 114, 146, 8",gemini-2.5-flash,"Page: 114, 115
+Answer: ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่ 28 วันของ Bee Brand No.135/135F คือ 5.5 MPa (800 psi) (Chapter: Materials Data Sheet, Page: 114, 115).",1.0,0.2,1,0.6733,Non-Construction Questions,General / Admin,ค่าแรงยึดเกาะของ Bee Brand No.135/135F ที่ 28 วัน คือ 5.5 MPa.,"114, 113, 115, 61",gemini-2.5-flash,"Page: 114
+Answer: ค่าแรงยึดเกาะของ Bee Brand No.135/135F ที่ 28 วัน คือ 5.5 MPa.",1.0,0.25,1,0.6847,Construction-Related,Material,"ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่ 28 วันของ Bee Brand No.135/135F คือ 5.5 MPa (ตามข้อมูลใน Chapter: Materials Data Sheet, Page: 114 และ Chapter: Materials Data Sheet, Page: 115).","113, 114, 115",gemini-2.5-flash,"Page: 114, 115
+Answer: ค่าแรงยึดเกาะกับคอนกรีต (Bond Strength to Concrete) ที่ 28 วันของ Bee Brand No.135/135F คือ 5.5 MPa (ตามข้อมูลใน Chapter: Materials Data Sheet, Page: 114 และ Chapter: Materials Data Sheet, Page: 115).",1.0,0.3333,1,0.6452,11.72,35,26
+Material,Material Data Sheet,ความแตกต่างระหว่าง Bee Brand No.135 และ No.135F คืออะไร,No.135F จะมีส่วนผสมของ Cellulose Fiber เพิ่มเข้ามา ส่วน No.135 ไม่มี,114,Construction-Related,Material,"จากข้อมูลที่ให้มา เอกสารระบุ Bee Brand No. 135 และ No. 135F เป็น ""HIGH STRENGTH REPAIR MORTAR"" เหมือนกัน (Chapter: Materials Data Sheet, Page: 113) แต่ไม่มีข้อมูลที่เพียงพอในเอกสารเพื่อระบุความแตกต่างระหว่าง Bee Brand No. 135 และ No. 135F โดยเฉพาะ","113, 8, 101, 40, 133",gemini-2.5-flash,"Page: 113
+Answer: จากข้อมูลที่ให้มา เอกสารระบุ Bee Brand No. 135 และ No. 135F เป็น ""HIGH STRENGTH REPAIR MORTAR"" เหมือนกัน (Chapter: Materials Data Sheet, Page: 113) แต่ไม่มีข้อมูลที่เพียงพอในเอกสารเพื่อระบุความแตกต่างระหว่าง Bee Brand No. 135 และ No. 135F โดยเฉพาะ",0.0,0.0,0,0.7972,Construction-Related,Material,"ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135F มีส่วนผสมของ Cellulose Fiber ในขณะที่เบอร์ 135 ไม่มี (Chapter: Materials Data Sheet, Page: 114, 115)","113, 114, 115, 133",gemini-2.5-flash,"Page: 114, 115
+Answer: ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135F มีส่วนผสมของ Cellulose Fiber ในขณะที่เบอร์ 135 ไม่มี (Chapter: Materials Data Sheet, Page: 114, 115)",1.0,0.25,1,0.8794,Construction-Related,Material,"ความแตกต่างระหว่าง Bee Brand No.135 และ No.135F คือ เฉพาะเบอร์ 135F เท่านั้นที่จะมีส่วนผสมของ Cellulose Fiber (ใยเซลลูโลส) (Chapter: Materials Data Sheet, Page: 114, 115)","113, 101, 114, 115, 133",gemini-2.5-flash,"Page: 114, 115
+Answer: ความแตกต่างระหว่าง Bee Brand No.135 และ No.135F คือ เฉพาะเบอร์ 135F เท่านั้นที่จะมีส่วนผสมของ Cellulose Fiber (ใยเซลลูโลส) (Chapter: Materials Data Sheet, Page: 114, 115)",1.0,0.2,1,0.898,12.4,38,26
+Human Risk,Risk Assessment in Repair Working,อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีตมีอะไรบ้าง,ไฟฟ้าดูด และโดนใบเจียรบาด,121,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับอันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต",0.0,0.0,0,0.6349,Construction-Related,Human Risk,"อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต ได้แก่ ไฟฟ้าดูด และ โคนใบเจียรมาค (Chapter: Risk Assessment In Repair Working, Page: 121)","121, 132, 127, 126, 107",gemini-2.5-flash,"Page: 121
+Answer: อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต ได้แก่ ไฟฟ้าดูด และ โคนใบเจียรมาค (Chapter: Risk Assessment In Repair Working, Page: 121)",1.0,0.2,1,0.7253,Construction-Related,Human Risk,"อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต ได้แก่
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค (ตามตารางที่ (1) Risk Assessment in Repair Working)","121, 132, 127, 126, 107",gemini-2.5-flash,"Page: 121
+Answer: อันตรายที่อาจเกิดขึ้นจากการใช้เครื่องเจียรคอนกรีต ได้แก่
+*   ไฟฟ้าดูด
+*   โคนใบเจียรมาค (ตามตารางที่ (1) Risk Assessment in Repair Working)",1.0,0.2,1,0.7407,7.64,37,26
+Human Risk,Risk Assessment in Repair Working,ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือเท่าใด,"HCR = 4, PR = 3, RF = 12 (High Risk)",121,Construction-Related,Human Risk,"ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือ HCR = 4, PR = 3, และ RF = 12 (Chapter: Risk Assessment In Repair Working, Page: 121).","122, 121, 123, 120",gemini-2.5-flash,"Page: 121
+Answer: ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือ HCR = 4, PR = 3, และ RF = 12 (Chapter: Risk Assessment In Repair Working, Page: 121).",1.0,0.25,1,0.7457,Construction-Related,Human Risk,"ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือ HCR 4, PR 3, และ RF 12 (Chapter: Risk Assessment In Repair Working, Page: 121).","121, 123, 122, 132",gemini-2.5-flash,"Page: 121
+Answer: ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือ HCR 4, PR 3, และ RF 12 (Chapter: Risk Assessment In Repair Working, Page: 121).",1.0,0.25,1,0.7338,Construction-Related,Human Risk,"ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือ HCR = 4, PR = 3, RF = 12 (อ้างอิงจากตารางที่ (1) Risk Assessment in Repair Working, Chapter: Risk Assessment In Repair Working, Page: 121).","121, 122, 123, 120",gemini-2.5-flash,"Page: 121
+Answer: ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการใช้เครื่องเจียรคอนกรีตคือ HCR = 4, PR = 3, RF = 12 (อ้างอิงจากตารางที่ (1) Risk Assessment in Repair Working, Chapter: Risk Assessment In Repair Working, Page: 121).",1.0,0.25,1,0.7428,10.49,39,27
+Human Risk,Risk Assessment in Repair Working,"ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจากอะไร",RF = HCR × PR (Hazard Class Rating คูณด้วย Probability Rating),123,Construction-Related,Human Risk,"ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจาก Hazard Class Rating (HCR) คูณกับ Probability Rating (PR) (RF = HCR * PR) (Chapter: Risk Assessment In Repair Working, Page: 123).","121, 122, 123, 120",gemini-2.5-flash,"Page: 123
+Answer: ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจาก Hazard Class Rating (HCR) คูณกับ Probability Rating (PR) (RF = HCR * PR) (Chapter: Risk Assessment In Repair Working, Page: 123).",1.0,0.25,1,0.9119,Construction-Related,Human Risk,"ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจากสูตร HCR * PR โดยที่ HCR คือ Hazard Class Rating (ระดับความรุนแรงของความเสี่ยง) และ PR คือ Probability Rating (ระดับความเป็นไปได้ของความเสี่ยง) (Chapter: Risk Assessment In Repair Working, Page: 123)","123, 121, 122, 120",gemini-2.5-flash,"Page: 123
+Answer: ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจากสูตร HCR * PR โดยที่ HCR คือ Hazard Class Rating (ระดับความรุนแรงของความเสี่ยง) และ PR คือ Probability Rating (ระดับความเป็นไปได้ของความเสี่ยง) (Chapter: Risk Assessment In Repair Working, Page: 123)",1.0,0.25,1,0.9098,Construction-Related,Human Risk,"ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจากสูตร HCR * PR ซึ่ง HCR คือ Hazard Class Rating (ระดับความรุนแรงของความเสี่ยง) และ PR คือ Probability Rating (ระดับความเป็นไปได้ของความเสี่ยง) (Chapter: Risk Assessment In Repair Working, Page: 123)","121, 123, 122, 120",gemini-2.5-flash,"Page: 123
+Answer: ค่าปัจจัยเสี่ยง (Risk Factor, RF) คำนวณจากสูตร HCR * PR ซึ่ง HCR คือ Hazard Class Rating (ระดับความรุนแรงของความเสี่ยง) และ PR คือ Probability Rating (ระดับความเป็นไปได้ของความเสี่ยง) (Chapter: Risk Assessment In Repair Working, Page: 123)",1.0,0.25,1,0.9088,7.78,38,26
+Human Risk,Risk Assessment in Repair Working,ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือเท่าใด,ค่า 8-16 ถือเป็นความเสี่ยงสูง (High Risk) โดย 1-4 = Low Risk และ 5-7 = Medium Risk,121,Construction-Related,Human Risk,"ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือ 8-16 (Chapter: Risk Assessment In Repair Working, Page: 121, 122, 123).","123, 121, 122, 120",gemini-2.5-flash,"Page: 121, 122, 123
+Answer: ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือ 8-16 (Chapter: Risk Assessment In Repair Working, Page: 121, 122, 123).",1.0,0.25,1,0.8065,Construction-Related,Human Risk,ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือ 8-16.,"123, 121, 122, 120",gemini-2.5-flash,"Page: 121, 122, 123
+Answer: ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือ 8-16.",1.0,0.25,1,0.8866,Construction-Related,Human Risk,ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือ 8-16.,"123, 121, 122, 120",gemini-2.5-flash,"Page: 121, 122, 123
+Answer: ช่วงค่าความเสี่ยง (Risk Priority) ที่ถือว่าเป็น High Risk คือ 8-16.",1.0,0.25,1,0.8866,7.6,35,26
+Human Risk,Risk Assessment in Repair Working,ระดับความเสี่ยงเริ่มต้นของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้หรืออักเสบคือเท่าใด,"HCR = 3, PR = 3, RF = 9 (High Risk)",121,Construction-Related,Human Risk,ข้อมูลในเอกสารที่ให้มามีไม่เพียงพอที่จะตอบคำถามเกี่ยวกับระดับความเสี่ยงเริ่มต้นของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้หรืออักเสบ,unknown,gemini-2.5-flash,"Page: N/A
+Answer: ข้อมูลในเอกสารที่ให้มามีไม่เพียงพอที่จะตอบคำถามเกี่ยวกับระดับความเสี่ยงเริ่มต้นของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้หรืออักเสบ",0.0,0.0,0,0.5766,Construction-Related,Human Risk,"ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้หรืออักเสบคือ 9 (High Risk) (Chapter: Risk Assessment In Repair Working, Page: 121)","122, 121, 125, 129",gemini-2.5-flash,"Page: 121
+Answer: ระดับความเสี่ยงเริ่มต้น (Initial Risk Rating) ของอันตรายจากการสัมผัสสารเคมีจนผิวหนังไหม้หรืออักเสบคือ 9 (High Risk) (Chapter: Risk Assessment In Repair Working, Page: 121)",1.0,0.25,1,0.6622,Construction-Related,Human Risk,"จากตารางการประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์ (ตารางที่ 1) อันตรายจากการสัมผัสสารเคมีที่ทำให้เกิดผิวหนังไหม้ ระคายเคืองผิวหนัง และผิวหนังอักเสบ มีระดับความเสี่ยงเริ่มต้นดังนี้: HCR = 3, PR = 3, RF = 9 ซึ่งจัดอยู่ในเกณฑ์ความเสี่ยงสูง (High Risk) (Chapter: Risk Assessment In Repair Working, Page: 121)","122, 121, 125, 129",gemini-2.5-flash,"Page: 121
+Answer: จากตารางการประเมินความเสี่ยงในการซ่อมแซมชิ้นส่วนอุโมงค์ (ตารางที่ 1) อันตรายจากการสัมผัสสารเคมีที่ทำให้เกิดผิวหนังไหม้ ระคายเคืองผิวหนัง และผิวหนังอักเสบ มีระดับความเสี่ยงเริ่มต้นดังนี้: HCR = 3, PR = 3, RF = 9 ซึ่งจัดอยู่ในเกณฑ์ความเสี่ยงสูง (High Risk) (Chapter: Risk Assessment In Repair Working, Page: 121)",1.0,0.25,1,0.7247,10.16,39,26
+Human Risk,Risk Assessment in Repair Working,วิธีลดความเสี่ยงจากการกลืนสารเคมีในเรื่องเกี่ยวกับอาหารคืออะไร,ห้ามนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด และทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน,122,Construction-Related,Human Risk,ข้อมูลไม่เพียงพอในเอกสารที่ให้มาเพื่อตอบคำถามนี้,unknown,gemini-2.5-flash,"Page: N/A
+Answer: ข้อมูลไม่เพียงพอในเอกสารที่ให้มาเพื่อตอบคำถามนี้",0.0,0.0,0,0.5733,Construction-Related,Human Risk,"วิธีลดความเสี่ยงจากการกลืนสารเคมีในเรื่องเกี่ยวกับอาหารมีดังนี้:
+*   ห้ามนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   ทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   หลังจากปฏิบัติงานเสร็จแล้วให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 127, 128, 132)","128, 127, 121, 122, 132",gemini-2.5-flash,"Page: 122, 127, 128, 132
+Answer: วิธีลดความเสี่ยงจากการกลืนสารเคมีในเรื่องเกี่ยวกับอาหารมีดังนี้:
+*   ห้ามนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   ทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   หลังจากปฏิบัติงานเสร็จแล้วให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 127, 128, 132)",1.0,0.2,1,0.7416,Construction-Related,Human Risk,"วิธีลดความเสี่ยงจากการกลืนสารเคมีในเรื่องเกี่ยวกับอาหารคือ:
+*   ห้ามนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   ทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   หลังจากปฏิบัติงานเสร็จแล้ว ให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 127, 128, 132)","128, 127, 121, 122, 132",gemini-2.5-flash,"Page: 122, 127, 128, 132
+Answer: วิธีลดความเสี่ยงจากการกลืนสารเคมีในเรื่องเกี่ยวกับอาหารคือ:
+*   ห้ามนำอาหารมารับประทานในพื้นที่ทำงานโดยเด็ดขาด (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   ทำความสะอาดร่างกายทุกครั้งที่พักหรือเลิกงาน (Chapter: Risk Assessment In Repair Working, Page: 122)
+*   หลังจากปฏิบัติงานเสร็จแล้ว ให้ล้างมือให้สะอาด เพื่อป้องกันการปนเปื้อนในอาหาร (Chapter: Materials Safety Data, Page: 127, 128, 132)",1.0,0.2,1,0.7487,12.69,38,26
+Human Risk,Material Safety Data,การปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตาคืออะไร,ถอดคอนแทคเลนส์ ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่องไม่น้อยกว่า 10 นาที แล้วพาไปพบแพทย์ทันที,125,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอสำหรับการปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตา,"45, 46, 27, 34, 18",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอสำหรับการปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตา",0.0,0.0,0,0.6676,Non-Construction Questions,General / Admin,"การปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตาคือ:
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3.  พาไปพบแพทย์ทันที","125, 127, 46, 132, 45",gemini-2.5-flash,"Page: 125
+Answer: การปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตาคือ:
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3.  พาไปพบแพทย์ทันที",1.0,0.2,1,0.8161,Non-Construction Questions,General / Admin,"การปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตาคือ:
+1. ถอดคอนแทคเลนส์ออก
+2. ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3. พาไปพบแพทย์ทันที","46, 45, 125, 127",gemini-2.5-flash,"Page: 125
+Answer: การปฐมพยาบาลเบื้องต้นกรณี Sika Skim Coat เข้าตาคือ:
+1. ถอดคอนแทคเลนส์ออก
+2. ใช้น้ำสะอาดล้างดวงตาอย่างต่อเนื่อง ไม่น้อยกว่า 10 นาที
+3. พาไปพบแพทย์ทันที",1.0,0.25,1,0.8129,8.6,38,26
+Human Risk,Material Safety Data,หากกลืนวัสดุ Sikadur 52TH (Part B) จะเกิดอันตรายอย่างไร,อาจเป็นอันตรายถึงตายได้,130,Construction-Related,Human Risk,The document context does not contain enough information regarding the dangers of ingesting Sikadur 52TH (Part B). The provided safety data only details hazards for Sikadur 52 TH (PART A) and Sikadur 31 CF Normal (PART B).,"60, 17, 55, 129, 53",gemini-2.5-flash,"Page: N/A
+Answer: The document context does not contain enough information regarding the dangers of ingesting Sikadur 52TH (Part B). The provided safety data only details hazards for Sikadur 52 TH (PART A) and Sikadur 31 CF Normal (PART B).",0.0,0.0,0,0.6016,Construction-Related,Human Risk,"หากกลืนวัสดุ Sikadur 52 TH (Part B) อาจเป็นอันตรายถึงตายได้ (Chapter: Materials Safety Data, Page: 130).","127, 129, 130, 125, 128",gemini-2.5-flash,"Page: 130
+Answer: หากกลืนวัสดุ Sikadur 52 TH (Part B) อาจเป็นอันตรายถึงตายได้ (Chapter: Materials Safety Data, Page: 130).",1.0,0.2,1,0.6868,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายจากการกลืนวัสดุ Sikadur 52TH (Part B) มีเพียงข้อมูลของ Sikadur 52 TH (PART A) เท่านั้น.,"129, 60, 127, 126, 17",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับอันตรายจากการกลืนวัสดุ Sikadur 52TH (Part B) มีเพียงข้อมูลของ Sikadur 52 TH (PART A) เท่านั้น.",0.0,0.0,0,0.6148,10.24,6,16
+Human Risk,Material Safety Data,การปฐมพยาบาลเบื้องต้นกรณีกลืน Sikadur 52TH (Part B) คืออะไร,บ้วนปากแล้วดื่มน้ำสะอาดเป็นปริมาณมาก ห้ามทำให้อาเจียนโดยเด็ดขาด แล้วพาไปพบแพทย์โดยทันที,130,Non-Construction Questions,General / Admin,"The document does not contain enough information regarding the first aid measures for swallowing Sikadur 52TH (Part B). Information is provided for Sikadur 31 CF Normal (Part B) and Sikadur 52 TH (Part A), but not for Sikadur 52TH (Part B).","60, 17, 55, 129, 53",gemini-2.5-flash,"Page: N/A
+Answer: The document does not contain enough information regarding the first aid measures for swallowing Sikadur 52TH (Part B). Information is provided for Sikadur 31 CF Normal (Part B) and Sikadur 52 TH (Part A), but not for Sikadur 52TH (Part B).",0.0,0.0,0,0.6755,Non-Construction Questions,General / Admin,"การปฐมพยาบาลเบื้องต้นกรณีกลืน Sikadur 52TH (Part B) มีดังนี้:
+1. บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก
+2. ห้ามทำให้อาเจียนโดยเด็ดขาด
+3. พาไปพบแพทย์โดยทันที","127, 129, 130, 125, 128",gemini-2.5-flash,"Page: 130
+Answer: การปฐมพยาบาลเบื้องต้นกรณีกลืน Sikadur 52TH (Part B) มีดังนี้:
+1. บ้วนปากแล้วดื่มน้ำสะอาดตามเป็นปริมาณมาก
+2. ห้ามทำให้อาเจียนโดยเด็ดขาด
+3. พาไปพบแพทย์โดยทันที",1.0,0.2,1,0.8355,Non-Construction Questions,General / Admin,"The provided document does not contain enough information regarding the initial first aid procedure for swallowing Sikadur 52TH (Part B). The document mentions ""Sikadur 52 TH (PART A)"" and ""Sikadur 52TH"" but does not detail the first aid for ingestion for ""Sikadur 52TH (Part B)"".","129, 60, 127, 126, 17",gemini-2.5-flash,"Page: N/A
+Answer: The provided document does not contain enough information regarding the initial first aid procedure for swallowing Sikadur 52TH (Part B). The document mentions ""Sikadur 52 TH (PART A)"" and ""Sikadur 52TH"" but does not detail the first aid for ingestion for ""Sikadur 52TH (Part B)"".",0.0,0.0,0,0.681,13.9,6,16
+Human Risk,Material Safety Data,หากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) จนเป็นแผลแล้วไม่ทำการรักษาจะเกิดผลเสียอย่างไร,หากโดนกัดกร่อนจนเป็นแผลแล้วไม่ทำการรักษา จะทำให้แผลสมานตัวช้า,127,Non-Construction Questions,General / Admin,"The provided document context does not contain enough information regarding the effects of untreated skin wounds from contact with Sikadur 41 CF Normal (Part B). Information for Sikadur 41 CF Normal (Part A) is provided, but not for Part B.","55, 52, 26, 47, 126",gemini-2.5-flash,"Page: N/A
+Answer: The provided document context does not contain enough information regarding the effects of untreated skin wounds from contact with Sikadur 41 CF Normal (Part B). Information for Sikadur 41 CF Normal (Part A) is provided, but not for Part B.",0.0,0.0,0,0.6635,Construction-Related,Human Risk,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุผลเสียหากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) จนเป็นแผลแล้วไม่ทำการรักษา เอกสารระบุเพียงว่า Sikadur 41 CF Normal (Part B) ทำให้เกิดการระคายเคืองที่ผิวหนัง และควรปฐมพยาบาลโดยการถอดเสื้อผ้าที่ปนเปื้อน ล้างตัวด้วยสบู่และน้ำ และพบแพทย์ทันที (Chapter: Materials Safety Data, Page: 127)","127, 128, 129, 126",gemini-2.5-flash,"Page: 127
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุผลเสียหากผิวหนังสัมผัส Sikadur 41 CF Normal (Part B) จนเป็นแผลแล้วไม่ทำการรักษา เอกสารระบุเพียงว่า Sikadur 41 CF Normal (Part B) ทำให้เกิดการระคายเคืองที่ผิวหนัง และควรปฐมพยาบาลโดยการถอดเสื้อผ้าที่ปนเปื้อน ล้างตัวด้วยสบู่และน้ำ และพบแพทย์ทันที (Chapter: Materials Safety Data, Page: 127)",1.0,0.25,1,0.6786,Construction-Related,Human Risk,"เอกสารไม่ได้ให้ข้อมูลที่เพียงพอเกี่ยวกับผลเสียของการไม่รักษาแผลที่เกิดจากการสัมผัส Sikadur 41 CF Normal (Part B) ที่ผิวหนังโดยเฉพาะ อย่างไรก็ตาม สำหรับ Sikadur 41 CF Normal (Part B) ระบุว่าหากผิวหนังสัมผัสจะทำให้เกิดการระคายเคืองที่ผิวหนัง และการปฐมพยาบาลเบื้องต้นคือให้ถอดเสื้อผ้าที่ปนเปื้อนออก ล้างตัวด้วยสบู่และน้ำ แล้วพบแพทย์ทันที (Chapter: Materials Safety Data, Page: 127).","127, 126, 55, 52, 128",gemini-2.5-flash,"Page: 127
+Answer: เอกสารไม่ได้ให้ข้อมูลที่เพียงพอเกี่ยวกับผลเสียของการไม่รักษาแผลที่เกิดจากการสัมผัส Sikadur 41 CF Normal (Part B) ที่ผิวหนังโดยเฉพาะ อย่างไรก็ตาม สำหรับ Sikadur 41 CF Normal (Part B) ระบุว่าหากผิวหนังสัมผัสจะทำให้เกิดการระคายเคืองที่ผิวหนัง และการปฐมพยาบาลเบื้องต้นคือให้ถอดเสื้อผ้าที่ปนเปื้อนออก ล้างตัวด้วยสบู่และน้ำ แล้วพบแพทย์ทันที (Chapter: Materials Safety Data, Page: 127).",1.0,0.2,1,0.6833,15.39,14,20
+Human Risk,Material Safety Data,ความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32TH (Part B) คืออะไร,ทำลายเนื้อเยื่อตาอย่างรุนแรง อาจทำให้ตาบอดได้,126,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32TH (Part B) ได้,"58, 26, 55, 137",gemini-2.5-flash,"Page: 1, 2, 4, 5
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32TH (Part B) ได้",0.0,0.0,0,0.6675,Construction-Related,Human Risk,"ความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32 TH (PART B) คือ ทำลายเนื้อเยื่อตาอย่างรุนแรงอาจทำให้ตาบอดได้ (Chapter: Materials Safety Data, Page: 126).","125, 127, 129, 126, 130",gemini-2.5-flash,"Page: 126
+Answer: ความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32 TH (PART B) คือ ทำลายเนื้อเยื่อตาอย่างรุนแรงอาจทำให้ตาบอดได้ (Chapter: Materials Safety Data, Page: 126).",1.0,0.2,1,0.7931,Construction-Related,Human Risk,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32TH (Part B) มีเพียงข้อมูลสำหรับ Sikadur 32 TH (PART A) เท่านั้น.,"129, 58, 125, 26, 127",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับความรุนแรงของอันตรายต่อดวงตาจาก Sikadur 32TH (Part B) มีเพียงข้อมูลสำหรับ Sikadur 32 TH (PART A) เท่านั้น.",0.0,0.0,0,0.6341,11.94,6,16
+Human Risk,Material Safety Data,มาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมีคืออะไร,สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน,125,Construction-Related,Human Risk,จากเอกสารที่ให้มา ไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมี,unknown,gemini-2.5-flash,"Page:
+Answer: จากเอกสารที่ให้มา ไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมี",0.0,0.0,0,0.6999,Construction-Related,Human Risk,"มาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมีคือ:
+1.  สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 129, 131, 127, 128).","129, 131, 126, 127, 128",gemini-2.5-flash,"Page: 129, 131, 127, 128
+Answer: มาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมีคือ:
+1.  สวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 129, 131, 127, 128).",0.0,0.0,0,0.8265,Construction-Related,Human Risk,"มาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมีคือสวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 127, 128, 129, 131).","129, 131, 126, 127, 128",gemini-2.5-flash,"Page: 127, 128, 129, 131
+Answer: มาตรการป้องกันอันตรายต่อดวงตาเมื่อทำงานกับวัสดุซ่อมเคมีคือสวมแว่นตาป้องกันอันตรายที่ได้มาตรฐาน (Chapter: Materials Safety Data, Page: 127, 128, 129, 131).",0.0,0.0,0,0.8343,10.6,37,16
+Human Risk,Material Safety Data,การปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตาคืออะไร,ใช้น้ำเปล่าล้างตาประมาณ 15 นาที แล้วไปพบแพทย์ ห้ามใช้สารเคมีที่เป็นตัวทำละลายหรือทินเนอร์ในการล้างโดยเด็ดขาด,130,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับขั้นตอนการปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตา,"62, 18, 34, 67, 65",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับขั้นตอนการปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตา",0.0,0.0,0,0.71,Construction-Related,Human Risk,"การปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตา มีดังนี้ (Chapter: Materials Safety Data, Page: 130):
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำเปล่าล้างตาประมาณ 15 นาที
+3.  แล้วไปพบแพทย์
+4.  หากยังมีอาการระคายเคืองให้ไปพบแพทย์","130, 62, 127, 132",gemini-2.5-flash,"Page: 130
+Answer: การปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตา มีดังนี้ (Chapter: Materials Safety Data, Page: 130):
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำเปล่าล้างตาประมาณ 15 นาที
+3.  แล้วไปพบแพทย์
+4.  หากยังมีอาการระคายเคืองให้ไปพบแพทย์",1.0,0.25,1,0.8266,Construction-Related,Human Risk,"การปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตาคือ:
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำเปล่าล้างตาประมาณ 15 นาที
+3.  ไปพบแพทย์
+(Chapter: Materials Safety Data, Page: 130)","62, 130, 18, 34",gemini-2.5-flash,"Page: 130
+Answer: การปฐมพยาบาลเบื้องต้นกรณี Conpatch 300 เข้าตาคือ:
+1.  ถอดคอนแทคเลนส์ออก
+2.  ใช้น้ำเปล่าล้างตาประมาณ 15 นาที
+3.  ไปพบแพทย์
+(Chapter: Materials Safety Data, Page: 130)",1.0,0.25,1,0.815,14.84,33,25
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมแบ่งตามประเภทวัสดุได้กี่หมวด,แบ่งได้ 2 หมวด ได้แก่ 1) มาตรการสำหรับวัสดุซ่อมแบบผง และ 2) มาตรการสำหรับวัสดุซ่อมแบบของเหลว,135,Construction-Related,Environmental / Preventive Measures,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมที่แบ่งตามประเภทวัสดุ,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมที่แบ่งตามประเภทวัสดุ",0.0,0.0,0,0.7259,Construction-Related,Environmental / Preventive Measures,"มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมแซมชิ้นส่วนอุโมงค์ แบ่งตามประเภทของวัสดุซ่อม ได้ 2 หมวด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135) ได้แก่:
+1. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง
+2. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว","135, 137, 136, 7",gemini-2.5-flash,"Page: 135
+Answer: มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมแซมชิ้นส่วนอุโมงค์ แบ่งตามประเภทของวัสดุซ่อม ได้ 2 หมวด (Chapter: Preventative Measures And Revise Environment Impact, Page: 135) ได้แก่:
+1. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง
+2. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว",1.0,0.25,1,0.8527,Construction-Related,Environmental / Preventive Measures,"มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมแซมชิ้นส่วนอุโมงค์แบ่งตามประเภทของวัสดุซ่อมได้ 2 หมวด ได้แก่ 1. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง และ 2. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)","135, 137, 136, 7",gemini-2.5-flash,"Page: 135
+Answer: มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมของงานซ่อมแซมชิ้นส่วนอุโมงค์แบ่งตามประเภทของวัสดุซ่อมได้ 2 หมวด ได้แก่ 1. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบผง และ 2. มาตรการป้องกันผลกระทบต่อสิ่งแวดล้อมสำหรับวัสดุซ่อมแบบของเหลว (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)",1.0,0.25,1,0.8494,10.37,38,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,วัสดุซ่อมแบบผงตามมาตรการสิ่งแวดล้อมมีอะไรบ้าง,"Sika Skim Coat, Conpatch 300, Renderoc Skimcoat, ปูนฉาบแต่งตราผึ้ง 124, ตราผึ้ง 124L และตราผึ้ง 135F",135,Construction-Related,Environmental / Preventive Measures,ข้อมูลไม่เพียงพอในเอกสารที่ให้มาเพื่อตอบคำถามนี้,unknown,gemini-2.5-flash,"Page: N/A
+Answer: ข้อมูลไม่เพียงพอในเอกสารที่ให้มาเพื่อตอบคำถามนี้",0.0,0.0,0,0.5151,Construction-Related,Environmental / Preventive Measures,"วัสดุซ่อมแบบผงตามมาตรการสิ่งแวดล้อมได้แก่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+*   Sika Skim Coat
+*   Conpatch 300
+*   Renderoc Skimcoat
+*   ปูนฉาบแต่งตราผึ้ง 124
+*   ปูนฉาบแต่งตราผึ้ง 124L
+*   ปูนฉาบแต่งตราผึ้ง 135F","135, 8, 7, 137, 136",gemini-2.5-flash,"Page: 135
+Answer: วัสดุซ่อมแบบผงตามมาตรการสิ่งแวดล้อมได้แก่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+*   Sika Skim Coat
+*   Conpatch 300
+*   Renderoc Skimcoat
+*   ปูนฉาบแต่งตราผึ้ง 124
+*   ปูนฉาบแต่งตราผึ้ง 124L
+*   ปูนฉาบแต่งตราผึ้ง 135F",1.0,0.2,1,0.8719,Construction-Related,Environmental / Preventive Measures,"วัสดุซ่อมแบบผงตามมาตรการสิ่งแวดล้อม ได้แก่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+*   Sika Skim Coat
+*   Conpatch 300
+*   Renderoc Skimcoat
+*   ปูนฉาบแต่งตราผึ้ง 124
+*   ปูนฉาบแต่งตราผึ้ง 124L
+*   ปูนฉาบแต่งตราผึ้ง 135F","135, 8, 7, 137, 136",gemini-2.5-flash,"Page: 135
+Answer: วัสดุซ่อมแบบผงตามมาตรการสิ่งแวดล้อม ได้แก่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+*   Sika Skim Coat
+*   Conpatch 300
+*   Renderoc Skimcoat
+*   ปูนฉาบแต่งตราผึ้ง 124
+*   ปูนฉาบแต่งตราผึ้ง 124L
+*   ปูนฉาบแต่งตราผึ้ง 135F",1.0,0.2,1,0.8731,9.59,39,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,วัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อมมีอะไรบ้าง,"Sikadur 32TH, Sikadur 52TH, Sikadur 31 CF Normal, Sikadur 41 CF Normal และ Condur SC",137,Construction-Related,Environmental / Preventive Measures,ข้อมูลที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับวัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อม,unknown,gemini-2.5-flash,"Page:
+Answer: ข้อมูลที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับวัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อม",0.0,0.0,0,0.5825,Construction-Related,Environmental / Preventive Measures,"วัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อม ได้แก่:
+*   Sikadur 32TH
+*   Sikadur 52 TH
+*   Sikadur 31 CF Normal
+*   Sikadur 41 CF Normal
+*   Condur SC
+(Chapter: Preventative Measures And Revise Environment Impact, Page: 137)","135, 137, 8, 7",gemini-2.5-flash,"Page: 137
+Answer: วัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อม ได้แก่:
+*   Sikadur 32TH
+*   Sikadur 52 TH
+*   Sikadur 31 CF Normal
+*   Sikadur 41 CF Normal
+*   Condur SC
+(Chapter: Preventative Measures And Revise Environment Impact, Page: 137)",1.0,0.25,1,0.8256,Construction-Related,Environmental / Preventive Measures,"วัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อม ได้แก่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 137):
+*   Sikadur 32TH
+*   Sikadur 52 TH
+*   Sikadur 31 CF Normal
+*   Sikadur 41 CF Normal
+*   Condur SC","135, 137, 8, 7",gemini-2.5-flash,"Page: 137
+Answer: วัสดุซ่อมแบบของเหลวตามมาตรการสิ่งแวดล้อม ได้แก่ (Chapter: Preventative Measures And Revise Environment Impact, Page: 137):
+*   Sikadur 32TH
+*   Sikadur 52 TH
+*   Sikadur 31 CF Normal
+*   Sikadur 41 CF Normal
+*   Condur SC",1.0,0.25,1,0.8364,9.25,39,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงรั่วไหลปนเปื้อนดินจำนวนมากคืออะไร,เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่ปิดได้มิดชิด แล้วขนย้ายออกจากจุดที่รั่วไหล จากนั้นกวาดวัสดุที่รั่วไหลกองรวมกัน ใช้ผ้าหรือกระสอบคลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย แล้วตักวัสดุใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี,136,Construction-Related,Material,ข้อมูลในเอกสารที่ให้มามีไม่เพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการแก้ไขกรณีวัสดุซ่อมแบบผงรั่วไหลปนเปื้อนดินจำนวนมาก,unknown,gemini-2.5-flash,"Page:
+Answer: ข้อมูลในเอกสารที่ให้มามีไม่เพียงพอที่จะตอบคำถามเกี่ยวกับมาตรการแก้ไขกรณีวัสดุซ่อมแบบผงรั่วไหลปนเปื้อนดินจำนวนมาก",0.0,0.0,0,0.6848,Construction-Related,Human Risk,"ในกรณีที่วัสดุซ่อมแบบผงรั่วไหลจำนวนมากเนื่องจากบรรจุภัณฑ์ฉีกขาด มาตรการแก้ไขมีดังนี้:
+1.  เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2.  ขนย้ายออกจากจุดที่รั่วไหล
+3.  กวาดวัสดุที่รั่วไหลกองรวมกัน
+4.  ใช้ผ้าหรือกระสอบคลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5.  ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี","136, 138, 135, 137",gemini-2.5-flash,"Page: 136
+Answer: ในกรณีที่วัสดุซ่อมแบบผงรั่วไหลจำนวนมากเนื่องจากบรรจุภัณฑ์ฉีกขาด มาตรการแก้ไขมีดังนี้:
+1.  เปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2.  ขนย้ายออกจากจุดที่รั่วไหล
+3.  กวาดวัสดุที่รั่วไหลกองรวมกัน
+4.  ใช้ผ้าหรือกระสอบคลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5.  ตักวัสดุซ่อมใส่ถุงดำทิ้งในพื้นที่สำหรับทิ้งสารเคมี",1.0,0.25,1,0.8901,Construction-Related,Human Risk,"มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงรั่วไหลปนเปื้อนดินจำนวนมากมีดังนี้:
+1.  ทำการเปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2.  ขนย้ายออกจากจุดที่รั่วไหล
+3.  กวาดวัสดุที่รั่วไหลกองรวมกัน
+4.  ใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5.  ตักวัสดุซ่อมใส่ถุงดำ
+6.  ทิ้งในพื้นที่สำหรับทิ้งสารเคมี","136, 138, 135, 137",gemini-2.5-flash,"Page: 136
+Answer: มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงรั่วไหลปนเปื้อนดินจำนวนมากมีดังนี้:
+1.  ทำการเปลี่ยนบรรจุภัณฑ์หรือภาชนะที่สามารถปิดได้มิดชิด
+2.  ขนย้ายออกจากจุดที่รั่วไหล
+3.  กวาดวัสดุที่รั่วไหลกองรวมกัน
+4.  ใช้ผ้า หรือกระสอบ คลุมกองวัสดุเพื่อป้องกันการฟุ้งกระจาย
+5.  ตักวัสดุซ่อมใส่ถุงดำ
+6.  ทิ้งในพื้นที่สำหรับทิ้งสารเคมี",1.0,0.25,1,0.8697,14.02,39,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,อุปกรณ์ที่ใช้ดับเพลิงกรณีเกิดเพลิงไหม้วัสดุซ่อมมีอะไรบ้าง,"โฟมดับเพลิงชนิดทนแอลกอฮอล์, ถังดับเพลิงชนิด CO2 และถังดับเพลิงแบบผง",136,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอสำหรับตอบคำถามนี้,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอสำหรับตอบคำถามนี้",0.0,0.0,0,0.5372,Construction-Related,Environmental / Preventive Measures,"อุปกรณ์ที่ใช้ดับเพลิงกรณีเกิดเพลิงไหม้วัสดุซ่อม มีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 138, 136)
+*   โฟมดับเพลิงชนิดทนแอลกอฮอล์
+*   ถังดับเพลิงชนิด CO2
+*   ถังดับเพลิงแบบผง","136, 138, 17, 11",gemini-2.5-flash,"Page: 138, 136
+Answer: อุปกรณ์ที่ใช้ดับเพลิงกรณีเกิดเพลิงไหม้วัสดุซ่อม มีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 138, 136)
+*   โฟมดับเพลิงชนิดทนแอลกอฮอล์
+*   ถังดับเพลิงชนิด CO2
+*   ถังดับเพลิงแบบผง",1.0,0.25,1,0.8326,Construction-Related,Environmental / Preventive Measures,"อุปกรณ์ที่ใช้ดับเพลิงกรณีเกิดเพลิงไหม้วัสดุซ่อมประกอบด้วย (Chapter: Preventative Measures And Revise Environment Impact, Page: 138, 136):
+*   โฟมดับเพลิงชนิดทนแอลกอฮอล์
+*   ถังดับเพลิงชนิด CO2
+*   ถังดับเพลิงแบบผง","136, 138, 17, 11",gemini-2.5-flash,"Page: 138, 136
+Answer: อุปกรณ์ที่ใช้ดับเพลิงกรณีเกิดเพลิงไหม้วัสดุซ่อมประกอบด้วย (Chapter: Preventative Measures And Revise Environment Impact, Page: 138, 136):
+*   โฟมดับเพลิงชนิดทนแอลกอฮอล์
+*   ถังดับเพลิงชนิด CO2
+*   ถังดับเพลิงแบบผง",1.0,0.25,1,0.8272,9.62,38,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,ข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อมคืออะไร,ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด และหากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก ผู้ผจญเพลิงต้องสวมหน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี,136,Construction-Related,Material,เนื้อหาในเอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อม,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เนื้อหาในเอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะตอบคำถามเกี่ยวกับข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อม",0.0,0.0,0,0.7287,Construction-Related,Human Risk,"ข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อมมีดังนี้:
+
+**ข้อห้าม**
+*   ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)
+
+**ข้อกำหนดด้านการป้องกันตัว (สำหรับผู้ผจญเพลิง)**
+*   หากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก ผู้ผจญเพลิงต้องสวมใส่หน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)","136, 138, 8, 131",gemini-2.5-flash,"Page: 136, 138
+Answer: ข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อมมีดังนี้:
+
+**ข้อห้าม**
+*   ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)
+
+**ข้อกำหนดด้านการป้องกันตัว (สำหรับผู้ผจญเพลิง)**
+*   หากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก ผู้ผจญเพลิงต้องสวมใส่หน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)",1.0,0.25,1,0.9084,Construction-Related,Human Risk,"ข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อมมีดังนี้:
+
+**ข้อห้าม:**
+*   ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)
+
+**ข้อกำหนดด้านการป้องกันตัว:**
+*   หากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก ผู้ผจญเพลิงต้องสวมใส่หน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)","136, 138, 8, 131",gemini-2.5-flash,"Page: 136, 138
+Answer: ข้อห้ามและข้อกำหนดด้านการป้องกันตัวในการดับเพลิงวัสดุซ่อมมีดังนี้:
+
+**ข้อห้าม:**
+*   ห้ามใช้เครื่องฉีดน้ำแรงดันสูงโดยเด็ดขาด (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)
+
+**ข้อกำหนดด้านการป้องกันตัว:**
+*   หากเพลิงลุกไหม้วัสดุซ่อมจำนวนมาก ผู้ผจญเพลิงต้องสวมใส่หน้ากาก N95 เพื่อป้องกันการสูดดมสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)",1.0,0.25,1,0.9126,16.02,39,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดินคืออะไร,ใช้ทรายหรือขี้เลื่อยกองทับวัสดุที่รั่วไหลเพื่อเป็นตัวดูดซับสารเคมี จากนั้นกวาดวัสดุดูดซับใส่ถุงดำแล้วทิ้งในพื้นที่สำหรับทิ้งสารเคมี,138,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดิน,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับมาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดิน",0.0,0.0,0,0.7007,Construction-Related,Human Risk,"มาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดินมีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 138):
+1.  หากวัสดุซ่อมรั่วไหลทำให้เกิดการปนเปื้อนหรือสัมผัสกับพื้นดิน ให้ใช้ทรายหรือขี้เลื่อยกองทับวัสดุที่รั่วไหล เพื่อเป็นตัวดูดซับสารเคมี
+2.  หลังจากนั้นให้กวาดวัสดุดูดซับใส่ถุงดำแล้วทิ้งในพื้นที่สำหรับทิ้งสารเคมี","136, 138, 137, 135",gemini-2.5-flash,"Page: 138
+Answer: มาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดินมีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 138):
+1.  หากวัสดุซ่อมรั่วไหลทำให้เกิดการปนเปื้อนหรือสัมผัสกับพื้นดิน ให้ใช้ทรายหรือขี้เลื่อยกองทับวัสดุที่รั่วไหล เพื่อเป็นตัวดูดซับสารเคมี
+2.  หลังจากนั้นให้กวาดวัสดุดูดซับใส่ถุงดำแล้วทิ้งในพื้นที่สำหรับทิ้งสารเคมี",1.0,0.25,1,0.8429,Construction-Related,Human Risk,"มาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดิน มีดังนี้:
+1.  หากวัสดุซ่อมรั่วไหลทำให้เกิดการปนเปื้อนหรือสัมผัสกับพื้นดิน ให้ใช้ทรายหรือขี้เลื่อยกองทับวัสดุที่รั่วไหลเพื่อเป็นตัวดูดซับสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 138).
+2.  หลังจากนั้น ให้กวาดวัสดุดูดซับใส่ถุงดำแล้วทิ้งในพื้นที่สำหรับทิ้งสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 138).
+นอกจากนี้ พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนในดิน (Chapter: Preventative Measures And Revise Environment Impact, Page: 138).","136, 138, 137, 135",gemini-2.5-flash,"Page: 138
+Answer: มาตรการแก้ไขกรณีวัสดุซ่อมแบบของเหลวรั่วไหลปนเปื้อนดิน มีดังนี้:
+1.  หากวัสดุซ่อมรั่วไหลทำให้เกิดการปนเปื้อนหรือสัมผัสกับพื้นดิน ให้ใช้ทรายหรือขี้เลื่อยกองทับวัสดุที่รั่วไหลเพื่อเป็นตัวดูดซับสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 138).
+2.  หลังจากนั้น ให้กวาดวัสดุดูดซับใส่ถุงดำแล้วทิ้งในพื้นที่สำหรับทิ้งสารเคมี (Chapter: Preventative Measures And Revise Environment Impact, Page: 138).
+นอกจากนี้ พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนในดิน (Chapter: Preventative Measures And Revise Environment Impact, Page: 138).",1.0,0.25,1,0.8029,13.35,38,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียคืออะไร,ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด หากปนเปื้อนปริมาณมากจนกำจัดไม่ได้ต้องติดต่อหน่วยงานที่กำจัดสารเคมีได้ทันที,135,Construction-Related,Material,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอสำหรับคำถามนี้,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอสำหรับคำถามนี้",0.0,0.0,0,0.5435,Construction-Related,Human Risk,"มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียคือ:
+1. ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+2. ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+3. หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)","135, 136, 137, 138",gemini-2.5-flash,"Page: 135
+Answer: มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียคือ:
+1. ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+2. ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+3. หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที (Chapter: Preventative Measures And Revise Environment Impact, Page: 135)",1.0,0.25,1,0.8707,Construction-Related,Human Risk,"มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียมีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+1.  ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+2.  ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+3.  หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที","135, 136, 137, 138",gemini-2.5-flash,"Page: 135
+Answer: มาตรการแก้ไขกรณีวัสดุซ่อมแบบผงปนเปื้อนในท่อระบายน้ำเสียมีดังนี้ (Chapter: Preventative Measures And Revise Environment Impact, Page: 135):
+1.  ปิดทางระบายท่อน้ำทิ้ง แล้วกำจัดน้ำที่ปนเปื้อนในท่อระบายออก
+2.  ห้ามทิ้งน้ำที่ปนเปื้อนลงพื้นดินโดยเด็ดขาด
+3.  หากปนเปื้อนในปริมาณมากจนไม่สามารถกำจัดทิ้งได้ จะต้องติดต่อหน่วยงานที่สามารถกำจัดสารเคมีได้ทันที",1.0,0.25,1,0.8515,13.19,39,26
+Environmental / Preventive Measures,Preventative Measures and Environmental Impact,เพื่อป้องกันการปนเปื้อนในดิน พื้นที่สำหรับงานซ่อมแซมต้องมีลักษณะอย่างไร,ต้องเป็นพื้นคอนกรีต เพื่อป้องกันไม่ให้วัสดุซ่อมปนเปื้อนลงในดิน,136,Construction-Related,Repair Method,เนื้อหาที่ให้มาไม่เพียงพอที่จะตอบคำถามนี้,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เนื้อหาที่ให้มาไม่เพียงพอที่จะตอบคำถามนี้",0.0,0.0,0,0.5992,Construction-Related,Environmental / Preventive Measures,"เพื่อป้องกันการปนเปื้อนในดิน พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)","136, 135, 138, 137",gemini-2.5-flash,"Page: 136, 138
+Answer: เพื่อป้องกันการปนเปื้อนในดิน พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)",1.0,0.25,1,0.8954,Construction-Related,Environmental / Preventive Measures,"เพื่อป้องกันการปนเปื้อนในดิน พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)","136, 135, 138, 137",gemini-2.5-flash,"Page: 136, 138
+Answer: เพื่อป้องกันการปนเปื้อนในดิน พื้นที่สำหรับงานซ่อมแซมต้องเป็นพื้นคอนกรีต (Chapter: Preventative Measures And Revise Environment Impact, Page: 136, 138)",1.0,0.25,1,0.8954,9.8,38,26
+Non-Construction Questions,Guideline for Repair,ชื่อโครงการ (Project Name) ที่ระบุไว้ในเอกสารคืออะไร,SEWERAGE TUNNEL BUNG NONG BON TO CHAOPHRAYA RIVER (โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา),1,Non-Construction Questions,General / Admin,"เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับ ""ชื่อโครงการ"" (Project Name)","88, 83, 117, 107",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับ ""ชื่อโครงการ"" (Project Name)",0.0,0.0,0,0.5598,Construction-Related,Material,"ชื่อโครงการที่ระบุไว้ในเอกสารคือ โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา (อ้างถึง Chapter: Material Approval Document from the Project Office, Page: 144, 145, 147).","148, 147, 145, 144",gemini-2.5-flash,"Page: 144, 145, 147
+Answer: ชื่อโครงการที่ระบุไว้ในเอกสารคือ โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา (อ้างถึง Chapter: Material Approval Document from the Project Office, Page: 144, 145, 147).",0.0,0.0,0,0.8107,Construction-Related,Material,"ชื่อโครงการที่ระบุไว้ในเอกสารคือ โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา (Chapter: Material Approval Document from the Project Office, Page: 147)","88, 148, 83, 147",gemini-2.5-flash,"Page: 147
+Answer: ชื่อโครงการที่ระบุไว้ในเอกสารคือ โครงการก่อสร้างอุโมงค์ระบายน้ำจากบึงหนองบอนลงสู่แม่น้ำเจ้าพระยา (Chapter: Material Approval Document from the Project Office, Page: 147)",0.0,0.0,0,0.8118,7.58,37,16
+Non-Construction Questions,Tunnel Segment Repair Note,บริษัทที่ปรึกษา (Consultant) ของโครงการนี้คือใคร,TEAM TWI GFE,140,Construction-Related,Repair Method,"บริษัทที่ปรึกษา (Consultant) ของโครงการนี้คือ TEAM TWI GFE (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).","142, 140, 141",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: บริษัทที่ปรึกษา (Consultant) ของโครงการนี้คือ TEAM TWI GFE (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).",1.0,0.3333,1,0.7153,Non-Construction Questions,General / Admin,"เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุชื่อบริษัทที่ปรึกษา (Consultant) ของโครงการนี้ มีเพียงการกล่าวถึง ""กลุ่มบริษัทที่ปรึกษาฯ"" (Consulting Group of Companies) เท่านั้น แต่ไม่ได้ระบุชื่อเฉพาะ","144, 148, 145, 147, 146",gemini-2.5-flash,"Page: 144, 148, 145, 147, 146
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุชื่อบริษัทที่ปรึกษา (Consultant) ของโครงการนี้ มีเพียงการกล่าวถึง ""กลุ่มบริษัทที่ปรึกษาฯ"" (Consulting Group of Companies) เท่านั้น แต่ไม่ได้ระบุชื่อเฉพาะ",0.0,0.0,0,0.5273,Construction-Related,Repair Method,"บริษัทที่ปรึกษา (Consultant) ของโครงการนี้คือ TEAM TWI GFE (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).","142, 144, 140, 148, 141",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: บริษัทที่ปรึกษา (Consultant) ของโครงการนี้คือ TEAM TWI GFE (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142).",1.0,0.2,1,0.7153,11.44,38,26
+Non-Construction Questions,Tunnel Segment Repair Note,บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือใคร,SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED,140,Construction-Related,Repair Method,"บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142)","142, 140, 141, 63, 97",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142)",1.0,0.2,1,0.7973,Non-Construction Questions,General / Admin,บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือกิจการร่วมค้า เอสที – เอสจี (ST-SG Joint Venture).,"147, 105, 116, 145, 144",gemini-2.5-flash,"Page: 144, 145, 147
+Answer: บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือกิจการร่วมค้า เอสที – เอสจี (ST-SG Joint Venture).",0.0,0.0,0,0.6618,Non-Construction Questions,General / Admin,บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)),"142, 147, 140, 105, 141",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: บริษัทผู้รับเหมา (Contractor) ของโครงการนี้คือ SINO-THAI ENGINEERING AND CONSTRUCTION PUBLIC COMPANY LIMITED (บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน))",1.0,0.2,1,0.863,10.34,38,26
+Non-Construction Questions,Guideline for Repair,หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คืออะไร,TB-RP-01,1,Construction-Related,Repair Method,"หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คือ TB-RP-01 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, 4, 5, 6).","5, 25, 4, 3, 6",gemini-2.5-flash,"Page: 3, 4, 5, 6
+Answer: หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คือ TB-RP-01 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, 4, 5, 6).",0.0,0.0,0,0.748,Construction-Related,Repair Method,"หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คือ TB-RP-01 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 1, 3, 5, 7)","1, 25, 5, 3, 7",gemini-2.5-flash,"Page: 1, 3, 5, 7
+Answer: หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คือ TB-RP-01 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 1, 3, 5, 7)",1.0,0.2,1,0.7459,Construction-Related,Repair Method,"หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คือ TB-RP-01 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 1, 3, 5, 6).","5, 25, 3, 6, 1",gemini-2.5-flash,"Page: 1, 3, 5, 6
+Answer: หมายเลขเอกสาร (Document No.) ของ Guideline for Repair คือ TB-RP-01 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 1, 3, 5, 6).",1.0,0.2,1,0.7454,7.29,38,26
+Non-Construction Questions,Guideline for Repair,เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่เท่าใดและลงวันที่เท่าใด,Issue 2 ลงวันที่ 20/6/2017,2,Construction-Related,Repair Method,"เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่ 2 (Issue 2) และลงวันที่ 20/6/2017 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, 4, 5)","1, 25, 3, 5, 4",gemini-2.5-flash,"Page: 3, 4, 5
+Answer: เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่ 2 (Issue 2) และลงวันที่ 20/6/2017 (อ้างอิงจาก Chapter: Guildline For Repair, Page: 3, 4, 5)",0.0,0.0,0,0.7303,Construction-Related,Repair Method,เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่ Issue 2 และลงวันที่ 20/6/2017.,"1, 7, 5, 25, 2",gemini-2.5-flash,"Page: 2, 3, 7
+Answer: เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่ Issue 2 และลงวันที่ 20/6/2017.",1.0,0.2,1,0.7483,Construction-Related,Repair Method,เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่ Issue 2 และลงวันที่ 20/6/2017,"1, 25, 5, 7, 3",gemini-2.5-flash,"Page: 3, 5, 7
+Answer: เอกสาร Guideline for Repair (TB-RP-01) เป็นฉบับแก้ไขที่ Issue 2 และลงวันที่ 20/6/2017",0.0,0.0,0,0.747,11.76,37,16
+Non-Construction Questions,Tunnel Segment Repair Note,แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลขใด,TUNNEL-QCY-RN-41,141,Construction-Related,Repair Method,"แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141).","141, 142, 140, 139, 116",gemini-2.5-flash,"Page: 141
+Answer: แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141).",1.0,0.2,1,0.7089,Construction-Related,Repair Method,"แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141).","141, 142, 140, 139, 25",gemini-2.5-flash,"Page: 141
+Answer: แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลข TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141).",1.0,0.2,1,0.7089,Construction-Related,Repair Method,"แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลขเอกสาร TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141).","141, 142, 140, 139, 7",gemini-2.5-flash,"Page: 141
+Answer: แบบฟอร์ม Tunnel Segment Repair Note สำหรับชิ้นส่วนประเภท Counter Key ใช้หมายเลขเอกสาร TUNNEL-QCY-RN-41 (Chapter: Tunnel SegmentA Repair Note, Page: 141).",1.0,0.2,1,0.704,10.43,38,26
+Non-Construction Questions,Tunnel Segment Repair Note,ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งใดบ้าง,"Production Engineer, QC Engineer และ Consultant",140,Construction-Related,Repair Method,"ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งดังต่อไปนี้ (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142):
+*   Production Engineer
+*   QC Engineer
+*   Consultant","142, 140, 141, 139, 119",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งดังต่อไปนี้ (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142):
+*   Production Engineer
+*   QC Engineer
+*   Consultant",1.0,0.2,1,0.7352,Construction-Related,Repair Method,"ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งดังต่อไปนี้ (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142)
+*   Production Engineer
+*   QC Engineer
+*   Consultant","142, 140, 141, 139, 39",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งดังต่อไปนี้ (Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142)
+*   Production Engineer
+*   QC Engineer
+*   Consultant",1.0,0.2,1,0.7376,Construction-Related,Repair Method,"ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งดังต่อไปนี้:
+*   Production Engineer
+*   QC Engineer
+*   Consultant
+(อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142)","142, 140, 141, 139, 119",gemini-2.5-flash,"Page: 140, 141, 142
+Answer: ในส่วนการยอมรับ (Acceptance) ของแบบฟอร์ม Repair Note ต้องลงนามโดยตำแหน่งดังต่อไปนี้:
+*   Production Engineer
+*   QC Engineer
+*   Consultant
+(อ้างอิงจาก Chapter: Tunnel SegmentA Repair Note, Page: 140, 141, 142)",1.0,0.2,1,0.7508,9.26,39,26
+Non-Construction Questions,Material Safety Data,เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่เท่าใดและลงวันที่เท่าใด,Issue 1 ลงวันที่ 14/2/2017,125,Construction-Related,Human Risk,"เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่ Issue 1 และลงวันที่ 14/2/2017 (Chapter: Materials Safety Data, Page: 124, 131, 126, 127)","124, 91, 131, 126, 127",gemini-2.5-flash,"Page: 124, 131, 126, 127
+Answer: เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่ Issue 1 และลงวันที่ 14/2/2017 (Chapter: Materials Safety Data, Page: 124, 131, 126, 127)",0.0,0.0,0,0.7499,Construction-Related,Human Risk,"เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่ 1 (Issue 1) และลงวันที่ 14/2/2017 (Chapter: Materials Safety Data, Page: 125, 126, 129, 132).","124, 125, 132, 126, 129",gemini-2.5-flash,"Page: 125, 126, 129, 132
+Answer: เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่ 1 (Issue 1) และลงวันที่ 14/2/2017 (Chapter: Materials Safety Data, Page: 125, 126, 129, 132).",1.0,0.2,1,0.7397,Construction-Related,Human Risk,"เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่ 1 (Issue 1) และลงวันที่ 14/2/2017 (Chapter: Materials Safety Data, Page: 125, 126, 127, 131).","124, 125, 126, 131, 127",gemini-2.5-flash,"Page: 125, 126, 127, 131
+Answer: เอกสาร Material Safety Data (ST-TN-01) เป็นฉบับที่ 1 (Issue 1) และลงวันที่ 14/2/2017 (Chapter: Materials Safety Data, Page: 125, 126, 127, 131).",1.0,0.2,1,0.7368,12.42,38,26
+Non-Construction Questions,Material Approval Document,ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135F ได้รับการอนุมัติจากสำนักงานโครงการให้ใช้งานหรือไม่,ไม่อนุมัติให้ใช้ เนื่องจากยังไม่ทราบรายละเอียดการซ่อมแซมที่แน่ชัด หากจะใช้ต้องเสนอวิธีการซ่อมแซมพร้อมวัสดุให้พิจารณาอนุมัติเป็นกรณีไป,147,Construction-Related,Material,"ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135 F ไม่ได้รับการอนุมัติจากสำนักงานโครงการให้ใช้งาน เนื่องจากยังไม่ทราบในส่วนการซ่อมแซมที่แน่ชัด (Chapter: Material Approval Document from the Project Office, Page: 147)","114, 147, 116, 119, 113",gemini-2.5-flash,"Page: 147
+Answer: ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135 F ไม่ได้รับการอนุมัติจากสำนักงานโครงการให้ใช้งาน เนื่องจากยังไม่ทราบในส่วนการซ่อมแซมที่แน่ชัด (Chapter: Material Approval Document from the Project Office, Page: 147)",1.0,0.2,1,0.7975,Construction-Related,Material,"เอกสารที่ให้มาไม่ได้ระบุข้อมูลโดยตรงว่า ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135F ได้รับการอนุมัติจากสำนักงานโครงการให้ใช้งาน อย่างไรก็ตาม ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135/135F ถูกระบุไว้ในคู่มือข้อกำหนดว่าเป็นระบบซีเมนต์ปอร์ตแลนด์ที่ควรใช้ หรือเป็นผลิตภัณฑ์ที่เทียบเท่าที่ได้รับการอนุมัติ (Chapter: Materials Data Sheet, Page: 115) และมีการระบุรายชื่อโครงการที่ได้ใช้ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135, 135F เช่น โรงหล่อเซ็กเม้นท์ บ้านบึง และรถไฟฟ้าสายสีแดง (Chapter: Materials Data Sheet, Page: 116) ซึ่งบ่งชี้ว่ามีการใช้งานในโครงการจริง แต่ไม่มีการระบุถึงการอนุมัติจาก ""สำนักงานโครงการ"" โดยตรง.","114, 116, 115, 113",gemini-2.5-flash,"Page: 115, 116
+Answer: เอกสารที่ให้มาไม่ได้ระบุข้อมูลโดยตรงว่า ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135F ได้รับการอนุมัติจากสำนักงานโครงการให้ใช้งาน อย่างไรก็ตาม ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135/135F ถูกระบุไว้ในคู่มือข้อกำหนดว่าเป็นระบบซีเมนต์ปอร์ตแลนด์ที่ควรใช้ หรือเป็นผลิตภัณฑ์ที่เทียบเท่าที่ได้รับการอนุมัติ (Chapter: Materials Data Sheet, Page: 115) และมีการระบุรายชื่อโครงการที่ได้ใช้ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135, 135F เช่น โรงหล่อเซ็กเม้นท์ บ้านบึง และรถไฟฟ้าสายสีแดง (Chapter: Materials Data Sheet, Page: 116) ซึ่งบ่งชี้ว่ามีการใช้งานในโครงการจริง แต่ไม่มีการระบุถึงการอนุมัติจาก ""สำนักงานโครงการ"" โดยตรง.",0.0,0.0,0,0.693,Construction-Related,Material,ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135 F ไม่ได้รับการอนุมัติให้ใช้จากสำนักงานโครงการ เนื่องจากยังไม่ทราบในส่วนการซ่อมแซมที่แน่ชัด หากจะต้องซ่อมแซมคอนกรีตชิ้นส่วนสำเร็จรูปจะต้องเสนอวิธีการซ่อมแซมพร้อมวัสดุให้พิจารณาอนุมัติเป็นกรณี ๆ ที่เสียหาย,"114, 116, 147, 113, 40",gemini-2.5-flash,"Page: 147
+Answer: ปูนฉาบซ่อมกำลังอัดสูง เบอร์ 135 F ไม่ได้รับการอนุมัติให้ใช้จากสำนักงานโครงการ เนื่องจากยังไม่ทราบในส่วนการซ่อมแซมที่แน่ชัด หากจะต้องซ่อมแซมคอนกรีตชิ้นส่วนสำเร็จรูปจะต้องเสนอวิธีการซ่อมแซมพร้อมวัสดุให้พิจารณาอนุมัติเป็นกรณี ๆ ที่เสียหาย",1.0,0.2,1,0.7991,13.55,38,26
+Non-Construction Questions,Material Approval Document,ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้งานลักษณะใดตามเอกสารอนุมัติวัสดุ,อนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็กหรือฟองอากาศจากงานหล่อคอนกรีต,148,Construction-Related,Material,"ผลิตภัณฑ์ Conpatch 300 ได้รับการอนุมัติให้ใช้งานเป็นวัสดุฉาบแต่งผิวบาง (Thin Fairing Coat) สำหรับซ่อมแซมความเสียหายของพื้นผิวคอนกรีตที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62) นอกจากนี้ยังถูกระบุว่าเป็นปูนฉาบซ่อมที่ใช้ในโครงการอุโมงค์ระบายน้ำเสียบางบอนถึงแม่น้ำเจ้าพระยา (Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Voids And Blowholes Repair, Page: 34)","62, 18, 34, 67, 65",gemini-2.5-flash,"Page: 18, 34, 62
+Answer: ผลิตภัณฑ์ Conpatch 300 ได้รับการอนุมัติให้ใช้งานเป็นวัสดุฉาบแต่งผิวบาง (Thin Fairing Coat) สำหรับซ่อมแซมความเสียหายของพื้นผิวคอนกรีตที่มีความลึก 1-2 มม. (Chapter: Materials Data Sheet, Page: 62) นอกจากนี้ยังถูกระบุว่าเป็นปูนฉาบซ่อมที่ใช้ในโครงการอุโมงค์ระบายน้ำเสียบางบอนถึงแม่น้ำเจ้าพระยา (Chapter: Repair With Epoxy Resin, Page: 18; Chapter: Voids And Blowholes Repair, Page: 34)",0.0,0.0,0,0.7914,Construction-Related,Material,"ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้งานในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีตได้ (Chapter: Material Approval Document from the Project Office, Page: 148).","148, 62, 8, 67, 64",gemini-2.5-flash,"Page: 148
+Answer: ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้งานในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีตได้ (Chapter: Material Approval Document from the Project Office, Page: 148).",1.0,0.2,1,0.8466,Construction-Related,Material,"ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีตได้ (Chapter: Material Approval Document from the Project Office, Page: 148)","62, 67, 130, 148, 18",gemini-2.5-flash,"Page: 148
+Answer: ผลิตภัณฑ์ Conpatch 300 ได้รับอนุมัติให้ใช้ในการซ่อมแซมพื้นผิวคอนกรีตแบบบางที่มีตำหนิ อันเกิดจากรอยขูดขีดขนาดเล็ก หรือฟองอากาศจากงานหล่อคอนกรีตได้ (Chapter: Material Approval Document from the Project Office, Page: 148)",1.0,0.2,1,0.84,21.13,38,26
+Non-Construction Questions,Out of Scope,ตึกใบหยกใช้ปูนชนิดไหนในการสร้าง,คำถามข้างต้นอยู่นอกขอบเขตเอกสารที่โครงการกำหนด,-,Non-Construction Questions,General / Admin,ข้อมูลในเอกสารที่ให้มาไม่มีรายละเอียดเกี่ยวกับตึกใบหยกหรือชนิดของปูนที่ใช้ในการสร้างตึกใบหยก,unknown,gemini-2.5-flash,"Page: N/A
+Answer: ข้อมูลในเอกสารที่ให้มาไม่มีรายละเอียดเกี่ยวกับตึกใบหยกหรือชนิดของปูนที่ใช้ในการสร้างตึกใบหยก",0.0,0.0,0,0.6371,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับชนิดปูนที่ใช้ในการสร้างตึกใบหยก,"147, 102, 114, 104, 105",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับชนิดปูนที่ใช้ในการสร้างตึกใบหยก",0.0,0.0,0,0.64,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุว่าตึกใบหยกใช้ปูนชนิดใดในการสร้าง,"147, 102, 114, 104, 105",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอที่จะระบุว่าตึกใบหยกใช้ปูนชนิดใดในการสร้าง",0.0,0.0,0,0.6205,14.2,33,22
+Non-Construction Questions,Out of Scope,งบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้คือเท่าใด,คำถามข้างต้นอยู่นอกขอบเขตเอกสารที่โครงการกำหนด,-,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับงบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้,unknown,gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเพียงพอเกี่ยวกับงบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้",0.0,0.0,0,0.6838,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับงบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้,"147, 122, 9, 139, 146",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับงบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้",0.0,0.0,0,0.6812,Non-Construction Questions,General / Admin,เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับงบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้,"147, 122, 9, 139, 146",gemini-2.5-flash,"Page: N/A
+Answer: เอกสารที่ให้มาไม่มีข้อมูลเกี่ยวกับงบประมาณค่าก่อสร้างทั้งหมดของโครงการอุโมงค์นี้",0.0,0.0,0,0.6812,9.66,33,22

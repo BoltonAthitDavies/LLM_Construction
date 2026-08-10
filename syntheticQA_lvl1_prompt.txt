@@ -1,0 +1,94 @@
+prompt = f"""
+                You are an expert civil engineering QA dataset generator
+                specialized in the document “Method for Repairing Tunnel Segment”.
+
+                --------------------------------------------------
+                RAINBOW GROUP STRUCTURE (Document-Mapped)
+
+                🟢 RAINBOW GROUP A – Construction-Related Questions
+
+                1. Repair Method
+                - 1. Guideline for Repair
+                - 2. Repair with Cementitious Mortar
+                - 3. Repair with Epoxy Resin
+                - 4. Spalling Edge Repair
+                - 5. Voids and Blowholes Repair
+                - 6. Voids and Blowholes Repair (With High Strength Mortar)
+
+                2. Material
+                - 7. Material Data Sheet
+
+                3. Human Risk
+                - 8. Risk Assessment in Repair Working
+                - 9. Material Safety Data (when related to worker safety)
+
+                4. Environmental / Preventive Measures
+                - 10. Preventative Measures and Revise Environmental Impact
+
+                🔴 RAINBOW GROUP B – Non-Construction Questions
+                Any question not directly related to tunnel segment repair,
+                construction procedures, materials, risk, safety,
+                or environmental measures.
+
+                --------------------------------------------------
+                TASK (LEVEL 1 – CONTROLLED)
+
+                Generate maximum 40 Question–Answer pairs per RAINBOW GROUP STRUCTURE sub-topic.
+
+                The question MUST:
+                - Random between RAINBOW GROUP A and RAINBOW GROUP B
+                - Fall into EXACTLY ONE category
+                - Be answerable from ONE logical section only
+
+                Do NOT combine categories.
+
+                --------------------------------------------------
+                STRICT RULES
+
+                1. Use ONLY information explicitly written in the document.
+                2. Do NOT use external knowledge.
+                3. The answer must be technically correct and rule-based.
+                4. Include exact numerical values if present.
+                5. Include the exact reference page number.
+                6. If information is unclear, do NOT generate a QA pair.
+
+                --------------------------------------------------
+                Document:{docs}
+
+                --------------------------------------------------
+                Example format I want you to follow:
+                Example 1 :
+                Question: เกณฑ์การยอมรับ Tolerance ของ Segment มีอะไรบ้าง
+                <split>
+                Answer: เกณฑ์การยอมรับ Tolerance ของ Segment มีดังนี้:
+                    1. ความคลาดเคลื่อนของความกว้าง (Width): ± 3 มม.
+                    2. ความคลาดเคลื่อนของความสูง (Height): ± 3 มม.
+                    3. ความคลาดเคลื่อนของความหนา (Thickness): ± 2 มม.
+                    4. ความคลาดเคลื่อนของมุม (Angle): ± 0.5 องศา
+                นอกจากนี้ยังมีการตรวจสอบ Ring โดยมีเกณฑ์การยอมรับ Tolerance ดังนี้
+                    1. รัศมีภายนอก +5 มม.
+                    2. ความกว้าง +2 มม.
+                <split>
+                Page: 
+                43
+                <split>
+
+                Example 2 :
+                Question: ตึกใบหยกใช้ปูนชนิดไหนในการสร้าง 
+                <split>
+                Answer: คำถามข้างต้นอยู่นอกขอบเขตเอกสารที่โครงการกำหนด
+                <split>
+                Page: 
+                -
+                <split>
+
+                --------------------------------------------------
+                OUTPUT FORMAT
+
+                <split>Category : <Repair Method / Material / Human Risk / Environmental>
+
+                <split>Question (TH-EN) :
+                <split>Answer (TH-EN) :
+
+                <split>Reference Page :
+                """

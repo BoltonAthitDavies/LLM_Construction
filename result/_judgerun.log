@@ -1,0 +1,192 @@
+START Wed Jun 17 09:30:56 SEAST 2026
+  judged 1/11 - eng=40 grounding=20
+  judged 2/11 - eng=40 grounding=20
+  judged 3/11 - eng=40 grounding=22
+  judged 4/11 - eng=40 grounding=28
+  judged 5/11 - eng=0 grounding=0
+  judged 6/11 - eng=30 grounding=10
+  judged 7/11 - eng=40 grounding=20
+  judged 8/11 - eng=40 grounding=20
+  judged 9/11 - eng=40 grounding=0
+  judged 10/11 - eng=30 grounding=22
+  judged 11/11 - eng=40 grounding=0
+
+Judge 'gemini-2.5-flash' on fused - n=11 | Eng 34.5/40 | Grounding 14.7/30 | (51s)
+Saved: result\testset_lvl1_small_judged.csv
+[done testset_lvl1_small Wed Jun 17 09:31:50 SEAST 2026]
+  judged 1/17 - eng=18 grounding=10
+  judged 2/17 - eng=38 grounding=22
+  judged 3/17 - eng=20 grounding=10
+  judged 4/17 - eng=40 grounding=22
+  judged 5/17 - eng=38 grounding=22
+  judged 6/17 - eng=0 grounding=0
+  judged 7/17 - eng=10 grounding=5
+  judged 8/17 - eng=20 grounding=10
+  judged 9/17 - eng=40 grounding=20
+  judged 10/17 - eng=20 grounding=10
+  judged 11/17 - eng=0 grounding=0
+  judged 12/17 - eng=10 grounding=10
+  judged 13/17 - eng=40 grounding=28
+  judged 14/17 - eng=40 grounding=20
+  judged 15/17 - eng=40 grounding=22
+  judged 16/17 - eng=40 grounding=22
+  judged 17/17 - eng=40 grounding=30
+
+Judge 'gemini-2.5-flash' on fused - n=17 | Eng 26.7/40 | Grounding 15.5/30 | (130s)
+Saved: result\testset_lvl2_small_judged.csv
+[done testset_lvl2_small Wed Jun 17 09:34:03 SEAST 2026]
+  judged 1/102 - eng=18 grounding=5
+  judged 2/102 - eng=40 grounding=22
+  judged 3/102 - eng=40 grounding=22
+  judged 4/102 - eng=30 grounding=22
+  judged 5/102 - eng=40 grounding=20
+  judged 6/102 - eng=40 grounding=20
+  judged 7/102 - eng=40 grounding=20
+  judged 8/102 - eng=40 grounding=20
+  judged 9/102 - eng=20 grounding=10
+  judged 10/102 - eng=30 grounding=10
+  judged 11/102 - eng=40 grounding=20
+  judged 12/102 - eng=40 grounding=20
+  judged 13/102 - eng=20 grounding=10
+  judged 14/102 - eng=40 grounding=20
+  judged 15/102 - eng=40 grounding=0
+  judged 16/102 - eng=40 grounding=0
+  judged 17/102 - eng=0 grounding=0
+  judged 18/102 - eng=40 grounding=0
+  judged 19/102 - eng=10 grounding=5
+  judged 20/102 - eng=40 grounding=22
+  judged 21/102 - eng=30 grounding=22
+  judged 22/102 - eng=38 grounding=22
+  judged 23/102 - eng=20 grounding=5
+  judged 24/102 - eng=0 grounding=0
+  judged 25/102 - eng=40 grounding=22
+  judged 26/102 - eng=0 grounding=0
+  judged 27/102 - eng=38 grounding=22
+  judged 28/102 - eng=0 grounding=0
+  judged 29/102 - eng=40 grounding=0
+  judged 30/102 - eng=40 grounding=20
+  judged 31/102 - eng=40 grounding=20
+  judged 32/102 - eng=20 grounding=10
+  judged 33/102 - eng=0 grounding=0
+  judged 34/102 - eng=20 grounding=10
+  judged 35/102 - eng=40 grounding=22
+  judged 36/102 - eng=0 grounding=0
+  judged 37/102 - eng=40 grounding=22
+  judged 38/102 - eng=40 grounding=20
+  judged 39/102 - eng=40 grounding=22
+  judged 40/102 - eng=30 grounding=20
+  judged 41/102 - eng=0 grounding=0
+  judged 42/102 - eng=0 grounding=0
+  judged 43/102 - eng=0 grounding=0
+  judged 44/102 - eng=40 grounding=22
+  judged 45/102 - eng=38 grounding=22
+  judged 46/102 - eng=40 grounding=20
+  judged 47/102 - eng=40 grounding=22
+  judged 48/102 - eng=0 grounding=0
+  judged 49/102 - eng=40 grounding=20
+  judged 50/102 - eng=40 grounding=22
+  judged 51/102 - eng=5 grounding=5
+  judged 52/102 - eng=0 grounding=0
+  judged 53/102 - eng=0 grounding=0
+  judged 54/102 - eng=40 grounding=22
+  judged 55/102 - eng=40 grounding=20
+  judged 56/102 - eng=38 grounding=22
+  judged 57/102 - eng=5 grounding=5
+  judged 58/102 - eng=30 grounding=22
+  judged 59/102 - eng=40 grounding=20
+  judged 60/102 - eng=40 grounding=20
+  judged 61/102 - eng=40 grounding=30
+  judged 62/102 - eng=40 grounding=28
+  judged 63/102 - eng=40 grounding=20
+  judged 64/102 - eng=30 grounding=22
+  judged 65/102 - eng=40 grounding=22
+  judged 66/102 - eng=40 grounding=20
+  judged 67/102 - eng=32 grounding=22
+  judged 68/102 - eng=40 grounding=22
+  judged 69/102 - eng=40 grounding=20
+  judged 70/102 - eng=40 grounding=22
+  judged 71/102 - eng=40 grounding=22
+  judged 72/102 - eng=40 grounding=22
+  judged 73/102 - eng=40 grounding=30
+  judged 74/102 - eng=38 grounding=10
+  judged 75/102 - eng=40 grounding=20
+  judged 76/102 - eng=0 grounding=0
+  judged 77/102 - eng=0 grounding=0
+  judged 78/102 - eng=5 grounding=5
+  judged 79/102 - eng=0 grounding=0
+  judged 80/102 - eng=40 grounding=0
+  judged 81/102 - eng=20 grounding=10
+  judged 82/102 - eng=40 grounding=20
+  judged 83/102 - eng=40 grounding=22
+  judged 84/102 - eng=40 grounding=20
+  judged 85/102 - eng=40 grounding=22
+  judged 86/102 - eng=40 grounding=22
+  judged 87/102 - eng=40 grounding=22
+  judged 88/102 - eng=38 grounding=22
+  judged 89/102 - eng=40 grounding=22
+  judged 90/102 - eng=40 grounding=22
+  judged 91/102 - eng=40 grounding=0
+  judged 92/102 - eng=40 grounding=22
+  judged 93/102 - eng=40 grounding=22
+  judged 94/102 - eng=40 grounding=20
+  judged 95/102 - eng=40 grounding=0
+  judged 96/102 - eng=40 grounding=28
+  judged 97/102 - eng=40 grounding=22
+  judged 98/102 - eng=40 grounding=30
+  judged 99/102 - eng=40 grounding=22
+  judged 100/102 - eng=40 grounding=20
+  judged 101/102 - eng=38 grounding=0
+  judged 102/102 - eng=40 grounding=0
+
+Judge 'gemini-2.5-flash' on fused - n=102 | Eng 30.6/40 | Grounding 14.9/30 | (607s)
+Saved: result\testset_lvl1_large_judged.csv
+[done testset_lvl1_large Wed Jun 17 09:44:13 SEAST 2026]
+  judged 1/44 - eng=20 grounding=15
+  judged 2/44 - eng=30 grounding=10
+  judged 3/44 - eng=20 grounding=10
+  judged 4/44 - eng=10 grounding=5
+  judged 5/44 - eng=20 grounding=5
+  judged 6/44 - eng=0 grounding=0
+  judged 7/44 - eng=0 grounding=0
+  judged 8/44 - eng=20 grounding=10
+  judged 9/44 - eng=0 grounding=0
+  judged 10/44 - eng=20 grounding=0
+  judged 11/44 - eng=38 grounding=22
+  judged 12/44 - eng=40 grounding=20
+  judged 13/44 - eng=20 grounding=5
+  judged 14/44 - eng=20 grounding=10
+  judged 15/44 - eng=10 grounding=5
+  judged 16/44 - eng=40 grounding=20
+  judged 17/44 - eng=38 grounding=10
+  judged 18/44 - eng=10 grounding=5
+  judged 19/44 - eng=40 grounding=22
+  judged 20/44 - eng=40 grounding=22
+  judged 21/44 - eng=40 grounding=10
+  judged 22/44 - eng=20 grounding=20
+  judged 23/44 - eng=20 grounding=15
+  judged 24/44 - eng=30 grounding=22
+  judged 25/44 - eng=40 grounding=26
+  judged 26/44 - eng=0 grounding=0
+  judged 27/44 - eng=20 grounding=10
+  judged 28/44 - eng=30 grounding=22
+  judged 29/44 - eng=30 grounding=22
+  judged 30/44 - eng=0 grounding=0
+  judged 31/44 - eng=30 grounding=22
+  judged 32/44 - eng=10 grounding=5
+  judged 33/44 - eng=38 grounding=22
+  judged 34/44 - eng=40 grounding=10
+  judged 35/44 - eng=20 grounding=0
+  judged 36/44 - eng=32 grounding=22
+  judged 37/44 - eng=20 grounding=10
+  judged 38/44 - eng=40 grounding=22
+  judged 39/44 - eng=0 grounding=0
+  judged 40/44 - eng=20 grounding=15
+  judged 41/44 - eng=40 grounding=30
+  judged 42/44 - eng=30 grounding=22
+  judged 43/44 - eng=20 grounding=10
+  judged 44/44 - eng=5 grounding=5
+
+Judge 'gemini-2.5-flash' on fused - n=44 | Eng 23.0/40 | Grounding 12.2/30 | (422s)
+Saved: result\testset_lvl2_large_judged.csv
+[done testset_lvl2_large Wed Jun 17 09:51:20 SEAST 2026]
+ALL DONE Wed Jun 17 09:51:20 SEAST 2026
