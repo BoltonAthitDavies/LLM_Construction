@@ -1,0 +1,4 @@
+# API keys / secrets
+keys/
+*key.txt
+.env
